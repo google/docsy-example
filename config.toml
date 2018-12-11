@@ -50,7 +50,7 @@ anchor = "smart"
 [services]
 [services.googleAnalytics]
 # Uncomment and insert your GA tracking ID to enable.
-# id = "INSERT ID"
+id = "UA-11111111-1"
 
 # Language configuration
 
