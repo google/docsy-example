@@ -49,8 +49,8 @@ anchor = "smart"
 
 [services]
 [services.googleAnalytics]
-# Uncomment and insert your GA tracking ID to enable.
-id = "UA-11111111-1"
+# Comment out the next line to disable GA tracking.
+id = "UA-00000000-0"
 
 # Language configuration
 
