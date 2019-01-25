@@ -32,10 +32,12 @@ npm install -g postcss-cli
 npm install -g autoprefixer
 ```
 
-To use a local version of the theme files during site development, clone the repo using:
+To use a local version of the theme during site development, you must recursively clone the Docsy repo to pick up all 
+of the repo's submodules too. From the root of your site, you run the following clone command to add docsy into the 
+`themes/docsy` folder:
 
 ```
-git clone --recurse-submodules --depth 1 https://github.com/google/docsy.git
+git clone --recurse-submodules --depth 1 https://github.com/google/docsy.git themes/docsy
 ```
 
 For comprehensive Hugo documentation, see [gohugo.io](https://gohugo.io/)
