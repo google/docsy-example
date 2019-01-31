@@ -3,11 +3,10 @@ title: "Concepts"
 linkTitle: "Concepts"
 weight: 4
 description: >
-  A short lead descripton about this section page. Text here can also be **bold** or _italic_ and can even be split over multiple paragraphs.
+  What does your user need to understand about your project in order to use it - or potentially contribute to it? 
 ---
+For many projects, users may not need much information beyond the information in the [Overview](/docs/overview/), so this section is optional. However if there are areas where your users will need a more detailed understanding of a given term or feature in order to do anything useful with your project - for example if you have a large project with many components and a complex architecture - put that information in this section.
 
-This is the section landing page.
+Remember to focus on what the user needs to know, not just what you think is interesting about your project! If they don’t need to understand your original design decisions to use or contribute to the project, don’t put them in, or include your design docs in your repo and link to them. Similarly, most users will probably need to know more about how features work when in use rather than how they are implemented. Consider a separate architecture page for more detailed implementation and system design information that potential project contributors can consult.
 
-* Summarize
-* Your section
-* Here
+

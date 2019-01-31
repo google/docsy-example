@@ -1,13 +1,9 @@
 ---
 title: "Reference"
 linkTitle: "Reference"
-weight: 8
+weight: 9
 description: >
-  A short lead descripton about this section page. Text here can also be **bold** or _italic_ and can even be split over multiple paragraphs.
+  Low level reference docs for your project.
 ---
 
-This is the section landing page.
-
-* Summarize
-* Your section
-* Here
+If your project has an API, configuration, or other reference - anything that users need to look up that’s at an even lower level than a single task - put (or link to it) here.

@@ -6,8 +6,4 @@ description: >
   How to contribute to the docs
 ---
 
-This is the section landing page.
-
-* Summarize
-* Your section
-* Here
+TODO: Add some boilerplate doc contribution guidelines
