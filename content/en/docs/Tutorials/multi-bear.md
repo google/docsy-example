@@ -1,6 +1,5 @@
 ---
-title: "End to End Ponycoptering"
-linkTitle: "End to End Ponycoptering"
+title: "Multi-Bear Domicile Setup"
 date: 2017-01-05
 weight: 4
 description: >
