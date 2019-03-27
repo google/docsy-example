@@ -14,6 +14,6 @@ This section is where the user documentation for your project lives - all the in
 * Your section
 * Here
 
-Find out how to use the Docsy theme in [Getting Started](getting-started/).
+Find out how to use the Docsy theme in the [Docsy User Guide](https://docsy.dev/docs/).
 
 
