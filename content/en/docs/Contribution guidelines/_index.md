@@ -6,7 +6,7 @@ description: >
   How to contribute to the docs
 ---
 
-*These basic sample guidelines assume that your Docsy site is deployed using Netlify. You can use them "as is" or adapt them with your own instructions: for example, other deployment options, information about your doc project's file structure, project-specific review guidelines, versioning guidelines, or any other information your users might find useful when updating your site. [Kubeflow](https://github.com/kubeflow/website/blob/master/README.md) has a great example.*
+*These basic sample guidelines assume that your Docsy site is deployed using Netlify and your files are stored in GitHub. You can use the guidelines "as is" or adapt them with your own instructions: for example, other deployment options, information about your doc project's file structure, project-specific review guidelines, versioning guidelines, or any other information your users might find useful when updating your site. [Kubeflow](https://github.com/kubeflow/website/blob/master/README.md) has a great example.*
 
 *Don't forget to link to your own doc repo rather than our example site! Also make sure users can find these guidelines from your doc repo README: either add them there and link to them from this page, add them here and link to them from the README, or include them in both locations.*
 
@@ -16,6 +16,11 @@ and [Netlify](https://www.netlify.com/) to manage the deployment of the site.
 Hugo is an open-source static site generator that provides us with templates, 
 content organisation in a standard directory structure, and a website generation 
 engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps them up into a website.
+
+All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
+information on using pull requests.
 
 ## Quick start with Netlify
 
