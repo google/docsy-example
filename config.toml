@@ -76,6 +76,7 @@ time_format_blog = "02.01.2006"
 copyright = "The Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
 github_repo = "https://github.com/google/docsy-example"
+github_project_repo = "https://github.com/google/docsy"
 
 # Specify a value here if your content directory is not in your repo's root directory
 github_subdir = ""
