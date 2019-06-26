@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "/"
 title = "Goldydocs"
 
 enableRobotsTXT = true
@@ -73,9 +73,13 @@ time_format_blog = "02.01.2006"
 # Everything below this are Site Params
 
 [params]
-copyright = "Global Inc"
+copyright = "The Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
+
+# Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/google/docsy-example"
+# An optional link to a related project repo. For example, the sibling repository where your product code lives.
+github_project_repo = "https://github.com/google/docsy"
 
 # Specify a value here if your content directory is not in your repo's root directory
 github_subdir = ""
@@ -135,5 +139,4 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	url = "https://example.org/mail"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
-
 
