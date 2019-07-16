@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "Docsy Workshop"
 
 enableRobotsTXT = true
 
@@ -56,13 +56,13 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Goldydocs"
+title = "Docsy Workshop"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.no]
-title = "Goldydocs"
+title = "Docsy Workshop"
 description = "Docsy er operativsystem for skyen"
 languageName ="Norsk"
 contentDir = "content/no"
