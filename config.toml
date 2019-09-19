@@ -1,4 +1,4 @@
-baseURL = "https://solinia.github.io/"
+baseURL = "https://www.fallofanempire.com/"
 title = "Solinia"
 
 enableRobotsTXT = true
@@ -73,9 +73,9 @@ privacy_policy = "https://policies.google.com/privacy"
 version_menu = "Releases"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/mixxit/solinia.github.io/"
+github_repo = "https://github.com/mixxit/solinia-docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/mixxit/solinia-docs/"
+github_project_repo = "https://github.com/mixxit/solinia-docs"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
