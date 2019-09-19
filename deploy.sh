@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-
+ls public
 cd public
 
 if [ -n "$GITHUB_AUTH_SECRET" ]
