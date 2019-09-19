@@ -20,7 +20,7 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   local-dir: public
-  repo: gh-username/gh-username.github.io
+  repo: mixxit/solinia.github.io
   target-branch: master
   verbose: true
   on:
