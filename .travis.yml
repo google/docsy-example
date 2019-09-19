@@ -1,14 +1,25 @@
+env:
+  global:
+    - HUGO_VERSION="0.58.2"
+  matrix:
+    - YOUR_ENCRYPTED_VARIABLE
+
 install:
-  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.58.2/hugo_extended_0.58.2_Linux-64bit.deb
-  - sudo apt-get update && sudo apt-get install npm
-  - npm install postcss-cli
-  - sudo dpkg -i hugo_extended_0.58.2_Linux-64bit.deb
+  - wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - mv hugo ~/bin/
+
 script:
-  - hugo
+  - hugo --gc --minify
 
 deploy:
-  - provider: script
-    script: ./deploy.sh
-    skip_cleanup: true
-    on:
-      branch: master
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: public
+  repo: gh-username/gh-username.github.io
+  target-branch: master
+  verbose: true
+  on:
+    branch: master
