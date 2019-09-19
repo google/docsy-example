@@ -1,5 +1,5 @@
-baseURL = "/"
-title = "Goldydocs"
+baseURL = "https://solinia.github.io/"
+title = "Solinia"
 
 enableRobotsTXT = true
 
