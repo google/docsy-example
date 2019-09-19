@@ -1,5 +1,6 @@
 install:
   - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.58.2/hugo_0.58.2_Linux-64bit.deb
+  - apt-get install npm
   - sudo dpkg -i hugo_0.58.2_Linux-64bit.deb
 script:
   - hugo
