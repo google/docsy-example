@@ -23,7 +23,7 @@ Plugin Source Code: [www.github.com/mixxit/solinia3-core](www.github.com/mixxit/
 
 **Code of Conduct** 
 
-Please first read our [Code of Conduct](../guides/code-of-conduct) documentation to be sure you know the rules involved playing on our server 
+Please first read our [Code of Conduct](../code-of-conduct) documentation to be sure you know the rules involved playing on our server 
 
 **Overview** 
 
