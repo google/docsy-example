@@ -1,6 +1,6 @@
 
 ---
-title: "Locations"
+title: "Gods"
 linkTitle: "Gods"
 weight: 8n
 date: 2017-01-04
