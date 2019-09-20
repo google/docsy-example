@@ -81,7 +81,7 @@ github_project_repo = "https://github.com/mixxit/solinia-docs"
 # github_subdir = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "011737558837375720776:fsdu1nryfng"
+gcs_engine_id = "001290029350279481888:3pt65w4odpo"
 
 # User interface configuration
 [params.ui]
