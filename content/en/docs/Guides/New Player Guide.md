@@ -21,7 +21,7 @@ IP: play.fallofanempire.com Plugin Source Code: www.github.com/mixxit/solinia3-c
 
 **Code of Conduct** 
 
-Please first read our [Code of Conduct](https://www.worldanvil.com/w/solinia-mixxit/a/code-of-conduct-article) documentation to be sure you know the rules involved playing on our server 
+Please first read our [Code of Conduct](guides/code-of-conduct) documentation to be sure you know the rules involved playing on our server 
 
 **Overview** 
 
@@ -31,13 +31,17 @@ This document will aim to be a reference booklet for new and old players of Fall
 
 You are able to see the specific date you are in by typing /today in chat and the name of the day and date will come up. Day and night cycles on Solinia are roughly ¼ that of a Real life one (24hrs) This is very useful for Roleplaying effectively and Remembering Births/Deaths too. Amaria is an archipaelo that snakes across the far south east of the planet Solinia. The island chain itself is currently undiscovered by most races of Solinia. Due to the sizes of the islands and the peculiarity of its position on the planet there lays a variety of topical features from wind swept deserts to frigid icy plains. The area of Solinia that Fall of an Empire takes place is populated by a variety of races that have recently arrived here following the events of The Great Reunification, an act of a divine being that has brought mythical civilisations throughout Solinias history into a new unified and undiscovered world You are able to see map of Amaria and your location on it, by going onto the website and clicking dynmap http://play.fallofanempire.com:8123/ You can also find more information about and it's races by visiting our Amaria page 
 
+**Dynamic Map**
+
+http://play.fallofanempire.com:8123
+
 **Races of Amaria** 
 
-See [Races](https://www.worldanvil.com/w/solinia-mixxit/c/races-category)
+See [Races](races)
 
 **Deities** 
 
-See [Gods](https://www.worldanvil.com/w/solinia-mixxit/c/gods-category) 
+See [Gods](gods) 
 
 **Server Guide** 
 
@@ -53,11 +57,15 @@ When you start in the world make sure to check out the surrounding area before h
 
 **Setting your avatars name** 
 
-Now that you have your characters background established, its time to set your name /Forename [Firstname] /Lastname [Lastname] eg /Forename Petal eg /Lastname Deyhl You can change your name at any time if you want to change your character by issuing the same commands! Please make it believable and in keeping with the continuity of the server. **Setting your race** Now that you have your characters background established its time to set your race. Note some races may be inactive. You can find out the active races on our website /Race [Racename] See [races](https://www.worldanvil.com/w/solinia-mixxit/c/races-category) 
+Now that you have your characters background established, its time to set your name /Forename [Firstname] /Lastname [Lastname] eg /Forename Petal eg /Lastname Deyhl You can change your name at any time if you want to change your character by issuing the same commands! Please make it believable and in keeping with the continuity of the server. **Setting your race** Now that you have your characters background established its time to set your race. Note some races may be inactive. You can find out the active races on our website /Race [Racename] 
+
+See [races](Races) 
 
 **Setting your class** 
 
-Professions are specialisations that determine your avatars statistics, abilities and skills. You may only set your profession once and this is done through our introduction questline. You can find out more about professions via the /classinfo command - you can also see their abilities on our page /class [Classname] See [Classes](https://www.worldanvil.com/w/solinia-mixxit/c/classes-category) 
+Professions are specialisations that determine your avatars statistics, abilities and skills. You may only set your profession once and this is done through our introduction questline. You can find out more about professions via the /classinfo command - you can also see their abilities on our page /class [Classname] 
+
+See [Classes](classes) 
 
 **Earning money** 
 
@@ -186,3 +194,7 @@ Tarot has guided the kings of Solinia for as long as they have existed. Leave yo
 **Travel** 
 
 Getting around isn’t easy, so we recommend using map.solinia.com while travelling long distances. Remember, travel with friends where possible and be sure to grab a saddle from a Horse Vendor and use a steed. If the journey is a long one, stock up on rations so you don't get stuck in the wild with no food or find a friendly druid and wizard who can teleport you to various locations around the world.
+
+**Map of the World**
+
+http://play.fallofanempire.com:8123
