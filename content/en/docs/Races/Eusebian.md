@@ -1,19 +1,15 @@
 
 ---
-title: "Eusebian
-                        NOT HALFLINGS"
-linkTitle: "Eusebian
-                        NOT HALFLINGS"
+title: "Eusebian"
+linkTitle: "Eusebian"
 weight: 8
 date: 2017-01-04
 description: >
  Eusebian
-                        NOT HALFLINGS
 ---
 
 {{% pageinfo %}}
 Eusebian
-                        NOT HALFLINGS
 {{% /pageinfo %}}
 The Eusebians of Alcor share blood with the Vishim and Meroei making them one of Solinias earliest half elven races. They are skilled with poisons and are master hunters and worshippers of Golkara, Ashtor, Lumyle and Lunarine
 
