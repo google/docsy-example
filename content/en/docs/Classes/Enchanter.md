@@ -11,6 +11,7 @@ description: >
 {{% pageinfo %}}
 Enchanter
 {{% /pageinfo %}}
-Description
-<span class="line-spacer d-block"> </span>
+
+**Description**
+
 A spell casting class known for their strength at controlling the minds of others. Enchanters are principally known for their ability to mesmerize enemies as well as grant mana regen and other magic boons
