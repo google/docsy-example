@@ -22,4 +22,4 @@ Paladins are the ultimate Knight and derive their power from the Light Gods that
 
 Paladins are sworn by oath to protect and spread the words of their Gods. Due to this devotion they are often blessed with healing magic and the power to slay Undead 
 
-Paladins are bitterly opposed to Shadow Knights who they are often at war with (FIX-ALERT-ADMIN)
+Paladins are bitterly opposed to Shadow Knights who they are often at war with
