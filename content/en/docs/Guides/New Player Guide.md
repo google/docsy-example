@@ -45,11 +45,11 @@ http://play.fallofanempire.com:8123
 
 **Races of Amaria** 
 
-See [Races](races)
+See [Races](../races)
 
 **Deities** 
 
-See [Gods](gods) 
+See [Gods](../gods) 
 
 **Server Guide** 
 
