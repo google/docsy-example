@@ -12,11 +12,11 @@ description: >
 Cleric
 {{% /pageinfo %}}
 
-###Description###
+**Description**
 
 Clerics are the premier healers. They have very little damage-dealing ability, but none of the other healing classes can even approach their healing supremacy. 
 
-###Class Titles###
+**Class Titles**
 
 51: the Vicar 
 
@@ -24,12 +24,12 @@ Clerics are the premier healers. They have very little damage-dealing ability, b
 
 60: The High Priest 
 
-###Passive and Unique Skills###
+**Passive and Unique Skills**
 
 Bind Wound 70% bonus at level 51 
 
 Spell Specialisation at level 30 
 
-###Statistics Recommendations###
+**Statistics Recommendations**
 
 STA WIS STR
