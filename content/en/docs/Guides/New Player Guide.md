@@ -31,6 +31,14 @@ This document will aim to be a reference booklet for new and old players of Fall
 
 You are able to see the specific date you are in by typing /today in chat and the name of the day and date will come up. Day and night cycles on Solinia are roughly ¼ that of a Real life one (24hrs) This is very useful for Roleplaying effectively and Remembering Births/Deaths too. Amaria is an archipaelo that snakes across the far south east of the planet Solinia. The island chain itself is currently undiscovered by most races of Solinia. Due to the sizes of the islands and the peculiarity of its position on the planet there lays a variety of topical features from wind swept deserts to frigid icy plains. The area of Solinia that Fall of an Empire takes place is populated by a variety of races that have recently arrived here following the events of The Great Reunification, an act of a divine being that has brought mythical civilisations throughout Solinias history into a new unified and undiscovered world You are able to see map of Amaria and your location on it, by going onto the website and clicking dynmap http://play.fallofanempire.com:8123/ You can also find more information about and it's races by visiting our Amaria page 
 
+**Required Resource Pack & Mod**
+
+We require a resource pack and mod to play on our server
+
+Download Resource Pack from https://solinia.blob.core.windows.net/solinia-public/solinia3-resourcepack.zip
+
+Download Resource Pack from https://www.fallofanempire.com/docs/guides/mod
+
 **Dynamic Map**
 
 http://play.fallofanempire.com:8123
