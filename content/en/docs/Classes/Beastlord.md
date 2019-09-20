@@ -11,12 +11,13 @@ description: >
 {{% pageinfo %}}
 Beastlord
 {{% /pageinfo %}}
-Description
-<span class="line-spacer d-block"> </span>
+
+**Description**
+
 Beastlords are the masters of the raw energies of the spirit realm. They can focus these energies into themselves and their warder pets. 
-<span class="line-spacer d-block"> </span>
+
 Beastlords are primarily a melee class, with the ability to wear leather armor or use their bare hands to attack.
-<span class="line-spacer d-block"> </span>
+
 Beastlords prepare for battle by calling on their animal warder and increasing the creature's natural abilities with spells 
-<span class="line-spacer d-block"> </span>
+
 Beastlords are one of the major 4 pet classes and as such are highly dependent on their companions
