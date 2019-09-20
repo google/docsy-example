@@ -37,6 +37,6 @@ Originally hailing form the great city of Eusebes on Alcor, the Eusebians have e
 
 Most outsiders note that the eusebians are often very short in comparison to other human like races. They also are known for their dancing, music and many many piercings and pointed ears. Life among the eusebians varies depending on the village or city you are spending your time at. For example the Kandamese are extremely short tempered and warring, but the people of Meropis are righteous and holy. There are also rumours of sub sects of Eusebians in other locations on the continent of Alcor that share similar and many traits inbetween. 
 
-####Recent History
+#### Recent History
 
 The Eusebians have not always been a peaceful race, in their early history they were split into smaller groups which warred amongst themselves. Only recently have they come to peace with one another, integrating themselves within communities and their own settlements.
