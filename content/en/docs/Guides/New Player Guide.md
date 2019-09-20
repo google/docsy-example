@@ -45,11 +45,11 @@ http://play.fallofanempire.com:8123
 
 **Races of Amaria** 
 
-See [Races](../races)
+See [Races](../../races)
 
 **Deities** 
 
-See [Gods](../gods) 
+See [Gods](../../gods) 
 
 **Server Guide** 
 
@@ -67,13 +67,13 @@ When you start in the world make sure to check out the surrounding area before h
 
 Now that you have your characters background established, its time to set your name /Forename [Firstname] /Lastname [Lastname] eg /Forename Petal eg /Lastname Deyhl You can change your name at any time if you want to change your character by issuing the same commands! Please make it believable and in keeping with the continuity of the server. **Setting your race** Now that you have your characters background established its time to set your race. Note some races may be inactive. You can find out the active races on our website /Race [Racename] 
 
-See [races](../races) 
+See [races](../../races) 
 
 **Setting your class** 
 
 Professions are specialisations that determine your avatars statistics, abilities and skills. You may only set your profession once and this is done through our introduction questline. You can find out more about professions via the /classinfo command - you can also see their abilities on our page /class [Classname] 
 
-See [Classes](../classes) 
+See [Classes](../../classes) 
 
 **Earning money** 
 
