@@ -17,7 +17,9 @@ Welcome To Fall of an Empire Minecraft Server! As a new player you're probably w
 
 **IP Address** 
 
-IP: play.fallofanempire.com Plugin Source Code: www.github.com/mixxit/solinia3-core 
+IP: play.fallofanempire.com 
+
+Plugin Source Code: [www.github.com/mixxit/solinia3-core](www.github.com/mixxit/solinia3-core)
 
 **Code of Conduct** 
 
@@ -97,7 +99,7 @@ You can also see all players online with the command /who all
 
 With Fall of an Empire constantly changing, sometimes not everything can be written in a guide. Thanks to our helpful community you can request help with the /ooc <question> command This will send your question to all players currnetly active in out of character
 
-You may also find help in our discord channel on the right side of our main website www.fallofanempire.com
+You may also find help in our discord channel on the right side of our main website [www.fallofanempire.com](www.fallofanempire.com)
 
 **Building and Player Cities** 
 
@@ -127,23 +129,45 @@ By the time you complete your introduction quest, you should have chosen one of 
 
 **Targetting Mobs for Spells & Auto Attack** 
 
-To target mobs hold a spell or weapon in your hand and Shift/Leftlclick on your target (crouch/leftclick for people who have remapped keys). You will see a glow around the mob you have targetted 
+To target mobs hold a spell or weapon in your hand and Shift/Leftlclick on your target (crouch/leftclick for people who have remapped keys). You will see a glow around the mob you have targetted and also see the mob that is targetted in your target area on the right
 
 **Targetting yourself for Spells** 
 
-To target yourself use shift F (crouch and swap weapon for people who have remapped keys). You will see your name is in the mana bar at the top 
+To target yourself please see your keybinds, by default this is ctrl - 1
+
+You will see your name in the target area on the right
+
+**Adding spells to your spellbook**
+
+To add spells to your spellbook click the spell in your inventory and drop it onto the Spell button to the right corner of your screen, the spell will be in your spellbook
+
+**Opening your spellbook**
+
+To open your spellbook please see your keybinds, by default this is K
+
+**Memorising spells**
+
+To memorise a spell open your spellbook and click on the spell you want to memorise then click on an empty memorisation slot in the top left of your screen
+
+To unmemorise a spell right click the memorised spell in the top left of your screen
 
 **Casting Spells** 
 
-Target the npc and hold the spell in your hand then right click 
+To cast a spell on an NPC please see your keybinds, by default this is ALT 1 to 8, where each number represents the memorisation slot you will be casting from.
+
+You must have an entity targetted to cast on them (see above for targetting)
 
 **Auto Attack** 
 
-To save your precious fingers you can also auto attack, to do this target the enemy and shift right click (crouch right click) with a sword or weapon 
+To auto attack, please see your keybinds, by default this is the Z button
+
+Target the NPC and press Z and you will attack automatically
+
+Auto attacking also benefits from haste buffs and attack skills you may have aquired so is the recommended way to engage in combat. It is also less painful than clicking hundreds of times!
 
 **Spell Reagents** 
 
-Some spells require reagents which you can get from drops and shops. Hold the reagent in your hand and add it to your reagent pouch with /reagent add 
+Some spells require reagents which you can get from drops and shops. Hold the reagent in your hand when in the inventory window and drop it onto the reagent button in the top right corner of the screen
 
 **Bind Wound** 
 
@@ -152,6 +176,10 @@ Players can bind their wounds with /bindwound (/bw for short), this requires ban
 **Gear** 
 
 Scattered among the various merchants and lost dungeons of solinia lay many forgotten items of power which increase player statistics and grant unique bonuses that players cannot find elsewhere such as spell resistances and mana regeneration Items and weapons often can only be used by specific players so be sure to inspect the item before purchasing
+
+Some items slot into special equipment slots that display on the right side of your inventory window
+
+To remove items from your equipment slots you can right click the slot
 
 **Skills** 
 
