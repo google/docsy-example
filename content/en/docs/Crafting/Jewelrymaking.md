@@ -12,7 +12,7 @@ description: >
 Jewelrymaking
 {{% /pageinfo %}}
 
-| Recipe                               | Skill         | MinSkill | classId | Item1                   | Item2                   | Output Item                          | Class     | nearForge | 
+| Recipe                               | Skill         | MinSkill | classId | Item1                   | Item2                   | Output Item                          | Class     | nearForge |
 |--------------------------------------|---------------|----------|---------|-------------------------|-------------------------|--------------------------------------|-----------|-----------|
 | ENCHANTED_SILVER_BAR                 | JEWELRYMAKING | 0        | 14      | Enchanted_Silver_Dust   | Silver_Bar              | Enchanted_Silver_Bar                 | ENCHANTER | FALSE     |
 | ENCHANTED_SILVER_NECKLACE            | JEWELRYMAKING | 30       | 14      | Enchanted_Silver_Bar    | Jewelers_Kit            | Enchanted_Silver_Necklace            | ENCHANTER | FALSE     |
