@@ -12,6 +12,15 @@ description: >
 Alchemy
 {{% /pageinfo %}}
 
+# Recipes
+
+| What      | Follows         |
+|-----------|-----------------|
+| A table   | A header        |
+| A table   | A header        |
+| A table   | A header        |
+
+
 |                                                                                                                          | 
 |--------------------------------------------------------------------------------------------------------------------------| 
 | id,recipeName,item1,item2,skill,minSkill,nearForge,classId,outputItem,item1name,item2name,classname,                     | 
