@@ -42,8 +42,10 @@ Utility :
 Magicians aren't only for combat, they have other amazing abilities. They can summon Food and water, this will save you and your allies a lot of money. They can summon items that give buffs like invisibility, night vision and even flight. They can summon armor wich will decrease the damage you take, and they can summon jewelry wich gives you buffs to your stats. They also are able to summon strong weapons that have special effects on their attacks. They can also summon ender chests and shulker boxes for their allies. The only downside to the items magicians summoned is that they last untill the next server restart or untill you disconnect, so you summoned an entire set of equipment it is all gone if there is a server restart or if you disconnect.
 
 Some important things :
-If you want to summon an elemental you will need a reagent called malachite, you can find this while mining or you can buy it from an jeweler. To control your elemental you will need to buy a pet control orb from a shop, if you have summoned an elemental and targeted the enemy hold the pet control orb in your hand and press the right mouse button to send your pet to the enemy. you don't need to buy the pet control orb since you can do it with commands in the chat but it is way easier to do it with the orb. If you equip gear on an elemental with the /equip pet command you can't get it back.
+If you want to summon an elemental you will need a reagent called malachite, you can find this while mining or you can buy it from an jeweler. If you equip gear on an elemental with the /equip pet command you can't get it back.
+Link to spell list : https://www.fallofanempire.com/docs/spells/magician/
 
 You are now ready to play as a mage, if you have any further questions you can always ask other players or staff.
 
 Have fun playing !
+
