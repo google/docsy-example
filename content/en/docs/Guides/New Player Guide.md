@@ -131,7 +131,11 @@ By the time you complete your introduction quest, you should have chosen one of 
 
 **Targetting Mobs for Spells & Auto Attack** 
 
-To target mobs hold a spell or weapon in your hand and Shift/Leftlclick on your target (crouch/leftclick for people who have remapped keys). You will see a glow around the mob you have targetted and also see the mob that is targetted in your target area on the right
+To target mobs right click on your target . You will see a glow around the mob you have targetted and also see the mob that is targetted in your target area on the right
+
+To start auto attacking you can use the keybind Z
+
+To cast a memorised spell see the area below
 
 **Targetting yourself for Spells** 
 
@@ -191,11 +195,11 @@ Each class provides a number of Skills for your character to learn using /skills
 
 Abilities and Spells are items that can be found in game that look like enchanted books. There are hundreds of abilities that have all manner of effects from beneficial to destructive or even utility. Abilities can be purchased from most Profession Guilds in large NPC cities, special abilities can also be found on monsters throughout the world and hidden vendors scattered around Solinia.
 
-To use an ability, hold it in your primary hand and shift left click a mob to target it. At the top of the screen you will notice you have a TARGET:. Now right click to use the ability. Note some abilities require a target where as others, such as area of effect will target yourself automatically. Abilities require Mana/Power which can be found at the top of your screen. You can regenerate mana by holding crouch or using /trance (shortcut /tr) which will play you in a meditative trance until you move As you raise your characters level your mana pool will raise, this can also be increased by items with statistics on them such as INT, WIS or AGI depending on your profession 
+To use an ability you will need to drop the spell book into your spell button in the top right of your inventory. Once it is in your spellbook you can open the spellbook with the K keybind. Spells can be chosen and placed into memorisation slots at hte top of your screen by left clicking on the spell and left clicking on a memorisation slot. You can quick cast these spells by default with ALT-1 ALT-2 ALT-3 etc.  At the right of the screen you will notice you have a TARGET:. Targets can be selected by right clicking an npc or palyer. Note some abilities require a target where as others, such as area of effect will target yourself automatically. Abilities require Mana/Power which can be found at the top of your screen. You can regenerate mana by holding crouch or using /trance (shortcut /tr) which will play you in a meditative trance until you move As you raise your characters level your mana pool will raise, this can also be increased by items with statistics on them such as INT, WIS or AGI depending on your profession 
 
 **Pet Classes** 
 
-Pet classes should purchase a Pet Control Orb from a general merchant (Such as one in the bar tent at Haven) which lets you target enemies (left click) and send your pet to attack (with right click). Another useful command is /pet equip to destroy the item you are holding and give it to your pet. See more info on your pet with the /pet command. 
+Pet classes should purchase a Pet Control Orb from a general merchant (Such as one in the bar tent at Haven) which lets you  send your pet to attack (with left click). Another useful command is /pet equip to destroy the item you are holding and give it to your pet. See more info on your pet with the /pet command. 
 
 **Pet Equipment** 
 
