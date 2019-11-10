@@ -167,13 +167,19 @@ You must have an entity targetted to cast on them (see above for targetting)
 
 To auto attack, please see your keybinds, by default this is the Z button
 
-Target the NPC and press Z and you will attack automatically
+Target the NPC and press (by default) Z and you will attack automatically
 
 Auto attacking also benefits from haste buffs and attack skills you may have aquired so is the recommended way to engage in combat. It is also less painful than clicking hundreds of times!
 
 **Spell Reagents** 
 
-Some spells require reagents which you can get from drops and shops. Hold the reagent in your hand when in the inventory window and drop it onto the reagent button in the top right corner of the screen
+Some spells require reagents which you can get from drops and shops.
+
+Hold the reagent in your hand when in the inventory window and drop it onto the reagent button in the top right corner of the screen
+
+Alternatively you can type /reagent add
+
+Various vendors in cities spell reagents for spells. Some powerful or rare spells may require mob drops for the reagents.
 
 **Bind Wound** 
 
@@ -199,7 +205,13 @@ To use an ability you will need to drop the spell book into your spell button in
 
 **Pet Classes** 
 
-Pet classes should purchase a Pet Control Orb from a general merchant (Such as one in the bar tent at Haven) which lets you  send your pet to attack (with left click). Another useful command is /pet equip to destroy the item you are holding and give it to your pet. See more info on your pet with the /pet command. 
+Some pets require reagents, such as bone chips to summon your skeleton pet or malachie to summon a magician pet. Put these inyour reagent pouch with /reagent add or drop the reagents onto the reagent icon in the top right corner of your inventory screen.
+
+To make your pet attack another mob, first target the mob with right click. Then use the keybind for Pet Attack (default R) to send your pet in. You can also control this with /pet attack and stop attack with /pet back. 
+
+Another useful command is /pet equip to destroy the item you are holding and give it to your pet. 
+
+See more info on your pet with the /pet command. 
 
 **Pet Equipment** 
 
