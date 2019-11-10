@@ -3,7 +3,7 @@
 title: "Magician"
 linkTitle: "Magician"
 weight: 8
-date: 10-11-2019
+date: 2017-01-04
 description: >
  Magician
 ---
@@ -16,6 +16,13 @@ Magician
 
 Magicians are masters at summoning and this includes summoning food and water, weapons and armor, and all sorts of useful utility items. They can also summon powerful elemental beings to serve as their pets.
 
+**Class Titles**
+
+the Elementalist
+
+the Conjurer
+
+the Arch Mage
 
 **Newbie Guide**
 
@@ -49,3 +56,6 @@ You are now ready to play as a mage, if you have any further questions you can a
 
 Have fun playing !
 
+**Race Recommendations**
+
+Any high intelligence race
