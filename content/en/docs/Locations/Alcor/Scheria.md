@@ -16,18 +16,18 @@ Once a home to the ancient people of Eusebes and the now ruined city of Kitezh t
 ## Geography
 
 
-            <div>The majority of Scheria is covered in swamp lands apart from the fertile lands to the south where lie the ruins of Eusebes. The area itself is home to two mountains, one east and one west. Each mountain provides a underground network of caves that lead to The Himapan Forest (west) and Virumaa (east).
+            The majority of Scheria is covered in swamp lands apart from the fertile lands to the south where lie the ruins of Eusebes. The area itself is home to two mountains, one east and one west. Each mountain provides a underground network of caves that lead to The Himapan Forest (west) and Virumaa (east).
 
-To the south lies a large lake where Eusebes and it's farmlands once lay. All this is now ruins.</div>
+To the south lies a large lake where Eusebes and it's farmlands once lay. All this is now ruins.
                             
 
 ## Flora & Fauna
 
 
-            <div>Reptiles, bog slogs, snakes, undead, vampires and some giants.</div>
+            Reptiles, bog slogs, snakes, undead, vampires and some giants.
                             
 
 ## Natural Resources
 
 
-            <div>Many poisons and unusual plant life can be found in this area. Also a large number of reptiles and undead. Bone armour, Leather armor and the likes are common here. Some tried to recreate the once ancient farmlands far to the south but eventually failed.</div>
+            Many poisons and unusual plant life can be found in this area. Also a large number of reptiles and undead. Bone armour, Leather armor and the likes are common here. Some tried to recreate the once ancient farmlands far to the south but eventually failed.

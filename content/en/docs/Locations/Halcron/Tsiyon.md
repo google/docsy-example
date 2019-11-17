@@ -16,23 +16,23 @@ Tsiyon could be considered the world capital and home to many of the races of So
 ## Demographics
 
 
-            <div>Tsiyon is located on the continent of Halcron and has been a multi-cultural city for generations. Since there multiple races in Tsiyon, the cultures differ from locations in the city.</div>
+            Tsiyon is located on the continent of Halcron and has been a multi-cultural city for generations. Since there multiple races in Tsiyon, the cultures differ from locations in the city.
               
                     
 
 ## Government
 
 
-            <div>The City is ruled by the Meroei royalty</div>
+            The City is ruled by the Meroei royalty
                       
                     
 
 ## Defences
 
 
-            <div>The city is surrounded by a series of ringed walls that protect the city from attack
+            The city is surrounded by a series of ringed walls that protect the city from attack
 
-To the south is the vast ocean</div>
+To the south is the vast ocean
                        
                 
                     
@@ -40,7 +40,7 @@ To the south is the vast ocean</div>
 ## Infrastructure
 
 
-            <div>Tsiyon is seperated into many districts which serve a variety of purposes.
+            Tsiyon is seperated into many districts which serve a variety of purposes.
 
 
 
@@ -309,11 +309,11 @@ Tsiyon Port Authority
 
 Docks
 
-The Gobel's Head - Tsiyon's Oldest Bar & Inn</div>
+The Gobel's Head - Tsiyon's Oldest Bar & Inn
                        
                     
 
 ## Assets
 
 
-            <div>Tsiyon was the location of birth of the global currency. Due to the expense in dealing with individual race currencies a central bank was created by the mixed races of Tsiyon to ease the expense and delay it held on trade. Since the creation of this currency most cultures have benefited from prosperity and see it as one of the benefits of racial diplomacy.</div>
+            Tsiyon was the location of birth of the global currency. Due to the expense in dealing with individual race currencies a central bank was created by the mixed races of Tsiyon to ease the expense and delay it held on trade. Since the creation of this currency most cultures have benefited from prosperity and see it as one of the benefits of racial diplomacy.

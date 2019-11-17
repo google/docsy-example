@@ -26,7 +26,7 @@ The Gobels of Solinia are a varied race, with skin colour ranging from earthy br
 Varied, prefers meat
 
                                
-            </div>
+            
                             
 
 ## Additional Information
@@ -40,7 +40,7 @@ Varied, prefers meat
 
 Browns, blacks and grey hair
 
-                                                                                            </div>
+                                                                                            
                             
 
 ## Civilization and Culture
@@ -73,4 +73,4 @@ Chaotic Evil  Worshippers of Alazgoth
 
 OriginsEdit  Legends have it that Lord Erebus, a noble of the early Proto Humans, fled for the Under at the cusp of the cataclysm and was charged with his life for his people to pass through the gates of Id-Kura. Agreeing, they safely passed under the great gate and into the Under where they remained for millennia. When the cataclysm had finally ended, the proto humans made their way to the surface to find themselves charged once more by The Titan to pass through. As is dictated by the code of the great gate, they were presented with their challenge. There lay in front of them their beloved ruler now a twisted image of himself and with dominion over endless armies of similarly savage and dangerous beasts he named Gobel.  The battle was fierce and lasted weeks, the Gobel never tiring and the proto-humans suffering endless losses. It was not until a skilled archer by the name of Sheia Kandam entered the battle did the tides did turn. For Sheia’s arrows were poisoned tipped with Under Mold and Gobel became weakened and struggled to fight the effects. Erebus was never truly defeated that day, but weakened enough for their people to escape the Under and flee Kandam to make their new home. The Eusebian people of Alcor still honour this great battle to this day and hold festivals to mark the day they fled the Under.  It is said that Erebus still tramples the Under, crushing the many races that come before him and his Gobel armies endlessly seeking those who escaped him.
 
-                                                                            </div>
+                                                                            

@@ -24,7 +24,7 @@ The Meroei are a human like race of the lands of Halcron. If any race could be d
 Humans have many variations in their appearance, each and every one of them has unique features that make them who they are. Skin tones vary from Black, Brown and White; Color usually depends on enviromental situations an example would be: Hot, scorching climates will indefinatly burn skin, slowly turning brown then a form of black overtime, Colder climates will have a reverse affect on skin tone. Eye color varies from Green, Brown, Blue, White to Hazel and Amber. Other eye variations are not genetically possible without the use of magic. Hair Color varies from very few colors such as Black, Brown, Blond, Auburn and Chestnut. White is moderatly rare among new-born children however hair can be dyed or changed by the use of magic. Humans vary from and specific natural build however most are quite strong depending on what they do as they grow, a Soldier would have a dense muscle build, for example. Humans come in many shapes and forms.
 
                                                                                                              
-            </div>
+            
                             
 
 ## Additional Information
@@ -38,7 +38,7 @@ Humans have many variations in their appearance, each and every one of them has 
 
 Hair of Browns and black, aging to grey
 
-                                                                                            </div>
+                                                                                            
                             
 
 ## Civilization and Culture
@@ -65,4 +65,4 @@ Human Personality varies massivly between each unique being. Adulthood is mostly
 
 Origins  Lost distant relatives of the Eusebians, the Meroei were responsible for the founding of the Tsiyon and have since helped bring the world closer together with the help of the Vishim and other races that have joined their cause. The Eusebian descendents unlike most races on Solinia pre-date the cataclysm which they fled underground (The Under). However this knowledge is long lost to any society and the people of Halcron have always led a peaceful and humble life of fishing, hunting and farming.  The Meroei have a deep long forgotton link to the continent of Alcor that few are aware of. It is not a coincidence that the Eusebians named one of their major cities Meropis and those that have investigated the matter believe their divergence may have followed the Eusebian escape into Id-Kura.  Since the arrival of the Vishim the Meroei have reaped the benefits of open trade and shared technology transforming Tsiyon into the gem of southern hemisphere and the futurist multi-racial capital it is today.  Due to the abundant supply of mineable resources found on Halcron the Meroei and their frequent battles with the Gobel and Ogres the Meroei favour plated silver armour usually which they wear with pride. They are also one of the only races to make use of hair dye, red being one of the most favourite. It is not uncommon for Meroei to make use of silver and gold necklaces and earrings as well as the many coloured garments, red (again) being a favourite.
 
-                                                                            </div>
+                                                                            

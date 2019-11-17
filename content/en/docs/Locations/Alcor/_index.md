@@ -16,16 +16,16 @@ Over the centuries the continent of Alcor has been home to many cultures. In mod
 ## Geography
 
 
-            <div>Alcor, despite existing so close to the southern colder regions, is mostly tropical and covered in dense Jungles inhabitted by all manner of wild creatures. Disease and poison are a common issue for the inhabitants of this island to which has contributed towards them become skilled herbalists</div>
+            Alcor, despite existing so close to the southern colder regions, is mostly tropical and covered in dense Jungles inhabitted by all manner of wild creatures. Disease and poison are a common issue for the inhabitants of this island to which has contributed towards them become skilled herbalists
                             
 
 ## Flora & Fauna
 
 
-            <div>All manner of creatures inhabit the continent, mostly a extensive variety of birds and reptiles which find a home in Alcor including the swamplands of Schera, the jungles of Virumaa and the holy sanctuary of the Himapan Forest.</div>
+            All manner of creatures inhabit the continent, mostly a extensive variety of birds and reptiles which find a home in Alcor including the swamplands of Schera, the jungles of Virumaa and the holy sanctuary of the Himapan Forest.
                             
 
 ## Natural Resources
 
 
-            <div>Alcor is renound for it's poisons which brings assassins from all over the world of Solinia. It is also known for it's abundant supply of timber and white rock.</div>
+            Alcor is renound for it's poisons which brings assassins from all over the world of Solinia. It is also known for it's abundant supply of timber and white rock.

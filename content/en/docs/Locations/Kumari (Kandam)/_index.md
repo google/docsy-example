@@ -16,10 +16,10 @@ Kumari has seen many ancient races rise and fall and was once the seat of power 
 ## Geography
 
 
-            <div>Several flat planes a gigantic mountain surrounded by many smaller islands</div>
+            Several flat planes a gigantic mountain surrounded by many smaller islands
                                     
 
 ## Natural Resources
 
 
-            <div>Puresnow, lava, ash, metals, minerals, charcoal</div>
+            Puresnow, lava, ash, metals, minerals, charcoal

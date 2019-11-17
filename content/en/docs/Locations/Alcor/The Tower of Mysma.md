@@ -16,7 +16,7 @@ Home to the vampiric Mysmaal  None travel here except fool-hardy treasure hunter
 ## Defences
 
 
-            <div>The base of the tower is surrounded by undead inside a giant bone filled pit, there are no other life forms to be found here</div>
+            The base of the tower is surrounded by undead inside a giant bone filled pit, there are no other life forms to be found here
                        
                 
                        
@@ -28,10 +28,10 @@ Home to the vampiric Mysmaal  None travel here except fool-hardy treasure hunter
 ## Geography
 
 
-            <div>Located to the far north of the swamps of Scheria this age old tower looms over the land and is a landmark for any to avoid.</div>
+            Located to the far north of the swamps of Scheria this age old tower looms over the land and is a landmark for any to avoid.
                             
 
 ## Natural Resources
 
 
-            <div>Significant amount of magically unfused bone can be found in the pit that surrounds the tower.</div>
+            Significant amount of magically unfused bone can be found in the pit that surrounds the tower.

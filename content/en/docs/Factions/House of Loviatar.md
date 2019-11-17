@@ -16,6 +16,6 @@ A famous royal house during the Proto Human era
 ## History
 
 
-            <div>Major Members
+            Major Members
 
-Ashri Loviatar</div>
+Ashri Loviatar

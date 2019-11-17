@@ -35,4 +35,4 @@ The Proto Humans are believed to be made up of a mixture of pre-cataclysm races 
 
 The Ashri Saga  It is said the Proto Humans are responsible for the creation of The Ashri Blade which was discovered by Ashri in a proto human fortress long before the fall of the Proto Human civilisation in 37764 ME
 
-                                            </div>
+                                            

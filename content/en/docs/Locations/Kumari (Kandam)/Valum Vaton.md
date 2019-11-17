@@ -16,10 +16,10 @@ Located in the North Western continent of Kumari, It is speculated by modern hum
 ## Geography
 
 
-            <div>High mountainous lands</div>
+            High mountainous lands
                             
 
 ## Natural Resources
 
 
-            <div>Abundancy of minerals and metals</div>
+            Abundancy of minerals and metals

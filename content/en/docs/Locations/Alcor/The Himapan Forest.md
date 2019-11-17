@@ -16,12 +16,12 @@ Home to a number of mythological creatures such as centaurs and rare birds. It i
 ## Geography
 
 
-            <div>The forest is situated deep into the mountains of Scheria and is split into 3 main areas all containing a wild variety giantatic mushrooms, trees and ancient tree roots that twist around the terrain. The land itself is smothered in lush growth and flowers aided by the many streams and waterfalls that run through the area as well as the dedicated care of the land by the local centaurs</div>
+            The forest is situated deep into the mountains of Scheria and is split into 3 main areas all containing a wild variety giantatic mushrooms, trees and ancient tree roots that twist around the terrain. The land itself is smothered in lush growth and flowers aided by the many streams and waterfalls that run through the area as well as the dedicated care of the land by the local centaurs
                             
 
 ## Flora & Fauna
 
 
-            <div>Many plants and flowers can be found here to make all manner of cures and perfumes although any resources taken should always have permission blessed by the local inhabitants less you anger them and their gods.
+            Many plants and flowers can be found here to make all manner of cures and perfumes although any resources taken should always have permission blessed by the local inhabitants less you anger them and their gods.
 
-Many wildlife including a variety of rare birds, some peaceful apes and many white horses</div>
+Many wildlife including a variety of rare birds, some peaceful apes and many white horses

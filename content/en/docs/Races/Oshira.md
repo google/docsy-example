@@ -39,4 +39,4 @@ Empress Sl'Vastra the Ravager, Demi God of Rage
 
 Lizardmen are often found worshipping Oshira
 
-                            </div>
+                            
