@@ -11,4 +11,5 @@ description: >
 {{% pageinfo %}}
 Brigands Perch
 {{% /pageinfo %}}
-Brigands Perch
+
+Brigand's Perch is a haven for thieves, cutthroats, and highwaymen near the main travel hubs of the neutral island. It's a bandit refuge for levels 10 - 20 tucked into the mountains and led by a former dishonored knight of Ambreka.

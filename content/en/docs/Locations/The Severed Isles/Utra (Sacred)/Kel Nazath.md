@@ -11,4 +11,5 @@ description: >
 {{% pageinfo %}}
 Kel Nazath
 {{% /pageinfo %}}
-Kel Nazath
+
+Lidkim Village

@@ -11,4 +11,5 @@ description: >
 {{% pageinfo %}}
 Mount Carathus
 {{% /pageinfo %}}
-Mount Carathus
+
+Level 40 - 50 fire gialon dungeon, occupied by gialon isolationists that have withdrawn from the wars and politics of the other factions. They are only just tolerant of most visitors.

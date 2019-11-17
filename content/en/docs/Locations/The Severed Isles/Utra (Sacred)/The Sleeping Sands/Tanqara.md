@@ -11,4 +11,5 @@ description: >
 {{% pageinfo %}}
 Tanqara
 {{% /pageinfo %}}
-Tanqara
+
+Anushi City

@@ -11,4 +11,5 @@ description: >
 {{% pageinfo %}}
 Skyforge
 {{% /pageinfo %}}
-Skyforge
+
+Can only be reached by wizard teleportation.

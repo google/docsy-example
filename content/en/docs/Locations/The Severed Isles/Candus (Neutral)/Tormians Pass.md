@@ -11,4 +11,5 @@ description: >
 {{% pageinfo %}}
 Tormians Pass
 {{% /pageinfo %}}
-Tormians Pass
+
+An old travel route dug out by some of the original Meroei settlers but now mostly occupied by kobolds. This level 5 - 15 dungeon is still used as a travel route leading south through the mountains, but with limited guards posted, it's much more dangerous.
