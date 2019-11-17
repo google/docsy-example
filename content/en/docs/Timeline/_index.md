@@ -23,21 +23,24 @@ This is the full time line including time loops
 
 -
 
-_ \n**Start of the Primordial Age**
+_ \
+**Start of the Primordial Age**
 
 #### **Solinia is discovered**
 **Era beginning/end**
 
 On it&#39;s journey through stars, the great unknown discovers Solinia
 
-_  _ \n**Core Period of the Primordial Age**
+_  _ \
+**Core Period of the Primordial Age**
 
 #### **The Birth of the Primordials**
 **Celestial**
 
 The Primordials are born and populate Solinia with Life
 
-_  _ \n**2105 PA**
+_  _ \
+**2105 PA**
 
 
 
@@ -46,7 +49,8 @@ _  _ \n**2105 PA**
 
 The God of Balance is left to watch over Solinia by the Primordials
 
-_  _ \n**4000 PA**
+_  _ \
+**4000 PA**
 
 
 
@@ -55,7 +59,8 @@ _  _ \n**4000 PA**
 
 Belshazar sets about to build a planar reality along side the world of Solinia
 
-_  _ \n**4800 PA**
+_  _ \
+**4800 PA**
 
 
 
@@ -83,7 +88,8 @@ The Dragons hold supremecy across the planet
 
 -
 
-_ \n**13040 DA**
+_ \
+**13040 DA**
 
 
 
@@ -92,21 +98,24 @@ _ \n**13040 DA**
 
 A massive planetary body is brought smashing down from the heavens into the reverse side of Solinia by The Weaver
 
-_  _ \n**13041 DA**
+_  _ \
+**13041 DA**
 
 
 
 #### **The site where the The Anchor will be created is formed**
 **Geological / environmental event**
 
-_  _ \n**14230 DA**
+_  _ \
+**14230 DA**
 
 
 
 #### **Dok&#39;a&#39;ta is born**
 **Life, Birth**
 
-_  _ \n**16000 DA**
+_  _ \
+**16000 DA**
 
 
 
@@ -115,21 +124,24 @@ _  _ \n**16000 DA**
 
 The Moons Shima &amp; Aeternitas form from the drifting remains of the impact
 
-_  _ \n**19400 DA**
+_  _ \
+**19400 DA**
 
 
 
 #### **The Kelderan are born**
 **Cultural event**
 
-_  _ \n**19500 DA**
+_  _ \
+**19500 DA**
 
 
 
 #### **The Dal are born**
 **Cultural event**
 
-_  _ \n**19600 DA**
+_  _ \
+**19600 DA**
 
 
 
@@ -138,7 +150,8 @@ _  _ \n**19600 DA**
 
 The lands cooled and the land grew once more, the creatures formed simple wildlife and evolved into a variant of hundreds of creatures, the two outsiders seemed to be at war with one another for a time.
 
-_  _ \n**33000 DA**
+_  _ \
+**33000 DA**
 
 
 
@@ -147,7 +160,8 @@ _  _ \n**33000 DA**
 
 The Weaver departs Solinia
 
-_  _ \n**33100 DA**
+_  _ \
+**33100 DA**
 
 
 
@@ -156,7 +170,8 @@ _  _ \n**33100 DA**
 
 Belshazar forms the Elemental Pantheon to rid the land of The Ancients
 
-_  _ \n**33250 DA**
+_  _ \
+**33250 DA**
 
 
 
@@ -165,7 +180,8 @@ _  _ \n**33250 DA**
 
 Amurru the Deep One would rule the earthern realms and construct a mighty race of stone golems called Gialon
 
-_  _ \n**33250 DA**
+_  _ \
+**33250 DA**
 
 
 
@@ -174,7 +190,8 @@ _  _ \n**33250 DA**
 
 Far above the skies Aerin the Valorous would create vast floating cities from the floating remains of the dead sun that had rought the world and in it build majestic cities populated with angels known as the Valerin who would descend to the earth and bring law and peace upon those deemed fit to remain following the great cleansing
 
-_  _ \n**33250 DA**
+_  _ \
+**33250 DA**
 
 
 
@@ -183,7 +200,8 @@ _  _ \n**33250 DA**
 
 Savira the Enflamed would claim dominance over the flaming remains of the far most corners of the world. By taking from the dragons willingly she would create an unstoppable weapon know as Xephrit Syfyr a Purefire dragon who would lead an army of flaming elementals
 
-_  _ \n**33250 DA**
+_  _ \
+**33250 DA**
 
 
 
@@ -192,7 +210,8 @@ _  _ \n**33250 DA**
 
 Kylia the Tempest would settle the endless oceans with enormous elemental titans and seafolk that would cleanse the lands with tsunamis and endless tempests
 
-_  _ \n**34000 DA**
+_  _ \
+**34000 DA**
 
 
 
@@ -201,7 +220,8 @@ _  _ \n**34000 DA**
 
 Kylia the Tempest forms Raelion - The Field of Storms
 
-_  _ \n**34000 DA**
+_  _ \
+**34000 DA**
 
 
 
@@ -210,7 +230,8 @@ _  _ \n**34000 DA**
 
 Savira the Enflamed forms Sindiril - The Palace of Flames
 
-_  _ \n**34000 DA**
+_  _ \
+**34000 DA**
 
 
 
@@ -219,7 +240,8 @@ _  _ \n**34000 DA**
 
 Aerin the Valorous forms Valisi - The Realm of Valor
 
-_  _ \n**34090 DA**
+_  _ \
+**34090 DA**
 
 
 
@@ -228,7 +250,8 @@ _  _ \n**34090 DA**
 
 By taking from the dragons willingly Savira creates an unstoppable weapon know as Xephrit Syfyr a Purefire dragon who would lead an army of flaming elementals
 
-_  _ \n**34100 DA**
+_  _ \
+**34100 DA**
 
 
 
@@ -237,7 +260,8 @@ _  _ \n**34100 DA**
 
 Far above the skies Aerin the Valorous would create vast floating cities from the floating remains of the dead sun that had rought the world and in it build majestic cities populated with angels known as the Valerin who would descend to the earth and bring law and peace upon those deemed fit to remain following the great cleansing
 
-_  _ \n**34197 DA**
+_  _ \
+**34197 DA**
 
 
 
@@ -246,7 +270,8 @@ _  _ \n**34197 DA**
 
 Kylia the Tempest would settle the endless oceans with enormous elemental titans and seafolk that would cleanse the lands with tsunamis and endless tempests
 
-_  _ \n**34500 DA**
+_  _ \
+**34500 DA**
 
 **40000 DA**
 
@@ -261,7 +286,8 @@ Throughout the millennias that followed the Gods armies fought an endless battle
 
 War between the Elementa Pantheon &amp; The Ancients
 
-_  _ \n**40998 DA**
+_  _ \
+**40998 DA**
 
 
 
@@ -270,14 +296,16 @@ _  _ \n**40998 DA**
 
 The floating cities of Aerin descend to the north of Solinia and form The Garden of the Gods
 
-_  _ \n**42398 DA**
+_  _ \
+**42398 DA**
 
 #### **Methabeht is born**
 **Religious event**
 
 Kylia and Aerin give birth to Methabeht
 
-_  _ \n**42450 DA**
+_  _ \
+**42450 DA**
 
 
 
@@ -286,7 +314,8 @@ _  _ \n**42450 DA**
 
 The first tinai are born from the interbreeding of Dal and Valerin
 
-_  _ \n**44000 DA**
+_  _ \
+**44000 DA**
 
 
 
@@ -314,7 +343,8 @@ The rise of the Kelderan and Dal races
 
 -
 
-_ \n**0 AOA**
+_ \
+**0 AOA**
 
 
 
@@ -323,7 +353,8 @@ _ \n**0 AOA**
 
 The Dragons first notice the flourishing Kelderan and Dal races
 
-_  _ \n**503 AOA**
+_  _ \
+**503 AOA**
 
 
 
@@ -332,7 +363,8 @@ _  _ \n**503 AOA**
 
 The ascendency of the Kelderan and Dal Realms via deplomacy with the Dragons
 
-_  _ \n**503 AOA**
+_  _ \
+**503 AOA**
 
 
 
@@ -341,7 +373,8 @@ _  _ \n**503 AOA**
 
 The golden dragon Dok&#39;a&#39;ta led a diplomatic expedition to the cities of the Kelderan and Dal
 
-_  _ \n**2709 AOA**
+_  _ \
+**2709 AOA**
 
 
 
@@ -369,14 +402,16 @@ The Gods choose Avatars to represent them in a final war amongst the deities
 
 -
 
-_ \n**0 AOD**
+_ \
+**0 AOD**
 
 #### **The Kelderan and Dal Realms fall**
 **Disaster / Destruction**
 
 The Kelderan and Dal Realms fall
 
-_  _ \n**1400 AOD**
+_  _ \
+**1400 AOD**
 
 
 
@@ -404,7 +439,8 @@ Also known as Before Cataclysm
 
 -
 
-_ \n**0 BC**
+_ \
+**0 BC**
 
 
 
@@ -413,7 +449,8 @@ _ \n**0 BC**
 
 The first pilgrimage is made to The Anchor
 
-_  _ \n**849 BC**
+_  _ \
+**849 BC**
 
 
 
@@ -422,35 +459,40 @@ _  _ \n**849 BC**
 
 Ferrelux is formed
 
-_  _ \n**849 BC**
+_  _ \
+**849 BC**
 
 
 
 #### **Shai is born**
 **Life, Birth**
 
-_  _ \n**1486 BC**
+_  _ \
+**1486 BC**
 
 
 
 #### **The Caerthian Empire is invaded**
 **Military action**
 
-_  _ \n**1500 BC**
+_  _ \
+**1500 BC**
 
 
 
 #### **The War of the Four Kingdoms**
 **Military action**
 
-_  _ \n**1500 BC**
+_  _ \
+**1500 BC**
 
 
 
 #### **Shai dies**
 **Life, Death**
 
-_  _ \n**1500 BC**
+_  _ \
+**1500 BC**
 
 
 
@@ -459,132 +501,151 @@ _  _ \n**1500 BC**
 
 Zephyr and Daeuzulus visit the Anchor and meet with Solinia
 
-_  _ \n**1500 BC**
+_  _ \
+**1500 BC**
 
 
 
 #### **The Elevation of mortals (Zephyr, Deazulus etc)**
 **Celestial**
 
-_  _ \n**1750 BC**
+_  _ \
+**1750 BC**
 
 
 
 #### **Akakios is born**
 **Life, Birth**
 
-_  _ \n**1810 BC**
+_  _ \
+**1810 BC**
 
 
 
 #### **Adelita is born**
 **Life, Birth**
 
-_  _ \n**1834 BC**
+_  _ \
+**1834 BC**
 
 
 
 #### **Ghufran is born**
 **Life, Birth**
 
-_  _ \n**2030 BC**
+_  _ \
+**2030 BC**
 
 
 
 #### **Llys Don is formed**
 **Life, Birth**
 
-_  _ \n**2403 BC**
+_  _ \
+**2403 BC**
 
 
 
 #### **Ferrelux falls**
 **Disbandment**
 
-_  _ \n**2709 BC**
+_  _ \
+**2709 BC**
 
 
 
 #### **Leonidas is born**
 **Life, Birth**
 
-_  _ \n**2720 BC**
+_  _ \
+**2720 BC**
 
 
 
 #### **Ghefran dies**
 **Life, Death**
 
-_  _ \n**2758 BC**
+_  _ \
+**2758 BC**
 
 
 
 #### **Tean&#39;Zu is formed**
 **Construction beginning/end**
 
-_  _ \n**2850 BC**
+_  _ \
+**2850 BC**
 
 
 
 #### **Enoch is born**
 **Life, Birth**
 
-_  _ \n**3153 BC**
+_  _ \
+**3153 BC**
 
 
 
 #### **Stormhold is created**
 **Construction beginning/end**
 
-_  _ \n**3545 BC**
+_  _ \
+**3545 BC**
 
 
 
 #### **Shana is born**
 **Life, Birth**
 
-_  _ \n**3882 BC**
+_  _ \
+**3882 BC**
 
 
 
 #### **Azura (Pyramid) is created**
 **Construction beginning/end**
 
-_  _ \n**3927 BC**
+_  _ \
+**3927 BC**
 
 
 
 #### **Beza (Pyramid) is created**
 **Construction beginning/end**
 
-_  _ \n**4130 BC**
+_  _ \
+**4130 BC**
 
 
 
 #### **Alpha is born**
 **Life, Birth**
 
-_  _ \n**4132 BC**
+_  _ \
+**4132 BC**
 
 
 
 #### **Oboron is born**
 **Life, Birth**
 
-_  _ \n**4160 BC**
+_  _ \
+**4160 BC**
 
 
 
 #### **The Fortress of Oshumare is constructed**
 **Construction beginning/end**
 
-_  _ \n**4200 BC**
+_  _ \
+**4200 BC**
 
 
 
 #### **The Oshira are created**
 
-_  _ \n**4211 BC**
+_  _ \
+**4211 BC**
 
 
 
@@ -593,33 +654,38 @@ _  _ \n**4211 BC**
 
 On discovering the destiny of the Oshira, Methabeht visits Zephyr in the Plane of Air and gifts her Aos&#39;Si, the Orb of Wild Magic   On imparting her essence into the Orb and caring for it for many moons, the Orb did crack and emerge the first regal fairy, Queen Asuna
 
-_  _ \n**5003 BC**
+_  _ \
+**5003 BC**
 
 
 
 #### **Xenophon (early Proto Human) experiments with Translocation Magic**
 **Technological achievement**
 
-_  _ \n**5008 BC**
+_  _ \
+**5008 BC**
 
 
 
 #### **Xenophon (City) is created in honour of the master wizard who pioneered teleportation**
 **Construction beginning/end**
 
-_  _ \n**5340 BC**
+_  _ \
+**5340 BC**
 
 
 
 #### **Caer Bedion is created**
 **Construction beginning/end**
 
-_  _ \n**5805 BC**
+_  _ \
+**5805 BC**
 
 #### **The Oshira discover the art of Translocation and begin to inhabit most regions of the world including Taon**
 **Technological achievement**
 
-_  _ \n**6250 BC**
+_  _ \
+**6250 BC**
 
 
 
@@ -628,33 +694,38 @@ _  _ \n**6250 BC**
 
 ##### **Related article**
 
-_  _ \n**The Reign of Hiran Asura**
+_  _ \
+**The Reign of Hiran Asura**
 
 #### **The Cataclysm**
 **Disaster / Destruction**
 
 This is an old tale that has been passed on from generation to generation. Who know&#39;s if the cataclysm ever did happen. If it did it certainly was a long time ago. Longer than any of the current races of the Solinia have been around
 
-_  _ \n**7600 BC**
+_  _ \
+**7600 BC**
 
 
 
 #### **The Tower is created**
 **Construction beginning/end**
 
-_  _ \n**7653 BC**
+_  _ \
+**7653 BC**
 
 #### **Zuriel is born**
 **Life, Birth**
 
-_  _ \n**7835 BC**
+_  _ \
+**7835 BC**
 
 
 
 #### **Esoron is destroyed**
 **Disbandment**
 
-_  _ \n**7835 BC**
+_  _ \
+**7835 BC**
 
 
 
@@ -663,28 +734,32 @@ _  _ \n**7835 BC**
 
 ##### **Related article**
 
-_  _ \n**7836 BC**
+_  _ \
+**7836 BC**
 
 
 
 #### **The Ouroboros is killed**
 **Life, Death**
 
-_  _ \n**7836 BC**
+_  _ \
+**7836 BC**
 
 #### **The Cataclysm Storyline**
 **Extinction**
 
 Hiran Asura goes on his campaign of destruction ending nearly all life on the surface Solinia
 
-_  _ \n**7836 BC**
+_  _ \
+**7836 BC**
 
 
 
 #### **Lord Erebus, a noble of the early Proto Humans, fled for the Under at the cusp of the Cataclysm**
 **Expedition**
 
-_  _ \n**7836 BC**
+_  _ \
+**7836 BC**
 
 
 
@@ -706,7 +781,8 @@ _  _ \n**7836 BC**
 
 -
 
-_ \n**0 PC**
+_ \
+**0 PC**
 
 
 
@@ -717,28 +793,32 @@ Hiran Asura goes on his campaign of destruction ending nearly all life on the su
 
 ##### **Related article**
 
-_  _ \n**0 PC**
+_  _ \
+**0 PC**
 
 
 
 #### **Nijin Village is dropped into boiling lake. Later in the year, the Klacker falls from the sky and makes it home there**
 **Disbandment**
 
-_  _ \n**0 PC**
+_  _ \
+**0 PC**
 
 
 
 #### **Lord Erebus, a noble of the early Proto Humans, fled for the Under at the cusp of the Cataclysm**
 **Expedition**
 
-_  _ \n**0 PC**
+_  _ \
+**0 PC**
 
 
 
 #### **All life on Solinia is destroyed**
 **Extinction**
 
-_  _ \n**0 PC**
+_  _ \
+**0 PC**
 
 #### **The Ouroboros is killed**
 **Life, Death**
@@ -760,7 +840,8 @@ Life on the planet has once again begun to grow
 
 -
 
-_ \n**0 ME**
+_ \
+**0 ME**
 
 
 
@@ -769,84 +850,96 @@ _ \n**0 ME**
 
 Life on the planet has once again begun to grow
 
-_  _ \n**4 ME**
+_  _ \
+**4 ME**
 
 
 
 #### **The Fortress of Oshunmare collapses**
 **Disbandment**
 
-_  _ \n**5 ME**
+_  _ \
+**5 ME**
 
 
 
 #### **The Appearence of the Elder Gods**
 **Celestial**
 
-_  _ \n**2385 ME**
+_  _ \
+**2385 ME**
 
 
 
 #### **The Founding of the Silverdawn Republic**
 **Cultural event**
 
-_  _ \n**2450 ME**
+_  _ \
+**2450 ME**
 
 
 
 #### **The Disbanding of the Silverdawn Republic**
 **Disbandment**
 
-_  _ \n**29734 ME**
+_  _ \
+**29734 ME**
 
 
 
 #### **The Proto Human Empire is born from a collection of city-states, and rapidly expands**
 **Cultural event**
 
-_  _ \n**29945 ME**
+_  _ \
+**29945 ME**
 
 
 
 #### **Proto Human life is eradicated from Alatyr by the expanding empire, who are in turn rebuked by the masterless machines there**
 **Military action**
 
-_  _ \n**29980 ME**
+_  _ \
+**29980 ME**
 
 
 
 #### **The machines of Alatyr coalecse into two groups that could be defined as races, the Zahnfe and the Rauklete**
 **Cultural event**
 
-_  _ \n**29980 ME**
+_  _ \
+**29980 ME**
 
 
 
 #### **The Oshira return to Solinia**
 **Expedition**
 
-_  _ \n**30138 ME**
+_  _ \
+**30138 ME**
 
 
 
 #### **The Proto Human Empire achieves global dominion**
 **Political event**
 
-_  _ \n**30753 ME**
+_  _ \
+**30753 ME**
 
 
 
 #### **The Oshira begin a global campaign conquering many regions**
 **Military action**
 
-_  _ \n**30820 ME**
+_  _ \
+**30820 ME**
 
 
 
 #### **The Oshira turn their armies towards the realms of the Gods by using translocation magic**
 **Military action**
 
-_  _ \n**30952 ME**
+_  _ \
+**30952 ME**
 
 
 
@@ -855,105 +948,120 @@ _  _ \n**30952 ME**
 
 The Fairies, Mysmaal clash with the invading forces the Oshira   The fairies arrive on Solinia at various anchors to the Plane of Air attempting to push back the Oshira
 
-_  _ \n**30954 ME**
+_  _ \
+**30954 ME**
 
 
 
 #### **Zephyr is murdered by Sl&#39;Vastra at the bidding of Deuzulus**
 **Life, Death**
 
-_  _ \n**31000 ME**
+_  _ \
+**31000 ME**
 
 
 
 #### **The Elder Gods depart Solinia leaving the Protohumans with knowledge that would lead to the creation of new races**
 **Civil action**
 
-_  _ \n**35350 ME**
+_  _ \
+**35350 ME**
 
 
 
 #### **What would be named The Ashri Blade is created by the Proto Humans**
 **Technological achievement**
 
-_  _ \n**35496 ME**
+_  _ \
+**35496 ME**
 
 
 
 #### **Protohumans are referred to new names such as Meroei**
 **Cultural event**
 
-_  _ \n**35500 ME**
+_  _ \
+**35500 ME**
 
 
 
 #### **Hope Library is constructed**
 **Construction beginning/end**
 
-_  _ \n**37315 ME**
+_  _ \
+**37315 ME**
 
 
 
 #### **The Temple of Tranquility is constructed**
 **Construction beginning/end**
 
-_  _ \n**37546 ME**
+_  _ \
+**37546 ME**
 
 
 
 #### **Ashri is Born**
 **Life, Birth**
 
-_  _ \n**37569 ME**
+_  _ \
+**37569 ME**
 
 
 
 #### **Sabe Alexander is assassinated**
 **Life, Death**
 
-_  _ \n**37571 ME**
+_  _ \
+**37571 ME**
 
 
 
 #### **The Ashri Blade is shattered**
 **Disaster / Destruction**
 
-_  _ \n**37571 ME**
+_  _ \
+**37571 ME**
 
 
 
 #### **The Mysmaal are granted the gift of undeath by Somnus**
 **Religious event**
 
-_  _ \n**37571 ME**
+_  _ \
+**37571 ME**
 
 
 
 #### **Ashri steals The Ashri Blade**
 **Life, Achievement/ Win**
 
-_  _ \n**37764 ME**
+_  _ \
+**37764 ME**
 
 
 
 #### **The Proto Human Empire begins to decay rapidly**
 **Cultural event**
 
-_  _ \n**37797 ME**
+_  _ \
+**37797 ME**
 
 
 
 #### **Mt. Yutacan is sealed by uprising slaves**
 **Military action**
 
-_  _ \n**37823 ME**
+_  _ \
+**37823 ME**
 
 
 
 #### **The Takafi masks are animated in Jingara**
 **Technological achievement**
 
-_  _ \n**37840 ME**
+_  _ \
+**37840 ME**
 
 
 
@@ -962,7 +1070,8 @@ _  _ \n**37840 ME**
 
 A clash of epic magic in southern Metnalba radically alters the landscape, dropping the ground into oblivion and creating Green Hell
 
-_  _ \n**37933 ME**
+_  _ \
+**37933 ME**
 
 
 
@@ -971,7 +1080,8 @@ _  _ \n**37933 ME**
 
 D&#39;ryle escapes captivity. Has a bounty put on his head.
 
-_  _ \n**37943 ME**
+_  _ \
+**37943 ME**
 
 
 
@@ -980,7 +1090,8 @@ _  _ \n**37943 ME**
 
 Planning against what seemed inevitable, a number of proto humans are stored from the ravages of time through a mixture of magic and science. Rhukadlor is among them.
 
-_  _ \n**37946 ME**
+_  _ \
+**37946 ME**
 
 
 
@@ -989,14 +1100,16 @@ _  _ \n**37946 ME**
 
 The Proto Human Empire lays in ruins, the overwhelming majority of humans are dead
 
-_  _ \n**37947 ME**
+_  _ \
+**37947 ME**
 
 #### **The defense of Hope Library**
 **Military action**
 
 The All Consumer defends Hope Library from eradication. Cheju becomes a safe haven for scholars.
 
-_  _ \n**38006 ME**
+_  _ \
+**38006 ME**
 
 
 
@@ -1005,105 +1118,120 @@ _  _ \n**38006 ME**
 
 After a crisis is averted, Time Mage Village is founded.
 
-_  _ \n**38283 ME**
+_  _ \
+**38283 ME**
 
 
 
 #### **The Temple of Tranquility is lost**
 **Construction beginning/end**
 
-_  _ \n**38304 ME**
+_  _ \
+**38304 ME**
 
 
 
 #### **The Monastary of Amonsul is constructed**
 **Construction beginning/end**
 
-_  _ \n**42503 ME**
+_  _ \
+**42503 ME**
 
 
 
 #### **Chelthix is formed**
 **Construction beginning/end**
 
-_  _ \n**43620 ME**
+_  _ \
+**43620 ME**
 
 
 
 #### **Tean&#39;Zu is settled by the Lidkim**
 **Cultural event**
 
-_  _ \n**48980 ME**
+_  _ \
+**48980 ME**
 
 
 
 #### **Feryn is born**
 **Life, Birth**
 
-_  _ \n**49107 ME**
+_  _ \
+**49107 ME**
 
 
 
 #### **The Hoakan&#39;s evacuate Agartha and leave Nasudana**
 **Population Migration / Travel**
 
-_  _ \n**49107 ME**
+_  _ \
+**49107 ME**
 
 
 
 #### **Caer Bedion falls**
 **Disbandment**
 
-_  _ \n**49108 ME**
+_  _ \
+**49108 ME**
 
 
 
 #### **Chelthix falls**
 **Disbandment**
 
-_  _ \n**49110 ME**
+_  _ \
+**49110 ME**
 
 
 
 #### **The Vishim settle Ravenholme**
 **Cultural event**
 
-_  _ \n**49520 ME**
+_  _ \
+**49520 ME**
 
 
 
 #### **Eusebes is destroyed**
 **Disbandment**
 
-_  _ \n**49690 ME**
+_  _ \
+**49690 ME**
 
 
 
 #### **Kitezh is formed**
 **Construction beginning/end**
 
-_  _ \n**50421 ME**
+_  _ \
+**50421 ME**
 
 
 
 #### **The Village of Hoa&#39;Kar is founded**
 **Construction beginning/end**
 
-_  _ \n**51300 ME**
+_  _ \
+**51300 ME**
 
 
 
 #### **Kitezh is destroyed**
 **Disbandment**
 
-_  _ \n**51390 ME**
+_  _ \
+**51390 ME**
 
 
 
 #### **The Citadel of Kandam is formed**
 **Construction beginning/end**
 
-_  _ \n**51420 ME**
+_  _ \
+**51420 ME**
 
 
 
@@ -1127,7 +1255,8 @@ The first of many empires to be named The Meropian Empire begins to grow on in t
 
 -
 
-_ \n**0 OE**
+_ \
+**0 OE**
 
 
 
@@ -1136,49 +1265,56 @@ _ \n**0 OE**
 
 The first of many empires to be named The Meropian Empire begins to grow on in the ancestral lands far to the east of Solinia. It&#39;s existence would stand for countless aeons and spawn many new empires in the west to honour its name
 
-_  _ \n**0 OE**
+_  _ \
+**0 OE**
 
 
 
 #### **Meropis is formed**
 **Construction beginning/end**
 
-_  _ \n**4 OE**
+_  _ \
+**4 OE**
 
 
 
 #### **The unpopulated land of Alatyr suffers unusual shudders below its surface (taktevolken drilling)**
 **Geological / environmental event**
 
-_  _ \n**5 OE**
+_  _ \
+**5 OE**
 
 
 
 #### **The Elder Gods return once again to Solinia**
 **Celestial**
 
-_  _ \n**10 OE**
+_  _ \
+**10 OE**
 
 
 
 #### **The Taktevolken emerge seemingly from the wilderness of Alatyr, and swiftly carve an empire**
 **Cultural event**
 
-_  _ \n**505 OE**
+_  _ \
+**505 OE**
 
 
 
 #### **Element 7 is lost**
 **Expedition**
 
-_  _ \n**505 OE**
+_  _ \
+**505 OE**
 
 
 
 #### **An earthquake hits Solinia in the Dessai area. The resulting rubble knocks out the All Consumer. The All Consumer dreams, leading to the mutation and madness of Element 6. They disappear when it wakes.**
 **Geological / environmental event**
 
-_  _ \n**1235 OE**
+_  _ \
+**1235 OE**
 
 
 
@@ -1200,28 +1336,32 @@ _  _ \n**1235 OE**
 
 -
 
-_ \n**16 AE**
+_ \
+**16 AE**
 
 
 
 #### **Alliances are made between Meropians, Eusebians, Chunel and Mysmaal**
 **Political event**
 
-_  _ \n**30 AE**
+_  _ \
+**30 AE**
 
 
 
 #### **The Mysmaal turn their back on their allies and war brews**
 **Political event**
 
-_  _ \n**68 AE**
+_  _ \
+**68 AE**
 
 
 
 #### **Following endless war, settlers abandon lands in search of even newer frontiers**
 **Population Migration / Travel**
 
-_  _ \n**91 AE**
+_  _ \
+**91 AE**
 
 
 
@@ -1229,40 +1369,46 @@ _  _ \n**91 AE**
 **Construction beginning/end**
 
 
-_  _ \n**146 AE**
+_  _ \
+**146 AE**
 
 #### **Alaris and Northreach, a northern bastion, is abandoned following massive undead attacks. The races flee to the North through the Northlands and eventually discover an island off the continent of Kumari**
 **Disbandment**
 
-_  _ \n**149 AE**
+_  _ \
+**149 AE**
 
 
 
 #### **The Northlands are discovered and settled**
 **Discovery, Exploration**
 
-_  _ \n**151 AE**
+_  _ \
+**151 AE**
 
 
 
 #### **The island of Aquion is discovered and settled**
 **Discovery, Exploration**
 
-_  _ \n**151 AE**
+_  _ \
+**151 AE**
 
 
 
 #### **Kumari is discovered**
 **Discovery, Exploration**
 
-_  _ \n**296 AE**
+_  _ \
+**296 AE**
 
 
 
 #### **The larger landmass of Kumari is settled by races of the west**
 **Population Migration / Travel**
 
-_  _ \n**5298 AE**
+_  _ \
+**5298 AE**
 
 
 
@@ -1271,7 +1417,8 @@ _  _ \n**5298 AE**
 
 The populations among the west flourish and new empires rise and fall. One of these would be the New Meropian Empire which influences span far and wide Over time and great seperation noticable racial differences emerge between the races
 
-_  _ \n**21996 AE**
+_  _ \
+**21996 AE**
 
 
 
@@ -1280,7 +1427,8 @@ _  _ \n**21996 AE**
 
 &quot;The greatest modern races are predominent in the west including: Modern Human, High Elf, Fairy, Wood Elf, Half Elf, Dark Elf, Vampire, Barbarian, Orc, Ogre, Troll, Half Dragon, Gnome, Goblin, Hobbit, High Human, Undead, Dwarf, Ratman, Lizardman, Elemental, Kobold, Angel, Fallen Angel   The older ancestral races still continue to flourish in the east &quot;
 
-_  _ \n**22299 AE**
+_  _ \
+**22299 AE**
 
 
 
@@ -1289,28 +1437,32 @@ _  _ \n**22299 AE**
 
 The New Meropian Empire after years of growth begins to suffer economic collapse resulting in rioting and the exile of their leader
 
-_  _ \n**22391 AE**
+_  _ \
+**22391 AE**
 
 
 
 #### **The Tomb of Hiran Asura is breached by the dragon Python on the lands of Kumari**
 **Military action**
 
-_  _ \n**22416 AE**
+_  _ \
+**22416 AE**
 
 
 
 #### **Races flee from Kumari**
 **Population Migration / Travel**
 
-_  _ \n**22416 AE**
+_  _ \
+**22416 AE**
 
 
 
 #### **The Destruction of Kumari**
 **Geological / environmental event**
 
-_  _ \n**22486 AE**
+_  _ \
+**22486 AE**
 
 
 
@@ -1319,7 +1471,8 @@ _  _ \n**22486 AE**
 
 Optar discovers the arrival of a coming Comet which will annihalate all life on Solinia.  The event is misinterpretted to represent a prophecy which actually relates to the Jin
 
-_  _ \n**22505 AE**
+_  _ \
+**22505 AE**
 
 
 
@@ -1345,7 +1498,8 @@ A great battle between the Taktevolken and the Jin on Nuchalnuth resulted in a c
 
 -
 
-_ \n**0 AC**
+_ \
+**0 AC**
 
 
 
@@ -1354,28 +1508,32 @@ _ \n**0 AC**
 
 The People of the Jungle populate the lands of the Angel Isles and Thundering Sea
 
-_  _ \n**5 AC**
+_  _ \
+**5 AC**
 
 
 
 #### **The Book of Destiny is discovered**
 **Life, Achievement/ Win**
 
-_  _ \n**15 AC**
+_  _ \
+**15 AC**
 
 
 
 #### **Dark Elves discover the origins of Deuzulus**
 **Cultural event**
 
-_  _ \n**16 AC**
+_  _ \
+**16 AC**
 
 
 
 #### **Natalie arrives in Qylia far in the past**
 **Life, Relocation**
 
-_  _ \n**20 AC**
+_  _ \
+**20 AC**
 
 
 
@@ -1384,14 +1542,16 @@ _  _ \n**20 AC**
 
 The Gods descend to Solinia to choose mortals who would become their representative in the war to come
 
-_  _ \n**89 AC**
+_  _ \
+**89 AC**
 
 
 
 #### **The Final War of the Gods**
 **Military action**
 
-_  _ \n**90 AC**
+_  _ \
+**90 AC**
 
 
 
@@ -1400,7 +1560,8 @@ _  _ \n**90 AC**
 
 Following the events of the last war, Methabeht fuses parts of the future, past and present together. The races and places of different times form in a mysterious land called Amaria
 
-_  _ \n**90 AC**
+_  _ \
+**90 AC**
 
 #### **Methabeht sacrifices his life to hold the past and present together**
 **Life, Death**
@@ -1422,28 +1583,32 @@ _  _ \n**90 AC**
 
 -
 
-_ \n**0 AV**
+_ \
+**0 AV**
 
 
 
 #### **(NPCs) Survivors of the Caerthian empire land on islands to the far north**
 **Population Migration / Travel**
 
-_  _ \n**0 AV**
+_  _ \
+**0 AV**
 
 #### **(Player) Survivors of the Caerthian empire land on Isle of Olendor**
 **Population Migration / Travel**
 
 Following a great storm, the ships that escaped the Caerthian Empire are seperated. One of the Vessels crash lands on the Isle of Olendor
 
-_  _ \n**119 AV**
+_  _ \
+**119 AV**
 
 
 
 #### **(NPCs) The Three Kingdoms flourish**
 **Cultural event**
 
-_ \n**119 AV**
+_ \
+**119 AV**
 
 5
 

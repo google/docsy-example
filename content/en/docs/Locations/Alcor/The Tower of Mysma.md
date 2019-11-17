@@ -11,7 +11,10 @@ description: >
 {{% pageinfo %}}
 The Tower of Mysma
 {{% /pageinfo %}}
-Home to the vampiric Mysmaal  None travel here except fool-hardy treasure hunters hoping to recover ancient artifacts. However all they will find here is undeath or something worse\n**History**  Not much is known about the tower or it's people. The tower itself is certainly from before the cataclsym however it's people may not be. Mysma acts as a breeding ground for vampires and a house for other loyal undead that act as servents to the residents which have mastered the dark arts. Mysma has been documented as being present during and long before the city of Eusebes was ruined. It is believed to have been once a religious structure that served some purpose to a long lost race but little can be confirmed without venturing deep into the infested citadel\n**Locations of Interest**  The tower itself  The pit of the dead\n**Threats**  Significant undead and vampire presence.
+Home to the vampiric Mysmaal  None travel here except fool-hardy treasure hunters hoping to recover ancient artifacts. However all they will find here is undeath or something worse\
+**History**  Not much is known about the tower or it's people. The tower itself is certainly from before the cataclsym however it's people may not be. Mysma acts as a breeding ground for vampires and a house for other loyal undead that act as servents to the residents which have mastered the dark arts. Mysma has been documented as being present during and long before the city of Eusebes was ruined. It is believed to have been once a religious structure that served some purpose to a long lost race but little can be confirmed without venturing deep into the infested citadel\
+**Locations of Interest**  The tower itself  The pit of the dead\
+**Threats**  Significant undead and vampire presence.
 
 ## Defences
 
