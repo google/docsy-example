@@ -25,7 +25,7 @@ The Vishim, of Solinia are a majestic and beautiful people often characterized b
 
 ### Biological Traits
 
-**Hair Color** Often fair color, may be brown or black  **Skin Colors** Varied  **Lifespan** Immortal
+**Hair Color** Often fair color, may be brown or black\n**Skin Colors** Varied\n**Lifespan** Immortal
 
 ### Dietary Needs and Habits
 
@@ -77,6 +77,6 @@ Worshippers of Auroris and Boralis
 
 ### History
 
-**Origins**  The Vishim are one of the oldest races to walk Solinia and are descendents of the Eusebians. The most ancient records of the Vishim related to the City of Caer Bedion of Asgarad where they forged a new empire from Ravenholme. The Vishim were one of the first races to sail the oceans of Solinia and discover the Meroei which they forged a relationship which lasts until this day  Once a holy Vishim order in the city of Alaris, the subrace known as High Elves have become a noble and virtuous order seeking only to honour their gods. Their fanatical devotion has led them to discover all manners of new magic (which they are reluctant to share with non-believers, even their elven cousins) and their knights have been known to rival even the many paladin orders of Tsiyon.  **Contemporary History**  Being such a peaceful race the Vishim have not involved themselves in any outside wars. However, there is one notable blemish to their history. A civl war of proportions the world had not seen then and has not seen the likes of since. Thousands perished by the enchanted blades of Vishim warriors. Women and children were taken to be experimented on and lead to some of the Vishim most destructive types of magic. However, out of the blood came life. Through this came the Vishim promise not to kill without true reason.
+**Origins**  The Vishim are one of the oldest races to walk Solinia and are descendents of the Eusebians. The most ancient records of the Vishim related to the City of Caer Bedion of Asgarad where they forged a new empire from Ravenholme. The Vishim were one of the first races to sail the oceans of Solinia and discover the Meroei which they forged a relationship which lasts until this day  Once a holy Vishim order in the city of Alaris, the subrace known as High Elves have become a noble and virtuous order seeking only to honour their gods. Their fanatical devotion has led them to discover all manners of new magic (which they are reluctant to share with non-believers, even their elven cousins) and their knights have been known to rival even the many paladin orders of Tsiyon.\n**Contemporary History**  Being such a peaceful race the Vishim have not involved themselves in any outside wars. However, there is one notable blemish to their history. A civl war of proportions the world had not seen then and has not seen the likes of since. Thousands perished by the enchanted blades of Vishim warriors. Women and children were taken to be experimented on and lead to some of the Vishim most destructive types of magic. However, out of the blood came life. Through this came the Vishim promise not to kill without true reason.
 
     

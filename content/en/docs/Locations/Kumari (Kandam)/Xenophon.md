@@ -11,7 +11,7 @@ description: >
 {{% pageinfo %}}
 Xenophon
 {{% /pageinfo %}}
-Xenophon is believed to have been founded by a pre-cataclysm civilisation who's name is since lost to the sands of time  **Locations of Interest**  The Pyramid of Xenophon  **Threats**  Wolves, the occasional undead
+Xenophon is believed to have been founded by a pre-cataclysm civilisation who's name is since lost to the sands of time\n**Locations of Interest**  The Pyramid of Xenophon\n**Threats**  Wolves, the occasional undead
 
 ## Demographics
 
