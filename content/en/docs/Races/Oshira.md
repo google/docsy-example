@@ -16,16 +16,16 @@ The Oshira are an ancient snake like race that have mastered the dark arts and c
 ## Civilization and Culture
 
 
-            <div class="">
-                                  
-                  
-                  
-                 
-                 
-                 
-                 
-                 
-                                                                                                    
+<div class="">
+          
+      
+      
+     
+     
+     
+     
+     
+    
 
 ### History
 
@@ -39,4 +39,4 @@ Empress Sl'Vastra the Ravager, Demi God of Rage
 
 Lizardmen are often found worshipping Oshira
 
-                            
+    

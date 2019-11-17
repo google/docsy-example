@@ -16,18 +16,18 @@ Nasudana is home to the Gialon an elemental race hailing from The Temple of Syfy
 ## Geography
 
 
-            Nasudana is entirely covered in forest, except for the north eastern mountains surrounding The Temple of Syfyr. This place is also home to an inactive Volcano which the Gialon seem to have a natural affinity to and worship it as a god.
-                            
+Nasudana is entirely covered in forest, except for the north eastern mountains surrounding The Temple of Syfyr. This place is also home to an inactive Volcano which the Gialon seem to have a natural affinity to and worship it as a god.
+    
 
 ## Flora & Fauna
 
 
-            Many rare flowers can be found in the forests which are often used as perfumes and for some herbal remedies
+Many rare flowers can be found in the forests which are often used as perfumes and for some herbal remedies
 
 A large proportion of birds, woodland creatures and earth elementals. Some fire elementals can also be found near the volcano but they do not seem to venture much further. However, this has not always been the case the Vishim have discovered many burned sections of the forest that appear to have regrown at a rapid rate.
-                            
+    
 
 ## Natural Resources
 
 
-            This continent is home to many unusual forms of metal and stone which are mostly exported to Westhaven by the Vishim.
+This continent is home to many unusual forms of metal and stone which are mostly exported to Westhaven by the Vishim.

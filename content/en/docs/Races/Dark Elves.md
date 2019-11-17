@@ -16,22 +16,22 @@ A twisted visage of an elf created by the Mysmaal by using vampiric blood to cor
 ## Basic Information
 
 
-            <div class="">
-                                                                                                                  
+<div class="">
+      
 
 ### Dietary Needs and Habits
 
 Varied
 
-                               
-            
-                            
+       
+
+    
 
 ## Additional Information
 
 
-            <div class="">
-                                   
+<div class="">
+           
 
 ### Social Structure
 
@@ -41,20 +41,20 @@ The Dark Elf society runs on a theocracy government, meaning that religion runs 
 
 Hair typically white to black, sometimes midnight blue
 
-                                                                                            
-                            
+        
+    
 
 ## Civilization and Culture
 
 
-            <div class="">
-                                  
-                  
-                  
-                 
-                 
-                 
-                                    
+<div class="">
+          
+      
+      
+     
+     
+     
+
 
 ### Major Language Groups and Dialects
 
@@ -68,4 +68,4 @@ Worshippers of Deuzulus
 
 Dark Elves, sometimes referred to as corrupted Vishim, are the product of torture and experimentation of the Vishim, all for a product of an obedient slave. The whole process was a complete failure as the newly create "slaves" slaughtered their masters, and their saviors who tried to rescue them.  The Mysmaal nest where they were kept became a new home to the newly founded race, and a newly founded dark power. They are truly dangerous in combat and do well to be feared in dark and light magic, with all their worship going to the god of hatred, Deuzulus.  Dark Elves often view themselves as a superior race to all others due to the Mysmaal's selective choice of increasing the raw strength and the intelligence of the race, which leads the Dark Elves to compare themselves to the brightest of thinkers and the bulkiest fighters.
 
-                                                                            
+    

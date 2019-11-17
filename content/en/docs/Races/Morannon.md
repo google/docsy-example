@@ -16,36 +16,36 @@ The Morannon were one of the earliest races to emerge on Solinia. Alongside Gobe
 ## Basic Information
 
 
-            <div class="">
-                                    
+<div class="">
+
 
 ### Anatomy & Morphology
 
 On average, Morannon are about 4’ tall. Many appear a bit fat to Humans, however this is most often not the case, since they are simply built much stockier than Humans would expect. Females are usually shorter than males, and both genders wear jewelry. Male Morannon take great pride in their magnificent beards, while even some females can grow them, which is considered a special blessing among morannon.
 
-                                                                                                             
-            
-                            
+ 
+
+    
 
 ## Additional Information
 
 
-            <div class="">
-                                             
-                                    
+<div class="">
+         
+
 
 ### Facial characteristics
 
 Browns and black, aging to grey hair
 
-                                                                                            
-                            
+        
+    
 
 ## Civilization and Culture
 
 
-            <div class="">
-                                                    
+<div class="">
+    
 
 ### Major Organizations
 
@@ -67,4 +67,4 @@ The Morannon are known for their stubbornness and dislike for outsiders. They ar
 
 Worshippers of Tisroeh
 
-                                                                                                            
+

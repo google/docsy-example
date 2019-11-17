@@ -16,6 +16,6 @@ A famous royal house during the Proto Human era
 ## History
 
 
-            Major Members
+Major Members
 
 Sabe Alexander

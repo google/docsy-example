@@ -14,7 +14,7 @@ Alchemy
 
 # Recipes
 
-| Recipe              | Skill   | MinSkill | Item1               | Item2                | Output Item         | Class  |
+| Recipe  | Skill   | MinSkill | Item1   | Item2    | Output Item         | Class  |
 |---------------------|---------|----------|---------------------|----------------------|---------------------|--------|
 | SOLINIAN_HEART_DUST | ALCHEMY | 0        | Mortar_and_Pestle   | Solinian_Heart       | Solinian_Heart_Dust | SHAMAN |
 | HEALTH_POTION_I     | ALCHEMY | 30       | Empty_Bottle        | Solinian_Heart_Dust  | Health_Potion_I     | SHAMAN |

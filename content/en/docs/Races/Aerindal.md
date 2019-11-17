@@ -16,22 +16,22 @@ It is said that among the Sky Elves of Qylia was born a young elf named Zephyr w
 ## Additional Information
 
 
-            <div class="">
-                                             
-                                    
+<div class="">
+         
+
 
 ### Facial characteristics
 
 Whites and light blues
 
-                                                                                            
-                            
+        
+    
 
 ## Civilization and Culture
 
 
-            <div class="">
-                                                    
+<div class="">
+    
 
 ### Major Organizations
 
@@ -53,4 +53,4 @@ The Aerindal are Sky Elves that are cousins to the Caerthians. Though not enemie
 
 Active King is: King Aldaer Vaelan  Kings family tree is: https://www.myheritage.com/site-family-tree-379327841/solinia?familyTreeID=1&rootIndivudalID=1000019&treeMode=canvas
 
-                                                            
+

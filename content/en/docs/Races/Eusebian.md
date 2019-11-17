@@ -14,7 +14,7 @@ Eusebian
 The Eusebians of Alcor share blood with the Vishim and Meroei making them one of Solinias earliest half elven races. They are skilled with poisons and are master hunters and worshippers of Golkara, Ashtor, Lumyle and Lunarine
 
 ## Basic Information
-                                    
+
 ### Anatomy & Morphology
 
 Eusebians are half elves, famed for their short stature and pointed ears, often with piercings. They are humanoid, and they encompass as much variation as seen in Humans but their hair colour is most often shades of brown.  Despite their small stature they are agile and strong, making good hunters.

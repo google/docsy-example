@@ -16,18 +16,18 @@ The Meroei hold dominion over many of the lands of Halcron and have built the gr
 ## Geography
 
 
-            Rolling plains and mountains cover most of Halcron
-                            
+Rolling plains and mountains cover most of Halcron
+    
 
 ## Flora & Fauna
 
 
-            Wolves, snakes
-                            
+Wolves, snakes
+    
 
 ## Natural Resources
 
 
-            Halcron contains many types of wild animals that roams the forests and plains.
+Halcron contains many types of wild animals that roams the forests and plains.
 
 Halcron is also unique in that the Cryswind Peak and the mountains surrounding it contain nearly all types of metals used by the Meroei.

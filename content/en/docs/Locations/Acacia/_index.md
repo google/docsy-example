@@ -16,15 +16,15 @@ Acacia is home to various casts of Lidkim, a lizard like race that have existed 
 ## Geography
 
 
-            The continent itself is split into two very distinct plateus that are accessible by the giant waterfall next to the Lost Chelthix.
+The continent itself is split into two very distinct plateus that are accessible by the giant waterfall next to the Lost Chelthix.
 
 Also to the north west can be found a long stretch of mountains where the pyramids Azura and Beza can be found as well as a sacred mountain known to the Lidkim as the White Mount.
-                            
+    
 
 ## Flora & Fauna
 
 
-            Due to the unusual geography this land contains all manners of unusual stones and plantlife. 
+Due to the unusual geography this land contains all manners of unusual stones and plantlife. 
 
 The lower section of the island is home to many snakes and cats that appear to have made their way from the western plateau.
 

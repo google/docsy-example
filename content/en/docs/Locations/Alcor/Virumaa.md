@@ -16,10 +16,10 @@ Apart from the small outposts of the Kandamese and the entrance to the city of K
 ## Geography
 
 
-            This tropical jungle sits on the southern borders of the continent of Alcor. It rests to the south of the swamps of Scheria and is commonly associated with the Kandam Empire who's capital is located here.
-                            
+This tropical jungle sits on the southern borders of the continent of Alcor. It rests to the south of the swamps of Scheria and is commonly associated with the Kandam Empire who's capital is located here.
+    
 
 ## Flora & Fauna
 
 
-            Many poisons are found within the bogs of this swamp as well as reptiles and slugs which can be used to make all manners of clothing and unusual dishes. It is also a major source of timber to the Kandam Empire.
+Many poisons are found within the bogs of this swamp as well as reptiles and slugs which can be used to make all manners of clothing and unusual dishes. It is also a major source of timber to the Kandam Empire.

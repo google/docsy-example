@@ -16,16 +16,16 @@ Home to the Vishim a human like race that once hailed from Caer Bedion.  Also a 
 ## Geography
 
 
-            Asgarad is mostly covered in tundra, mountains and forests and is situated in the very far south of the southern hemisphere.
-                            
+Asgarad is mostly covered in tundra, mountains and forests and is situated in the very far south of the southern hemisphere.
+    
 
 ## Flora & Fauna
 
 
-            In the snow covered peaks many polar bears, mammoths and wolves can be found. This is a common source of protein for the villages of Lunacia and Faen'Dan. In the outer areas beyond the snowy peaks one may find a variety of wolves, rabbits and many birds which the Vishim appear to avoid hunting in favour of wild fruits and nuts except in the occasional need for population control which they normally leave to the Caer Bedion Rangers.
-                            
+In the snow covered peaks many polar bears, mammoths and wolves can be found. This is a common source of protein for the villages of Lunacia and Faen'Dan. In the outer areas beyond the snowy peaks one may find a variety of wolves, rabbits and many birds which the Vishim appear to avoid hunting in favour of wild fruits and nuts except in the occasional need for population control which they normally leave to the Caer Bedion Rangers.
+    
 
 ## Natural Resources
 
 
-            Stone, metals and timber are in high quantity in this land. Also of note is a unique type of ice that appears to be an excellent for building if kept at the correct temperatures. This has been attributed to the natural beauty of Caer Bedion which is completely built of this material.
+Stone, metals and timber are in high quantity in this land. Also of note is a unique type of ice that appears to be an excellent for building if kept at the correct temperatures. This has been attributed to the natural beauty of Caer Bedion which is completely built of this material.

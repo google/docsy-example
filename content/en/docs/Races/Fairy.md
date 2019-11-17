@@ -16,8 +16,8 @@ Fairies are small planar creatures that possess translucent wings that carry the
 ## Basic Information
 
 
-            <div class="">
-                                    
+<div class="">
+
 
 ### Anatomy & Morphology
 
@@ -39,15 +39,15 @@ Due to their mixed origins of the gods of Air and Nature fairies generally prefe
 
 Fairies are herbivores but require food grown in areas that naturally yield high amounts of arcane energy, this is used to sustain their ethereal existence beyond their home of the Plane of Air
 
-                               
-            
-                            
+       
+
+    
 
 ## Additional Information
 
 
-            <div class="">
-                                   
+<div class="">
+           
 
 ### Social Structure
 
@@ -73,4 +73,4 @@ Fairies are capable of sensing the stream of mana that flows through and from va
 
 Fairies are highly reliant on the plants they grow from during their long pupal stage as the plants will feed the arcane energy to the growing child. Therefore the main structural purpose of the fairy species is defense of the plant kingdom that surrounds the fairy kingdom
 
-                            
+    

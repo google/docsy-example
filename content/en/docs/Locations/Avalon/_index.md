@@ -16,15 +16,15 @@ Originally located on their first maiden voyage from Asgarad, the Vishim have ma
 ## Geography
 
 
-            Much of the western area of this land is covered in dense forests which provide a bounty of fruits and berries. To the center of the island can be found Mt Athos believed to be a holy location to the native stone elementals.
+Much of the western area of this land is covered in dense forests which provide a bounty of fruits and berries. To the center of the island can be found Mt Athos believed to be a holy location to the native stone elementals.
 Resources
 
 Many varieties of rocks can be found on this location as well as an abundant supply of timber, fruit and some freshwater fish.
-                            
+    
 
 ## Flora & Fauna
 
 
-            Most wildlife here are forest dwellers including wolves, bears and other animals.
+Most wildlife here are forest dwellers including wolves, bears and other animals.
 
 The mountains themselves are home to a number of stone elementals.
