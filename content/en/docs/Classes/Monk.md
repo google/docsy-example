@@ -35,3 +35,7 @@ Riposte at level 35
 Double Attack at level 15 
 
 Safe Fall at level 3
+
+**Spells**
+See [Spells](../../spells)   
+

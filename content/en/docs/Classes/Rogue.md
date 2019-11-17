@@ -127,3 +127,7 @@ Dual Wield at level 13
 ### Statistics Recommendations
 
 The main stats for rogue are STR AGI and DEX, STR it's used to calculate the damage the rogue does, AGI to calculate the dodge chance and DEX for the bow damage, chance to weapon proc and dual wield.
+
+**Spells**
+See [Spells](../../spells)   
+

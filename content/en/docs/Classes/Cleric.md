@@ -33,3 +33,7 @@ Spell Specialisation at level 30
 **Statistics Recommendations**
 
 STA WIS STR
+
+**Spells**
+See [Spells](../../spells)   
+

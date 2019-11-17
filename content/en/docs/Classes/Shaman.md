@@ -45,3 +45,7 @@ High Magic resistance
 **Lore**
 
 Shamans are similar to Clerics in a more tribal sense. They may be seen as heretics.
+
+**Spells**
+See [Spells](../../spells)   
+

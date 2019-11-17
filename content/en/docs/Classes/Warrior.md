@@ -47,3 +47,7 @@ Dual Wield at level 13
 **Statistics Recommendations**
 
 STA STR AGI
+
+**Spells**
+See [Spells](../../spells)   
+

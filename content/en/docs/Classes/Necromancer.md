@@ -95,3 +95,7 @@ DEX and INT + anything with high health or mana
 **Gear Recommendations**
 
 Gear you find in dungeons can be really neat, but crafting is definitely the way to go. If you don't feel like leveling crafting, you can always buy from someone or continue in the dungeons. Mythical is the best of gear, but also incredibly rare.
+
+**Spells**
+See [Spells](../../spells)   
+

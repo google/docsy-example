@@ -20,3 +20,7 @@ The wizard profession is one of mastery over Arcane magics. This would include u
 Most wizards learn their practice from other masters who of the art and often are patrons of Mariana, the Goddess of Magic 
 
 Wizards are able to unleash exceptional damage on their foes but are extremely weak in combat, due to this reason they often travel with a party for which they are appreciated due to their ability to Translocate
+
+**Spells**
+See [Spells](../../spells)   
+

@@ -37,3 +37,7 @@ Riposte at level 20
 Double Attack at level 20 
 
 Dual Wield at level 17
+
+**Spells**
+See [Spells](../../spells)   
+

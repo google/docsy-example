@@ -22,3 +22,7 @@ Druids command the power of nature such as wind and lightning. Typically these p
 
 Druids are also known for their ability to teleport as well as command the rain at will 
 The profession is an ancient one and few know its origins, some believe its advent was most likely the earliest if not at the same time as shamanism
+
+**Spells**
+See [Spells](../../spells)   
+

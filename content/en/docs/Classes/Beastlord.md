@@ -21,3 +21,7 @@ Beastlords are primarily a melee class, with the ability to wear leather armor o
 Beastlords prepare for battle by calling on their animal warder and increasing the creature's natural abilities with spells 
 
 Beastlords are one of the major 4 pet classes and as such are highly dependent on their companions
+
+**Spells**
+See [Spells](../../spells)   
+
