@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Isle of Olendor
 {{% /pageinfo %}}
-The home of the Keepers of the Eternal
+The home of the Keepers of the Eternal in The Elezuan Deep
