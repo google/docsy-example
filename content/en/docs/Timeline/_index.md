@@ -30,19 +30,12 @@ _   **Start of the Primordial Age**
 
 On it&#39;s journey through stars, the great unknown discovers Solinia
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cc5a0d4d0-2c6e-40e5-b1ec-8620f0faed73)
-
-**Related Location**
-[solinia-article-archived-1574015477solinia-article-archived-1574015477](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Csolinia-article-archived-1574015477)
-
 _  _   **Core Period of the Primordial Age**
 
 #### **The Birth of the Primordials**
 **Celestial**
 
 The Primordials are born and populate Solinia with Life
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cc1a234d6-a1d8-4908-bc3f-ae4255fec767)
 
 _  _   **2105 PA**
 
@@ -53,8 +46,6 @@ _  _   **2105 PA**
 
 The God of Balance is left to watch over Solinia by the Primordials
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cdd58f624-7cc1-44de-84c5-0c0226b15591)
-
 _  _   **4000 PA**
 
 
@@ -64,8 +55,6 @@ _  _   **4000 PA**
 
 Belshazar sets about to build a planar reality along side the world of Solinia
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cc7b753f6-07b6-49fd-b2ab-de3cb1d849fb)
-
 _  _   **4800 PA**
 
 
@@ -74,8 +63,6 @@ _  _   **4800 PA**
 **Cultural event**
 
 Eriadar the Prismatic Dragon pierces the veil between the Planes and populates Solinia with Dragons
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cda76b964-cb09-496c-8b01-55f9b6b6bb12)
 
 -
 
@@ -87,8 +74,6 @@ Eriadar the Prismatic Dragon pierces the veil between the Planes and populates S
 **Celestial**
 
 The Weaver manipulates the powers of the sacred waters to fashion life in its more evil form
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C6781acdd-5593-4cfc-ab56-bf8302e01c34)
 
 ## **The Draconic Age**
 
@@ -114,9 +99,6 @@ _  _   **13041 DA**
 #### **The site where the The Anchor will be created is formed**
 **Geological / environmental event**
 
-**Related Location**
-[the-anchor-article-archived-1574015415the-anchor-article-archived-1574015415](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cthe-anchor-article-archived-1574015415)
-
 _  _   **14230 DA**
 
 
@@ -132,8 +114,6 @@ _  _   **16000 DA**
 **Celestial**
 
 The Moons Shima &amp; Aeternitas form from the drifting remains of the impact
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cf44387c4-5244-4b0d-ac80-092ed95a2946)
 
 _  _   **19400 DA**
 
@@ -158,8 +138,6 @@ _  _   **19600 DA**
 
 The lands cooled and the land grew once more, the creatures formed simple wildlife and evolved into a variant of hundreds of creatures, the two outsiders seemed to be at war with one another for a time.
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C33ba0ea2-855c-4721-a3dd-27564451516a)
-
 _  _   **33000 DA**
 
 
@@ -168,8 +146,6 @@ _  _   **33000 DA**
 **Religious event**
 
 The Weaver departs Solinia
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Ce6a1fa4c-081e-49cc-881f-4f4ee54d5a19)
 
 _  _   **33100 DA**
 
@@ -180,8 +156,6 @@ _  _   **33100 DA**
 
 Belshazar forms the Elemental Pantheon to rid the land of The Ancients
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C46022969-3c55-4872-b187-2f33cbc886d5)
-
 _  _   **33250 DA**
 
 
@@ -190,8 +164,6 @@ _  _   **33250 DA**
 **Religious event**
 
 Amurru the Deep One would rule the earthern realms and construct a mighty race of stone golems called Gialon
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C4fa69438-57cf-4f34-9237-0b40defdadb2)
 
 _  _   **33250 DA**
 
@@ -202,8 +174,6 @@ _  _   **33250 DA**
 
 Far above the skies Aerin the Valorous would create vast floating cities from the floating remains of the dead sun that had rought the world and in it build majestic cities populated with angels known as the Valerin who would descend to the earth and bring law and peace upon those deemed fit to remain following the great cleansing
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C523e0926-092b-4e95-91f3-3407741f3a09)
-
 _  _   **33250 DA**
 
 
@@ -212,8 +182,6 @@ _  _   **33250 DA**
 **Religious event**
 
 Savira the Enflamed would claim dominance over the flaming remains of the far most corners of the world. By taking from the dragons willingly she would create an unstoppable weapon know as Xephrit Syfyr a Purefire dragon who would lead an army of flaming elementals
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C69f81cdb-7753-426b-8ad7-5de9c17fe00e)
 
 _  _   **33250 DA**
 
@@ -224,8 +192,6 @@ _  _   **33250 DA**
 
 Kylia the Tempest would settle the endless oceans with enormous elemental titans and seafolk that would cleanse the lands with tsunamis and endless tempests
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C84d021df-18ba-4d41-ad2b-04788fc13181)
-
 _  _   **34000 DA**
 
 
@@ -234,8 +200,6 @@ _  _   **34000 DA**
 **Religious event**
 
 Kylia the Tempest forms Raelion - The Field of Storms
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Ca3f193fa-7999-4455-800f-5e48f035a849)
 
 _  _   **34000 DA**
 
@@ -246,8 +210,6 @@ _  _   **34000 DA**
 
 Savira the Enflamed forms Sindiril - The Palace of Flames
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C4f37cb31-e661-4132-a8ba-cfc3302556a2)
-
 _  _   **34000 DA**
 
 
@@ -256,8 +218,6 @@ _  _   **34000 DA**
 **Religious event**
 
 Aerin the Valorous forms Valisi - The Realm of Valor
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C39eafdb2-53fe-4895-8621-76ff9f6f22bb)
 
 _  _   **34090 DA**
 
@@ -268,8 +228,6 @@ _  _   **34090 DA**
 
 By taking from the dragons willingly Savira creates an unstoppable weapon know as Xephrit Syfyr a Purefire dragon who would lead an army of flaming elementals
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C547780c8-f98f-4218-929c-27cc4c386f64)
-
 _  _   **34100 DA**
 
 
@@ -279,8 +237,6 @@ _  _   **34100 DA**
 
 Far above the skies Aerin the Valorous would create vast floating cities from the floating remains of the dead sun that had rought the world and in it build majestic cities populated with angels known as the Valerin who would descend to the earth and bring law and peace upon those deemed fit to remain following the great cleansing
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C2a6220dd-0af2-4cfe-a679-32980a884cff)
-
 _  _   **34197 DA**
 
 
@@ -289,8 +245,6 @@ _  _   **34197 DA**
 **Cultural event**
 
 Kylia the Tempest would settle the endless oceans with enormous elemental titans and seafolk that would cleanse the lands with tsunamis and endless tempests
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C14b85b2c-dce2-4987-aeb0-cf9b2b4cf855)
 
 _  _   **34500 DA**
 
@@ -302,8 +256,6 @@ _  _   **34500 DA**
 **Military action**
 
 Throughout the millennias that followed the Gods armies fought an endless battle with the creatures of The Outsiders. These behemoths were driven either deep into the sea or far underground where they would drift into mythological writings of the Dal and Kalderan and as The Ancients. Far below the ground and deep within the seas Raelion and Delgar entombed the Ancients so they might never break the balance again
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C3fedf6bb-5c83-4035-a448-f25d7a211620)
 
 **Metadata**
 
@@ -318,16 +270,12 @@ _  _   **40998 DA**
 
 The floating cities of Aerin descend to the north of Solinia and form The Garden of the Gods
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C0ec64436-3f86-4fed-aee7-f20220d1c7ca)
-
 _  _   **42398 DA**
 
 #### **Methabeht is born**
 **Religious event**
 
 Kylia and Aerin give birth to Methabeht
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cb74a7e58-14d4-4638-9bcb-2f358ce05741)
 
 _  _   **42450 DA**
 
@@ -338,8 +286,6 @@ _  _   **42450 DA**
 
 The first tinai are born from the interbreeding of Dal and Valerin
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C2da44c07-d04f-476a-a70e-ef652c63f12c)
-
 _  _   **44000 DA**
 
 
@@ -348,8 +294,6 @@ _  _   **44000 DA**
 **Geological / environmental event**
 
 The Dal and Kalderan name their land Qylia after the Goddess Kylia
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cd0653a04-b7c8-4f04-bc3c-b20bb2d9eeee)
 
 -
 
@@ -361,8 +305,6 @@ The Dal and Kalderan name their land Qylia after the Goddess Kylia
 **Cultural event**
 
 The Dragons first notice the flourishing Kelderan and Dal races
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C40ee4180-ad9a-4727-b29c-9c5bd0d1c55c)
 
 ## **The Age of Ascendence**
 
@@ -381,8 +323,6 @@ _   **0 AOA**
 
 The Dragons first notice the flourishing Kelderan and Dal races
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C40ee4180-ad9a-4727-b29c-9c5bd0d1c55c)
-
 _  _   **503 AOA**
 
 
@@ -391,8 +331,6 @@ _  _   **503 AOA**
 **Diplomatic action**
 
 The ascendency of the Kelderan and Dal Realms via deplomacy with the Dragons
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C6f2d153b-4a17-4a69-8bed-df60c597eea0)
 
 _  _   **503 AOA**
 
@@ -412,8 +350,6 @@ _  _   **2709 AOA**
 
 The Establishment of the Keladun, Valderain, Aerindal, Caerthian Kingdoms
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C69871358-ed5c-418c-99f5-058abe12d33b)
-
 -
 
 **10000 AOA**
@@ -424,8 +360,6 @@ The Establishment of the Keladun, Valderain, Aerindal, Caerthian Kingdoms
 **Disaster / Destruction**
 
 The Kelderan and Dal Realms fall
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C569998e5-2cb0-49d5-a670-5388bb7f0653)
 
 ## **The Age of Defiance**
 
@@ -442,8 +376,6 @@ _   **0 AOD**
 
 The Kelderan and Dal Realms fall
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C569998e5-2cb0-49d5-a670-5388bb7f0653)
-
 _  _   **1400 AOD**
 
 
@@ -452,8 +384,6 @@ _  _   **1400 AOD**
 **Geological / environmental event**
 
 The planet begins to suffer from heavy seismic activity every 100 years, many great continents split and lands retreat into the sea
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cd98fb76e-165a-4040-8c85-deaeab75d266)
 
 -
 
@@ -491,8 +421,6 @@ _  _   **849 BC**
 **Construction beginning/end**
 
 Ferrelux is formed
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Ccb557d18-ac83-4fe5-94c7-f7b937f9cc5d)
 
 _  _   **849 BC**
 
@@ -594,9 +522,6 @@ _  _   **2758 BC**
 #### **Tean&#39;Zu is formed**
 **Construction beginning/end**
 
-**Related Location**
-[teanzu-article-archived-1574013894teanzu-article-archived-1574013894](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cteanzu-article-archived-1574013894)
-
 _  _   **2850 BC**
 
 
@@ -668,10 +593,6 @@ _  _   **4211 BC**
 
 On discovering the destiny of the Oshira, Methabeht visits Zephyr in the Plane of Air and gifts her Aos&#39;Si, the Orb of Wild Magic   On imparting her essence into the Orb and caring for it for many moons, the Orb did crack and emerge the first regal fairy, Queen Asuna
 
-##### **Related article**
-
-[fairy-article-archived-1574015842fairy-article-archived-1574015842](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cfairy-article-archived-1574015842)
-
 _  _   **5003 BC**
 
 
@@ -685,9 +606,6 @@ _  _   **5008 BC**
 
 #### **Xenophon (City) is created in honour of the master wizard who pioneered teleportation**
 **Construction beginning/end**
-
-**Related Location**
-[xenophon-article-archived-1574015515xenophon-article-archived-1574015515](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cxenophon-article-archived-1574015515)
 
 _  _   **5340 BC**
 
@@ -708,12 +626,7 @@ _  _   **6250 BC**
 #### **Eusean is formed**
 **Construction beginning/end**
 
-**Related Location**
-[alcor-article-archived-1574015468alcor-article-archived-1574015468](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Calcor-article-archived-1574015468)
-
 ##### **Related article**
-
-[eusean-article-archived-1574015453eusean-article-archived-1574015453](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ceusean-article-archived-1574015453)
 
 _  _   **The Reign of Hiran Asura**
 
@@ -722,20 +635,12 @@ _  _   **The Reign of Hiran Asura**
 
 This is an old tale that has been passed on from generation to generation. Who know&#39;s if the cataclysm ever did happen. If it did it certainly was a long time ago. Longer than any of the current races of the Solinia have been around
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5Cede499ea-6d39-4614-a7d4-863bc884e4d2)
-
-**Related Location**
-[solinia-article-archived-1574015477solinia-article-archived-1574015477](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Csolinia-article-archived-1574015477)
-
 _  _   **7600 BC**
 
 
 
 #### **The Tower is created**
 **Construction beginning/end**
-
-**Related Location**
-[the-tower-of-mysma-article-archived-1574015405the-tower-of-mysma-article-archived-1574015405](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cthe-tower-of-mysma-article-archived-1574015405)
 
 _  _   **7653 BC**
 
@@ -749,9 +654,6 @@ _  _   **7835 BC**
 #### **Esoron is destroyed**
 **Disbandment**
 
-**Related Location**
-[esoron-article-archived-1574015508esoron-article-archived-1574015508](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cesoron-article-archived-1574015508)
-
 _  _   **7835 BC**
 
 
@@ -760,8 +662,6 @@ _  _   **7835 BC**
 **Life, Death**
 
 ##### **Related article**
-
-[oboron-article-archived-1574016019oboron-article-archived-1574016019](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Coboron-article-archived-1574016019)
 
 _  _   **7836 BC**
 
@@ -772,16 +672,10 @@ _  _   **7836 BC**
 
 _  _   **7836 BC**
 
-
-
 #### **The Cataclysm Storyline**
 **Extinction**
 
 Hiran Asura goes on his campaign of destruction ending nearly all life on the surface Solinia
-
-##### **Related article**
-
-[hiran-asura-article-archived-1574016003hiran-asura-article-archived-1574016003](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Chiran-asura-article-archived-1574016003)
 
 _  _   **7836 BC**
 
@@ -789,9 +683,6 @@ _  _   **7836 BC**
 
 #### **Lord Erebus, a noble of the early Proto Humans, fled for the Under at the cusp of the Cataclysm**
 **Expedition**
-
-**Related Location**
-[id-kura-article-archived-1574015520id-kura-article-archived-1574015520](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cid-kura-article-archived-1574015520)
 
 _  _   **7836 BC**
 
@@ -826,8 +717,6 @@ Hiran Asura goes on his campaign of destruction ending nearly all life on the su
 
 ##### **Related article**
 
-[hiran-asura-article-archived-1574016003hiran-asura-article-archived-1574016003](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Chiran-asura-article-archived-1574016003)
-
 _  _   **0 PC**
 
 
@@ -841,9 +730,6 @@ _  _   **0 PC**
 
 #### **Lord Erebus, a noble of the early Proto Humans, fled for the Under at the cusp of the Cataclysm**
 **Expedition**
-
-**Related Location**
-[id-kura-article-archived-1574015520id-kura-article-archived-1574015520](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cid-kura-article-archived-1574015520)
 
 _  _   **0 PC**
 
@@ -904,26 +790,12 @@ _  _   **2385 ME**
 #### **The Founding of the Silverdawn Republic**
 **Cultural event**
 
-**Related Location**
-[taon-article-archived-1574015543taon-article-archived-1574015543](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ctaon-article-archived-1574015543)
-
-##### **Related article**
-
-[silverdawn-republic-article-archived-1574016446silverdawn-republic-article-archived-1574016446](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Csilverdawn-republic-article-archived-1574016446)
-
 _  _   **2450 ME**
 
 
 
 #### **The Disbanding of the Silverdawn Republic**
 **Disbandment**
-
-**Related Location**
-[taon-article-archived-1574015543taon-article-archived-1574015543](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ctaon-article-archived-1574015543)
-
-##### **Related article**
-
-[silverdawn-republic-article-archived-1574016446silverdawn-republic-article-archived-1574016446](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Csilverdawn-republic-article-archived-1574016446)
 
 _  _   **29734 ME**
 
@@ -953,10 +825,6 @@ _  _   **29980 ME**
 #### **The Oshira return to Solinia**
 **Expedition**
 
-##### **Related article**
-
-[oshira-article-archived-1574015834oshira-article-archived-1574015834](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Coshira-article-archived-1574015834)
-
 _  _   **30138 ME**
 
 
@@ -964,20 +832,12 @@ _  _   **30138 ME**
 #### **The Proto Human Empire achieves global dominion**
 **Political event**
 
-##### **Related article**
-
-[proto-human-article-archived-1574015854proto-human-article-archived-1574015854](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cproto-human-article-archived-1574015854)
-
 _  _   **30753 ME**
 
 
 
 #### **The Oshira begin a global campaign conquering many regions**
 **Military action**
-
-##### **Related article**
-
-[oshira-article-archived-1574015834oshira-article-archived-1574015834](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Coshira-article-archived-1574015834)
 
 _  _   **30820 ME**
 
@@ -995,20 +855,12 @@ _  _   **30952 ME**
 
 The Fairies, Mysmaal clash with the invading forces the Oshira   The fairies arrive on Solinia at various anchors to the Plane of Air attempting to push back the Oshira
 
-##### **Related article**
-
-[fairy-article-archived-1574015842fairy-article-archived-1574015842](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cfairy-article-archived-1574015842)
-
 _  _   **30954 ME**
 
 
 
 #### **Zephyr is murdered by Sl&#39;Vastra at the bidding of Deuzulus**
 **Life, Death**
-
-##### **Related article**
-
-[zephyr-article-archived-1574016228zephyr-article-archived-1574016228](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Czephyr-article-archived-1574016228)
 
 _  _   **31000 ME**
 
@@ -1023,12 +875,6 @@ _  _   **35350 ME**
 
 #### **What would be named The Ashri Blade is created by the Proto Humans**
 **Technological achievement**
-
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C3eaa9cd9-a20c-4e93-98f4-e6d73151e50a)
-
-##### **Related article**
-
-[blade-of-ashiri-article-archived-1574016360blade-of-ashiri-article-archived-1574016360](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cblade-of-ashiri-article-archived-1574016360)
 
 _  _   **35496 ME**
 
@@ -1079,20 +925,12 @@ _  _   **37571 ME**
 #### **The Mysmaal are granted the gift of undeath by Somnus**
 **Religious event**
 
-##### **Related article**
-
-[mysmaal-article-archived-1574015854mysmaal-article-archived-1574015854](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cmysmaal-article-archived-1574015854)
-
 _  _   **37571 ME**
 
 
 
 #### **Ashri steals The Ashri Blade**
 **Life, Achievement/ Win**
-
-##### **Related article**
-
-[ashri-loviatar-article-archived-1574016165ashri-loviatar-article-archived-1574016165](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cashri-loviatar-article-archived-1574016165)
 
 _  _   **37764 ME**
 
@@ -1141,10 +979,6 @@ _  _   **37943 ME**
 **Life, Failure / Mishap**
 
 Planning against what seemed inevitable, a number of proto humans are stored from the ravages of time through a mixture of magic and science. Rhukadlor is among them.
-
-##### **Related article**
-
-[rhukadlor-article-archived-1574016005rhukadlor-article-archived-1574016005](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Crhukadlor-article-archived-1574016005)
 
 _  _   **37946 ME**
 
@@ -1199,10 +1033,6 @@ _  _   **43620 ME**
 #### **Tean&#39;Zu is settled by the Lidkim**
 **Cultural event**
 
-##### **Related article**
-
-[lidkim-article-archived-1574015834lidkim-article-archived-1574015834](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Clidkim-article-archived-1574015834)
-
 _  _   **48980 ME**
 
 
@@ -1224,9 +1054,6 @@ _  _   **49107 ME**
 #### **Caer Bedion falls**
 **Disbandment**
 
-**Related Location**
-[caer-bedion-article-archived-1574015507caer-bedion-article-archived-1574015507](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ccaer-bedion-article-archived-1574015507)
-
 _  _   **49108 ME**
 
 
@@ -1241,23 +1068,12 @@ _  _   **49110 ME**
 #### **The Vishim settle Ravenholme**
 **Cultural event**
 
-**Related Location**
-[ravenholme-article-archived-1574015519ravenholme-article-archived-1574015519](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cravenholme-article-archived-1574015519)
-
-##### **Related article**
-
-[vishim-article-archived-1574015961vishim-article-archived-1574015961](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cvishim-article-archived-1574015961)
-
 _  _   **49520 ME**
 
 
 
 #### **Eusebes is destroyed**
 **Disbandment**
-
-##### **Related article**
-
-[eusebian-article-archived-1574015828eusebian-article-archived-1574015828](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ceusebian-article-archived-1574015828)
 
 _  _   **49690 ME**
 
@@ -1412,24 +1228,11 @@ _  _   **91 AE**
 #### **Alaris a small town is formed by survivors of a crashed ship**
 **Construction beginning/end**
 
-**Related Location**
-[alaris-article-archived-1574015473alaris-article-archived-1574015473](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Calaris-article-archived-1574015473)
-
-##### **Related article**
-
-[alaris-article-archived-1574015473alaris-article-archived-1574015473](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Calaris-article-archived-1574015473)
 
 _  _   **146 AE**
 
 #### **Alaris and Northreach, a northern bastion, is abandoned following massive undead attacks. The races flee to the North through the Northlands and eventually discover an island off the continent of Kumari**
 **Disbandment**
-
-**Related Location**
-[alaris-article-archived-1574015473alaris-article-archived-1574015473](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Calaris-article-archived-1574015473)
-
-##### **Related article**
-
-[alaris-article-archived-1574015473alaris-article-archived-1574015473](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Calaris-article-archived-1574015473)
 
 _  _   **149 AE**
 
@@ -1451,13 +1254,6 @@ _  _   **151 AE**
 
 #### **Kumari is discovered**
 **Discovery, Exploration**
-
-**Related Location**
-[kumari-kandam-article-archived-1574015546kumari-kandam-article-archived-1574015546](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ckumari-kandam-article-archived-1574015546)
-
-##### **Related article**
-
-[kumari-kandam-article-archived-1574015546kumari-kandam-article-archived-1574015546](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ckumari-kandam-article-archived-1574015546)
 
 _  _   **296 AE**
 
@@ -1543,8 +1339,6 @@ When at last the two forces touched the resulting explosion thrust Solinia out o
 
 A great battle between the Taktevolken and the Jin on Nuchalnuth resulted in a catastrophic storm of magic energy that rages across Solinia
 
-[Read the full account of the event](./../../%5C%5Cw%5Csolinia-mixxit%5Ch%5C11e88513-c73b-4e2f-8152-aab1551a464e)
-
 ## **The Era of Crisis**
 
 ### **195785 195885**
@@ -1566,9 +1360,6 @@ _  _   **5 AC**
 
 #### **The Book of Destiny is discovered**
 **Life, Achievement/ Win**
-
-**Related Location**
-[angel-isles-article-archived-1574015460angel-isles-article-archived-1574015460](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cangel-isles-article-archived-1574015460)
 
 _  _   **15 AC**
 
@@ -1616,8 +1407,6 @@ _  _   **90 AC**
 
 ##### **Related article**
 
-[methabeht-article-archived-1574016215methabeht-article-archived-1574016215](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cmethabeht-article-archived-1574016215)
-
 -
 
 **100 AC**
@@ -1626,13 +1415,6 @@ _  _   **90 AC**
 
 #### **The Caerthians invade Amaria**
 **Military action**
-
-**Related Location**
-[amaria-article-archived-1574015456amaria-article-archived-1574015456](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Camaria-article-archived-1574015456)
-
-##### **Related article**
-
-[caerthian-article-archived-1574015967caerthian-article-archived-1574015967](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Ccaerthian-article-archived-1574015967)
 
 ## **The Age of Virtue**
 
@@ -1653,9 +1435,6 @@ _  _   **0 AV**
 **Population Migration / Travel**
 
 Following a great storm, the ships that escaped the Caerthian Empire are seperated. One of the Vessels crash lands on the Isle of Olendor
-
-**Related Location**
-[isle-of-olendor-article-archived-1574015244isle-of-olendor-article-archived-1574015244](./../../%5C%5Cw%5Csolinia-mixxit%5Ca%5Cisle-of-olendor-article-archived-1574015244)
 
 _  _   **119 AV**
 
