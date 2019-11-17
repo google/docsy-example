@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 House Vex
 {{% /pageinfo %}}
-House Vex is an ancient royal family that rules the Mysmaal <span class="line-spacer d-block"> </span> It's King was once Tullan Vex before his wife Morgana Vex had him murdered <span class="line-spacer d-block"> </span> The King and Queen have two children named Prince Lucas Vex and Price Cain Vex who currently reside in Mysma
+House Vex is an ancient royal family that rules the Mysmaal  It's King was once Tullan Vex before his wife Morgana Vex had him murdered  The King and Queen have two children named Prince Lucas Vex and Price Cain Vex who currently reside in Mysma

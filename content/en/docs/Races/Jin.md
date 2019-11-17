@@ -47,7 +47,7 @@ Jin have all types of personalities and are governed by the same emotions as mos
 
 ### History
 
-Not much is known about the Jin before now other than they exist in a parallel dimension that allows them to shift back and forth into this reality and their reality and manifest almost anything using their magic, the Meta Magic, a god-like power. <span class="line-spacer d-block"> </span> Mostly unknown to this day except for the destruction of the Jin Race in the Spellstorm, which did not kill the Ni-Jin, those Jin who gave up their Meta Magic to escape the Spellstorm
+Not much is known about the Jin before now other than they exist in a parallel dimension that allows them to shift back and forth into this reality and their reality and manifest almost anything using their magic, the Meta Magic, a god-like power.  Mostly unknown to this day except for the destruction of the Jin Race in the Spellstorm, which did not kill the Ni-Jin, those Jin who gave up their Meta Magic to escape the Spellstorm
 
 ### Common Myths and Legends
 

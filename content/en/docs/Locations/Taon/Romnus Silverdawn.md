@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Romnus Silverdawn
 {{% /pageinfo %}}
-Romnus Silverdawn was a slave prisoner in the proto human kingdom who formed the Silverdawn Republic in 2385 MA after the slaves were freed. <span class="line-spacer d-block"> </span> His daughter was Eryinth Silverdawn, wife of Athos Valeron
+Romnus Silverdawn was a slave prisoner in the proto human kingdom who formed the Silverdawn Republic in 2385 MA after the slaves were freed.  His daughter was Eryinth Silverdawn, wife of Athos Valeron

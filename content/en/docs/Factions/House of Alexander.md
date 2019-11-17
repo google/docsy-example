@@ -17,5 +17,5 @@ A famous royal house during the Proto Human era
 
 
             <div>Major Members
-<span class="line-spacer d-block"> </span>
+
 Sabe Alexander</div>

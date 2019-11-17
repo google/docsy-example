@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Ruins of Zuriel
 {{% /pageinfo %}}
-The Ruins of Zuriel was an ancient city ruled by King Zuriel <span class="line-spacer d-block"> </span> It is said to have been swallowed whole into the underworld
+The Ruins of Zuriel was an ancient city ruled by King Zuriel  It is said to have been swallowed whole into the underworld

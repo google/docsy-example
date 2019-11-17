@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Silverdawn Republic
 {{% /pageinfo %}}
-The Silverdawn Republic was an early proto human kingdom that was formed after the slaves were released from their sentences after a Spellstorm <span class="line-spacer d-block"> </span> it was founded in 2385 MA by Romnus Silverdawn and disbanded in 2450 MA by Athos Valeron <span class="line-spacer d-block"> </span> It's capital was Caer Balasir, now known as Blackthorn
+The Silverdawn Republic was an early proto human kingdom that was formed after the slaves were released from their sentences after a Spellstorm  it was founded in 2385 MA by Romnus Silverdawn and disbanded in 2450 MA by Athos Valeron  It's capital was Caer Balasir, now known as Blackthorn

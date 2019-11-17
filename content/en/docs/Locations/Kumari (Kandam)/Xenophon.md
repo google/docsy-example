@@ -11,7 +11,7 @@ description: >
 {{% pageinfo %}}
 Xenophon
 {{% /pageinfo %}}
-Xenophon is believed to have been founded by a pre-cataclysm civilisation who's name is since lost to the sands of time <span class="line-spacer d-block"> </span> **Locations of Interest** <span class="line-spacer d-block"> </span> The Pyramid of Xenophon <span class="line-spacer d-block"> </span> **Threats** <span class="line-spacer d-block"> </span> Wolves, the occasional undead
+Xenophon is believed to have been founded by a pre-cataclysm civilisation who's name is since lost to the sands of time  **Locations of Interest**  The Pyramid of Xenophon  **Threats**  Wolves, the occasional undead
 
 ## Demographics
 
@@ -43,7 +43,7 @@ Xenophon is believed to have been founded by a pre-cataclysm civilisation who's 
 
 
             <div>Xenophon is believed to have been founded by a pre-cataclysm civilisation who's name is since lost to the sands of time. What is certain, from tablets that have bene located at the dig site is that it was named after a Master Wizard who (possibly) conducted experiments with translocation magic. From what has been written on the subject Xenophon created a grand pyramid to channel energy found in the area and attempt to rip a portal open to another side of the planet. Modern day wizards agree this site does indeed assist in conjuring the forces necessary to leap and often bring students with them to demonstrate and train.
-<span class="line-spacer d-block"> </span>
+
 Xenophon is an archeological gold mine and many scholars have demanded universal protection from all races at the location so it can be further studied.</div>
                                     
 

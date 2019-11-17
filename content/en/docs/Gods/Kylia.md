@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Kylia
 {{% /pageinfo %}}
-Kylia the Tempest was a member of the Prime Elemental Pantheon and creator of elemental titans and seafolk that would cleanse the lands with tsunamis and endless tempests during The Great Cleansing <span class="line-spacer d-block"> </span> Ruler of Raelion - The Field of Storms (Plane of Storms). <span class="line-spacer d-block"> </span> The lands of Qylia takes it name from this Goddess
+Kylia the Tempest was a member of the Prime Elemental Pantheon and creator of elemental titans and seafolk that would cleanse the lands with tsunamis and endless tempests during The Great Cleansing  Ruler of Raelion - The Field of Storms (Plane of Storms).  The lands of Qylia takes it name from this Goddess

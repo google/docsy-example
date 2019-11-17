@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Mount Enlil
 {{% /pageinfo %}}
-Mentioned in many ancient tales, Mount Enlil is the largest mountain range on Solinia <span class="line-spacer d-block"> </span> It is referred to in the Poem of Taliesin as the 'White Mount'
+Mentioned in many ancient tales, Mount Enlil is the largest mountain range on Solinia  It is referred to in the Poem of Taliesin as the 'White Mount'

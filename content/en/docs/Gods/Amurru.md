@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Amurru
 {{% /pageinfo %}}
-Amurru the Deep One was a member of the Prime Elemental Pantheon and would rule the earthern realms and construct a mighty race of stone golems called Gialon during the wars of The Great Cleansing. <span class="line-spacer d-block"> </span> Ruler of Delgar - The Endless Depths (The Plane of the Deep) <span class="line-spacer d-block"> </span> Responsible for the Gialon though they do not always believe this
+Amurru the Deep One was a member of the Prime Elemental Pantheon and would rule the earthern realms and construct a mighty race of stone golems called Gialon during the wars of The Great Cleansing.  Ruler of Delgar - The Endless Depths (The Plane of the Deep)  Responsible for the Gialon though they do not always believe this

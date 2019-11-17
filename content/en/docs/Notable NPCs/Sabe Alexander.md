@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Sabe Alexander
 {{% /pageinfo %}}
-Sabe Alexander was a royal prince of the House of Alexander during the Proto Human era <span class="line-spacer d-block"> </span> He was assassinated in 37569 ME during his wedding with Ashri Loviatar
+Sabe Alexander was a royal prince of the House of Alexander during the Proto Human era  He was assassinated in 37569 ME during his wedding with Ashri Loviatar

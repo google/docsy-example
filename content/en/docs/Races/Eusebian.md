@@ -17,7 +17,7 @@ The Eusebians of Alcor share blood with the Vishim and Meroei making them one of
                                     
 ### Anatomy & Morphology
 
-Eusebians are half elves, famed for their short stature and pointed ears, often with piercings. They are humanoid, and they encompass as much variation as seen in Humans but their hair colour is most often shades of brown. <span class="line-spacer d-block"> </span> Despite their small stature they are agile and strong, making good hunters.
+Eusebians are half elves, famed for their short stature and pointed ears, often with piercings. They are humanoid, and they encompass as much variation as seen in Humans but their hair colour is most often shades of brown.  Despite their small stature they are agile and strong, making good hunters.
 
 ## Additional Information
 

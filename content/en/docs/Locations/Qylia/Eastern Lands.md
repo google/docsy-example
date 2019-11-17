@@ -11,4 +11,4 @@ description: >
 {{% pageinfo %}}
 Eastern Lands
 {{% /pageinfo %}}
-The Eastern Lands is generally refered to in ancient caerthian texts to denote the green lands beyond the Caerthian desert territory <span class="line-spacer d-block"> </span> It is the location of the fortress of Cal'Drin
+The Eastern Lands is generally refered to in ancient caerthian texts to denote the green lands beyond the Caerthian desert territory  It is the location of the fortress of Cal'Drin
