@@ -19,4 +19,4 @@ Following the events of Time Crisis the survivors found themselves in the newly 
 
 It appeared to be a place locked between many periods of time with people and cities of the modern era as well as the old
 
-Old long lost empires such as the Caerthian Empire subjugated most of the lands and this led to an escape of the lands via the way of the Sea surrounding the Qylian Western Isles
+Old long lost empires such as the Caerthian Empire subjugated most of the lands and this led to an escape of the lands via the way of the Sea surrounding the Qylian Western Isles and landed on the The Severed Isles
