@@ -17,4 +17,4 @@ You can then install our mod in your .minecraft directory
 
 Our mod is available from https://github.com/mixxit/solinia3-ui/releases
 
-If you need help please visit our discord Solinia-UI support channel at https://discordapp.com/invite/eaMG2UN
+If you need help please visit our discord #Support channel at https://discordapp.com/invite/eaMG2UN
