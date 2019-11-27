@@ -63,7 +63,7 @@ weight = 1
 
 [params]
 copyright = "Solinia 2019"
-privacy_policy = "https://policies.google.com/privacy"
+privacy_policy = "https://www.fallofanempire.com/docs/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
