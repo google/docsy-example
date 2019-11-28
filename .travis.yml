@@ -9,9 +9,11 @@ install:
   - tar xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
   - sudo apt-get update && sudo apt-get install npm
   - npm install postcss-cli
+  - env HUGO_ENV="production" hugo
   - mv hugo ~/bin/
 
 script:
+  - env HUGO_ENV="production" hugo
   - hugo --gc --minify
 
 deploy:
