@@ -143,6 +143,10 @@ To target yourself please see your keybinds, by default this is ctrl - 1
 
 You will see your name in the target area on the right
 
+**Clearing your target** 
+
+To clear your target please see your keybinds, by default this is ctrl - ¬
+
 **Adding spells to your spellbook**
 
 To add spells to your spellbook click the spell in your inventory and drop it onto the Spell button to the right corner of your screen, the spell will be in your spellbook
