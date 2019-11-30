@@ -12,6 +12,22 @@ description: >
 Timeline
 {{% /pageinfo %}}
 
+
+<ul class="timeline">
+    <li class="event" data-date="65Million B.C.">
+      <h3>Dinosaurs Roamed the Earth</h3>
+      <p>RAWWWWWWRRR 🐢🦂</p>
+    </li>
+    <li class="event" data-date="2005">
+      <h3>Creative Component Launched</h3>
+      <p>"We can be all things to all people!" 📣</p>    
+    </li>
+    <li class="event" id="date" data-date="2009">
+      <h3>Squareflair was Born</h3>
+      <p></p> <p>"We can be all things to Squarespace users!" 📣</p>    
+    </li>
+</ul>
+
 #
 # The Full Timeline
 
