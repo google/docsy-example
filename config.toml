@@ -125,3 +125,8 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	url = "https://github.com/mixxit/solinia3-core"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
+
+[[menu.main]]
+    name = "Map"
+    weight = 50
+    url = "http://play.fallofanempire.com:8123"
