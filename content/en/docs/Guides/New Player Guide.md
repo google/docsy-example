@@ -55,6 +55,10 @@ See [Gods](../../gods)
 
 **Server Guide** 
 
+**New Tutorial**
+
+The server has a new in game tutorial, please see https://www.fallofanempire.com/docs/guides/tutorialfortutorial
+
 **Creating your character** 
 
 Now that you are familiar with the storyline of Solinia it’s time to get your character created! To start with, you will have to think about the personality of your character and perhaps think about a summary of your character. For example,
