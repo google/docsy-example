@@ -37,9 +37,9 @@ You are able to see the specific date you are in by typing /today in chat and th
 
 We require a resource pack and mod to play on our server
 
-Download Resource Pack from https://solinia.blob.core.windows.net/solinia-public/solinia3-resourcepack.zip
+Download the Resource Pack from https://solinia.blob.core.windows.net/solinia-public/solinia3-resourcepack.zip
 
-Download Resource Pack from https://www.fallofanempire.com/docs/guides/mod
+Download the Mod from https://www.fallofanempire.com/docs/guides/mod
 
 **Dynamic Map**
 
