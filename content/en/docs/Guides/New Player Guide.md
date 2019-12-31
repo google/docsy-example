@@ -105,7 +105,7 @@ You can also see all players online with the command /who all
 
 With Fall of an Empire constantly changing, sometimes not everything can be written in a guide. Thanks to our helpful community you can request help with the /ooc <question> command This will send your question to all players currnetly active in out of character
 
-You may also find help in our discord channel on the right side of our main website [www.fallofanempire.com](www.fallofanempire.com)
+You may also find help in our discord channel on the right side of our main website [https://www.fallofanempire.com](https://www.fallofanempire.com)
 
 **Building and Player Cities** 
 
