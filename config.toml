@@ -1,7 +1,7 @@
 baseURL = "https://www.fallofanempire.com/"
 title = "Solinia"
 
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
