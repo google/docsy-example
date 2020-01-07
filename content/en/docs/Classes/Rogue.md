@@ -18,7 +18,7 @@ Rogues are a premier melee damage class outputting the most melee damage
 
 ### Newbie Guide
 
-The rogue is a dps class and has the highest melee damage,it can use both sword and bow with deadly poisons that deals damage or debuffs 
+The rogue is a dps class and has the highest melee damage,it can use both sword and bow, with deadly poisons that deals damage or debuffs(sword only); Rogues have another skill along normal slashing and that is piercing(later on it will have a penetration effect on the armour class).
 
 At lvl 4 you learn dodge, 12 safefall (negates fall damage),13 dual wield (chance to hit with the item in the second hand),16 double attack, and 30 riposte (chance to counter the attack of the enemy). 
 
@@ -36,23 +36,14 @@ Resistant discipline that increase all the resistances of 20 and fearless discip
 
 All of these spells can be bought from 
 
-* haven [x -104;z 384]
-
-* morheim(from the rogue guild hidden in there)[x 235; z 267]
-
-* arndal[x 918;z 274]
-
-* olvasound[x -276; z -391] 
-
-The next spells up to level 59 can be found by killing: oshira rake; oshira ravager; oshira reaver(at the fear dungeon garuda chick(At hoakar) 
-
-Meanwhile the spells up to level 65 can be found by killing : garuda avenger; garuda rook(At hoakar) cleansed soul(At infernal cathedral) 
+* Ezro [x:-2335;z:22]
 
 Most of the spells are like sneak attack but with different modifiers, one of the most versatile skill a rogue can have is rogue ploy lvl 61 this skill can mez up to lvl 65 for 30 seconds. 
 
 ### Poisons
 
-http://www.dragon-venom.com/poison/ 
+http://dragon-venom.com/poison/
+
 
 There are various poison with various effects but mainly divides into 2 groups: Utility and DPS 
 The utility poisons are:" messenger's bane that gives snare (made with larkspur myrmidon's sloth gives slowness(made with oleander quellious trauma makes you deaggro the mob hitted(made with muscimol fighter's bane make clumsy the mob;(made with caladium warlord's bane make clumsy and gives slow to the mob(made with laburum archer's bane decrease the hit chance of the mob(made with privit monk's bane reduces the dodge chance of a mob(made with delphinium)". 
