@@ -39,4 +39,4 @@ If there is no "mods" folder, create one labeled "mods" and place the mod inside
 
 Congratulations! Close and reopen Minecraft and you should be able to log onto our server!
 
-If you need additional help please visit our discord #Support channel at https://discordapp.com/invite/eaMG2UN
+If you need additional help please visit our discord #Support channel at https://discordapp.com/invite/D58HfVZ
