@@ -16,7 +16,7 @@ Power among the Gods trickle downwards from their source, The Unknown. Power is 
 
 # The Unknown
 
-It is said in the beginning there was nothing but a vast endless sea of unbroken darkness in which a god as ageless as time swam, lighting its way with vast jewel like suns. On its journey the god did stumble upon the barren landscape of a now dead star lying upon its center it did see a bright blue lake of incredible beauty glistening with astral magic of the wisps that flickered above it. Curious to the nature of this outside influence of his domain the God broke a part of itself and elevated the wisps to a pantheon of primordial entities that would watch over the world in his stead as he continued his journey through the stars
+It is said in the beginning there was nothing but a vast endless sea of unbroken darkness in which a god as ageless as time swam, lighting its way with vast jewel like suns. On its journey the god did stumble upon the barren landscape of a now dead star. Lying upon its center it did see a bright blue lake of incredible beauty glistening with astral magic of the wisps that flickered above it. Curious to the nature of this outside influence of his domain the God broke a part of itself and elevated the wisps to a pantheon of primordial entities that would watch over the world in his stead as he continued his journey through the stars
 
 Very few if any races are aware of this God. This pantheon draws its power from no where
 
