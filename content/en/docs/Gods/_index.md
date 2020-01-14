@@ -61,7 +61,8 @@ Kylia the Tempest would settle the endless oceans with enormous elemental titans
 Far above the skies Aerin the Valorous would create vast floating cities from the floating remains of the dead sun that had rought the world and in it build majestic cities populated with angels known as the Valerin who would descend to the earth and bring law and peace upon those deemed fit to remain following the great cleansing. Ruler of Valisi - The Realm of Valor (Plane of Valor)
 
 Very few if any races are aware of these gods. They draw their power from Belshazar and the other Gods of Balance
-The First Elementral Pantheon
+
+# The First Elementral Pantheon
 
 Sol'Azul - God of the Sun (Primarily worshipped by Caerthians)
 
