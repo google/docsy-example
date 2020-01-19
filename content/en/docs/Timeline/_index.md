@@ -464,7 +464,7 @@ Timeline
 <div class="timeline">
     <h1>The Modern Age</h1>
     <p>120536 until 171956 UT</p>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>0 ME (120536 UT)</h2>
             <h3>The world is habitable again</h3>
@@ -488,7 +488,7 @@ Timeline
 <div class="timeline">
     <h1>Age of Exploration</h1>
     <p>173191 until 195544 UT</p>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>1 AE (173192 UT)</h2>
             <h3>Highguard is Formed</h3>
@@ -504,7 +504,7 @@ Timeline
             <p>Alliances are made between Meropians, Eusebians, Chunel and Mysmaal</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>34 AE (173225 UT)</h2>
             <h3>The end of The First Alliance</h3>
@@ -520,7 +520,7 @@ Timeline
             <p>Following endless war, settlers abandon lands in search of even newer frontiers</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>95 AE (173286 UT)</h2>
             <h3></h3>
@@ -536,7 +536,7 @@ Timeline
             <p>Alaris and Northreach, a northern bastion, is abandoned following massive undead attacks. The races flee to the North through the Northlands and eventually discover an island off the continent of Kumari</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>153 AE (173344 UT)</h2>
             <h3></h3>
@@ -552,7 +552,7 @@ Timeline
             <p>The island of Aquion is discovered and settled</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>155 AE (173346 UT)</h2>
             <h3></h3>
@@ -568,7 +568,7 @@ Timeline
             <p>The larger landmass of Kumari is settled by races of the west</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>5302 AE (178493 UT)</h2>
             <h3></h3>
@@ -584,7 +584,7 @@ Timeline
             <p>The greatest modern races are predominent in the west including: Modern Human, High Elf, Fairy, Wood Elf, Half Elf, Dark Elf, Vampire, Barbarian, Orc, Ogre, Troll, Half Dragon, Gnome, Goblin, Hobbit, High Human, Undead, Dwarf, Ratman, Lizardman, Elemental, Kobold, Angel, Fallen Angel. The older ancestral races still continue to flourish in the east </p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22303 AE (195494 UT)</h2>
             <h3></h3>
@@ -600,7 +600,7 @@ Timeline
             <p>The Tomb of Hiran Asura is breached by the dragon Python on the lands of Kumari</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22420 AE (195611 UT)</h2>
             <h3></h3>
@@ -616,7 +616,7 @@ Timeline
             <p>Races flee from Kumari</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22420 AE (195611 UT)</h2>
             <h3></h3>
@@ -632,7 +632,7 @@ Timeline
             <p>The Elder Gods reemerge requesting assistance from the population of Solinia to prevent hiran asura from breaching their planes and destroying them</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22425 AE (195616 UT)</h2>
             <h3></h3>
@@ -648,7 +648,7 @@ Timeline
             <p>The Ancestral races join forces with the modern races in the fight between Hiran and the surviving gods</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22460 AE (195616 UT)</h2>
             <h3></h3>
@@ -664,7 +664,7 @@ Timeline
             <p>Optar discovers the arrival of a coming Comet which will annihilate all life on Solinia. The event is misinterpreted to represent a prophecy which actually relates to the Jin </p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22553 AE (195744 UT)</h2>
             <h3></h3>
@@ -680,7 +680,7 @@ Timeline
             <p>The Jin travel back in time to 4 OE with some of the settlers of Solinia. (Migrant races exit time)</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>4 P-OE (195752 UT)</h2>
             <h3></h3>
@@ -697,7 +697,7 @@ Timeline
 </p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>5 P-OE (195753 UT)</h2>
             <h3></h3>
@@ -714,7 +714,7 @@ Timeline
             <p>Taketevolken are defeated by the Jin but in so doing also destroy themselves and a Alatyr and Nulchulnuth</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>12 P-OE (195760 UT)</h2>
             <h3></h3>
@@ -730,7 +730,7 @@ Timeline
             <p>Humans discover the Ni-Jin</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>18 P-OE (195766 UT)</h2>
             <h3></h3>
@@ -746,7 +746,7 @@ Timeline
             <p>The Gods descend upon the races of Solinia and name mortals as their champions for a great war of the gods The Elemental pantheon seeks to restore balance by sending an Avatar named Natalie deep into the past to restore the missing elemental deity Zephyr</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>25 P-OE (195773 UT)</h2>
             <h3></h3>
@@ -774,7 +774,7 @@ Timeline
             <p></p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>1234 P-OE (196982 UT)</h2>
             <h3></h3>
@@ -790,7 +790,7 @@ Timeline
             <p></p>
         </div>
     </div>
-<div class="timelinecontainer left">
+<div class="timelinecontainer right">
         <div class="content">
             <h2>1234 P-OE (196982 UT)</h2>
             <h3></h3>
@@ -818,7 +818,7 @@ Timeline
             <p>The Shadowdancer lands safely on Severed Isles at a site not far from Ambreka</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196985 UT</h2>
             <h3></h3>
@@ -834,7 +834,7 @@ Timeline
             <p>Keladun and Orcs riots become frequent</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196988 UT</h2>
             <h3></h3>
@@ -850,7 +850,7 @@ Timeline
             <p>Orcs part Ambreka to the east</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196988 UT</h2>
             <h3></h3>
@@ -866,7 +866,7 @@ Timeline
             <p>Hiran Asura departs Ambreka to be in solitude</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196991 UT</h2>
             <h3></h3>
@@ -882,7 +882,7 @@ Timeline
             <p>The Vishim depart Ambreka to the west</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196995 UT</h2>
             <h3></h3>
@@ -898,7 +898,7 @@ Timeline
             <p>After years of competition between the Dark Elves and Meroei on who should rule Ambreka the dark elves decide the efforts are being wasted and could be better focused on an area with more exploitable resources and riches for them to build their own empire</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>196999 UT</h2>
             <h3></h3>
@@ -914,7 +914,7 @@ Timeline
             <p>The Gialon establish a trade network between all races</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>197081 UT</h2>
             <h3></h3>
@@ -937,7 +937,7 @@ Timeline
             <p>Tanqara is formed</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>197104 UT</h2>
             <h3></h3>
@@ -953,7 +953,7 @@ Timeline
             <p>An outpost in the Blackfeather Forest on Utra is created by the Anushi called Ezro</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>197134 UT</h2>
             <h3></h3>
