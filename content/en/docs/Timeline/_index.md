@@ -763,3 +763,210 @@ Timeline
         </div>
     </div>
 </div>
+<div class="timeline">
+    <h1>Time of Crisis</h1>
+    <p>196983 until 196983 UT</p>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>505 P-OE (196253 UT)</h2>
+            <h3></h3>
+            <p><small>Races from many era find themselves in a mysterious land known as Amaria</small></p>
+            <p></p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>1234 P-OE (196982 UT)</h2>
+            <h3></h3>
+            <p><small>The Caerthians launch an invasion across all of Amaria</small></p>
+            <p></p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>1234 P-OE (196982 UT)</h2>
+            <h3></h3>
+            <p><small>The Caerthians siege the city of Eindel leading to an allaince of races fighting against the Caerthians. During the war, the Caerthians attempt to use Hiran Asura as a weapon. Taliesin arrives to combat the threat, with Natalie and the renewed Goddess Zephyr. The Dal named Solinia returns in the midst of the battle and cures Hiran of his curse. Shai'Din kills the Emeperor of the Caerthians as the survivors flee Amaria with Hiran Asura and Zephyr in tow on a small merchant navy led by a giant ship</small></p>
+            <p></p>
+        </div>
+    </div>
+<div class="timelinecontainer left">
+        <div class="content">
+            <h2>1234 P-OE (196982 UT)</h2>
+            <h3></h3>
+            <p><small>The Caerthians siege the city of Eindel leading to an allaince of races fighting against the Caerthians. During the war, the Caerthians attempt to use Hiran Asura as a weapon. Taliesin arrives to combat the threat, with Natalie and the renewed Goddess Zephyr. The Dal named Solinia returns in the midst of the battle and cures Hiran of his curse. Shai'Din kills the Emeperor of the Caerthians as the survivors flee Amaria with Hiran Asura and Zephyr in tow on a small merchant navy led by a giant vessel Shadowdancer</small></p>
+            <p></p>
+        </div>
+    </div>
+   <div class="timelinecontainer left">
+        <div class="content">
+            <h2>1235 P-OE (196983 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>A storm shatters many ships of the merchant name. The Shadowdancer survives and heads north with the majority of the survivors. Another small vessel is grounded on the Isle of Olendor</p>
+        </div>
+    </div>
+</div>
+<div class="timeline">
+    <h1>Saga of the Paragon</h1>
+    <p>196984 until 200000 UT</p>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196984 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Shadowdancer lands safely on Severed Isles at a site not far from Ambreka</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196985 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Ambreka village is formed</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196987 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Keladun and Orcs riots become frequent</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196988 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Keladun part Ambreka to the west</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196988 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Orcs part Ambreka to the east</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196988 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Meroei try to manage the tensions, some new districts are created to reduce racial clashes</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196989 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Hiran Asura departs Ambreka to be in solitude</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196991 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Asurans depart Ambreka to the east</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196994 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Vishim depart Ambreka to the west</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196995 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Vishim found Ilmadyia to the West with the Keladun that have been living there for some time</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196997 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>After years of competition between the Dark Elves and Meroei on who should rule Ambreka the dark elves decide the efforts are being wasted and could be better focused on an area with more exploitable resources and riches for them to build their own empire</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>196999 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The dark elves begin the construction of a city that would later be known as Shadowgate</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197004 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Gialon establish a trade network between all races</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197081 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Blackveil Mysmaal locate Utra, The Mysmaal stumble on an ambandoned castle they name Castle Blackveil</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197082 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Anushi leave the Meroei and found their own kingdom in Utra</p>
+        </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197084 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Tanqara is formed</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197104 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Orcs land on Utra and cut a path through the deserts to the Veil, they found a city they name ARRR</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197131 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>An outpost in the Blackfeather Forest on Utra is created by the Anushi called Ezro</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197134 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The survivors of the second ship start to land on The Severed Isles</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>197134 UT</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Survivors of Amaria, thought to be missing since the storm 150 years ago begin to appear on the south coast of Utra</p>
+        </div>
+    </div>
+</div>
