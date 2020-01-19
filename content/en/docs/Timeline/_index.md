@@ -488,4 +488,278 @@ Timeline
 <div class="timeline">
     <h1>Age of Exploration</h1>
     <p>173191 until 195544 UT</p>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>1 AE (173192 UT)</h2>
+            <h3>Highguard is Formed</h3>
+            <p><small></small></p>
+            <p>Highguard is formed by travelling explorers far to the west of Solinia</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>20 AE (173211 UT)</h2>
+            <h3>Alliances are formed</h3>
+            <p><small></small></p>
+            <p>Alliances are made between Meropians, Eusebians, Chunel and Mysmaal</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>34 AE (173225 UT)</h2>
+            <h3>The end of The First Alliance</h3>
+            <p><small></small></p>
+            <p>The Mysmaal turn their back on their allies and war brews</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>72 AE (173263 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Following endless war, settlers abandon lands in search of even newer frontiers</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>95 AE (173286 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Alaris a small town is formed by survivors of a crashed ship</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>150 AE (173341 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Alaris and Northreach, a northern bastion, is abandoned following massive undead attacks. The races flee to the North through the Northlands and eventually discover an island off the continent of Kumari</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>153 AE (173344 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Northlands are discovered and settled</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>155 AE (173346 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The island of Aquion is discovered and settled</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>155 AE (173346 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Kumari is discovered</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>300 AE (173491 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The larger landmass of Kumari is settled by races of the west</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>5302 AE (178493 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The populations among the west flourish and new empires rise and fall. One of these would be the New Meropian Empire which influences span far and wide. Over time and great separation noticable racial differences emerge between the races</p>
+        </div>
+    </div>
+    <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22000 AE (195191 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The greatest modern races are predominent in the west including: Modern Human, High Elf, Fairy, Wood Elf, Half Elf, Dark Elf, Vampire, Barbarian, Orc, Ogre, Troll, Half Dragon, Gnome, Goblin, Hobbit, High Human, Undead, Dwarf, Ratman, Lizardman, Elemental, Kobold, Angel, Fallen Angel. The older ancestral races still continue to flourish in the east </p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22303 AE (195494 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The New Meropian Empire after years of growth begins to suffer economic collapse resulting in rioting and the exile of their leader</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22395 AE (195586 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Tomb of Hiran Asura is breached by the dragon Python on the lands of Kumari</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22420 AE (195611 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Destruction of Kumari</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22420 AE (195611 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Races flee from Kumari</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22420 AE (195611 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Hiran Asura arrives</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22425 AE (173225 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Elder Gods reemerge requesting assistance from the population of Solinia to prevent hiran asura from breaching their planes and destroying them</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22425 AE (195616 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Methabeht arrives and much fighting occurs between his followers and Asurans</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22425 AE (195616 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Ancestral races join forces with the modern races in the fight between Hiran and the surviving gods</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22460 AE (195616 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>A cursed crown of a lost reptilian race is discovered and infects the warring races. They flee to the southern tundra to fortress of New Heran</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22490 AE (195681 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Optar discovers the arrival of a coming Comet which will annihilate all life on Solinia. The event is misinterpreted to represent a prophecy which actually relates to the Jin </p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22553 AE (195744 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Jin orbit Solinia in the vessel The Reaper</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>22553 AE (195744 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Jin travel back in time to 4 OE with some of the settlers of Solinia. (Migrant races exit time)</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>4 P-OE (195752 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Primal Timeline Divergence</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>4 P-OE (195752 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Several Jin from far in the future which had crashed into the Ocean arrives in the distant past of Solinia Other races travel through time during this period and arrive on Alatyr also
+</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>5 P-OE (195753 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Alatyr is slowly populated by the migrant races. The Ancestral races also find Alatyr and begin colonisation
+</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>10 P-OE (195758 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Taketevolken are defeated by the Jin but in so doing also destroy themselves and a Alatyr and Nulchulnuth</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>12 P-OE (195760 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Highguard is formed by the Jin. The Jungle is settled by the fleeing Jin (Now mortal having abandoned their powers, referred to as Ni-Jin)</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>17 P-OE (195765 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Humans discover the Ni-Jin</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>18 P-OE (195766 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>Dark elves find the Jungle</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>20 P-OE (195768 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Gods descend upon the races of Solinia and name mortals as their champions for a great war of the gods The Elemental pantheon seeks to restore balance by sending an Avatar named Natalie deep into the past to restore the missing elemental deity Zephyr</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>25 P-OE (195773 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>The Spellstorm ravages the future Halcron is destroyed Acacia is destroyed Nilakantha is destroyed The Lidkim Emperor sacrifices himself Caza is unsealed by the Spell storm</p>
+        </div>
+    </div>
+     <div class="timelinecontainer left">
+        <div class="content">
+            <h2>317 P-OE (196065 UT)</h2>
+            <h3></h3>
+            <p><small></small></p>
+            <p>A war ravages between the Avatars in a lost land known as the Garden of Gods, an Anchor at its center is tore apart during the destruction segmenting the past from the future Methabeht sacrifices himself to prevent the past and future from shattering, turning into a great tree whos trees hold the future and past together A new reality is created out of the chaos</p>
+        </div>
+    </div>
 </div>
