@@ -1018,7 +1018,7 @@ Timeline
             <p>An outpost in the Blackfeather Forest on Utra is created by the Anushi called Ezro</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>197134 UT</h2>
             <h3></h3>
@@ -1026,7 +1026,7 @@ Timeline
             <p>The survivors of the second ship start to land on The Severed Isles</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>197134 UT</h2>
             <h3></h3>
