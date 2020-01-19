@@ -954,7 +954,7 @@ Timeline
             <p>The Vishim found Ilmadyia to the West with the Keladun that have been living there for some time</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>196997 UT</h2>
             <h3></h3>
