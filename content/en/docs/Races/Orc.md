@@ -12,11 +12,11 @@ description: >
 Orc
 {{% /pageinfo %}}
 
-#Introduction
+# Introduction
 
 Originally descended from the legendary Eusebian hero, Lord Erebus, this corrupted race are dedicated to war and destruction which, despite their low intelligence, they have been quite successful at
 
-##History
+## History
 
 The mighty Orc empire that sprawls the Underhave a unique history among the races of Solinia. Born at the start of the cataclsym this race has never been outside of of war since their conception. Highly tactical, brutal warriors and forever conquerers.
 
@@ -26,27 +26,27 @@ The battle was fierce and lasted weeks, the Orcs never tiring and the proto-huma
 
 It is said that Erebus still tramples the Under , crushing the many races that come before him and his orc armies endlessly seeking those who escaped him.
 
-##Religion
+## Religion
 
 Clerics generally spread the word of various deities
 
-##Founding Fathers
+## Founding Fathers
 
 Lord Erebus
 
-##Alignment
+## Alignment
 
 Evil
 
-##Deity
+## Deity
 
 Lunarine
 
-##Culture
+## Culture
 
 Orcs normally organise themselves in to Clans led by a Clan ruler
 
-##Origins
+## Origins
 
 The mighty Orc empire that sprawls the Under have a unique history among the races of Solinia. Born at the start of the Cataclysm this race has never been outside of of war since their conception. Highly tactical, brutal warriors and forever conquerers.
 
