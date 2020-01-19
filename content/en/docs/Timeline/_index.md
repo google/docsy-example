@@ -576,7 +576,7 @@ Timeline
             <p>The populations among the west flourish and new empires rise and fall. One of these would be the New Meropian Empire which influences span far and wide. Over time and great separation noticable racial differences emerge between the races</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>9803 AE (182984 UT)</h2>
             <h3></h3>
@@ -592,7 +592,7 @@ Timeline
             <p>Lizardmen eggs wash ashore on the north side of Utra and hatch</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>11803 AE (184984 UT)</h2>
             <h3></h3>
@@ -608,7 +608,7 @@ Timeline
             <p>Bluegill Goblins tunnel their way onto the island from the far corners of Qylia, they settle in the southern tundra</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>21783 AE (194964 UT)</h2>
             <h3></h3>
@@ -624,7 +624,7 @@ Timeline
             <p>A large blast breaks a hole in Utra, connecting it ot the Under - Minotaurs settle the south east of Utra</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>21803 AE (194984 UT)</h2>
             <h3></h3>
@@ -648,7 +648,7 @@ Timeline
             <p>The Sirens settle the southern coasts of Utra</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>22303 AE (195494 UT)</h2>
             <h3></h3>
@@ -656,7 +656,7 @@ Timeline
             <p>The New Meropian Empire after years of growth begins to suffer economic collapse resulting in rioting and the exile of their leader</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22395 AE (195586 UT)</h2>
             <h3></h3>
@@ -664,7 +664,7 @@ Timeline
             <p>The Tomb of Hiran Asura is breached by the dragon Python on the lands of Kumari</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>22420 AE (195611 UT)</h2>
             <h3></h3>
@@ -672,7 +672,7 @@ Timeline
             <p>The Destruction of Kumari</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22420 AE (195611 UT)</h2>
             <h3></h3>
@@ -680,7 +680,7 @@ Timeline
             <p>Races flee from Kumari</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>22420 AE (195611 UT)</h2>
             <h3></h3>
@@ -688,7 +688,7 @@ Timeline
             <p>Hiran Asura arrives</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22425 AE (173225 UT)</h2>
             <h3></h3>
@@ -696,7 +696,7 @@ Timeline
             <p>The Elder Gods reemerge requesting assistance from the population of Solinia to prevent hiran asura from breaching their planes and destroying them</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>22425 AE (195616 UT)</h2>
             <h3></h3>
@@ -704,7 +704,7 @@ Timeline
             <p>Methabeht arrives and much fighting occurs between his followers and Asurans</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22425 AE (195616 UT)</h2>
             <h3></h3>
@@ -712,7 +712,7 @@ Timeline
             <p>The Ancestral races join forces with the modern races in the fight between Hiran and the surviving gods</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>22460 AE (195616 UT)</h2>
             <h3></h3>
@@ -720,7 +720,7 @@ Timeline
             <p>A cursed crown of a lost reptilian race is discovered and infects the warring races. They flee to the southern tundra to fortress of New Heran</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22490 AE (195681 UT)</h2>
             <h3></h3>
@@ -728,7 +728,7 @@ Timeline
             <p>Optar discovers the arrival of a coming Comet which will annihilate all life on Solinia. The event is misinterpreted to represent a prophecy which actually relates to the Jin </p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>22553 AE (195744 UT)</h2>
             <h3></h3>
@@ -736,7 +736,7 @@ Timeline
             <p>The Jin orbit Solinia in the vessel The Reaper</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>22553 AE (195744 UT)</h2>
             <h3></h3>
@@ -744,7 +744,7 @@ Timeline
             <p>The Jin travel back in time to 4 OE with some of the settlers of Solinia. (Migrant races exit time)</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>4 P-OE (195752 UT)</h2>
             <h3></h3>
@@ -752,7 +752,7 @@ Timeline
             <p>Primal Timeline Divergence</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>4 P-OE (195752 UT)</h2>
             <h3></h3>
@@ -761,7 +761,7 @@ Timeline
 </p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>5 P-OE (195753 UT)</h2>
             <h3></h3>
@@ -770,7 +770,7 @@ Timeline
 </p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>10 P-OE (195758 UT)</h2>
             <h3></h3>
@@ -778,7 +778,7 @@ Timeline
             <p>Taketevolken are defeated by the Jin but in so doing also destroy themselves and a Alatyr and Nulchulnuth</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>12 P-OE (195760 UT)</h2>
             <h3></h3>
@@ -786,7 +786,7 @@ Timeline
             <p>Highguard is formed by the Jin. The Jungle is settled by the fleeing Jin (Now mortal having abandoned their powers, referred to as Ni-Jin)</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>17 P-OE (195765 UT)</h2>
             <h3></h3>
@@ -794,7 +794,7 @@ Timeline
             <p>Humans discover the Ni-Jin</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>18 P-OE (195766 UT)</h2>
             <h3></h3>
@@ -802,7 +802,7 @@ Timeline
             <p>Dark elves find the Jungle</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>20 P-OE (195768 UT)</h2>
             <h3></h3>
@@ -810,7 +810,7 @@ Timeline
             <p>The Gods descend upon the races of Solinia and name mortals as their champions for a great war of the gods The Elemental pantheon seeks to restore balance by sending an Avatar named Natalie deep into the past to restore the missing elemental deity Zephyr</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>25 P-OE (195773 UT)</h2>
             <h3></h3>
@@ -818,7 +818,7 @@ Timeline
             <p>The Spellstorm ravages the future Halcron is destroyed Acacia is destroyed Nilakantha is destroyed The Lidkim Emperor sacrifices himself Caza is unsealed by the Spell storm</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>317 P-OE (196065 UT)</h2>
             <h3></h3>
@@ -874,7 +874,7 @@ Timeline
 <div class="timeline">
     <h1>Saga of the Paragon</h1>
     <p>196984 until 200000 UT</p>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196984 UT</h2>
             <h3></h3>
@@ -882,7 +882,7 @@ Timeline
             <p>The Shadowdancer lands safely on Severed Isles at a site not far from Ambreka</p>
         </div>
     </div>
-    <div class="timelinecontainer right">
+    <div class="timelinecontainer left">
         <div class="content">
             <h2>196985 UT</h2>
             <h3></h3>
@@ -890,7 +890,7 @@ Timeline
             <p>Ambreka village is formed</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196987 UT</h2>
             <h3></h3>
@@ -898,7 +898,7 @@ Timeline
             <p>Keladun and Orcs riots become frequent</p>
         </div>
     </div>
-    <div class="timelinecontainer right">
+    <div class="timelinecontainer left">
         <div class="content">
             <h2>196988 UT</h2>
             <h3></h3>
@@ -906,7 +906,7 @@ Timeline
             <p>Keladun part Ambreka to the west</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196988 UT</h2>
             <h3></h3>
@@ -914,7 +914,7 @@ Timeline
             <p>Orcs part Ambreka to the east</p>
         </div>
     </div>
-    <div class="timelinecontainer right">
+    <div class="timelinecontainer left">
         <div class="content">
             <h2>196988 UT</h2>
             <h3></h3>
@@ -922,7 +922,7 @@ Timeline
             <p>Meroei try to manage the tensions, some new districts are created to reduce racial clashes</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196989 UT</h2>
             <h3></h3>
@@ -930,7 +930,7 @@ Timeline
             <p>Hiran Asura departs Ambreka to be in solitude</p>
         </div>
     </div>
-    <div class="timelinecontainer right">
+    <div class="timelinecontainer left">
         <div class="content">
             <h2>196991 UT</h2>
             <h3></h3>
@@ -938,7 +938,7 @@ Timeline
             <p>The Asurans depart Ambreka to the east</p>
         </div>
     </div>
-    <div class="timelinecontainer left">
+    <div class="timelinecontainer right">
         <div class="content">
             <h2>196994 UT</h2>
             <h3></h3>
@@ -946,7 +946,7 @@ Timeline
             <p>The Vishim depart Ambreka to the west</p>
         </div>
     </div>
-    <div class="timelinecontainer right">
+    <div class="timelinecontainer left">
         <div class="content">
             <h2>196995 UT</h2>
             <h3></h3>
@@ -962,7 +962,7 @@ Timeline
             <p>After years of competition between the Dark Elves and Meroei on who should rule Ambreka the dark elves decide the efforts are being wasted and could be better focused on an area with more exploitable resources and riches for them to build their own empire</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>196999 UT</h2>
             <h3></h3>
@@ -970,7 +970,7 @@ Timeline
             <p>The dark elves begin the construction of a city that would later be known as Shadowgate</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>197004 UT</h2>
             <h3></h3>
@@ -978,7 +978,7 @@ Timeline
             <p>The Gialon establish a trade network between all races</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>197081 UT</h2>
             <h3></h3>
@@ -986,7 +986,7 @@ Timeline
             <p>Blackveil Mysmaal locate Utra, The Mysmaal stumble on an ambandoned castle they name Castle Blackveil</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>197082 UT</h2>
             <h3></h3>
@@ -1018,7 +1018,7 @@ Timeline
             <p>An outpost in the Blackfeather Forest on Utra is created by the Anushi called Ezro</p>
         </div>
     </div>
-     <div class="timelinecontainer right">
+     <div class="timelinecontainer left">
         <div class="content">
             <h2>197134 UT</h2>
             <h3></h3>
@@ -1026,7 +1026,7 @@ Timeline
             <p>The survivors of the second ship start to land on The Severed Isles</p>
         </div>
     </div>
-     <div class="timelinecontainer left">
+     <div class="timelinecontainer right">
         <div class="content">
             <h2>197134 UT</h2>
             <h3></h3>
