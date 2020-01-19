@@ -929,6 +929,7 @@ Timeline
             <p><small></small></p>
             <p>The Anushi leave the Meroei and found their own kingdom in Utra</p>
         </div>
+     </div>
      <div class="timelinecontainer left">
         <div class="content">
             <h2>197084 UT</h2>
