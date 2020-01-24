@@ -9,35 +9,35 @@ description: >
 
 **INSTALLING THE MOD FOR FALL OF AN EMPIRE**
 
-NOTE: You require the latest version of Forge to use the mod and play on our server.
+NOTE: You require the latest version of Forge and the latest version of our mod to play on the server.
 
-Please download the latest recommended Forge build for your version of minecraft at https://files.minecraftforge.net/
+Minecraft Forge:
+http://files.minecraftforge.net/ (Here you need to get the version of minecraft used for the server.)
+Our Server Mod:
+https://github.com/mixxit/solinia3-ui/releases (Get the newest version)
+Java (Only if it is not installed):
+https://www.java.com/en/
 
-You may need to download and install Java, https://www.java.com/en/ , to use the Forge installer.
+Once Forge is installed, Select the "Install Client option"
 
-Open the Forge.jar file to install it, and when prompted choose "client".
+If you have not used Minecraft forge before:
+* Press and hold the Windows Key (Commonly found on the bottom of the keyboard next to the space bar on the left)
+* Press the "R" key while you are holding the windows key.
+* Click on the Text box, And Type " %appdata%"
 
-You can then install our mod in your .minecraft directory
+* once the file opens, Look for the file called ".minecraft"
 
-Our mod is available from https://github.com/mixxit/solinia3-ui/releases
+* Double click the folder so that it opens, Then create a folder named "mods"
 
-Please download the Solinia3ui.jar file, not the source code.
+* Drag and drop the mod into the newly created mods folder
 
-**Windows install**
+* Open the Minecraft Launcher, And go to create a new Installation under the "Installations" tab
 
-To access your .minecraft directory, press (Windows) + R and type %appdata%\\.minecraft and press enter.
+* Locate the "Release 1.14.4-Forge-XX.X.X" name, and select it. After click Create
+* Go to the "Play" tab, and select the newly created Forge launcher, and hit Play
+* Congratulations, You should now have Forge working along with the mod installed!
 
-**OS X Install**
+If you need any more help visit the #Support channel on our discord.
 
-To access your .minecraft directory, open a folder navigator and access "~/Library/Application Support/minecraft"
 
-**Continued**
-
-Then place the downloaded mod into the "mods" folder.
-
-If there is no "mods" folder, create one labeled "mods" and place the mod inside.
-
-Congratulations! Close and reopen Minecraft and you should be able to log onto our server!
-
-If you need additional help please visit our discord #Support channel at https://discordapp.com/invite/D58HfVZ
 .
