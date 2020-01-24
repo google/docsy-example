@@ -21,8 +21,11 @@ https://www.java.com/en/
 Once Forge is installed, Select the "Install Client option"
 
 If you have not used Minecraft forge before:
+
 * Press and hold the Windows Key (Commonly found on the bottom of the keyboard next to the space bar on the left)
+
 * Press the "R" key while you are holding the windows key.
+
 * Click on the Text box, And Type " %appdata%"
 
 * once the file opens, Look for the file called ".minecraft"
