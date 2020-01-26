@@ -12,6 +12,12 @@ description: >
 Music
 {{% /pageinfo %}}
 
-Music by artists including:
+Amazing Music by artists including:
 
-Scott Buckley - Check out his amazing music at https://www.scottbuckley.com.au/
+Scott Buckley - https://www.scottbuckley.com.au/
+
+Tristan Lohengrin - https://tristanlohengrin.bandcamp.com/
+
+Peritune - https://soundcloud.com/sei_peridot
+
+Bensound - https://www.bensound.com/
