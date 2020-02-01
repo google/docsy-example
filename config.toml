@@ -1,5 +1,5 @@
-baseURL = ""
-title = "Docsy Example"
+baseURL = "/"
+title = "Goldydocs"
 
 enableRobotsTXT = true
 
@@ -27,9 +27,6 @@ pygmentsUseClassic = false
 # See https://help.farbox.com/pygments.html
 pygmentsStyle = "tango"
 
- # First one is picked as the Twitter card image if not set on page.
- #images = ["images/project-illustration.png"]
-
 # Configure how URLs look like per section.
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
@@ -56,29 +53,53 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Docsy"
-description = "Docsy does docs"
+title = "Goldydocs"
+description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.no]
-title = "Docsy"
+title = "Goldydocs"
 description = "Docsy er operativsystem for skyen"
 languageName ="Norsk"
 contentDir = "content/no"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # Everything below this are Site Params
 
 [params]
-copyright = "Global Inc"
+copyright = "The Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
+
+# First one is picked as the Twitter card image if not set on page.
+# images = ["images/project-illustration.png"]
+
+# Menu title if your navbar has a versions selector to access old versions of your site.
+# This menu appears only if you have at least one [params.versions] set.
+version_menu = "Releases"
+
+# Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/google/docsy-example"
+# An optional link to a related project repo. For example, the sibling repository where your product code lives.
+github_project_repo = "https://github.com/google/docsy"
+
+# Specify a value here if your content directory is not in your repo's root directory
+# github_subdir = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"
+
+# Enable Algolia DocSearch
+algolia_docsearch = false
+
+# Enable Lunr.js offline search
+offlineSearch = false
 
 # User interface configuration
 [params.ui]
@@ -86,6 +107,12 @@ gcs_engine_id = "011737558837375720776:fsdu1nryfng"
 sidebar_menu_compact = false
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
+#  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
+sidebar_search_disable = false
+#  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
+navbar_logo = true
+# Set to true to disable the About link in the site footer
+footer_about_disable = false
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
@@ -130,5 +157,4 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 	url = "https://example.org/mail"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
-
 
