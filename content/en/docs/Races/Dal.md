@@ -16,3 +16,5 @@ In the beginning of the ancestor races there was the Dal and Kelderan, two races
 
 The Kelderan are the forefathers of the dwarvish Keladun and the human like Valderain
 
+The Dal are the forefathers of the elvish Aerindal and Caerthian
+
