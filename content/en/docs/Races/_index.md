@@ -12,3 +12,7 @@ description: >
 Races
 {{% /pageinfo %}}
 Races
+
+# Human like Lineage
+
+![](https://www.fallofanempire.com/img/kelderananddallineage.png)
