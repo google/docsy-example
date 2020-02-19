@@ -9,7 +9,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-Forgotten History
+This quest is from a previous map and is no longer accessible
 {{% /pageinfo %}}
 
 Sosandso says ‘hello’
