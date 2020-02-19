@@ -9,7 +9,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-Kaluden Knights
+This quest is from a previous map and is no longer accessible
 {{% /pageinfo %}}
 
 Soanso says "Hello"
