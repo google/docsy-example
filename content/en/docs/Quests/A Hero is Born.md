@@ -9,7 +9,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-A Hero is Born
+This quest is from a previous map and is no longer accessible
 {{% /pageinfo %}}
 
 Soandso says 'hello'
