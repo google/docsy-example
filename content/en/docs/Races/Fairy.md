@@ -31,6 +31,10 @@ Male and female fairies mate in their adult stage and lay eggs
 
 Fairies deposit large batches of eggs which grow into a pupal form. This form can last like this for several decades, and it is important for fairies societies to protect the pupa to ensure future generations. It can range from 20 to 30 years before a fairy reaches its full adult stage, and is generally denoted by growth of two new lower wings. In the case of regal fairies, the child emerges from pupa with 4 wings and in their final stage 6 wings
 
+Fairies can live for exceptionally long periods of time given the source of magic that they find themselves in, for example a fairy close to an entrance to the Plane of Magic may find themselves living for thousands of years
+
+Most fairies however will generally begin to 'loose their sparkle' at around a century dependent on the magical purity of their mana source during their life
+
 ### Ecology and Habitats
 
 Due to their mixed origins of the gods of Air and Nature fairies generally prefer mountainous forests along crystaline lakes. Fairies are particularly attuned to places of high arcane power and often seen in places of great beauty
