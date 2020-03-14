@@ -28,7 +28,7 @@ Basically you'll start with the iron sword bought from the armorsmith and your d
 As you can see at lvl 18 your usefulness becomes important as you'll start becoming the main dps of the group or solo if you don't have one. The higher your level the higher will be your flexing, if for some case you pair up with a healing class you must show your humility by saying to them: "I'll show you my might just heal me" and shred all the mobs. During your journey most will say that rogue is broken and overpowered, you're entitled to say "Rogue and OP are the same word" and if someone tries to undermine the rogue power the most appropriate action is saying "1v1 me". 
 ![2h6pgx](https://user-images.githubusercontent.com/40521706/76663758-5dad1700-6582-11ea-84a8-835906b7c27f.jpg)
 
-Now let's pass to the equipment, like I said there are two types of daggers: the slashing type and the piercing type. Now with these two types it's gonna be like tinder Slashing is going to get the swipe left while piercing the right swipe why? because only piercing weapons can use poisons. About bows they're useless for now and for the armour and extra pieces of armour you should choose the ones that have the highest resistances (The resistances are the blue letters on the item I.E. FR, MR, PR, DR, CR)
+Now let's pass to the equipment, like I said there are two types of daggers: the slashing type and the piercing type. Now with these two types it's gonna be like tinder Slashing is a swipe left while piercing a right swipe, why? because only piercing weapons can use poisons. About bows they're useless for now and for the armour and extra pieces of armour you should choose the ones that have the highest resistances (The resistances are the blue letters on the item I.E. FR, MR, PR, DR, CR)
 
 ![65a0269b3bc48ae29dd2f2e0008911f2](https://user-images.githubusercontent.com/40521706/76664043-51758980-6583-11ea-8eff-1377fe39dc75.jpg)
 
@@ -46,14 +46,19 @@ Disarm is a spell that can be used on a target giving the chance to disarm them 
 The lvl 1-10 spells
 * Ezro [x:-2335; z:22]
 * Tanqara [x:-2192; z:-1986]
+
 The lvl 10-19 spells
 * Lunathis [x:-3129; z:-2548]
 * Tanqara [x:-2185; z:-2090]
+
 The lvl 20-30 spells
 * Denko Utra Depot [x:332; z:-1291]
+
 The lvl 30-40 spells
 * Avaris [x:46; z:366]
-The lvl 40-49 spells [x:41; z:374]
+
+The lvl 40-49 spells 
+* Avaris [x:41; z:374]
 
 
 Most of the spells are like sneak attack but with different modifiers, one of the most versatile skill a rogue can have is rogue ploy lvl 61 this skill can mez up to lvl 65 for 30 seconds. 
@@ -63,7 +68,9 @@ Most of the spells are like sneak attack but with different modifiers, one of th
 http://dragon-venom.com/poison/
 ![Cattura2](https://user-images.githubusercontent.com/40521706/76660773-00ad6300-657a-11ea-83b2-d118c5b354d8.PNG)
 
-There are various poison with various effects but mainly divides into 2 groups: Utility and DPS 
+Now let's pass on what makes rogue the most op class, the poisons.
+
+There are various poisons with various effects but mainly divides into 2 groups: Utility and DPS 
 The utility poisons are: 
 * Messenger's bane it's made with Larkspur and gives snare (the target won't be able to move)
 * Myrmidon's sloth it's made with Oleander and gives slow (the target movement will be slowed)
@@ -77,13 +84,13 @@ The DPS potions are :
 * spider's bite it's made with nigrivinter and deals more damage than scorpion's agony 
 * scorpion's agony it's made with gormar and deals less damage than spider's bite but generates more aggro, useful if you're the tank of the team. 
 
-You can only have active one utility poison and one dps poison at time.
+You can only have active one utility poison and one dps poison at time, the messenger's bane won't work on bosses or raid bosses.
 
 The poisons have various grades that goes from I(1) to XVIII(18) the grade determines the chance to inflict the poison at hit and the damage too for the DPS poisons. 
 
 You can start making poisons at lvl 18; a grade I poison is lvl 15 and each grade has a +5 range than the last one I.E. Grade I lvl 15 Grade II lvl 20.
 
-Like I said before it's possible using poisons only with piercing daggers.
+As I said before it's possible using poisons only with piercing daggers.
 
 You can buy the materials for poisons at:
 
@@ -92,6 +99,22 @@ You can buy the materials for poisons at:
 * Lunathis [x:-3162; z:-2558]
 * Denko Utra Depot [x:328; z:-1283]
 * Avaris [x:-1; z:-339]
+
+To make a poison you need to put a vial on your main/off hand and the ingredient in the other hand then type /craft in chat, if you're successful you'll get in chat "you fashion the items together to make something new!" and get an health potion in your inventory else you'll get "your lack of skill resulted in failure". At the start you will fail a lot of times but by levelling up the skill you'll become more successful.
+
+![2020-03-14_15 50 58](https://user-images.githubusercontent.com/40521706/76684371-ede36e80-660b-11ea-9955-9b9515c2e91d.png)
+
+Inside the red circle there's the ingredient inside the yellow circle there's the vial.
+
+![2020-03-14_15 53 46](https://user-images.githubusercontent.com/40521706/76684435-592d4080-660c-11ea-957d-1067ac6034cf.png)
+
+![2020-03-14_15 53 51](https://user-images.githubusercontent.com/40521706/76684444-6b0ee380-660c-11ea-9931-0a5a887fdd75.png)
+
+![2020-03-14_15 54 06](https://user-images.githubusercontent.com/40521706/76684455-782bd280-660c-11ea-8024-690d2d81f9b3.png)
+
+![2020-03-14_15 58 29](https://user-images.githubusercontent.com/40521706/76684483-ad382500-660c-11ea-8769-271d0d995534.png)
+
+![komWWNKI7Dmq19NsuXx16oSuCUU=](https://user-images.githubusercontent.com/40521706/76684683-43207f80-660e-11ea-96e9-ec595a97e8da.gif)
 
 #### Grade vial material quality 
 
@@ -130,6 +153,7 @@ You can buy the materials for poisons at:
 ( XVII ) Ornate Distilled Grade B 
 
 ( XVIII ) Stylized Distilled Grade A 
+
 
 ### Class Titles
 
