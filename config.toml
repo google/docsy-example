@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "VMware Cloud on AWS Onboarding"
 
 enableRobotsTXT = true
 
@@ -53,7 +53,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "Goldydocs"
+title = "VMware Cloud on AWS Onboarding"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
@@ -74,8 +74,8 @@ time_format_blog = "02.01.2006"
 # Everything below this are Site Params
 
 [params]
-copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
+copyright = "The VMC Field Team Authors"
+# privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -99,9 +99,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/vmc-field-team/vmc-field-team.github.io"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/vmc-field-team/vmc-field-team.github.io"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -124,7 +124,7 @@ breadcrumb_disable = false
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
 #  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
-navbar_logo = true
+navbar_logo = false
 # Set to true to disable the About link in the site footer
 footer_about_disable = false
 
@@ -135,40 +135,41 @@ footer_about_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/vmc-field-team/vmc-field-team.github.io/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/vmc-field-team/vmc-field-team.github.io/issues/new">tell us how we can improve</a>.'
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-	name = "User mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-	name ="Twitter"
-	url = "https://example.org/twitter"
-	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-	name = "Stack Overflow"
-	url = "https://example.org/stack"
-	icon = "fab fa-stack-overflow"
-        desc = "Practical questions and curated answers"
+#[[params.links.user]]
+#	name = "User mailing list"
+#	url = "https://example.org/mail"
+#	icon = "fa fa-envelope"
+#        desc = "Discussion and help from your fellow users"
+
+#[[params.links.user]]
+#	name = "Stack Overflow"
+#	url = "https://example.org/stack"
+#	icon = "fab fa-stack-overflow"
+#        desc = "Practical questions and curated answers"
+
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
+	name ="Twitter"
+	url = "https://twitter.com/vmwarecloudaws"
+	icon = "fab fa-twitter"
+        desc = "Follow us on Twitter to get the latest news!"
+[[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/google/docsy"
+	url = "https://github.com/vmc-field-team"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
 	name = "Slack"
-	url = "https://example.org/slack"
+	url = "https://vmware.slack.com/"
 	icon = "fab fa-slack"
-        desc = "Chat with other project developers"
-[[params.links.developer]]
-	name = "Developer mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discuss development issues around the project"
-
+        desc = "Chat with us to tell us how we can improve this platform and make it more useful for you"
+#[[params.links.developer]]
+#	name = "Developer mailing list"
+#	url = "https://example.org/mail"
+#	icon = "fa fa-envelope"
+#        desc = "Discuss development issues around the project"
