@@ -58,11 +58,11 @@ description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "Goldydocs"
+[languages.es]
+title = "VMware Cloud on AWS Onboarding"
 description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
+languageName ="Espanol"
+contentDir = "content/es"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
@@ -99,9 +99,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/vmc-field-team/vmc-field-team.github.io"
+github_repo = "https://github.com/bohleadam/vmc-onboarding"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/vmc-field-team/vmc-field-team.github.io"
+github_project_repo = "https://github.com/bohleadam/vmc-onboarding"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
