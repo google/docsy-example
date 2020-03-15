@@ -160,7 +160,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/vmc-field-team/vmc-
         desc = "Follow us on Twitter to get the latest news!"
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/vmc-field-team"
+	url = "https://github.com/bohleadam"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
