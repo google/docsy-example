@@ -1,4 +1,4 @@
-baseURL = "vmc-onboarding.com"
+baseURL = "https://vmc-onboarding.com"
 title = "VMware Cloud on AWS Onboarding"
 
 enableRobotsTXT = true
