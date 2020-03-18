@@ -16,7 +16,7 @@ Downloaded the client and install.
 
 Once you have the Horizon client running.
 
-1. Click the *+* button to add a new connection server.
+1. Click the **+** button to add a new connection server.
 2. Enter the connection server name as **desktop.vmc.ninja**
 3. You may be prompted to accept an un-trusted certificate, please do so.
 
