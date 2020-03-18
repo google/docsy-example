@@ -143,6 +143,27 @@ As you save the markdown files which you are working on you will see the hugo si
 
 **Note:** You can also view how your markdown file will look by rendering it in VS Code using the (command+shift+v) shortcut.
 
-When you are ready to commit changes following the below steps to upload your changes to the repository
+When you are ready to commit changes, follow the below steps to upload your changes to the repository
 
-1. If you do not have the int
+1. Before we do anything we want to ensure that we have the latest version of the repository, others may have made changes since we last interacted with this repository. VS Code should do this automatically but we can check this manually by using the shortcut (Control+Shift+g) going to the 3 dots to the right of the VMC-ONBOARDING GIT list and selecting **Pull** this will make sure we have the latest version of the Repository.
+
+2. Now lets make some changes, for the purposes of this test we will add content to the index page of the contributing section.
+
+    {{< alert title="Note" >}}Please ensure that you follow the steps to undo your changes once you have completed this exercise{{< /alert >}}
+
+3. In your Explorer pane (shift+command+e) navigate too **/content/en/contributing/_index.md** and open this file
+
+4. You will see that this is a basic markdown file, you will also notice that there is some content at the top enclosed in dashes
+
+    ```markdown
+    ---
+    title: Contributing
+    menu:
+    main:
+        weight: 40
+    ---
+    ```
+
+    This is referred to as Frontmatter and it is the meta data which is used to render the page. If you want to learn more about this Frontmatter in this site you can refer to the Docsy theme documentation on Frontmatter here: [Frontmatter Documentation](https://www.docsy.dev/docs/adding-content/content/#page-frontmatter)
+
+5. 
