@@ -1,6 +1,6 @@
 ---
-title: "Detailed Setup instructions"
-linkTitle: "Detailed Setup instructions"
+title: "Detailed Setup Guide"
+linkTitle: "Detailed Setup Guide"
 date: 2020-03-18
 weight: 20
 description: >
