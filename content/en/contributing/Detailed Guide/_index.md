@@ -146,13 +146,10 @@ As you save the markdown files which you are working on you will see the hugo si
 When you are ready to commit changes, follow the below steps to upload your changes to the repository
 
 1. Before we do anything we want to ensure that we have the latest version of the repository, others may have made changes since we last interacted with this repository. VS Code should do this automatically but we can check this manually by using the shortcut (Control+Shift+g) going to the 3 dots to the right of the VMC-ONBOARDING GIT list and selecting **Pull** this will make sure we have the latest version of the Repository.
-
 2. Now lets make some changes, for the purposes of this test we will add content to the index page of the contributing section.
 
     {{< alert title="Note" >}}Please ensure that you follow the steps to undo your changes once you have completed this exercise{{< /alert >}}
-
 3. In your Explorer pane (shift+command+e) navigate too **/content/en/contributing/_index.md** and open this file
-
 4. You will see that this is a basic markdown file, you will also notice that there is some content at the top enclosed in dashes
 
     ```markdown
@@ -165,5 +162,22 @@ When you are ready to commit changes, follow the below steps to upload your chan
     ```
 
     This is referred to as Frontmatter and it is the meta data which is used to render the page. If you want to learn more about this Frontmatter in this site you can refer to the Docsy theme documentation on Frontmatter here: [Frontmatter Documentation](https://www.docsy.dev/docs/adding-content/content/#page-frontmatter)
+5. At the moment this is an empty page with just the front matter, this particular page is just a placeholder for sub-content. Beneath the Frontmatter section just add something, such as your initials. Save the file
 
-5. 
+    {{< alert title="Note" >}}If you are previewing your site locally with the Hugo Server command you will see the changes come through on the [http://localhost:1313/contributing/](http://localhost:1313/contributing/) page.{{< /alert >}}
+6. Now lets use the (control+shift+g) command to switch over to the Git tracking window in VS Code.
+7. You will notice now that you will have at least one _index.md file which says it has changes, select the file and right click it, select the option to **Stage Changes** your changes are now ready to be **committed**
+8. Under the VMC-ONBOARDING Git section you will see a place to input a commit message, every commit needs to have a message associated so put something in here such as "My first commit" then click the "tick" commit icon.
+9. Now we have committed a change we will now need to push this change up to the Repository hosted in [Github](https://Github.com). We can do this now by clicking the 3-dots to the right of VMC-ONBOARDING Git and selecting **push**
+
+    {{< alert title="Note" >}} If this is the first time you are pushing to the master Github repository you will be asked to give your Github username and password to authenticate your "Push" you will only need to do this once, you will not be asked to do this every time.{{< /alert >}}
+
+## How does the build of the site work
+
+Now that we have pushed the updates to the Github repository, there is some automation which will kick into play and build the site. This takes around 30 seconds to complete. Please refresh your browser after this time and you should see your changes take affect at [https://vmc-onboarding.com](https://vmc-onboarding.com).
+
+We use [Netlify](https://app.netlify.com/) as the tool to build and host this Hugo powered site.
+
+## Rollback your changes
+
+Please go through and delete the changes which you made to **/content/en/contributing/_index.md** and then step through the same process to save, commit and push your changes to the Github repository.
