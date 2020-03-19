@@ -5,4 +5,3 @@ menu:
     weight: 40
 ---
 
-Hello World
