@@ -1,6 +1,6 @@
 ---
-title: "Team Checkin"
-linkTitle: "Team Checking"
+title: "Team"
+linkTitle: "Team"
 weight: 2
 description: >
   Team checkin to verify eveyone is up and running
