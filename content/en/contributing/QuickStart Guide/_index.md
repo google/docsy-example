@@ -84,6 +84,6 @@ git commit -a -m "My change message"
 ```bash
 git push origin master
 ```
-## If you enabled 2 factor Auth in your Github account you will need to create an access token
+## NOTE: If you enabled 2 factor Auth in your Github account you will need to create an access token to login
 
 See here: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
