@@ -13,7 +13,7 @@ NOTE: You require the latest version of Forge and the latest version of our mod 
 
 Minecraft Forge:
 
-You must have version 28.1.70 - This is hte only version we support
+You must have version 28.1.70 - This is the only version we support
 http://files.minecraftforge.net/ (Here you need to get the version of minecraft used for the server.)
 
 Our Server Mod:
