@@ -12,11 +12,18 @@ description: >
 NOTE: You require the latest version of Forge and the latest version of our mod to play on the server.
 
 Minecraft Forge:
+
+You must have version 28.1.70 - This is hte only version we support
 http://files.minecraftforge.net/ (Here you need to get the version of minecraft used for the server.)
+
 Our Server Mod:
 https://github.com/mixxit/solinia3-ui/releases (Get the newest version)
+
 Java (Only if it is not installed):
 https://www.java.com/en/
+
+Optifine:
+Version: Optifine_1.14.4_HD_U_F5.jar
 
 Once Forge is installed, Select the "Install Client option"
 
