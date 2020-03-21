@@ -64,7 +64,7 @@ The mod is now installed
 
 # Step 4 - Installing the Optifine MOD
 
-Like above goto your %appdata% / minecraft / mods folder
+Like above goto your %appdata% / .minecraft / mods folder
 
 Copy the Optifine MOD jar into the mods folder
 
