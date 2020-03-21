@@ -1,55 +1,52 @@
+
 ---
+
 title: "Mod"
+
 linkTitle: "Mod"
+
 weight: 8
+
 date: 2017-01-04
+
 description: >
- Mod
+
+Mod
+
 ---
 
-**INSTALLING THE MOD FOR FALL OF AN EMPIRE**
+# Step 1 - Prerequisite Downloads
+  You should start by downloading these three files below
 
-NOTE: You require the latest version of Forge and the latest version of our mod to play on the server.
-
-Minecraft Forge:
-
+**Minecraft Forge:**
 You must have version 28.1.70 - This is the only version we support
-
 Download: https://www.fallofanempire.com/files/forge-1.14.4-28.1.70-installer.jar
-
-Our Server Mod:
-
+**Our Server Mod:**
 Download: https://github.com/mixxit/solinia3-ui/releases (Get the newest version)
-
-Optifine:
-
+**Optifine:**
 You must have version Optifine_1.14.4_HD_U_F5.jar
-
 Download: https://www.fallofanempire.com/files/OptiFine_1.14.4_HD_U_F5.jar
+ 
+# Step 2 - Installing Forge
 
-Once Forge is installed, Select the "Install Client option"
+Double click on the forge file you downloaded
+Press OK to begin the install to your minecraft folder
+Forge is now installed
 
-If you have not used Minecraft forge before:
+# Step 3 - Installing Optifine
+Double click the optifne file you downloaded
+Press install to begin the install to your minecraft folder
+Optifine is now installed
 
-* Press and hold the Windows Key (Commonly found on the bottom of the keyboard next to the space bar on the left)
+# Step 4 - Installing the Mod
+Goto the start menu 
+Type in %appdata% into the start menu search
+Click the %appdata% icon at the top
+Go into the .minecraft folder
+If you have a mods folder like in the screenshot, go inside it, if the folder doesnt exist, create it exactly as you see it in the screenshot
+Drop the solinia3-ui jar file into the mods folder
+The mod is now installed
 
-* Press the "R" key while you are holding the windows key.
-
-* Click on the Text box, And Type " %appdata%"
-
-* once the file opens, Look for the file called ".minecraft"
-
-* Double click the folder so that it opens, Then create a folder named "mods"
-
-* Drag and drop the mod into the newly created mods folder
-
-* Open the Minecraft Launcher, And go to create a new Installation under the "Installations" tab
-
-* Locate the "Release 1.14.4-Forge-XX.X.X" name, and select it. After click Create
-* Go to the "Play" tab, and select the newly created Forge launcher, and hit Play
-* Congratulations, You should now have Forge working along with the mod installed!
+# Need more help?
 
 If you need any more help visit the #Support channel on our discord.
-
-
-.
