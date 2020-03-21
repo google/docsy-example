@@ -22,7 +22,7 @@ Mod
 You must have version 28.1.70 - This is the only version we support
 Download: https://www.fallofanempire.com/files/forge-1.14.4-28.1.70-installer.jar
 **Our Server Mod:**
-Download: https://github.com/mixxit/solinia3-ui/releases (Get the newest version)
+Download: https://github.com/mixxit/solinia3-ui/releases (Get the newest JAR version)
 **Optifine:**
 You must have version Optifine_1.14.4_HD_U_F5.jar
 Download: https://www.fallofanempire.com/files/OptiFine_1.14.4_HD_U_F5.jar
