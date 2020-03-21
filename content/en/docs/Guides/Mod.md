@@ -1,18 +1,10 @@
-
 ---
-
 title: "Mod"
-
 linkTitle: "Mod"
-
 weight: 8
-
 date: 2017-01-04
-
 description: >
-
-Mod
-
+ Mod
 ---
 
 # Step 1 - Prerequisite Downloads
