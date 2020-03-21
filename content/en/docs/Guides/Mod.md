@@ -20,11 +20,11 @@ Download: https://www.fallofanempire.com/files/forge-1.14.4-28.1.70-installer.ja
 
 Download: https://github.com/mixxit/solinia3-ui/releases (Get the newest JAR version)
 
-**Optifine:**
+**Optifine MOD:**
 
-You must have version Optifine_1.14.4_HD_U_F5.jar
+You must have version OptiFine_1.14.4_HD_U_F5_MOD.jar
 
-Download: https://www.fallofanempire.com/files/OptiFine_1.14.4_HD_U_F5.jar
+Download: https://www.fallofanempire.com/files/OptiFine_1.14.4_HD_U_F5_MOD.jar
 
 # Step 2 - Installing Forge
 
@@ -40,19 +40,7 @@ Press OK to begin the install to your minecraft folder
 
 Forge is now installed
 
-# Step 3 - Installing Optifine
-
-Double click the optifine file you downloaded
-
-![](https://fallofanempire.com/img/install/optifine1.png)
-
-Press install to begin the install to your minecraft folder
-
-![](https://fallofanempire.com/img/install/optifine2.png)
-
-Optifine is now installed
-
-# Step 4 - Installing the Mod
+# Step 3 - Installing the Mod
 
 Goto the start menu 
 
@@ -73,6 +61,16 @@ Drop the solinia3-ui jar file into the mods folder
 ![](https://fallofanempire.com/img/install/modsfolder.png)
 
 The mod is now installed
+
+# Step 4 - Installing the Optifine MOD
+
+Like above goto your %appdata% / minecraft / mods folder
+
+Copy the Optifine MOD jar into the mods folder
+
+![](https://fallofanempire.com/img/install/mods.png)
+
+Optifine is now installed and can be used at the same time as forge
 
 # Need more help?
 
