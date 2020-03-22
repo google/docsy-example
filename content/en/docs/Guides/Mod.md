@@ -10,15 +10,19 @@ description: >
 # Step 1 - Prerequisite Downloads
   You should start by downloading these three files below
 
+**Our Server Mod:**
+
+Download: https://github.com/mixxit/solinia3-ui/releases (Get the newest JAR version)
+
+**Our Resource Pack:**
+
+Download: https://solinia.blob.core.windows.net/solinia-public/solinia3-resourcepack.zip
+
 **Minecraft Forge:**
 
 You must have version 28.1.70 - This is the only version we support
 
 Download: https://www.fallofanempire.com/files/forge-1.14.4-28.1.70-installer.jar
-
-**Our Server Mod:**
-
-Download: https://github.com/mixxit/solinia3-ui/releases (Get the newest JAR version)
 
 **Optifine MOD:**
 
