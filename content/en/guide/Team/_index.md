@@ -15,4 +15,5 @@ This is a placeholder page that shows you how to use this template site.
 ## Add your name and do a git commit and push
 
 Ryan Kelly
+Mark Meulemans
 
