@@ -1,6 +1,6 @@
 ---
-title: "1. On-Boarding SDDC"
-linkTitle: "1. On-Boarding SDDC"
+title: "Direct Connect"
+linkTitle: "Direct Connect"
 weight: 2
 description: >
   How to on-board your SDDC. 

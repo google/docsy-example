@@ -1,6 +1,6 @@
 ---
-title: "./"
-linkTitle: "./"
+title: "Hosted Connection"
+linkTitle: "Hosted Connection"
 weight: 2
 description: >
   How to on-board your SDDC. 
