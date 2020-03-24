@@ -1,7 +1,7 @@
 ---
 title: "3. Configure SDDC"
 linkTitle: "3. Configure SDDC"
-weight: 3
+weight: 4
 description: >
   How to on-board your SDDC. 
 ---

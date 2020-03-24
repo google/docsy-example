@@ -1,7 +1,7 @@
 ---
 title: "2. Connect SDDC"
 linkTitle: "2. Connect SDDC"
-weight: 2
+weight: 3
 description: >
   How to on-board your SDDC. 
 ---
