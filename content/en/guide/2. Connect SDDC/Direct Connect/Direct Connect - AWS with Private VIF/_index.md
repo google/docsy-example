@@ -1,6 +1,6 @@
 ---
-title: ./
-linkTitle: ./
+title: $myDirectory
+linkTitle: $myDirectory
 weight: 2
 description: >
   How to on-board your SDDC. 
