@@ -1,7 +1,7 @@
 ---
 title: "Team"
 linkTitle: "Team"
-weight: 2
+weight: 5
 description: >
   Team checkin to verify eveyone is up and running
 ---

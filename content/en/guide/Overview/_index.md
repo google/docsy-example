@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 linkTitle: "Overview"
-weight: 1
+weight: .5
 description: >
   Here's where your user finds out if your project is for them.
 ---

@@ -1,7 +1,7 @@
 ---
 title: "4. Deploy Add-Ons"
 linkTitle: "4. Deploy Add-Ons"
-weight: 2
+weight: 4
 description: >
   How to on-board your SDDC. 
 ---

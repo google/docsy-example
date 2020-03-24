@@ -1,7 +1,7 @@
 ---
 title: "1. On-Boarding SDDC"
 linkTitle: "1. On-Boarding SDDC"
-weight: 2
+weight: 1
 description: >
   How to on-board your SDDC. 
 ---
