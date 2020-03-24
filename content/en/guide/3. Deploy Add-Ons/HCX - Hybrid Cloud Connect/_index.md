@@ -1,6 +1,6 @@
 ---
-title: "3. Add-Ons"
-linkTitle: "3. Add-Ons"
+title: "HCX - Hybrid Cloud Connect"
+linkTitle: "HCX - Hybrid Cloud Connect"
 weight: 2
 description: >
   How to on-board your SDDC. 
