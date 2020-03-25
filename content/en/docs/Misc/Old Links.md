@@ -27,6 +27,10 @@ http://web.archive.org/web/20120820000719/http://www.minecraftroleplayserver.com
 
 https://soliniaonlinemc.wordpress.com
 
+When the website was www.soliniaonline.com
+
+http://web.archive.org/web/20110828232655/http://www.soliniaonline.com/lore/
+
 # Old Forum
 
 https://solinia.freeforums.net
