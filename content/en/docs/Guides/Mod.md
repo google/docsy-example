@@ -7,8 +7,11 @@ description: >
  Mod
 ---
 
+This guide presumes you have java installed already, if you dont you will need to install java 8 which is required by the forge installer - https://java.com/en/download/manual.jsp
+
 # Step 1 - Prerequisite Downloads
-  You should start by downloading these three files below
+
+You should start by downloading these three files below
 
 **Our Server Mod:**
 
