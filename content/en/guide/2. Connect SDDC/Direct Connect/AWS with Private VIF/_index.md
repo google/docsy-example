@@ -6,14 +6,17 @@ description: >
   How to connect to your SDDC with AWS Direct Connect
 ---
 
+## Overview 
 
+In this guide we will be connecting your on-prem data center to your VMware Cloud on AWS SDDC 
 
+![Login to AWS and VMC](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/dxwithprivatevif.png)
 
 ## Pre-Reqs
 
-VMware CLoud on AWS SDDC deployed
+- VMware Cloud on AWS SDDC deployed
 
-Amazon Direct Connect Ordered and installed -> https://docs.aws.amazon.com/directconnect/latest/UserGuide/getting_started.html 
+- Amazon Direct Connect Ordered and installed -> https://docs.aws.amazon.com/directconnect/latest/UserGuide/getting_started.html 
 
 ## Login to both your AWS account and the VMware Cloud on AWS portal
 Note: You need to login to the AWS account you used to deploy your VMware Cloud on AWS SDDC
