@@ -3,7 +3,7 @@ title: "Overview"
 linkTitle: "Overview"
 weight: 1
 description: >
-  Here's where your user finds out if your project is for them.
+  This guide will show you how to on-board your VMware Cloud on AWS SDDC (Software Defined Datacenter)
 ---
 
 {{% pageinfo %}}
@@ -11,13 +11,17 @@ This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
 
 
-The Overview is where your users find out about your project. Depending on the size of your docset, you can have a separate overview page (like this one) or put your overview contents in the Documentation landing page (like in the Docsy User Guide). 
+## VMware Cloud on AWS Overview
+
+![SDDC-Network-Login](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/Overview/vmwonawsoverview.png)
 
 Try answering these questions for your user in this page:
 
-## What is it?
+## Key terms and concepts?
 
-Introduce your project, including what it does or lets you do, why you would use it, and its primary goal (and how it achieves it). This should be similar to your README description, though you can go into a little more detail here if you want.
+VPC - Virtual Priate Cloud
+VPN - Virtual Priave Network 
+DX - Amazon Direct Connect
 
 ## Why do I want it?
 
