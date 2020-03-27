@@ -13,9 +13,10 @@ This is a placeholder page that shows you how to use this template site.
 
 ## VMware Cloud on AWS Overview
 
-![SDDC-Network-Login](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/Overview/vmwonawsoverview.png)
+![VMC Overview](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/Overview/vmwonawsoverview.png)
 
-Try answering these questions for your user in this page:
+
+
 
 ## Key terms and concepts?
 
