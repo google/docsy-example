@@ -38,7 +38,7 @@ VMware Cloud on AWS has a lot of moving parts. You will need the following peopl
 This guide is broken up into 4 phases: 
 
 * [1. On-Boarding your SDDC](/guide/1.-on-boarding-sddc/): Step by step guide to get your SDDC deployed
-* [2. Connecting your SDDC](/2. Connect SDDC/): Get your SDDC connected to your data center
-* [3. Configuring your SDDC](/3. Configure SDDC/): Get your SDDC setup and 
-* [4. Deploying Add-Ons](/4. Deploy Add-Ons/): Step by step guide to get your SDDC deployed
+* [2. Connecting your SDDC](/2.-Connect-SDDC/): Get your SDDC connected to your data center
+* [3. Configuring your SDDC](/3.-Configure-SDDC/): Get your SDDC setup and 
+* [4. Deploying Add-Ons](/4.-Deploy-Add-Ons/): Quickly install Site Recovery Manager and Hybrid Cloud Connect
 
