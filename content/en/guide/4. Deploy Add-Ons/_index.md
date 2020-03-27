@@ -3,7 +3,7 @@ title: "4. Deploy Add-Ons"
 linkTitle: "4. Deploy Add-Ons"
 weight: 5
 description: >
-Deploy optional add-ons 
+  Deploy optional add-ons 
 ---
 
 
