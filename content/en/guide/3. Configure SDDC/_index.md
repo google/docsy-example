@@ -3,16 +3,11 @@ title: "3. Configure SDDC"
 linkTitle: "3. Configure SDDC"
 weight: 4
 description: >
-  How to on-board your SDDC. 
+ Get your SDDC configured and ready to go
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
 
 
+## Now that your SDDC is connected, let's finish it up
 
-## Add your name and do a git commit and push
-
-Ryan Kelly
-
+You will need to open the VMC firewall ports and configure vCenter for local access then optinaly you can link your on-prem vCenter 
