@@ -10,12 +10,12 @@ description: >
 
 ## There are multiple ways to connect your SDDC to your on-prem data center
 
-Direct Connect
+- Direct Connect
 
-VPN 
+- VPN 
 
-Direct Connect with VPN failover
+- Direct Connect with VPN failover
 
 
-## Use the following guides to get connects
+## Use the following guides to get connected
 
