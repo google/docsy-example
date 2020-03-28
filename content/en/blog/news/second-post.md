@@ -1,7 +1,7 @@
 
 ---
-title: "The second blog post"
-linkTitle: "Second blog post"
+title: "Spring 2020 events with RemoteScope"
+linkTitle: "Spring 2020 events with RemoteScope"
 date: 2018-10-06
 description: >
   A short lead descripton about this content page. Text here can also be **bold** or _italic_ and can even be split over multiple paragraphs.

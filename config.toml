@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "victordocs"
+title = "remotescope"
 
 enableRobotsTXT = true
 
@@ -53,13 +53,13 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "victordocs"
+title = "remotescope"
 description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.no]
-title = "victordocs.no"
+title = "remotescope.no"
 description = "Docsy er operativsystem for skyen"
 languageName ="Norsk"
 contentDir = "content/no"

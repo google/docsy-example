@@ -1,9 +1,9 @@
 ---
-date: 2018-10-06
-title: "Easy documentation with Docsy"
-linkTitle: "Announcing Docsy"
+date: 2020-03-28
+title: "Announcing RemoteScope"
+linkTitle: "Announcing RemoteScope"
 description: "The Docsy Hugo theme lets project maintainers and contributors focus on content, not on reinventing a website infrastructure from scratch"
-author: Riona MacNamara ([@rionam](https://twitter.com/bepsays))
+author: Victor Giurgiu ([@scopeguy](https://vgiurgiu.github.io/))
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
@@ -11,9 +11,9 @@ resources:
     byline: "Photo: Riona MacNamara / CC-BY-CA"
 ---
 
-**This is a typical blog post that includes images.**
+**RemoteScope is live**
 
-The front matter specifies the date of the blog post, its title, a short description that will be displayed on the blog landing page, and its author.
+Well, it's not. Just a reminder that this is an imaginary product and the purpose of this website is to showcase technical documentation. So, head on over to the [Documentation](/docs/) section of the site.
 
 ## Including images
 

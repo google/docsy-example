@@ -1,6 +1,6 @@
 
 ---
-title: "Documentation for VR Cities"
+title: "RemoteScope Documentation"
 linkTitle: "Documentation"
 weight: 20
 menu:
@@ -9,16 +9,14 @@ menu:
 ---
 
 {{% pageinfo %}}
-Use the documentation in this section to integrate with VRCities technology. 
+Use the documentation in this section to get started using RemoteScope and to integrate with RemoteScope for more advanced use cases. 
 {{% /pageinfo %}}
 
 
-This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project. 
+This section covers information from Getting Started for basic use cases, information about our telescope technology in the Reference section, tutorials, and advanced technical documentation to use our telescopes in an automated manner. More advanced use cases include booking telescope hours in an automated manner, remote operation, and even remote astrophotography.  
 
-For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which lives in the [Docsy theme repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to copy its docs section. 
+For information about the monthly RemoteScope events, see our [Blog](/blog/) section.
 
-Other content such as marketing material, case studies, and community updates should live in the [About](/about/) and [Community](/community/) pages.
 
-Find out how to use the Docsy theme in the [Docsy User Guide](https://docsy.dev/docs/). You can learn more about how to organize your documentation (and how we organized this site) in [Organizing Your Content](https://docsy.dev/docs/best-practices/organizing-content/).
 
 
