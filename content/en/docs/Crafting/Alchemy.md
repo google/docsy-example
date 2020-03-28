@@ -22,6 +22,10 @@ Alchemy
 | MANA_POTION_I       | ALCHEMY | 55       | Distilled_Mana_Dust | Empty_Bottle         | Mana_Potion_I       | SHAMAN |
 | GROUND_HELIOTROPE   | ALCHEMY | 0        | Mortar_and_Pestle   | Heliotrope           | Ground_Heliotrope   | SHAMAN |
 | GATE_POTION         | ALCHEMY | 150      | Empty_Bottle        | Condensed_Heliotrope | Gate_Potion         | SHAMAN |
+| FENUGREEK_BIRTHWORTH_MIX         | ALCHEMY | 0      | BIRTHWORTH        | FENUGREEK | FENUGREEK_BIRTHWORTH_MIX         | SHAMAN |
+| BLOOD_OF_WOLF_POTION         | ALCHEMY | 21      | FENUGREEK_BIRTHWORTH_MIX        | WOLF_BLOOD | BLOOD_OF_WOLF_POTION         | SHAMAN |
+| POTION_OF_UNLIFE_AWARENESS         | ALCHEMY | 37      | FENNEL        | ELDERBERRY | POTION_OF_UNLIFE_AWARENESS         | SHAMAN |
 
-
-
+| ONEEYES_POISON_ANTIDOTE         | ALCHEMY | 42      | LADYS_MANTLE        | HYSSOP | ONEEYES_POISON_ANTIDOTE         | SHAMAN |
+| FENUGREEK_MANDRAKEROOT_MIX         | ALCHEMY | 21      | FENUGREEK        | MANDRAKEROOT | FENUGREEK_MANDRAKEROOT_MIX         | SHAMAN |
+| NULL_POTION         | ALCHEMY | 70      | FENUGREEK_MANDRAKEROOT_MIX        | BLUE_VERVAIN_BULB | NULL_POTION         | SHAMAN |
