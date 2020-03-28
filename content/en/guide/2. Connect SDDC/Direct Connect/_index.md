@@ -3,7 +3,7 @@ title: "Direct Connect"
 linkTitle: "Direct Connect"
 weight: 2
 description: >
-  How to on-board your SDDC. 
+  How to configure AWS Direct connect for VMware Cloud on AWS  
 ---
 
 {{% pageinfo %}}

@@ -3,16 +3,16 @@ title: "VPN"
 linkTitle: "VPN"
 weight: 2
 description: >
-  How to on-board your SDDC. 
+  How to configure VPN for VMware Cloud on AWS
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+There are two ways to connect your VPN
+- Policy Based
+
+- Route Based
 
 
 
-## Add your name and do a git commit and push
+## See the following guides:
 
-Ryan Kelly
 
