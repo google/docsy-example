@@ -3,16 +3,10 @@ title: "Route Based"
 linkTitle: "Route Based"
 weight: 2
 description: >
-  How to on-board your SDDC. 
+  How to configure route based VPN for VMware Cloud on AWS 
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+## Add your content here
 
 
-
-## Add your name and do a git commit and push
-
-Ryan Kelly
 
