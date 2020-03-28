@@ -7,6 +7,8 @@ description: >
  Mod
 ---
 
+Fall of an Empire is currently locked to Minecraft Version: 1.14.4
+
 This guide presumes you have java installed already, if you dont you will need to install java 8 which is required by the forge installer - https://java.com/en/download/manual.jsp
 
 # Step 1 - Prerequisite Downloads
