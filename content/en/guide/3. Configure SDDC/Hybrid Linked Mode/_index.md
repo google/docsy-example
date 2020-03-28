@@ -3,16 +3,12 @@ title: "Hybrid Linked Mode"
 linkTitle: "Hybrid Linked Mode"
 weight: 2
 description: >
-  How to on-board your SDDC. 
+  How to setup hybrid linked mode 
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+## There are two flavors for hybrid linked mode
 
+- Cloud Gateway is an appliance you deploy on-prem and you connect to it to access your linked vCenters 
 
-
-## Add your name and do a git commit and push
-
-Ryan Kelly
+- VMC vCenter is deployed in your SDDC and you can configure hybrid linked mode from there
 
