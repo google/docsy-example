@@ -3,7 +3,7 @@ title: "AWS with Private VIF"
 linkTitle: "AWS with Private VIF"
 weight: 2
 description: >
-  How to connect to your SDDC with AWS Direct Connect
+  How to connect to your SDDC with AWS Private VIF
 ---
 
 ## Overview 
