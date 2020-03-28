@@ -83,6 +83,10 @@ Copy the Optifine MOD jar into the mods folder
 
 Optifine is now installed and can be used at the same time as forge
 
+# New Player Guide
+
+You should now be ready to follow our New Player Guide - https://www.fallofanempire.com/docs/guides/new-player-guide/
+
 # Need more help?
 
 If you need any more help visit the #Support channel on our discord.
