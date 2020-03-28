@@ -6,13 +6,7 @@ description: >
   How to configure AWS Direct connect for VMware Cloud on AWS  
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
 
+### There are a couple diffrent options for Amazon Direct Connect based on your requirements
 
-
-## Add your name and do a git commit and push
-
-Ryan Kelly
 
