@@ -3,7 +3,7 @@ title: "1. On-Boarding SDDC"
 linkTitle: "1. On-Boarding SDDC"
 weight: 2
 description: >
-  You will need both an AWS Account and access to the VMware Cloud Portal
+  Deploy your SDDC to AWS 
 ---
 
 ### On-boarding has two parts 
