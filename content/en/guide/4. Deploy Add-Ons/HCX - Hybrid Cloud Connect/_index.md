@@ -3,7 +3,7 @@ title: "HCX - Hybrid Cloud Connect"
 linkTitle: "HCX - Hybrid Cloud Connect"
 weight: 2
 description: >
-  How to on-board your SDDC. 
+  How to install HCX for VMware Cloud on AWS 
 ---
 
 {{% pageinfo %}}
