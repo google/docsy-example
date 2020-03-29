@@ -2,7 +2,7 @@
 ---
 title: "Release Notes"
 linkTitle: "Release Notes"
-weight: 11
+weight: 7
 date: 2020-03-27
 description: >
   What's new in the RemoteScope world

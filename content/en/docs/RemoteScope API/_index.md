@@ -2,8 +2,8 @@
 ---
 title: "RemoteScope API"
 linkTitle: "RemoteScope API"
-weight: 6
-date: 2017-01-05
+weight: 3
+date: 2020-03-27
 description: >
   All the information around the RemoteScope API
 ---

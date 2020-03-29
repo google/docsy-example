@@ -1,5 +1,5 @@
 ---
-title: "API tutorials"
+title: "API examples"
 date: 2020-03-27
 weight: 6
 description: >
