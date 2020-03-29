@@ -9,7 +9,7 @@ description: >
 ---
 
 {{% pageinfo %}}
-Getting started, authentication, tutorials - everything you need to kmow to use the RemoteScope API
+Getting started, authentication, tutorials - everything you need to know to use the RemoteScope API
 {{% /pageinfo %}}
 
 We'll add more information here shortly.
