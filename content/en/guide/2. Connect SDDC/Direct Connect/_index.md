@@ -8,5 +8,3 @@ description: >
 
 
 ### There are a couple diffrent options for Amazon Direct Connect based on your requirements
-
-
