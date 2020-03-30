@@ -6,11 +6,4 @@ description: >
   How to connect to your AWS account and deploy your SDDC
 ---
 
-
-
-
-
 ## Add your content here
-
-
-

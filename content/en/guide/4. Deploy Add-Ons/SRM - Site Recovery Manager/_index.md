@@ -6,8 +6,4 @@ description: >
   How to install SRM for VMware Cloud on AWS 
 ---
 
-
 ## Add your content here
-
-
-

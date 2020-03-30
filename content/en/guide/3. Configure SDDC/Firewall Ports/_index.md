@@ -6,9 +6,4 @@ description: >
  COnfigure VMC Firewall ports
 ---
 
-
-
 ## Add your content here
-
-
-

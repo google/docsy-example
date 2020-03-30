@@ -6,8 +6,4 @@ description: >
   How to setup Policy based VPN for VMware Cloud on AWS
 ---
 
-
 ## Add your content here
-
-
-
