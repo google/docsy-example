@@ -72,7 +72,7 @@ You should now see advertised and learned BG routes, if after several minutes yo
 
 ![Refesh VIF in VMC Portal](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/refreshvmcportal.jpg)
 
-{{% alert title="Note" %}}If your virtual interface is still down you may not have configured the subinterface on your router{{% /alert %}}
+{{% alert title="Note" %}}**If your virtual interface is still down you may not have configured the subinterface on your router**{{% /alert %}}
 
  1. Go back to the AWS portal, select the new virtual interface, click the Actions dropdown and select download router config
  2. Choose the router type that matches your router and click download
