@@ -11,6 +11,7 @@ This guide is not a replacement for <a href="https://docs.vmware.com/en/VMware-C
 {{% /pageinfo %}}
 
 
+
 ## VMware Cloud on AWS Overview
 
 ![VMC Overview](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/Overview/vmwonawsoverview.png)
