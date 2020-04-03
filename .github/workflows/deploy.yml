@@ -24,7 +24,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        deploy_key: ${{ secrets.CI_DEPLOY_PASSWORD }}
+        deploy_key: ${{ secrets.CI_DEPLOY_KEY }}
         external_repository: mixxit/solinia.github.io
         publish_branch: master
         publish_dir: ./public
