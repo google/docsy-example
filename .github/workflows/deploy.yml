@@ -22,12 +22,14 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
-
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
+      env:
+        HUGO_VERSION: "0.58.2"
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+        tar xf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+        sudo apt-get update && sudo apt-get install npm
+        npm install postcss-cli
+        mv hugo ~/bin/
+        HUGO_ENV="production" hugo --gc --minify
