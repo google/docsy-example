@@ -32,4 +32,4 @@ jobs:
         sudo apt-get update && sudo apt-get install npm
         npm install postcss-cli
         mkdir -p ~/bin && mv hugo ~/bin/
-        HUGO_ENV="production" hugo --gc --minify
+        HUGO_ENV="production" ~/bin/hugo --gc --minify
