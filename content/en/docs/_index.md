@@ -16,3 +16,7 @@ Here you can find the combined lore for the world as solinia along side all the 
 
 As a new player we recommend first reading our [New Players Guide](guides/new-player-guide)
 
+Please visit our discord for instant help
+
+https://discord.gg/D58HfVZ
+
