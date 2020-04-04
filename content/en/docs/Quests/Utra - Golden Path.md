@@ -103,6 +103,24 @@ You say 'Qin Chi'
 
 Augur Didyma turns the first card revealing a tower. 'To the east lays a tower, long forgotten now and inhabited by the scaled ones. It is a place of blasphemy in the eyes of the gods, doomed to summon the unwanted, cursed for all who walk its halls. The tower requires a sacrifice to bring the ones its new keepers seek. If you hurry, you may save Qin Chi and prevent another calamity.
 
+You say Hail to Qin Chi
+
+Qin Chi says 'Bantui, barashan. I thank you for killing my captives but I am here by my own will, it is the destiny that has been placed before me by the Gods'
+
+You say what destiny?
+
+Qin Chi says, 'I am here to make a sacrifice, my last sacrifice. You have a path opening up before you, one that has been written in the Kojiki since time immorial. To begin you will require an item very holy, one that had been a shadow of its former self. It was my destiny to bring it back here so it could travel back to the Planes and be whole once more. Now it is time for you to bring it back'
+
+You say how will I bring it back?
+
+Qin Chi says, 'This tower is a cursed contraption, built by snake like beings who no longer slither the deserts of Utra. The Darnans tried to exploit the magic here but all they ever did was summon suffering into the world. The cost of bringing back the item we seek will require my death, one I am happy to give to allow you to complete the great burden you have ahead of you. With my soul in your hand, you must use it to the floating contraption in the room before us. This will summon the artifact you need. Now barashan, it is time for me to return to Methabeht, do what must be done'
+
+You will Qin Chi
+
+You loot Qin Chis Soul
+
+You summon Oshira Plague Lord
+
 You kill Oshira Plague Lord
 
 You receive Zurvans Staff
