@@ -91,6 +91,14 @@ Optifine is now installed and can be used at the same time as forge
 
 Place the mod jar file into the mods folder as you did with solinia3-ui above
 
+Now enter the game and goto Options, Controls then scroll down to Xaerox Map 
+
+Click on the binding of enlarge minimap (default z) and remove the binding by pressing escape - we use Z for auto attack
+
+Click on the binding of Toggle minimap (default h) and remove the binding by pressing escape - we use H for hailing npcs
+
+Now go back to the game and press Y to open the mini map settings, press Change Position and drag the mini map to the top right corner then press confirm
+
 # New Player Guide
 
 You should now be ready to follow our New Player Guide - https://www.fallofanempire.com/docs/guides/new-player-guide/
