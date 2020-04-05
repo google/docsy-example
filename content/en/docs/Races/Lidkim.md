@@ -16,3 +16,7 @@ Basic Information
 
 More to follow
 
+Skins:
+Male: https://www.fallofanempire.com/img/skins/Male_Lidkim.png
+Female:https://www.fallofanmpire.com/img/skins/Female_Lidkim.png
+
