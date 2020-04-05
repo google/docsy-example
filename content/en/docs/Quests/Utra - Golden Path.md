@@ -12,6 +12,8 @@ description: >
 Utra - Golden Path
 {{% /pageinfo %}}
 
+#The Spear
+
 You give Old Farza the Archaic Markings
 
 The merchant trader snorts some unusual looking green spice and smiles a toothy grin in your direction 'So you come to ol' Farza do you? Looking for lost Utran pottery? No! The finest of Lunathian wine! Ohhhh... no, you have something.. yes ... very very old, pass it over to old Farza.' The trader takes the small runic stone and gazes over it, feeling along its surface and fingering the lettering with his weather hands. 'Yes, Darnan, second century... unusual... not words that Farza has seen before. A specialist you will need, for a bag of gold, maybe I can advice you... yes!' he smiles his toothy smile and places out his hand
@@ -397,7 +399,7 @@ You give Spear Head to Szsen 'Isssss thissss possssssible? The ssssspear head ha
 
 You receive THE SWORD OF HEAVEN
 
-You receive Darnan RIng of Majesty
+You receive Darnan Cloak of Majesty
 
 You have gained experience!
 
@@ -432,6 +434,7 @@ likely, we will all
 be judged for what
 we have done
 
+#The Sword of Heaven
 
 You loot Darnar Contraption
 
