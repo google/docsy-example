@@ -37,9 +37,9 @@ You must have version OptiFine_1.14.4_HD_U_F5_MOD.jar
 
 Download: https://www.fallofanempire.com/files/OptiFine_1.14.4_HD_U_F5_MOD.jar
 
-**Journey Map MOD:**
+**Xaeros Map MOD:**
 
-Download: https://www.fallofanempire.com/files/journeymap-1.14.4-5.7.0b1.jar
+Download: https://www.fallofanempire.com/files/Xaeros_Minimap_FP20.7.0_Forge_1.14.4.jar
 
 # Step 2 - Installing Forge
 
@@ -87,7 +87,7 @@ Copy the Optifine MOD jar into the mods folder
 
 Optifine is now installed and can be used at the same time as forge
 
-# Step 5 - Intalling Journeymap Mod
+# Step 5 - Intalling Xaeros Map Mod
 
 Place the mod jar file into the mods folder as you did with solinia3-ui above
 
