@@ -12,11 +12,10 @@ description: >
 Lidkim
 {{% /pageinfo %}}
 
-Basic Information 
+# Basic information
+The scaly lizard folk of Acacia have a difficult history following an undead plague that devoured their homelands. Despite this these hardy warriors have held strong and have found a new place in the ever changing world.
 
-More to follow
-
-Skins:
+# Skins:
 Male: https://www.fallofanempire.com/img/skins/Male_Lidkim.png
 Female:https://www.fallofanmpire.com/img/skins/Female_Lidkim.png
 
