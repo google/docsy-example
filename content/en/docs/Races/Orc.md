@@ -55,3 +55,7 @@ Legends have it that Lord Erebus , a noble of the early Proto Humans, fled for t
 The battle was fierce and lasted weeks, the Orcs never tiring and the proto-humans suffering endless losses. It was not until a skilled archer by the name of Sheia Kandam entered the battle did the tides did turn. For Sheia's arrows were poisoned tipped with under mold and orcs became weakened and struggled to fight the effects. Erebus was never truly defeated that day, but weakened enough for their people to escape the Under and flee Kandam to make their new home. The Eusebian people of Alcor still honour this great battle to this day and hold festivals to mark the day they fled the Under.
 
 It is said that Erebus still tramples the Under , crushing the many races that come before him and his orc armies endlessly seeking those who escaped him.
+
+## Skins
+Male: https://www.fallofanempire.com/img/skins/Male_Orc.png
+Female: https://www.fallofanempire.com/img/skins/Female_Orc.png
