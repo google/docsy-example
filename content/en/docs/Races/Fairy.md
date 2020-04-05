@@ -77,4 +77,8 @@ Fairies are capable of sensing the stream of mana that flows through and from va
 
 Fairies are highly reliant on the plants they grow from during their long pupal stage as the plants will feed the arcane energy to the growing child. Therefore the main structural purpose of the fairy species is defense of the plant kingdom that surrounds the fairy kingdom
 
+### Skins
+Male: https://www.fallofanempire.com/img/skins/Male_Fairy.png
+Female: https://www.fallofanempire.com/img/skins/Female_Fairy.png
+
     
