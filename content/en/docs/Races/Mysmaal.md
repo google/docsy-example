@@ -12,7 +12,10 @@ description: >
 Mysmaal
 {{% /pageinfo %}}
 
-Basic Information 
+# Basic information
+Atop the Crimson Throne of Val`Elsir sits the everliving Vampire houses of Taon. Worshippers of Somnus and Deuaulus the great houses of this mysterious race have been in a civil war almost since their creation.
 
-More to follow
+# Skins
+Male: https://www.fallofanempire.com/img/skins/Male_Mysmaal.png
+Female: https://www.fallofanempire.com/img/skins/Female_Mysmaal.png
 
