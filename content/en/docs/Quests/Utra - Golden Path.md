@@ -373,21 +373,21 @@ You say 'have you seen anything unusual in the dragonspine mountains' to Contrac
 
 Contractor_Kuram says 'We find unusual stuff all the time, we toss most of it up in the mountains. Sometimes if we find something valuable the guys may take it to the pawnbroker. He doesnt pay much but its something. I guess you are better speaking to him about unusual stuff'
 
-You say hail pawnbroker
+You say hail pawnbroker_gisf
 
-Pawnbroker says 'Hello, looking for something in particular?'
+Pawnbroker_Gisf says 'Hello, looking for something in particular?'
 
 You say i am searching for something unusual
 
-Pawnbroker says 'Hmm unusual... well that could be many of the things i have, perhaps you could be more specific?'
+Pawnbroker_Gisf says 'Hmm unusual... well that could be many of the things i have, perhaps you could be more specific?'
 
 You say i am looking for a spear
 
-Pawnbroker says 'Spear yes... not the only one' he whispers 'are you with Lord Murag?'
+Pawnbroker_Gisf says 'Spear yes... not the only one' he whispers 'are you with Lord Murag?'
 
 You say who is murag
 
-Pawnbroker says 'Oh nothing, nothing, forget i ever said anything'
+Pawnbroker_Gisf says 'Oh nothing, nothing, forget i ever said anything'
 
 You kill Lord Murag
 
