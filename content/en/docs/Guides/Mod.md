@@ -37,6 +37,10 @@ You must have version OptiFine_1.14.4_HD_U_F5_MOD.jar
 
 Download: https://www.fallofanempire.com/files/OptiFine_1.14.4_HD_U_F5_MOD.jar
 
+**Journey Map MOD:**
+
+Download: https://www.fallofanempire.com/files/journeymap-1.14.4-5.7.0b1.jar
+
 # Step 2 - Installing Forge
 
 Double click on the forge file you downloaded
@@ -82,6 +86,10 @@ Copy the Optifine MOD jar into the mods folder
 ![](https://fallofanempire.com/img/install/mods.png)
 
 Optifine is now installed and can be used at the same time as forge
+
+# Step 5 - Intalling Journeymap Mod
+
+Place the mod jar file into the mods folder as you did with solinia3-ui above
 
 # New Player Guide
 
