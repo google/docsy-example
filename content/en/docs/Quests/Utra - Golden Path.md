@@ -369,9 +369,9 @@ PROMISED SO LONG AGO
 
 Szsen says 'What a fascccccinating sssssstory! Thossssse creaturessss never wissssh to ssssspeak to me, i ssssupose thissss explainssss their disssstrussssst for lizzzzzardfolkssssss. If this Sssssgig sssspear is that which we sssseek then it is likely in the mountainsssss somewhere in the blackfeather plainsssss. It sssso happens there is a contractor in Tanqara that may know more about the minessss up there. Sssspeak to him and sssssee if he has come acrosss anything unusual in the dragonsssspine mountains'
 
-You say have you seen anything unusual in the dragonspine mountains
+You say 'have you seen anything unusual in the dragonspine mountains' to Contractor_Kuram
 
-Contractor says 'We find unusual stuff all the time, we toss most of it up in the mountains. Sometimes if we find something valuable the guys may take it to the pawnbroker. He doesnt pay much but its something. I guess you are better speaking to him about unusual stuff'
+Contractor_Kuram says 'We find unusual stuff all the time, we toss most of it up in the mountains. Sometimes if we find something valuable the guys may take it to the pawnbroker. He doesnt pay much but its something. I guess you are better speaking to him about unusual stuff'
 
 You say hail pawnbroker
 
