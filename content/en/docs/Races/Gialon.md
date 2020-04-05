@@ -49,3 +49,8 @@ Water Elementals inhabit the oceans of solinia. They are beautiful beings with i
 # Fire Elemental
 
 Fire Elementals are beings made out of fire, they can appear solid or completely shrouded in coloured flames depending on their mood. They always give off light, but they can control the heat their bodies emit; if angered they can scorch those around them. They worship the God of Fire; Ignorir 
+
+# Skins
+
+Male: https://www.fallofanempire.com/img/skins/Male_Gialon.png
+Female: https://www.fallofanempire.com/img/skins/Female_Gialon.png
