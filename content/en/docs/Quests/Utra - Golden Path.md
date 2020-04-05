@@ -137,7 +137,9 @@ You say I shall complete the quest
 
 Szsen says 'Then we must now find the missssssing blade head of the sssspear. We know the sssstaff predatesss the Darnar sssssooo it may be wisssse for usss to conssssult ssssome of the oldesssst peoplesss of Utra. The Kenku are hosssstile to usss even to this day but the Bullywugsssss may be more accommodating. Ssssseek their village in the blackfeather plainssssss and sssssee if you can find anything about the ssssspear head. Even if the current population of Bulwugssss are not aware of the sssspear, it may be pressssent in their ancient mythssss and ssssstories'
 
-You find Book: The Great Crossing
+You say 'SHOP' to Lorekeeper_Hurbl
+
+You buy Book: The Great Crossing
 
 THE GREAT CROSSING
 
