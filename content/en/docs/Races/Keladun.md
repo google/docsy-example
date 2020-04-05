@@ -12,7 +12,11 @@ description: >
 Keladun
 {{% /pageinfo %}}
 
-Basic Information 
+# Basic information
+A dwarven like race from the Lands of Qylia. Friendly and devoted to mining and Trading. Worshippers of Kaza-Thul the God of the Deep
 
-More to follow
+
+# Skins
+Male: https://www.fallofanempire.com/img/skins/Male_Keladun.png
+Female: https://www.fallofanempire.com/img/skins/Female_Keladun.png
 
