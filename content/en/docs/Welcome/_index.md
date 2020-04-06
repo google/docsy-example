@@ -1,7 +1,7 @@
 
 ---
 title: "Welcome"
-linkTitle: "Welcome"
+linkTitle: "Docs"
 weight: 20
 menu:
   main:
