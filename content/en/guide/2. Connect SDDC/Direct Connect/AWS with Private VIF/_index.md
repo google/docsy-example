@@ -70,7 +70,7 @@ Note: You need to login to the AWS account you used to deploy your VMware Cloud 
 
 You should now see advertised and learned BG routes, if after several minutes you do not see this go to next step 
 
-![Refesh VIF in VMC Portal](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/refreshvmcportal.jpg)
+![Refresh VIF in VMC Portal](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/refreshvmcportal.jpg)
 
 {{% alert title="Note" %}}**If your virtual interface is still down you may not have configured the subinterface on your router**{{% /alert %}}
 
