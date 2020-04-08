@@ -14,7 +14,7 @@ In this guide we will be setting up your AWS account with a VPC so that you can 
 
 ## Pre-Reqs
 
-- Amamzon account with rights to create a VPC in the region you would like to deploy your VMware SDDC and rights to run a cloud formation template. 
+- Amamzon account with rights to create a VPC in the region you would like to deploy your VMware SDDC and rights to run a cloud formation template. <a href="https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-DE8E80A3-5EED-474C-AECD-D30534926615.html" target="_blank">More Details here in VMware Offical Documentation</a>  
 
 ## Login to the AWS Console
 
@@ -121,4 +121,5 @@ Open another tab to  <a href="https://vmc.vmware.com" target="_blank">vmc.vmware
 
 ![Login to AWS and VMC](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/opentabs.png)
 
-Follow steps: [Deploy your SDDC](/guide/1.-on-boarding-sddc/deploy-sddc): Step by step guide to get your SDDC deployed
+
+Follow steps to: [Deploy your SDDC](/guide/1.-on-boarding-sddc/deploy-sddc)
