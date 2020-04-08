@@ -1,7 +1,7 @@
 ---
 title: "AWS VPC Setup"
 linkTitle: "AWS VPC Setup"
-weight: 2
+weight: 1
 description: >
   How to setup and configure the AWS VPC
 ---
