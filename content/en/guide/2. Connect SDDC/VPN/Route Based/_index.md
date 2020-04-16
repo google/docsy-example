@@ -79,13 +79,10 @@ INSERT PICTURE
 ## Verify Advertised Routes
 1. Verify the VPN is advertising the networks configured in VMC.
 
-{{% alert title="Current UI Bug" color="secondary" %}}
-In the screenshot you'll notice that the UI is showing both the advertised and learned routes in the Advertised Routes tab of the interface. This is a UI Bug with a JIRA ticket opened for it which should be resolved in M10v2.
-{{% /alert %}}
 
+## Verify Learned Routes
+1. Click the Learned Routes tab
+2. Verify the routes being advertised to VMC from the on-prem firewall
+3. Click Close
 
-
-Verify Learned Routes
-Click the Learned Routes tab
-Verify the routes being advertised to VMC from the on-prem firewall
-Click Close
+INSERT PICTURE
