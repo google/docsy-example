@@ -23,7 +23,7 @@ INSERT PICTURE
 1. Enter the Local ASN chosen by the customer
 2. Click Save
 
-NOTE Selecting the Local ASN
+>**Selecting the Local ASN**\
 By default the Local ASN for VMC is 65000. More often than not the customer will already be using this ASN on-prem and will want to select a different ASN for use in VMC. The customer's networking team should be responsible for defining the ASN inside of VMC or validating the use of the default.
 
 
@@ -43,7 +43,7 @@ INSERT PICTURE
 7. Preshared Key: Have the customer define a strong password for the preshared key. Be aware that this is shown in plain text when configuring and is accessible as plain text in the CSP so do not choose something that overlaps with other passwords for security purposes.
 8. Click Save
 
-NOTE Additional Configuration Options
+>**Additional Configuration Options**\
 All other configuration options can be modified as needed based on customer requirements. Not every customer's firewall will be able to support the default parameters and some customers may want to choose different options based on established corporate standards. You should NOT need to define any of the remaining configuration parameters but should allow the customer to define them based on feedback from their network or security teams internally.
 
 INSERT PICTURE
@@ -52,10 +52,10 @@ INSERT PICTURE
 1. Expand the newly created Route Based VPN
 2. Click Download Config to download the VPN configuration. This configuration can be provided to the customer's network or security team responsible for configuring the VPN tunnel on-prem to make it easier for them to mirror the config.
 
-WARNING Preshared key is in plain text!
+>**WARNING Preshared key is in plain text!**\
 Before emailing or sharing the VPN config it is usually a good idea to remove the preshared key from the text file for security purposes. Be sure to let the customer know this is stored in plain text so they can handle it according to any established infosec procedures they may have in their environment for storing or transferring this file.
 
-NOTE Differences with AWS Native
+>**NOTE Differences with AWS Native**\
 Unlike AWS native which will allow you to select your on-prem firewall appliance and auto generate a corresponding configuration, the config provided by VMC is in a generic format and the customer will be responsible for configuring their own appliances themselves.
 
 INSERT PICTURE
@@ -75,8 +75,10 @@ INSERT PICTURE
 ## Verify Advertised Routes
 1. Verify the VPN is advertising the networks configured in VMC.
 
-NOTE: Current UI Bug
+{{% notice info %}}
+**Current UI Bug**\
 In the screenshot you'll notice that the UI is showing both the advertised and learned routes in the Advertised Routes tab of the interface. This is a UI Bug with a JIRA ticket opened for it which should be resolved in M10v2.
+{%{ /notice %}}
 
 
 
