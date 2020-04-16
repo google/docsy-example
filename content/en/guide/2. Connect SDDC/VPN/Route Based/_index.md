@@ -23,8 +23,9 @@ INSERT PICTURE
 1. Enter the Local ASN chosen by the customer
 2. Click Save
 
->**Selecting the Local ASN**\
+{{% alert title="Selecting the Local ASN" color="primary" %}}
 By default the Local ASN for VMC is 65000. More often than not the customer will already be using this ASN on-prem and will want to select a different ASN for use in VMC. The customer's networking team should be responsible for defining the ASN inside of VMC or validating the use of the default.
+{{% /alert %}}
 
 
 ## Add new Route Based VPN
@@ -43,8 +44,9 @@ INSERT PICTURE
 7. Preshared Key: Have the customer define a strong password for the preshared key. Be aware that this is shown in plain text when configuring and is accessible as plain text in the CSP so do not choose something that overlaps with other passwords for security purposes.
 8. Click Save
 
->**Additional Configuration Options**\
+{{% alert title="Additional Configuration Options" color="primary" %}}
 All other configuration options can be modified as needed based on customer requirements. Not every customer's firewall will be able to support the default parameters and some customers may want to choose different options based on established corporate standards. You should NOT need to define any of the remaining configuration parameters but should allow the customer to define them based on feedback from their network or security teams internally.
+{{% /alert %}}
 
 INSERT PICTURE
 
@@ -56,8 +58,9 @@ INSERT PICTURE
 Before emailing or sharing the VPN config it is usually a good idea to remove the preshared key from the text file for security purposes. Be sure to let the customer know this is stored in plain text so they can handle it according to any established infosec procedures they may have in their environment for storing or transferring this file.
 {{% /alert %}}
 
->**NOTE Differences with AWS Native**\
+{{% alert title="Differences with AWS Native" color="primary" %}}
 Unlike AWS native which will allow you to select your on-prem firewall appliance and auto generate a corresponding configuration, the config provided by VMC is in a generic format and the customer will be responsible for configuring their own appliances themselves.
+{{% /alert %}}
 
 INSERT PICTURE
 
