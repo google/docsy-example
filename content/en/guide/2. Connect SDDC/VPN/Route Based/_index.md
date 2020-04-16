@@ -52,8 +52,9 @@ INSERT PICTURE
 1. Expand the newly created Route Based VPN
 2. Click Download Config to download the VPN configuration. This configuration can be provided to the customer's network or security team responsible for configuring the VPN tunnel on-prem to make it easier for them to mirror the config.
 
->**WARNING Preshared key is in plain text!**\
+{{% alert title="Preshared key is in plain text!" color="danger" %}}
 Before emailing or sharing the VPN config it is usually a good idea to remove the preshared key from the text file for security purposes. Be sure to let the customer know this is stored in plain text so they can handle it according to any established infosec procedures they may have in their environment for storing or transferring this file.
+{{% /alert %}}
 
 >**NOTE Differences with AWS Native**\
 Unlike AWS native which will allow you to select your on-prem firewall appliance and auto generate a corresponding configuration, the config provided by VMC is in a generic format and the customer will be responsible for configuring their own appliances themselves.
@@ -75,9 +76,9 @@ INSERT PICTURE
 ## Verify Advertised Routes
 1. Verify the VPN is advertising the networks configured in VMC.
 
-{{% alert title="Current UI Bug" color="info" %}}
+{{% alert title="Current UI Bug" color="warning" %}}
 In the screenshot you'll notice that the UI is showing both the advertised and learned routes in the Advertised Routes tab of the interface. This is a UI Bug with a JIRA ticket opened for it which should be resolved in M10v2.
-{%{ /alert %}}
+{{% /alert %}}
 
 
 
