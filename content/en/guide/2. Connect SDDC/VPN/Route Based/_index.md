@@ -11,7 +11,7 @@ description: >
 ## Navigate to Network & Security tab of the SDDC
 1. Click the Network & Security tab in the SDDC portal
 
-INSERT PICTURE
+![Navigate to Network & Security tab of the SDDC](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/vpn/route-based/step01_network_and_security.png)
 
 ## Update Local Autonomous System Number in VMC
 1. Click VPN section under Network in sidebar
