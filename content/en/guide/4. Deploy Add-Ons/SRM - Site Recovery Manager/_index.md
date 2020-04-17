@@ -6,8 +6,6 @@ description: >
   How to install SRM for VMware Cloud on AWS 
 ---
 
-## Add your content here
-
 ## Introduction
 
 In this lab you will pair up with another student in order to simulate the setup and configuration tasks for VMware Site Recovery Manager
