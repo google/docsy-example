@@ -28,7 +28,7 @@ description: >
 5. Remote Networks: Enter the on-prem subnets that will need to access VMC or will need to be accessible from VMC. 
 6. Local Networks: Select the local networks in VMC that need to be accessible from on-prem or will need to access on-prem networks. For this you will usually select the Infrastructure Subnet as well as any compute network segments configured in VMC.
 7. Preshared Key: Have the customer define a strong password for the preshared key. Be aware that this is shown in plain text when configuring and is accessible as plain text in the CSP so do not choose something that overlaps with other passwords for security purposes.
-8. Click Save
+8. Click **Save**
 
 {{% alert title="Additional Configuration Options" color="primary" %}}
 All other configuration options can be modified as needed based on customer requirements. Not every customer's firewall will be able to support the default parameters and some customers may want to choose different options based on established corporate standards. You should NOT need to define any of the remaining configuration parameters but should allow the customer to define them based on feedback from their network or security teams internally.
