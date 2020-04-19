@@ -42,11 +42,11 @@ All other configuration options can be modified as needed based on customer requ
 
 {{% alert title="Preshared key is in plain text!" color="warning" %}}
 Before emailing or sharing the VPN config it is usually a good idea to remove the preshared key from the text file for security purposes. Be sure to let the customer know this is stored in plain text so they can handle it according to any established infosec procedures they may have in their environment for storing or transferring this file.
-{{% /aert %}}
+{{% /alert %}}
 
 {{% alert title="Differences with AWS Native" color="primary" %}}
 Unlike AWS native which will allow you to select your on-prem firewall appliance and auto generate a corresponding configuration, the config provided by VMC is in a generic format and the customer will be responsible for configuring their own appliances themselves.
-{{% /aert %}}
+{{% /alert %}}
 
 ![Download VPN Configuration and Configure On-Prem VPN Appliance](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/vpn/policy-based/step04a_status_down.png)
 

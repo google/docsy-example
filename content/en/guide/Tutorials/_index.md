@@ -10,3 +10,11 @@ description: >
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
+
+{{< notice warning >}}
+This is a warning notice. Be warned!
+{{< /notice >}}
+
+{{< notice tip >}}
+This is a very good tip.
+{{< /notice >}}
