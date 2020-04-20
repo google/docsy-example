@@ -90,8 +90,8 @@ Unlike AWS native which will allow you to select your on-prem firewall appliance
 ![Verify Advertised Routes](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/vpn/route-based/step07b_advertised_routes.png)
 
 ## Verify Learned Routes
-1. Click the Learned Routes tab
+1. Click the **Learned Routes** tab
 2. Verify the routes being advertised to VMC from the on-prem firewall
-3. Click Close
+3. Click **Close**
 
 ![Verify Learned Routes](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/vpn/route-based/step07c_learned_routes.png)
