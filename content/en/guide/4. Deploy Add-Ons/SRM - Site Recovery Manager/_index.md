@@ -42,14 +42,12 @@ To use the VMware Site Recovery service, you must activate VMware Site Recovery 
 Wait until the Site Recovery Add On has been activated. This process takes approximately 10 minutes to complete.
 
 ## Instructions to download and install on-prem components
+
 ### Site Recovery Manager
+
 ### vSphere Replication
 
-
 ### Changing to private IP instead of public IP
-
-
-
 
 ## Prepare and Pair Site Recovery
 
@@ -72,7 +70,7 @@ We will need to create Management Gateway firewall rules to allow for additional
 You will be pairing to the other SDDC that is in your workshop organization.  Before beginning, each student needs to navigate to their partner's SDDC and save the vCenter FQDN and cloudadmin password.
 
 1. Click *Settings* for your **partner's SDDC**
- 
+
     The username on both sides (yours and your peer) will always be *cloudadmin@vmc.local*
 
 2. Copy your partner's cloudadmin password and save it to notepad
@@ -96,7 +94,6 @@ You will be pairing to the other SDDC that is in your workshop organization.  Be
 
 1. Navigate to the SDDC of the student that will do the site pairing and click *Add Ons*
 2. Click *OPEN SITE RECOVERY* (*If necessary, login with the cloudadmin credentials for that SDDC*)
-
 
     ![SRM17](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM17.jpg)
 
@@ -130,6 +127,7 @@ You will be pairing to the other SDDC that is in your workshop organization.  Be
 Once logged in to your partner's SDDC, you will see the *Site Pair Summary*
 
 ## Configure Mappings
+
 ### Configure Network Mappings
 
 ![SRM22](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM22.jpg)
@@ -221,11 +219,11 @@ Once logged in to your partner's SDDC, you will see the *Site Pair Summary*
 7. Click *ADD MAPPINGS*
 
     ![SRM34-a](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM34-a.jpg)
-    
+
 8. Click *NEXT*
 
     ![SRM35](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM35.jpg)
-    
+
     DO NOT select any reverse mappings
 
 9. Click *NEXT*
@@ -279,7 +277,7 @@ Once logged in to your partner's SDDC, you will see the *Site Pair Summary*
 
     ![SRM43-a](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM43-a.jpg)
 
-For Placeholder Datastores, you must select a datastore at each side, so you'll repeat the same steps for the other vCenter.
+    For Placeholder Datastores, you must select a datastore at each side, so you'll repeat the same steps for the other vCenter.
 
 5. Click the *vCenter entry* for the vCenter that you are **paired with**
 6. Click *+ NEW*
@@ -303,11 +301,11 @@ If you need to log back in to your SDDC thru the VMC console, use the *cedxx@vmw
 
 2. Click *Content Libraries*
 
-    ![SRM71](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM71.jpg) 
+    ![SRM71](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM71.jpg)
 
 3. Click the *Windows-Content-Library*
 
-    ![SRM72](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM72.jpg) 
+    ![SRM72](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM72.jpg)
 
 4. Click *Templates*
 
@@ -357,10 +355,8 @@ If you need to log back in to your SDDC thru the VMC console, use the *cedxx@vmw
 ## Using Site Recovery
 
 We will use Site Recovery to replicate the VMs we want to protect, create protection groups for those VMs, and create and test recovery plans.  Navigate back to Site Recovery for your SDDC
-<br>
 
 ### Replicate VMs to Recovery Site
-<br>
 
 ![SRM100](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM100.jpg)
 
@@ -522,4 +518,3 @@ We will create another Recovery Plan that will recover all of our applications. 
     ![SRM131](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM131.jpg)
 
 **Once the *cleanup* is complete, the Recovery Plan is in a *Ready* status and is ready for a test or a recovery.**
-
