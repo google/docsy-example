@@ -6,8 +6,4 @@ description: >
   How to configure VPN for VMware Cloud on AWS
 ---
 
-
-
-## There are two ways to connect your VPN:
-
-
+## There are two ways to connect your VPN

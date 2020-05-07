@@ -8,18 +8,17 @@ description: >
 
 ## Overview
 
-In this guide we will be setting up your AWS account with a VPC so that you can on-board your SDDC. To avoid cross AZ traffic charges from your SDDC to Native AWS EC2 instances, make sure you deploy your SDDC in the Same AZ where those instances are or whe you plan to run them. 
+In this guide we will be setting up your AWS account with a VPC so that you can on-board your SDDC. To avoid cross AZ traffic charges from your SDDC to Native AWS EC2 instances, make sure you deploy your SDDC in the Same AZ where those instances are or whe you plan to run them.
 
 ![Overview](https://vmc-onboarding-images.s3.amazonaws.com/1.Onboarding-SDDC/aws-vpc-setup/awsvpcoverview.png)
 
 ## Pre-Reqs
 
-- Amamzon account with rights to create a VPC in the region you would like to deploy your VMware SDDC and rights to run a cloud formation template. <a href="https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-DE8E80A3-5EED-474C-AECD-D30534926615.html" target="_blank">More Details here in VMware Offical Documentation</a>  
+Amazon account with rights to create a VPC in the region you would like to deploy your VMware SDDC and rights to run a cloud formation template. [VMware Cloud on AWS Documentation concerning AWS Account Roles and Permissions](https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-DE8E80A3-5EED-474C-AECD-D30534926615.html)
 
 ## Login to the AWS Console
 
 ![Login to AWS](https://vmc-onboarding-images.s3.amazonaws.com/1.Onboarding-SDDC/aws-vpc-setup/logintoaws.png)
-
 
 ## Search for the VPC service and click it
 
@@ -34,6 +33,7 @@ In this guide we will be setting up your AWS account with a VPC so that you can 
 ![Find VPC Service](https://vmc-onboarding-images.s3.amazonaws.com/1.Onboarding-SDDC/aws-vpc-setup/createvpc.png)
 
 ## Enter VPC details
+
 1. Enter a name for the VPC
 2. Enter a CIDR block (Must not overlap with what you intend to use for SDDC!)
 3. Keep default as No IPv6 CIDR Block
@@ -48,10 +48,9 @@ In this guide we will be setting up your AWS account with a VPC so that you can 
 
 ## Now we need to add subnets to the VPC, we will be adding 3 subnets in different Availability Zones. 
 
-1. Click Subnets 
+1. Click Subnets
 
 ![Click Subnets](https://vmc-onboarding-images.s3.amazonaws.com/1.Onboarding-SDDC/aws-vpc-setup/clicksubnets.png)
-
 
 ## Click Create Subnet
 
@@ -75,7 +74,6 @@ In this guide we will be setting up your AWS account with a VPC so that you can 
 ## Click Create Subnet
 
 ![Create Subnet](https://vmc-onboarding-images.s3.amazonaws.com/1.Onboarding-SDDC/aws-vpc-setup/createsubnet2.png)
-
 
 ## Enter Subnet Details for your second subnet
 
@@ -117,9 +115,8 @@ In this guide we will be setting up your AWS account with a VPC so that you can 
 
 ## You are now ready to go to the VMware portal and deploy your SDDC
 
-Open another tab to  <a href="https://vmc.vmware.com" target="_blank">vmc.vmware.com</a> 
+Open another tab to  <a href="https://vmc.vmware.com" target="_blank">vmc.vmware.com</a>
 
 ![Login to AWS and VMC](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/opentabs.png)
-
 
 Follow steps to: [Deploy your SDDC](/guide/1.-on-boarding-sddc/deploy-sddc)

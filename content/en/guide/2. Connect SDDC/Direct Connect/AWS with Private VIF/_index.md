@@ -8,7 +8,7 @@ description: >
 
 ## Overview
 
-In this guide we will be connecting your on-prem data center to your VMware Cloud on AWS SDDC 
+In this guide we will be connecting your on-prem data center to your VMware Cloud on AWS SDDC
 
 ![Login to AWS and VMC](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/dxwithprivatevif.png)
 
@@ -16,7 +16,7 @@ In this guide we will be connecting your on-prem data center to your VMware Clou
 
 - VMware Cloud on AWS SDDC deployed
 
-- Amazon Direct Connect Ordered and installed -> https://docs.aws.amazon.com/directconnect/latest/UserGuide/getting_started.html 
+- Amazon Direct Connect Ordered and installed -> <https://docs.aws.amazon.com/directconnect/latest/UserGuide/getting_started.html>
 
 ## Login to both your AWS account and the VMware Cloud on AWS portal
 
@@ -62,13 +62,13 @@ Note: You need to login to the AWS account you used to deploy your VMware Cloud 
 
 ## Go back to AWS Portal and notice the Virtual Interface is down
 
- At this point, VIF is Attached to your SDDC. However it can take upto 10 min for the BGP session to become active 
+ At this point, VIF is Attached to your SDDC. However it can take upto 10 min for the BGP session to become active
 
 ![VIF Down](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/vifdown.jpg)
 
 ## Go back to the VMC Portal and click refresh
 
-You should now see advertised and learned BG routes, if after several minutes you do not see this go to next step 
+You should now see advertised and learned BG routes, if after several minutes you do not see this go to next step
 
 ![Refresh VIF in VMC Portal](https://vmc-onboarding-images.s3.amazonaws.com/2.Connect-SDDC/direct-connect/aws-with-private-vif/refreshvmcportal.jpg)
 
