@@ -20,17 +20,31 @@ Consider using the headings below for your getting started page. You can delete 
 
 ## Prerequisites
 
+This package requires;
+- python version 3.7+
+- Anaconda version 3.7
+
 Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
 
 ## Installation
 
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+This package can be installed by run;
+```shell
+conda install COAsT
+```
+
+if you wish to install from source then got to [GitHub](https://github.com/british-oceanographic-data-centre/COAsT) and follow the README instructions
+
 
 ## Setup
-
-Is there any initial setup users need to do after installation to try your project?
+The package should now be installed on your system
 
 ## Try it out!
+The following example script should load a example file and plot some data on a map.
 
-Can your users test their installation, for example by running a commmand or deploying a Hello World example?
-
+```python
+from COAsT import COAsT
+sci = COAsT()
+sci.load('example_files/AMM7_25hourm_grid_T.nc',{'time_counter':10})
+sci.plot_cartopy()
+```
