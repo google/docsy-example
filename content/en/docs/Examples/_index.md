@@ -14,4 +14,4 @@ This is a placeholder page that shows you how to use this template site.
 
 Do you have any example **applications** or **code** for your users in your repo or elsewhere? Link to your examples here.
 
-There are some example netcdf files that can be used [here](https://www.github.com/birtish-oceanographic-data-centre/COAsT)
+There are some example netcdf files that can be used [here](https://github.com/British-Oceanographic-Data-Centre/COAsT)
