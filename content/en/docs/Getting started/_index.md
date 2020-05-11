@@ -3,14 +3,14 @@ title: "Getting Started"
 linkTitle: "Getting Started"
 weight: 2
 description: >
-  What does your user need to know to try your project?
+  What does you user need to know to try this project?
 ---
 
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
 
-Information in this section helps your user try your project themselves.
+Information in this section will help to try your project themselves.
 
 * What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
 
@@ -28,23 +28,44 @@ Are there any system requirements for using your project? What languages are sup
 
 ## Installation
 
-This package can be installed by run;
+This package should be installed by run;
 ```shell
-conda install COAsT
+conda install -c bodc COAsT
+```
+However, there is also the option of;
+```shell
+pip install COAsT
 ```
 
 if you wish to install from source then got to [GitHub](https://github.com/british-oceanographic-data-centre/COAsT) and follow the README instructions
 
 
 ## Setup
-The package should now be installed on your system
+The base package should now be installed on your system. The following packages might be required for some of the advanced features;
+
+- cartopy
+- graphviz
+
 
 ## Try it out!
 The following example script should load a example file and plot some data on a map.
 
 ```python
-from COAsT import COAsT
-sci = COAsT()
-sci.load('example_files/AMM7_25hourm_grid_T.nc',{'time_counter':10})
-sci.plot_cartopy()
+import coast
+
+dir = '<path-to-files>'
+sci_dom = coast.DOMAIN()
+sci_dom.load(dir+"domain_cfg.nc")
+yt, xt, length_of_line = sci_dom.transect_indices([42,-3],[43,-2], grid_ref='t')
+
+# Visualise
+import numpy as np
+import matplotlib.pyplot as plt
+lon = np.array( sci_dom.dataset.nav_lon )
+lat = np.array( sci_dom.dataset.nav_lat )
+
+
+plt.plot( lon[yt,xt], lat[yt,xt], '.');
+plt.show()
 ```
+You are now all setup with a working COAsT package. Time for the tutorials :)
