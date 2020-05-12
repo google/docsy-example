@@ -3,7 +3,7 @@ title: "Cloud Gateway"
 linkTitle: "Cloud Gateway"
 weight: 2
 description: >
-  How to on-board your SDDC. 
+  How to configure Cloud Gateway for VMware Cloud on AWS 
 ---
 
 {{% pageinfo %}}
