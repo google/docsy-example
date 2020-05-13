@@ -15,7 +15,7 @@ In this guide we will be connecting your on-prem vCenter to your vCenter in your
 
 ![HLM Overview](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/3.Configure-SDDC/hybrid-linked-mode/vmc-vcenter/hlmoverview.png)
 
-# Pre-Reqs:
+## Pre-Reqs:
 - Your on-prem vCenter needs to be:
   - vSphere 6.0 Updatge 3 patch c or later
   - vSphere 6.5 patch d or later
@@ -31,7 +31,7 @@ In this guide we will be connecting your on-prem vCenter to your vCenter in your
 - Management Firewall on the cloud side allows required ports
 - Ensure that you have the admin credentials for your on-premises vSphere SSO domain 
 
-# Port Diagram for Hybrid Linked Mode Communication
+## Port Diagram for Hybrid Linked Mode Communication
 
 ![HLM Port Diagram](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/3.Configure-SDDC/hybrid-linked-mode/vmc-vcenter/hlmportdiagram.png)
 
