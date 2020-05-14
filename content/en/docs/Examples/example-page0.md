@@ -12,7 +12,7 @@ description: >
 
 Much of the capability leverages the excellent [xarray](http://xarray.pydata.org/en/stable/#) package. Following an import of the package. Load some data and inspect:
 
-```
+``` python
 import coast
 dir = '<path-to-files>'
 sci = COAsT.NEMO()
@@ -26,7 +26,7 @@ sci.dataset
 
 Alternatively multiple files can be loaded simultaneously using wildcards:
 
-```
+``` python
 sci_nemo.load_multiple(dir + 'AMM7_1d*nc', {'time_counter': 25})   
 ```
 
@@ -42,20 +42,20 @@ the indices along a transect defined by end points in a grid.
 
 First load the domain configuration data:
 
-```
+``` python
 # load domain data
 dir = '<path-to-files>'
 sci_dom = coast.DOMAIN()
 sci_dom.load(dir+'domain_cfg.nc')
 ```
 Then use the ``transect_indices`` method between defined lat-lon end points:
-```
+``` python
 yt, xt, length_of_line = sci_dom.transect_indices([42,-3],[43,-2], grid_ref='t')
 ```
 (For ``grid_ref`` any of the following is allowed: t,u,v,f. If missing ``t`` is assumed.)
 
 Optionally visualize:
-```
+``` python
 # Visualise
 import numpy as np
 import matplotlib.pyplot as plt
@@ -67,7 +67,7 @@ plt.plot( lon[yt,xt], lat[yt,xt], '.'); plt.show()
 ### Within a distance from a point
 
 Alternatively indices can be sought in proximity to a defined point in lat-lon space:
-```
+``` python
 # load domain data
 dir = '<path-to-files>'
 sci_dom = coast.DOMAIN()
@@ -89,7 +89,7 @@ plt.show()
 Then you have to extract the desired variable on the subset of indices. For example,
 loading a single file and extracting temperature
 
-```
+``` python
 import coast
 
 dir = '<path-to-files>'
@@ -106,7 +106,7 @@ data_t =  sci.get_subset_of_var("votemper",xi,yi, time_counter=0)
 
 or loading multiple files and extracting temperature
 
-```
+``` python
 import coast
 
 dir = '<path-to-files>'
@@ -121,7 +121,7 @@ data_multiple_t = sci_multiple.get_subset_of_var("votemper",xi,yi, time_counter=
 ```
 
 Or extracting velocity (on a different grid)
-```
+``` python
 import coast
 
 dir = '<path-to-files>'
