@@ -131,12 +131,12 @@ sci_dom.load(dir+"domain_cfg.nc")
 sci.load(dir+'AMM7_1d_20070101_20070131_25hourm_grid_T.nc', {'time_counter': 25})
 yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='u')
 
-#I would then put the debugger on and run the following
+# Extract the variable
 data_u = sci_multiple.get_subset_of_var("vozocrtx",xi,yi, time_counter=1)
 ```
 
 ## Other stuff
-Just a mo
+Just a mo. Will probably put the extract a transect and plot example here.
 
 
 
