@@ -6,10 +6,6 @@ description: >
   How to configure hybrid Linked Mode in VMware Cloud on AWS 
 ---
 
-
-
-## Now that you're connected to your SDDC, let's get Hybrid linked mode setup
-
 In this guide we will be connecting your on-prem vCenter to your vCenter in your VMware Cloud on AWS SDDC
 
 
