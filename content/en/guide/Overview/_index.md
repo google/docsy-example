@@ -3,7 +3,7 @@ title: "Overview"
 linkTitle: "Overview"
 weight: 1
 description: >
-  This guide will show you how to on-board your VMware Cloud on AWS SDDC (Software Defined Datacenter)
+  Overview of the on-boarding process for your VMware Cloud on AWS SDDC (Software Defined Datacenter)
 ---
 
 {{% pageinfo %}}
