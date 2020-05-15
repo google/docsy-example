@@ -29,7 +29,9 @@ The following are the ports that you will need opened on both your Management Ga
 
 ![CGW Port Diagram](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/3.Configure-SDDC/hybrid-linked-mode/cloud-gateway/cgwportdiagram.png)
 
-## Login to the VMC <a href="https://vmc.vmware.com" target="_blank">portal</a> and go to the VMware Cloud on AWS Service then click tools, and click to download the Cloud Gateway Appliance
+## Login to the VMC <a href="https://vmc.vmware.com" target="_blank">portal</a> 
+
+Then go to the VMware Cloud on AWS Service then click tools, and click to download the Cloud Gateway Appliance
 
 ![CGW Download](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/3.Configure-SDDC/hybrid-linked-mode/cloud-gateway/cgwdownload.png)
 
