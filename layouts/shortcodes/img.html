@@ -1,0 +1,38 @@
+{{ $numOfParams := len .Params }}
+{{ if and (ge $numOfParams 2) (le $numOfParams 5) }}
+{{ if .IsNamedParams }}
+{{ $.Scratch.Set "file" (.Get "file") }}
+{{ $.Scratch.Set "alt"  (.Get "alt") }}
+{{ $.Scratch.Set "width" (.Get "width") }}
+{{ $.Scratch.Set "opacity" (.Get "opacity") }}
+{{ else }}
+{{ $.Scratch.Set "file" (.Get 0) }}
+{{ if ge $numOfParams 2 }}
+{{ $.Scratch.Set "alt" (.Get 1) }}
+{{ else }}
+{{ $.Scratch.Set "alt" "" }}
+{{ end }}
+{{ if ge $numOfParams 3 }}
+{{ $.Scratch.Set "width"  (.Get 2) }}
+{{ else }}
+{{ $.Scratch.Set "width" "100%" }}
+{{ end }}
+{{ if ge $numOfParams 4 }}
+{{ $.Scratch.Set "opacity"  (.Get 3) }}
+{{ else }}
+{{ $.Scratch.Set "opacity" "100%" }}
+{{ end }}
+{{ end }}
+
+{{ $file := $.Scratch.Get "file" }}
+{{ $type := $.Scratch.Get "type" }}
+{{ $alt  := $.Scratch.Get "alt" }}
+{{ $opacity := $.Scratch.Get "opacity" }}
+{{ $width  := $.Scratch.Get "width" }}
+{{ $text  := $.Scratch.Get "text" }}
+
+<span class="post-img" style="width:{{ $width }};">
+    <img src="{{ $file }}" style="width:{{ $width }}; opacity:{{ $opacity }}" alt="{{ $alt }}" />
+    <p>{{ $alt }}</p>
+</span>
+{{ end }}

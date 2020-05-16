@@ -53,14 +53,14 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.zh]
-title = "JoshLin的个人网站"
-description = "A Docsy example site"
+title = "joshlin.tech"
+description = "Josh的网站"
 languageName ="中文"
 # Weight used for sorting.
 weight = 1
 [languages.en]
-title = "JoshLin's Site"
-description = "Docsy er operativsystem for skyen"
+title = "joshlin.tech"
+description = "Josh's site"
 languageName ="English"
 contentDir = "content/en"
 time_format_default = "02.01.2006"
