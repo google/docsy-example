@@ -1,10 +1,17 @@
-# Suggested Python Guidelines
+---
+title: "Suggested Python Guidelines"
+linkTitle: "Suggested Python Guidelines"
+weight: 20
+menu:
+  documentation:
+    weight: 20
+---
 
 Python as a language comes with more stringent recommendations than most when it comes to code styling. This is advantageous in our case as it gives us an obvious set of guidelines to adopt.
 
-When it comes to simple code styling, much of what's recommended here will be copied from [Python Enhancement Proposal (PEP) 8](https://www.python.org/dev/peps/pep-0008/)., an officially proposed and accepted Python style guide.
+When it comes to simple code styling, much of what's recommended here will be copied from [Python Enhancement Proposal (PEP) 8](https://www.python.org/dev/peps/pep-0008/), an officially proposed and accepted Python style guide.
 
-## Code Styling Conventions
+# Code Styling Conventions
 
 Let's keep things simple to start with...
 
@@ -37,7 +44,7 @@ These specific characters should be avoided because they present an accessibilit
 
 * In the interest of readability, where named iterator variables are required, this document suggests the use of double characters (e.g. "ii" rather than "i").
 
-## Object-Oriented Programming
+# Object-Oriented Programming
 
 The general principles of OOP are fairly straightforward and well documented, so I won't waste your precious time by regurgitating that particular wall of text here. Instead, I'll focus on some general pointers specific to this language and use case.
 
