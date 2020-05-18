@@ -41,9 +41,9 @@ If you want to run your own local Hugo server to preview your changes as you wor
     ```
     git clone --recurse-submodules --depth 1 https://github.com/British-Oceanographic-Data-Centre/COAsT-site.git
     ```
-
-1. Run `hugo server` in the site root directory. By default your site will be available at http://localhost:1313/COAsT. Now that you're serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.
-1. Continue with the usual GitHub workflow to edit files, commit them, push the
+1. Run `npm install` to install Node.js dependencies.
+2. Run `hugo server` in the site root directory. By default your site will be available at http://localhost:1313/COAsT. Now that you're serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.
+2. Continue with the usual GitHub workflow to edit files, commit them, push the
   changes up to your fork, and create a pull request.
 
 ## Creating an issue
