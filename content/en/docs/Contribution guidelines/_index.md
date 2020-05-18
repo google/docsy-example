@@ -12,7 +12,7 @@ These basic sample guidelines assume that your Docsy site is deployed using Netl
 Don't forget to link to your own doc repo rather than our example site! Also make sure users can find these guidelines from your doc repo README: either add them there and link to them from this page, add them here and link to them from the README, or include them in both locations.
 {{% /pageinfo %}}
 -->
-We use [Hugo](https://gohugo.io/) to format and generate our website, the
+We use [Hugo](https://gohugo.io/) Extended Version to format and generate our website, the
 [Docsy](https://github.com/google/docsy) theme for styling and site structure,
 and [GitHub pages](https://help.github.com/en/github/working-with-github-pages) to manage the deployment of the site.
 Hugo is an open-source static site generator that provides us with templates,
