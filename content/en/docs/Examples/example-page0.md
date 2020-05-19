@@ -137,6 +137,47 @@ data_u = sci.get_subset_of_var("vozocrtx",xi,yi)
 ## Other stuff
 Just a mo. Will probably put the extract a transect and plot example here.
 
+## Continuous Ranked Probability Score (CRPS)
+```
+import numpy as np
+from netCDF4 import Dataset as ds
+import xarray as xr
+import coast
+
+fn_dom = 'COAsT_example_NEMO_domain.nc'
+fn_dat = 'COAsT_example_NEMO_data.nc'
+fn_alt = 'COAsT_example_altimetry_data.nc'
+
+nemo_dom = coast.DOMAIN()
+nemo_var = coast.NEMO()
+nemo_dom.load(fn_dom)
+nemo_var.load(fn_dat)
+
+# Read Altimetry data
+ncalt = ds(fn_alt)
+alt_lon = ncalt.variables['longitude'][:]
+alt_lat = ncalt.variables['latitude'][:]
+alt_ssh = ncalt.variables['sla_filtered'][:]
+alt_time = ncalt.variables['time'][:]
+ncalt.close()
+
+# Convert altimetry times to datetime and adjust longitudes
+alt_time = nemo_dom.num_to_date(alt_time, datetime.datetime(1950,1,1), alt_units = 'days')
+alt_lon[alt_lon>180] = alt_lon[alt_lon>180] - 360
+
+# Extract some altimetry data around the AMM7 domain
+ind_box = nemo_dom.extract_lonlat_box(alt_lon, alt_lat, [-10,10],[45,65])
+alt_lon = xr.DataArray( alt_lon[ind_box] )
+alt_lat = xr.DataArray( alt_lat[ind_box] )
+alt_time = xr.DataArray( alt_time[ind_box] )
+alt_ssh = xr.DataArray( alt_ssh[ind_box] )
+
+# Run CRPS for a small selection of the observations
+crps_test = nemo_var.crps_sonf("sossheig", nemo_dom,
+                       alt_lon[0:3], alt_lat[0:3], alt_ssh[0:3], alt_time[0:3],
+                       plot=True, cdf_type = 'empirical', nh_type = 'radius')
+```
+
 
 
 ```
