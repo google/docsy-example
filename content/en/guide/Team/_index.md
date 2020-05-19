@@ -6,6 +6,10 @@ description: >
   Meet our Team
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
 <!--
     youtube:  https://www.youtube.com/channel/UCqlv40k1N0L9nsSrzL1OWwg/videos
     site:     http://www.templateindirr.com
@@ -13,7 +17,9 @@ description: >
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+</head>
 
+<body>
 <div class="team">
     <div class="container">
                 
@@ -93,3 +99,7 @@ description: >
     			
     </div>    
 </div>
+
+</body>
+
+</html>
