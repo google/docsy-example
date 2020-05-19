@@ -1,10 +1,9 @@
 ---
 title: "Team"
 linkTitle: "Meet the team"
-weight: 20
-menu:
-  main:
-    weight: 20
+weight: 1
+description: >
+  Meet our Team
 ---
 
 <!--
