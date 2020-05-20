@@ -140,8 +140,8 @@ Just a mo. Will probably put the extract a transect and plot example here.
 ## Continuous Ranked Probability Score (CRPS)
 This is a basic script for running the CRPS function with the example NEMO data and Altimetry data. Altimetry data currently being read in using netCDF4 and cut out of global domain before being given to the routine.
 
-```
-python
+```python
+
 import coast
 import numpy as np
 
