@@ -1,6 +1,6 @@
 ---
-title: "Team"
-linkTitle: "Team"
+title: "Meet the Team"
+linkTitle: "Meet the Team"
 weight: 7
 description: >
   Meet the team
@@ -21,12 +21,6 @@ description: >
 <div class="team">
     <div class="container">
                 
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-3 text-center">  
-                <h2><span class="ion-minus"></span>Our Team<span class="ion-minus"></span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus </p><br>
-            </div> 
-        </div>
     		    		
     	<div class="row text-center">
     			
