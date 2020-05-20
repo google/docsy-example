@@ -1,8 +1,8 @@
 ---
 title: "Team"
-linkTitle: "Meet the team"
+linkTitle: "Team"
 weight: 6
 description: >
-  Meet our Team
+  Meet our Team)
 ---
 
