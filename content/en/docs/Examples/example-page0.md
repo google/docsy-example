@@ -116,7 +116,7 @@ sci_multiple.load_multiple(dir+"A*.nc", {'time_counter': 25})
 yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='t')
 
 # Extact the variable
-data_multiple_t = sci_multiple.get_subset_of_var("votemper",xi,yi)
+data_multiple_t = sci_multiple.get_subset_as_xarray("votemper",xi,yi)
 ```
 
 Or extracting velocity (on a different grid)
