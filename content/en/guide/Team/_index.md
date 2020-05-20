@@ -8,9 +8,7 @@ description: >
 
 {{< rawhtml >}}
   <!DOCTYPE html>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 
 <!--
     youtube:  https://www.youtube.com/channel/UCqlv40k1N0L9nsSrzL1OWwg/videos
@@ -28,11 +26,11 @@ description: >
     			
     		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     				   
-    				   	<img class="img-rounded" alt="team-photo" src="https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/team/ryankelly.png" width="100%"> 
+    				   	<img class="img-rounded" alt="team-photo" src="https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/team/kerry.png" width="100%"> 
     				   	
     				   	<div class="team-member">
                         
-    				   	<h4>Ryan Kelly</h4>
+    				   	<h4>Kerry Holton</h4>
     				   	
     				   	<p>Cloud Specialist - VMware</p>
                         
@@ -49,13 +47,13 @@ description: >
     				
     		 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     				   
-    				   	<img class="img-rounded" alt="team-photo" src="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?h=350&auto=compress&cs=tinysrgb" width="100%">
+    				   	<img class="img-rounded" alt="team-photo" src="https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/team/jeff.png" width="100%">
     				   	
     				   	<div class="team-member">
                         
-    				   	<h4>Jack Doe</h4>
+    				   	<h4>Jefferey Moore</h4>
     				   	
-    				   	<p>Web designer</p>
+    				   	<p>Partner Sprcialist - VMware</p>
                         
     				   	</div>
     				   	
@@ -70,13 +68,13 @@ description: >
     				
     		 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     				   
-    				   	<img class="img-rounded" alt="team-photo" src="https://images.pexels.com/photos/295821/pexels-photo-295821.jpeg?h=350&auto=compress&cs=tinysrgb" width="100%"> 
+    				   	<img class="img-rounded" alt="team-photo" src="https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/team/ryankelly.png" width="100%"> 
     				   	
     				   	<div class="team-member">
                         
-    				   	<h4>James</h4>
+    				   	<h4>Ryan Kelly</h4>
     				   	
-    				   	<p>CEO</p>
+    				   	<p>Cloud Specialist - VMware</p>
                         
     				   	</div>
     				   	
