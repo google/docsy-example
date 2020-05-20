@@ -60,11 +60,11 @@
                 top: 0;
                 left: 0;
                 z-index: 33;
-                padding: 10px;
+                padding: 1px;
                 height: 95px;
                 background: whitesmoke;
                 border: 2px solid #4279f4;
-                border-top: solid;
+                border-top: none;
 
                 @include media-breakpoint-down(md) {
                     left: 16px;
