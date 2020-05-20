@@ -56,11 +56,11 @@
         .navbar-logo {
             svg {
                 display: inline-block;
-                position: left;
-                top: 0;
+                position: absolute;
+                top: 10px;
                 left: 10px;
                 z-index: 33;
-                padding: 10px;
+                padding: 1px;
                 height: 60px;
                 width: 60px;
                 background: whitesmoke;
