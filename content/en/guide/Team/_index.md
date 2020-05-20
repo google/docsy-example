@@ -53,7 +53,7 @@ description: >
                         
     				   	<h4>Jefferey Moore</h4>
     				   	
-    				   	<p>Partner Sprcialist - VMware</p>
+    				   	<p>Partner Specialist - VMware</p>
                         
     				   	</div>
     				   	
