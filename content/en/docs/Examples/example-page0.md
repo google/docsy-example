@@ -100,7 +100,7 @@ sci.load(dir+'AMM7_1d_20070101_20070131_25hourm_grid_T.nc', {'time_counter': 25}
 yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='t')
 
 # Extact the variable
-data_t =  sci.get_subset_of_var("votemper",xi,yi)
+data_t =  sci.get_subset_as_xarray("votemper",xi,yi)
 ```
 
 or loading multiple files and extracting temperature
@@ -131,7 +131,7 @@ sci.load(dir+'AMM7_1d_20070101_20070131_25hourm_grid_U.nc', {'time_counter': 25}
 yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='u') # Extract transect indices on u-pts
 
 # Extract the variable
-data_u = sci.get_subset_of_var("vozocrtx",xi,yi)
+data_u = sci.get_subset_as_xarray("vozocrtx",xi,yi)
 ```
 
 ## Other stuff
