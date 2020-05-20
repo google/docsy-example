@@ -3,7 +3,7 @@ title: "Meet the Team"
 linkTitle: "Meet the Team"
 weight: 7
 description: >
-  Meet the team
+  This guide brought to you by: 
 ---
 
 {{< rawhtml >}}
@@ -26,13 +26,13 @@ description: >
     			
     		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
     				   
-    				   	<img class="img-rounded" alt="team-photo" src="https://images.pexels.com/photos/295821/pexels-photo-295821.jpeg?h=350&auto=compress&cs=tinysrgb" width="100%"> 
+    				   	<img class="img-rounded" alt="team-photo" src="https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/team/ryankelly.png" width="100%"> 
     				   	
     				   	<div class="team-member">
                         
-    				   	<h4>John Doe</h4>
+    				   	<h4>Ryan Kelly</h4>
     				   	
-    				   	<p>Web developer</p>
+    				   	<p>Cloud Specialist - VMware</p>
                         
     				   	</div>
     				   	
