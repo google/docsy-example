@@ -1,7 +1,7 @@
 ---
 title: "Team"
 linkTitle: "Meet the team"
-weight: 10
+weight: 6
 description: >
   Meet our Team
 ---
