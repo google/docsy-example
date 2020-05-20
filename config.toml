@@ -174,7 +174,4 @@ no = 'Sorry to hear that. Please <a href="https://github.com/vmc-field-team/vmc-
 #	icon = "fa fa-envelope"
 #        desc = "Discuss development issues around the project"
 
-[[menu.main]]
- name = "CustomHTML"
- url = "html/index.html"
- weight = 50
+
