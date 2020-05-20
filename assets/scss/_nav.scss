@@ -1,0 +1,122 @@
+//
+// Top navbar - copied from Docsy theme and additional styling included.
+//
+
+.td-navbar-cover {
+    background: $primary;
+
+    @include media-breakpoint-up(md) {
+        background: transparent !important;
+
+        .nav-link {
+            text-shadow: 1px 1px 2px $dark;
+        }
+
+        .brand-name {
+            display: none;}
+
+    }
+
+    &.navbar-bg-onscroll .nav-link {
+        text-shadow: none;
+    }
+}
+
+.navbar-bg-onscroll {
+    background: $primary !important;
+    opacity: inherit;
+}
+
+.td-navbar {
+    background: $primary;
+    min-height: 4rem;
+    margin: 0;
+    z-index: 32;
+
+    .brand-name {
+        display: none;}
+
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        text-transform: none;
+        text-align: middle;
+        margin: 0;
+        padding: 0;
+
+        .nav-link {
+            display: inline-block;
+            margin-right: -30px;
+        }
+
+        .navbar-logo {
+            svg {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 26px;
+                z-index: 33;
+                padding: 10px;
+                height: 95px;
+                background: white;
+                border: 2px solid #4279f4;
+                border-top: none;
+
+                @include media-breakpoint-down(md) {
+                    left: 16px;
+                    width: 80px;
+                    height: auto;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+
+    .nav-link {
+        text-transform: none;
+        font-weight: $font-weight-bold;
+    }
+
+    .td-search-input {
+        border: none;
+
+        @include placeholder {
+            color: $navbar-dark-color;
+        }
+    }
+
+    .dropdown {
+        min-width: 100px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-right: .5rem;
+        padding-left: .75rem;
+        align-items: flex-end;
+
+        .td-navbar-nav-scroll {
+            max-width: calc(100% + .75rem - 96px - 1.5rem);
+            height: 2.5rem;
+            margin-top: .25rem;
+            overflow: hidden;
+            font-size: .875rem;
+
+            .nav-link {
+                padding-right: .25rem;
+                padding-left: 0;
+            }
+
+            .navbar-nav {
+                margin-top: 0 !important;
+                padding-bottom: 2rem;
+                overflow-x: auto;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    }
+}
