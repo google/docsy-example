@@ -141,43 +141,34 @@ Just a mo. Will probably put the extract a transect and plot example here.
 This is a basic script for running the CRPS function with the example NEMO data and Altimetry data. Altimetry data currently being read in using netCDF4 and cut out of global domain before being given to the routine.
 
 ```
-import numpy as np
-from netCDF4 import Dataset as ds
-import xarray as xr
+python
 import coast
+import numpy as np
 
-fn_dom = 'COAsT_example_NEMO_domain.nc'
-fn_dat = 'COAsT_example_NEMO_data.nc'
-fn_alt = 'COAsT_example_altimetry_data.nc'
+fn_dom = '/Users/Dave/Documents/Projects/WCSSP/Data/COAsT_example_NEMO_domain.nc'
+fn_dat = '/Users/Dave/Documents/Projects/WCSSP/Data/COAsT_example_NEMO_data.nc'
+fn_alt = '/Users/Dave/Documents/Projects/WCSSP/Data/COAsT_example_altimetry_data.nc'
 
 nemo_dom = coast.DOMAIN()
 nemo_var = coast.NEMO()
+alt_test = coast.ALTIMETRY()
+
 nemo_dom.load(fn_dom)
 nemo_var.load(fn_dat)
+alt_test.load(fn_alt)
 
-# Read Altimetry data
-ncalt = ds(fn_alt)
-alt_lon = ncalt.variables['longitude'][:]
-alt_lat = ncalt.variables['latitude'][:]
-alt_ssh = ncalt.variables['sla_filtered'][:]
-alt_time = ncalt.variables['time'][:]
-ncalt.close()
+alt_test.set_command_variables()
+nemo_var.set_command_variables()
+nemo_dom.set_command_variables()
 
-# Convert altimetry times to datetime and adjust longitudes
-alt_time = nemo_dom.num_to_date(alt_time, datetime.datetime(1950,1,1), alt_units = 'days')
-alt_lon[alt_lon>180] = alt_lon[alt_lon>180] - 360
+# Extract lon/lat box (saves into alt_test object)
+alt_test.extract_lonlat_box([-10,10], [45,65])
+# Just use the first 3 elements of remaining altimetry data
+alt_test.extract_indices_all_var(np.arange(0,4))
 
-# Extract some altimetry data around the AMM7 domain
-ind_box = nemo_dom.extract_lonlat_box(alt_lon, alt_lat, [-10,10],[45,65])
-alt_lon = xr.DataArray( alt_lon[ind_box] )
-alt_lat = xr.DataArray( alt_lat[ind_box] )
-alt_time = xr.DataArray( alt_time[ind_box] )
-alt_ssh = xr.DataArray( alt_ssh[ind_box] )
-
-# Run CRPS for a small selection of the observations
-crps_test = nemo_var.crps_sonf("sossheig", nemo_dom,
-                       alt_lon[0:3], alt_lat[0:3], alt_ssh[0:3], alt_time[0:3],
-                       plot=True, cdf_type = 'empirical', nh_type = 'radius')
+crps_test = nemo_var.crps_sonf('ssh', nemo_dom, alt_test, 'sla_filtered',
+                    nh_radius=111, nh_type = "radius", cdf_type = "empirical",
+                    time_interp = "nearest", plot=True)
 ```
 
 
