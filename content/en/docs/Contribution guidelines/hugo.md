@@ -11,12 +11,20 @@ This page will walk you though a simple setup for hugo extended - which is neede
 For more details please [read this](https://gohugo.io/getting-started/installing/).
 
 ## Installation
+### Manual
 1) Download hugo extended from [GitHub](https://github.com/gohugoio/hugo/releases)
-2) Unzip into prefered location (I use C:\hugo)
+2) Unzip into preferred location (I use C:\hugo)
 3) Add to OS PATH
-    * optional but makes usage easyer
-
-
+    * optional but makes usage easier
+### Via a Package Manager
+On Windows you can use [Chocolately](https://chocolatey.org/) to install with:
+```shell
+choco install hugo-extended
+```
+Or on macOS/Linux you can use [Homebrew](https://brew.sh/) to install with:
+```shell
+brew install hugo
+```
 ## Try it out!
 You should now be able to try the following in a terminal
 ```shell
