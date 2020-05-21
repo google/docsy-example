@@ -145,9 +145,9 @@ This is a basic script for running the CRPS function with the example NEMO data 
 import coast
 import numpy as np
 
-fn_dom = '/Users/Dave/Documents/Projects/WCSSP/Data/COAsT_example_NEMO_domain.nc'
-fn_dat = '/Users/Dave/Documents/Projects/WCSSP/Data/COAsT_example_NEMO_data.nc'
-fn_alt = '/Users/Dave/Documents/Projects/WCSSP/Data/COAsT_example_altimetry_data.nc'
+fn_dom = '<dir>/COAsT_example_NEMO_domain.nc'
+fn_dat = '<dir>/COAsT_example_NEMO_data.nc'
+fn_alt = '<dir>/COAsT_example_altimetry_data.nc'
 
 nemo_dom = coast.DOMAIN()
 nemo_var = coast.NEMO()
