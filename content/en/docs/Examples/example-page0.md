@@ -15,7 +15,7 @@ Much of the capability leverages the excellent [xarray](http://xarray.pydata.org
 ``` python
 import coast
 dir = '<path-to-files>'
-sci = COAsT.NEMO()
+sci = coast.NEMO()
 sci.load(dir + 'AMM7_1d_20070101_20070131_25hourm_grid_T.nc',{'time_counter':10})
 
 sci.dataset
@@ -27,7 +27,7 @@ sci.dataset
 Alternatively multiple files can be loaded simultaneously using wildcards:
 
 ``` python
-sci_nemo.load_multiple(dir + 'AMM7_1d*nc', {'time_counter': 25})   
+sci.load_multiple(dir + 'AMM7_1d*nc', {'time_counter': 25})   
 ```
 
 
@@ -80,7 +80,7 @@ lat = np.array( sci_dom.dataset.nav_lat )
 
 # Visualise
 import matplotlib.pyplot as plt
-plt.plot( lon[ind[0], ind[1]], lat[ind[0], ind[1]], '+’  )
+plt.plot( lon[ind[0], ind[1]], lat[ind[0], ind[1]], '+'  )
 plt.show()
 ```
 
@@ -95,13 +95,12 @@ import coast
 dir = '<path-to-files>'
 sci_dom = coast.DOMAIN()
 sci = coast.NEMO()
-sci_multiple = coast.NEMO()
 sci_dom.load(dir+"domain_cfg.nc")
 sci.load(dir+'AMM7_1d_20070101_20070131_25hourm_grid_T.nc', {'time_counter': 25})
 yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='t')
 
 # Extact the variable
-data_t =  sci.get_subset_of_var("votemper",xi,yi, time_counter=0)
+data_t =  sci.get_subset_as_xarray("votemper",xi,yi)
 ```
 
 or loading multiple files and extracting temperature
@@ -117,7 +116,7 @@ sci_multiple.load_multiple(dir+"A*.nc", {'time_counter': 25})
 yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='t')
 
 # Extact the variable
-data_multiple_t = sci_multiple.get_subset_of_var("votemper",xi,yi, time_counter=0)
+data_multiple_t = sci_multiple.get_subset_as_xarray("votemper",xi,yi)
 ```
 
 Or extracting velocity (on a different grid)
@@ -128,15 +127,49 @@ dir = '<path-to-files>'
 sci_dom = coast.DOMAIN()
 sci = coast.NEMO()
 sci_dom.load(dir+"domain_cfg.nc")
-sci.load(dir+'AMM7_1d_20070101_20070131_25hourm_grid_T.nc', {'time_counter': 25})
-yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='u')
+sci.load(dir+'AMM7_1d_20070101_20070131_25hourm_grid_U.nc', {'time_counter': 25}) # load in a velocity dataset
+yi,xi,line_len = sci_dom.transect_indices([51,-5],[49,-9], grid_ref='u') # Extract transect indices on u-pts
 
-#I would then put the debugger on and run the following
-data_u = sci_multiple.get_subset_of_var("vozocrtx",xi,yi, time_counter=1)
+# Extract the variable
+data_u = sci.get_subset_as_xarray("vozocrtx",xi,yi)
 ```
 
 ## Other stuff
-Just a mo
+Just a mo. Will probably put the extract a transect and plot example here.
+
+## Continuous Ranked Probability Score (CRPS)
+This is a basic script for running the CRPS function with the example NEMO data and Altimetry data. Altimetry data currently being read in using netCDF4 and cut out of global domain before being given to the routine.
+
+```python
+
+import coast
+import numpy as np
+
+fn_dom = '<dir>/COAsT_example_NEMO_domain.nc'
+fn_dat = '<dir>/COAsT_example_NEMO_data.nc'
+fn_alt = '<dir>/COAsT_example_altimetry_data.nc'
+
+nemo_dom = coast.DOMAIN()
+nemo_var = coast.NEMO()
+alt_test = coast.ALTIMETRY()
+
+nemo_dom.load(fn_dom)
+nemo_var.load(fn_dat)
+alt_test.load(fn_alt)
+
+alt_test.set_command_variables()
+nemo_var.set_command_variables()
+nemo_dom.set_command_variables()
+
+# Extract lon/lat box (saves into alt_test object)
+alt_test.extract_lonlat_box([-10,10], [45,65])
+# Just use the first 3 elements of remaining altimetry data
+alt_test.extract_indices_all_var(np.arange(0,4))
+
+crps_test = nemo_var.crps_sonf('ssh', nemo_dom, alt_test, 'sla_filtered',
+                    nh_radius=111, nh_type = "radius", cdf_type = "empirical",
+                    time_interp = "nearest", plot=True)
+```
 
 
 
