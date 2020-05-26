@@ -1,6 +1,7 @@
 ---
 title: "2. Connect SDDC"
 linkTitle: "2. Connect SDDC"
+no_list: true
 weight: 3
 description: >
   How to connect your on-prem data center to VMware Cloud on AWS
@@ -8,10 +9,10 @@ description: >
 
 There are multiple ways to connect your SDDC to your on-prem data center
 
-- Direct Connect
+- [Direct Connect](/2.-Connect-SDDC/diret-connect)
 
-- VPN
+- [VPN](/2.-Connect-SDDC/vpn)
 
-- Direct Connect with VPN fail over
+- Direct Connect with VPN fail over (Guide Coming soon!)
 
-### Use the following guides to get connected:
+
