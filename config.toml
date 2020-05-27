@@ -4,7 +4,7 @@ title = "Vmware Cloud on AWS On-Boarding"
 enableRobotsTXT = true
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["hugo-notice", "docsy"]
+theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
