@@ -4,7 +4,7 @@ linkTitle: "VMware Cloud on AWS Guide"
 weight: 20
 menu:
   main:
-    weight: 20
+    weight: 10
 ---
 
 {{% pageinfo %}}
