@@ -9,4 +9,8 @@ description: >
 
 ## Tools to help with formatting
 
+### Visual Studio Code
+
+### Recommended Extensions
+
 ## Article format and structure
