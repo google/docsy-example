@@ -108,3 +108,178 @@ The following information is needed to be collected in order to deploy HCX in yo
 2. Click Request Download Link.
 3. Either download HCX OVA or Copy Link and take note.
 
+### On-premises HCX Installation
+
+![HCX On-premises Install](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX13.jpg)
+
+#### HCX Pre-requisites for on-premises installation
+
+![HCX Pre-requisites](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX14.jpg)
+
+#### Deployment of HCX OVA Template, Activation, Configuration
+
+![Deploy OVA](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX15.jpg)
+
+1. Select downloaded OVA template for deployment.
+2. Select name and folder to place VM.
+3. Select Compute Resource.
+4. Accept License Agreements.
+5. Select Storage.
+6. Select Networks.
+7. Customize template:
+   - admin and root user passwords
+   - Hostname
+   - IP address
+   - Prefix length
+   - Default gateway
+   - DNS Server
+   - Domain Search List
+   - NTP Server
+
+![HCX 9443](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX16.jpg)
+
+1. In a browser tab go to: https://fqdn-or-ip-hcx:9443.
+2. Login with user admin and appropriate password.
+3. Enter License Key obtained from VMC portal.
+4. Click Activate.
+
+![Activation](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX17.jpg)
+
+In the follow up screens enter:
+1. Location of your datacenter.
+2. System Name for HCX Appliance.
+3. vCenter information (Ensure user with admin rights is entered).
+4. SSO/PSC Information.
+5. Click Restart button.
+
+![Complete Config](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX18.jpg)
+
+After services are restarted, you may want to ensure appropriate vCenter User Groups have access to HCX:
+1. Click Configuration.
+2. Click vSphere Role Mapping.
+3. Click Edit.
+4. Enter the group(s) as necessary.
+
+#### Pair Sites
+
+![Pair Sites](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX19.jpg)
+
+1. From the HCX interface, click on Site Pairing.
+2. Click Connect to Remote Site button.
+3. Enter:
+   - HCX Cloud URL
+   - User Name
+   - Password
+   - Click Connect
+
+#### Create Compute Profile
+
+![Compute Profile](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX20.jpg)
+
+1. Click on Interconnect.
+2. Click Compute Profile.
+3. Click Create Compute Profile.
+4. Name your Compute Profile.
+
+![Compute Profile 2](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX21.jpg)
+
+1. Select HCX Services to be enabled.
+2. Select Service Resources (Resources that HCX Service should access for Migrations/Operations).
+3. Select Deployment Resources (Resources where HCX appliances will be placed).
+   - Cluster
+   - Datastore
+   - Folders
+
+![Compute Profile 3](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX22.jpg)
+
+1. Select Management Network Profile (should be from Management Network on-premises preferably).
+2. If Network Profiles have not been created, 2 Network Profiles at a minimum are needed:
+   - Management Network Profile
+   - vMotion Network Profile
+3. Uplink Network Profile (should be Management Network unless it's different).
+4. vMotion Network Profile.
+5. vSphere Replication Network Profile (usually Management Network).
+6. Select vDS for Network Extensions.
+
+#### Create Service Mesh
+
+![Service Mesh](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX23.jpg)
+
+1. Click Interconnect.
+2. Click Service Mesh.
+3. Click Create Service Mesh button.
+
+![Service Mesh 2](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX24.jpg)
+
+1. Select Compute Profiles on Source and VMC side (VMC profile is created when HCX is enabled in your SDDC).
+2. Select HCX Services to be enabled.
+3. Select Uplink Network Profiles:
+   - externalNetwork if using public internet on VMC side
+   - directConnectNetwork1 if using Direct Connect
+4. Network Extension Appliance Scale Out (If more than one NE appliance is needed).
+5. Review Topology.
+6. Provide a name for your Service Mesh.
+
+![Service Mesh 3](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX25.jpg)
+
+Service Mesh starts deploying.
+
+At this point appliances are being deployed in pairs, both at the Source Site as well as at the Destination (VMC).
+
+You can click  on Tasks to follow the progress of the deployments.
+
+![Service Mesh 4](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX26.jpg)
+
+Once Service Mesh completes deployment, it takes a few minutes while the 2 tunnels come up:
+
+- Interconnect (IX) Tunnel - Handles migration traffic.
+- Network Extension (NE) Tunnel - Handles L2 Network Extensions communications.
+
+### HCX with Direct Connect (DX) in VMware Cloud on AWS
+
+#### Introduction
+
+By default when HCX is deployed in a VMware Cloud on AWS SDDC, it automatically provisions public IP addresses for the traffic to transverse through the public internet.
+
+If a company decides to use an AWS Direct Connect line, this may not be the preferred method for traffic to flow. HCX traffic can be re-directed over a Direct Connect private line for a more secure, more private way of migration and L2 traffic to flow through.
+
+#### Pre-requisites
+
+- An AWS Direct Connect must be ordered and deployed.
+- HCX must be activated from the VMC SDDC console.
+- An additional private subnet (internal RFC 1918, non-overlapping subnet).
+  - Size of subnet is dependent of how many appliances will need to be deployed.
+  - For a typical deployemnt, 2 IP addresses are needed, or a minimum of a /29 or /28 or greater is recommended.
+
+#### Change HCX Cloud Resolution
+
+![DX 1](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX27.jpg)
+
+1. Click on Settings tab.
+2. Under HCX Information click Edit.
+
+![DX 2](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX28.jpg)
+
+1. Change Resolution to Private IP.
+2. Click SAVE.
+
+![DX 3](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX29.jpg)
+
+1. Click Interconnect.
+2. Click Network Profiles.
+3. Click EDIT on directConnectNetwork1 Network Profile.
+
+![DX 4](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/HCX/HCX30.jpg)
+
+1. Enter IP range to use.
+2. Enter prefix length.
+3. Enter Default Gateway.
+4. Click UPDATE button.
+
+After a few minutes, validate that this new segment is advertised over the Direct Connect in VMC SDDC Console. Networking & Security tab -> System -> Direct Connect. The subnet should be visible under Advertised BGP Routes.
+
+Once the new subnet is visible under Advertised BGP Routes, you may need to accept the route advertisement on your on-premises BGP peer.
+
+Ensure that if any Firewall is in between, port UDP 4500 will be needed to be opened between on-premises appliances and this new CIDR range.
+
+When creating your Service Mesh on-premises, you should select this Network Profile (directConnectNetwork1) as the Destination Site Uplink Network Profile.
