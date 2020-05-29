@@ -10,15 +10,11 @@ description: >
 
 ## What is VMware Site Recovery
 
-VMware Site Recovery brings VMware enterprise-class Software-Defined Data Center (SDDC) Disaster Recovery as a Service to the AWS Cloud. It enables customers to protect and recover applications without the requirement for a dedicated secondary site. It is delivered, sold, supported, maintained and managed by VMware as an on-demand service. IT teams manage their cloud-based resources with familiar VMware tools without the difficulties of learning new skills or utilizing new tools and processes.
-
-VMware Site Recovery works in conjunction with VMware Site Recovery Manager and VMware vSphere Replication to automate the process of recovering, testing, re-protecting, and failing-back virtual machine workloads. VMware Site Recovery utilizes VMware Site Recovery Manager servers to coordinate the operations of the VMware SDDC. This is so that, as virtual machines at the protected site are shut down, copies of these virtual machines at the recovery site startup. By using the data replicated from the protected site these virtual machines assume responsibility for providing the same services.
+VMware Site Recovery brings VMware enterprise-class Software-Defined Data Center (SDDC) Disaster Recovery as a Service to the AWS Cloud. It enables customers to protect and recover applications without the requirement for a dedicated secondary site. It is delivered, sold, supported, maintained and managed by VMware as an on-demand service.VMware Site Recovery works in conjunction with VMware Site Recovery Manager and VMware vSphere Replication to automate the process of recovering, testing, re-protecting, and failing-back virtual machine workloads. VMware Site Recovery utilizes VMware Site Recovery Manager servers to coordinate the operations of the VMware SDDC.
 
 ![SRM5](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM5.jpg)
 
-VMware Site Recovery can be used between a customer's datacenter and an SDDC deployed on VMware Cloud on AWS or it can be used between two SDDCs deployed to different AWS availability zones or regions. The second option allows VMware Site Recovery to provide a fully VMware-managed Disaster Recovery solution. Migration of protected inventory and services from one site to the other is controlled by a recovery plan that specifies the order in which virtual machines are shut down and started up, the resource pools to which they are allocated, and the networks they can access.
-
-VMware Site Recovery extends the feature set of the virtual infrastructure platform to provide for rapid business continuity through partial or complete site failures.
+VMware Site Recovery can be used between a customer's datacenter and an SDDC deployed on VMware Cloud on AWS or it can be used between two SDDCs deployed to different AWS availability zones or regions. VMware Site Recovery extends the feature set of the virtual infrastructure platform to provide for rapid business continuity through partial or complete site failures.
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -33,13 +29,17 @@ To use the VMware Site Recovery service, you must activate VMware Site Recovery 
 1. Click on the *Add Ons* tab
 2. Under the Site Recovery Add On, Click the *ACTIVATE* button
 
-    ![SRM2](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM2.jpg) 
+    ![SRM2](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM2.jpg)
 
-3. In the pop up window Click *ACTIVATE* again
+    Default extension ID:  Use this option when you deploy Site Recovery Manager in a standard configuration with one protected site and one recovery site.
+
+    Custom extension ID:  Use this option when you deploy Site Recovery Manager in a shared recovery site configuration, with multiple protected sites and one recovery site. For more details, see the Site Recovery Manager documentation.
+
+3. In the pop up window Click ***ACTIVATE*** again
 
     ![SRM3](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM3.jpg)
 
-Wait until the Site Recovery Add On has been activated. This process takes approximately 10 minutes to complete.
+The activation process takes approximately 10 minutes to complete.
 
 ## Instructions to download and install on-prem components
 
@@ -60,7 +60,7 @@ We will need to create Management Gateway firewall rules to allow for additional
 1. In your SDDC, click *Networking & Security*
 2. Click *Gateway Firewall* in the left-hand navigation menu
 3. Click *Management Gateway*
-4. Add the additional **four** rules that are shown above. Ask your instructor if you need assistance with creating the management gateway firewall rules. 
+4. Add the additional **four** rules that are shown above. Ask your instructor if you need assistance with creating the management gateway firewall rules.
 5. Click *PUBLISH*
 
 ### VMware Site Recovery - Site Pairing
