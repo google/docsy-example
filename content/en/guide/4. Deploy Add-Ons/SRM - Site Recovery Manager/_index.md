@@ -10,7 +10,7 @@ description: >
 
 ## What is VMware Site Recovery
 
-VMware Site Recovery brings VMware enterprise-class Software-Defined Data Center (SDDC) Disaster Recovery as a Service to the AWS Cloud. It enables customers to protect and recover applications without the requirement for a dedicated secondary site. It is delivered, sold, supported, maintained and managed by VMware as an on-demand service.VMware Site Recovery works in conjunction with VMware Site Recovery Manager and VMware vSphere Replication to automate the process of recovering, testing, re-protecting, and failing-back virtual machine workloads. VMware Site Recovery utilizes VMware Site Recovery Manager servers to coordinate the operations of the VMware SDDC. 
+VMware Site Recovery brings VMware enterprise-class Software-Defined Data Center (SDDC) Disaster Recovery as a Service to the AWS Cloud. It enables customers to protect and recover applications without the requirement for a dedicated secondary site. It is delivered, sold, supported, maintained and managed by VMware as an on-demand service.VMware Site Recovery works in conjunction with VMware Site Recovery Manager and VMware vSphere Replication to automate the process of recovering, testing, re-protecting, and failing-back virtual machine workloads. VMware Site Recovery utilizes VMware Site Recovery Manager servers to coordinate the operations of the VMware SDDC.
 
 ![SRM5](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM5.jpg)
 
@@ -29,14 +29,13 @@ To use the VMware Site Recovery service, you must activate VMware Site Recovery 
 1. Click on the *Add Ons* tab
 2. Under the Site Recovery Add On, Click the *ACTIVATE* button
 
-    ![SRM2](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM2.jpg) 
+    ![SRM2](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM2.jpg)
 
     Default extension ID:  Use this option when you deploy Site Recovery Manager in a standard configuration with one protected site and one recovery site.
 
-    Custom extension ID:  Use this option when you deploy Site Recovery Manager in a shared recovery site configuration, with multiple protected sites and one recovery site.  For more details, see the Site Recovery Manager documentation.
+    Custom extension ID:  Use this option when you deploy Site Recovery Manager in a shared recovery site configuration, with multiple protected sites and one recovery site. For more details, see the Site Recovery Manager documentation.
 
-3. In the pop up window Click *ACTIVATE* again
-
+3. In the pop up window Click ***ACTIVATE*** again
 
     ![SRM3](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM3.jpg)
 
@@ -61,7 +60,7 @@ We will need to create Management Gateway firewall rules to allow for additional
 1. In your SDDC, click *Networking & Security*
 2. Click *Gateway Firewall* in the left-hand navigation menu
 3. Click *Management Gateway*
-4. Add the additional **four** rules that are shown above. Ask your instructor if you need assistance with creating the management gateway firewall rules. 
+4. Add the additional **four** rules that are shown above. Ask your instructor if you need assistance with creating the management gateway firewall rules.
 5. Click *PUBLISH*
 
 ### VMware Site Recovery - Site Pairing
@@ -127,8 +126,6 @@ You will be pairing to the other SDDC that is in your workshop organization.  Be
 
 Once logged in to your partner's SDDC, you will see the *Site Pair Summary*
 
-<<<<<<< HEAD
-=======
 ## Configure Mappings
 
 ### Configure Network Mappings
@@ -521,4 +518,3 @@ We will create another Recovery Plan that will recover all of our applications. 
     ![SRM131](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM131.jpg)
 
 **Once the *cleanup* is complete, the Recovery Plan is in a *Ready* status and is ready for a test or a recovery.**
->>>>>>> 05c619e7010806918b13b3c9e8e6fbde256b70c3
