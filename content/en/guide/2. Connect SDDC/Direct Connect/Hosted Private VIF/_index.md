@@ -6,4 +6,36 @@ description: >
  How to connect an Amazon Direct Connect - Hosted Private VIF to VMware Cloud on AWS 
 ---
 
-## Add your content here
+## Overview
+
+In this guide we will be connecting your on-prem data center to your VMware Cloud on AWS SDDC
+
+![Overview](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/overview.png)
+
+## Login to [vmc.vmware.com](https://vmc.vmware.com) and click to open your SDDC
+
+![Select SDDC](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/selectsddc.png)
+
+## Click on Networking and Security Tab, then go to Direct Connect. 
+
+Note your AWS Account ID and ASN number and send this to your hosted VIF provider for configuration their side. 
+
+![AWS Account id and ASN number](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/awsaccountid.jpg)
+
+## Once your provider has entered the configuration on their side you will see the connection ready to accept. Click accept. 
+
+![Hosted VIF attach](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/hostedvifattach.png)
+
+## On the pop up screen 
+1. Check that you understand the terms of the connection
+2. Click attach virtual interface
+
+![Hosted VIF Confirm](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/hostedvifconfirm.png)
+
+## You will see the new connection as down for a few minutes. 
+
+![Hosted VIF attaching](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/hostedvifattaching.png)
+
+## Click the refresh button until you see the connection as up with a green circle. 
+
+![Hosted VIF Up](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/hostedvifup.png)
