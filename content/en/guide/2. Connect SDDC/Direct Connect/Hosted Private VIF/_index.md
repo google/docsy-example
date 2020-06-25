@@ -32,7 +32,7 @@ In this guide we will be connecting your on-prem data center to your VMware Clou
 
 Copy the AWS Account ID 
 
-![AWS Account id and ASN number](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/awsaccountid.png)
+![AWS Account id and ASN number](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/awsaccountid.jpg)
 
 ## Enter the account ID in the partner portal direct connect configuration and click save
 
