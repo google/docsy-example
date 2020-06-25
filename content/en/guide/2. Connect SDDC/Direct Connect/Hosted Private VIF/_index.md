@@ -28,7 +28,23 @@ In this guide we will be connecting your on-prem data center to your VMware Clou
 
 ![Select SDDC](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/configurepartnerdx.png)
 
-## Click on Networking and Security Tab, then go to Direct Connect. 
+{{< notice info >}}
+**Additional work may be required**\
+There may be a need to build a “Last Mile” connection from the On-Premises location to the DX Partner service location (Point-of-Presence/PoP).
+{{< /notice >}}
+
+###	Direct Connection Service Type
+
+-	Public VIF – Leverages Public IP Addresses / Public BGP Autonomous System Number (ASN) since it is traditionally used to connect to AWS’ publicly accessible services (i.e. Amazon S3 Simple Storage Service).
+- Private VIF – Leverages Private IP Addresses / Private BGP Autonomous System Number (ASN) to connect to a Virtual Private Cloud (VPC) environment.
+
+###	AWS Connection Name 
+- Arbitrary name for the DX connection being deployed; this will be displayed in the VMware Cloud on AWS Console.
+### AWS Account ID 
+- This is a numerical account identification that is associated with the AWS Account that VMware owns and uses to support the customer’s VMware Cloud on AWS SDDC environment:
+
+
+## Click on Networking and Security Tab, then go to Direct Connect in the left menu. 
 
 Copy the AWS Account ID 
 
@@ -36,9 +52,9 @@ Copy the AWS Account ID
 
 ## Enter the account ID in the partner portal direct connect configuration and click save
 
-![Enter Account ID](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/pasteaccountid.jpg)
+![Enter Account ID](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/pasteaccountid.png)
 
-## Go back to the VMware Cloud on AWS portal and you will see the connection ready to accept. Click accept. 
+## Now go back to the VMware Cloud on AWS portal and you will see the connection ready to accept. Click accept. 
 
 ![Hosted VIF attach](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/hostedvifattach.png)
 
