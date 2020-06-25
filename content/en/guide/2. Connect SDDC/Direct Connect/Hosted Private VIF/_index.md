@@ -16,13 +16,29 @@ In this guide we will be connecting your on-prem data center to your VMware Clou
 
 ![Select SDDC](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/selectsddc.png)
 
+## Now open another window and login to your partner portal
+
+![Login to both](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/logintoboth.png)
+
+## Via the Direct Connect partner portal, build the DX service from the source (On-Premises) to the destination (VMware Cloud on AWS SDDC).  
+
+![Build DX](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/builddx.png)
+
+## Most DX Partner portals will require some or all of the following information:
+
+![Select SDDC](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/configurepartnerdx.png)
+
 ## Click on Networking and Security Tab, then go to Direct Connect. 
 
-Note your AWS Account ID and ASN number and send this to your hosted VIF provider for configuration their side. 
+Copy the AWS Account ID 
 
-![AWS Account id and ASN number](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/awsaccountid.jpg)
+![AWS Account id and ASN number](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/awsaccountid.png)
 
-## Once your provider has entered the configuration on their side you will see the connection ready to accept. Click accept. 
+## Enter the account ID in the partner portal direct connect configuration and click save
+
+![Enter Account ID](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/pasteaccountid.jpg)
+
+## Go back to the VMware Cloud on AWS portal and you will see the connection ready to accept. Click accept. 
 
 ![Hosted VIF attach](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/hostedvifattach.png)
 
