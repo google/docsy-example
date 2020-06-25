@@ -23,15 +23,17 @@ In this guide we will be connecting your on-prem data center to your VMware Clou
 ## Via the Direct Connect partner portal, build the DX service from the source (On-Premises) to the destination (VMware Cloud on AWS SDDC).  
 
 ![Build DX](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/builddx.png)
+{{< notice info >}}
+
+**Additional work may be required**\
+There may be a need to build a “Last Mile” connection from the On-Premises location to the DX Partner service location (Point-of-Presence/PoP).
+{{< /notice >}}
 
 ## Most DX Partner portals will require some or all of the following information:
 
 ![Select SDDC](https://vmc-onboarding-images.s3-us-west-2.amazonaws.com/2.Connect-SDDC/direct-connect/hosted-private-vif/configurepartnerdx.png)
 
-{{< notice info >}}
-**Additional work may be required**\
-There may be a need to build a “Last Mile” connection from the On-Premises location to the DX Partner service location (Point-of-Presence/PoP).
-{{< /notice >}}
+
 
 ###	Direct Connection Service Type
 
