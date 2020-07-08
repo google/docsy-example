@@ -22,8 +22,6 @@ Visit [VMware Site Recovery Resources](https://cloud.vmware.com/vmware-site-reco
 
 To use the VMware Site Recovery service, you must activate VMware Site Recovery at the recovery site on VMware Cloud on AWS.  If VMware Cloud on AWS serves as both the protected and recovery sites, it will need to be activated in both SDDCs.
 
-### Activate Site Recovery
-
 ![SRM1](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM1.jpg)
 
 1. For the selected SDDC, Click on the ***Add Ons*** tab
