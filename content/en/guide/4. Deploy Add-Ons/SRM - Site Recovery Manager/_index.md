@@ -75,6 +75,8 @@ If you don't have vSphere Replication and Site Recovery Manager already installe
 
 ### Create Management Gateway Firewall Rules for Site Recovery Manager and vSphere Replication
 
+**SCREENSHOTS AND INSTRUCTIONS FOR FW RULES NEED UPDATED**
+
 To allow for Site Recovery Manager and vSphere Replication traffic, it is necessary to create Management Gateway firewall rules. If you are using a VMware Cloud an AWS SDDC for both the protected and DR sites, this will need to be done in both SDDCs.
 
 *From EVAL GUIDE:  To allow communication and replication traffic between the remote site site and the VMware Cloud on AWS SDDC requires the addition of some firewall
@@ -93,8 +95,7 @@ remote site firewall. Those changes are outside of the scope of this guide.*
 
 ### VMware Site Recovery - Site Pairing
 
-*** add site pairing screenshots and stop after that
-
+**SCREENSHOTS AND INSTRUCTIONS FOR SITE PAIRING NEED UPDATED**
 
 ![SRM18](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM18.jpg)
 
