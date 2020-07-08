@@ -62,10 +62,9 @@ If you don't have vSphere Replication and Site Recovery Manager already installe
 
 1. After downloading and unzipping the disk image files, log in to your on-premises vCenter as a user with privileges to install OVFs, select the location you want to install Site Recovery Manager and vSphere Replication to, and for each appliance, right-click and choose ***Deploy OVF Template...***.  Power on both appliances after the installations are complete.
 
-### ***ADD SCREENSHOTS FOR CONFIGURING ON-PREM VR AND SRM APPLIANCES***
-
 ***For detailed information on installing the Site Recovery Manager and vSphere Replication appliances, see the [Site Recovery Manager documentation](https://docs.vmware.com/en/Site-Recovery-Manager/index.html) and the [vSphere Replication documentation](https://docs.vmware.com/en/vSphere-Replication/index.html).***
 
+### ***ADD SCREENSHOTS FOR CONFIGURING ON-PREM VR AND SRM APPLIANCES***
 
 ## Create Firewall Rules to Allow Traffic from the Protected Site to the VMC SDDC
 
