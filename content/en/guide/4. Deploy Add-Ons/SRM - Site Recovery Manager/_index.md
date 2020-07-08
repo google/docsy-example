@@ -60,16 +60,12 @@ If you don't have vSphere Replication and Site Recovery Manager already installe
 
 ![SRM6](https://vmc-workshops-images.s3-us-west-2.amazonaws.com/srm-lab/Cheshire/SRM6.png)
 
-1. After downloading and unzipping the disk image files, log in to your on-premises vCenter as a user with privileges to install OVFs, select the location you want to install your Site Recovery Manager and vSphere Replication, and for each appliance, right-click and choose ***Deploy OVF Template...*** and power on both appliances after the installations are complete.
+1. After downloading and unzipping the disk image files, log in to your on-premises vCenter as a user with privileges to install OVFs, select the location you want to install Site Recovery Manager and vSphere Replication to, and for each appliance, right-click and choose ***Deploy OVF Template...***.  Power on both appliances after the installations are complete.
 
 ***For detailed information on installing the Site Recovery Manager and vSphere Replication appliances, see the [Site Recovery Manager documentation](https://docs.vmware.com/en/Site-Recovery-Manager/index.html) and the [vSphere Replication documentation](https://docs.vmware.com/en/vSphere-Replication/index.html).***
 
 
-## Prepare and Pair Site Recovery
-
-### Create Management Gateway Firewall Rules for Site Recovery Manager and vSphere Replication
-
-**SCREENSHOTS AND INSTRUCTIONS FOR FW RULES NEED UPDATED**
+## Create Firewall Rules to Allow Traffic from the Protected Site to the VMC SDDC
 
 To allow for Site Recovery Manager and vSphere Replication traffic, it is necessary to create Management Gateway firewall rules. If you are using a VMware Cloud an AWS SDDC for both the protected and DR sites, this will need to be done in both SDDCs.
 
@@ -77,13 +73,51 @@ To allow for Site Recovery Manager and vSphere Replication traffic, it is necess
 rules to the management gateway. Rules may also need to be added for the
 remote site firewall. Those changes are outside of the scope of this guide.*
 
+### Create Management Group for On-Premises Components
+
+![SRM7](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM7.jpg)
+
+1. In your SDDC, click ***Networking & Security***
+2. Click ***Groups***
+
+![SRM8](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM8.jpg)
+
+You will start by creating a group that contains the IP Addresses for your on-prem vCenter, vSphere Replication, and Site Recovery Manager.
+
+3. Click ***Management Groups***
+
+![SRM9](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM9.jpg)
+
+4. Click ***ADD GROUP***
+
+![SRM10](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM10.jpg)
+
+5.  Enter ***On-Prem VC, vSR, SRM*** in the *Name* field
+6.  Click ***Set Members***
+
+![SRM11](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM11.jpg)
+
+7.  Enter the ***IP Addresses*** for your *on-premises vCenter, vSphere Replication and Site Recovery Manager Appliances*.
+8.  Click ***APPLY***
+
+![SRM12](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM12.jpg)
+
+9.  Click ***SAVE***
+
+### Create Management Gateway Firewall Rules
+
+
+
+## REMOVE THE NEXT SCREENSHOT
+
 ![SRMNew1](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRMNew1.jpg)
 
-1. In your SDDC, click *Networking & Security*
-2. Click *Gateway Firewall* in the left-hand navigation menu
-3. Click *Management Gateway*
-4. Add the additional **four** rules that are shown above. Ask your instructor if you need assistance with creating the management gateway firewall rules.
-5. Click *PUBLISH*
+
+
+1. Click *Gateway Firewall* in the left-hand navigation menu
+2. Click *Management Gateway*
+3. Add the additional **four** rules that are shown above. Ask your instructor if you need assistance with creating the management gateway firewall rules.
+4. Click *PUBLISH*
 
 
 
