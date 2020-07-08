@@ -44,7 +44,7 @@ To use the VMware Site Recovery service, you must activate VMware Site Recovery 
 
 **The activation process takes approximately 10 minutes to complete.**
 
-## Download and Install Site Recovery Manager and vSphere Replication
+## Download and Install Site Recovery Manager and vSphere Replication On-Prem
 If you don't have vSphere Replication and Site Recovery Manager already installed in your on-premises location, you will need to download those components and install them.  If you do have them installed, be sure to review the [Site Recovery Documentation & Compatibility Matrices](https://docs.vmware.com/en/VMware-Site-Recovery/index.html) to ensure the versions you have on-prem are compatible with the versions installed into the VMware Cloud on AWS SDDC.
 
 ![SRM4](https://vmc-workshops-images.s3-us-west-2.amazonaws.com/srm-lab/Cheshire/SRM4.png)
@@ -106,22 +106,67 @@ You will start by creating a group that contains the IP Addresses for your on-pr
 
 ### Create Management Gateway Firewall Rules
 
+Management Gateway Firewall Rules to allow replication traffic from the on-premises site to the VMC SDDC.  The below rules represent the simple firewall rule configuration.  For more granular firewall rules see [Set the NSX-T Edge Management Gateway Firewall Rules for VMware Site Recovery](https://docs.vmware.com/en/VMware-Site-Recovery/services/com.vmware.srmaas.install_config.doc/GUID-2AC3C681-58C4-49B1-BD29-33F7C70F3184.html).
 
+  
+![SRM13](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM13.jpg)
 
-## REMOVE THE NEXT SCREENSHOT
+1.  In the *Networking & Security* tab of your SDDC, click ***Gateway Firewall***
+2.  Click ***Management Gateway***
 
-![SRMNew1](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRMNew1.jpg)
+![SRM14](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM14.jpg)
 
+3.  Click ***ADD RULE***
+4.  Enter ***On-Prem to SRM*** in the ***Name*** column 
 
+![SRM15](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM15.jpg)
 
-1. Click *Gateway Firewall* in the left-hand navigation menu
-2. Click *Management Gateway*
-3. Add the additional **four** rules that are shown above. Ask your instructor if you need assistance with creating the management gateway firewall rules.
-4. Click *PUBLISH*
+5.  Hover over the ***Source*** column and click the ***pencil icon***
 
+![SRM16](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM16.jpg)
 
+6.  Click the ***User Defined Groups*** *radio button*
+7.  Click the *check box* next to the ***On-Prem VC, vSR, SRM*** group you created earlier
+8.  Click ***APPLY***
 
-### VMware Site Recovery - Site Pairing
+![SRM17](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM17.jpg)
+
+9.  Hover over the ***Destination*** column and click the ***pencil icon***
+
+![SRM18](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM18.jpg)
+
+10.  Click the ***System Defined Groups*** *radio button*
+11.  Click the *check box* next to ***Site Recovery Manager***
+12.  Click ***APPLY***
+
+![SRM19](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM19.jpg)
+
+13.  Click the ***Services*** field
+
+![SRM20](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM20.jpg)
+
+14.  Select ***VMware Site Recovery SRM***
+
+![SRM21](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM21.jpg)
+
+15.  Click ***PUBLISH*** to publish this firewall rule
+
+![SRM22](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM22.jpg)
+
+16.  Go through ***Steps 3 through 15*** three more times to add the ***SRM to On-Prem, On-Prem to VR, and VR to On-Prem*** firewall rules depicted in the above screenshot, and ***PUBLISH*** them when complete.
+
+### Troubleshoot Connectivity Issues
+
+If you are having connectivity issues, you can use the Connectivity Validator  to run network connectivity tests to ensure all necessary access is available to perform the use case you select. If a test fails, follow the recommendations to correct the problem.
+
+![SRM23](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM23.jpg)
+
+1.  Click on the ***Troubleshooting*** tab for your SDDC
+2.  Select ***Site Recovery*** from the ***Connectivity Use Case*** dropdown
+3.  Enter the required ***Inputs*** for each ***Test Group***
+4.  Click ***RUN ALL TESTS*** *(note that you can also run test groups individually)*
+
+## VMware Site Recovery - Site Pairing
 
 **SCREENSHOTS AND INSTRUCTIONS FOR SITE PAIRING NEED UPDATED**
 
