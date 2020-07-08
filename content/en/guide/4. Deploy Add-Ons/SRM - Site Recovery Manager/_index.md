@@ -49,10 +49,6 @@ To use the VMware Site Recovery service, you must activate VMware Site Recovery 
 ## Download and Install Site Recovery Manager and vSphere Replication
 If you don't have vSphere Replication and Site Recovery Manager already installed in your on-premises location, you will need to download those components and install them.  If you do have them installed, be sure to review the [Site Recovery Documentation & Compatibility Matrices](https://docs.vmware.com/en/VMware-Site-Recovery/index.html) to ensure the versions you have on-prem are compatible with the versions installed into the VMware Cloud on AWS SDDC.
 
-
-
-### Download and Install Site Recovery Manager and vSphere Replication
-
 ![SRM4](https://vmc-workshops-images.s3-us-west-2.amazonaws.com/srm-lab/Cheshire/SRM4.png)
 
 1. On the page that was opened to download the on-premises components, click ***GO TO DOWNLOADS***  (*note that the selected version depicted in the screenshot may be different*)
