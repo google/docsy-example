@@ -64,7 +64,7 @@ If you don't have vSphere Replication and Site Recovery Manager already installe
 
 ***For detailed information on installing the Site Recovery Manager and vSphere Replication appliances, see the [Site Recovery Manager documentation](https://docs.vmware.com/en/Site-Recovery-Manager/index.html) and the [vSphere Replication documentation](https://docs.vmware.com/en/vSphere-Replication/index.html).***
 
-### ***ADD SCREENSHOTS FOR CONFIGURING ON-PREM VR AND SRM APPLIANCES***
+### ***Add screenshots for configuring on-prem VR and SRM appliances***
 
 ## Create Firewall Rules to Allow Traffic from the Protected Site to the VMC SDDC
 
@@ -171,7 +171,7 @@ If you are having connectivity issues, you can use the Connectivity Validator  t
 
 ## Pair VMware Site Recovery Sites
 
-### ***SCREENSHOTS AND INSTRUCTIONS FOR SITE PAIRING NEED UPDATED***
+### ***Screenshots and instructions for site pairing need updated***
 
 ![SRM16](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM16.jpg)
 
