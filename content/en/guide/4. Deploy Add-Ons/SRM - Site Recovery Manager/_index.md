@@ -51,7 +51,7 @@ If you don't have vSphere Replication and Site Recovery Manager already installe
 
 1. On the page that was opened to download the on-premises components, click ***GO TO DOWNLOADS***  (*note that the selected version depicted in the screenshot may be different*)
 
-![SRM5](https://vmc-workshops-images.s3-us-west-2.amazonaws.com/srm-lab/Cheshire/SRM5.png)
+    ![SRM5](https://vmc-workshops-images.s3-us-west-2.amazonaws.com/srm-lab/Cheshire/SRM5.png)
 
 2. Click ***DOWNLOAD NOW*** to download the Site Recovery Manager *.iso disk image file
 3. Click ***DOWNLOAD NOW*** to download the vSphere Replication *.iso disk image file
@@ -61,6 +61,8 @@ If you don't have vSphere Replication and Site Recovery Manager already installe
 ![SRM6](https://vmc-workshops-images.s3-us-west-2.amazonaws.com/srm-lab/Cheshire/SRM6.png)
 
 1. After downloading and unzipping the disk image files, log in to your on-premises vCenter as a user with privileges to install OVFs, select the location you want to install Site Recovery Manager and vSphere Replication to, and for each appliance, right-click and choose ***Deploy OVF Template...***.  Power on both appliances after the installations are complete.
+
+### ***ADD SCREENSHOTS FOR CONFIGURING ON-PREM VR AND SRM APPLIANCES***
 
 ***For detailed information on installing the Site Recovery Manager and vSphere Replication appliances, see the [Site Recovery Manager documentation](https://docs.vmware.com/en/Site-Recovery-Manager/index.html) and the [vSphere Replication documentation](https://docs.vmware.com/en/vSphere-Replication/index.html).***
 
@@ -80,27 +82,27 @@ remote site firewall. Those changes are outside of the scope of this guide.*
 1. In your SDDC, click ***Networking & Security***
 2. Click ***Groups***
 
-![SRM8](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM8.jpg)
+    ![SRM8](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM8.jpg)
 
 You will start by creating a group that contains the IP Addresses for your on-prem vCenter, vSphere Replication, and Site Recovery Manager.
 
 3. Click ***Management Groups***
 
-![SRM9](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM9.jpg)
+    ![SRM9](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM9.jpg)
 
 4. Click ***ADD GROUP***
 
-![SRM10](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM10.jpg)
+    ![SRM10](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM10.jpg)
 
 5.  Enter ***On-Prem VC, vSR, SRM*** in the *Name* field
 6.  Click ***Set Members***
 
-![SRM11](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM11.jpg)
+    ![SRM11](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM11.jpg)
 
 7.  Enter the ***IP Addresses*** for your *on-premises vCenter, vSphere Replication and Site Recovery Manager Appliances*.
 8.  Click ***APPLY***
 
-![SRM12](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM12.jpg)
+    ![SRM12](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM12.jpg)
 
 9.  Click ***SAVE***
 
@@ -114,31 +116,32 @@ Management Gateway Firewall Rules to allow replication traffic from the on-premi
 1.  In the *Networking & Security* tab of your SDDC, click ***Gateway Firewall***
 2.  Click ***Management Gateway***
 
-![SRM14](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM14.jpg)
+    ![SRM14](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM14.jpg)
 
 3.  Click ***ADD RULE***
 4.  Enter ***On-Prem to SRM*** in the ***Name*** column 
 
-![SRM15](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM15.jpg)
+    ![SRM15](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM15.jpg)
 
 5.  Hover over the ***Source*** column and click the ***pencil icon***
 
-![SRM16](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM16.jpg)
+    ![SRM16](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM16.jpg)
 
 6.  Click the ***User Defined Groups*** *radio button*
 7.  Click the *check box* next to the ***On-Prem VC, vSR, SRM*** group you created earlier
 8.  Click ***APPLY***
 
-![SRM17](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM17.jpg)
+    ![SRM17](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM17.jpg)
 
 9.  Hover over the ***Destination*** column and click the ***pencil icon***
 
-![SRM18](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM18.jpg)
+    ![SRM18](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM18.jpg)
 
 10.  Click the ***System Defined Groups*** *radio button*
 11.  Click the *check box* next to ***Site Recovery Manager***
 12.  Click ***APPLY***
 
+    
 ![SRM19](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/Cheshire/SRM19.jpg)
 
 13.  Click the ***Services*** field
@@ -166,69 +169,48 @@ If you are having connectivity issues, you can use the Connectivity Validator  t
 3.  Enter the required ***Inputs*** for each ***Test Group***
 4.  Click ***RUN ALL TESTS*** *(note that you can also run test groups individually)*
 
-## VMware Site Recovery - Site Pairing
 
-**SCREENSHOTS AND INSTRUCTIONS FOR SITE PAIRING NEED UPDATED**
+## Pair VMware Site Recovery Sites
 
-![SRM18](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM18.jpg)
-
-You will be pairing to the other SDDC that is in your workshop organization.  Before beginning, each student needs to navigate to their partner's SDDC and save the vCenter FQDN and cloudadmin password.
-
-1. Click *Settings* for your **partner's SDDC**
-
-    The username on both sides (yours and your peer) will always be *cloudadmin@vmc.local*
-
-2. Copy your partner's cloudadmin password and save it to notepad
-3. Copy your partners vCenter FQDN.  Before saving it to notepad, change the format from what is displayed to what will be used, as shown below:
-
-    *DISPLAYED*:
-
-    ```link
-    https://vcenter.sddc-xx-xxx-xx-xx.vmc.vmware.com/ui
-    ```
-
-    *USED*:
-
-    ```link
-    vcenter.sddc-xx-xxx-xx-xx.vmc.vmware.com
-    ```
+### ***SCREENSHOTS AND INSTRUCTIONS FOR SITE PAIRING NEED UPDATED***
 
 ![SRM16](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM16.jpg)
 
-***IMPORTANT NOTE*: Only one person can do the Site Pairing exercise. Please decide between you and your partner who performs this step.**
-
-1. Navigate to the SDDC of the student that will do the site pairing and click *Add Ons*
-2. Click *OPEN SITE RECOVERY* (*If necessary, login with the cloudadmin credentials for that SDDC*)
+1. Navigate to the SDDC and click ***Add Ons***
+2. Click ***OPEN SITE RECOVERY*** (*If necessary, login with the cloudadmin credentials for that SDDC*)
 
     ![SRM17](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM17.jpg)
 
-3. Click *NEW SITE PAIR*
+3. Click ***NEW SITE PAIR***
 
     ![SRM19](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM19.jpg)
-4. Enter the *vCenter FQDN* of your partner's SDDC in the format **vcenter.sddc-xx-xxx-xx-xx.vmc.vmware.com** in the *PSC host name* field
-5. Enter *cloudadmin@vmc.local* in the *User name* field
-6. Enter the *cloudadmin password* of your partner's SDDC into the *Password* field
-7. Click *NEXT*
+
+4. Enter the *vCenter FQDN* of your on-prem vCenter in the format **vcenter.sddc-xx-xxx-xx-xx.vmc.vmware.com** in the *PSC host name* field
+5. Enter the ***User name*** for your on-prem vCenter
+6. Enter the ***Password*** for your on-prem vCenter
+7. Click ***NEXT***
 
     ![SRM20](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM20.jpg)
-8. Click the *top-level checkbox* to select all Services
-9. Click *NEXT*
+
+8. Click the ***top-level checkbox*** to select all Services
+9. Click ***NEXT***
 
     ![SRM21](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRM21.jpg)
-10. Click *FINISH*
+
+10. Click ***FINISH***
 
     ![SRMNew2](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRMNew2.jpg)
 
-11. Click *VIEW DETAILS*
+11. Click ***VIEW DETAILS***
 
     ![SRMNew3](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRMNew3.jpg)
 
-12. Enter *cloudadmin@vmc.local* for the *User name*
-13. Enter the cloudadmin password for your **partner's SDDC** for the *Password*
+12. Enter ***cloudadmin@vmc.local*** for the *User name*
+13. Enter the ***cloudadmin password*** for your **partner's SDDC** for the *Password*
 14. Click *LOG IN*
 
     ![SRMNew4](https://s3-us-west-2.amazonaws.com/vmc-workshops-images/srm-lab/SRMNew4.jpg)
 
-Once logged in to your partner's SDDC, you will see the *Site Pair Summary*
+Once logged in to your on-prem vCenter, you will see the ***Site Pair Summary***
 
 **After your site pairing is complete, you can now proceed with configuring mappings, setting up replication for your VMs, creating protection groups and recovery plans, and testing your recovery plans.  For details on using Site Recovery Manager, see the [Site Recovery Manager documentation](https://docs.vmware.com/en/Site-Recovery-Manager/index.html) and refer to the [VMware Site Recovery Evaluation Guide](https://storagehub.vmware.com/section-assets/draas-eval-guide).**
