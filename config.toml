@@ -17,7 +17,7 @@ defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 
 [taxonomies]
-products = "products"
+tags = "tags"
 
 # Highlighting config
 pygmentsCodeFences = true
