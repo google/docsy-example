@@ -1,0 +1,225 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgd/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>OperSiRLaC</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:OperSiRLaCInput>
+         <wsm:CodOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare tag persona fisica o giuridica)-->
+            <wsm:PersonaFisica>RSSMRA59M08H501S</wsm:PersonaFisica>
+         </wsm:CodOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <!--Tipologia di richiesta I=Inserimento A=Aggiornamento-->
+         <wsm:TipoRichiesta>I</wsm:TipoRichiesta>
+         <wsm:Operazione>
+         <!--Specificare una o più operazioni da inserire/aggiornare-->
+            <wsm:GILC>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>1</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2134</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:Carico>
+                  <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                  <wsm:CodiceSostanza>2</wsm:CodiceSostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>200.85</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto>01234</wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Carico>
+            </wsm:GILC>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CPLC>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>2</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>322</wsm:CodCommittente>
+               <!--Quantità di prodotto in Kg-->
+               <wsm:QtaLatte>20</wsm:QtaLatte>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:Carico>
+                  <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                  <wsm:CodiceSostanza>2</wsm:CodiceSostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>50</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto>01234</wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Carico>
+            </wsm:CPLC>
+		</wsm:Operazione>
+		<wsm:Operazione>			
+            <wsm:CALC>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>3</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>AB032</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2333</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Carico>
+                  <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                  <wsm:CodiceSostanza>3</wsm:CodiceSostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>40.5</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto>01234</wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Carico>
+            </wsm:CALC>
+		</wsm:Operazione>
+		<wsm:Operazione>			
+            <wsm:SVLC>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>4</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>755</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Scarico>
+                  <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                  <wsm:CodiceSostanza>1</wsm:CodiceSostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>44</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto>01234</wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Scarico>
+            </wsm:SVLC>
+		</wsm:Operazione>
+		<wsm:Operazione>			
+            <wsm:SULC>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>5</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Scarico>
+                  <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                  <wsm:CodiceSostanza>2</wsm:CodiceSostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>25</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto>01234</wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Scarico>
+            </wsm:SULC>
+		</wsm:Operazione>
+		<wsm:Operazione>			
+            <wsm:SPLC>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>6</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2344</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:Scarico>
+                  <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                  <wsm:CodiceSostanza>2</wsm:CodiceSostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>80</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto>01234</wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Scarico>
+            </wsm:SPLC>
+		</wsm:Operazione>
+		<wsm:Operazione>			
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>7</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>AF321</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2344</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <wsm:QtaLatte>20.7</wsm:QtaLatte>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Sostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Carico>
+                     <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                     <wsm:CodiceSostanza>2</wsm:CodiceSostanza>
+                     <!--Quantità di prodotto in Kg-->
+                     <wsm:Qta>30.6</wsm:Qta>
+                     <!--Codice alfanumerico del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                     <!--Note integrative (facoltativo)-->
+                     <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+                  </wsm:Carico>
+               </wsm:Sostanza>
+            </wsm:OPGE>
+         </wsm:Operazione>
+		 <wsm:Operazione>			
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>8</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>AF322</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2344</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <wsm:QtaLatte>15.7</wsm:QtaLatte>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Sostanza>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Scarico>
+                     <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+                     <wsm:CodiceSostanza>3</wsm:CodiceSostanza>
+                     <!--Quantita di prodotto in Kg-->
+                     <wsm:Qta>50</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                     <!--Note integrative (facoltativo)-->
+                     <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+                  </wsm:Scarico>
+               </wsm:Sostanza>
+            </wsm:OPGE>
+         </wsm:Operazione>		 
+      </wsm:OperSiRLaCInput>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,30 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgd/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>VisOperSiRLaC</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:VisOperSiRLaCInput>
+         <wsm:CodOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare tag persona fisica o giuridica)-->
+            <wsm:PersonaFisica>RSSMRA59M08H501S</wsm:PersonaFisica>
+         </wsm:CodOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <!--Data di inizio nel formato AAAA-MM-GG-->
+         <wsm:DataOperIni>2015-01-12</wsm:DataOperIni>
+         <!--Data di fine nel formato AAAA-MM-GG-->
+         <wsm:DataOperFine>2015-11-04</wsm:DataOperFine>
+         <!--Codice alfanumerico identificativo del soggetto censito in ANAGRAFICA-->
+         <wsm:CodiceSoggetto>1616</wsm:CodiceSoggetto>
+         <!--Codice dell'operazione di registro-->
+         <wsm:CodOperazione>SVLC</wsm:CodOperazione>
+         <!--Codice della tipologia di latte 1-Latte in polvere 2-Latte concentrato 3-Altro latte conservato-->
+         <wsm:Prodotto>1</wsm:Prodotto>
+     </wsm:VisOperSiRLaCInput>
+   </soapenv:Body>
+</soapenv:Envelope>

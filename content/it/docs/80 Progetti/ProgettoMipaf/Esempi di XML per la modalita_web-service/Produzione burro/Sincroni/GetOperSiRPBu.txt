@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrge/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+        <nomeServizio>GetOperSiRPBu</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:GetOperSiRPBuInput>
+         <!--Codice alfanumerico della fornitura -->
+         <wsm:IdTrasmissione>123456789123456789</wsm:IdTrasmissione>
+      </wsm:GetOperSiRPBuInput>
+   </soapenv:Body>
+</soapenv:Envelope>

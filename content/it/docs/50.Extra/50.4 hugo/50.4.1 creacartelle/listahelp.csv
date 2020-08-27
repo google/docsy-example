@@ -1,0 +1,47 @@
+1,/04.Ciclo Attivo,Invoice Bill [RP.414],""
+1,/04.Ciclo Attivo,Pagamento da Fattura, 
+1,/04.Ciclo Attivo,Ricerca Fattura , 
+1,/04.Ciclo Attivo,Report Fattura di Vendita [RP.411],""
+1,/08.Pagamenti e Incassi (Partite Aperte),Report Ricevuta Pagamento [RP.271],""
+1,/08.Pagamenti e Incassi (Partite Aperte),Report Partite Aperte[RP.823],""
+1,/08.Pagamenti e Incassi (Partite Aperte),Report Elenco Pagamenti [RP.833],""
+1,/08.Pagamenti e Incassi (Partite Aperte),Seleziona Fatture per Pagamento [SPF00],<p># Creazione File RIBA</p><p># Creazione file SEPA</p>
+1,/08.Pagamenti e Incassi (Partite Aperte),Report Estratto Conto Business Partner [RP.821],""
+1,/09.Contabilità e Controllo di Gestione,Report Flusso di Cassa[RP.843],""
+2,/01.Installazione e Parametrizzazione di Base/01.01.Installazione e Parametri di Base,Extra analisi e customizzazione,NA
+2,/01.Installazione e Parametrizzazione di Base/01.01.Installazione e Parametri di Base,Analisi di processo - primo setup e documento GAP,NA
+2,/01.Installazione e Parametrizzazione di Base/01.01.Installazione e Parametri di Base,Setup dati Client Gruppo,OK
+2,/01.Installazione e Parametrizzazione di Base/01.01.Installazione e Parametri di Base,Verifica Piano dei Conti (consegna file xls e loro verifica),DOPO
+2,/03.Anagrafiche di Base/03.01.Business Partner,Report Lettera Informazioni Bancarie [RP.311],Report per generare lettera con le informazioni bancarie da inviare al cliente / fornitore
+2,/03.Anagrafiche di Base/03.02.Prodotto,Prodotto [PRD00],<p>&nbsp;</p><p>&nbsp;</p><p># Prodotto di Servizio</p><p>- se il campo Fantasma &egrave; valorizzato aYEs&nbsp; il Prodotto non verra stampato nei report di Trasporto DDT</p>
+2,/03.Anagrafiche di Base/03.02.Prodotto,MIPAAF Movement,test
+2,/04.Ciclo Attivo/04.01.Offerta Ordine di Vendita,Creazione task da ODV10 ,m
+2,/04.Ciclo Attivo/04.01.Offerta Ordine di Vendita,Report Ordine con Immagine 2 [RP.427.c],""
+2,/04.Ciclo Attivo/04.01.Offerta Ordine di Vendita,Report Ordine con Immagine 1 [RP.428.b],<p hidden>/opt/repos/reports/reports_base_2/c_order_prodconf_image2</p>
+2,/04.Ciclo Attivo/04.02.Ciclo Attivo - Altri processi,Report DDT Cliente[RP.453],Report DDT - Ordine Magazzino . Se valorizzato riporta il totale dell'ordine. Creato per Ordini di tipo Ordine/DDT ossia con evasione unica (1 DDT) in quanto  la valorizzazione riprende i dati dell'ordine e non della qtà spedita.<br>Il Parametro Stampa Prezzi ha il seguente funzionamento :<br>- se impostato a SI  il documento viene valorizzato<br>- se impostato a NO il documento non viene valorizzato<br>- se vuoto viene preso il parametro (SI valorizzato / No Non valorizzato ) inserito a libello di  Business Partner
+2,/04.Ciclo Attivo/04.05.Reso Clienti,Report Invoice Kit [RP.413],ver. 19.11.12
+2,/05.Ciclo Passivo/05.01.Richiesta di Offerta a Fornitore,Report Ordine di Acquisto[RP.522],""
+2,/05.Ciclo Passivo/05.05.Resi Fornitore,Report Spese di Viaggio [RP.238],""
+2,/05.Ciclo Passivo/05.06.Fattura di acquisto,Fattura di Acquisto [FDA00],"<p>05.06.01 - <span style=""font-size:14px""><b>Fattura di Acquisto [FDA00]</b></span></p><p>link -&gt; listino</p><p>link -&gt; prodotto</p><p>&nbsp;</p><p><span style=""font-size:9px""><b><i>Informazione avanzata</i></b></span></p><p>Fattura estera</p><p>- cambio in base alla data del documento [#PATCH-1234 ] [#TASK-3214] [#PLUGIN-13 ]</p><p>&nbsp;</p><p>Estensioni : Gestione</p><p>Link Video</p><p>skdjflaskjflaksdfj</p><p>LInk Interni #05.06.07 -fatuure lasdkfja klsdf&nbsp;&nbsp;&nbsp;&nbsp; @asdfkad cambi</p><p>&nbsp;</p><p>Link Esterni</p><p>&nbsp;</p><p>&nbsp;</p><p>-ksadjflasdkf</p>"
+2,/07.Logistica/07.02.Ordini di trasferimento (distribuzione),Report Giornale di Magazzino [RP.914],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Elenco Ritenute dal al[RP.851],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Estratto Conto[RP.822],"""Report Contabilità"" 0312 Report Estratto Conto / Customer Statement Report"
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Controllo Pagamenti Incassi[RP.834],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Dettaglio Fatture,0305 Report Dettaglio Fatture / Invoice Detail Report
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Piano dei Conti[RP.871],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Verifica di Bilancio[RP.862],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Riepilogo Mastri [RP.863],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Lettera Ritenute Fornitori[RP.852],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Budget Costi[RP.891],""
+2,/09.Contabilità e Controllo di Gestione/09.03.Solleciti,Report Libro Giornale[RP.841],""
+2,/13.Utilità/13.05.Plugin NextCloud,Report Riepilogo Ore Dipendente [RP.235],Questo report riepiloga le ore per dipendente.
+2,/13.Utilità/13.11.Intercompany,Incasso Fattura di Vendita -> Pagamento Fattura di Acquisto,<p>Intercmponas df</p><p>aljsd fkljasdlfkjasldf</p>
+2,,Report Rapporto di Intervento [RP.234],""
+3,,video registri-sequenze-H,OK
+3,,Setup Client > Posta SMTP,OK
+3,,Controllo Registri IVA ,OK
+3,,Setup dati Schema Contabile (uno),OK
+3,,Creazione Utenti max 5,OK
+3,,Setup dati Organizzazione ,OK
+3,,Check Parametri Report Default,OK
+3,,Dati Schema Contabile (Multi),OK

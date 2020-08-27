@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrge/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>VisOperSiRPBu</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:VisOperSiRPBuInput>
+         <wsm:CodOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare persona fisica o giuridica)-->
+            <wsm:PersonaGiuridica>01234567890</wsm:PersonaGiuridica>
+         </wsm:CodOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <!--Data di inizio nel formato AAAA-MM-GG-->
+         <wsm:DataOperIni>2015-01-12</wsm:DataOperIni>
+         <!--Data di fine nel formato AAAA-MM-GG-->
+         <wsm:DataOperFine>2015-11-04</wsm:DataOperFine>
+         <!--Codice alfanumerico identificativo del soggetto censito in ANAGRAFICA-->
+         <wsm:CodiceSoggetto>1616</wsm:CodiceSoggetto>
+         <!--Codice dell'operazione di registro-->
+         <wsm:CodOperazione>GIBU</wsm:CodOperazione>
+         <!--Codice alfanumerico del lotto di confezionamento-->
+         <wsm:Lotto>01234</wsm:Lotto>
+         <!--Optional:-->
+         <wsm:Prodotto>
+            <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+            <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+            <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metà-->
+            <wsm:TipologiaBurro>2</wsm:TipologiaBurro>
+            <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+            <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+            <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+            <wsm:OrigineMateriaPrima>UX</wsm:OrigineMateriaPrima>
+            <!--Codice alfanumerico del lotto di confezionamento-->
+            <wsm:Lotto>01234</wsm:Lotto>
+         </wsm:Prodotto>
+      </wsm:VisOperSiRPBuInput>
+   </soapenv:Body>
+</soapenv:Envelope>

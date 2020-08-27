@@ -1,0 +1,856 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrge/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>OperSiRPBu</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:OperSiRPBuInput>
+         <wsm:CodOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare tag persona fisica o giuridica)-->
+            <wsm:PersonaGiuridica>01234567890</wsm:PersonaGiuridica>
+         </wsm:CodOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <!--Tipologia di richiesta I=Inserimento A=Aggiornamento-->
+         <wsm:TipoRichiesta>I</wsm:TipoRichiesta>
+         <wsm:Operazione>
+         <!--Specificare una o più operazioni da inserire/aggiornare-->
+            <wsm:GIMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>1</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>A2134</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoGiacenza>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>UE</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>500.65</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+               </wsm:ProdottoGiacenza>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:GIMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CAMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>2</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>FT32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>AA2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoCarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>200</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+               </wsm:ProdottoCarico>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CAMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CLMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>3</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoCarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>SI</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IX</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>200.55</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+               </wsm:ProdottoCarico>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CLMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:SVMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>4</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2221</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoScarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantitˆ di prodotto in Kg-->
+                  <wsm:Qta>400</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+               </wsm:ProdottoScarico>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SVMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:SLMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>5</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoScarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>200</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+               </wsm:ProdottoScarico>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SLMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CMMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>6</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoCarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>MI</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>300</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>BU</wsm:SpecieAnimale>
+               </wsm:ProdottoCarico>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CMMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:PCMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>7</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoScarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>300</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+               </wsm:ProdottoScarico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:PCMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:GIBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>8</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2322</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoG>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>2</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Quantità di prodotto in Kg-->
+                     <wsm:Qta>100</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>1236AA</wsm:Lotto-->
+                 </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoG>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:GIBU>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:GIBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>9</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2322</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoG>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IE</wsm:OrigineProdottoFinito>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>200</wsm:Qta>
+                     <!--Quantitˆ confezione -->
+                     <wsm:PesoNettoConf>20</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoG>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:GIBU>
+		</wsm:Operazione>		
+		<wsm:Operazione>
+            <wsm:CLBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>10</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metà-->
+                     <wsm:TipoBurro>3</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Quantità di prodotto in Kg-->
+                     <wsm:Qta>200</wsm:Qta>
+                     <!--Peso confezione in Kg-->
+                     <wsm:PesoNettoConf>10</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CLBU>
+	</wsm:Operazione>
+			<wsm:Operazione>
+            <wsm:CLBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>11</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>2</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>200</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>01234</wsm:Lotto-->
+                  </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CLBU>
+	</wsm:Operazione>
+	<wsm:Operazione>
+            <wsm:LABU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>12</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2232</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoScarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>200</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+               </wsm:ProdottoScarico>
+               <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metà-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                     <wsm:OrigineProdottoFinito>UE</wsm:OrigineProdottoFinito>
+                     <!--Quantità di prodotto in Kg-->
+                     <wsm:Qta>100</wsm:Qta>
+                     <!--Peso confezione in Kg-->
+                     <wsm:PesoNettoConf>5</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>AL</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:LABU>
+	</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:LABU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>13</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2232</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <!--Specificare uno o più prodotti-->
+               <wsm:ProdottoScarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>200</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+               </wsm:ProdottoScarico>
+               <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IE</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>40</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>01234</wsm:Lotto-->
+                  </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:LABU>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CABU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>14</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 4-Burro metà-->
+                     <wsm:TipoBurro>4</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+                     <!--Quantità di prodotto in Kg-->
+                     <wsm:Qta>100</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>01234</wsm:Lotto-->
+                  </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CABU>
+	</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CABU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>15</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>100</wsm:Qta>
+                     <!--Peso confezione in Kg-->
+                     <wsm:PesoNettoConf>4</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CABU>
+	</wsm:Operazione>
+	<wsm:Operazione>
+            <wsm:CONF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>16</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoCS>
+                  <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metà-->
+                  <wsm:TipoBurro>2</wsm:TipoBurro>
+                  <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                  <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                  <!--Quantità di burro sfuso scaricato in Kg-->
+                  <wsm:QtaScaricoS>20</wsm:QtaScaricoS>
+                  <!--Quantità di burro confezionato in Kg-->
+                  <wsm:QtaCaricoConf>20</wsm:QtaCaricoConf>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                  <wsm:PesoNettoConf>5</wsm:PesoNettoConf>
+                  <!--Codice del lotto (facoltativo)-->
+                  <wsm:Lotto>01234</wsm:Lotto>
+               </wsm:ProdottoFinitoCS>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CONF>
+	</wsm:Operazione>
+	<wsm:Operazione>
+            <wsm:SVBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>17</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoS>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metà-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Quantità di prodotto in Kg-->
+                     <wsm:Qta>200</wsm:Qta>
+                     <wsm:PesoNettoConf>5</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoS>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SVBU>
+	</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:SVBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>18</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoS>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>200</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>01234</wsm:Lotto-->
+                  </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoS>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SVBU>
+	</wsm:Operazione>
+	<wsm:Operazione>
+            <wsm:PCBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>19</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2322</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoS>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metà-->
+                     <wsm:TipoBurro>2</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search )-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Quantità di prodotto in Kg-->
+                     <wsm:Qta>50</wsm:Qta>
+                     <wsm:PesoNettoConf>5</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoS>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:PCBU>
+	</wsm:Operazione>
+	<wsm:Operazione>
+            <wsm:PCBU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>20</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2322</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoS>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>01234</wsm:Lotto-->
+                  </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoS>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:PCBU>
+	</wsm:Operazione>	
+	<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>21</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--You have a CHOICE of the next 4 items at this level-->
+               <wsm:ProdottoCarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>CL</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1 https://www.iso.org/obp/ui/#search ) -->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantità di prodotto in Kg-->
+                  <wsm:Qta>10</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+               </wsm:ProdottoCarico>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+         </wsm:Operazione>
+	<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>22</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--You have a CHOICE of the next 4 items at this level-->
+               <wsm:ProdottoScarico>
+                  <!--Tipo Materia Prima assume uno dei valori CL-Crema di latte SI-Siero di latte MI-Miscela di crema e siero di latte LA-Latte BU-Burro-->
+                  <wsm:TipoMateriaPrima>SI</wsm:TipoMateriaPrima>
+                  <!--Origine materia prima IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                  <wsm:OrigineMateriaPrima>IT</wsm:OrigineMateriaPrima>
+                  <!--Quantitˆ di prodotto in Kg-->
+                  <wsm:Qta>10</wsm:Qta>
+                  <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                  <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+               </wsm:ProdottoScarico>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+         </wsm:Operazione>		
+	<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>23</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+			   
+			   <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>AL</wsm:SpecieAnimale>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>01234</wsm:Lotto-->
+                  </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+         </wsm:Operazione>		
+		 	<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>24</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+			   <wsm:ProdottoFinitoC>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+                     <wsm:PesoNettoConf>5</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>AL</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoC>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+         </wsm:Operazione>		
+		 	<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>25</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoS>
+                  <wsm:ProdottoFinitoSfuso>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>CA</wsm:SpecieAnimale>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>5</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <!--wsm:Lotto>01234</wsm:Lotto-->
+                  </wsm:ProdottoFinitoSfuso>
+               </wsm:ProdottoFinitoS>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+         </wsm:Operazione>	
+		 	<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>26</wsm:NumOperazione>
+               <!--Numero del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:ProdottoFinitoS>
+                  <wsm:ProdottoFinitoConf>
+                     <!--Tipo Burro assume uno dei valori 1-Burro 2-Burro tradizionale 3-Burro tre quarti 5-Burro metˆ-->
+                     <wsm:TipoBurro>1</wsm:TipoBurro>
+                     <!--Origine prodotto finito IT(Italia da materie prime italiane) IE(Italia con materie prime UE) IX(Italia con materie prime extra UE) UE(da paesi UE) EX(da paesi extraUE) UX(UE ed Extra UE) ISO(Codice ISO 3166-1)-->
+                     <wsm:OrigineProdottoFinito>IT</wsm:OrigineProdottoFinito>
+                     <!--Quantitˆ di prodotto in Kg-->
+                     <wsm:Qta>5</wsm:Qta>
+                     <wsm:PesoNettoConf>5</wsm:PesoNettoConf>
+                     <!--Specie animale assume uno dei valori OV-Ovina CA-Caprina BU-Bufalina AL-Altro-->
+                     <wsm:SpecieAnimale>OV</wsm:SpecieAnimale>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto>01234</wsm:Lotto>
+                  </wsm:ProdottoFinitoConf>
+               </wsm:ProdottoFinitoS>
+               <!--Se prodotto biologico vale B-->
+               <wsm:Biologico>B</wsm:Biologico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+         </wsm:Operazione>			 
+      </wsm:OperSiRPBuInput>
+   </soapenv:Body>
+</soapenv:Envelope>

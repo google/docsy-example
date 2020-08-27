@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://jws.agenziaentrate.it/jws/dichiarazioni/" href="StartControlli.jnlp">
+<information>
+  <title>Utility File Telematici</title>
+  <vendor>Java Developer Connection</vendor>
+  <homepage href="" />
+  <description>Utility File Telematici</description>
+  <offline-allowed/>
+  <shortcut online="false"> 
+    <desktop/> 
+  </shortcut>  
+</information>
+<offline-allowed/>
+<security>
+  <all-permissions/> 
+</security>
+<update check="always" policy="always"/>
+<resources>
+  <j2se version="1.8+" />
+  <jar href="TelemCommonV2.jar"/>	<!-- Telem Generale non annualizzato-->
+  <jar href="ControlliFX.jar"/>	<!-- jar con la nuova interfaccia per i controlli -->
+  <jar href="../iText-2.1.4.jar" />
+<!--  <jar href="fx8.jar"/> -->
+</resources>
+<!--
+  <jfx:javafx-desc  width="600" height="400" main-class="it.finanze.entrate.sfe.main.ControlliFx"  name="Controlli" />
+  <update check="background"/>
+ -->
+<application-desc main-class="it.finanze.entrate.sfe.main.ControlliFx">
+  <argument>1</argument>
+</application-desc>
+</jnlp>

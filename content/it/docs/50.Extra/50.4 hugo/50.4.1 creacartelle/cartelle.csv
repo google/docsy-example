@@ -1,0 +1,114 @@
+1,/,01.Installazione e Parametrizzazione di Base
+1,/,02.Workbench  Scrivania
+1,/,03.Anagrafiche di Base
+1,/,04.Ciclo Attivo
+1,/,05.Ciclo Passivo
+1,/,06.CRM
+1,/,07.Logistica
+1,/,08.Pagamenti e Incassi (Partite Aperte)
+1,/,09.Contabilità e Controllo di Gestione
+1,/,10.Cespiti
+1,/,11.Gestione Progetti
+1,/,12.Produzione
+1,/,13.01.Geo iDempiere 
+1,/,13.Utilità
+1,/,20.05.Report 
+1,/,
+2,/01.Installazione e Parametrizzazione di Base,01.01.Installazione e Parametri di Base
+2,/01.Installazione e Parametrizzazione di Base,01.02.Primo Accesso Menu e Navigazione (Formazione)
+2,/01.Installazione e Parametrizzazione di Base,01.03.Report Interni (Formazione)
+2,/01.Installazione e Parametrizzazione di Base,01.04.Amministrazione del Sistema (Menu)
+2,/01.Installazione e Parametrizzazione di Base,01.05.Application Dictionary (Menu)
+2,/01.Installazione e Parametrizzazione di Base,01.06.Dati
+2,/02.Workbench / Scrivania,02.01.Invio Email
+2,/02.Workbench / Scrivania,02.02.Gestione Allegati
+2,/02.Workbench / Scrivania,02.03.Sincronizzazione Calendario (M Extra)
+2,/02.Workbench / Scrivania,02.04.Alert
+2,/02.Workbench / Scrivania,02.05.Schedulatore
+2,/02.Workbench / Scrivania,02.06.Direct Print
+2,/03.Anagrafiche di Base,03.01.Business Partner
+2,/03.Anagrafiche di Base,03.02.Prodotto
+2,/03.Anagrafiche di Base,03.03.Referente Commerc  Agente  Rappresentante
+2,/03.Anagrafiche di Base,03.04.Banca e Banca BP
+2,/03.Anagrafiche di Base,03.05.Gestione Listino Prezzi
+2,/03.Anagrafiche di Base,
+2,/04.Ciclo Attivo,04.01.Offerta Ordine di Vendita
+2,/04.Ciclo Attivo,04.02.Ciclo Attivo - Altri processi
+2,/04.Ciclo Attivo,04.03.Genera Spedizione  da ordine
+2,/04.Ciclo Attivo,04.04.Fattura di Vendita
+2,/04.Ciclo Attivo,04.05.Reso Clienti
+2,/04.Ciclo Attivo,04.06.Agenti e Provvigioni
+2,/04.Ciclo Attivo,04.07.POS
+2,/04.Ciclo Attivo,04.08.Richiesta
+2,/04.Ciclo Attivo,04.08.Richieste 
+2,/04.Ciclo Attivo,04.08.Richieste interne
+2,/04.Ciclo Attivo,04.09.Setup Ciclo Attivo
+2,/04.Ciclo Attivo,04.10.Spedizioni
+2,/04.Ciclo Attivo,04.11.Contratti
+2,/04.Ciclo Attivo,
+2,/05.Ciclo Passivo,05.01.Richiesta di Offerta a Fornitore
+2,/05.Ciclo Passivo,05.02.Richiesta di Acquisto
+2,/05.Ciclo Passivo,05.03.Ordini di Acquisto
+2,/05.Ciclo Passivo,05.04.Entrata Merce
+2,/05.Ciclo Passivo,05.05.Resi Fornitore
+2,/05.Ciclo Passivo,05.06.Fattura di acquisto
+2,/05.Ciclo Passivo,05.07.Conto Lavoro Passivo
+2,/06.CRM,06.02.Crm Plus (M) + MailChimp + Reader Mail
+2,/07.Logistica,07.01.Gestione Materiali
+2,/07.Logistica,07.02.Ordini di trasferimento (distribuzione)
+2,/07.Logistica,07.03.Inventario fisico
+2,/07.Logistica,07.04.Impostazioni Materiali
+2,/07.Logistica,07.05.Ordini di distribuzione
+2,/07.Logistica,
+2,/08.Pagamenti e Incassi (Partite Aperte),
+2,/09.Contabilità e Controllo di Gestione,09.01.Report Finanziario
+2,/09.Contabilità e Controllo di Gestione,09.02.Setup Report
+2,/09.Contabilità e Controllo di Gestione,09.03.Solleciti
+2,/09.Contabilità e Controllo di Gestione,09.04.Controllo di Gestione
+2,/09.Contabilità e Controllo di Gestione,09.05.Contabilità - Setup di base
+2,/09.Contabilità e Controllo di Gestione,
+2,/10.Cespiti,
+2,/12.Produzione,
+2,/13.Utilità,13.02.Kanban
+2,/13.Utilità,13.03.Telegram
+2,/13.Utilità,13.04.Caldav e Cardav
+2,/13.Utilità,13.05.Plugin NextCloud
+2,/13.Utilità,13.07.Ticket
+2,/13.Utilità,13.08.Multi Organizzazione - Azienda
+2,/13.Utilità,13.08.Post it
+2,/13.Utilità,13.11.Intercompany
+2,/13.Utilità,13.13.Conto Lavoro Attivo
+2,/13.Utilità,13.13.Util PDF
+2,/13.Utilità,13.14.Configuratore di prodotto
+2,/13.Utilità,13.15.Plugin Import Listini Fornitori
+2,/13.Utilità,13.16.Post Vendita
+2,/13.Utilità,
+2,,
+3,/01.Installazione e Parametrizzazione di Base/01.01.Installazione e Parametri di Base,
+3,/01.Installazione e Parametrizzazione di Base/01.02.Primo Accesso Menu e Navigazione (Formazione),
+3,/01.Installazione e Parametrizzazione di Base/01.03.Report Interni (Formazione),
+3,/01.Installazione e Parametrizzazione di Base/01.04.Amministrazione del Sistema (Menu),
+3,/01.Installazione e Parametrizzazione di Base/01.05.Application Dictionary (Menu),01.05.01.Window Customization
+3,/01.Installazione e Parametrizzazione di Base/01.06.Dati,01.06.02.Importazione Dati
+3,/01.Installazione e Parametrizzazione di Base/01.06.Dati,01.06.03.Replicazione Dati
+3,/01.Installazione e Parametrizzazione di Base/01.06.Dati,
+3,/02.Workbench / Scrivania/02.02.Gestione Allegati,
+3,/02.Workbench / Scrivania/02.05.Schedulatore,02.05.05.Workflow
+3,/03.Anagrafiche di Base/03.01.Business Partner,
+3,/03.Anagrafiche di Base/03.02.Prodotto,
+3,/03.Anagrafiche di Base/03.03.Referente Commerc / Agente / Rappresentante,
+3,/03.Anagrafiche di Base/03.04.Banca e Banca BP,
+3,/04.Ciclo Attivo/04.01.Offerta Ordine di Vendita,
+3,/04.Ciclo Attivo/04.02.Ciclo Attivo - Altri processi,
+3,/04.Ciclo Attivo/04.03.Genera Spedizione  da ordine,
+3,/04.Ciclo Attivo/04.04.Fattura di Vendita,
+3,/04.Ciclo Attivo/04.05.Reso Clienti,
+3,/05.Ciclo Passivo/05.01.Richiesta di Offerta a Fornitore,
+3,/05.Ciclo Passivo/05.03.Ordini di Acquisto,
+3,/07.Logistica/07.01.Gestione Materiali,07.01.00.Approvigionamento
+3,/13.Utilità/13.04.Caldav e Cardav,
+3,/13.Utilità/13.13.Conto Lavoro Attivo,13.13.01.Util PDF  Gestione Allegati
+3,,
+4,/01.Installazione e Parametrizzazione di Base/01.06.Dati/01.06.02.Importazione Dati,
+4,/01.Installazione e Parametrizzazione di Base/01.06.Dati/01.06.03.Replicazione Dati,
+4,,

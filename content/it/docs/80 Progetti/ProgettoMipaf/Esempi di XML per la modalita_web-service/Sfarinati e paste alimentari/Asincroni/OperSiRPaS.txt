@@ -1,0 +1,511 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgb/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>OperSiRPaS</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:OperSiRPaSInput>
+		<wsm:CodOper>
+			<!--Indicazione del Codice Fiscale dell'azienda (valorizzare persona fisica o giuridica)-->
+            <wsm:PersonaGiuridica>01234567890</wsm:PersonaGiuridica>
+		</wsm:CodOper>
+		<!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+		<wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+		<!--Tipologia di richiesta I=Inserimento A=Aggiornamento-->
+		<wsm:TipoRichiesta>I</wsm:TipoRichiesta>
+		<!--Specificare una o pi�� operazioni da inserire/aggiornare-->
+		<wsm:Operazione>
+            <wsm:GIMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>1</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>AA2213</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <!--Specificare uno o pi�� prodotti-->
+               <wsm:ProdottoGiacenza>
+                  <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                  <wsm:TipoMerceologico>M</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>1</wsm:CodiceMerceologico>
+                  <!--Quantit� in Kg-->
+                  <wsm:Qta>150.65</wsm:Qta>
+               </wsm:ProdottoGiacenza>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:GIMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:SLMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>2</wsm:NumOperazione>
+               <!--Numero comunicazione DPR 187/01-->
+               <wsm:NumPos>122</wsm:NumPos>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoScarico>
+                  <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                  <wsm:TipoMerceologico>M</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>5</wsm:CodiceMerceologico>
+                  <!--Quantit� in Kg-->
+                  <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoScarico>
+               <!--Optional:-->
+               <wsm:AltriIngredienti>10</wsm:AltriIngredienti>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SLMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:PCPF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>3</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoFinitoS>
+				  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>3</wsm:CodiceMerceologico>
+                  <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>001</wsm:Lotto>
+                  <!--Quantit� in Kg-->
+                  <wsm:Qta>20</wsm:Qta>
+               </wsm:ProdottoFinitoS>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:PCPF>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>4</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:Prodotto>
+                  <wsm:ProdottoCarico>
+                     <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                     <wsm:TipoMerceologico>M</wsm:TipoMerceologico>
+                     <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                     <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                     <!--Quantit� in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+                  </wsm:ProdottoCarico>
+               </wsm:Prodotto>
+               <!--Optional:-->
+               <wsm:ProdottoFinito>
+                  <wsm:ProdottoFinitoS>
+                     <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                     <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                     <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                     <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                     <!--Numero comunicazione DPR 187/01-->
+                     <wsm:NumPos>12</wsm:NumPos>
+                     <!--Codice alfanumerico lotto-->
+                     <wsm:Lotto>002</wsm:Lotto>
+                     <wsm:Qta>10</wsm:Qta>
+                  </wsm:ProdottoFinitoS>
+               </wsm:ProdottoFinito>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>4</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:Prodotto>
+                  <wsm:ProdottoScarico>
+                     <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine P-Prodotto Finito-->
+                     <wsm:TipoMerceologico>V</wsm:TipoMerceologico>
+                     <!--Categoria merceologica-->
+                     <wsm:CodiceMerceologico>05</wsm:CodiceMerceologico>
+                     <!--Quantitˆ in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+                  </wsm:ProdottoScarico>
+               </wsm:Prodotto>
+               <!--Optional:-->
+               <wsm:ProdottoFinito>
+                  <wsm:ProdottoFinitoC>
+                     <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                     <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                     <!--Categoria merceologica-->
+                     <wsm:CodiceMerceologico>02</wsm:CodiceMerceologico>
+                     <!--Numero comunicazione DPR 187/01-->
+                     <wsm:NumPos>12</wsm:NumPos>
+                     <!--Codice lotto-->
+                     <wsm:Lotto>001</wsm:Lotto>
+                     <wsm:Qta>10</wsm:Qta>
+                  </wsm:ProdottoFinitoC>
+               </wsm:ProdottoFinito>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:OPGE>
+		</wsm:Operazione>		
+		<wsm:Operazione>
+            <wsm:CIMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>5</wsm:NumOperazione>
+               <!--Codice identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>B</wsm:TipoLavorazione>
+               <wsm:ProdottoCarico>
+                     <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                     <wsm:TipoMerceologico>V</wsm:TipoMerceologico>
+                     <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                     <wsm:CodiceMerceologico>4</wsm:CodiceMerceologico>
+                     <!--Quantit� in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoCarico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CIMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CAMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>6</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2321</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoCarico>
+                     <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                     <wsm:TipoMerceologico>M</wsm:TipoMerceologico>
+                     <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                     <wsm:CodiceMerceologico>9</wsm:CodiceMerceologico>
+                     <!--Quantit� in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoCarico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CAMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:SVMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>7</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>B</wsm:TipoLavorazione>
+               <wsm:ProdottoScarico>
+                     <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                     <wsm:TipoMerceologico>V</wsm:TipoMerceologico>
+                     <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                     <wsm:CodiceMerceologico>5</wsm:CodiceMerceologico>
+                     <!--Quantit� in Kg-->
+                     <wsm:Qta>20</wsm:Qta>
+               </wsm:ProdottoScarico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SVMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:PCMP>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>8</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoScarico>
+                     <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                     <wsm:TipoMerceologico>M</wsm:TipoMerceologico>
+                     <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                     <wsm:CodiceMerceologico>4</wsm:CodiceMerceologico>
+                     <!--Quantit� in Kg-->
+                     <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoScarico>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:PCMP>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:GIPF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>9</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoFinitoC>
+                  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>4</wsm:CodiceMerceologico>
+                  <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>002</wsm:Lotto>
+                  <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoFinitoC>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:GIPF>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:LAVO>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>10</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoScarico>
+                  <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine -->
+                  <wsm:TipoMerceologico>M</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                  <!--Quantit� in Kg-->
+                  <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoScarico>
+               <!--Altri ingredienti - Materie Prime/Sostanze - come sale, acqua, ripieno in % -->
+               <wsm:AtriIngredienti>10</wsm:AtriIngredienti>
+               <wsm:ProdottoFinitoC>
+                  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                  <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>003</wsm:Lotto>
+                  <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoFinitoC>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:LAVO>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CLPF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>11</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoFinitoC>
+                  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                  <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>002</wsm:Lotto>
+                  <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoFinitoC>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CLPF>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:CSPF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>12</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2334</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoFinitoC>
+                  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001) -->
+                  <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                  <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>002</wsm:Lotto>
+                  <wsm:Qta>10</wsm:Qta>
+               </wsm:ProdottoFinitoC>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:CSPF>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:STPF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>13</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>B</wsm:TipoLavorazione>
+               <wsm:ProdottoFinitoS>
+                  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001)-->
+                  <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                  <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>003</wsm:Lotto>
+                  <wsm:Qta>50</wsm:Qta>
+               </wsm:ProdottoFinitoS>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:STPF>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:SPPF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>14</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>AA32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoFinitoS>
+                  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001)-->
+                  <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                  <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>003</wsm:Lotto>
+                  <wsm:Qta>300</wsm:Qta>
+               </wsm:ProdottoFinitoS>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SPPF>
+		</wsm:Operazione>
+		<wsm:Operazione>
+            <wsm:SEPF>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>15</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>32</wsm:NumDoc>
+               <!--Data del documento giustificativo nel formato AAAA-MM-GG (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>2334</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <!--Tipo di lavorazione A-(TABELLA A) B-(TABELLA B)-->
+               <wsm:TipoLavorazione>A</wsm:TipoLavorazione>
+               <wsm:ProdottoFinitoS>
+                  <!--Tipo Merceologico impostare a P-Prodotto Finito-->
+                  <wsm:TipoMerceologico>P</wsm:TipoMerceologico>
+                  <!--Categoria merceologica (Tabella "Codici Materie Prime/Sostanze e Prodotti finiti" del documento S-MIP-MRGB-K3-15001)-->
+                  <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+                 <!--Numero comunicazione DPR 187/01-->
+                  <wsm:NumPos>12</wsm:NumPos>
+                  <!--Codice alfanumerico lotto-->
+                  <wsm:Lotto>005</wsm:Lotto>
+                  <wsm:Qta>500</wsm:Qta>
+               </wsm:ProdottoFinitoS>
+               <!--Note integrative (facoltativo)-->
+               <wsm:Nota>NOTE ESPLICATIVE</wsm:Nota>
+            </wsm:SEPF>
+        </wsm:Operazione>
+      </wsm:OperSiRPaSInput>
+	</soapenv:Body>
+</soapenv:Envelope>

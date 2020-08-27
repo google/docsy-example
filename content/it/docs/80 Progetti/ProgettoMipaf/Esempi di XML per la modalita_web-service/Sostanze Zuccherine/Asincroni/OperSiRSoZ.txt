@@ -1,0 +1,245 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgc/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>OperSiRSoZ</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:OperSiRSoZInput>
+         <wsm:CodOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare persona fisica o giuridica)-->
+            <wsm:PersonaGiuridica>01234567890</wsm:PersonaGiuridica>
+         </wsm:CodOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <!--Tipologia di richiesta I=Inserimento A=Aggiornamento-->
+         <wsm:TipoRichiesta>I</wsm:TipoRichiesta>
+         <wsm:Operazione>
+             <wsm:SDZU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>1</wsm:NumOperazione>
+               <!--Nominativo e recapito acquirente (facoltativo) in alternativa con CodFornitore-->
+               <wsm:Acquirente>2344</wsm:Acquirente>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>2134</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>S</wsm:ContoTerzi>
+               <wsm:Scarico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                  <wsm:CodiceSostanza>3</wsm:CodiceSostanza>
+                  <!--Quantità di sostanza scaricata in Kg-->
+                  <wsm:Qta>480.43</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto></wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Scarico>
+            </wsm:SDZU>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:GIZU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>2</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>123</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Carico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                  <wsm:CodiceSostanza>5</wsm:CodiceSostanza>
+                  <!--Quantità di sostanza in Kg-->
+                  <wsm:Qta>785.15</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto></wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE INTEGRATIVE</wsm:Note>
+               </wsm:Carico>
+            </wsm:GIZU>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:CPZU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>3</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Carico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                  <wsm:CodiceSostanza>1</wsm:CodiceSostanza>
+                  <!--Quantità di sostanza caricata in Kg-->
+                  <wsm:Qta>550</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto></wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Carico>
+            </wsm:CPZU>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:CAZU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>4</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>18</wsm:NumDoc>
+               <!--Data del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-12</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>3333</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Carico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                  <wsm:CodiceSostanza>1</wsm:CodiceSostanza>
+                  <!--Quantità di sostanza caricata in Kg-->
+                  <wsm:Qta>644</wsm:Qta>
+                  <!--Codice del lotto (facoltativo)-->
+                  <wsm:Lotto></wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Carico>
+            </wsm:CAZU>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:SVZU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>5</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>655</wsm:NumDoc>
+               <!--Data del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-14</wsm:DataDoc>
+               <!--Codice alfanumerico identificativo del soggetto fornitore presente in ANAGRAFICA-->
+               <wsm:CodFornitore>322</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Scarico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                  <wsm:CodiceSostanza>2</wsm:CodiceSostanza>
+                  <!--Quantità di sostanza scaricata in Kg-->
+                  <wsm:Qta>12</wsm:Qta>
+                  <!--Codice del lotto (facoltativo)-->
+                  <wsm:Lotto></wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Scarico>
+            </wsm:SVZU>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:SUZU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>6</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Scarico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                  <wsm:CodiceSostanza>1</wsm:CodiceSostanza>
+                  <!--Quantità di sostanza scaricata in Kg-->
+                  <wsm:Qta>50</wsm:Qta>
+                  <!--Codice alfanumerico del lotto (facoltativo)-->
+                  <wsm:Lotto></wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Scarico>
+            </wsm:SUZU>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:SPZU>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>7</wsm:NumOperazione>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente></wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Scarico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                  <wsm:CodiceSostanza>1</wsm:CodiceSostanza>
+                  <!--Quantità di sostanza scaricata in Kg-->
+                  <wsm:Qta>300</wsm:Qta>
+                  <!--Codice del lotto (facoltativo)-->
+                  <wsm:Lotto></wsm:Lotto>
+                  <!--Note integrative (facoltativo)-->
+                  <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+               </wsm:Scarico>
+            </wsm:SPZU>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>8</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>21</wsm:NumDoc>
+               <!--Data del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Nominativo e recapito acquirente (facoltativo) in alternativa con CodFornitore-->
+               
+               <!--Codice alfanumerico identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>333</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>132</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Sostanza>
+                  <wsm:Carico>
+                  <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                     <wsm:CodiceSostanza>1</wsm:CodiceSostanza>
+                     <!--Quantitˆ di sostanza caricata in Kg-->
+                     <wsm:Qta>50</wsm:Qta>
+                     <!--Codice del lotto (facoltativo)-->
+                     <wsm:Lotto></wsm:Lotto>
+                     <!--Note integrative (facoltativo)-->
+                     <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+                  </wsm:Carico>
+               </wsm:Sostanza>
+            </wsm:OPGE>
+         </wsm:Operazione>
+         <wsm:Operazione>
+            <wsm:OPGE>
+               <!--Data dell'operazione nel formato AAAA-MM-GG-->
+               <wsm:DataOperazione>2015-10-18</wsm:DataOperazione>
+               <wsm:NumOperazione>9</wsm:NumOperazione>
+               <!--Codice alfanumerico del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:NumDoc>21</wsm:NumDoc>
+               <!--Data del documento giustificativo (es. Fattura, DDT)-->
+               <wsm:DataDoc>2015-10-18</wsm:DataDoc>
+               <!--Nominativo e recapito acquirente (facoltativo) in alternativa con CodFornitore-->
+               
+               <!--Codice alfanumerico identificativo del soggetto fornitore/destinatario presente in ANAGRAFICA-->
+               <wsm:CodFornitore>333</wsm:CodFornitore>
+               <!--Codice alfanumerico identificativo del soggetto committente presente in ANAGRAFICA (obbligatorio per ContoTerzi=S)-->
+               <wsm:CodCommittente>132</wsm:CodCommittente>
+               <!--Indicazione conto terzi (S oppure N) (facoltativo)-->
+               <wsm:ContoTerzi>N</wsm:ContoTerzi>
+               <wsm:Sostanza>
+                  <wsm:Scarico>
+                     <!--Codice della sostanza zuccherina 1-Saccarosio 2-Glucosio 3-Isoglucosio 4-Saccarosio in soluzione 5-Glucosio in soluzione 6-Isoglucosio in soluzione-->
+                     <wsm:CodiceSostanza>2</wsm:CodiceSostanza>
+                     <!--Quantità di sostanza scaricata in Kg-->
+                     <wsm:Qta>30</wsm:Qta>
+                     <!--Codice alfanumerico del lotto (facoltativo)-->
+                     <wsm:Lotto></wsm:Lotto>
+                     <!--Note integrative (facoltativo)-->
+                     <wsm:Note>NOTE ESPLICATIVE</wsm:Note>
+                  </wsm:Scarico>
+               </wsm:Sostanza>
+            </wsm:OPGE>
+         </wsm:Operazione>		 
+      </wsm:OperSiRSoZInput>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgb/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+        <nomeServizio>VisProdSiRPaS</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:VisProdSiRPaSInput>
+         <wsm:codOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare persona fisica o giuridica)-->
+            <wsm:PersonaGiuridica>01234567890</wsm:PersonaGiuridica>
+         </wsm:codOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <wsm:SituazioneGiacenza>
+            <!--Data della giacenza nel formato AAAA-MM-GG-->
+            <wsm:Data>2015-10-18</wsm:Data>
+            <!--Filtro per T-Tutti S-Sostanze e Materie Prime P-Prodotti Finiti-->
+            <wsm:FiltroProdotto>P</wsm:FiltroProdotto>
+            <wsm:Prodotto>
+               <!--Tipo Merceologico impostare a M-Sostanze/Materie Prime V-Vitamine P-Prodotto Finito-->
+               <wsm:TipoMerceologico>M</wsm:TipoMerceologico>
+               <!--Codice merceologico-->
+               <wsm:CodiceMerceologico>2</wsm:CodiceMerceologico>
+            </wsm:Prodotto>
+         </wsm:SituazioneGiacenza>
+      </wsm:VisProdSiRPaSInput>
+   </soapenv:Body>
+</soapenv:Envelope>

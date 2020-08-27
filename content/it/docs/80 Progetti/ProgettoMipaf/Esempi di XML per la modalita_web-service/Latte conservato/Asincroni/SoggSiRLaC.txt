@@ -1,0 +1,95 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgd/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>SoggSiRLaC</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:SoggSiRLaCInput>
+         <wsm:CodOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare tag persona fisica o giuridica)-->
+
+            <wsm:PersonaGiuridica>01234567890</wsm:PersonaGiuridica>
+         </wsm:CodOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <!--Tipologia di richiesta I=Inserimento A=Aggiornamento-->
+         <wsm:TipoRichiesta>I</wsm:TipoRichiesta>
+         <!--Specificare una o più soggetti da inserire/aggiornare in ANAGRAFICA-->
+         <wsm:Soggetto>
+            <!--Codice alfanumerico identificativo del soggetto-->
+            <wsm:CodiceSoggetto>A1200</wsm:CodiceSoggetto>
+            <wsm:CodiceCUAA>
+               <!--Indicazione del Codice Fiscale del soggetto (valorizzare persona fisica o giuridica) obbligatorio solo per TipoSoggetto=IT-->
+               <wsm:PersonaFisica>BCHMRO62M05H501S</wsm:PersonaFisica>
+            </wsm:CodiceCUAA>
+            <!--Tipologia di soggetto IT-Italia UE-Comunitario EX-Extracomunitario-->
+            <wsm:TipoSoggetto>IT</wsm:TipoSoggetto>
+            <!--Impostare Cognome e Nome per persona fisica-->
+            <wsm:Nome>Rossi</wsm:Nome>
+            <wsm:Cognome>Mario</wsm:Cognome>
+            <!--Impostare Ragione Sociale per persona giuridica-->
+            <wsm:RagioneSociale></wsm:RagioneSociale>
+            <wsm:IndirizzoSede>
+               <!--CAP obbligatorio solo per TipoSoggetto=IT-->
+               <wsm:CAP>00100</wsm:CAP>
+               <!--Indirizzo e numero civico obbligatorio del soggetto-->
+               <wsm:Indirizzo>Piazza Verdi 12</wsm:Indirizzo>
+               <!--PROVINCIA obbligatoria solo per TipoSoggetto=IT - indicare codice ISTAT http://www.istat.it/storage/codici-unita-amministrative/elenco-comuni-italiani.xls -->
+               <wsm:Provincia>025</wsm:Provincia>
+               <!--COMUNE obbligatorio solo per TipoSoggetto=IT - indicare codice ISTAT http://www.istat.it/storage/codici-unita-amministrative/elenco-comuni-italiani.xls -->
+               <wsm:Comune>006</wsm:Comune>
+               <!--Indicare il codice numerico ISO 3166-1 https://www.iso.org/obp/ui/#search -->
+               <wsm:Stato>380</wsm:Stato>
+            </wsm:IndirizzoSede>
+         </wsm:Soggetto>
+         <wsm:Soggetto>
+            <!--Codice alfanumerico identificativo del soggetto-->
+            <wsm:CodiceSoggetto>2209</wsm:CodiceSoggetto>
+            <wsm:CodiceCUAA>
+               <!--Indicazione del Codice Fiscale del soggetto (valorizzare persona fisica o giuridica) obbligatorio solo per TipoSoggetto=IT-->
+               <wsm:PersonaGiuridica>09876543210</wsm:PersonaGiuridica>
+            </wsm:CodiceCUAA>
+            <!--Tipologia di soggetto IT-Italia UE-Comunitario EX-Extracomunitario-->
+            <wsm:TipoSoggetto>IT</wsm:TipoSoggetto>
+            <!--Impostare Cognome e Nome per persona fisica-->
+            <wsm:Nome></wsm:Nome>
+            <wsm:Cognome></wsm:Cognome>
+            <!--Impostare Ragione Sociale per persona giuridica-->
+            <wsm:RagioneSociale>Rossi Mario e Figli SPA</wsm:RagioneSociale>
+            <wsm:IndirizzoSede>
+               <!--CAP obbligatorio solo per TipoSoggetto=IT-->
+               <wsm:CAP>00100</wsm:CAP>
+               <!--Indirizzo e numero civico obbligatorio del soggetto-->
+               <wsm:Indirizzo>Via Nazionale 1760</wsm:Indirizzo>
+               <!--PROVINCIA obbligatoria solo per TipoSoggetto=IT - indicare codice ISTAT http://www.istat.it/storage/codici-unita-amministrative/elenco-comuni-italiani.xls -->
+               <wsm:Provincia>012</wsm:Provincia>
+               <!--COMUNE obbligatorio solo per TipoSoggetto=IT - indicare codice ISTAT http://www.istat.it/storage/codici-unita-amministrative/elenco-comuni-italiani.xls -->
+               <wsm:Comune>004</wsm:Comune>
+               <!--Indicare il codice numerico ISO 3166-1 https://www.iso.org/obp/ui/#search -->
+               <wsm:Stato>380</wsm:Stato>
+            </wsm:IndirizzoSede>
+         </wsm:Soggetto>
+         <wsm:Soggetto>
+            <!--Codice alfanumerico identificativo del soggetto-->
+            <wsm:CodiceSoggetto>1202</wsm:CodiceSoggetto>
+            <!--Tipologia di soggetto IT-Italia UE-Comunitario EX-Extracomunitario-->
+            <wsm:TipoSoggetto>UE</wsm:TipoSoggetto>
+            <!--Impostare Cognome e Nome per persona fisica-->
+            <wsm:Nome></wsm:Nome>
+            <wsm:Cognome></wsm:Cognome>
+            <!--Impostare Ragione Sociale per persona giuridica-->
+            <wsm:RagioneSociale>Markus GmbH</wsm:RagioneSociale>
+            <wsm:IndirizzoSede>
+               <!--Indirizzo e numero civico obbligatorio del soggetto-->
+               <wsm:Indirizzo>Unter den Linden 354</wsm:Indirizzo>
+               <!--Indicare il codice numerico ISO 3166-1 https://www.iso.org/obp/ui/#search -->
+               <wsm:Stato>276</wsm:Stato>
+            </wsm:IndirizzoSede>
+         </wsm:Soggetto>
+      </wsm:SoggSiRLaCInput>
+   </soapenv:Body>
+</soapenv:Envelope>

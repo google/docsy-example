@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgd/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>CancOperSiRLaC</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:CancOperSiRLaCInput>
+         <wsm:CodOper>
+            <!--Indicazione del Codice Fiscale dell'azienda (valorizzare persona fisica o giuridica)-->
+            <wsm:PersonaGiuridica>01234567890</wsm:PersonaGiuridica>
+         </wsm:CodOper>
+         <!--Codice ICQRF dello stabilimento nel formato AANNNN-->
+         <wsm:CodiceIcqrf>RM1234</wsm:CodiceIcqrf>
+         <!--Specificare una o più operazioni da cancellare-->
+         <wsm:OperElimina>
+            <!--Data dell'operazione nel formato AAAA-MM-GG-->
+            <wsm:DataOperazione>2015-10-22</wsm:DataOperazione>
+            <!--Numero progressivo dell'operazione-->
+            <wsm:NumOperazione>1</wsm:NumOperazione>
+            <!--Codice dell'operazione-->
+            <wsm:CodOperazione>GILC</wsm:CodOperazione>
+         </wsm:OperElimina>
+         <wsm:OperElimina>
+            <!--Data dell'operazione nel formato AAAA-MM-GG-->
+            <wsm:DataOperazione>2015-10-22</wsm:DataOperazione>
+            <!--Numero progressivo dell'operazione-->
+            <wsm:NumOperazione>2</wsm:NumOperazione>
+            <!--Codice dell'operazione-->
+            <wsm:CodOperazione>CALC</wsm:CodOperazione>
+         </wsm:OperElimina>
+      </wsm:CancOperSiRLaCInput>
+   </soapenv:Body>
+</soapenv:Envelope>

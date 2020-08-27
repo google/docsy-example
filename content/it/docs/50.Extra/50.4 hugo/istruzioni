@@ -1,0 +1,33 @@
+cos'è hugo
+
+hugo è un insieme di template e layout che costruiscono il sito al posto tuo
+
+
+
+
+
+
+dentro ad archetypes ci sono i template che vengono usati quando si crea un nuovo "contenuto"
+in particolare la proprietà draft è quella che gestisce la renderizazzione: se è true non renderizza
+
+dentro a content hugo gestisce due tipi fondamentali di dati:
+1. pagine singole 
+2. liste di pagine  (di default la homepage lo è)
+
+hugo crea automaticamente pagine lista solo a livello rootdir
+per creare liste di pagine a livelli più bassi bisogna farlo creando un file index.md
+
+(hugo new $PATH/_index.md) l'underscore è fondamentale 
+
+logo: siccome i png non li digerisce bene è preferibile convertire l'immagine in base64
+ed inserirla dentro un tag img:
+
+<a id="logo" href="{{ .Site.BaseURL }}">
+<img src="data:image/gif;base64,iVB......
+" 
+ alt="logo idempiere">  </a>
+
+ per ottenere la stringa basta usare il comando base64:
+ 
+ base64 nomefile  [>> logo.html]
+

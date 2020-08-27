@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://cooperazione.sian.it/schema/SoapAutenticazione" xmlns:wsm="http://cooperazione.sian.it/schema/wsmrgd/">
+   <soapenv:Header>
+      <soap:SOAPAutenticazione>
+         <!--Credenziali rilasciate dal Ministero all'azienda-->
+         <username>AAAAAAAAAA</username>
+         <password>BBBBBBBBBB</password>
+         <nomeServizio>GetCancOperSiRLaC</nomeServizio>
+      </soap:SOAPAutenticazione>
+   </soapenv:Header>
+   <soapenv:Body>
+      <wsm:GetCancOperSiRLaCInput>
+         <!--Codice alfanumerico della fornitura -->
+         <wsm:IdTrasmissione>FF123456789123456789</wsm:IdTrasmissione>
+      </wsm:GetCancOperSiRLaCInput>
+   </soapenv:Body>
+</soapenv:Envelope>
