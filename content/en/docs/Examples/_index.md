@@ -5,13 +5,5 @@ linkTitle: "Examples"
 weight: 3
 date: 2017-01-05
 description: >
-  See your project in action!
+  Example scripts that can be used to help you get to know COAsT.
 ---
-
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
-
-Do you have any example **applications** or **code** for your users in your repo or elsewhere? Link to your examples here.
-
-There are some example NetCDF files that can be used [here](https://github.com/British-Oceanographic-Data-Centre/COAsT)
