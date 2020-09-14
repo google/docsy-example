@@ -1,7 +1,7 @@
 ---
 title: "Using Hugo"
 linkTitle: "Using Hugo"
-weight: 2
+weight: 5
 description: >
   What do you need to know to build a local version of this site
 ---

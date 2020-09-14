@@ -1,10 +1,12 @@
 ---
 title: "Python: Structure"
 linkTitle: "Python: Structure"
-weight: 20
+weight: 2
 menu:
   documentation:
     weight: 20
+description: >
+  Python object structure guidance.
 ---
 
 ** Notes on Object Structure and Loading (for contributors):
