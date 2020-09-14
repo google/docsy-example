@@ -1,10 +1,12 @@
 ---
 title: "Python: Style"
 linkTitle: "Python: Style"
-weight: 20
+weight: 1
 menu:
   documentation:
     weight: 20
+description: >
+  Python style guidance.
 ---
 
 Python as a language comes with more stringent recommendations than most when it comes to code styling. This is advantageous in our case as it gives us an obvious set of guidelines to adopt.
