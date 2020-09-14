@@ -1,7 +1,7 @@
 ---
-title: "Contributing: Documentation"
-linkTitle: "Contributing: Documentation"
-weight: 10
+title: "Documentation"
+linkTitle: "Documentation"
+weight: 4
 description: >
   Guidelines for contributing to this documentation website. Using Hugo, Github and Netlify.
 ---
