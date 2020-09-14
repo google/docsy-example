@@ -36,24 +36,33 @@ The base package should now be installed on your system. The following packages 
 
 
 ## Try it out!
-The following example script should load a example file and plot some data on a map.
-
+The below example works best with the COAsT example data. Start by importing COAsT:
 ```python
 import coast
-
-dir = '<path-to-files>'
-sci_dom = coast.DOMAIN()
-sci_dom.load(dir+"domain_cfg.nc")
-yt, xt, length_of_line = sci_dom.transect_indices([42,-3],[43,-2], grid_ref='t')
-
-# Visualise
-import numpy as np
-import matplotlib.pyplot as plt
-lon = np.array( sci_dom.dataset.nav_lon )
-lat = np.array( sci_dom.dataset.nav_lat )
-
-
-plt.plot( lon[yt,xt], lat[yt,xt], '.');
-plt.show()
 ```
-You are now all setup with a working COAsT package. Time for the tutorials :)
+Now load a NEMO output file and domain file into a NEMO object (specifying the grid):
+```python
+data_file = '<Path to NEMO data file>'
+domain_file = '<Path to NEMO domain file>'
+sci = coast.NEMO(data_file, domain_file, grid_ref = 't-grid')
+```
+You can now start having a look at some of the methods inside the NEMO class. Lets take
+a look at some altimetry data around the UK too:
+```python
+altimetry_file = '<Path to Altimetry data file>'
+altimetry = coast.ALTIMETRY(altimetry_file)
+ind = altimetry.subset_indices_lonlat_box([-10,10], [45,60])
+altimetry = altimetry.isel(t_dim=ind)
+altimetry.quick_plot('sla_filtered')
+```
+Now lets compare the model and altimetry Sea Surface Height using the Continuous
+Ranked Probability Score:
+```python
+crps = coast.CRPS(sci, altimetry, 'sossheig','sla_filtered', nh_radius=30)
+```
+And have a look at the resulting comparison:
+```python
+crps.quick_plot()
+```
+Nice one! Hopefully that all worked and you're ready to take a look at the rest of the 
+package and documentation.
