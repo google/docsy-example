@@ -8,17 +8,27 @@ menu:
     weight: 20
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+```
+__________________________________________________________________________________________
 
 
-This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project. 
+                     ______    ___        _            _________ 
+                   .' ___  | .'   `.     / \          |  _   _  |
+                  / .'   \_|/  .-.  \   / _ \     .--.|_/ | | \_|
+                  | |       | |   | |  / ___ \   ( (`\]   | |    
+                  \ `.___.'\\  `-'  /_/ /   \ \_  `'.'.  _| |_   
+                   `.____ .' `.___.'|____| |____|[\__) )|_____|  
+                                              
+                          Coastal Ocean Assessment Toolbox
+                             https://www.nemo-ocean.eu/
+                           Version 0.2.1a10 (alpha build)
+          
+__________________________________________________________________________________________
+```
 
-For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which lives in the [Docsy theme repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to copy its docs section. 
+COAsT is a Python package for managing and analysing high resolution NEMO output. Here
+you can find information on obtaining, installing and using COAsT as well as guidelines
+for contributing to the project.
 
-Other content such as marketing material, case studies, and community updates should live in the [About](/about/) and [Community](/community/) pages.
-
-Find out how to use the Docsy theme in the [Docsy User Guide](https://docsy.dev/docs/). You can learn more about how to organize your documentation (and how we organized this site) in [Organizing Your Content](https://docsy.dev/docs/best-practices/organizing-content/).
-
-
+This documentation site is still under construction but you can still find guidelines for
+contributing to the package and this website. See below for description of each section.
