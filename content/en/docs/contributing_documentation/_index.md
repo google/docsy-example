@@ -1,9 +1,9 @@
 ---
-title: "Contribution Guidelines"
-linkTitle: "Contribution Guidelines"
+title: "Contributing: Documentation"
+linkTitle: "Contributing: Documentation"
 weight: 10
 description: >
-  How to contribute to the docs
+  Guidelines for contributing to this documentation website. Using Hugo, Github and Netlify.
 ---
 <!--
 {{% pageinfo %}}
@@ -35,7 +35,7 @@ If you've just spotted something you'd like to change while using the docs, Docs
 
 If you want to run your own local Hugo server to preview your changes as you work:
 
-1. Follow the instructions in [Getting started](/docs/contribution-guidelines/hugo) to install Hugo and any other tools you need. You'll need at least **Hugo version 0.45** (we recommend using the most recent available version), and it must be the **extended** version, which supports SCSS.
+1. Follow the instructions in [Getting started](/docs/contributing_documentation/hugo) to install Hugo and any other tools you need. You'll need at least **Hugo version 0.45** (we recommend using the most recent available version), and it must be the **extended** version, which supports SCSS.
 1. Fork the [COAsT-site repo](https://github.com/British-Oceanographic-Data-Centre/COAsT-site.git) repo into your own project, then create a local copy using `git clone`. Don’t forget to use `--recurse-submodules` or you won’t pull down some of the code you need to generate a working site.
 
     ```

@@ -1,6 +1,6 @@
 ---
-title: "Suggested Python Guidelines"
-linkTitle: "Suggested Python Guidelines"
+title: "Python: Style"
+linkTitle: "Python: Style"
 weight: 20
 menu:
   documentation:
