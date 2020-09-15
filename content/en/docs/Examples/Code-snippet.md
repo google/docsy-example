@@ -2,9 +2,9 @@
 title: "Code snippets"
 linkTitle: "Code snippets"
 date: 2017-01-05
+weight: 3
 description: >
-  This page contains some cut and paste code-snippet examples to show what this
-  package does.
+  This page is out of date....
 ---
 
 
