@@ -1,6 +1,6 @@
 ---
 title: "The NEMO class"
-linkTitle: "NEMO class"
+linkTitle: "Intro to the NEMO class"
 date: 2020-09-15
 weight: 1
 description: >
