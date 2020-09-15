@@ -93,5 +93,8 @@ method:
 ```python
 IT.quick_plot()
 ```
-*(This image should display, except I've not got it to work yet..)*
-![pycnocline depth](figures/strat_1st_mom.png)
+
+for example the pycnocline depth map. In the interest of simplicity, unstratified
+areas are masked (this includes the land):
+{{< imgproc strat_1st_mom Fit "600x600" >}}
+{{< /imgproc >}}
