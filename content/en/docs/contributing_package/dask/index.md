@@ -91,4 +91,8 @@ ne = coast.NEMO(...)
 
 ne.data_variable.visualize()
 ```
-this will output a png image of the graph in the calling directory
+this will output a png image of the graph in the calling directory and could look like this;
+
+{{< imgproc mydask Fit "6334x945" >}}
+
+{{< /imgproc >}}
