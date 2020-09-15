@@ -4,7 +4,7 @@ linkTitle: "Code snippets"
 date: 2017-01-05
 weight: 3
 description: >
-  This page is out of date....
+  This page is out of date.... To be deleted.
 ---
 
 
