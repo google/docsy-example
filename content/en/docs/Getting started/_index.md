@@ -18,7 +18,7 @@ Are there any system requirements for using your project? What languages are sup
 
 This package should be installed by run;
 ```shell
-conda install -c bodc COAsT
+conda install -c conda-forge -c bodc coast
 ```
 However, there is also the option of;
 ```shell
