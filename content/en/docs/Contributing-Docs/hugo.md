@@ -1,6 +1,6 @@
 ---
-title: "Using Hugo"
-linkTitle: "Using Hugo"
+title: "setting up Hugo"
+linkTitle: "hugo"
 weight: 5
 description: >
   What do you need to know to build a local version of this site
@@ -12,7 +12,7 @@ For more details please [read this](https://gohugo.io/getting-started/installing
 
 ## Installation
 ### Manual
-1) Download hugo extended from [GitHub](https://github.com/gohugoio/hugo/releases)
+1) Download hugo _extended_ from [GitHub](https://github.com/gohugoio/hugo/releases)
 2) Unzip into preferred location (I use C:\hugo)
 3) Add to OS PATH
     * optional but makes usage easier
