@@ -11,10 +11,10 @@ description: >
 
 # What is lazy...
 
-## loading
+## ...loading
 Lazy loading determines if data is read into memory straight away (on that line of code execution) or if the loading is delayed until the data is physical altered by some function (normally mathematical in nature)
 
-## evaluation
+## ...evaluation
 Lazy evaluation is about delaying the execution of a method/function call until the value is physical required, normally as a graph or printed to screen.  Lazy evaluation can also help with memory management, useful with large dataset, by allowing for optimisation on the chained methods calls.
 
 Lazy loading and Lazy evaluation are offer used together, though it is not mandatory and always worth checking that both are happening.   
@@ -47,7 +47,7 @@ e3w_0_cs = np.cumsum(e3w_0[1:, :, :], axis=0) # now in memory
 ## Dask
 When in use Dask will provide lazy evaluation on top of the lazy loading.
 
-using the same example as above, a file loaded in using xarray, this time with the chunks option set, will not only lazy load the data, but will turn on Dask, now using either the xarray or Dask wrapper functions will mean the call to cumsum is not evaluated right way, in fact it will not be evaluated until either the compute function is called or a greedy method from another library is used
+using the same example as above, a file loaded in using xarray, this time with the chunks option set, will not only lazy load the data, but will turn on Dask, now using either the xarray or Dask wrapper functions will mean the NumPy cumsum call is not evaluated right way, in fact it will not be evaluated until either the compute function is called, or a greedy method from another library is used.
 
 ```python
 import xarray as xr
@@ -58,4 +58,4 @@ e3w_0_cs = e3w_0[1:, :, :].cumsum(axis=0) # Dask backed Lazy evaluation
 
 ```
 
-we discuses Dask even more [here](../dask/)
+We discuss Dask even more [here](../dask/).
