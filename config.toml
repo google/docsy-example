@@ -120,6 +120,9 @@ algolia_docsearch = false
 # Enable Lunr.js offline search
 offlineSearch = false
 
+# Enable syntax highlighting and copy buttons on code blocks with Prism
+prism_syntax_highlighting = false
+
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
