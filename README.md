@@ -1,6 +1,6 @@
 # Docsy Example
 
-[Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
+[Docsy](https://github.com/google/docsy) is a Hugo theme used for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
 
 This Docsy Example Project is hosted at [https://example.docsy.dev/](https://example.docsy.dev/).
 
@@ -10,7 +10,7 @@ This is not an officially supported Google product. This project is currently ma
 
 ## Cloning the Docsy Example Project
 
-The following will give you a project that is set up and ready to use (don't forget to use `--recurse-submodules` or you won't pull down some of the code you need to generate a working site). The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
+The following will give you a project that is set up and ready to use (don't forget to use `--recurse-submodules` or you won't be able pull down some of the code you require to generate a working site). The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
 
 ```bash
 git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
@@ -41,7 +41,7 @@ HUGO_THEMESDIR="../.." hugo server
 ```
 
 
-Note that the Hugo Theme Site requires the `exampleSite` to live in a subfolder of the theme itself. To avoid recursive duplication, the example site is added as a Git subtree:
+Note that the Hugo Theme site requires the `exampleSite` to live in a subfolder of the theme itself. To avoid recursive duplication, the example site is added as a Git subtree:
 
 ```bash
 git subtree add --prefix exampleSite https://github.com/google/docsy.git  master --squash
