@@ -171,6 +171,33 @@ crps_test = nemo_var.crps_sonf('ssh', nemo_dom, alt_test, 'sla_filtered',
                     time_interp = "nearest", plot=True)
 ```
 
+## Logging
+COAsT utilises Python's default logging library and includes a simple setup function for those unfamiliar with how to use it.
+```python
+import coast
+
+coast.logging_util.setup_logging()
+```
+This is all you need to enable full logging output to the console.
+
+By default, setup_logging will use the "DEBUG" logging level, if you want to adjust this, you can use the flags from the logging library.
+```python
+import coast
+import logging
+
+coast.logging_util.setup_logging(level=logging.INFO)
+```
+For more info on logging levels, see the [relevant Python documentation](https://docs.python.org/3/library/logging.html).
+
+Logging output will be printed in the console once enabled by default, but output can be directed to any Stream, for instance, to an opened file.
+```python
+import coast
+
+file = open("coast.log", "w")
+coast.logging_util.setup_logging(stream=file)
+coast.logging_util.info("Hello World!")  # Your use of COAsT would go here, this line is included as an example
+file.close()
+```
 
 
 ```
