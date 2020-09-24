@@ -1,7 +1,7 @@
 ---
 title: "working Lazily"
 linkTitle: "Lazy"
-weight: 3
+weight: 4
 menu:
   documentation:
     weight: 20
