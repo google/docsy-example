@@ -1,6 +1,6 @@
 ---
-title: "Python: Logging"
-linkTitle: "Python: Logging"
+title: "Logging"
+linkTitle: "Logging"
 weight: 3
 menu:
   documentation:
