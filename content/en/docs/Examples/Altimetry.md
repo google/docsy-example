@@ -1,7 +1,7 @@
 ---
 title: "Altimetry"
 linkTitle: "Altimetry"
-weight: 1
+weight: 3
 
 description: >
   Example useage of ALTIMETRY object.
@@ -18,7 +18,7 @@ import coast
 And by defining some file paths. There are the example files that can be obtained with
 the COAsT package:
 ```
-fn_nemo_dat  = './example_files/COAsT_example_NEMO_data.nc' 
+fn_nemo_dat  = './example_files/COAsT_example_NEMO_data.nc'
 fn_nemo_dom  = './example_files/COAsT_example_NEMO_domain.nc'
 fn_altimetry = './example_files/COAsT_example_altimetry_data.nc'
 ```
@@ -43,11 +43,11 @@ been thinned slightly.
 ```
 ind = altimetry.subset_indices_lonlat_box([-10,10], [45,60])
 ind = ind[::4]
-altimetry = altimetry.isel(t_dim=ind) 
+altimetry = altimetry.isel(t_dim=ind)
 ```
 
 Before comparing our observations to the model, we will interpolate a model
-variable to the same time and geographical space as the altimetry. This is 
+variable to the same time and geographical space as the altimetry. This is
 done using the obs_operator() method:
 ```
 altimetry.obs_operator(nemo, mod_var_name='ssh', time_interp='nearest')
@@ -59,7 +59,7 @@ to see for yourself.
 
 Next we will compare this interpolated variable to an observed variable
 using some basic metrics. The basic_stats() routine can be used for this,
-which calculates some simple metrics including differences, RMSE and 
+which calculates some simple metrics including differences, RMSE and
 correlations. NOTE: This may not be a wise choice of variables.
 ```
 stats = altimetry.basic_stats('interp_ssh', 'sla_filtered')
@@ -67,7 +67,7 @@ stats = altimetry.basic_stats('interp_ssh', 'sla_filtered')
 
 Take a look inside stats.dataset to see all of the new variables. When using
 basic stats, the returned object is also an ALTIMETRY object, so all of the
-same methods can be applied. Alternatively, if you want to save the new 
+same methods can be applied. Alternatively, if you want to save the new
 metrics to the original altimetry object, set create_new_object = False.
 
 Now we will do a more complex comparison using the Continuous Ranked
@@ -75,7 +75,7 @@ Probability Score (CRPS). For this, we need to hand over the model object,
 a model variable and an observed variable. We also give it a neighbourhood
 radius in km (nh_radius).
 ```
-crps = altimetry.crps(nemo, model_var_name = 'ssh', 
+crps = altimetry.crps(nemo, model_var_name = 'ssh',
                       obs_var_name = 'sla_filtered', nh_radius = 20)
 ```
 

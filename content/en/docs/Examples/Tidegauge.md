@@ -1,7 +1,7 @@
 ---
 title: "Tidegauge"
 linkTitle: "Tidegauge"
-weight: 1
+weight: 5
 
 description: >
   Example useage of TIDEGAUGE object.
@@ -21,10 +21,10 @@ import datetime
 
 And by defining some file paths from the COAsT example files
 ```
-fn_nemo_dat  = './example_files/COAsT_example_NEMO_data.nc' 
+fn_nemo_dat  = './example_files/COAsT_example_NEMO_data.nc'
 fn_nemo_dom  = './example_files/COAsT_example_NEMO_domain.nc'
 fn_tidegauge = './example_files/tide_gauges/lowestoft-p024-uk-bodc'
-fn_tidegauge_mult = './example_files/tide_gauges/l*' 
+fn_tidegauge_mult = './example_files/tide_gauges/l*'
 ```
 
 We need to load in a NEMO object for doing NEMO things.
@@ -44,7 +44,7 @@ tidegauge = coast.TIDEGAUGE(fn_tidegauge, date_start = date0, date_end = date1)
 ```
 
 Before comparing our observations to the model, we will interpolate a model
-variable to the same time and geographical space as the tidegauge. This is 
+variable to the same time and geographical space as the tidegauge. This is
 done using the obs_operator() method:
 ```
 tidegauge.obs_operator(nemo, mod_var_name='ssh', time_interp='nearest')
@@ -56,7 +56,7 @@ to see for yourself.
 
 Next we will compare this interpolated variable to an observed variable
 using some basic metrics. The basic_stats() routine can be used for this,
-which calculates some simple metrics including differences, RMSE and 
+which calculates some simple metrics including differences, RMSE and
 correlations. NOTE: This may not be a wise choice of variables.
 ```
 stats = tidegauge.basic_stats('interp_ssh', 'sea_level')
@@ -64,7 +64,7 @@ stats = tidegauge.basic_stats('interp_ssh', 'sea_level')
 
 Take a look inside stats.dataset to see all of the new variables. When using
 basic stats, the returned object is also an TIDEGAUGE object, so all of the
-same methods can be applied. Alternatively, if you want to save the new 
+same methods can be applied. Alternatively, if you want to save the new
 metrics to the original TIDEGAUGE object, set create_new_object = False.
 
 Now we will do a more complex comparison using the Continuous Ranked
@@ -72,7 +72,7 @@ Probability Score (CRPS). For this, we need to hand over the model object,
 a model variable and an observed variable. We also give it a neighbourhood
 radius in km (nh_radius).
 ```
-crps = tidegauge.crps(nemo, model_var_name = 'ssh', obs_var_name = 'sea_level', 
+crps = tidegauge.crps(nemo, model_var_name = 'ssh', obs_var_name = 'sea_level',
                       nh_radius = 20)
 ```
 
@@ -126,7 +126,7 @@ for tg in tidegauge_list:
     tg.obs_operator(nemo, 'ssh')
     tg.basic_stats('interp_ssh', 'sea_level', create_new_object=False)
 ```
- 
+
 And now some of these new values can be plotted on a map, again using
 plot_on_map_multiple:
 ```
