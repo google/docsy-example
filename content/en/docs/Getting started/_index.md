@@ -78,9 +78,12 @@ unzip COAsT_example_files.zip
 mv COAsT_example_files example_files
 ```
 
-## Installation and preparation for Workshop
+## Preparation for Workshop
 
-How to install COAsT in a conda environment and download demonstration files for the COAsT Workshop on 30th November 2020.
+How to install COAsT in a conda environment and download demonstration files
+for the COAsT Workshop on 30th November 2020.
+
+### Installation
 
 Assuming a linux environment and that you have anaconda on your system:
 
@@ -93,12 +96,17 @@ conda activate workshop_env # activate new environment
 yes | conda install -c conda-forge -c bodc coast # install COAsT within new environment
 ```
 
-## Download example files and link them into a new directory to play in
+### Example files
+
+Download example files and link them into a new directory:
+
+```shell
 rm -rf coast_demo
 mkdir coast_demo
 cd coast_demo
 wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip &&  unzip COAsT_example_files.zip
 ln -s COAsT_example_files example_files
+```
 
 ## Try it out!
 The below example works best with the COAsT example data. Start by importing COAsT:
