@@ -19,7 +19,7 @@ yes |  conda env remove --name test_env
 yes | conda create -n test_env python=3.8 # create a new environment
 conda activate test_env
 yes | conda install -c conda-forge -c bodc coast
-yes | conda install cartopy=0.18.0 # used for some of the map plotting
+yes | conda install -c conda-forge cartopy=0.18.0 # used for some of the map plotting
 
 # Download bits and bobs
 rm -rf coast_test

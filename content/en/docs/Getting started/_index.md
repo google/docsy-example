@@ -94,7 +94,7 @@ yes |  conda env remove --name workshop_env # remove environment 'workshop_env' 
 yes | conda create --name workshop_env python=3.8 # create a new environment
 conda activate workshop_env # activate new environment
 yes | conda install -c conda-forge -c bodc coast # install COAsT within new environment
-yes | conda install cartopy=0.18.0
+yes | conda install -c conda-forge cartopy=0.18.0
 ```
 
 ### Example files
