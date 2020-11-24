@@ -109,24 +109,26 @@ wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_
 ln -s COAsT_example_files example_files
 ```
 
-## Try it out!
-The below example works best with the COAsT example data. Start by importing COAsT:
+### Try it out!
+The below example works best with the COAsT example data. Start by opening a
+python terminal and then importing COAsT:
 ```python
 import coast
 ```
-Now load a NEMO output file and domain file into a NEMO object (specifying the grid):
+Now load a NEMO output file and domain file into a NEMO object, specifying the
+  grid (using example data just downloaded above):
 ```python
-data_file = '<Path to NEMO data file>'
-domain_file = '<Path to NEMO domain file>'
+data_file = 'example_files/COAsT_example_NEMO_data.nc' # <Path to NEMO data file>
+domain_file = 'example_files/COAsT_example_NEMO_domain.nc' # <Path to NEMO domain file>
 sci = coast.NEMO(data_file, domain_file, grid_ref = 't-grid')
 ```
-You can now start having a look at some of the methods inside the NEMO class.
-Interrogate the NEMO data by taking a look inside sci.dataset. This contains all the
-information from the netCDF file.
+There are a bunch of warnings that can be ignored (and we might have fixed before the
+  workshop! It is on the [Issue tracker](https://github.com/British-Oceanographic-Data-Centre/COAsT/issues/123)). You can now start having a look at some
+  of the methods inside the NEMO class. Interrogate the NEMO data by taking a look inside ``sci.dataset``. This contains all the information from the netCDF file.
 
-Lets take a look at some altimetry data around the UK too. Load in the data:
+Let's take a look at some altimetry data around the UK too. Load in the data:
 ```python
-altimetry_file = '<Path to Altimetry data file>'
+altimetry_file = 'example_files/COAsT_example_altimetry_data.nc' # <Path to Altimetry data file>
 altimetry = coast.ALTIMETRY(altimetry_file)
 ```
 Subset the data so that only data over the North West European Shelf remains in the object.
