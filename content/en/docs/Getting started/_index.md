@@ -93,7 +93,7 @@ module load anaconda/3-5.1.0 # or whatever it takes to make conda available
 yes |  conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
 yes | conda create --name workshop_env python=3.8 # create a new environment
 conda activate workshop_env # activate new environment
-yes | conda install -c conda-forge -c bodc coast # install COAsT within new environment
+yes | conda install -c conda-forge -c bodc coast gsw=3.3.1 matplotlib=3.2.1 # install COAsT within new environment
 yes | conda install -c conda-forge cartopy=0.18.0
 ```
 
@@ -115,6 +115,20 @@ python terminal and then importing COAsT:
 ```python
 import coast
 ```
+Before using coast, we will just check that Anaconda has installed correct package versions. In the python console copy the following:
+```python
+import gsw
+import matplotlib
+print(gsw.__version__)
+print(matplotlib.__version__)
+```
+The output should be
+```python
+3.3.1
+3.2.1
+```
+If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
+
 Now load a NEMO output file and domain file into a NEMO object, specifying the
   grid (using example data just downloaded above):
 ```python
