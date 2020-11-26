@@ -1,14 +1,14 @@
 ---
-title: "Transect subsetting"
-linkTitle: "Transects"
-date: 2020-11-24
-weight: 6
+title: "Empirical Orthogonal Functions"
+linkTitle: "EOFs"
+date: 2020-11-25
+weight: 8
 description: >
-  Transect subsetting (a vertical slice of data between two coordinates): Creating them and performing some custom diagnostics with them.
+  Using COAsT to compute the Empirical Orthogonal Functions (EOFs) of your data
 ---
 
 
-### Create a transect subset of the example dataset
+### Load data and compute EOFs
 
 Load packages and define some file paths
 
@@ -19,11 +19,8 @@ import matplotlib.pyplot as plt
 
 dn_files = "./example_files/"
 fn_nemo_dat_t = 'nemo_data_T_grid.nc'
-fn_nemo_dat_u = 'nemo_data_U_grid.nc'
-fn_nemo_dat_v = 'nemo_data_V_grid.nc'
 fn_nemo_dom = 'COAsT_example_NEMO_domain.nc'
 ```
-
 Load data variables that are on the NEMO t-grid
 
 ``` python
@@ -31,120 +28,74 @@ nemo_t = coast.NEMO( fn_data = dn_files+fn_nemo_dat_t,
                      fn_domain = dn_files+fn_nemo_dom,
                      grid_ref = 't-grid' )
 ```
-
-Create a transect between the points (54 N 15 W) and (56 N, 12 W). The model points closest to these coordinates will be selected as the transect end points. 
-
+For a variable (or subset of a variable) with two spatial dimensions and one temporal dimension, i.e. (x,y,t), the EOFs, temporal projections and variance explained can be computed by calling the 'eofs' method, and passing in the ssh DataArray as an argument. For example, for the sea surface height field, we can do
 ``` python
-tran_t = coast.Transect_t( nemo_t, (54,-15), (56,-12) )
-tran_t.data
-Out[..]:
-<xarray.Dataset>
-Dimensions:      (r_dim: 58, t_dim: 7, z_dim: 51)
-Coordinates:
-    time         (t_dim) datetime64[ns] 2010-01-01T12:00:00 ... 2010-01-07T12...
-    longitude    (r_dim) float32 -15.0 -15.0 -14.888672 ... -12.111328 -12.0
-    latitude     (r_dim) float32 54.000977 54.067383 ... 56.000977 56.000977
-    depth_0      (z_dim, r_dim) float32 0.49951172 0.49951172 ... 2735.997
-Dimensions without coordinates: r_dim, t_dim, z_dim
-Data variables:
-    e3t_25h      (t_dim, z_dim, r_dim) float32 ...
-    temperature  (t_dim, z_dim, r_dim) float32 ...
-    salinity     (t_dim, z_dim, r_dim) float32 ...
-    ssh          (t_dim, r_dim) float32 ...
-    mld          (t_dim, r_dim) float32 ...
-    bathymetry   (r_dim) float32 ...
-    e1           (r_dim) float32 7262.1484 7250.5117 ... 6908.8594 6908.8594
-    e2           (r_dim) float32 7413.633 7413.633 ... 7413.633 7413.633
-    e3_0         (z_dim, r_dim) float32 ...
-Attributes:
-    name:         AMM7_1d_20100101_20100131_25hourm_grid_T
-    description:  ocean T grid variables, 25h meaned
-    title:        ocean T grid variables, 25h meaned
-    Conventions:  CF-1.6
-    timeStamp:    2019-Dec-27 04:41:46 GMT
-```
-
-where r_dim is the dimension along the transect. It is simple to plot a scaler such as temperature along the transect
-
+eof_data = coast.eofs( nemo_t.dataset.ssh )
+``` 
+The method returns an xarray dataset that contains the EOFs, temporal projections and variance as DataArrays
 ``` python
-temp_mean = tran_t.data.temperature.mean(dim='t_dim')
-temp_mean.plot.pcolormesh(y='depth_0', yincrease=False )
-```
-
-{{< imgproc tran_example_1 Fill "875x500" >}}
-{{< /imgproc >}}
-
-### Flow across the transect
-
-With NEMO's staggared grid, the first step is to define the transect on the f-grid so that the velocity components are between f-points. We do not need any model data on the f-grid, just the grid information, so create a nemo f-grid object
-``` python
-nemo_f = coast.NEMO( fn_domain=dn_files+fn_nemo_dom, grid_ref='f-grid' )
-```
-and a transect on the f-grid
-``` python
-tran_f = coast.Transect_f( nemo_f, (54,-15), (56,-12) )
-tran_f.data
+eof_data
 Out[..]: 
 <xarray.Dataset>
-Dimensions:     (r_dim: 58, z_dim: 51)
+Dimensions:        (mode: 7, t_dim: 7, x_dim: 297, y_dim: 375)
 Coordinates:
-    longitude   (r_dim) float32 -15.055664 -15.055664 ... -12.166992 -12.055664
-    latitude    (r_dim) float32 53.967773 54.03418 ... 55.967773 55.967773
-    depth_0     (z_dim, r_dim) float32 0.49951172 0.49951172 ... 2739.0999
-Dimensions without coordinates: r_dim, z_dim
+  * mode           (mode) int64 1 2 3 4 5 6 7
+    longitude      (y_dim, x_dim) float32 -19.888672 -19.777344 ... 13.0
+    latitude       (y_dim, x_dim) float32 40.066406 40.066406 ... 65.00098
+    time           (t_dim) datetime64[ns] 2010-01-01T12:00:00 ... 2010-01-07T12:00:00
+Dimensions without coordinates: t_dim, x_dim, y_dim
 Data variables:
-    bathymetry  (r_dim) float32 ...
-    e1          (r_dim) float32 7267.963 7256.332 ... 6914.8184 6914.8184
-    e2          (r_dim) float32 7413.633 7413.633 7413.633 ... 7413.633 7413.633
-    e3_0        (z_dim, r_dim) float32 ...
+    EOF            (y_dim, x_dim, mode) float32 0.0 0.0 0.0 0.0 ... 0.0 0.0 0.0
+    temporal_proj  (t_dim, mode) float32 -2.2225053 -8.439432 ... 1.2360597e-06
+    variance       (mode) float32 43.399567 22.409678 ... 4.250943 8.635705e-13
+```
+The variance explained of the first four modes is
+```python
+eof_data.variance.sel(mode=[1,2,3,4])
+Out[..]: 
+<xarray.DataArray 'variance' (mode: 4)>
+array([43.399567, 22.409678, 18.79165 ,  6.359168], dtype=float32)
+Coordinates:
+  * mode     (mode) int64 1 2 3 4
+Attributes:
+    standard name:  percentage of variance explained
+```
+And the EOFs and temporal projections can be quick plotted:
+``` python
+eof_data.EOF.sel(mode=[1,2,3,4]).plot.pcolormesh(col='mode',col_wrap=2,x='longitude',y='latitude')
 ```
 
-We also need the i- and j-components of velocity so (lazy) load the model data on the u- and v-grid grids
+{{< imgproc eof_example_1 Resize "600x600" >}}
+{{< /imgproc >}}
 
 ``` python
-nemo_u = coast.NEMO( fn_data=dn_files+fn_nemo_dat_u,
-                     fn_domain=dn_files+fn_nemo_dom, 
-                     grid_ref='u-grid' )
-nemo_v = coast.NEMO( fn_data=dn_files+fn_nemo_dat_v,
-                     fn_domain=dn_files+fn_nemo_dom,
-                     grid_ref='v-grid' )
+eof_data.temporal_proj.sel(mode=[1,2,3,4]).plot.(col='mode',col_wrap=2,x='time')
 ```
-Now we can calculate the flow across the transect with the method
+
+{{< imgproc eof_example_2 Resize "600x600" >}}
+{{< /imgproc >}}
+
+The more exotic hilbert complex EOFs can also be computed to investigate the propagation of variability, for example:
 ``` python
-tran_f.calc_flow_across_transect(nemo_u,nemo_v)
+heof_data = coast.hilbert_eofs( nemo_t.dataset.ssh )
+heof_data
 ```
-The flow across the transect is stored in a new dataset where the variables are all defined at the points between f-points.
+giving
 ``` python
-tran_f.data_cross_tran_flow
-Out[25]: 
 <xarray.Dataset>
-Dimensions:            (r_dim: 57, t_dim: 7, z_dim: 51)
+Dimensions:         (mode: 7, t_dim: 7, x_dim: 297, y_dim: 375)
 Coordinates:
-    time               (t_dim) datetime64[ns] 2010-01-02 ... 2010-01-08
-    depth_0            (z_dim, r_dim) float64 0.4995 0.4995 ... 2.739e+03
-    latitude           (r_dim) float64 54.0 54.03 54.07 ... 55.9 55.93 55.97
-    longitude          (r_dim) float64 -15.06 -15.0 -14.94 ... -12.17 -12.11
-Dimensions without coordinates: r_dim, t_dim, z_dim
+  * mode            (mode) int64 1 2 3 4 5 6 7
+    longitude       (y_dim, x_dim) float32 -19.888672 -19.777344 ... 13.0
+    latitude        (y_dim, x_dim) float32 40.066406 40.066406 ... 65.00098
+    time            (t_dim) datetime64[ns] 2010-01-01T12:00:00 ... 2010-01-07T12:00:00
+Dimensions without coordinates: t_dim, x_dim, y_dim
 Data variables:
-    normal_velocities  (t_dim, z_dim, r_dim) float64 0.05566 -0.07031 ... nan
-    normal_transports  (t_dim, r_dim) float64 1.569 -1.09 ... 1.004 0.04741
-    e1                 (r_dim) float64 7.262e+03 7.256e+03 ... 6.915e+03
-    e2                 (r_dim) float64 7.414e+03 7.414e+03 ... 7.414e+03
-    e3_0               (z_dim, r_dim) float64 1.0 1.0 1.0 ... 48.72 48.65 48.6
-``` 
-For example, to plot the time averaged velocity across the transect, we can plot the 'normal_velocities' variable
-``` python
-cross_velocity_mean = tran_f.data_cross_tran_flow.normal_velocities.mean(dim='t_dim')
-cross_velocity_mean.rolling(r_dim=2).mean().plot.pcolormesh(yincrease=False,y='depth_0',cbar_kwargs={'label': 'm/s'})
+    EOF_amp         (y_dim, x_dim, mode) float64 0.0 0.0 0.0 0.0 ... 0.0 0.0 0.0
+    EOF_phase       (y_dim, x_dim, mode) float64 0.0 0.0 0.0 0.0 ... 0.0 0.0 0.0
+    temporal_amp    (t_dim, mode) float64 18.39 9.522 ... 4.118e-15 3.128e-15
+    temporal_phase  (t_dim, mode) float64 180.0 180.0 0.0 ... 57.38 111.1 -86.89
+    variance        (mode) float64 57.99 27.12 14.88 ... 1.112e-29 1.191e-30
 ```
-{{< imgproc tran_example_2 Fill "875x500" >}}
-{{< /imgproc >}}
+now with the modes expressed by their amplitude and phase, the spatial propagation of the variability can be examined through the EOF_phase.
 
-or the volume transport across the transect, we can plot the 'normal_transports' variable
-``` python
-cross_transport_mean = tran_f.data_cross_tran_flow.normal_transports.mean(dim='t_dim')
-cross_transport_mean.rolling(r_dim=2).mean().plot()
-plt.ylabel('Sv')
-```
-{{< imgproc tran_example_3 Fill "875x500" >}}
-{{< /imgproc >}}
