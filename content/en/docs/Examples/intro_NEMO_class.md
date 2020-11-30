@@ -85,7 +85,7 @@ Lets get the indices of all model points within 111km km of (5W, 55N):
 
 
 ```python
-ind_x, ind_y = nemo_t.subset_indices_by_distance(centre_lon=-5, centre_lat=55, radius=111)
+ind_y, ind_x = nemo_t.subset_indices_by_distance(centre_lon=-5, centre_lat=55, radius=111)
 ind_x.shape
 ```
 
