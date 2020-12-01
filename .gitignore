@@ -2,3 +2,4 @@
 /node_modules
 /docs
 *.DS_Store*
+jupyter_notebooks/.ipynb_checkpoints
