@@ -151,7 +151,7 @@ enable = true
 	name = "User mailing list"
 	url = "https://example.org/mail"
 	icon = "fa fa-envelope"
-        desc = "Discussion and help from your fellow users"
+        desc = "NOT FUNCTIONAL" # Discussion and help from your fellow users"
 #[[params.links.user]]
 # name ="Twitter"
 #	url = "https://example.org/twitter"
