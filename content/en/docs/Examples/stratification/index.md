@@ -8,6 +8,8 @@ description: >
 ---
 A demonstration of pycnocline depth and thickness diagnostics. The first and second depth moments of stratification are computed as proxies for pycnocline depth and thickness, suitable for a nearly two-layer fluid.
 
+Note that in the AMM7 example data the plots are not particularly spectacular as the internal tide is poorly resolved at 7km.
+
 
 ```python
 import coast
