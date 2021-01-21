@@ -87,3 +87,25 @@ To delete the container run:
 ```
 docker container rm [container_id]
 ```
+
+## Troubleshooting
+
+As you run the website locally, you may run into the following error:
+
+```
+➜ hugo server
+
+INFO 2021/01/21 21:07:55 Using config file: 
+Building sites … INFO 2021/01/21 21:07:55 syncing static files to /
+Built in 288 ms
+Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
+```
+
+To solve this error, first install `hugo-extended` as:
+
+```
+npm install hugo-extended --save-dev
+# or...
+yarn add hugo-extended --dev
+```
+
