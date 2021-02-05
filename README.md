@@ -50,19 +50,25 @@ hugo server
 You can run docsy-example inside a [Docker](ihttps://docs.docker.com/)
 container, the container runs with a volume bound to the `docsy-example`
 folder. This approach doesn't require you to install any dependencies other
-than Docker.
+than Docker and Docker Compose.
+
+> Reference: https://docs.docker.com/compose/gettingstarted/
 
 1. Build the docker image 
 
 ```bash
-docker build -f dev.Dockerfile -t docsy-example-dev:latest .
+docker-compose build
 ```
 
 1. Run the built image
 
 ```bash
-docker run --publish 1313:1313 --detach --mount src="$(pwd)",target=/home/docsy/app,type=bind docsy-example-dev:latest
+docker-compose up
 ```
+
+> NOTE: You can run both commands at once as `docker-compose up --build` while you are working.
+
+1. Verify work 
 
 Open your web browser and type `http://localhost:1313` in your navigation bar,
 This opens a local instance of the docsy-example homepage. You can now make
@@ -72,18 +78,15 @@ browser after you save.
 To stop the container, first identify the container ID with:
 
 ```bash
-docker container ls
+CTRL + C to terminate `docker-compose` process
 ```
 
-Take note of the hexadecimal string below the `CONTAINER ID` column, then stop
-the container:
+That will terminate the container.
 
-```bash
-docker stop [container_id]
-```
+1. Remove produced images
 
-To delete the container run:
+You can execute `rm` to remove the produced images
 
-```
-docker container rm [container_id]
+```console
+docker-compose rm
 ```
