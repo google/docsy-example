@@ -75,11 +75,11 @@ on Linux.
    changes to the docsy example and those changes will immediately show up in your
    browser after you save.
 
-To stop Docker Compose, on your terminal window, press **Ctrl + C**.
+### Cleanup
 
-That will terminate the container.
+To stop Docker Compose, on your terminal window, press **Ctrl + C**. 
 
-To remove produced images run:
+To remove the produced images run:
 
 ```console
 docker-compose rm
