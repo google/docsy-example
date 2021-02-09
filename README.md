@@ -56,24 +56,24 @@ on Linux.
 
 1. Build the docker image 
 
-```bash
-docker-compose build
-```
+   ```bash
+   docker-compose build
+   ```
 
 1. Run the built image
 
-```bash
-docker-compose up
-```
+   ```bash
+   docker-compose up
+   ```
 
-> NOTE: You can run both commands at once with `docker-compose up --build`.
+   > NOTE: You can run both commands at once with `docker-compose up --build`.
 
 1. Verify that the service is working. 
 
-Open your web browser and type `http://localhost:1313` in your navigation bar,
-This opens a local instance of the docsy-example homepage. You can now make
-changes to the docsy example and those changes will immediately show up in your
-browser after you save.
+   Open your web browser and type `http://localhost:1313` in your navigation bar,
+   This opens a local instance of the docsy-example homepage. You can now make
+   changes to the docsy example and those changes will immediately show up in your
+   browser after you save.
 
 To stop Docker Compose, on your terminal window, press **Ctrl + C**.
 
