@@ -29,7 +29,7 @@ A simple way to get started is to use this project as a template, which gives yo
 git clone --recurse-submodules --depth 1 https://github.com/my/example.git
 ```
 
-You can now edit your local versions of the site’s source files.
+You can now edit your own versions of the site’s source files.
 
 If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
 
@@ -39,7 +39,11 @@ npm install
 
 ## Running the website locally
 
-Once you've cloned or copied the site repo, from the repo root folder, run:
+Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
+You can find out more about how to install Hugo for your environment in our
+[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation) guide.
+
+Once you've made your working copy of the site repo, from the repo root folder, run:
 
 ```
 hugo server
@@ -84,6 +88,22 @@ To remove the produced images run:
 ```console
 docker-compose rm
 ```
-
 For more information see the [Docker Compose
 documentation](https://docs.docker.com/compose/gettingstarted/).
+
+## Troubleshooting
+
+As you run the website locally, you may run into the following error:
+
+```
+➜ hugo server
+
+INFO 2021/01/21 21:07:55 Using config file: 
+Building sites … INFO 2021/01/21 21:07:55 syncing static files to /
+Built in 288 ms
+Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
+```
+
+This error occurs if you have not installed the extended version of Hugo.
+See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructions on how to install Hugo.
+
