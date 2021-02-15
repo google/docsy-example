@@ -51,46 +51,45 @@ hugo server
 
 ## Running a container locally
 
-You can run docsy-example inside a [Docker](ihttps://docs.docker.com/)
+You can run docsy-example inside a [Docker](https://docs.docker.com/)
 container, the container runs with a volume bound to the `docsy-example`
 folder. This approach doesn't require you to install any dependencies other
-than Docker.
+than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
+Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
+on Linux.
 
 1. Build the docker image 
 
-```bash
-docker build -f dev.Dockerfile -t docsy-example-dev:latest .
-```
+   ```bash
+   docker-compose build
+   ```
 
 1. Run the built image
 
-```bash
-docker run --publish 1313:1313 --detach --mount src="$(pwd)",target=/home/docsy/app,type=bind docsy-example-dev:latest
+   ```bash
+   docker-compose up
+   ```
+
+   > NOTE: You can run both commands at once with `docker-compose up --build`.
+
+1. Verify that the service is working. 
+
+   Open your web browser and type `http://localhost:1313` in your navigation bar,
+   This opens a local instance of the docsy-example homepage. You can now make
+   changes to the docsy example and those changes will immediately show up in your
+   browser after you save.
+
+### Cleanup
+
+To stop Docker Compose, on your terminal window, press **Ctrl + C**. 
+
+To remove the produced images run:
+
+```console
+docker-compose rm
 ```
-
-Open your web browser and type `http://localhost:1313` in your navigation bar,
-This opens a local instance of the docsy-example homepage. You can now make
-changes to the docsy example and those changes will immediately show up in your
-browser after you save.
-
-To stop the container, first identify the container ID with:
-
-```bash
-docker container ls
-```
-
-Take note of the hexadecimal string below the `CONTAINER ID` column, then stop
-the container:
-
-```bash
-docker stop [container_id]
-```
-
-To delete the container run:
-
-```
-docker container rm [container_id]
-```
+For more information see the [Docker Compose
+documentation](https://docs.docker.com/compose/gettingstarted/).
 
 ## Troubleshooting
 
@@ -105,11 +104,6 @@ Built in 288 ms
 Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
 ```
 
-To solve this error, first install `hugo-extended` as:
-
-```
-npm install hugo-extended --save-dev
-# or...
-yarn add hugo-extended --dev
-```
+This error occurs if you have not installed the extended version of Hugo.
+See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructions on how to install Hugo.
 
