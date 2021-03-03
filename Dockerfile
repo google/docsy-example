@@ -1,3 +1,3 @@
-FROM klakegg/hugo:0.78.2-asciidoctor
+FROM klakegg/hugo:0.81.0-ext-asciidoctor
 
 RUN apk add git
