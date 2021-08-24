@@ -88,7 +88,7 @@ time_format_blog = "2006.01.02"
 
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
-section = ["HTML", "print"]
+section = ["HTML", "print", "RSS"]
 
 [params]
 copyright = "The Docsy Authors"
