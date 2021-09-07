@@ -4,7 +4,7 @@ linkTitle: "Configuration files"
 date: 2021-09-07
 weight: 18
 description: >
-  Further information about the use of configuration files within the COAsT package.
+  Information regarding the use of configuration files within the COAsT package.
 ---
 
 Configuration file code can be found in
@@ -15,7 +15,11 @@ This code is used internally within the packages main classes.
 Configuration files are passed into a COAsT class on the instantiation of a new object. For example the ```Gridded class``` ```__init__``` method takes an argument ``config``.
 This argument must be a String or Path object representing a path to the configuration file.
 ```python
-# Add example of gridded here.
+from pathlib import Path
+from coast.gridded import Gridded
+
+config_file = Path("path/to/config_file.json")
+gridded_obj = Gridded(fn_data="data-file.nc", fn_domain="domain-file.nc", config=config_file)
 ```
 
 ## Configuration file structure
