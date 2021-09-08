@@ -8,7 +8,7 @@ description: >
 ---
 
 Configuration file code can be found in
-``coast/config`` in the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/coast/config) repository.
+``coast/config`` within the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/coast/config) github repository.
 This code is used internally within the package.
 
 ## Configuration file usage
@@ -24,11 +24,11 @@ gridded_obj = Gridded(fn_data="data-file.nc", fn_domain="domain-file.nc", config
 
 ## Configuration file structure
 Configuration files must follow a standard structure so that the ```ConfigParser``` class can parse the file correctly.
-__Example configuration__ files can be found in the ``config/`` directory within the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/config) repository.
 
 Depending on the type of configuration file, there are a number of required keys:
 
 ### Gridded configuration
+
 | Key     | Description |
 | --- | ----------- |
 | ``type`` | A string value representing the type of configuration file. In the case of gridded config this will always be "gridded".       |
@@ -37,8 +37,8 @@ Depending on the type of configuration file, there are a number of required keys
 | ``chunks`` | A list defining a dask uniform [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. This is converted to a tuple automatically in code. |
 | ``dataset``   | Parent key for holding configuration specific to the dataset files. |
 | ``domain`` | Parent key for holding configuration specific to domain files. This is an __optional__ key depending on whether a domain file is required or not.     |
-| ``dimension_map`` | Child key of dataset/domain. A dictionary defining the mappings between standard NEMO file dimension names and the data file dimension names.  |
-| ``variable_map`` | Child key of dataset/domain. A dictionary defining the mappings between standard NEMO file variable names and the data file variable names. |
+| ``dimension_map`` | Child key of dataset/domain. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
+| ``variable_map`` | Child key of dataset/domain. A dictionary defining the mappings between input data variable names and the framework's standardised variable names. |
 | ``processing_flags`` | A list of strings referring to any preliminary processing methods to be carried out on the data. |
 
 ### Indexed configuration
@@ -48,6 +48,13 @@ Depending on the type of configuration file, there are a number of required keys
 | ``dimensionality`` | An integer value representing the number of dimensions within the data files.       |
 | ``chunks`` | A list defining a dask uniform [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. This is converted to a tuple automatically in code. |
 | ``dataset``   | Parent key for holding configuration specific to the dataset files. |
-| ``dimension_map`` | Child key of dataset. A dictionary defining the mappings between standard NEMO file dimension names and the data file dimension names.  |
-| ``variable_map`` | Child key of dataset. A dictionary defining the mappings between standard NEMO file variable names and the data file variable names. |
+| ``dimension_map`` | Child key of dataset. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
+| ``variable_map`` | Child key of dataset. A dictionary defining the mappings between input data variable names and the framework's standardised variable names. |
 | ``processing_flags`` | A list of strings referring to any preliminary processing methods to be carried out on the data. |
+
+### Example configuration file
+Below is a simple example of a gridded configuration file:
+```json
+<-- Example json here -->
+```
+More __Example configuration__ files can be found in the ``config/`` directory within the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/config) github repository.
