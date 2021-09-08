@@ -57,4 +57,4 @@ Below is a simple example of a gridded configuration file:
 ```json
 <-- Example json here -->
 ```
-More __Example configuration__ files can be found in the ``config/`` directory within the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/config) github repository.
+More __example configuration__ files can be found in the ``config/`` directory within the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/config) github repository.
