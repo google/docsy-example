@@ -34,7 +34,7 @@ Depending on the type of configuration file, there are a number of required keys
 | ``type`` | A string value representing the type of configuration file. In the case of gridded config this will always be "gridded".       |
 | ``dimensionality`` | An integer value representing the number of dimensions within the data files.       |
 | ``grid_ref`` | A dictionary containing the type of grid, and a list of grid variables defining the mapping from the domain file to NEMO file. |
-| ``chunks`` | A list defining a dask uniform [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. This is converted to a tuple automatically in code. |
+| ``chunks`` | A dictionary defining a dask [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. JSON doesn't support integer keys, and so the dimensions name should be provided as the key instead. An empty dictionary will result in auto chunking. |
 | ``dataset``   | Parent key for holding configuration specific to the dataset files. |
 | ``domain`` | Parent key for holding configuration specific to domain files. This is an __optional__ key depending on whether a domain file is required or not.     |
 | ``dimension_map`` | Child key of dataset/domain. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
@@ -50,7 +50,7 @@ Depending on the type of configuration file, there are a number of required keys
 | --- | ----------- |
 | ``type`` | A string value representing the type of configuration file. In the case of indexed config this will always be "indexed".       |
 | ``dimensionality`` | An integer value representing the number of dimensions within the data files.       |
-| ``chunks`` | A list defining a dask uniform [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. This is converted to a tuple automatically in code. |
+| ``chunks`` | A dictionary defining a dask [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. JSON doesn't support integer keys, and so the dimensions name should be provided as the key instead. An empty dictionary will result in auto chunking. |
 | ``dataset``   | Parent key for holding configuration specific to the dataset files. |
 | ``dimension_map`` | Child key of dataset. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
 | ``variable_map`` | Child key of dataset. A dictionary defining the mappings between input data variable names and the framework's standardised variable names. |
@@ -62,11 +62,11 @@ Below is the template of a gridded configuration file:
 {
 	"type": "gridded",
 	"dimensionality": 3,
-	"chunks": [
-		1000,
-		1000,
-		1000
-	],
+	"chunks": {
+		"dim1":1000,
+		"dim2":1000,
+		"dim3":1000
+	},
 	"grid_ref": {
 		"t-grid": [
 			"glamt",
