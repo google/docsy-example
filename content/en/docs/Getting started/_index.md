@@ -46,27 +46,28 @@ Then start building a python environment. Here (for example) called ``coast_env`
 module load anaconda/3-5.1.0 # or whatever it takes to activate conda
 conda config --add channels conda-forge # add conda-forge to your conda channels
 
-conda create -n conda_env python=3.8 # create a new environment. E.g. `conda_env`
-conda activate conda_env # activate new environment
+conda create -n coast_env python=3.8 # create a new environment. E.g. `coast_env`
+conda activate coast_env # activate new environment
 ```
 Install packages to the environment:
 ```
-conda install --file COAsT/conda_requirements.txt
+cd COAsT
+conda install --file conda_requirements.txt
 ```
-At the time of writing the contents of `conda_requirements.txt` was:
+At the time of writing (16Sep2021) the contents of `conda_requirements.txt` was:
 ```
 less COAsT/conda_requirements.txt
 numpy>=1.16
 dask>=2
 dask[complete]>=2
-xarray>=0.1
-matplotlib>=3
+xarray~=0.19.0
+matplotlib==3.2.1
 netCDF4>=1
 scipy>=1
 gsw==3.3.1
 scikit-learn>=0.2
 scikit-image>=0.15
-cartopy
+cartopy>=0.18
 spyder>=4
 ```
 
