@@ -39,9 +39,10 @@ Depending on the type of configuration file, there are a number of required keys
 | ``domain`` | Parent key for holding configuration specific to domain files. This is an __optional__ key depending on whether a domain file is required or not.     |
 | ``dimension_map`` | Child key of dataset/domain. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
 | ``variable_map`` | Child key of dataset/domain. A dictionary defining the mappings between input data variable names and the framework's standardised variable names. |
+|``keep_all_vars``| Optional child key of dataset/domain. If "True", all variables from the input datafile will be carried over to the Gridded dataset. If "False", only mapped variables will be carried over.  "False" is assumed if the key is not present. |
+|``coord_vars``| Child key of dataset. A list of dataset coordinate variables to apply once dataset is loaded. |
 |``static_variables``| Parent key for holding configuration used for merging domain variables into the main dataset. |
 |``not_grid_vars``| Child key of static_variables. A list of grid independant variables to pull across from the domain file. |
-|``coord_vars``| Child key of static_variables. A list of variables to be set as coordinates after the merge. (Coordinates are reset and then set again as part of the merge.) |
 |``delete_vars``| Child key of static_variables. A list of variables to drop following the merge of domain and dataset. |
 | ``processing_flags`` | A list of strings referring to any preliminary processing methods to be carried out on the data. |
 
@@ -54,6 +55,8 @@ Depending on the type of configuration file, there are a number of required keys
 | ``dataset``   | Parent key for holding configuration specific to the dataset files. |
 | ``dimension_map`` | Child key of dataset. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
 | ``variable_map`` | Child key of dataset. A dictionary defining the mappings between input data variable names and the framework's standardised variable names. |
+|``keep_all_vars``| Optional child key of dataset/domain. If "True", all variables from the input datafile will be carried over to the Indexed dataset. If "False", only mapped variables will be carried over.  "False" is assumed if the key is not present. |
+|``coord_vars``| Child key of dataset. A list of dataset coordinate variables to apply once dataset is loaded. |
 | ``processing_flags`` | A list of strings referring to any preliminary processing methods to be carried out on the data. |
 
 ### Example configuration file
@@ -105,7 +108,13 @@ Below is the template of a gridded configuration file:
 			"ex12": "vozocrtx",
 			"ex13": "sossheig",
 			"ex14": "zos"
-		}
+		},
+		"coord_vars": [
+			"longitude",
+			"latitude",
+			"time",
+			"depth_0"
+		]
 	},
 	"domain": {
 		"dimension_map": {
@@ -160,12 +169,6 @@ Below is the template of a gridded configuration file:
 			"ln_sco",
 			"ln_isfcav"
 		],
-		"coord_vars": [
-			"longitude",
-			"latitude",
-			"time",
-			"depth_0"
-		],
 		"delete_vars": [
 			"nav_lat",
 			"nav_lon",
@@ -178,4 +181,4 @@ Below is the template of a gridded configuration file:
 	]
 }
 ```
-Raw __example configuration__ files can be found in the ``config/`` directory within the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/config) github repository.
+__Example configuration__ files can be found in the ``config/`` directory within the [COAsT](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/config) github repository.
