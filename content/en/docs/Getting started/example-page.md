@@ -1,4 +1,6 @@
 ---
+categories: ["Examples"]
+tags: ["test", "sample", "docs"]
 title: "Example Page"
 linkTitle: "Example Page"
 date: 2017-01-05
