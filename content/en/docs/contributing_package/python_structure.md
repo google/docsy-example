@@ -1,6 +1,7 @@
 ---
 title: "Python: Structure"
 linkTitle: "Python: Structure"
+date: 2021-10-05
 weight: 2
 menu:
   documentation:
