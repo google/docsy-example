@@ -4,7 +4,7 @@ linkTitle: "Contours"
 date: 2021-10-05
 weight: 6
 description: >
-  Contour subsetting (a vertical slice of data along a contour): Creating them and performing some custom diagnostics with them.
+  Contour subsetting (a vertical slice of data along a contour)
 ---
 In this tutorial we take a look the following Isobath Contour Methods:
 

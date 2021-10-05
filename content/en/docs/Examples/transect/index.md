@@ -4,7 +4,7 @@ linkTitle: "Transects"
 date: 2021-10-05
 weight: 6
 description: >
-  Transect subsetting (a vertical slice of data between two coordinates): Creating them and performing some custom diagnostics with them.
+  Transect subsetting (a vertical slice of data between two coordinates)
 ---
 In this tutorial we take a look at subsetting the model data along a transect (a custom straight line) and creating some bespoke diagnostics along it. We look at:
 
