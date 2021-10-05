@@ -34,15 +34,20 @@ config = 'AMM15'
 dir_nam = "/projectsa/NEMO/gmaya/2013p2/"
 fil_nam = "20130415_25hourm_grid_T.nc"
 dom_nam = "/projectsa/NEMO/gmaya/AMM15_GRID/amm15.mesh_mask.cs3x.nc"
+config = "/work/jelt/GitHub/COAsT/config/example_nemo_grid_t.json"
 
+sci_t = coast.Gridded(dir_nam + fil_nam, dom_nam, config=config)  # , chunks=chunks)
+chunks = {
+    "x_dim": 10,
+    "y_dim": 10,
+    "t_dim": 10,
+}  # Chunks are prescribed in the config json file, but can be adjusted while the data is lazy loaded.
 
-
-sci_t = coast.NEMO(dir_nam + fil_nam,
-        dom_nam, grid_ref='t-grid', multiple=False)
+sci_t.dataset.chunk(chunks)
 
 # create an empty w-grid object, to store stratification
-sci_w = coast.NEMO( fn_domain = dom_nam, grid_ref='w-grid')
-
+sci_w = coast.Gridded(fn_domain=dom_nam, config=config.replace("t_nemo", "w_nemo"))
+sci_w.dataset.chunk({"x_dim": 10, "y_dim": 10})  # Can reset after loading config json
 
 print('* Loaded ',config, ' data')
 
@@ -106,10 +111,9 @@ import matplotlib.colors as colors # colormap fiddling
 dir_nam = "/projectsa/COAsT/NEMO_example_data/MO_INDIA/"
 fil_nam = "ind_1d_cat_20180101_20180105_25hourm_grid_T.nc"
 dom_nam = "domain_cfg_wcssp.nc"
+config_t = "/work/jelt/GitHub/COAsT/config/example_nemo_grid_t.json"
 
-
-sci_t = coast.NEMO(dir_nam + fil_nam, \
-        dir_nam + dom_nam, grid_ref='t-grid', multiple=False)
+sci_t = coast.Gridded(dir_nam + fil_nam, dir_nam + dom_nam, config=config_t)
 
 #%% Plot
 fig = plt.figure()
@@ -143,14 +147,12 @@ import matplotlib.colors as colors # colormap fiddling
 #%%  Loading  data
 #################################################
 
-
 dir_nam = "/projectsa/COAsT/NEMO_example_data/SEAsia_R12/"
 fil_nam = "SEAsia_R12_5d_20120101_20121231_gridT.nc"
 dom_nam = "domain_cfg_ORCA12_adj.nc"
+config_t = "/work/jelt/GitHub/COAsT/config/example_nemo_grid_t.json"
 
-
-sci_t = coast.NEMO(dir_nam + fil_nam, \
-        dir_nam + dom_nam, grid_ref='t-grid', multiple=False)
+sci_t = coast.Gridded(dir_nam + fil_nam, dir_nam + dom_nam, config=config_t)
 
 #%% Plot
 fig = plt.figure()
