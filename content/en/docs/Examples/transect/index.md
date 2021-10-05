@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 fn_nemo_dat_t = "./example_files/nemo_data_T_grid.nc"
 fn_nemo_dat_u = "./example_files/nemo_data_U_grid.nc"
 fn_nemo_dat_v = "./example_files/nemo_data_V_grid.nc"
-fn_nemo_dom = "./example_files/COAsT_example_NEMO_domain.nc"
+fn_nemo_dom = "./example_files/coast_example_nemo_domain.nc"
 # Configuration files describing the data files
 fn_config_t_grid = "./config/example_nemo_grid_t.json"
 fn_config_f_grid = "./config/example_nemo_grid_f.json"
@@ -40,7 +40,7 @@ Load data variables that are on the NEMO t-grid
 nemo_t = coast.Gridded( fn_data = fn_nemo_dat_t, fn_domain = fn_nemo_dom, config=fn_config_t_grid )
 ```
 
-Now create a transect between the points (54 N 15 W) and (56 N, 12 W) using the `coast.TransectT` object. This needs to be passed the corresponding NEMO object and transect end points. The model points closest to these coordinates will be selected as the transect end points.
+Now create a transect between the points (54 N 15 W) and (56 N, 12 W) using the `coast.TransectT` object. This needs to be passed the corresponding Gridded object and transect end points. The model points closest to these coordinates will be selected as the transect end points.
 
 
 ```python
