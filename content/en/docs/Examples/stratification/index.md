@@ -35,14 +35,14 @@ config_w = "./config/example_nemo_grid_w.json"
 
 ```
 
-Create a NEMO object and load in the data:
+Create a Gridded object and load in the data:
 
 
 ```python
 nemo_t = coast.Gridded(fn_nemo_grid_t_dat, fn_nemo_dom, config=config_t)
 ```
 
-The stratification variables are computed as centred differences of the t-grid variables. These will become w-grid variables. So, create an empty w-grid object, to store stratification. Note how we do not pass a NEMO data object for this load.
+The stratification variables are computed as centred differences of the t-grid variables. These will become w-grid variables. So, create an empty w-grid object, to store stratification. Note how we do not pass a NEMO data file for this load.
 
 
 ```python
