@@ -1,7 +1,7 @@
 ---
 title: "Transect subsetting"
 linkTitle: "Transects"
-date: 2020-11-24
+date: 2021-10-05
 weight: 6
 description: >
   Transect subsetting (a vertical slice of data between two coordinates): Creating them and performing some custom diagnostics with them.
@@ -26,20 +26,25 @@ fn_nemo_dat_t = "./example_files/nemo_data_T_grid.nc"
 fn_nemo_dat_u = "./example_files/nemo_data_U_grid.nc"
 fn_nemo_dat_v = "./example_files/nemo_data_V_grid.nc"
 fn_nemo_dom = "./example_files/COAsT_example_NEMO_domain.nc"
+# Configuration files describing the data files
+fn_config_t_grid = "./config/example_nemo_grid_t.json"
+fn_config_f_grid = "./config/example_nemo_grid_f.json"
+fn_config_u_grid = "./config/example_nemo_grid_u.json"
+fn_config_v_grid = "./config/example_nemo_grid_v.json"
 ```
 
 Load data variables that are on the NEMO t-grid
 
 
 ```python
-nemo_t = coast.NEMO( fn_data = fn_nemo_dat_t, fn_domain = fn_nemo_dom, grid_ref = 't-grid', chunks={} )
+nemo_t = coast.Gridded( fn_data = fn_nemo_dat_t, fn_domain = fn_nemo_dom, config=fn_config_t_grid )
 ```
 
-Now create a transect between the points (54 N 15 W) and (56 N, 12 W) using the `coast.Transect_t` object. This needs to be passed the corresponding NEMO object and transect end points. The model points closest to these coordinates will be selected as the transect end points.
+Now create a transect between the points (54 N 15 W) and (56 N, 12 W) using the `coast.TransectT` object. This needs to be passed the corresponding NEMO object and transect end points. The model points closest to these coordinates will be selected as the transect end points.
 
 
 ```python
-tran_t = coast.Transect_t( nemo_t, (54,-15), (56,-12) )
+tran_t = coast.TransectT( nemo_t, (54,-15), (56,-12) )
 tran_t.data
 ```
 
@@ -52,18 +57,18 @@ temp_mean.plot.pcolormesh(y='depth_0', yincrease=False )
 ```
 
 ## Flow across the transect
-With NEMO’s staggared grid, the first step is to define the transect on the f-grid so that the velocity components are between f-points. We do not need any model data on the f-grid, just the grid information, so create a nemo f-grid object
+With NEMO’s staggered grid, the first step is to define the transect on the f-grid so that the velocity components are between f-points. We do not need any model data on the f-grid, just the grid information, so create a nemo f-grid object
 
 
 ```python
-nemo_f = coast.NEMO( fn_domain = fn_nemo_dom, grid_ref='f-grid', chunks={} )
+nemo_f = coast.Gridded( fn_domain = fn_nemo_dom, config=fn_config_f_grid )
 ```
 
 and a transect on the f-grid
 
 
 ```python
-tran_f = coast.Transect_f( nemo_f, (54,-15), (56,-12) )
+tran_f = coast.TransectF( nemo_f, (54,-15), (56,-12) )
 tran_f.data
 ```
 
@@ -71,8 +76,8 @@ We also need the i- and j-components of velocity so (lazy) load the model data o
 
 
 ```python
-nemo_u = coast.NEMO( fn_data = fn_nemo_dat_u, fn_domain = fn_nemo_dom, grid_ref='u-grid', chunks={} )
-nemo_v = coast.NEMO( fn_data = fn_nemo_dat_v, fn_domain = fn_nemo_dom, grid_ref='v-grid', chunks={} )
+nemo_u = coast.Gridded( fn_data = fn_nemo_dat_u, fn_domain = fn_nemo_dom, config=fn_config_u_grid )
+nemo_v = coast.Gridded( fn_data = fn_nemo_dat_v, fn_domain = fn_nemo_dom, config=fn_config_v_grid )
 ```
 
 Now we can calculate the flow across the transect with the method
