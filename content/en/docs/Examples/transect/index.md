@@ -8,7 +8,7 @@ description: >
 ---
 In this tutorial we take a look at subsetting the model data along a transect (a custom straight line) and creating some bespoke diagnostics along it. We look at:
 
-    1. Creating a TRANSECT object, defined between two points.
+    1. Creating a Transect object, defined between two points.
     2. Plotting data along a transect.
     3. Calculating flow normal to the transect
 
