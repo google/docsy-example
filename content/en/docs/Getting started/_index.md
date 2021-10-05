@@ -82,7 +82,7 @@ mv COAsT_example_files example_files
 ## Preparation for Workshop
 
 How to install COAsT in a conda environment and download demonstration files
-for the COAsT Workshop on 30th November 2020.
+for the COAsT Workshop on 7th October 2021.
 
 ### Installation
 
@@ -130,30 +130,32 @@ The output should be
 ```
 If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
 
-Now load a NEMO output file and domain file into a NEMO object, specifying the
+Now load a NEMO output file and domain file into a Gridded object, specifying the
   grid (using example data just downloaded above):
 ```python
-data_file = 'example_files/COAsT_example_NEMO_data.nc' # <Path to NEMO data file>
-domain_file = 'example_files/COAsT_example_NEMO_domain.nc' # <Path to NEMO domain file>
-sci = coast.NEMO(data_file, domain_file, grid_ref = 't-grid')
+data_file = 'example_files/coast_example_nemo_data.nc' # <Path to NEMO data file>
+domain_file = 'example_files/coast_example_nemo_domain.nc' # <Path to NEMO domain file>
+config_file = "./config/example_nemo_grid_t.json" # <Path to associated configuration file>
+
+sci = coast.Gridded( data_file, domain_file, config_file )
 ```
 There are a bunch of warnings that can be ignored (and we might have fixed before the
   workshop! It is on the [Issue tracker](https://github.com/British-Oceanographic-Data-Centre/COAsT/issues/123)). You can now start having a look at some
-  of the methods inside the NEMO class. Interrogate the NEMO data by taking a look inside ``sci.dataset``. This contains all the information from the netCDF file.
+  of the methods inside the Gridded class. Interrogate the NEMO data by taking a look inside ``sci.dataset``. This contains all the information from the netCDF file.
 
 Let's take a look at some altimetry data around the UK too. Load in the data:
 ```python
-altimetry_file = 'example_files/COAsT_example_altimetry_data.nc' # <Path to Altimetry data file>
-altimetry = coast.ALTIMETRY(altimetry_file)
+altimetry_file = 'example_files/coast_example_altimetry_data.nc' # <Path to Altimetry data file>
+altimetry = coast.Altimetry(altimetry_file)
 ```
 Subset the data so that only data over the North West European Shelf remains in the object.
 ```
 ind = altimetry.subset_indices_lonlat_box([-10,10], [45,60])
-altimetry = altimetry.isel(t_dim=ind)
+altimetry = altimetry.isel(time=ind)
 ```
 Now take a look at the data inside the object:
 ```
-altimetry.quick_plot('sla_filtered')
+altimetry.quick_plot("ocean_tide_standard_name")
 ```
 
 Nice one! Hopefully that all worked and you're ready to take a look at the rest of the
