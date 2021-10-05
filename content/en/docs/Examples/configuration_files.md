@@ -14,14 +14,20 @@ This code is used internally within the package.
 ## Configuration file usage
 Configuration files are passed into a COAsT class on the instantiation of a new object. For example the ```Gridded class``` ```__init__``` method takes an argument ``config``.
 This argument must be a String or Path object representing a path to the configuration file.
+E.g.
 ```python
-from pathlib import Path
-from coast.gridded import Gridded
+config_file = "./config/example_nemo_grid_t.json" # path to json config file
+fn_nemo_dat = "coast_example_nemo_data.nc"
+fn_nemo_dom = "coast_example_nemo_domain.nc"
 
-config_file = Path("path/to/config_file.json")
-gridded_obj = Gridded(fn_data="data-file.nc", fn_domain="domain-file.nc", config=config_file)
+gridded_obj = coast.Gridded(fn_data=fn_nemo_dat, fn_domain=fn_nemo_dom, config=config_file)
 ```
 
+For convenience, as indicated above, the path to the configuration file could be alternatively expressed as a path object. E.g.:
+```python
+from pathlib import Path
+config_file = Path("path/to/config_file.json")
+```
 ## Configuration file structure
 Configuration files must follow a standard structure so that the ```ConfigParser``` class can parse the file correctly.
 
@@ -34,7 +40,7 @@ Depending on the type of configuration file, there are a number of required keys
 | ``type`` | A string value representing the type of configuration file. In the case of gridded config this will always be "gridded".       |
 | ``dimensionality`` | An integer value representing the number of dimensions within the data files.       |
 | ``grid_ref`` | A dictionary containing the type of grid, and a list of grid variables defining the mapping from the domain file to NEMO file. |
-| ``chunks`` | A dictionary defining a dask [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. JSON doesn't support integer keys, and so the dimensions name should be provided as the key instead. An empty dictionary will result in auto chunking. |
+| ``chunks`` | A dictionary defining a dask [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. JSON doesn't support integer keys, and so the dimensions name should be provided as the key instead. An empty dictionary will result in auto chunking. Rechunking can be applied subsequently with the standardised dimension names. |
 | ``dataset``   | Parent key for holding configuration specific to the dataset files. |
 | ``domain`` | Parent key for holding configuration specific to domain files. This is an __optional__ key depending on whether a domain file is required or not.     |
 | ``dimension_map`` | Child key of dataset/domain. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
@@ -51,7 +57,7 @@ Depending on the type of configuration file, there are a number of required keys
 | --- | ----------- |
 | ``type`` | A string value representing the type of configuration file. In the case of indexed config this will always be "indexed".       |
 | ``dimensionality`` | An integer value representing the number of dimensions within the data files.       |
-| ``chunks`` | A dictionary defining a dask [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. JSON doesn't support integer keys, and so the dimensions name should be provided as the key instead. An empty dictionary will result in auto chunking. |
+| ``chunks`` | A dictionary defining a dask [chunk shape](https://docs.dask.org/en/latest/array-chunks.html), used when loading in data files. JSON doesn't support integer keys, and so the dimensions name should be provided as the key instead. An empty dictionary will result in auto chunking. Rechunking can be applied subsequently with the standardised dimension names. |
 | ``dataset``   | Parent key for holding configuration specific to the dataset files. |
 | ``dimension_map`` | Child key of dataset. A dictionary defining the mappings between input data dimension names and the framework's standardised dimension names.  |
 | ``variable_map`` | Child key of dataset. A dictionary defining the mappings between input data variable names and the framework's standardised variable names. |
@@ -64,13 +70,13 @@ Below is the template of a gridded configuration file:
 ```json
 {
 	"type": "gridded",
-	"dimensionality": 3,
+	"dimensionality": 4,
 	"chunks": {
-		"dim1":1000,
-		"dim2":1000,
-		"dim3":1000
+		"time_counter":2,
+		"x":4,
+		"y":4
 	},
-	"grid_ref": {
+  "grid_ref": {
 		"t-grid": [
 			"glamt",
 			"gphit",
@@ -79,35 +85,30 @@ Below is the template of a gridded configuration file:
 			"e3t_0",
 			"deptht_0",
 			"tmask",
-			"bottom_level"
+			"bottom_level",
+			"hbatt"
 		]
 	},
 	"dataset": {
 		"dimension_map": {
-			"ex1": "time_counter",
-			"ex2": "deptht",
-			"ex3": "depthu",
-			"ex4": "depthv",
-			"ex5": "y",
-			"ex6": "x",
-			"ex7": "x_grid_T",
-			"ex8": "y_grid_T"
+			"time_counter": "t_dim",
+			"deptht": "z_dim",
+			"y": "y_dim",
+			"x": "x_dim",
+			"x_grid_T": "x_dim",
+			"y_grid_T": "y_dim"
 		},
 		"variable_map": {
-			"ex1": "time_counter",
-			"ex2": "votemper",
-			"ex3": "thetao",
-			"ex4": "temp",
-			"ex5": "toce",
-			"ex6": "so",
-			"ex7": "vosaline",
-			"ex8": "soce",
-			"ex9": "voce",
-			"ex10": "vomecrty",
-			"ex11": "uoce",
-			"ex12": "vozocrtx",
-			"ex13": "sossheig",
-			"ex14": "zos"
+			"time_counter": "time",
+			"votemper": "temperature",
+			"thetao": "temperature",
+			"temp": "temperature",
+			"toce": "temperature",
+			"so": "salinity",
+			"vosaline": "salinity",
+			"soce": "salinity",
+			"sossheig": "ssh",
+			"zos": "ssh"
 		},
 		"coord_vars": [
 			"longitude",
@@ -118,44 +119,22 @@ Below is the template of a gridded configuration file:
 	},
 	"domain": {
 		"dimension_map": {
-			"ex1": "t",
-			"ex2": "x",
-			"ex3": "y",
-			"ex4": "z"
+			"t": "t_dim0",
+			"x": "x_dim",
+			"y": "y_dim",
+			"z": "z_dim"
 		},
 		"variable_map": {
-			"ex1": "time_counter",
-			"ex2": "glamt",
-			"ex3": "glamu",
-			"ex4": "glamv",
-			"ex5": "glamf",
-			"ex6": "gphit",
-			"ex7": "gphiu",
-			"ex8": "gphiv",
-			"ex9": "gphif",
-			"ex10": "e1t",
-			"ex11": "e1u",
-			"ex12": "e1v",
-			"ex13": "e1f",
-			"ex14": "e2t",
-			"ex15": "e2u",
-			"ex16": "e2v",
-			"ex17": "e2f",
-			"ex18": "ff_t",
-			"ex19": "ff_f",
-			"ex20": "e3t_0",
-			"ex21": "e3w_0",
-			"ex22": "e3u_0",
-			"ex23": "e3v_0",
-			"ex24": "e3f_0",
-			"ex25": "tmask",
-			"ex26": "depthf_0",
-			"ex27": "depthu_0",
-			"ex28": "depthv_0",
-			"ex29": "depthw_0",
-			"ex30": "deptht_0",
-			"ex31": "ln_sco",
-			"ex32": "bottom_level"
+			"time_counter": "time0",
+			"glamt": "longitude",
+			"gphit": "latitude",
+			"e1t": "e1",
+			"e2t": "e2",
+			"e3t_0": "e3_0",
+			"tmask":"mask",
+			"deptht_0": "depth_0",
+			"bottom_level": "bottom_level",
+			"hbatt":"bathymetry"
 		}
 	},
 	"static_variables": {
