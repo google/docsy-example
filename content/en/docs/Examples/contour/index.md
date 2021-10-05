@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 fn_nemo_dat_t = "./example_files/nemo_data_T_grid.nc"
 fn_nemo_dat_u = "./example_files/nemo_data_U_grid.nc"
 fn_nemo_dat_v = "./example_files/nemo_data_V_grid.nc"
-fn_nemo_dom = "./example_files/COAsT_example_NEMO_domain.nc"
+fn_nemo_dom = "./example_files/coast_example_nemo_domain.nc"
 # Configuration files describing the data files
 fn_config_t_grid = "./config/example_nemo_grid_t.json"
 fn_config_f_grid = "./config/example_nemo_grid_f.json"
