@@ -56,7 +56,7 @@ nemo.dataset["landmask"] = nemo.dataset.bottom_level == 0
 nemo.dataset = nemo.dataset.rename({"depth_0": "depth"})
 ```
 
-### 1. Read in EN4 data and subset to domain
+### 2. Read in EN4 data and subset to domain
 
 Create a Profile object. Here we use EN4 data.
 ```
@@ -74,7 +74,7 @@ ind = profile.subset_indices_lonlat_box([-25.47, 16.25], [44, 63.5])[0]
 profile = profile.isel(profile=ind)
 ```
 
-### 2. Process EN4 data
+### 3. Process EN4 data
 Create a new profile object called processed, containing the quality
 controlled data. NOTE: .compute() or .load() will need to be called on
 processed.dataset to access data
