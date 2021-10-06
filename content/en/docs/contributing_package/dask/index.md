@@ -1,6 +1,7 @@
 ---
 title: "Dask"
 linkTitle: "Dask"
+date: 2021-10-05
 weight: 5
 menu:
   documentation:
@@ -14,12 +15,17 @@ Dask is a python library that allows code to be run in parallel based on the har
 
 
 ## Using Dask
-Dask is included in the xarray library, when loading a data source (file/NumPy array) you can turn Dask on by setting the _chunks_ variable
+Dask is included in the xarray library. When loading a data source (file/NumPy array) Dask is automatically initiated with the _chunks_ variable in the config file. However the chunking may not be optimal but you can adjust it before computation are made.
 
 ``` python
 
-nemo_t = coast.NEMO( fn_data=dn_files+fn_nemo_grid_t_dat, fn_domain=dn_files+fn_nemo_dom, grid_ref='t-grid', chunks={"time_counter":3})
-
+nemo_t = coast.Gridded( fn_data=dn_files+fn_nemo_grid_t_dat, fn_domain=dn_files+fn_nemo_dom, config=fn_config)
+chunks = {
+    "x_dim": 10,
+    "y_dim": 10,
+    "t_dim": 10,
+}  # Chunks are prescribed in the config json file, but can be adjusted while the data is lazy loaded.
+nemo_t.dataset.chunk(chunks)
 ```
 
 **chunks** tell Dask where to _break_ your data across the different processor tasks.
@@ -74,7 +80,7 @@ def set_timezero_depths(self, dataset_domain):
 these do not return the computed answer, rather it returns a delayed object. These delayed object get stacked, as more delayed methods are called. When the value is needed, it can be computed like so;
 
 ``` python
-ne = coast.NEMO(...)
+ne = coast.Gridded(...)
 # come complex delayed methods called
 
 ne.data_variable.compute()
@@ -86,7 +92,7 @@ Dask will now work out a computing path via all the required methods using as ma
 Dask is fundamentally a computational graph library, to understand what is happening in the background it can help to see these graphs (on smaller/simpler problems). This can be achieved by running;
 
 ``` python
-ne = coast.NEMO(...)
+ne = coast.Gridded(...)
 # come complex delayed methods called
 
 ne.data_variable.visualize()

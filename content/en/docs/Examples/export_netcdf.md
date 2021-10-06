@@ -1,10 +1,11 @@
 ---
 title: "Export to netCDF"
 linkTitle: "Export to netCDF"
+date: 2021-10-05
 weight: 17
 
 description: >
-  Example useage of how to export to netCDF.
+  Example usage of how to export to netCDF.
 ---
 
 This is a demonstration for how to export intermediate data from COAsT
@@ -20,14 +21,16 @@ import coast
 ```
 and by defining some file paths
 ```python
-fn_nemo_dat  = './example_files/COAsT_example_NEMO_data.nc'
-fn_nemo_dom  = './example_files/COAsT_example_NEMO_domain.nc'
-ofile = 'example_export_output.nc' # The target filename for output
+fn_nemo_dat  = "./example_files/coast_example_nemo_data.nc"
+fn_nemo_dom  = "./example_files/coast_example_nemo_domain.nc"
+config = "./config/example_nemo_grid_t.json"
+
+ofile = "example_export_output.nc" # The target filename for output
 ```
 
-We need to load in a NEMO object for doing NEMO things.
+We need to load in a Gridded object to get started.
 ```python
-nemo = coast.NEMO(fn_nemo_dat, fn_nemo_dom, grid_ref='t-grid')
+nemo = coast.Gridded(fn_nemo_dat, fn_nemo_dom, config=config)
 ```
 
 ## Export to netCDF

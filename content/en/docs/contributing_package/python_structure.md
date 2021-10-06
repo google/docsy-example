@@ -1,6 +1,7 @@
 ---
 title: "Python: Structure"
 linkTitle: "Python: Structure"
+date: 2021-10-05
 weight: 2
 menu:
   documentation:
@@ -13,29 +14,29 @@ description: >
 
 COAsT is an object-orientated package, meaning that data is stored within Python object
 structures. In addition to data storage, these objects contain methods (subroutines)
-which allow for manipulation of this data.  An example of such an object is the NEMO 
-object, which allows for the storage and manipulation of NEMO output and domain data. It 
-is important to understand how to load data using COAsT and the structure of the resulting 
+which allow for manipulation of this data.  An example of such an object is the Gridded
+object, which allows for the storage and manipulation of e.g. NEMO output and domain data. It
+is important to understand how to load data using COAsT and the structure of the resulting
 objects.
 
-A NEMO object is created and initialised by passing it the paths of the domain and data 
-files. Ideally, the grid type should also be specified (T, U, V or F in the case of NEMO). 
+A Gridded object is created and initialised by passing it the paths of the domain and data
+files. Ideally, the grid type should also be specified (T, U, V or F in the case of NEMO).
 For example, to load in data from a file containing data on a NEMO T-grid:
 
 ```
 import coast
 
-fn_data = '<path to T-grid data file(s)>'
-fn_domain = '<path to domain file>'
-
-data = coast.NEMO(fn_data, fn_domain, grid_ref='t-grid')
+fn_data = "<path to T-grid data file(s)>"
+fn_domain = "<path to domain file>"
+fn_config = "<path to json config file>"
+data = coast.Gridded(fn_data, fn_domain, fn_config)
 ```
 
-Ideally, NEMO output data should be in grid-specific files, i.e. containing output
-variables situated on a NEMO T, U, V or F grid. The whole domain file is supplied, 
-however only grid specific variables are placed into the NEMO object. A NEMO object 
-therefore contains grid-specific data and all corresponding grid variables. One of the 
-file names can beomitted (to get a data-only or grid only object), however functionality
+Ideally, Gridded model output data should be in grid-specific files, i.e. containing output
+variables situated on a NEMO T, U, V or F grid, whereas the grid variables are in a single domain file. On loading into COAsT,
+ only the grid specific variables appropriate for the paired data are placed into the Gridded object. A Gridded object
+therefore contains grid-specific data and all corresponding grid variables. One of the
+file names can be omitted (to get a data-only or grid only object), however functionality
 in this case will be limited.
 
 Once loaded, data is stored inside the object using an xarray.dataset object. Following
@@ -75,12 +76,11 @@ temp = data['temperature']
 ```
 These commands will all return an xarray.dataarray object. Manipulation of this object
 can be done using xarray commands, for example indexing using [] or xarray.isel. Be aware
-that indexing will preserve lazy loading, however and direct access or modifying of the 
-data will not. For this reason, if you require a subset of the data, it is best to 
+that indexing will preserve lazy loading, however and direct access or modifying of the
+data will not. For this reason, if you require a subset of the data, it is best to
 index first.
 
-The names of common grid variables are standardised within the COAsT package for
-consistency and ease of use. Along with their original NEMO names, these are:
+The names of common grid variables are standardised within the COAsT package using JSON configuration files. For example, the following lists COAsT internal variable followed by the typical NEMO variable names:
 
 1. longitude [glamt / glamu / glamv / glamf]
 2. latitude  [gphit / gphiu / gphiv / gphif]
@@ -89,7 +89,7 @@ consistency and ease of use. Along with their original NEMO names, these are:
 5. e2        [e1t / e1u / e1v / e1f] (dy variable)
 6. e3_0      [e3t_0 / e3u_0 / e3v_0 / e3f_0] (dz variable at time 0)
 
-Longitude, latitude and time are also set as coordinates. You might notice that dimensions 
+Longitude, latitude and time are also set as coordinates. You might notice that dimensions
 are also standardised:
 
 1. x_dim   The dimension for the x-axis (longitude)
@@ -99,8 +99,8 @@ are also standardised:
 
 Wherever possible, the aim is to ensure that all of the above is consistent across the
 whole COAsT toolbox. Therefore, you will also find the same names and dimensions in, for
-example observation objects. Future objects, where applicable, will also follow these 
+example observation objects. Future objects, where applicable, will also follow these
 conventions. If you (as a contributor) add new objects to the toolbox, following
 the above template is strongly encouraged. This includes using xarray dataset/dataarray
-objects where possible, adopting an object oriented approach and adhering to naming 
+objects where possible, adopting an object oriented approach and adhering to naming
 conventions.
