@@ -60,7 +60,7 @@ less COAsT/conda_requirements.txt
 numpy>=1.16
 dask>=2
 dask[complete]>=2
-xarray~=0.19.0
+xarray>=0.19
 matplotlib==3.2.1
 netCDF4>=1
 scipy>=1
@@ -85,7 +85,38 @@ mv COAsT_example_files example_files
 How to install COAsT in a conda environment and download demonstration files
 for the COAsT Workshop on 7th October 2021.
 
-### Installation
+Clone the repository starting in the directory you want to work in it:
+```shell
+git clone https://github.com/British-Oceanographic-Data-Centre/COAsT.git
+```
+Assuming a linux environment and that you have anaconda on your system:
+```shell
+## Fresh build in new conda environment
+module load anaconda/3-5.1.0 # or whatever it takes to make conda available
+yes |  conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
+yes | conda create --name workshop_env python=3.8 # create a new environment
+conda activate workshop_env # activate new environment
+```
+
+Move into the cloned repository and build it:
+```shell
+cd COAsT
+conda install --file conda_requirements.txt
+```
+
+Finally, download the example files within the repository file structure:
+```shell
+wget https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
+unzip COAsT_example_files.zip
+mv COAsT_example_files example_files
+```
+
+
+### Preparation for Workshop (if I get conda package working)
+
+
+
+#### Installation
 
 Assuming a linux environment and that you have anaconda on your system:
 
@@ -99,7 +130,7 @@ yes | conda install -c conda-forge -c bodc coast gsw=3.3.1 matplotlib=3.2.1 # in
 yes | conda install -c conda-forge cartopy=0.18.0
 ```
 
-### Example files
+#### Example files
 
 Download example files and link them into a new directory:
 
@@ -111,7 +142,7 @@ wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_
 ln -s COAsT_example_files example_files
 ```
 
-### Try it out!
+## Try it out!
 The below example works best with the COAsT example data. Start by opening a
 python terminal and then importing COAsT:
 ```python
@@ -138,7 +169,7 @@ data_file = 'example_files/coast_example_nemo_data.nc' # <Path to NEMO data file
 domain_file = 'example_files/coast_example_nemo_domain.nc' # <Path to NEMO domain file>
 config_file = "./config/example_nemo_grid_t.json" # <Path to associated configuration file>
 
-sci = coast.Gridded( data_file, domain_file, config_file )
+sci = coast.Gridded( data_file, domain_file, config=config_file )
 ```
 There are a bunch of warnings that can be ignored (and we might have fixed before the
   workshop! It is on the [Issue tracker](https://github.com/British-Oceanographic-Data-Centre/COAsT/issues/123)). You can now start having a look at some
