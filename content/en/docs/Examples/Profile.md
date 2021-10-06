@@ -86,7 +86,7 @@ processed = profile.process_en4()
 At this point, you can continue is the dataset is small, or save this
 processed data to file using processed.dataset.to_netcdf(<filename>)
   
-### 3. Interpolate Gridded object to Profile locations
+### 4. Interpolate Gridded object to Profile locations
 
 Extract profiles from the model at nearest locations and times
 For this we use Profile.obs_operator().
@@ -107,7 +107,7 @@ model_profiles = model_profiles.isel(profile=keep_indices)
 processed = processed.isel(profile=keep_indices)
 ```
 
-### 4. Interpolate Obs and Gridded onto Reference Depths                                                     
+### 5. Interpolate Obs and Gridded onto Reference Depths                                                     
 Interpolate both model and observed profiles onto reference depths.
 
 Define our reference depths
@@ -131,7 +131,7 @@ processed.dataset = processed.dataset[["temperature", "depth"]]
 processed_interp = processed.interpolate_vertical(reference_depths, interp_method="linear")
 ```
 
-### 5. Calculate Errors & Differences
+### 6. Calculate Errors & Differences
                                                            
 Data differences/errors. Now that we have our model and observed data on the same depths,
 we can do some differencing to get errors. We use the
@@ -148,7 +148,7 @@ differences.dataset.load()
 ```
 
                                                            
-### 6. Calculate Regional Average Errors
+### 7. Calculate Regional Average Errors
                                                            
 Average the differences into masked regions
 By averaging the differences into regions, we can get an idea of the
@@ -186,7 +186,7 @@ mask_means = differences.mask_means(mask_indices)
 ```
   
 
-### 6. Calculate Surface and Bottom Values/Errors
+### 8. Calculate Surface and Bottom Values/Errors
   
 Surface and bottom averaging.
 We can use a couple of routines to get surface and bottom values
