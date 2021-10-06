@@ -18,8 +18,8 @@ package receives a zenodo update (https://zenodo.org/account/settings/github/rep
 
 ### 1. Push to master
 
-To update the master branch update only the **version** of the package in the
-file *setup.py* (or the conda building wont work). E.g. shown as 0.4.1 below:
+Any push to master initiates the Git Actions to build and release the package. It is advisable then to prepare the release in develop and only ever pull into master from develop. (Pulling from master to develop could bring unexpected Git Actions to develop). In order for the package builds to work the version of the package must be unique. The **version** of the package is set in
+file *setup.py*. E.g. shown as 0.4.1 below:
 
 ```shell
 # setup.py
