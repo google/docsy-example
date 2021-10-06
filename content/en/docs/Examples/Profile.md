@@ -142,7 +142,7 @@ Calculate differences as obs minus model
 ```
 differences = processed_interp.difference(model_profiles_interp)
 ```
-# Load the differences to memory.
+Load the differences to memory.
 ```                              
 differences.dataset.load()
 ```
@@ -212,7 +212,7 @@ obs_bathymetry = model_profiles.dataset["bathymetry"].values
 processed.dataset["bathymetry"] = (["profile"], obs_bathymetry)
 obs_profiles_bottom = processed.bottom_means([10, 30], [100, np.inf])
 ```
-# Get differences
+Get differences
 ```
 bottom_errors = obs_profiles_bottom.difference(model_profiles_bottom)
 ```
