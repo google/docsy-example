@@ -127,7 +127,7 @@ and squared differenced for all variables:
 ntr_diff = ntr_obs.difference(ntr_mod)
 ssh_diff = obs.difference(model_timeseries)
 ```
-# We can then easily get mean errors, MAE and MSE
+We can then easily get mean errors, MAE and MSE
 ```
 mean_stats = ntr_diff.dataset.mean(dim="t_dim", skipna=True)
 ```
