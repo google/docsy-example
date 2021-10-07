@@ -8,7 +8,7 @@ description: >
 ---
 
 The TidegaugeMultiple object is for storing multiple tide gauge/time series datasets in one object.
-It has two dimensions: ('id', 't_dim') and is a child of the TIMESERIES and INDEXED objects.
+It has two dimensions: ('id', 't_dim') and is a child of the Timeseries and Indexed objects.
 All timeseries in this object must lie on the same time dimension and indices. If not the case
 in your data, then it must be preprocessed before use with this object.
 
@@ -61,14 +61,17 @@ nemo.dataset = nemo.dataset[["ssh", "landmask"]]
 ### 2. Create TidegaugeMultiple object
 
 Create the object and then inset the netcdf dataset
+```
 obs = coast.TidegaugeMultiple()
 obs.dataset = xr.open_dataset(fn_tg)
+```
 
 Cut down data to be only in 2018 to match model data.
+```
 start_date = datetime.datetime(2018, 1, 1)
 end_date = datetime.datetime(2018, 12, 31)
 obs.dataset = coast.general_utils.data_array_time_slice(obs.dataset, start_date, end_date)
-
+```
 
 ### 3. Interpolate model data onto obs locations
 
