@@ -142,7 +142,7 @@ wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_
 ln -s COAsT_example_files example_files
 ```
 
-## Try it out!
+## Test it!
 The below example works best with the COAsT example data. Start by opening a
 python terminal and then importing COAsT:
 ```python
