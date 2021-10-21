@@ -37,6 +37,9 @@ If you want to do SCSS edits and want to publish these, you need to install `Pos
 npm install
 ```
 
+The lock file `package-lock.json` will be generated. Please delete `package-lock.json` from `.gitignore` and put `package-lock.json` under Git control.
+
+
 ## Running the website locally
 
 Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
