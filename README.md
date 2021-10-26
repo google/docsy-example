@@ -1,17 +1,23 @@
 # Docsy Example
 
-[Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
+[Docsy][] is a [Hugo theme][] for technical documentation sites, providing easy
+site navigation, structure, and more. This **Docsy Example Project** uses the
+Docsy theme and provides a skeleton documentation structure for you to use. You
+can clone/copy this project and edit it with your own content, or use it as an
+example.
 
-The theme is included in this project as a Git submodule:
+In this project, the Docsy theme is included as a Git submodule:
 
 ```bash
-▶ git submodule
- a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
+$ git submodule
+...<hash>... themes/docsy (remotes/origin/HEAD)
 ```
 
-This Docsy Example Project is hosted at [https://example.docsy.dev/](https://example.docsy.dev/).
+You can find detailed theme instructions in the [Docsy user guide][].
 
-You can find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs/
+This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
+You can view deploy logs from the [deploy section of the project's Netlify
+dashboard][deploy-logs].
 
 This is not an officially supported Google product. This project is currently maintained.
 
@@ -107,3 +113,9 @@ Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-
 This error occurs if you have not installed the extended version of Hugo.
 See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructions on how to install Hugo.
 
+[deploy-logs]: https://app.netlify.com/sites/goldydocs/deploys
+[Docsy user guide]: https://docsy.dev/docs
+[Docsy]: https://github.com/google/docsy
+[example.docsy.dev]: https://example.docsy.dev
+[Hugo theme]: https://gohugo.io/themes/installing-and-using-themes/
+[Netlify]: https://netlify.com
