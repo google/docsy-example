@@ -17,7 +17,7 @@ You can find detailed theme instructions in the [Docsy user guide][].
 
 This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
 You can view deploy logs from the [deploy section of the project's Netlify
-dashboard][deploy-logs].
+dashboard][deploys], or this [alternate dashboard][].
 
 This is not an officially supported Google product. This project is currently maintained.
 
@@ -113,7 +113,8 @@ Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-
 This error occurs if you have not installed the extended version of Hugo.
 See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructions on how to install Hugo.
 
-[deploy-logs]: https://app.netlify.com/sites/goldydocs/deploys
+[alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
+[deploys]: https://app.netlify.com/sites/docsy-example/deploys
 [Docsy user guide]: https://docsy.dev/docs
 [Docsy]: https://github.com/google/docsy
 [example.docsy.dev]: https://example.docsy.dev
