@@ -3,6 +3,8 @@ title = "Goldydocs"
 
 enableRobotsTXT = true
 
+staticDir = ["static"]
+
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
 theme = ["docsy"]
 
