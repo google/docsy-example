@@ -18,7 +18,7 @@ Are there any system requirements for using your project? What languages are sup
 
 This package should be installed by run;
 ```shell
-conda install -c conda-forge -c bodc coast
+conda install -c bodc coast
 ```
 However, there is also the option of;
 ```shell
@@ -71,32 +71,11 @@ cartopy>=0.20.1
 spyder>=4
 ```
 
-Finally, you might want to download and unzip the example netCDF files:
-```
-cd COAsT
-wget https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
-unzip COAsT_example_files.zip
-mv COAsT_example_files example_files
-```
+## Obtaining Example files
 
+In order to try the Examples, example data files and configuration files are recommended.
 
-### Preparation for Workshop
-
-#### Installation
-
-Assuming a linux environment and that you have anaconda on your system:
-
-```shell
-## Fresh build in new conda environment
-module load anaconda/5-2021 # or whatever it takes to activate conda
-yes | conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
-yes | conda create --name workshop_env python=3.8 # create a new environment
-conda activate workshop_env # activate new environment
-yes | conda install -c conda-forge -c bodc coast # install COAsT within new environment
-yes | conda install -c conda-forge cartopy=0.20.1 # install cartopy
-```
-
-#### Example files
+#### Example data files
 
 Download example files and link them into a new directory:
 
@@ -107,6 +86,35 @@ cd coast_demo
 wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip &&  unzip COAsT_example_files.zip
 ln -s COAsT_example_files example_files
 ```
+
+#### Example configuration files
+
+To facilitate loading different types of data, key information is passed to COAsT using configuration files. The config files used in the Examples are in the repository, or can be downloaded as static files:
+
+```shell
+cd ../coast_demo
+wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip COAsT-master.zip
+ln -s COAsT-master/config config
+```
+
+## Preparation for Workshop
+
+#### Package Installation with conda
+
+Assuming a linux environment and that you have anaconda on your system:
+
+```shell
+## Fresh build in new conda environment
+module load anaconda/5-2021 # or whatever it takes to activate conda
+yes | conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
+yes | conda create --name workshop_env python=3.8 # create a new environment
+conda activate workshop_env # activate new environment
+yes | conda install -c bodc coast=1.2.7 # install COAsT within new environment
+yes | conda install -c conda-forge gsw=3.3.1 # enforce the GSW package number (something fishy with the build process bumped up this version number)
+yes | conda install -c conda-forge cartopy=0.20.1 # install cartopy
+```
+Then obtain the Example data and configuration files (as above).
+
 
 ## Test it!
 The below example works best with the COAsT example data. Start by opening a
