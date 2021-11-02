@@ -39,14 +39,14 @@ where you want to work:
 ```
 git clone https://github.com/British-Oceanographic-Data-Centre/COAsT.git
 ```
-Then start building a python environment. Here (for example) called ``coast_env``:
+Then start building a python environment. Here (for example) called ``coast_dev``:
 
 ```
 module load anaconda/5-2021 # or whatever it takes to activate conda
 conda config --add channels conda-forge # add conda-forge to your conda channels
 
-conda create -n coast_env python=3.8 # create a new environment. E.g. `coast_env`
-conda activate coast_env # activate new environment
+conda create -n coast_dev python=3.8 # create a new environment. E.g. `coast_dev`
+conda activate coast_dev # activate new environment
 ```
 Install packages to the environment:
 ```
