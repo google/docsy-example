@@ -18,7 +18,7 @@ Are there any system requirements for using your project? What languages are sup
 
 This package should be installed by run;
 ```shell
-conda install -c conda-forge -c bodc coast
+conda install -c bodc coast
 ```
 However, there is also the option of;
 ```shell
@@ -27,10 +27,9 @@ pip install COAsT
 
 if you wish to install from source then got to [GitHub](https://github.com/british-oceanographic-data-centre/COAsT) and follow the README instructions
 
-The base package should now be installed on your system. The following packages might be required for some of the advanced features;
+The base package should now be installed on your system. The following packages might be required for some of the advanced plotting features;
 
 - cartopy
-- graphviz
 
 ## Development use installation
 
@@ -43,7 +42,7 @@ git clone https://github.com/British-Oceanographic-Data-Centre/COAsT.git
 Then start building a python environment. Here (for example) called ``coast_env``:
 
 ```
-module load anaconda/3-5.1.0 # or whatever it takes to activate conda
+module load anaconda/5-2021 # or whatever it takes to activate conda
 conda config --add channels conda-forge # add conda-forge to your conda channels
 
 conda create -n coast_env python=3.8 # create a new environment. E.g. `coast_env`
@@ -61,76 +60,22 @@ numpy>=1.16
 dask>=2
 dask[complete]>=2
 xarray>=0.19
-matplotlib==3.2.1
+matplotlib>=3.4.3
 netCDF4>=1
 scipy>=1
 gsw==3.3.1
 utide>=0.2
 scikit-learn>=0.2
 scikit-image>=0.15
-cartopy>=0.18
+cartopy>=0.20.1
 spyder>=4
 ```
 
-Finally, you might want to download and unzip the example netCDF files:
-```
-cd COAsT
-wget https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
-unzip COAsT_example_files.zip
-mv COAsT_example_files example_files
-```
+## Obtaining Example files
 
-## Preparation for Workshop
+In order to try the Examples, example data files and configuration files are recommended.
 
-How to install COAsT in a conda environment and download demonstration files
-for the COAsT Workshop on 7th October 2021.
-
-Clone the repository starting in the directory you want to work in it:
-```shell
-git clone https://github.com/British-Oceanographic-Data-Centre/COAsT.git
-```
-Assuming a linux environment and that you have anaconda on your system:
-```shell
-## Fresh build in new conda environment
-module load anaconda/3-5.1.0 # or whatever it takes to make conda available
-yes |  conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
-yes | conda create --name workshop_env python=3.8 # create a new environment
-conda activate workshop_env # activate new environment
-```
-
-Move into the cloned repository and build it:
-```shell
-cd COAsT
-conda install --file conda_requirements.txt
-```
-
-Finally, download the example files within the repository file structure:
-```shell
-wget https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
-unzip COAsT_example_files.zip
-mv COAsT_example_files example_files
-```
-
-
-### Preparation for Workshop (if I get conda package working)
-
-
-
-#### Installation
-
-Assuming a linux environment and that you have anaconda on your system:
-
-```shell
-## Fresh build in new conda environment
-module load anaconda/3-5.1.0 # or whatever it takes to make conda available
-yes |  conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
-yes | conda create --name workshop_env python=3.8 # create a new environment
-conda activate workshop_env # activate new environment
-yes | conda install -c conda-forge -c bodc coast gsw=3.3.1 matplotlib=3.2.1 # install COAsT within new environment
-yes | conda install -c conda-forge cartopy=0.18.0
-```
-
-#### Example files
+#### Example data files
 
 Download example files and link them into a new directory:
 
@@ -141,6 +86,35 @@ cd coast_demo
 wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip &&  unzip COAsT_example_files.zip
 ln -s COAsT_example_files example_files
 ```
+
+#### Example configuration files
+
+To facilitate loading different types of data, key information is passed to COAsT using configuration files. The config files used in the Examples are in the repository, or can be downloaded as static files:
+
+```shell
+cd ../coast_demo
+wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip COAsT-master.zip
+ln -s COAsT-master/config config
+```
+
+## Preparation for Workshop
+
+#### Package Installation with conda
+
+Assuming a linux environment and that you have anaconda on your system:
+
+```shell
+## Fresh build in new conda environment
+module load anaconda/5-2021 # or whatever it takes to activate conda
+yes | conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
+yes | conda create --name workshop_env python=3.8 # create a new environment
+conda activate workshop_env # activate new environment
+yes | conda install -c bodc coast=1.2.7 # install COAsT within new environment
+yes | conda install -c conda-forge gsw=3.3.1 # enforce the GSW package number (something fishy with the build process bumped up this version number)
+yes | conda install -c conda-forge cartopy=0.20.1 # install cartopy
+```
+Then obtain the Example data and configuration files (as above).
+
 
 ## Test it!
 The below example works best with the COAsT example data. Start by opening a
@@ -158,7 +132,7 @@ print(matplotlib.__version__)
 The output should be
 ```python
 3.3.1
-3.2.1
+3.4.3
 ```
 If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
 
