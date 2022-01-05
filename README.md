@@ -29,10 +29,10 @@ A simple way to get started is to use this project as a template, which gives yo
 
 2. Select a name for your new project and click **Create repository from template**.
 
-3. Make your own local working copy of your new repo using git clone, replacing https://github.com/my/example.git with your repo’s web URL:
+3. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/my/example.git
+git clone --recurse-submodules --depth 1 https://github.com/me/example.git
 ```
 
 You can now edit your own versions of the site’s source files.
@@ -118,5 +118,5 @@ See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructio
 [Docsy user guide]: https://docsy.dev/docs
 [Docsy]: https://github.com/google/docsy
 [example.docsy.dev]: https://example.docsy.dev
-[Hugo theme]: https://gohugo.io/themes/installing-and-using-themes/
+[Hugo theme]: https://www.mikedane.com/static-site-generators/hugo/installing-using-themes/
 [Netlify]: https://netlify.com
