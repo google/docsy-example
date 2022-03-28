@@ -28,7 +28,7 @@ category = "categories"
 # set taxonomyCloud = [] to hide taxonomy clouds
 taxonomyCloud = ["tags", "categories"] 
 
-# If used, must have same length as params.taxonomy.taxonomyCloud
+# If used, must have same length as taxonomyCloud
 taxonomyCloudTitle = ["Tag Cloud", "Categories"] 
 
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
