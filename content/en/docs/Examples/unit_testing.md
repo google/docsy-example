@@ -44,3 +44,61 @@ If creating a new test class, your workflow may look something like this:
 2. **Add unit tests to your file:** You do this simply by creating new methods inside the class you created above. Each method that you want to act as a unit test must being with "test_". You should name your test to appropriately reflect its function. If there are any problems with your unit test when running the system then the name of the failed method will be returned. Using a long descriptive name in this case is useful.
 
 3. **Add new test file to unit_test.py:** You need to let the main `unit_test.py` script know about your new file and class. At the top of this file is a selection of import statement. Follow the other lines here by importing the names of your test class(es) from your file. For example, to import the `test_TEMPLATE` class from `test_TEMPLATE.py`, you can add the line `from test_TEMPLATE.py import test_TEMPLATE`. Next, you must add this imported classes to the `tests_to_do` list below. And that's it!
+
+## Unit testing coverage
+Code coverage is a useful statistic that tells us how much of the package (and individual classes) are 'covered' by the unit testing system. Coverage means what percentage of the code is 'touched' by the unit testing system. This is not built in to the system used by COAsT, however it is easy to set up and use.
+
+The Coverage python tool can be used to do this. For more information see [here](https://coverage.readthedocs.io/en/6.3.2/install.html). The tool can be easily installed using pip:
+
+`pip install coverage`
+
+Then we use the tool from the command line/terminal. From the main COAsT directory, enter:
+
+```
+coverage run unit_testing/unit_test.py
+```
+This will run the unit test as usual, but with the coverage tool in the background (takes a little longer than usual). The result is a new output file in the COAsT directory called .coverage. We can't read this but can transform it into a readable report using:
+
+```
+coverage report
+```
+Which outputs statistics to the screen for each file and the whole package. For example:
+
+```Name                                           Stmts   Miss  Cover
+------------------------------------------------------------------
+coast/__init__.py                                 28      0   100%
+coast/altimetry.py                               169    139    18%
+coast/argos.py                                    24     14    42%
+coast/climatology.py                              85     67    21%
+coast/coast.py                                   205    147    28%
+coast/config_parser.py                            51      9    82%
+coast/config_structure.py                         53      0   100%
+coast/contour.py                                 485    443     9%
+coast/crps_util.py                               117     56    52%
+coast/eof.py                                      83     76     8%
+coast/general_utils.py                           153     88    42%
+coast/glider.py                                   16      8    50%
+coast/gridded.py                                 377    267    29%
+coast/index.py                                    49     25    49%
+coast/internal_tide.py                            81     72    11%
+coast/lagrangian.py                                3      0   100%
+coast/logging_util.py                             50      3    94%
+coast/mask_maker.py                               66     46    30%
+coast/oceanparcels.py                             16      8    50%
+coast/plot_util.py                               129     94    27%
+coast/profile.py                                 345    314     9%
+coast/stats_util.py                               67     43    36%
+coast/tidegauge.py                               453    113    75%
+coast/tidegauge_analysis.py                      189     15    92%
+coast/timeseries.py                               35     29    17%
+coast/track.py                                     3      0   100%
+coast/transect.py                                420    385     8%
+coast/xesmf_convert.py                            32     21    34%
+------------------------------------------------------------------
+TOTAL                                           4851   3071    37%
+```
+
+This table shows statistics for each file in the COAsT package. There are three key statistics returns: `stmts`, `Miss` and `Cover`. `stmts` tells us how many executable statements are reached, `Miss` tells us how many were missed and `Cover` tells us the percentage coverage.
+
+There are plenty of extra features, such as outputting to various file types and flags which control the coverage calculations. See the website for more information.
+
