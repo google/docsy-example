@@ -60,4 +60,17 @@ A typical workflow for editting COAsT in git might look like:
 
 **Note: After creating a pull request, Github will automatically apply "black formatting" to the code. This will commit new (small) changes to the branch so you should always do a `git pull` on your branch to make sure your local version is up to date with the remote. 
 
-## Git cheat sheet
+## Condensed Workflow
+
+1. `git clone git@github.com:British-Oceanographic-Data-Centre/COAsT.git`.
+2. `git checkout develop`
+3. `git checkout -b new_branch_name`
+4. Make changes
+5. `git add changed_file`
+6. `git commit -m "what changes have you made"`
+7. `git push origin`
+8. If your branch changed by anyone else, `git pull`
+9. Repeat steps 4-8
+10. `git checkout develop` `git pull` `git checkout your_branch` `git merge develop` `git push origin`
+11. Create pull request from `your_branch` to `develop`, include description and request reviewers.
+12. Reviewers accept, Merge branch.
