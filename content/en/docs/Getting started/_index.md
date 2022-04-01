@@ -53,7 +53,7 @@ Install packages to the environment:
 cd COAsT
 conda install --file conda_dev_requirements.txt
 ```
-At the time of writing (30/03/2022) the contents of `conda_dev_requirements.txt` was:
+At the time of writing (01/04/2022) the contents of `conda_dev_requirements.txt` was:
 ```
 less COAsT/conda_dev_requirements.txt
 numpy>=1.22.3
@@ -67,6 +67,7 @@ gsw>=3.4.0
 utide>=0.2.6
 scikit-learn>=1.0.2
 scikit-image>=0.19.2
+statsmodels>=0.13.2
 cartopy>=0.20.2
 spyder>=5.1.5
 ```
