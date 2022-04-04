@@ -15,12 +15,11 @@ There are examples for using Profile and ProfileAnalysis for model validation in
 
 # Profile Class
 
-OBSERVATION type class for storing data from a CTD Profile (or similar
-    down and up observations). The structure of the class is based around having
-    discrete profile locations with independent depth dimensions and coords. 
-    The class dataset should contain two dimensions:
+INDEXED type class for storing data from a CTD Profile (or similar down and up observations). The structure of the class is based around having discrete profile locations with independent depth dimensions and coords. 
 
-        > id_dim      :: The profiles dimension. Each element of this dimension
+The class dataset should contain two dimensions:
+
+        > id_dim  :: The profiles dimension. Each element of this dimension
                      contains data (e.g. cast) for an individual location.
         > z_dim   :: The dimension for depth levels. A profile object does not
                      need to have shared depths, so NaNs might be used to
@@ -43,9 +42,27 @@ OBSERVATION type class for storing data from a CTD Profile (or similar
 
 ## Methods
 
-{{% pageinfo color="primary" %}}
-This is placeholder content.
-{{% /pageinfo %}}
+{{< card header="**read_en4(self, fn_en4, chunks: dict = {}, multiple=False)**" 
+          title="" subtitle="" footer="">>}}
+        Reads a single or multiple EN4 netCDF files into the COAsT profile
+        data structure.
+
+        Parameters
+        ----------
+        fn_en4 : TYPE
+            path to data file.
+        chunks : dict, optional
+            Chunking specification
+        multiple : TYPE, optional
+            True if reading multiple files otherwise False
+
+        Returns
+        -------
+        None. Populates dataset within Profile object.
+        """
+
+…
+{{< /card >}}
 
 # `ProfileAnalysis` Method
 
