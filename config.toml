@@ -10,9 +10,6 @@ enableMissingTranslationPlaceholders = true
 
 enableRobotsTXT = true
 
-# Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["docsy"]
-
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
@@ -140,9 +137,9 @@ github_project_repo = "https://github.com/google/docsy"
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
 
-# Uncomment this if you have a newer GitHub repo with "main" as the default branch,
+# Uncomment this if your GitHub repo does not have "main" as the default branch,
 # or specify a new value if you want to reference another branch in your GitHub links
-# github_branch= "main"
+github_branch= "master"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "d72aa9b2712488cc3"
@@ -220,3 +217,18 @@ enable = false
   url = "https://example.org/mail"
   icon = "fa fa-envelope"
   desc = "Discuss development issues around the project"
+
+# hugo module configuration
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/google/docsy -> ../../docsy"
+  [module.hugoVersion]
+    extended = true
+    min = "0.75.0"
+  [[module.imports]]
+    path = "github.com/google/docsy"
+    disable = false
+  [[module.imports]]
+    path = "github.com/google/docsy/dependencies"
+    disable = false    
