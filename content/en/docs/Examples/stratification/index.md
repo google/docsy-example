@@ -46,7 +46,7 @@ The stratification variables are computed as centred differences of the t-grid v
 
 
 ```python
-nemo_w = coast.Gridded(fn_domain=dn_files + fn_nemo_dom, config=config_w)
+nemo_w = coast.Gridded(fn_domain=fn_nemo_dom, config=config_w)
 ```
 
 ## Subset the Domain
@@ -56,9 +56,9 @@ We are not interested in the whole doman so it is computationally efficient to s
 
 ```python
 ind_2d = nemo_t.subset_indices([51,-4], [62,15])
-nemo_nwes_t = nemo_t.isel(y_dim=ind_sci[0], x_dim=ind_sci[1]) #nwes = northwest european shelf
+nemo_nwes_t = nemo_t.isel(y_dim=ind_2d[0], x_dim=ind_2d[1]) #nwes = northwest european shelf
 ind_2d = nemo_w.subset_indices([51,-4], [62,15])
-nemo_nwes_w = nemo_w.isel(y_dim=ind_sci[0], x_dim=ind_sci[1]) #nwes = northwest european shelf
+nemo_nwes_w = nemo_w.isel(y_dim=ind_2d[0], x_dim=ind_2d[1]) #nwes = northwest european shelf
 nemo_nwes_t.dataset
 ```
 
