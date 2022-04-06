@@ -4,7 +4,7 @@ linkTitle: "Climatology"
 weight: 5
 
 description: >
-  Example useage of Climatology object.
+  Example useage of Climatology object
 ---
 
 
