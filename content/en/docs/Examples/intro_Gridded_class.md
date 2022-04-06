@@ -102,3 +102,37 @@ nemo_t_subset.dataset
 Alternatively, `xarray.isel` can be applied directly to the `xarray.Dataset` object.
 
 A longitude/latitude box of data can also be extracted using `Gridded.subset_indices()`.
+
+### Example for NEMO-ERSEM biogechemical variables
+Import COAsT, define some file paths for NEMO-ERSEM output data and a NEMO domain,
+and read/load your NEMO-ERSEM data into a gridded object, example:
+
+```python
+import coast
+import matplotlib.pyplot as plt
+
+fn_bgc_dat = "./example_files/coast_example_SEAsia_BGC_1990.nc"
+fn_bgc_dom = "./example_files/coast_example_domain_SEAsia.nc"
+fn_config_bgc_grid = "./config/example_nemo_bgc.json"
+
+nemo_bgc = coast.Gridded(fn_data = fn_bgc_dat, fn_domain = fn_bgc_dom, config=fn_config_bgc_grid)
+nemo_bgc.dataset
+```
+
+As an example plot a snapshot of dissolved inorganic carbon at the sea surface
+```python
+fig = plt.figure()
+plt.pcolormesh(
+    nemo_bgc.dataset.longitude,
+    nemo_bgc.dataset.latitude,
+    nemo_bgc.dataset.dic.isel(t_dim=0).isel(z_dim=0),
+    cmap="RdYlBu_r",
+    vmin=1600,
+    vmax=2080,
+)
+plt.colorbar()
+plt.title("DIC, mmol/m^3")
+plt.xlabel("longitude")
+plt.ylabel("latitude")
+plt.show()
+```
