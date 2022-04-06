@@ -53,7 +53,7 @@ To read a gesla file between two dates, we can use:
 ```
 date0 = datetime.datetime(2007,1,10)
 date1 = datetime.datetime(2007,1,12)
-tidegauge.read_gesla_v3(fn_tidegauge, datestart = date0, date_end = date1)
+tidegauge.read_gesla_v3(fn_tidegauge, date_start = date0, date_end = date1)
 ```
 
 For the rest of our examples, we will use data from multiple tide gauges
