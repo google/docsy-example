@@ -136,3 +136,5 @@ plt.xlabel("longitude")
 plt.ylabel("latitude")
 plt.show()
 ```
+{{< imgproc SEAsia_DIC_surface Fit "600x700" >}}
+{{< /imgproc >}}
