@@ -35,9 +35,33 @@ be available:
 
 # Example Useage
 
+Below is a description of the available example scripts for this class as well
+as an overview of validation using` Profile` and `ProfileAnalysis`.
+
+### Example Scripts
+
 Please see COAsT/example_scripts/profile_validation for some scripts which
 demonstrate how to use the Profile and ProfileAnalysis classes for model
-validation. Below is an overview:
+validation. 
+
+1. `analysis_preprocess_en4.py` : If you're using EN4 data, this kind of script
+might be your first step for analysis.
+
+2. `analysis_extract_and_compare.py`: This script shows you how to extract
+the nearest model profiles, compare them with EN4 observations and get errors
+throughout the vertical dimension and averaged in surface and bottom zones
+
+3. `analysis_extract_and_compare_single_process.py`: This script does the same
+as number 2. However, it is modified slightly to take a command line argument
+which helps it figure out which dates to analyse. This means that this script
+can act as a template for `jug` type parallel processing on, e.g. JASMIN.
+
+4. `analysis_mask_means.py`: This script demonstrates how to use boolean masks
+to obtain regional averages of profiles and errors.
+
+5. `analysis_average_into_grid_boxes.py`: This script demonstrates how to 
+average the data inside a `Profile` object into regular grid boxes and 
+seasonal climatologies.
 
 ### Basic useage
 
