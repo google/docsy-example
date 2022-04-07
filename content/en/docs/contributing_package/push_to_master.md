@@ -34,6 +34,14 @@ PACKAGE = SimpleNamespace(**{
     ....
 ```
 
+Package version also appears in CITATION.cff file, which therefore also needs updating. E.g.:
+```
+...
+title: British-Oceanographic-Data-Centre/COAsT: v2.0.1
+version: v2.0.1
+date-released: 2022-04-07
+```
+
 Version numbering follows the [semantic versioning convention](http://semver.org/).
 Briefly, given a version number MAJOR.MINOR.PATCH, increment the:
 * MAJOR version when you make incompatible API changes,
