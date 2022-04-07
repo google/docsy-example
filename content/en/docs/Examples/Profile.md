@@ -77,10 +77,10 @@ files. These can be used to easily read data into your new profile object:
 
 ```
 # Read WOD data into profile object (OVERWRITES DATASET)
-profile.read_wod( filename, config = config_file )
+profile.read_wod( filename )
 
 # Read EN4 data into profile object
-profile.read_en4( filename, config = config_file )
+profile.read_en4( filename )
 ```
 
 Alternatively, you can pass an `xarray.dataset` straight to Profile:
@@ -92,8 +92,8 @@ We can do some simple spatial and temporal manipulations of this data:
 
 ```
 # Cut out a geographical box
-profile = profile.subset_indices_lonlat_box(longitude_bounds = [-15, 15], 
-                                            latitude_bounds = [45, 65])
+profile = profile.subset_indices_lonlat_box(lonbounds = [-15, 15], 
+                                            latbounds = [45, 65])
 
 # Cut out a time window
 profile = profile.time_slice( date0 = datetime(2004, 1, 1), date1 = datetime(2005,1,1))
