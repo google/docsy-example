@@ -105,7 +105,7 @@ tidegauge = tidegauge.subset_indices_lonlat_box(lonbounds = [-5, 0],
 tidegauge = tidegauge.time_slice( date0 = datetime.datetime(2007, 1, 1), date1 = datetime.datetime(2007,1,31))
 ```
 
-We can extract just some variables using:
+We can extract just some variables using, e.g.:
 
 ```
 nemo.dataset = nemo.dataset.rename({"depth_0": "depth"})
