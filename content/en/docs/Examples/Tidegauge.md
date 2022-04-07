@@ -89,7 +89,9 @@ fig, ax = tidegauge.plot_on_map()
 
 Or to look at a time series of the sea_level variable:
 ```
-fig, ax = tidegauge.plot_timeseries('ssh', qc_colors=True)
+id=1
+tidegauge.dataset.ssh[id].rename({'t_dim':'time'}).plot()  # rename time dimension to enable automatic x-axis labelling
+plt.show()
 ```
 
 Note that start and end dates can also be specified for plot_timeseries().
