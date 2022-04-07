@@ -63,7 +63,7 @@ using some basic metrics. The basic_stats() routine can be used for this,
 which calculates some simple metrics including differences, RMSE and
 correlations. NOTE: This may not be a wise choice of variables.
 ```
-stats = altimetry.basic_stats('interp_ssh', 'sla_filtered')
+stats = altimetry.basic_stats("ocean_tide_standard_name", "interp_ssh")
 ```
 
 Take a look inside stats.dataset to see all of the new variables. When using
@@ -76,8 +76,8 @@ Probability Score (CRPS). For this, we need to hand over the model object,
 a model variable and an observed variable. We also give it a neighbourhood
 radius in km (nh_radius).
 ```
-crps = altimetry.crps(nemo, model_var_name = 'ssh',
-                      obs_var_name = 'sla_filtered', nh_radius = 20)
+crps = altimetry.crps(nemo, model_var_name ="ssh", 
+                    obs_var_name="ocean_tide_standard_name", nh_radius=20)
 ```
 
 Again, take a look inside crps.dataset to see some new variables. Similarly
@@ -88,11 +88,11 @@ Altimetry has a ready built quick_plot() routine for taking a look at any
 of the observed or derived quantities above. So to take a look at the
 'sla_filtered' variable:
 ```
-fig, ax = altimetry.quick_plot('sla_filtered')
+fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
 ```
 
 As stats and crps are also Altimetry objects, quick_plot() can also be used:
 ```
-fig, ax = crps.quick_plot('crps')
-fig, ax = stats.quick_plot('absolute_error')
+fig, ax = crps.quick_plot("crps")
+fig, ax = stats.quick_plot("absolute_error")
 ```

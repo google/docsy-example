@@ -9,10 +9,10 @@ description: >
 ## Prerequisites
 
 This package requires;
-- python version 3.7+
-- Anaconda version 3.7
+- python version 3.8+
+- Anaconda version 4.10+
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+Are there any system requirements for using this project? What languages are supported (if any)? Do users need to already have any software or tools installed?
 
 ## Basic use installation via conda or pip
 
@@ -51,24 +51,25 @@ conda activate coast_dev # activate new environment
 Install packages to the environment:
 ```
 cd COAsT
-conda install --file conda_requirements.txt
+conda install --file conda_dev_requirements.txt
 ```
-At the time of writing (06/10/2021) the contents of `conda_requirements.txt` was:
+At the time of writing (01/04/2022) the contents of `conda_dev_requirements.txt` was:
 ```
-less COAsT/conda_requirements.txt
-numpy>=1.16
-dask>=2
-dask[complete]>=2
-xarray>=0.19
-matplotlib>=3.4.3
-netCDF4>=1
-scipy>=1
-gsw==3.3.1
-utide>=0.2
-scikit-learn>=0.2
-scikit-image>=0.15
-cartopy>=0.20.1
-spyder>=4
+less COAsT/conda_dev_requirements.txt
+numpy>=1.22.3
+dask>=2022.3.0
+dask[complete]>=2022.3.0
+xarray>=2022.3.0
+matplotlib>=3.5.1
+netCDF4>=1.5.8
+scipy>=1.8.0
+gsw>=3.4.0
+utide>=0.2.6
+scikit-learn>=1.0.2
+scikit-image>=0.19.2
+statsmodels>=0.13.2
+cartopy>=0.20.2
+spyder>=5.1.5
 ```
 
 ## Obtaining Example files
@@ -109,9 +110,9 @@ module load anaconda/5-2021 # or whatever it takes to activate conda
 yes | conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
 yes | conda create --name workshop_env python=3.8 # create a new environment
 conda activate workshop_env # activate new environment
-yes | conda install -c bodc coast=1.2.7 # install COAsT within new environment
-yes | conda install -c conda-forge gsw=3.3.1 # enforce the GSW package number (something fishy with the build process bumped up this version number)
-yes | conda install -c conda-forge cartopy=0.20.1 # install cartopy
+yes | conda install -c bodc coast=2.0.0 # install COAsT within new environment
+yes | conda install -c conda-forge gsw=3.4.0 # enforce the GSW package number (something fishy with the build process bumped up this version number)
+yes | conda install -c conda-forge cartopy=0.20.2 # install cartopy
 ```
 Then obtain the Example data and configuration files (as above).
 
@@ -131,8 +132,8 @@ print(matplotlib.__version__)
 ```
 The output should be
 ```python
-3.3.1
-3.4.3
+3.4.0
+3.5.1
 ```
 If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
 
