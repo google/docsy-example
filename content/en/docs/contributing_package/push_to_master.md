@@ -19,7 +19,7 @@ package receives a zenodo update (https://zenodo.org/account/settings/github/rep
 ### 1. Push to master
 
 Any push to master initiates the Git Actions to build and release the package. It is advisable then to prepare the release in develop and only ever pull into master from develop. (Pulling from master to develop could bring unexpected Git Actions to develop). In order for the package builds to work the version of the package must be unique. The **version** of the package is set in
-file *setup.py*. E.g. shown as 0.4.1 below:
+file *setup.py*. E.g. shown as 2.0.1 below:
 
 ```shell
 # setup.py
@@ -27,7 +27,7 @@ file *setup.py*. E.g. shown as 0.4.1 below:
 ...
 PACKAGE = SimpleNamespace(**{
     "name": "COAsT",
-    "version": "0.4.1",
+    "version": "2.0.1",
     "description": "This is the Coast Ocean Assessment Tool",
     "url": "https://www.bodc.ac.uk",
     "download_url": "https://github.com/British-Oceanographic-Data-Centre/COAsT/",
