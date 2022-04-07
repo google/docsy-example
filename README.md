@@ -1,16 +1,20 @@
 # Docsy Example
 
-[Docsy][] is a [Hugo theme][] for technical documentation sites, providing easy
-site navigation, structure, and more. This **Docsy Example Project** uses the
-Docsy theme and provides a skeleton documentation structure for you to use. You
-can clone/copy this project and edit it with your own content, or use it as an
-example.
+[Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
+site navigation, structure, and more. This **Docsy Example Project** uses the Docsy
+theme component as a hugo module and provides a skeleton documentation structure for you to use.
+You can clone/copy this project and edit it with your own content, or use it as an example.
 
-In this project, the Docsy theme is included as a Git submodule:
+In this project, the Docsy theme component is pulled in as a Hugo module, together with other module dependencies:
 
 ```bash
-$ git submodule
-...<hash>... themes/docsy (remotes/origin/HEAD)
+$ hugo mod graph
+hugo: collected modules in 566 ms
+hugo: collected modules in 578 ms
+github.com/google/docsy-example github.com/google/docsy@v0.2.0
+github.com/google/docsy-example github.com/google/docsy/dependencies@v0.2.0
+github.com/google/docsy/dependencies@v0.2.0 github.com/twbs/bootstrap@v4.6.1+incompatible
+github.com/google/docsy/dependencies@v0.2.0 github.com/FortAwesome/Font-Awesome@v0.0.0-20210804190922-7d3d774145ac
 ```
 
 You can find detailed theme instructions in the [Docsy user guide][].
@@ -32,7 +36,7 @@ A simple way to get started is to use this project as a template, which gives yo
 3. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/me/example.git
+git clone --depth 1 https://github.com/me/example.git
 ```
 
 You can now edit your own versions of the site’s source files.
@@ -111,12 +115,24 @@ Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-
 ```
 
 This error occurs if you have not installed the extended version of Hugo.
-See our [user guide](https://www.docsy.dev/docs/getting-started/) for instructions on how to install Hugo.
+See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo) of the user guide for instructions on how to install Hugo.
+
+Or you may encounter the following error:
+
+```
+➜ hugo server
+
+Error: failed to download modules: binary with name "go" not found
+```
+
+This error occurs if you have not installed the `go` programming language on your system.
+See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language) of the user guide for instructions on how to install `go`.
+
 
 [alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
 [deploys]: https://app.netlify.com/sites/docsy-example/deploys
 [Docsy user guide]: https://docsy.dev/docs
 [Docsy]: https://github.com/google/docsy
 [example.docsy.dev]: https://example.docsy.dev
-[Hugo theme]: https://www.mikedane.com/static-site-generators/hugo/installing-using-themes/
+[Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
