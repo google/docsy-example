@@ -110,7 +110,7 @@ module load anaconda/5-2021 # or whatever it takes to activate conda
 yes | conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
 yes | conda create --name workshop_env python=3.8 # create a new environment
 conda activate workshop_env # activate new environment
-yes | conda install -c bodc coast=2.0.0 # install COAsT within new environment
+yes | conda install -c bodc coast=2.0.3 # install COAsT within new environment
 yes | conda install -c conda-forge cartopy=0.20.2 # install cartopy
 ```
 Then obtain the Example data and configuration files (as above).
