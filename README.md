@@ -37,7 +37,10 @@ A simple way to get started is to use this project as a template, which gives yo
 git clone --depth 1 https://github.com/me/example.git
 ```
 
-You can now edit your own versions of the site’s source files.
+Depending on your environment you may need to adjust the top-level `module` settings in your project's Hugo config file, for example, by adding a proxy to use when downloading remote modules.
+You can find details of what these configuration settings do in the [Hugo modules documentation](https://gohugo.io/hugo-modules/configuration/#module-config-top-level). 
+
+Once your settings are adjusted, you can edit your own versions of the site’s source files.
 
 If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
 
@@ -170,7 +173,7 @@ $ hugo server
 Error: failed to download modules: binary with name "go" not found
 ```
 
-This error occurs if you have not installed the `go` programming language on your system.
+This error occurs if the `go` programming language is not available on your system.
 See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language) of the user guide for instructions on how to install `go`.
 
 
