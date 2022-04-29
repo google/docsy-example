@@ -44,7 +44,7 @@ You can now edit your own versions of the site’s source files.
 If you want to do SCSS edits and want to publish these, you need to install `PostCSS`
 
 ```bash
-npm install
+npm install postcss
 ```
 
 ## Running the website locally
