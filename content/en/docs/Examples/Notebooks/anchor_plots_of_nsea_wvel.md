@@ -6,29 +6,20 @@
     description: >
         Anchor plots of nsea wvel example.
 ---
-## ANChor_plots_of_NSea_pycnocline.py
-
-
-DEV_jelt/NEMO_diag/ANChor
-This needs to move to the above
-
+### Import dependencies
 
 
 ```python
 import coast
 import matplotlib.pyplot as plt
-
-# import matplotlib.colors as colors # colormap fiddling
-
 ```
 
 
+### Loading and initialising methods 
+
+
+
 ```python
-
-#################################################
-#%%  Loading and initialising methods ##
-#################################################
-
 dir_nam = "/projectsa/anchor/NEMO/AMM60/"
 fil_nam = "AMM60_1h_20100818_20100822_NorthSea.nc"
 dom_nam = "/projectsa/FASTNEt/jelt/AMM60/mesh_mask.nc"
@@ -46,26 +37,44 @@ chunks = {
 sci_w = coast.Gridded(dir_nam + fil_nam, dom_nam, config=config)
 sci_w.dataset.chunk(chunks)
 
-#% NEMO output is not standard with u,v fields included with w-pts. Tidy to avoid confusion
+```
+
+*NEMO output is not standard with u,v fields included with w-pts.*
+
+
+```python
+
 sci_w.dataset = sci_w.dataset.drop(["uo", "vo", "depthv"])
 sci_w.dataset = sci_w.dataset.swap_dims({"depthw": "z_dim"})
 
 ```
 
+## Subset of data and domain
+
+
+#### Pick out a North Sea subdomain
+
+
 
 ```python
-
-#################################################
-#%% subset of data and domain ##
-#################################################
-# Pick out a North Sea subdomain
 ind_sci = sci_w.subset_indices([51, -4], [60, 15])
 sci_nwes_w = sci_w.isel(y_dim=ind_sci[0], x_dim=ind_sci[1])  # nswes = northwest europe shelf
 
-#%% Compute a diffusion from w-vel
-Kz = (sci_nwes_w.dataset.wo * sci_nwes_w.dataset.e3_0).sum(dim="z_dim").mean(dim="t_dim")
+```
 
-# plot map
+#### Compute a diffusion from w-vel
+
+
+```python
+Kz = (sci_nwes_w.dataset.wo * sci_nwes_w.dataset.e3_0).sum(dim="z_dim").mean(dim="t_dim")
+```
+
+
+#### Plot map
+
+
+
+```python
 lon = sci_nwes_w.dataset.longitude.squeeze()
 lat = sci_nwes_w.dataset.latitude.squeeze()
 
@@ -80,7 +89,14 @@ plt.clim([-50e-3, 50e-3])
 plt.colorbar()
 # fig.savefig("")
 
-#%% Transect Method
+```
+
+
+#### Transect Method
+
+
+
+```python
 tran_w = coast.TransectT(sci_nwes_w, (51, 2.5), (61, 2.5))
 
 lat_sec = tran_w.data.latitude.expand_dims(dim={"z_dim": 51})
@@ -92,10 +108,13 @@ wo_sec = tran_w.data.wo
 ```
 
 
+### Make map and profile plots
+
+
+
+
 ```python
 
-#%% Make map and profile plots
-#################################################
 for i in range(2):
     for lat0 in [54, 57]:
         if lat0 == 54:
@@ -158,10 +177,11 @@ for i in range(2):
 
 ```
 
+### Plot sections
+
 
 ```python
 
-#%% Plot sections
 fig = plt.figure()
 plt.rcParams["figure.figsize"] = 8, 8
 
