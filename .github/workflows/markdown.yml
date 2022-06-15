@@ -13,21 +13,23 @@ jobs:
         with:
           submodules: recursive # Fetch Hugo themes and all extra projects
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          path: site
 
       - name: Checkout coast
         uses: actions/checkout@v2
         with:
           repository: British-Oceanographic-Data-Centre/COAsT
+          path: external
 
       - name: add python
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
 
-      - name: covert notebooks
+      - name: covert notebooks # /home/runner/work/COAsT-site/COAsT-site
         run: |
           bash /COAsT/notebook_to_md.sh
-          mv /COAsT/example_scripts/notebooks/markdown/* /COAsT-site/content/en/docs/Examples/Notebooks/
+          mv /home/runner/work/COAsT/example_scripts/notebooks/markdown/* /COAsT-site/content/en/docs/Examples/Notebooks/
 
       - name: commit changes
         run: |
