@@ -1,0 +1,50 @@
+name: docstring_to_md
+
+on:
+  # External webhook trigger
+  repository_dispatch:
+    types: [push-docstrings]
+
+jobs:
+  commit-notebooks:
+    if: ${{ github.event.client_payload.deploy_docstring }}
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive # Fetch Hugo themes and all extra projects
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          path: site
+
+      - name: Checkout coast
+        uses: actions/checkout@v3
+        with:
+          repository: British-Oceanographic-Data-Centre/COAsT
+          ref: develop
+          path: external
+
+      - name: add python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: covert notebooks
+        run: |
+          cd $GITHUB_WORKSPACE/external
+          python markdown_doc_builder.py
+          mv $GITHUB_WORKSPACE/external/markdown/* $GITHUB_WORKSPACE/site/content/en/docs/Reference/
+
+      - name: commit changes
+        run: |
+          cd $GITHUB_WORKSPACE/site
+          git config --global user.name "MarkDownBot"
+          git config --global author.name "MarkDownBot"
+          git config --global user.email "bodcsoft@bodc.ac.uk"
+          git config --global author.email "bodcsoft@bodc.ac.uk"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git checkout develop
+          git add content/en/docs/Reference/*
+          git commit -am "Updated docstrings from coast repo."
+          git push origin develop
+          
