@@ -7,7 +7,7 @@ on:
 
 jobs:
   commit-notebooks:
-    if: ${{ github.event.client_payload.branch == develop }}
+    if: ${{ github.event.client_payload.deploy_notebook }}
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout site
