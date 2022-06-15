@@ -15,8 +15,6 @@ This needs to move to the above
 
 
 ```python
-
-#%%
 import coast
 import matplotlib.pyplot as plt
 
