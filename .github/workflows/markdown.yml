@@ -33,11 +33,13 @@ jobs:
           ls -la
           ls -la external
           ls -la site
-          bash $GITHUB_WORKSPACE/external/notebook_to_md.sh
+          cd $GITHUB_WORKSPACE/external
+          bash notebook_to_md.sh
           mv $GITHUB_WORKSPACE/external/example_scripts/notebooks/markdown/* $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/
 
       - name: commit changes
         run: |
+          cd $GITHUB_WORKSPACE/site
           git config --global user.name "MarkDownBot"
           git config --global author.name "MarkDownBot"
           git config --global user.email "bodcsoft@bodc.ac.uk"
