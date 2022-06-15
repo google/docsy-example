@@ -8,13 +8,13 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
+      - name: Checkout site
       - uses: actions/checkout@v2
         with:
           submodules: recursive  # Fetch Hugo themes and all extra projects
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - uses: actions/checkout@v2
-      - name: Checkout
+      - name: Checkout coast
         uses: actions/checkout@v2
         with:
           repository: British-Oceanographic-Data-Centre/COAsT
@@ -24,8 +24,8 @@ jobs:
         with:
           python-version: 3.8                    
         run: | 
-         bash ./COAsT/notebook_to_md.sh
-         mv ./COAsT/example_scripts/notebooks/markdown/* ./content/docs/Examples/Notebooks/
+         bash /COAsT/notebook_to_md.sh
+         mv /COAsT/example_scripts/notebooks/markdown/* /COAsT-site/content/en/docs/Examples/Notebooks/
 
       - name: commit changes
         run: |         
@@ -36,4 +36,4 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout $GITHUB_HEAD_REF
           git commit -am "Updated notebook pages from coast repo."
-          git push
+          
