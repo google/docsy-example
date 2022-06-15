@@ -27,12 +27,8 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: covert notebooks # /home/runner/work/COAsT-site/COAsT-site
+      - name: covert notebooks
         run: |
-          pwd
-          ls -la
-          ls -la external
-          ls -la site
           cd $GITHUB_WORKSPACE/external
           bash notebook_to_md.sh
           mv $GITHUB_WORKSPACE/external/example_scripts/notebooks/markdown/* $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/
@@ -46,5 +42,6 @@ jobs:
           git config --global author.email "bodcsoft@bodc.ac.uk"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout $GITHUB_HEAD_REF
+          git add content/en/docs/Examples/Notebooks/*
           git commit -am "Updated notebook pages from coast repo."
           
