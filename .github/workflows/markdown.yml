@@ -28,8 +28,10 @@ jobs:
 
       - name: covert notebooks # /home/runner/work/COAsT-site/COAsT-site
         run: |
-          bash /COAsT/notebook_to_md.sh
-          mv /home/runner/work/COAsT/example_scripts/notebooks/markdown/* /COAsT-site/content/en/docs/Examples/Notebooks/
+          pwd
+          ls -la
+          bash $GITHUB_WORKSPACE/external/notebook_to_md.sh
+          mv $GITHUB_WORKSPACE/external/example_scripts/notebooks/markdown/* $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/
 
       - name: commit changes
         run: |
