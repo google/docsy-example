@@ -30,6 +30,8 @@ jobs:
         run: |
           pwd
           ls -la
+          ls -la external
+          ls -la site
           bash $GITHUB_WORKSPACE/external/notebook_to_md.sh
           mv $GITHUB_WORKSPACE/external/example_scripts/notebooks/markdown/* $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/
 
