@@ -1,11 +1,14 @@
 name: notebook_to_md
 
 on:
-  push:
-    branches: [develop]
+  # External webhook trigger
+  repository_dispatch:
+    types:
+      - [push]
 
 jobs:
-  deploy:
+  commit-notebooks:
+    if: ${{ github.event.ref == "/refs/heads/develop" }}
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout site
