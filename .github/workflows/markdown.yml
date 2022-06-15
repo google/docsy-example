@@ -44,4 +44,5 @@ jobs:
           git checkout $GITHUB_HEAD_REF
           git add content/en/docs/Examples/Notebooks/*
           git commit -am "Updated notebook pages from coast repo."
+          git push origin $GITHUB_HEAD_REF
           
