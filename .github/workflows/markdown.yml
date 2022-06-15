@@ -43,8 +43,8 @@ jobs:
           git config --global user.email "bodcsoft@bodc.ac.uk"
           git config --global author.email "bodcsoft@bodc.ac.uk"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git checkout $GITHUB_HEAD_REF
+          git checkout develop
           git add content/en/docs/Examples/Notebooks/*
           git commit -am "Updated notebook pages from coast repo."
-          git push origin $GITHUB_HEAD_REF
+          git push origin develop
           
