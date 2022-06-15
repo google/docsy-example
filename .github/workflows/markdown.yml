@@ -1,0 +1,41 @@
+name: notebook_to_md
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive # Fetch Hugo themes and all extra projects
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Checkout coast
+        uses: actions/checkout@v2
+        with:
+          repository: British-Oceanographic-Data-Centre/COAsT
+
+      - name: add python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: covert notebooks
+        run: |
+          bash /COAsT/notebook_to_md.sh
+          mv /COAsT/example_scripts/notebooks/markdown/* /COAsT-site/content/en/docs/Examples/Notebooks/
+
+      - name: commit changes
+        run: |
+          git config --global user.name "MarkDownBot"
+          git config --global author.name "MarkDownBot"
+          git config --global user.email "bodcsoft@bodc.ac.uk"
+          git config --global author.email "bodcsoft@bodc.ac.uk"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git checkout $GITHUB_HEAD_REF
+          git commit -am "Updated notebook pages from coast repo."
+          
