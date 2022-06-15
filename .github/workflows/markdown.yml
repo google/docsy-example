@@ -3,7 +3,7 @@ name: notebook_to_md
 on:
   # External webhook trigger
   repository_dispatch:
-    types: [push]
+    types: [push-notebook]
 
 jobs:
   commit-notebooks:
