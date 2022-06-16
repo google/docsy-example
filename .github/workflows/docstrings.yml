@@ -3,7 +3,7 @@ name: docstring_to_md
 on:
   # External webhook trigger
   repository_dispatch:
-    types: [push-docstrings]
+    types: [push-docstring]
 
 jobs:
   commit-notebooks:
