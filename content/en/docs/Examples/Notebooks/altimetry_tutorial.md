@@ -15,6 +15,7 @@ This is a demonstration script for using the Altimetry object in the COAsT packa
 # Begin by importing coast and other packages
 import coast
 
+
 # And by defining some file paths
 dn_files = "./example_files/"
 fn_nemo_dat = dn_files + "coast_example_nemo_data.nc"
@@ -108,12 +109,12 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
 
 ```python
 # As stats and crps are also Altimetry objects, quick_plot() can also be used:
-# crps quick_plot
+# crps quick_plot:
 fig, ax = crps.quick_plot("crps")
 ```
 
 
 ```python
-# stats quick_plot
+# stats quick_plot:
 fig, ax = stats.quick_plot("absolute_error")
 ```
