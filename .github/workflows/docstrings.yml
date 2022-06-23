@@ -32,6 +32,7 @@ jobs:
       - name: covert notebooks
         run: |
           cd $GITHUB_WORKSPACE/external
+          pip install -r requirements_docs.txt
           python markdown_doc_builder.py
           mv $GITHUB_WORKSPACE/external/markdown/* $GITHUB_WORKSPACE/site/content/en/docs/Reference/
 
