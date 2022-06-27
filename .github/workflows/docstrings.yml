@@ -6,7 +6,7 @@ on:
     types: [push-docstring]
 
 jobs:
-  commit-notebooks:
+  commit-docstrings:
     if: ${{ github.event.client_payload.deploy_docstring }}
     runs-on: ubuntu-18.04
     steps:
@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: covert notebooks
+      - name: covert docstrings
         run: |
           cd $GITHUB_WORKSPACE/external
           pip install -r requirements_docs.txt
