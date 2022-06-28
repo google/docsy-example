@@ -44,6 +44,7 @@ jobs:
           git config --global author.email "bodcsoft@bodc.ac.uk"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout develop
+          git pull
           git add content/en/docs/Examples/Notebooks/*
           git commit -am "Updated notebook pages from coast repo."
           git push origin develop
