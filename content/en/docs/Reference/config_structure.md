@@ -1,7 +1,7 @@
 ---
 title: "Config_structure"
 linkTitle: "Config_structure"
-date: 2022-06-24
+date: 2022-06-28
 description: >
   Docstrings for the Config_structure class
 ---

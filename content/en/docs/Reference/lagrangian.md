@@ -1,7 +1,7 @@
 ---
 title: "Lagrangian"
 linkTitle: "Lagrangian"
-date: 2022-06-24
+date: 2022-06-28
 description: >
   Docstrings for the Lagrangian class
 ---
