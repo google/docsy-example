@@ -48,9 +48,9 @@ print("* Loaded ", config, " data")
 ```python
 # Pick out a North Sea subdomain
 print("* Extract North Sea subdomain")
-ind_sci = sci_t.subset_indices([51, -4], [62, 15])
+ind_sci = sci_t.subset_indices(start=[51, -4], end=[62, 15])
 sci_nwes_t = sci_t.isel(y_dim=ind_sci[0], x_dim=ind_sci[1])  # nwes = northwest europe shelf
-ind_sci = sci_w.subset_indices([51, -4], [62, 15])
+ind_sci = sci_w.subset_indices(start=[51, -4], end=[62, 15])
 sci_nwes_w = sci_w.isel(y_dim=ind_sci[0], x_dim=ind_sci[1])  # nwes = northwest europe shelf
 ```
 
