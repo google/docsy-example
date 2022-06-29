@@ -2,9 +2,9 @@
 title: "Copernicus"
 linkTitle: "Copernicus"
 weight: 6
-
+date: 2020-09-15
 description: >
-Examples of access to Copernicus datasets via OPeNDAP.
+  Examples of access to Copernicus datasets via OPeNDAP.
 ---
 
 # Intro

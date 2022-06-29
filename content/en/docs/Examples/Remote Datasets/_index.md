@@ -1,8 +1,8 @@
 ---
 title: "Remote Datasets"
 linkTitle: "Remote Datasets"
-date: 2022-06-20
 weight: 6
+date: 2020-09-15
 description: >
-Example scripts for access to remote datasets.
+  Example scripts for access to remote datasets.
 ---
