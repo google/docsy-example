@@ -1,7 +1,7 @@
 ---
 title: "Docsy_tools"
 linkTitle: "Docsy_tools"
-date: 2022-06-28
+date: 2022-06-29
 description: >
   Docstrings for the Docsy_tools class
 ---

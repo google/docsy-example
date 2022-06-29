@@ -1,7 +1,7 @@
 ---
 title: "Tidegauge_analysis"
 linkTitle: "Tidegauge_analysis"
-date: 2022-06-28
+date: 2022-06-29
 description: >
   Docstrings for the Tidegauge_analysis class
 ---

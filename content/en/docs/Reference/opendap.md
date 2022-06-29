@@ -1,7 +1,7 @@
 ---
 title: "Opendap"
 linkTitle: "Opendap"
-date: 2022-06-28
+date: 2022-06-29
 description: >
   Docstrings for the Opendap class
 ---

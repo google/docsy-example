@@ -1,7 +1,7 @@
 ---
 title: "Plot_util"
 linkTitle: "Plot_util"
-date: 2022-06-28
+date: 2022-06-29
 description: >
   Docstrings for the Plot_util class
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Climatology"
 linkTitle: "Climatology"
-date: 2022-06-28
+date: 2022-06-29
 description: >
   Docstrings for the Climatology class
 ---

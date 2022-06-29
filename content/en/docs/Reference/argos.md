@@ -1,7 +1,7 @@
 ---
 title: "Argos"
 linkTitle: "Argos"
-date: 2022-06-28
+date: 2022-06-29
 description: >
   Docstrings for the Argos class
 ---
