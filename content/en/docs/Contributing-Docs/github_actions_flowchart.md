@@ -1,9 +1,20 @@
+---
+title: "Github Actions Flowchart"
+linkTitle: "Github Actions Flowchart"
+weight: 3
+menu:
+  documentation:
+    weight: 20
+description: >
+  Flowchart of Github actions active on the COAsT and COAsT-Site repositories.
+---
+
 # GitHub actions diagram
 
 This is a collection of flowcharts for all the GitHub actions used across the COAsT and COAsT-site repos
 ## COAsT
 ### building Packages
-```mermaid
+{{< mermaid align="left">}}
 graph LR;    
     subgraph publish_package - runs on push to master
     A1[Setup python]-- 3.8 -->B1;    
@@ -24,10 +35,10 @@ graph LR;
     E[Test Package Install]-->F
     F[Generate Conda Metadata] 
     end;
-```
+{{< /mermaid >}}
 
 ### Verification and Formatting
-```mermaid
+{{< mermaid align="left">}}
 graph LR
 
     subgraph formatting - runs on pull requests
@@ -44,10 +55,10 @@ graph LR
     D1[Test]
     end;
     click B1 "https://www.github.com" "tooltip"
-```
+{{< /mermaid >}}
 
 ### interactions with other repos
-```mermaid
+{{< mermaid align="left">}}
 flowchart LR
     subgraph b1[push_notebooks - runs on push to master]
         direction LR
@@ -62,8 +73,9 @@ flowchart LR
     t[Repository Dispatch] -- event pushed --> b2    
     end
     click a "https://github.com/British-Oceanographic-Data-Centre/COAsT-site" "Docsy site for COAsT repo"
-```
-```mermaid
+{{< /mermaid >}}
+
+{{< mermaid align="left">}}
 flowchart LR
     subgraph b3[push_docstrings - runs on push to master]
         direction LR
@@ -78,9 +90,10 @@ flowchart LR
     r[Repository Dispatch] -- event pushed --> b4       
     end
     click a1 "https://github.com/British-Oceanographic-Data-Centre/COAsT-site" "Docsy site for COAsT repo"
-```
+{{< /mermaid >}}
+
 ### Generate unit test contents file
-```mermaid
+{{< mermaid align="left">}}
 graph LR
     subgraph generate-test-contents - runs on pull_request
     A[checkout COAsT]-->B;    
@@ -89,7 +102,8 @@ graph LR
     D[run generate_unit_test_contents.py]-->E
     E[commit changes]
     end;
-```
+{{< /mermaid >}}
+
 ## COAsT-site
 These are the actions used on the COAsT-site repo. 
 
@@ -97,7 +111,7 @@ These are the actions used on the COAsT-site repo.
 See [Interactions with other repos](#interactions-with-other-repos) for the related markdown and docstring workflows
 
 ### Build site
-```mermaid
+{{< mermaid align="left">}}
 graph LR
     subgraph hugo - runs on push to master
     A[checkout site]-->B;    
@@ -106,4 +120,4 @@ graph LR
     D[Build]-->E
     E[Deploy]
     end;
-```
+{{< /mermaid >}}
