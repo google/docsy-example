@@ -1,3 +1,14 @@
+---
+title: "Github Actions Flowchart"
+linkTitle: "Github Actions Flowchart"
+weight: 3
+menu:
+  documentation:
+    weight: 20
+description: >
+  Flowchart of Github actions active on the COAsT and COAsT-Site repositories.
+---
+
 # GitHub actions diagram
 
 This is a collection of flowcharts for all the GitHub actions used across the COAsT and COAsT-site repos
