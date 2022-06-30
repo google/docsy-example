@@ -2,7 +2,7 @@
 title: "The Gridded class"
 linkTitle: "Intro to the Gridded class"
 date: 2021-10-05
-weight: 1
+weight: 2
 description: >
   An introduction to the Gridded class. Loading variables and grid information.
 ---
