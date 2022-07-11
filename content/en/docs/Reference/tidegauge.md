@@ -1,7 +1,7 @@
 ---
 title: "Tidegauge"
 linkTitle: "Tidegauge"
-date: 2022-06-29
+date: 2022-07-11
 description: >
   Docstrings for the Tidegauge class
 ---
@@ -9,8 +9,10 @@ description: >
 
 [Tidegauge()](#tidegauge)<br />
 [Tidegauge.read_gesla_v3()](#tidegaugeread_gesla_v3)<br />
+[Tidegauge.read_gesla()](#tidegaugeread_gesla)<br />
+[Tidegauge._read_gesla_header_v5()](#tidegauge_read_gesla_header_v5)<br />
 [Tidegauge._read_gesla_header_v3()](#tidegauge_read_gesla_header_v3)<br />
-[Tidegauge._read_gesla_data_v3()](#tidegauge_read_gesla_data_v3)<br />
+[Tidegauge._read_gesla_data()](#tidegauge_read_gesla_data)<br />
 [Tidegauge.read_hlw()](#tidegaugeread_hlw)<br />
 [Tidegauge._read_hlw_header()](#tidegauge_read_hlw_header)<br />
 [Tidegauge._read_hlw_data()](#tidegauge_read_hlw_data)<br />
@@ -66,8 +68,22 @@ should also be used for quality control/data rejection.
 def Tidegauge.read_gesla_v3(self, fn_gesla, date_start=None, date_end=None):
 ```
 > <br />
-> For reading from a GESLA2 (Format version 3.0) file(s) into an<br />
-> xarray dataset. Formatting according to Woodworth et al. (2017).<br />
+> Depreciated method.<br />
+> Call generalised method.<br />
+> Returns eiter a tidegauge object or a list of tidegauge objects<br />
+> <br />
+##### Tidegauge.read_gesla()
+```python
+
+def Tidegauge.read_gesla(self, fn_gesla, date_start=None, date_end=None, format=v3):
+```
+> <br />
+> For reading from a GESLA2 (Format version 3.0) or GESLA3 (Format v5.0)<br />
+> file(s) into an xarray dataset.<br />
+> <br />
+> v3 formatting according to Woodworth et al. (2017).<br />
+> v5 formatting ....<br />
+> <br />
 > Website: https://www.gesla.org/<br />
 > If no data lies between the specified dates, a dataset is still created<br />
 > containing information on the tide gauge, but the time dimension will<br />
@@ -77,12 +93,29 @@ def Tidegauge.read_gesla_v3(self, fn_gesla, date_start=None, date_end=None):
 > fn_gesla (str) : path to gesla tide gauge file, list of files or a glob<br />
 > date_start (datetime) : start date for returning data<br />
 > date_end (datetime) : end date for returning data<br />
+> format (str) : accepts "v3" or "v5"<br />
 > <br />
 > Returns<br />
 > -------<br />
 > Creates xarray.dataset within tidegauge object containing loaded data.<br />
 > If multiple files are provided then instead returns a list of NEW<br />
 > tidegauge objects.<br />
+> <br />
+##### Tidegauge._read_gesla_header_v5()
+```python
+@classmethod
+def Tidegauge._read_gesla_header_v5(cls, fn_gesla):
+```
+> <br />
+> Reads header from a GESLA file (format version 5.0).<br />
+> <br />
+> Parameters<br />
+> ----------<br />
+> fn_gesla (str) : path to gesla tide gauge file<br />
+> <br />
+> Returns<br />
+> -------<br />
+> dictionary of attributes<br />
 > <br />
 ##### Tidegauge._read_gesla_header_v3()
 ```python
@@ -100,13 +133,13 @@ def Tidegauge._read_gesla_header_v3(cls, fn_gesla):
 > -------<br />
 > dictionary of attributes<br />
 > <br />
-##### Tidegauge._read_gesla_data_v3()
+##### Tidegauge._read_gesla_data()
 ```python
 @classmethod
-def Tidegauge._read_gesla_data_v3(cls, fn_gesla, date_start=None, date_end=None, header_length=32):
+def Tidegauge._read_gesla_data(cls, fn_gesla, date_start=None, date_end=None, header_length=32):
 ```
 > <br />
-> Reads observation data from a GESLA file (format version 3.0).<br />
+> Reads observation data from a GESLA file (format version 3.0 and 5.0).<br />
 > <br />
 > Parameters<br />
 > ----------<br />

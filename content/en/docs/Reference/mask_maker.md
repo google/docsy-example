@@ -1,7 +1,7 @@
 ---
 title: "Mask_maker"
 linkTitle: "Mask_maker"
-date: 2022-06-29
+date: 2022-07-11
 description: >
   Docstrings for the Mask_maker class
 ---

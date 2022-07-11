@@ -1,7 +1,7 @@
 ---
 title: "Docsy_tools"
 linkTitle: "Docsy_tools"
-date: 2022-06-29
+date: 2022-07-11
 description: >
   Docstrings for the Docsy_tools class
 ---
@@ -19,7 +19,7 @@ class DocsyTools():
 ```
 
 ```
-
+DocsyTools Class
 ```
 
 ##### DocsyTools.write_class_to_markdown()
@@ -44,22 +44,14 @@ def DocsyTools._method_to_str(cls, method_name):
 def DocsyTools._get_list_of_methods(cls, class_to_search, methods_to_omit=unknown, omit_private_methods=True, omit_parent_methods=True):
 ```
 > <br />
-> Returns a list of methods inside a provided COAsT class, with some<br />
-> other options<br />
+> Method get a list of methods inside a provided COAsT class, with some other options.<br />
 > <br />
-> Parameters<br />
-> ----------<br />
-> class_to_search : imported class<br />
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Class imported from COAsT (e.g. from coast import Profile)<br />
-> methods_to_omit : list<br />
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  List of method strings to omit from the output. The default is [].<br />
-> omit_private_methods : bool, optional<br />
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  If true, omit methods beginning with "_". The default is True.<br />
-> omit_parent_methods : bool, optional<br />
->    If true, omit methods in any parent/ancestor class. The default is True.<br />
+> <b>Args:</b><br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  class_to_search (Type): Class imported from COAsT (e.g. from coast import Profile)<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  methods_to_omit (List): List of method strings to omit from the output. The default is [].<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  omit_private_methods (bool): If true, omit methods beginning with "_". The default is True.<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  omit_parent_methods (bool): If true, omit methods in any parent/ancestor class. The default is True.<br />
 > <br />
-> Returns<br />
-> -------<br />
-> methods_to_write : list<br />
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  List of strings denoting method names<br />
+> <b>Returns:</b><br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  List[str]: List of strings denoting method names.<br />
 > <br />

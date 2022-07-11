@@ -1,7 +1,7 @@
 ---
 title: "Gridded"
 linkTitle: "Gridded"
-date: 2022-06-29
+date: 2022-07-11
 description: >
   Docstrings for the Gridded class
 ---
