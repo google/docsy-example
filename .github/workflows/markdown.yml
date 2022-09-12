@@ -2,13 +2,14 @@ name: notebook_to_md
 
 on:
   # External webhook trigger
-  repository_dispatch:
-    types: [push-notebook]
+  #repository_dispatch:
+  # types: [push-notebook]
+  pull_request
 
 jobs:
   commit-notebooks:
     if: ${{ github.event.client_payload.deploy_notebook }}
-    runs-on: ubuntu-18.04
+    runs-on: conda/miniconda3-centos7
     steps:
       - name: Checkout site
         uses: actions/checkout@v3
@@ -24,10 +25,16 @@ jobs:
           ref: develop
           path: external
 
-      - name: add python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
+      - name: Prepare environement
+        run: |
+          cd $GITHUB_WORKSPACE/external
+          yum install wget unzip -y
+          conda install python=3.8 cartopy
+          wget https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
+          unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebooks/runnable_notebooks/example_files
+          python -m pip install .
+          mv config ./example_scripts/notebooks/runnable_notebooks/config
+          bash notebook_to_md.sh
 
       - name: covert notebooks
         run: |
@@ -37,15 +44,16 @@ jobs:
 
       - name: commit changes
         run: |
-          cd $GITHUB_WORKSPACE/site
-          git config --global user.name "MarkDownBot"
-          git config --global author.name "MarkDownBot"
-          git config --global user.email "bodcsoft@bodc.ac.uk"
-          git config --global author.email "bodcsoft@bodc.ac.uk"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          git checkout develop
-          git pull
-          git add content/en/docs/Examples/Notebooks/*
-          git commit -am "Updated notebook pages from coast repo."
-          git push origin develop
-          
+          echo "hello"
+
+          # cd $GITHUB_WORKSPACE/site
+          # git config --global user.name "MarkDownBot"
+          # git config --global author.name "MarkDownBot"
+          # git config --global user.email "bodcsoft@bodc.ac.uk"
+          # git config --global author.email "bodcsoft@bodc.ac.uk"
+          # git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          # git checkout develop
+          # git pull
+          # git add content/en/docs/Examples/Notebooks/*
+          # git commit -am "Updated notebook pages from coast repo."
+          # git push origin develop
