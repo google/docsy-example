@@ -2,9 +2,8 @@ name: notebook_to_md (tidegauge)
 
 on:
   # External webhook trigger
-  #repository_dispatch:
-  # types: [push-notebook]
-  pull_request
+  repository_dispatch:
+   types: [push-notebook]
 
 jobs:
   commit-notebooks:

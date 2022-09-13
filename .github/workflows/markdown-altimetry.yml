@@ -2,9 +2,9 @@ name: notebook_to_md (altimetry)
 
 on:
   # External webhook trigger
-  #repository_dispatch:
-  # types: [push-notebook]
-  pull_request
+  repository_dispatch:
+   types: [push-notebook]
+  
 
 jobs:
   commit-notebooks:
@@ -58,5 +58,15 @@ jobs:
 
       - name: commit changes
         run: |
-          echo "hello"
-          git pull
+          cd $GITHUB_WORKSPACE/site
+          git config --global user.name "MarkDownBot"
+          git config --global author.name "MarkDownBot"
+          git config --global user.email "bodcsoft@bodc.ac.uk"
+          git config --global author.email "bodcsoft@bodc.ac.uk"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git checkout develop
+          git pull        
+          git add content/en/docs/Examples/Notebooks/Altimetry/*
+          git commit -am "Updated Altimetry notebook pages from coast repo."
+          git push origin develop
+          
