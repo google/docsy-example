@@ -41,7 +41,7 @@ altimetry = coast.Altimetry(fn_altimetry, config=fn_altimetry_config)
 ```
 
     ././config/example_altimetry.json
-    Altimetry object at 0x5622d494efc0 initialised
+    Altimetry object at 0x5598a015dfc0 initialised
 
 
 ### Subsetting
@@ -57,7 +57,7 @@ ind = ind[::4]
 altimetry = altimetry.isel(t_dim=ind)
 ```
 
-    Subsetting Altimetry object at 0x5622d494efc0 indices in [-10, 10], [45, 60]
+    Subsetting Altimetry object at 0x5598a015dfc0 indices in [-10, 10], [45, 60]
 
 
 ### Model interpolation
@@ -74,7 +74,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 # to see for yourself.
 ```
 
-    Interpolating Gridded object at 0x5622d494efc0 "ssh" with time_interp "nearest"
+    Interpolating Gridded object at 0x5598a015dfc0 "ssh" with time_interp "nearest"
 
 
 
@@ -93,7 +93,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 stats = altimetry.basic_stats("ocean_tide_standard_name", "interp_ssh")
 ```
 
-    Altimetry object at 0x5622d494efc0 initialised
+    Altimetry object at 0x5598a015dfc0 initialised
 
 
 
@@ -121,7 +121,7 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 #crps.dataset  # uncomment to print data object summary
 ```
 
-    Altimetry object at 0x5622d494efc0 initialised
+    Altimetry object at 0x5598a015dfc0 initialised
 
 
 ### Plotting data
@@ -134,13 +134,9 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
 ```
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/io/__init__.py:260: DownloadWarning: Downloading: https://naciscdn.org/naturalearth/50m/physical/ne_50m_coastline.zip
-      warnings.warn('Downloading: {}'.format(url), DownloadWarning)
-
-
 
     
-![png](/COAsT/altimetry_tutorial_files/altimetry_tutorial_15_1.png)
+![png](/COAsT/altimetry_tutorial_files/altimetry_tutorial_15_0.png)
     
 
 
