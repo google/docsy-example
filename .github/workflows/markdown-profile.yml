@@ -38,7 +38,7 @@ jobs:
           conda list
           conda config --show
           cd $GITHUB_WORKSPACE/external
-          sudo apt install wget unzip -y
+          sudo apt install wget unzip rsync -y
           wget -q https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
           unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebooks/runnable_notebooks/example_files/profile
           ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/example_files/profile
@@ -59,7 +59,7 @@ jobs:
           mv ./markdown/profile/analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/wod_bgc_ragged_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           echo "Move images"
-          mv ./markdown_images/profile/* $GITHUB_WORKSPACE/site/static/
+          rsync -r --delete ./markdown_images/profile/ $GITHUB_WORKSPACE/site/static
       - name: commit changes
         run: |
           echo "hello"
