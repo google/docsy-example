@@ -49,7 +49,7 @@ jobs:
       - name: convert notebooks
         run: |
           cd $GITHUB_WORKSPACE/external/example_scripts/notebooks
-          ls ./profile/
+          ls ./markdown      
           echo "Move profile markdown examples"
           mv ./markdown/profile/analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/

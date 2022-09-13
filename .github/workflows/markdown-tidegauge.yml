@@ -54,7 +54,7 @@ jobs:
           mv ./markdown/tidegauge/tideguage_validation_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Tidegauge/
           mv ./markdown/tidegauge/tidetable_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Tidegauge/
           echo "Move images"
-          rsync -r --delete ./markdown_images/tidegauge/* $GITHUB_WORKSPACE/site/static/
+          rsync -r --delete ./markdown_images/tidegauge/ $GITHUB_WORKSPACE/site/static
 
       - name: commit changes
         run: |
