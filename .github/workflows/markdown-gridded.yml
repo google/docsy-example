@@ -1,0 +1,67 @@
+name: notebook_to_md (gridded)
+
+on:
+  # External webhook trigger
+  repository_dispatch:
+   types: [push-notebook]
+
+jobs:
+  commit-notebooks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive # Fetch Hugo themes and all extra projects
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          path: site
+
+      - name: Checkout coast
+        uses: actions/checkout@v3
+        with:
+          repository: British-Oceanographic-Data-Centre/COAsT
+          ref: feature/notebook_action_jp_merge
+          path: external
+
+      - name: Prepare environement
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: coast-site
+          environment-file: site/environment.yml
+      - name: prep exec notebooks
+        run: |
+          conda info
+          conda list
+          conda config --show
+          cd $GITHUB_WORKSPACE/external
+          sudo apt install wget unzip -y
+          wget -q https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
+          unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebooks/runnable_notebooks/gridded/example_files
+          ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/gridded/example_files
+          mkdir -p ./example_scripts/notebooks/markdown/gridded
+          ls ./example_scripts/notebooks
+          pip install .
+          mv config ./example_scripts/notebooks/runnable_notebooks/gridded/config
+          bash notebook_to_md.sh gridded
+      - name: convert notebooks
+        run: |
+          cd $GITHUB_WORKSPACE/external/example_scripts/notebooks/
+          ls ./markdown          
+          echo "Move gridded markdown examples"
+          mv ./markdown/gridded/introduction_to_gridded_class.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
+          mv ./markdown/gridded/contour_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
+          mv ./markdown/gridded/transect_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
+          mv ./markdown/gridded/regridding_with_xesmf_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
+          mv ./markdown/gridded/potential_energy_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
+          mv ./markdown/gridded/pycnocline_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
+          mv ./markdown/gridded/seasia_dic_example_plot_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
+          echo "Move images"
+          rsync -r --delete ./markdown_images/gridded/* $GITHUB_WORKSPACE/site/static/
+
+      - name: commit changes
+        run: |
+          echo "hello"
+          git pull
