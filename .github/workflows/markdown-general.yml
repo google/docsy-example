@@ -50,15 +50,15 @@ jobs:
       - name: convert notebooks 
         run: |
           cd $GITHUB_WORKSPACE/external/example_scripts/notebooks/
-          ls ./example_scripts/notebooks/markdown
+          ls ./markdown
           echo "Move general stuff markdown examples"
-          mv markdown/general/export_to_netcdf_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
-          mv markdown/general/seasonal_decomp_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
-          mv markdown/general/eof_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
-          mv markdown/general/climatology_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
-          mv markdown/general/dask_wrapper_template_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
+          mv ./markdown/general/export_to_netcdf_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
+          mv ./markdown/general/seasonal_decomp_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
+          mv ./markdown/general/eof_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
+          mv ./markdown/general/climatology_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
+          mv ./markdown/general/dask_wrapper_template_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
           echo "Move images"
-          mv markdown_iamges/general/* $GITHUB_WORKSPACE/site/static/
+          mv ./markdown_iamges/general/* $GITHUB_WORKSPACE/site/static/
           
       - name: commit changes
         run: |

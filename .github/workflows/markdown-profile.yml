@@ -50,16 +50,16 @@ jobs:
       - name: convert notebooks
         run: |
           cd $GITHUB_WORKSPACE/external/example_scripts/notebooks
-          ls ./example_scripts/notebooks/markdown/profile/
+          ls ./profile/
           echo "Move profile markdown examples"
-          mv markdown/profile/analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv markdown/profile/analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv markdown/profile/analysis_extract_and_compare_single_process_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv markdown/profile/analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv markdown/profile/analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv markdown/profile/wod_bgc_ragged_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/analysis_extract_and_compare_single_process_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/wod_bgc_ragged_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           echo "Move images"
-          mv markdown_iamges/profile/* $GITHUB_WORKSPACE/site/static/
+          mv ./markdown_iamges/profile/* $GITHUB_WORKSPACE/site/static/
       - name: commit changes
         run: |
           echo "hello"
