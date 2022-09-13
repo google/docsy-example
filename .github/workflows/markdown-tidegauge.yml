@@ -49,7 +49,9 @@ jobs:
       - name: convert notebooks
         run: |
           cd $GITHUB_WORKSPACE/external/example_scripts/notebooks/
-          ls ./markdown          
+          ls ./markdown
+          pwd    
+          ls ./markdown/tidegauge    
           echo "Move tidegauge markdown examples"
           mv ./markdown/tidegauge/tideguage_validation_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Tidegauge/
           mv ./markdown/tidegauge/tidetable_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Tidegauge/
