@@ -26,9 +26,6 @@ processes will automatically be used.
 import coast
 ```
 
-    Matplotlib is building the font cache; this may take a moment.
-
-
 ### Usage of coast.Climatology.make_climatology().
 
 Calculates mean over a given period of time. This doesn't take different years into account, unless using the
