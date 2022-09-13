@@ -32,9 +32,6 @@ fn_cfg_prof = path.join('./config', "example_en4_profiles.json")  # If needed
 fn_out = path.join('./example_files', 'mask_mean.nc')  # Names of output files (coresponding to fn_in_list), include ".nc"
 ```
 
-    Matplotlib is building the font cache; this may take a moment.
-
-
 Define longitude and latitude grid.
 
 
