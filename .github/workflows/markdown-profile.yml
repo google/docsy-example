@@ -1,0 +1,66 @@
+name: notebook_to_md (profile)
+
+on:
+  # External webhook trigger
+  #repository_dispatch:
+  # types: [push-notebook]
+  pull_request
+
+jobs:
+  commit-notebooks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive # Fetch Hugo themes and all extra projects
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          path: site
+
+      - name: Checkout coast
+        uses: actions/checkout@v3
+        with:
+          repository: British-Oceanographic-Data-Centre/COAsT
+          ref: feature/notebook_action_jp_merge
+          path: external
+
+      - name: Prepare environement
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: coast-site
+          environment-file: site/environment.yml
+      - name: prep exec notebooks
+        run: |
+          conda info
+          conda list
+          conda config --show
+          cd $GITHUB_WORKSPACE/external
+          sudo apt install wget unzip -y
+          wget -q https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
+          unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebooks/runnable_notebooks/example_files/profile
+          ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/example_files/profile
+          mkdir ./example_scripts/notebooks/markdown
+          ls ./example_scripts/notebooks
+          pip install .
+          mv config ./example_scripts/notebooks/runnable_notebooks/profile/config
+          bash notebook_to_md.sh profile
+      - name: convert notebooks
+        run: |
+          cd $GITHUB_WORKSPACE/external/example_scripts/notebooks
+          ls ./example_scripts/notebooks/markdown/profile/
+          echo "Move profile markdown examples"
+          mv markdown/profile/analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv markdown/profile/analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv markdown/profile/analysis_extract_and_compare_single_process_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv markdown/profile/analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv markdown/profile/analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv markdown/profile/wod_bgc_ragged_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          echo "Move images"
+          mv markdown_iamges/profile/* $GITHUB_WORKSPACE/site/static/
+      - name: commit changes
+        run: |
+          echo "hello"
+          git pull
