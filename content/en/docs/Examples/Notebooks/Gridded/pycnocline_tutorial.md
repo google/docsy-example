@@ -92,28 +92,28 @@ This has created a variable called `nemo_nwes_w.rho_dz`.
 
 ###  Create internal tide diagnostics
 
-We can now use the InternalTide class to construct the first and second moments (over depth) of density. In the limit of an idealised two-layer fluid these converge to the depth and thickness of the interface. I.e. the pycnocline depth and thickness respectively.
+We can now use the GriddedStratification class to construct the first and second moments (over depth) of density. In the limit of an idealised two-layer fluid these converge to the depth and thickness of the interface. I.e. the pycnocline depth and thickness respectively.
 
 
 ```python
 
-IT = coast.InternalTide(nemo_nwes_t)
+strat = coast.GriddedStratification(nemo_nwes_t)
 
 #%%  Construct pycnocline variables: depth and thickness
-IT.construct_pycnocline_vars( nemo_nwes_t, nemo_nwes_w )
+strat.construct_pycnocline_vars( nemo_nwes_t, nemo_nwes_w )
 ```
 
-    /usr/local/lib/python3.8/site-packages/xarray/core/computation.py:771: RuntimeWarning: invalid value encountered in sqrt
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/core/computation.py:771: RuntimeWarning: invalid value encountered in sqrt
       result_data = func(*input_data)
 
 
 ### Plotting data
 
-Finally we plot pycnocline variables (depth and thickness) using an InternalTide method:
+Finally we plot pycnocline variables (depth and thickness) using an GriddedStratification method:
 
 
 ```python
-IT.quick_plot()
+strat.quick_plot()
 
 ```
 
