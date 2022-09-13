@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: British-Oceanographic-Data-Centre/COAsT
-          ref: develop
+          ref: feature/action_testing
           path: external
 
       - name: Prepare environement
