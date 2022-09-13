@@ -60,7 +60,7 @@ nemo_t = coast.Gridded( fn_data = fn_nemo_dat_t, fn_domain = fn_nemo_dom, config
 
     FileNotFoundError                         Traceback (most recent call last)
 
-    /tmp/ipykernel_3786/4042164168.py in <cell line: 3>()
+    /tmp/ipykernel_3889/4042164168.py in <cell line: 3>()
           1 # Load data variables that are on the NEMO t-grid
           2 
     ----> 3 nemo_t = coast.Gridded( fn_data = fn_nemo_dat_t, fn_domain = fn_nemo_dom, config = fn_nemo_config )
@@ -185,7 +185,7 @@ eof_data = coast.compute_eofs( nemo_t.dataset.ssh )
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3786/2451106815.py in <cell line: 1>()
+    /tmp/ipykernel_3889/2451106815.py in <cell line: 1>()
     ----> 1 eof_data = coast.compute_eofs( nemo_t.dataset.ssh )
     
 
@@ -212,7 +212,7 @@ eof_data.variance.sel(mode=[1,2,3,4])
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3786/436186135.py in <cell line: 1>()
+    /tmp/ipykernel_3889/436186135.py in <cell line: 1>()
     ----> 1 eof_data.variance.sel(mode=[1,2,3,4])
     
 
@@ -232,7 +232,7 @@ eof_data.EOF.sel(mode=[1,2,3,4]).plot.pcolormesh(col='mode',col_wrap=2,x='longit
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3786/2945796450.py in <cell line: 1>()
+    /tmp/ipykernel_3889/2945796450.py in <cell line: 1>()
     ----> 1 eof_data.EOF.sel(mode=[1,2,3,4]).plot.pcolormesh(col='mode',col_wrap=2,x='longitude',y='latitude')
     
 
@@ -249,7 +249,7 @@ eof_data.temporal_proj.sel(mode=[1,2,3,4]).plot(col='mode',col_wrap=2,x='time')
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3786/3850470380.py in <cell line: 1>()
+    /tmp/ipykernel_3889/3850470380.py in <cell line: 1>()
     ----> 1 eof_data.temporal_proj.sel(mode=[1,2,3,4]).plot(col='mode',col_wrap=2,x='time')
     
 
@@ -270,7 +270,7 @@ heof_data = coast.compute_hilbert_eofs( nemo_t.dataset.ssh )
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3786/1654931114.py in <cell line: 1>()
+    /tmp/ipykernel_3889/1654931114.py in <cell line: 1>()
     ----> 1 heof_data = coast.compute_hilbert_eofs( nemo_t.dataset.ssh )
           2 #heof_data # uncomment to print data object summary
 
