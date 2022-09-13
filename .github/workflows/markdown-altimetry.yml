@@ -54,7 +54,7 @@ jobs:
           echo "Move altimetry markdown examples"
           mv ./markdown/altimetry/altimetry_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Altimetry/
           echo "Move images"
-          mv ./markdown_iamges/altimetry/* $GITHUB_WORKSPACE/site/static/
+          mv ./markdown_images/altimetry/* $GITHUB_WORKSPACE/site/static/
 
       - name: commit changes
         run: |
