@@ -88,19 +88,19 @@ profile.read_en4(fn_prof)
 
     KeyError                                  Traceback (most recent call last)
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/file_manager.py:201, in CachingFileManager._acquire_with_cache_info(self, needs_lock)
-        200 try:
-    --> 201     file = self._cache[self._key]
-        202 except KeyError:
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/file_manager.py in _acquire_with_cache_info(self, needs_lock)
+        200             try:
+    --> 201                 file = self._cache[self._key]
+        202             except KeyError:
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/lru_cache.py:55, in LRUCache.__getitem__(self, key)
-         54 with self._lock:
-    ---> 55     value = self._cache[key]
-         56     self._cache.move_to_end(key)
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/lru_cache.py in __getitem__(self, key)
+         54         with self._lock:
+    ---> 55             value = self._cache[key]
+         56             self._cache.move_to_end(key)
 
 
-    KeyError: [<class 'netCDF4._netCDF4.Dataset'>, ('/example_scripts/notebooks/runnable_notebooks/example_files/coast_example_EN4_201008.nc',), 'r', (('clobber', True), ('diskless', False), ('format', 'NETCDF4'), ('persist', False))]
+    KeyError: [<class 'netCDF4._netCDF4.Dataset'>, ('/home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/profile/example_files/coast_example_EN4_201008.nc',), 'r', (('clobber', True), ('diskless', False), ('format', 'NETCDF4'), ('persist', False))]
 
     
     During handling of the above exception, another exception occurred:
@@ -108,132 +108,98 @@ profile.read_en4(fn_prof)
 
     FileNotFoundError                         Traceback (most recent call last)
 
-    Cell In [6], line 2
+    /tmp/ipykernel_3816/2557440746.py in <cell line: 2>()
           1 profile = coast.Profile(config=fn_cfg_prof)
     ----> 2 profile.read_en4(fn_prof)
+    
+
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/data/profile.py in read_en4(self, fn_en4, chunks, multiple)
+         92         # If not multiple then just read the netcdf file
+         93         if not multiple:
+    ---> 94             self.dataset = xr.open_dataset(fn_en4, chunks=chunks)
+         95 
+         96         # If multiple, then we have to get all file names and read them in a
 
 
-    File /usr/local/lib/python3.8/site-packages/coast/data/profile.py:94, in Profile.read_en4(self, fn_en4, chunks, multiple)
-         92 # If not multiple then just read the netcdf file
-         93 if not multiple:
-    ---> 94     self.dataset = xr.open_dataset(fn_en4, chunks=chunks)
-         96 # If multiple, then we have to get all file names and read them in a
-         97 # loop, followed by concatenation
-         98 else:
-         99     # Check a list is provided
-        100     if type(fn_en4) is not list:
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/api.py in open_dataset(filename_or_obj, engine, chunks, cache, decode_cf, mask_and_scale, decode_times, decode_timedelta, use_cftime, concat_characters, decode_coords, drop_variables, inline_array, backend_kwargs, **kwargs)
+        529 
+        530     overwrite_encoded_chunks = kwargs.pop("overwrite_encoded_chunks", None)
+    --> 531     backend_ds = backend.open_dataset(
+        532         filename_or_obj,
+        533         drop_variables=drop_variables,
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/api.py:531, in open_dataset(filename_or_obj, engine, chunks, cache, decode_cf, mask_and_scale, decode_times, decode_timedelta, use_cftime, concat_characters, decode_coords, drop_variables, inline_array, backend_kwargs, **kwargs)
-        519 decoders = _resolve_decoders_kwargs(
-        520     decode_cf,
-        521     open_backend_dataset_parameters=backend.open_dataset_parameters,
-       (...)
-        527     decode_coords=decode_coords,
-        528 )
-        530 overwrite_encoded_chunks = kwargs.pop("overwrite_encoded_chunks", None)
-    --> 531 backend_ds = backend.open_dataset(
-        532     filename_or_obj,
-        533     drop_variables=drop_variables,
-        534     **decoders,
-        535     **kwargs,
-        536 )
-        537 ds = _dataset_from_backend_dataset(
-        538     backend_ds,
-        539     filename_or_obj,
-       (...)
-        547     **kwargs,
-        548 )
-        549 return ds
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/netCDF4_.py in open_dataset(self, filename_or_obj, mask_and_scale, decode_times, concat_characters, decode_coords, drop_variables, use_cftime, decode_timedelta, group, mode, format, clobber, diskless, persist, lock, autoclose)
+        553 
+        554         filename_or_obj = _normalize_path(filename_or_obj)
+    --> 555         store = NetCDF4DataStore.open(
+        556             filename_or_obj,
+        557             mode=mode,
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/netCDF4_.py:555, in NetCDF4BackendEntrypoint.open_dataset(self, filename_or_obj, mask_and_scale, decode_times, concat_characters, decode_coords, drop_variables, use_cftime, decode_timedelta, group, mode, format, clobber, diskless, persist, lock, autoclose)
-        534 def open_dataset(
-        535     self,
-        536     filename_or_obj,
-       (...)
-        551     autoclose=False,
-        552 ):
-        554     filename_or_obj = _normalize_path(filename_or_obj)
-    --> 555     store = NetCDF4DataStore.open(
-        556         filename_or_obj,
-        557         mode=mode,
-        558         format=format,
-        559         group=group,
-        560         clobber=clobber,
-        561         diskless=diskless,
-        562         persist=persist,
-        563         lock=lock,
-        564         autoclose=autoclose,
-        565     )
-        567     store_entrypoint = StoreBackendEntrypoint()
-        568     with close_on_error(store):
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/netCDF4_.py in open(cls, filename, mode, format, group, clobber, diskless, persist, lock, lock_maker, autoclose)
+        382             netCDF4.Dataset, filename, mode=mode, kwargs=kwargs
+        383         )
+    --> 384         return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+        385 
+        386     def _acquire(self, needs_lock=True):
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/netCDF4_.py:384, in NetCDF4DataStore.open(cls, filename, mode, format, group, clobber, diskless, persist, lock, lock_maker, autoclose)
-        378 kwargs = dict(
-        379     clobber=clobber, diskless=diskless, persist=persist, format=format
-        380 )
-        381 manager = CachingFileManager(
-        382     netCDF4.Dataset, filename, mode=mode, kwargs=kwargs
-        383 )
-    --> 384 return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/netCDF4_.py in __init__(self, manager, group, mode, lock, autoclose)
+        330         self._group = group
+        331         self._mode = mode
+    --> 332         self.format = self.ds.data_model
+        333         self._filename = self.ds.filepath()
+        334         self.is_remote = is_remote_uri(self._filename)
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/netCDF4_.py:332, in NetCDF4DataStore.__init__(self, manager, group, mode, lock, autoclose)
-        330 self._group = group
-        331 self._mode = mode
-    --> 332 self.format = self.ds.data_model
-        333 self._filename = self.ds.filepath()
-        334 self.is_remote = is_remote_uri(self._filename)
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/netCDF4_.py in ds(self)
+        391     @property
+        392     def ds(self):
+    --> 393         return self._acquire()
+        394 
+        395     def open_store_variable(self, name, var):
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/netCDF4_.py:393, in NetCDF4DataStore.ds(self)
-        391 @property
-        392 def ds(self):
-    --> 393     return self._acquire()
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/netCDF4_.py in _acquire(self, needs_lock)
+        385 
+        386     def _acquire(self, needs_lock=True):
+    --> 387         with self._manager.acquire_context(needs_lock) as root:
+        388             ds = _nc4_require_group(root, self._group, self._mode)
+        389         return ds
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/netCDF4_.py:387, in NetCDF4DataStore._acquire(self, needs_lock)
-        386 def _acquire(self, needs_lock=True):
-    --> 387     with self._manager.acquire_context(needs_lock) as root:
-        388         ds = _nc4_require_group(root, self._group, self._mode)
-        389     return ds
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/contextlib.py in __enter__(self)
+        111         del self.args, self.kwds, self.func
+        112         try:
+    --> 113             return next(self.gen)
+        114         except StopIteration:
+        115             raise RuntimeError("generator didn't yield") from None
 
 
-    File /usr/local/lib/python3.8/contextlib.py:113, in _GeneratorContextManager.__enter__(self)
-        111 del self.args, self.kwds, self.func
-        112 try:
-    --> 113     return next(self.gen)
-        114 except StopIteration:
-        115     raise RuntimeError("generator didn't yield") from None
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/file_manager.py in acquire_context(self, needs_lock)
+        187     def acquire_context(self, needs_lock=True):
+        188         """Context manager for acquiring a file."""
+    --> 189         file, cached = self._acquire_with_cache_info(needs_lock)
+        190         try:
+        191             yield file
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/file_manager.py:189, in CachingFileManager.acquire_context(self, needs_lock)
-        186 @contextlib.contextmanager
-        187 def acquire_context(self, needs_lock=True):
-        188     """Context manager for acquiring a file."""
-    --> 189     file, cached = self._acquire_with_cache_info(needs_lock)
-        190     try:
-        191         yield file
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/xarray/backends/file_manager.py in _acquire_with_cache_info(self, needs_lock)
+        205                     kwargs = kwargs.copy()
+        206                     kwargs["mode"] = self._mode
+    --> 207                 file = self._opener(*self._args, **kwargs)
+        208                 if self._mode == "w":
+        209                     # ensure file doesn't get overridden when opened again
 
 
-    File /usr/local/lib/python3.8/site-packages/xarray/backends/file_manager.py:207, in CachingFileManager._acquire_with_cache_info(self, needs_lock)
-        205     kwargs = kwargs.copy()
-        206     kwargs["mode"] = self._mode
-    --> 207 file = self._opener(*self._args, **kwargs)
-        208 if self._mode == "w":
-        209     # ensure file doesn't get overridden when opened again
-        210     self._mode = "a"
+    src/netCDF4/_netCDF4.pyx in netCDF4._netCDF4.Dataset.__init__()
 
 
-    File src/netCDF4/_netCDF4.pyx:2353, in netCDF4._netCDF4.Dataset.__init__()
+    src/netCDF4/_netCDF4.pyx in netCDF4._netCDF4._ensure_nc_success()
 
 
-    File src/netCDF4/_netCDF4.pyx:1963, in netCDF4._netCDF4._ensure_nc_success()
-
-
-    FileNotFoundError: [Errno 2] No such file or directory: b'/example_scripts/notebooks/runnable_notebooks/example_files/coast_example_EN4_201008.nc'
+    FileNotFoundError: [Errno 2] No such file or directory: b'/home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/profile/example_files/coast_example_EN4_201008.nc'
 
 
 ### Make MaskMaker object and define Regional Masks
@@ -280,29 +246,18 @@ mask_indices = profile_analysis.determine_mask_indices(profile, mask_list)
 
     TypeError                                 Traceback (most recent call last)
 
-    Cell In [7], line 33
-         20 region_names = [
-         21     "whole_domain",
-         22     "north_sea",
-       (...)
-         29     "off_shelf",
-         30 ]
+    /tmp/ipykernel_3816/2085394473.py in <cell line: 33>()
+         31 
          32 mask_list = mm.make_mask_dataset(lon, lat, regional_masks)
     ---> 33 mask_indices = profile_analysis.determine_mask_indices(profile, mask_list)
+    
 
-
-    File /usr/local/lib/python3.8/site-packages/coast/diagnostics/profile_analysis.py:180, in ProfileAnalysis.determine_mask_indices(cls, profile, mask_dataset)
-        174     landmask = mask_dataset.landmask
-        176 # SPATIAL indices - nearest neighbour
-        177 ind_x, ind_y = general_utils.nearest_indices_2d(
-        178     mask_dataset["longitude"],
-        179     mask_dataset["latitude"],
-    --> 180     dataset["longitude"],
-        181     dataset["latitude"],
-        182     mask=landmask,
-        183 )
-        185 # Figure out which points lie in which region
-        186 debug(f"Figuring out which regions each profile is in..")
+    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/diagnostics/profile_analysis.py in determine_mask_indices(cls, profile, mask_dataset)
+        178             mask_dataset["longitude"],
+        179             mask_dataset["latitude"],
+    --> 180             dataset["longitude"],
+        181             dataset["latitude"],
+        182             mask=landmask,
 
 
     TypeError: 'NoneType' object is not subscriptable
@@ -320,9 +275,9 @@ mask_means = profile_analysis.mask_means(profile, mask_indices)
 
     NameError                                 Traceback (most recent call last)
 
-    Cell In [8], line 1
+    /tmp/ipykernel_3816/605467648.py in <cell line: 1>()
     ----> 1 mask_means = profile_analysis.mask_means(profile, mask_indices)
-
+    
 
     NameError: name 'mask_indices' is not defined
 
@@ -339,9 +294,9 @@ mask_means.to_netcdf(fn_out)
 
     NameError                                 Traceback (most recent call last)
 
-    Cell In [9], line 1
+    /tmp/ipykernel_3816/3613510459.py in <cell line: 1>()
     ----> 1 mask_means.to_netcdf(fn_out)
-
+    
 
     NameError: name 'mask_means' is not defined
 
