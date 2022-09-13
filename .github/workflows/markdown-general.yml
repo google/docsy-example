@@ -57,7 +57,7 @@ jobs:
           mv ./markdown/general/climatology_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
           mv ./markdown/general/dask_wrapper_template_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
           echo "Move images"
-          rsync -r --delete ./markdown_images/general/* $GITHUB_WORKSPACE/site/static/
+          rsync -r --delete ./markdown_images/general/ $GITHUB_WORKSPACE/site/static
           
       - name: commit changes
         run: |
