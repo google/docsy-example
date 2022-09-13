@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: British-Oceanographic-Data-Centre/COAsT
-          ref: feature/notebook_action_jp_merge
+          ref: develop
           path: external
 
       - name: Prepare environement
@@ -39,8 +39,8 @@ jobs:
           cd $GITHUB_WORKSPACE/external
           sudo apt install wget unzip rsync -y
           wget -q https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
-          unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebooks/runnable_notebooks/example_files/profile
-          ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/example_files/profile
+          unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebooks/runnable_notebooks/profile/example_files
+          ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/profile/example_files
           mkdir -p ./example_scripts/notebooks/markdown
           ls ./example_scripts/notebooks
           pip install .
