@@ -52,7 +52,6 @@ jobs:
           ls ./markdown      
           echo "Move profile markdown examples"
           mv ./markdown/profile/analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv ./markdown/profile/analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_extract_and_compare_single_process_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
