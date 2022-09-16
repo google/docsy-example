@@ -27,7 +27,7 @@ pip install COAsT
 ## Development use installation
 
 If you would prefer to work with a clone of the repository in a development
-python environment do the following. First [clone the repoitory](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) in the place
+python environment do the following. First [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) in the place
 where you want to work:
 ```
 git clone https://github.com/British-Oceanographic-Data-Centre/COAsT.git
