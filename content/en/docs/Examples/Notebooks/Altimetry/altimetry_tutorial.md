@@ -41,7 +41,7 @@ altimetry = coast.Altimetry(fn_altimetry, config=fn_altimetry_config)
 ```
 
     ././config/example_altimetry.json
-    Altimetry object at 0x564fe2605fc0 initialised
+    Altimetry object at 0x56044aca9fc0 initialised
 
 
 ### Subsetting
@@ -57,7 +57,7 @@ ind = ind[::4]
 altimetry = altimetry.isel(t_dim=ind)
 ```
 
-    Subsetting Altimetry object at 0x564fe2605fc0 indices in [-10, 10], [45, 60]
+    Subsetting Altimetry object at 0x56044aca9fc0 indices in [-10, 10], [45, 60]
 
 
 ### Model interpolation
@@ -74,7 +74,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 # to see for yourself.
 ```
 
-    Interpolating Gridded object at 0x564fe2605fc0 "ssh" with time_interp "nearest"
+    Interpolating Gridded object at 0x56044aca9fc0 "ssh" with time_interp "nearest"
 
 
 
@@ -93,7 +93,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 stats = altimetry.basic_stats("ocean_tide_standard_name", "interp_ssh")
 ```
 
-    Altimetry object at 0x564fe2605fc0 initialised
+    Altimetry object at 0x56044aca9fc0 initialised
 
 
 
@@ -121,7 +121,7 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 #crps.dataset  # uncomment to print data object summary
 ```
 
-    Altimetry object at 0x564fe2605fc0 initialised
+    Altimetry object at 0x56044aca9fc0 initialised
 
 
 ### Plotting data
@@ -139,7 +139,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3646/1478867203.py in <cell line: 4>()
+    /tmp/ipykernel_3649/1478867203.py in <cell line: 4>()
           2 # of the observed or derived quantities above. So to take a look at the
           3 # 'sla_filtered' variable:
     ----> 4 fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
@@ -270,7 +270,7 @@ fig, ax = crps.quick_plot("crps")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3646/3088798311.py in <cell line: 3>()
+    /tmp/ipykernel_3649/3088798311.py in <cell line: 3>()
           1 # As stats and crps are also Altimetry objects, quick_plot() can also be used:
           2 # crps quick_plot:
     ----> 3 fig, ax = crps.quick_plot("crps")
@@ -400,7 +400,7 @@ fig, ax = stats.quick_plot("absolute_error")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3646/4195741849.py in <cell line: 2>()
+    /tmp/ipykernel_3649/4195741849.py in <cell line: 2>()
           1 # stats quick_plot:
     ----> 2 fig, ax = stats.quick_plot("absolute_error")
     
