@@ -83,7 +83,7 @@ profile.read_en4(fn_prof, multiple=multiple)
 
     FileNotFoundError                         Traceback (most recent call last)
 
-    /tmp/ipykernel_3874/3838477898.py in <cell line: 2>()
+    /tmp/ipykernel_3979/3838477898.py in <cell line: 2>()
           1 profile = coast.Profile(config=fn_cfg_prof)
     ----> 2 profile.read_en4(fn_prof, multiple=multiple)
     
@@ -189,7 +189,7 @@ profile = profile.subset_indices_lonlat_box(longitude_bounds, latitude_bounds)
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3874/2450699116.py in <cell line: 1>()
+    /tmp/ipykernel_3979/2450699116.py in <cell line: 1>()
     ----> 1 profile = profile.subset_indices_lonlat_box(longitude_bounds, latitude_bounds)
     
 
@@ -216,7 +216,7 @@ profile = profile.time_slice(date0=datetime(2010, 1, 1), date1=datetime(2010, 1,
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3874/567752478.py in <cell line: 1>()
+    /tmp/ipykernel_3979/567752478.py in <cell line: 1>()
     ----> 1 profile = profile.time_slice(date0=datetime(2010, 1, 1), date1=datetime(2010, 1, 20))
     
 
@@ -243,7 +243,7 @@ processed_profile = profile.process_en4()
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3874/2338363098.py in <cell line: 1>()
+    /tmp/ipykernel_3979/2338363098.py in <cell line: 1>()
     ----> 1 processed_profile = profile.process_en4()
     
 
@@ -273,7 +273,7 @@ processed_profile.dataset.to_netcdf(fn_out)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3874/1086284925.py in <cell line: 1>()
+    /tmp/ipykernel_3979/1086284925.py in <cell line: 1>()
     ----> 1 processed_profile.dataset.to_netcdf(fn_out)
     
 

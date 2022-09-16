@@ -108,7 +108,7 @@ profile.read_en4(fn_prof)
 
     FileNotFoundError                         Traceback (most recent call last)
 
-    /tmp/ipykernel_3852/2557440746.py in <cell line: 2>()
+    /tmp/ipykernel_3956/2557440746.py in <cell line: 2>()
           1 profile = coast.Profile(config=fn_cfg_prof)
     ----> 2 profile.read_en4(fn_prof)
     
@@ -246,7 +246,7 @@ mask_indices = profile_analysis.determine_mask_indices(profile, mask_list)
 
     TypeError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3852/2085394473.py in <cell line: 33>()
+    /tmp/ipykernel_3956/2085394473.py in <cell line: 33>()
          31 
          32 mask_list = mm.make_mask_dataset(lon, lat, regional_masks)
     ---> 33 mask_indices = profile_analysis.determine_mask_indices(profile, mask_list)
@@ -275,7 +275,7 @@ mask_means = profile_analysis.mask_means(profile, mask_indices)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3852/605467648.py in <cell line: 1>()
+    /tmp/ipykernel_3956/605467648.py in <cell line: 1>()
     ----> 1 mask_means = profile_analysis.mask_means(profile, mask_indices)
     
 
@@ -294,7 +294,7 @@ mask_means.to_netcdf(fn_out)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3852/3613510459.py in <cell line: 1>()
+    /tmp/ipykernel_3956/3613510459.py in <cell line: 1>()
     ----> 1 mask_means.to_netcdf(fn_out)
     
 
