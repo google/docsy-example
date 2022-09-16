@@ -87,7 +87,7 @@ plt.pcolormesh(nemo_t.dataset.longitude, nemo_t.dataset.latitude, nemo_t.dataset
 
 
 
-    <matplotlib.collections.QuadMesh at 0x7f1fad7f5b50>
+    <matplotlib.collections.QuadMesh at 0x7f0698bb3df0>
 
 
 
