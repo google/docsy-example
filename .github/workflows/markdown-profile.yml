@@ -56,6 +56,7 @@ jobs:
           mv ./markdown/profile/analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/wod_bgc_ragged_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           echo "Move images"
           rsync -r --delete ./markdown_images/profile/ $GITHUB_WORKSPACE/site/static
       - name: commit changes
