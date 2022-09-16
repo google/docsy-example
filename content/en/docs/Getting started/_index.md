@@ -9,10 +9,9 @@ description: >
 ## Prerequisites
 
 This package requires;
-- python version 3.8+
-- Anaconda version 4.10+
-
-Are there any system requirements for using this project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+- a linux environment or [docker](https://docs.docker.com/desktop/install/windows-install/) for Windows
+- python version 3.8.10
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
 
 ## Basic use installation via conda or pip
 
@@ -25,54 +24,20 @@ However, there is also the option of;
 pip install COAsT
 ```
 
-if you wish to install from source then got to [GitHub](https://github.com/british-oceanographic-data-centre/COAsT) and follow the README instructions
-
-The base package should now be installed on your system. The following packages might be required for some of the advanced plotting features;
-
-- cartopy
-
 ## Development use installation
 
 If you would prefer to work with a clone of the repository in a development
-python environment do the following. First clone the repoitory in the place
+python environment do the following. First [clone the repoitory](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) in the place
 where you want to work:
 ```
 git clone https://github.com/British-Oceanographic-Data-Centre/COAsT.git
-```
-Then start building a python environment. Here (for example) called ``coast_dev``:
-
-```
-module load anaconda/5-2021 # or whatever it takes to activate conda
-conda config --add channels conda-forge # add conda-forge to your conda channels
-
-conda create -n coast_dev python=3.8 # create a new environment. E.g. `coast_dev`
-conda activate coast_dev # activate new environment
-```
-Install packages to the environment:
-```
 cd COAsT
-conda install --file conda_dev_requirements.txt
 ```
-At the time of writing (30/06/2022) the contents of `conda_dev_requirements.txt` was:
+Then build a python environment:
+
 ```
-less COAsT/conda_dev_requirements.txt
-numpy>=1.22.3
-dask>=2022.3.0
-dask[complete]>=2022.3.0
-xarray>=2022.3.0
-matplotlib>=3.5.1
-netCDF4>=1.5.8
-scipy>=1.8.0
-gsw>=3.4.0
-utide>=0.3.0
-scikit-learn>=1.0.2
-scikit-image>=0.19.2
-statsmodels>=0.13.2
-cartopy>=0.20.2
-pydap>=3.2.2
-lxml>=4.9.0
-requests>=2.27.1
-spyder>=5.1.5
+conda env update --prune --file environment.yml 
+conda activate coast
 ```
 
 ## Obtaining Example files
@@ -84,11 +49,7 @@ In order to try the Examples, example data files and configuration files are rec
 Download example files and link them into a new directory:
 
 ```shell
-rm -rf coast_demo
-mkdir coast_demo
-cd coast_demo
 wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip &&  unzip COAsT_example_files.zip
-ln -s COAsT_example_files example_files
 ```
 
 #### Example configuration files
@@ -96,27 +57,9 @@ ln -s COAsT_example_files example_files
 To facilitate loading different types of data, key information is passed to COAsT using configuration files. The config files used in the Examples are in the repository, or can be downloaded as static files:
 
 ```shell
-cd ../coast_demo
 wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip COAsT-master.zip
-ln -s COAsT-master/config config
 ```
 
-## Preparation for Workshop
-
-#### Package Installation with conda
-
-Assuming a linux environment and that you have anaconda on your system:
-
-```shell
-## Fresh build in new conda environment
-module load anaconda/5-2021 # or whatever it takes to activate conda
-yes | conda env remove --name workshop_env # remove environment 'workshop_env' if it exists
-yes | conda create --name workshop_env python=3.8 # create a new environment
-conda activate workshop_env # activate new environment
-yes | conda install -c bodc coast=2.0.3 # install COAsT within new environment
-yes | conda install -c conda-forge cartopy=0.20.2 # install cartopy
-```
-Then obtain the Example data and configuration files (as above).
 
 
 ## Test it!
