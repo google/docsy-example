@@ -40,6 +40,22 @@ conda env update --prune --file environment.yml
 conda activate coast
 ```
 
+## Building the docker image and executing an interactive environment
+Warning, building the image is resource heavy.  
+After cloning the repo (as above). 
+```shell
+docker build . --tag coast
+docker compose up -d
+docker compose exec coast bash
+```
+You can now start a python session and `import coast`.
+docker compose mounts 3 directories from you host machine onto the docker container:  
+  ./example_files:/example_files   
+  ./config:/config  
+  ./example_scripts:/example_scripts  
+
+
+
 ## Obtaining Example files
 
 In order to try the Examples, example data files and configuration files are recommended.
