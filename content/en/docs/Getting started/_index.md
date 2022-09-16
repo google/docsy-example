@@ -76,8 +76,6 @@ To facilitate loading different types of data, key information is passed to COAs
 wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip COAsT-master.zip
 ```
 
-
-
 ## Test it!
 The below example works best with the COAsT example data. Start by opening a
 python terminal and then importing COAsT:
