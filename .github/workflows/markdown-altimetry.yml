@@ -54,7 +54,7 @@ jobs:
           echo "Move altimetry markdown examples"
           mv ./markdown/altimetry/altimetry_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Altimetry/
           echo "Move images"
-          rsync -r --delete ./markdown_images/altimetry/ $GITHUB_WORKSPACE/site/static
+          rsync -r ./markdown_images/altimetry/ $GITHUB_WORKSPACE/site/static
           ls $GITHUB_WORKSPACE/site/static
           ls $GITHUB_WORKSPACE/site/
 

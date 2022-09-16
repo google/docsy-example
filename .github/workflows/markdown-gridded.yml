@@ -59,7 +59,8 @@ jobs:
           mv ./markdown/gridded/seasia_dic_example_plot_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
           mv ./markdown/gridded/potential_energy_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Gridded/
           echo "Move images"
-          rsync -r --delete ./markdown_images/gridded/ $GITHUB_WORKSPACE/site/static
+          rsync -r ./markdown_images/gridded/ $GITHUB_WORKSPACE/site/static
+
 
       - name: commit changes
         run: |

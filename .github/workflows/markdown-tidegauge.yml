@@ -55,7 +55,7 @@ jobs:
           echo "Move tidegauge markdown examples"
           mv ./markdown/tidegauge/tidetable_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Tidegauge/
           echo "Move images"
-          rsync -r --delete ./markdown_images/tidegauge/ $GITHUB_WORKSPACE/site/static
+          rsync -r ./markdown_images/tidegauge/ $GITHUB_WORKSPACE/site/static
 
       - name: commit changes
         run: |
