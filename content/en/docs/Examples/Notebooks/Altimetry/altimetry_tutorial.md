@@ -41,7 +41,7 @@ altimetry = coast.Altimetry(fn_altimetry, config=fn_altimetry_config)
 ```
 
     ././config/example_altimetry.json
-    Altimetry object at 0x558fdf06afc0 initialised
+    Altimetry object at 0x55d7343bafc0 initialised
 
 
 ### Subsetting
@@ -57,7 +57,7 @@ ind = ind[::4]
 altimetry = altimetry.isel(t_dim=ind)
 ```
 
-    Subsetting Altimetry object at 0x558fdf06afc0 indices in [-10, 10], [45, 60]
+    Subsetting Altimetry object at 0x55d7343bafc0 indices in [-10, 10], [45, 60]
 
 
 ### Model interpolation
@@ -74,7 +74,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 # to see for yourself.
 ```
 
-    Interpolating Gridded object at 0x558fdf06afc0 "ssh" with time_interp "nearest"
+    Interpolating Gridded object at 0x55d7343bafc0 "ssh" with time_interp "nearest"
 
 
 
@@ -93,7 +93,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 stats = altimetry.basic_stats("ocean_tide_standard_name", "interp_ssh")
 ```
 
-    Altimetry object at 0x558fdf06afc0 initialised
+    Altimetry object at 0x55d7343bafc0 initialised
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/altimetry.py:352: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
@@ -127,7 +127,7 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 #crps.dataset  # uncomment to print data object summary
 ```
 
-    Altimetry object at 0x558fdf06afc0 initialised
+    Altimetry object at 0x55d7343bafc0 initialised
 
 
 ### Plotting data
@@ -145,7 +145,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3828/1478867203.py in <cell line: 4>()
+    /tmp/ipykernel_3691/1478867203.py in <cell line: 4>()
           2 # of the observed or derived quantities above. So to take a look at the
           3 # 'sla_filtered' variable:
     ----> 4 fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
@@ -276,7 +276,7 @@ fig, ax = crps.quick_plot("crps")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3828/3088798311.py in <cell line: 3>()
+    /tmp/ipykernel_3691/3088798311.py in <cell line: 3>()
           1 # As stats and crps are also Altimetry objects, quick_plot() can also be used:
           2 # crps quick_plot:
     ----> 3 fig, ax = crps.quick_plot("crps")
@@ -406,7 +406,7 @@ fig, ax = stats.quick_plot("absolute_error")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3828/4195741849.py in <cell line: 2>()
+    /tmp/ipykernel_3691/4195741849.py in <cell line: 2>()
           1 # stats quick_plot:
     ----> 2 fig, ax = stats.quick_plot("absolute_error")
     
