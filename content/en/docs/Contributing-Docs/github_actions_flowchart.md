@@ -60,15 +60,17 @@ graph LR
 ### interactions with other repos
 {{< mermaid align="left">}}
 flowchart LR
-    subgraph b1[push_notebooks - runs on push to master]
+    subgraph b1[push_notebooks - runs on push to develop]
         direction LR
         subgraph b2[COAsT site - markdown ]
             direction TB
             a[checkout docsy site] -->b
             b[checkout coast] -->c
-            c[add python] -->d
-            d[covert notebooks] -->e
-            e[commit changes]            
+            c[create environment] -->d
+            d[execute notebooks] -->e
+            e[covert notebooks to MD] -->f
+            f[move images to static dir] -->g
+            g[commit changes]            
          end
     t[Repository Dispatch] -- event pushed --> b2    
     end
