@@ -30,8 +30,9 @@ jobs:
       - name: Prepare environement
         uses: conda-incubator/setup-miniconda@v2
         with:
-          activate-environment: coast-site
-          environment-file: site/environment.yml
+          activate-environment: coast
+          environment-file: external/environment.yml
+          python-version: 3.8.10
       - name: prep exec notebooks
         run: |
           conda info
