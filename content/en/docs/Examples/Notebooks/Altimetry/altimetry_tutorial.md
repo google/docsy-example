@@ -41,7 +41,7 @@ altimetry = coast.Altimetry(fn_altimetry, config=fn_altimetry_config)
 ```
 
     ././config/example_altimetry.json
-    Altimetry object at 0x557bf1d51fc0 initialised
+    Altimetry object at 0x558fdf06afc0 initialised
 
 
 ### Subsetting
@@ -57,7 +57,7 @@ ind = ind[::4]
 altimetry = altimetry.isel(t_dim=ind)
 ```
 
-    Subsetting Altimetry object at 0x557bf1d51fc0 indices in [-10, 10], [45, 60]
+    Subsetting Altimetry object at 0x558fdf06afc0 indices in [-10, 10], [45, 60]
 
 
 ### Model interpolation
@@ -74,7 +74,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 # to see for yourself.
 ```
 
-    Interpolating Gridded object at 0x557bf1d51fc0 "ssh" with time_interp "nearest"
+    Interpolating Gridded object at 0x558fdf06afc0 "ssh" with time_interp "nearest"
 
 
 
@@ -93,12 +93,12 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 stats = altimetry.basic_stats("ocean_tide_standard_name", "interp_ssh")
 ```
 
-    Altimetry object at 0x557bf1d51fc0 initialised
+    Altimetry object at 0x558fdf06afc0 initialised
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/data/altimetry.py:352: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/altimetry.py:352: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
       corr = pdvar.corr(method=method)
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/data/altimetry.py:366: FutureWarning: The default value of numeric_only in DataFrame.cov is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/altimetry.py:366: FutureWarning: The default value of numeric_only in DataFrame.cov is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
       cov = pdvar.cov()
 
 
@@ -127,7 +127,7 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 #crps.dataset  # uncomment to print data object summary
 ```
 
-    Altimetry object at 0x557bf1d51fc0 initialised
+    Altimetry object at 0x558fdf06afc0 initialised
 
 
 ### Plotting data
@@ -145,13 +145,13 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3692/1478867203.py in <cell line: 4>()
+    /tmp/ipykernel_3828/1478867203.py in <cell line: 4>()
           2 # of the observed or derived quantities above. So to take a look at the
           3 # 'sla_filtered' variable:
     ----> 4 fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
     
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/data/altimetry.py in quick_plot(self, color_var_str)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/altimetry.py in quick_plot(self, color_var_str)
         155             title = "Altimetry observation locations"
         156         info("Drawing a quick plot...")
     --> 157         fig, ax = plot_util.geo_scatter(self.dataset.longitude, self.dataset.latitude, c=color_var, title=title)
@@ -159,7 +159,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
         159         return fig, ax
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/_utils/plot_util.py in geo_scatter(longitude, latitude, c, s, scatter_kwargs, coastline_kwargs, gridline_kwargs, figure_kwargs, title, figsize)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/_utils/plot_util.py in geo_scatter(longitude, latitude, c, s, scatter_kwargs, coastline_kwargs, gridline_kwargs, figure_kwargs, title, figsize)
         280 
         281     ax = plt.subplot(111, projection=ccrs.PlateCarree())
     --> 282     sca = ax.scatter(longitude, y=latitude, c=c, s=s, zorder=100, **scatter_kwargs)
@@ -167,7 +167,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
         284     ax.add_feature(coast, edgecolor="gray")
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in wrapper(self, *args, **kwargs)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in wrapper(self, *args, **kwargs)
         308 
         309         kwargs['transform'] = transform
     --> 310         return func(self, *args, **kwargs)
@@ -175,7 +175,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
         312 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in scatter(self, *args, **kwargs)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in scatter(self, *args, **kwargs)
        1545 
        1546         result = matplotlib.axes.Axes.scatter(self, *args, **kwargs)
     -> 1547         self.autoscale_view()
@@ -183,7 +183,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
        1549 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
         852 
         853     def autoscale_view(self, tight=None, scalex=True, scaley=True):
     --> 854         matplotlib.axes.Axes.autoscale_view(self, tight=tight,
@@ -191,7 +191,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
         856         # Limit the resulting bounds to valid area.
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in autoscale_view(self, tight, scalex, scaley)
        2970             # End of definition of internal function 'handle_single_axis'.
        2971 
     -> 2972         handle_single_axis(
@@ -199,7 +199,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
        2974             x_stickies, self.set_xbound)
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in handle_single_axis(scale, shared_axes, name, axis, margin, stickies, set_bound)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in handle_single_axis(scale, shared_axes, name, axis, margin, stickies, set_bound)
        2967             if not self._tight:
        2968                 x0, x1 = locator.view_limits(x0, x1)
     -> 2969             set_bound(x0, x1)
@@ -207,7 +207,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
        2971 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xbound(self, lower, upper)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xbound(self, lower, upper)
        3564             lower, upper = lower
        3565 
     -> 3566         old_lower, old_upper = self.get_xbound()
@@ -215,7 +215,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
        3568             lower = old_lower
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xbound(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xbound(self)
        3536         invert_xaxis, xaxis_inverted
        3537         """
     -> 3538         left, right = self.get_xlim()
@@ -223,7 +223,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
        3540             return left, right
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xlim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xlim(self)
        3594         be greater than the *right* value.
        3595         """
     -> 3596         return tuple(self.viewLim.intervalx)
@@ -231,7 +231,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
        3598     def _validate_converted_limits(self, limit, convert):
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in viewLim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in viewLim(self)
         813     @property
         814     def viewLim(self):
     --> 815         self._unstale_viewLim()
@@ -239,7 +239,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
         817 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in _unstale_viewLim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in _unstale_viewLim(self)
         808                 for ax in self._shared_axes[name].get_siblings(self):
         809                     ax._stale_viewlims[name] = False
     --> 810             self.autoscale_view(**{f"scale{name}": scale
@@ -247,7 +247,7 @@ fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
         812 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
         855                                             scalex=scalex, scaley=scaley)
         856         # Limit the resulting bounds to valid area.
     --> 857         if scalex and self._autoscaleXon:
@@ -276,13 +276,13 @@ fig, ax = crps.quick_plot("crps")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3692/3088798311.py in <cell line: 3>()
+    /tmp/ipykernel_3828/3088798311.py in <cell line: 3>()
           1 # As stats and crps are also Altimetry objects, quick_plot() can also be used:
           2 # crps quick_plot:
     ----> 3 fig, ax = crps.quick_plot("crps")
     
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/data/altimetry.py in quick_plot(self, color_var_str)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/altimetry.py in quick_plot(self, color_var_str)
         155             title = "Altimetry observation locations"
         156         info("Drawing a quick plot...")
     --> 157         fig, ax = plot_util.geo_scatter(self.dataset.longitude, self.dataset.latitude, c=color_var, title=title)
@@ -290,7 +290,7 @@ fig, ax = crps.quick_plot("crps")
         159         return fig, ax
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/_utils/plot_util.py in geo_scatter(longitude, latitude, c, s, scatter_kwargs, coastline_kwargs, gridline_kwargs, figure_kwargs, title, figsize)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/_utils/plot_util.py in geo_scatter(longitude, latitude, c, s, scatter_kwargs, coastline_kwargs, gridline_kwargs, figure_kwargs, title, figsize)
         280 
         281     ax = plt.subplot(111, projection=ccrs.PlateCarree())
     --> 282     sca = ax.scatter(longitude, y=latitude, c=c, s=s, zorder=100, **scatter_kwargs)
@@ -298,7 +298,7 @@ fig, ax = crps.quick_plot("crps")
         284     ax.add_feature(coast, edgecolor="gray")
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in wrapper(self, *args, **kwargs)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in wrapper(self, *args, **kwargs)
         308 
         309         kwargs['transform'] = transform
     --> 310         return func(self, *args, **kwargs)
@@ -306,7 +306,7 @@ fig, ax = crps.quick_plot("crps")
         312 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in scatter(self, *args, **kwargs)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in scatter(self, *args, **kwargs)
        1545 
        1546         result = matplotlib.axes.Axes.scatter(self, *args, **kwargs)
     -> 1547         self.autoscale_view()
@@ -314,7 +314,7 @@ fig, ax = crps.quick_plot("crps")
        1549 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
         852 
         853     def autoscale_view(self, tight=None, scalex=True, scaley=True):
     --> 854         matplotlib.axes.Axes.autoscale_view(self, tight=tight,
@@ -322,7 +322,7 @@ fig, ax = crps.quick_plot("crps")
         856         # Limit the resulting bounds to valid area.
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in autoscale_view(self, tight, scalex, scaley)
        2970             # End of definition of internal function 'handle_single_axis'.
        2971 
     -> 2972         handle_single_axis(
@@ -330,7 +330,7 @@ fig, ax = crps.quick_plot("crps")
        2974             x_stickies, self.set_xbound)
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in handle_single_axis(scale, shared_axes, name, axis, margin, stickies, set_bound)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in handle_single_axis(scale, shared_axes, name, axis, margin, stickies, set_bound)
        2967             if not self._tight:
        2968                 x0, x1 = locator.view_limits(x0, x1)
     -> 2969             set_bound(x0, x1)
@@ -338,7 +338,7 @@ fig, ax = crps.quick_plot("crps")
        2971 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xbound(self, lower, upper)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xbound(self, lower, upper)
        3564             lower, upper = lower
        3565 
     -> 3566         old_lower, old_upper = self.get_xbound()
@@ -346,7 +346,7 @@ fig, ax = crps.quick_plot("crps")
        3568             lower = old_lower
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xbound(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xbound(self)
        3536         invert_xaxis, xaxis_inverted
        3537         """
     -> 3538         left, right = self.get_xlim()
@@ -354,7 +354,7 @@ fig, ax = crps.quick_plot("crps")
        3540             return left, right
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xlim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xlim(self)
        3594         be greater than the *right* value.
        3595         """
     -> 3596         return tuple(self.viewLim.intervalx)
@@ -362,7 +362,7 @@ fig, ax = crps.quick_plot("crps")
        3598     def _validate_converted_limits(self, limit, convert):
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in viewLim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in viewLim(self)
         813     @property
         814     def viewLim(self):
     --> 815         self._unstale_viewLim()
@@ -370,7 +370,7 @@ fig, ax = crps.quick_plot("crps")
         817 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in _unstale_viewLim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in _unstale_viewLim(self)
         808                 for ax in self._shared_axes[name].get_siblings(self):
         809                     ax._stale_viewlims[name] = False
     --> 810             self.autoscale_view(**{f"scale{name}": scale
@@ -378,7 +378,7 @@ fig, ax = crps.quick_plot("crps")
         812 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
         855                                             scalex=scalex, scaley=scaley)
         856         # Limit the resulting bounds to valid area.
     --> 857         if scalex and self._autoscaleXon:
@@ -406,12 +406,12 @@ fig, ax = stats.quick_plot("absolute_error")
 
     AttributeError                            Traceback (most recent call last)
 
-    /tmp/ipykernel_3692/4195741849.py in <cell line: 2>()
+    /tmp/ipykernel_3828/4195741849.py in <cell line: 2>()
           1 # stats quick_plot:
     ----> 2 fig, ax = stats.quick_plot("absolute_error")
     
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/data/altimetry.py in quick_plot(self, color_var_str)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/altimetry.py in quick_plot(self, color_var_str)
         155             title = "Altimetry observation locations"
         156         info("Drawing a quick plot...")
     --> 157         fig, ax = plot_util.geo_scatter(self.dataset.longitude, self.dataset.latitude, c=color_var, title=title)
@@ -419,7 +419,7 @@ fig, ax = stats.quick_plot("absolute_error")
         159         return fig, ax
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/coast/_utils/plot_util.py in geo_scatter(longitude, latitude, c, s, scatter_kwargs, coastline_kwargs, gridline_kwargs, figure_kwargs, title, figsize)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/_utils/plot_util.py in geo_scatter(longitude, latitude, c, s, scatter_kwargs, coastline_kwargs, gridline_kwargs, figure_kwargs, title, figsize)
         280 
         281     ax = plt.subplot(111, projection=ccrs.PlateCarree())
     --> 282     sca = ax.scatter(longitude, y=latitude, c=c, s=s, zorder=100, **scatter_kwargs)
@@ -427,7 +427,7 @@ fig, ax = stats.quick_plot("absolute_error")
         284     ax.add_feature(coast, edgecolor="gray")
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in wrapper(self, *args, **kwargs)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in wrapper(self, *args, **kwargs)
         308 
         309         kwargs['transform'] = transform
     --> 310         return func(self, *args, **kwargs)
@@ -435,7 +435,7 @@ fig, ax = stats.quick_plot("absolute_error")
         312 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in scatter(self, *args, **kwargs)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in scatter(self, *args, **kwargs)
        1545 
        1546         result = matplotlib.axes.Axes.scatter(self, *args, **kwargs)
     -> 1547         self.autoscale_view()
@@ -443,7 +443,7 @@ fig, ax = stats.quick_plot("absolute_error")
        1549 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
         852 
         853     def autoscale_view(self, tight=None, scalex=True, scaley=True):
     --> 854         matplotlib.axes.Axes.autoscale_view(self, tight=tight,
@@ -451,7 +451,7 @@ fig, ax = stats.quick_plot("absolute_error")
         856         # Limit the resulting bounds to valid area.
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in autoscale_view(self, tight, scalex, scaley)
        2970             # End of definition of internal function 'handle_single_axis'.
        2971 
     -> 2972         handle_single_axis(
@@ -459,7 +459,7 @@ fig, ax = stats.quick_plot("absolute_error")
        2974             x_stickies, self.set_xbound)
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in handle_single_axis(scale, shared_axes, name, axis, margin, stickies, set_bound)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in handle_single_axis(scale, shared_axes, name, axis, margin, stickies, set_bound)
        2967             if not self._tight:
        2968                 x0, x1 = locator.view_limits(x0, x1)
     -> 2969             set_bound(x0, x1)
@@ -467,7 +467,7 @@ fig, ax = stats.quick_plot("absolute_error")
        2971 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xbound(self, lower, upper)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xbound(self, lower, upper)
        3564             lower, upper = lower
        3565 
     -> 3566         old_lower, old_upper = self.get_xbound()
@@ -475,7 +475,7 @@ fig, ax = stats.quick_plot("absolute_error")
        3568             lower = old_lower
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xbound(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xbound(self)
        3536         invert_xaxis, xaxis_inverted
        3537         """
     -> 3538         left, right = self.get_xlim()
@@ -483,7 +483,7 @@ fig, ax = stats.quick_plot("absolute_error")
        3540             return left, right
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xlim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in get_xlim(self)
        3594         be greater than the *right* value.
        3595         """
     -> 3596         return tuple(self.viewLim.intervalx)
@@ -491,7 +491,7 @@ fig, ax = stats.quick_plot("absolute_error")
        3598     def _validate_converted_limits(self, limit, convert):
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in viewLim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in viewLim(self)
         813     @property
         814     def viewLim(self):
     --> 815         self._unstale_viewLim()
@@ -499,7 +499,7 @@ fig, ax = stats.quick_plot("absolute_error")
         817 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/matplotlib/axes/_base.py in _unstale_viewLim(self)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in _unstale_viewLim(self)
         808                 for ax in self._shared_axes[name].get_siblings(self):
         809                     ax._stale_viewlims[name] = False
     --> 810             self.autoscale_view(**{f"scale{name}": scale
@@ -507,7 +507,7 @@ fig, ax = stats.quick_plot("absolute_error")
         812 
 
 
-    /usr/share/miniconda/envs/coast-site/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/mpl/geoaxes.py in autoscale_view(self, tight, scalex, scaley)
         855                                             scalex=scalex, scaley=scaley)
         856         # Limit the resulting bounds to valid area.
     --> 857         if scalex and self._autoscaleXon:
@@ -523,8 +523,3 @@ fig, ax = stats.quick_plot("absolute_error")
 ![png](/COAsT/altimetry_tutorial_files/altimetry_tutorial_17_1.png)
     
 
-
-
-```python
-
-```
