@@ -1,7 +1,7 @@
 ---
 title: "Oceanparcels"
 linkTitle: "Oceanparcels"
-date: 2022-07-11
+date: 2022-09-20
 description: >
   Docstrings for the Oceanparcels class
 ---

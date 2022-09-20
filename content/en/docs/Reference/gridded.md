@@ -1,7 +1,7 @@
 ---
 title: "Gridded"
 linkTitle: "Gridded"
-date: 2022-07-11
+date: 2022-09-20
 description: >
   Docstrings for the Gridded class
 ---
@@ -9,14 +9,17 @@ description: >
 
 [Gridded()](#gridded)<br />
 [Gridded._setup_grid_obj()](#gridded_setup_grid_obj)<br />
+[Gridded.make_lonLat_2d()](#griddedmake_lonlat_2d)<br />
 [Gridded.set_grid_vars()](#griddedset_grid_vars)<br />
 [Gridded.load_domain()](#griddedload_domain)<br />
 [Gridded.merge_domain_into_dataset()](#griddedmerge_domain_into_dataset)<br />
 [Gridded.set_grid_ref_attr()](#griddedset_grid_ref_attr)<br />
 [Gridded.get_contour_complex()](#griddedget_contour_complex)<br />
 [Gridded.set_timezero_depths()](#griddedset_timezero_depths)<br />
+[Gridded.calc_bathymetry()](#griddedcalc_bathymetry)<br />
 [Gridded.subset_indices()](#griddedsubset_indices)<br />
 [Gridded.find_j_i()](#griddedfind_j_i)<br />
+[Gridded.find_j_i_list()](#griddedfind_j_i_list)<br />
 [Gridded.find_j_i_domain()](#griddedfind_j_i_domain)<br />
 [Gridded.transect_indices()](#griddedtransect_indices)<br />
 [Gridded.interpolate_in_space()](#griddedinterpolate_in_space)<br />
@@ -30,6 +33,7 @@ description: >
 [Gridded.harmonics_combine()](#griddedharmonics_combine)<br />
 [Gridded.harmonics_convert()](#griddedharmonics_convert)<br />
 [Gridded.time_slice()](#griddedtime_slice)<br />
+[Gridded.calculate_vertical_mask()](#griddedcalculate_vertical_mask)<br />
 
 Gridded class
 #### Gridded()
@@ -56,6 +60,14 @@ def Gridded._setup_grid_obj(self, chunks, multiple, **kwargs):
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  chunks: This is a setting for xarray as to whether dask (parrell processing) should be on and how it works<br />
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  multiple: falg to tell if we are loading one or more files<br />
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **kwargs: pass direct to loaded xarray dataset<br />
+> <br />
+##### Gridded.make_lonLat_2d()
+```python
+
+def Gridded.make_lonLat_2d(self):
+```
+> <br />
+> Expand 1D latitude and longitude variables to 2D.<br />
 > <br />
 ##### Gridded.set_grid_vars()
 ```python
@@ -100,12 +112,31 @@ def Gridded.get_contour_complex(self, var, points_x, points_y, points_z, toleran
 ##### Gridded.set_timezero_depths()
 ```python
 
-def Gridded.set_timezero_depths(self, dataset_domain):
+def Gridded.set_timezero_depths(self, dataset_domain, calculate_bathymetry=False):
 ```
 > <br />
 > Calculates the depths at time zero (from the domain_cfg input file)<br />
 > for the appropriate grid.<br />
 > The depths are assigned to domain_dataset.depth_0<br />
+> <br />
+> <b>Args:</b><br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  dataset_domain: a complex data object.<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  calculate_bathymetry: Flag that will either calculate bathymetry (true) or load it from dataset_domain file<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (false).<br />
+> <br />
+##### Gridded.calc_bathymetry()
+```python
+
+def Gridded.calc_bathymetry(self, dataset_domain):
+```
+> <br />
+> NEMO approach to defining bathymetry by summing scale factors at various<br />
+> grid locations.<br />
+> Works with z-coordinates on u- and v- faces where bathymetry is defined<br />
+> at the top of the cliff, not at the bottom<br />
+> <br />
+> <b>Args:</b><br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  dataset_domain: a complex data object.<br />
 > <br />
 ##### Gridded.subset_indices()
 ```python
@@ -132,6 +163,20 @@ def Gridded.find_j_i(self):
 > :param lat: latitude<br />
 > :param lon: longitude<br />
 > :return: the y and x coordinates for the NEMO object's grid_ref, i.e. t,u,v,f,w.<br />
+> <br />
+##### Gridded.find_j_i_list()
+```python
+
+def Gridded.find_j_i_list(self):
+```
+> <br />
+> A routine to find the nearest y x coordinates for a list of latitude and longitude values<br />
+> Usage: [y,x] = find_j_i(lat=[49,50,51], lon=[-12,-11,10])<br />
+> <br />
+> :param lat: latitude<br />
+> :param lon: longitude<br />
+> :optional n_nn=1 number of nearest neighbours<br />
+> :return: the j, i coordinates for the NEMO object's grid_ref, i.e. t,u,v,f,w. and a distance measure<br />
 > <br />
 ##### Gridded.find_j_i_domain()
 ```python
@@ -215,7 +260,7 @@ def Gridded.interpolate_in_time(model_array, new_times, interp_method=nearest, e
 ##### Gridded.construct_density()
 ```python
 
-def Gridded.construct_density(self, eos=EOS10):
+def Gridded.construct_density(self, eos=EOS10, rhobar=False, Zd_mask=unknown, CT_AS=False, pot_dens=False, Tbar=True, Sbar=True):
 ```
 > <br />
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Constructs the in-situ density using the salinity, temperture and<br />
@@ -234,6 +279,19 @@ def Gridded.construct_density(self, eos=EOS10):
 > eos : equation of state, optional<br />
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DESCRIPTION. The default is 'EOS10'.<br />
 > <br />
+> rhobar : Calculate density with depth mean T and S<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DESCRIPTION. The default is 'False'.<br />
+> Zd_mask : Provide a 3D mask for rhobar calculation<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Calculate using calculate_vertical_mask<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DESCRIPTION. The default is empty.<br />
+> <br />
+> CT_AS  : Conservative Temperature and Absolute Salinity already provided<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DESCRIPTION. The default is 'False'.<br />
+> pot_dens :Calculation at zero pressure<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DESCRIPTION. The default is 'False'.<br />
+> Tbar and Sbar : If rhobar is True then these can be switch to False to allow one component to<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  remain depth varying. So Tbar=Flase gives temperature component, Sbar=Flase gives Salinity component<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DESCRIPTION. The default is 'True'.<br />
 > <br />
 > Returns<br />
 > -------<br />
@@ -257,7 +315,7 @@ def Gridded.trim_domain_size(self, dataset_domain):
 def Gridded.copy_domain_vars_to_dataset(self, dataset_domain, grid_vars):
 ```
 > <br />
-> Map the domain coordand metric variables to the dataset object.<br />
+> Map the domain coordinates and metric variables to the dataset object.<br />
 > Expects the source and target DataArrays to be same sizes.<br />
 > <br />
 ##### Gridded.differentiate()
@@ -436,4 +494,13 @@ def Gridded.time_slice(self, date0, date1):
 ```
 > <br />
 > Return new Gridded object, indexed between dates date0 and date1<br />
+> <br />
+##### Gridded.calculate_vertical_mask()
+```python
+
+def Gridded.calculate_vertical_mask(self, Zmax):
+```
+> <br />
+> Calculates a 3D mask to a specified level Zmax. 1 for sea; 0 for below sea bed<br />
+> and linearly ramped for last level<br />
 > <br />
