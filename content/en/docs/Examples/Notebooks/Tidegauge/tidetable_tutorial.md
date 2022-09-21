@@ -53,7 +53,7 @@ Initiate a TideGauge object, if a filename is passed it assumes it is a GESLA ty
 tg = coast.Tidegauge()
 ```
 
-    Tidegauge object at 0x5592d5834fc0 initialised
+    Tidegauge object at 0x556fb75e5fc0 initialised
 
 
 Specify the data read as a High Low Water dataset.
@@ -84,7 +84,7 @@ tg.dataset.plot.scatter(x="time", y="ssh")
 
 
 
-    <matplotlib.collections.PathCollection at 0x7f0e0bb3ff10>
+    <matplotlib.collections.PathCollection at 0x7fa5f473b970>
 
 
 
@@ -129,188 +129,21 @@ Extract the Low Tide value.
 
 ```python
 print("Try the TideGauge.get_tidetabletimes() methods:")
-print("LT:", HLW[np.argmin(HLW)].values, "m at", HLW[np.argmin(HLW)].time.values)
+print("LT:", HLW[np.argmin(HLW.data)].values, "m at", HLW[np.argmin(HLW.data)].time.values)
 ```
 
     Try the TideGauge.get_tidetabletimes() methods:
-
-
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in _wrapfunc(obj, method, *args, **kwds)
-         56     try:
-    ---> 57         return bound(*args, **kwds)
-         58     except TypeError:
-
-
-    TypeError: argmin() got an unexpected keyword argument 'out'
-
-    
-    During handling of the above exception, another exception occurred:
-
-
-    ValueError                                Traceback (most recent call last)
-
-    /tmp/ipykernel_3857/599271272.py in <cell line: 2>()
-          1 print("Try the TideGauge.get_tidetabletimes() methods:")
-    ----> 2 print("LT:", HLW[np.argmin(HLW)].values, "m at", HLW[np.argmin(HLW)].time.values)
-    
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/overrides.py in argmin(*args, **kwargs)
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in argmin(a, axis, out, keepdims)
-       1310     """
-       1311     kwds = {'keepdims': keepdims} if keepdims is not np._NoValue else {}
-    -> 1312     return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
-       1313 
-       1314 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in _wrapfunc(obj, method, *args, **kwds)
-         64         # Call _wrapit from within the except clause to ensure a potential
-         65         # exception has a traceback chain.
-    ---> 66         return _wrapit(obj, method, *args, **kwds)
-         67 
-         68 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in _wrapit(obj, method, *args, **kwds)
-         45         if not isinstance(result, mu.ndarray):
-         46             result = asarray(result)
-    ---> 47         result = wrap(result)
-         48     return result
-         49 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/dataarray.py in __array_wrap__(self, obj, context)
-       3055 
-       3056     def __array_wrap__(self, obj, context=None) -> DataArray:
-    -> 3057         new_var = self.variable.__array_wrap__(obj, context)
-       3058         return self._replace(new_var)
-       3059 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __array_wrap__(self, obj, context)
-       2442 
-       2443     def __array_wrap__(self, obj, context=None):
-    -> 2444         return Variable(self.dims, obj)
-       2445 
-       2446     def _unary_op(self, f, *args, **kwargs):
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __init__(self, dims, data, attrs, encoding, fastpath)
-        303         """
-        304         self._data = as_compatible_data(data, fastpath=fastpath)
-    --> 305         self._dims = self._parse_dimensions(dims)
-        306         self._attrs = None
-        307         self._encoding = None
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in _parse_dimensions(self, dims)
-        571         dims = tuple(dims)
-        572         if len(dims) != self.ndim:
-    --> 573             raise ValueError(
-        574                 f"dimensions {dims} must have the same length as the "
-        575                 f"number of data dimensions, ndim={self.ndim}"
-
-
-    ValueError: dimensions ('time',) must have the same length as the number of data dimensions, ndim=0
+    LT: 2.83 m at 2020-10-13T14:36:00.000000000
 
 
 Extract the High Tide value.
 
 
 ```python
-print("HT:", HLW[np.argmax(HLW)].values, "m at", HLW[np.argmax(HLW)].time.values)
+print("HT:", HLW[np.argmax(HLW.data)].values, "m at", HLW[np.argmax(HLW.data)].time.values)
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    TypeError                                 Traceback (most recent call last)
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in _wrapfunc(obj, method, *args, **kwds)
-         56     try:
-    ---> 57         return bound(*args, **kwds)
-         58     except TypeError:
-
-
-    TypeError: argmax() got an unexpected keyword argument 'out'
-
-    
-    During handling of the above exception, another exception occurred:
-
-
-    ValueError                                Traceback (most recent call last)
-
-    /tmp/ipykernel_3857/219298863.py in <cell line: 1>()
-    ----> 1 print("HT:", HLW[np.argmax(HLW)].values, "m at", HLW[np.argmax(HLW)].time.values)
-    
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/overrides.py in argmax(*args, **kwargs)
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in argmax(a, axis, out, keepdims)
-       1214     """
-       1215     kwds = {'keepdims': keepdims} if keepdims is not np._NoValue else {}
-    -> 1216     return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
-       1217 
-       1218 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in _wrapfunc(obj, method, *args, **kwds)
-         64         # Call _wrapit from within the except clause to ensure a potential
-         65         # exception has a traceback chain.
-    ---> 66         return _wrapit(obj, method, *args, **kwds)
-         67 
-         68 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/fromnumeric.py in _wrapit(obj, method, *args, **kwds)
-         45         if not isinstance(result, mu.ndarray):
-         46             result = asarray(result)
-    ---> 47         result = wrap(result)
-         48     return result
-         49 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/dataarray.py in __array_wrap__(self, obj, context)
-       3055 
-       3056     def __array_wrap__(self, obj, context=None) -> DataArray:
-    -> 3057         new_var = self.variable.__array_wrap__(obj, context)
-       3058         return self._replace(new_var)
-       3059 
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __array_wrap__(self, obj, context)
-       2442 
-       2443     def __array_wrap__(self, obj, context=None):
-    -> 2444         return Variable(self.dims, obj)
-       2445 
-       2446     def _unary_op(self, f, *args, **kwargs):
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __init__(self, dims, data, attrs, encoding, fastpath)
-        303         """
-        304         self._data = as_compatible_data(data, fastpath=fastpath)
-    --> 305         self._dims = self._parse_dimensions(dims)
-        306         self._attrs = None
-        307         self._encoding = None
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in _parse_dimensions(self, dims)
-        571         dims = tuple(dims)
-        572         if len(dims) != self.ndim:
-    --> 573             raise ValueError(
-        574                 f"dimensions {dims} must have the same length as the "
-        575                 f"number of data dimensions, ndim={self.ndim}"
-
-
-    ValueError: dimensions ('time',) must have the same length as the number of data dimensions, ndim=0
+    HT: 8.01 m at 2020-10-13T07:59:00.000000000
 
 
 Or use the the nearest High Tide method to get High Tide.
