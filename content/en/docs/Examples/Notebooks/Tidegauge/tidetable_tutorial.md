@@ -53,7 +53,7 @@ Initiate a TideGauge object, if a filename is passed it assumes it is a GESLA ty
 tg = coast.Tidegauge()
 ```
 
-    Tidegauge object at 0x55eff512cfc0 initialised
+    Tidegauge object at 0x5592d5834fc0 initialised
 
 
 Specify the data read as a High Low Water dataset.
@@ -84,7 +84,7 @@ tg.dataset.plot.scatter(x="time", y="ssh")
 
 
 
-    <matplotlib.collections.PathCollection at 0x7f00e173aa30>
+    <matplotlib.collections.PathCollection at 0x7f0e0bb3ff10>
 
 
 
@@ -154,7 +154,7 @@ print("LT:", HLW[np.argmin(HLW)].values, "m at", HLW[np.argmin(HLW)].time.values
 
     ValueError                                Traceback (most recent call last)
 
-    /tmp/ipykernel_3891/599271272.py in <cell line: 2>()
+    /tmp/ipykernel_3857/599271272.py in <cell line: 2>()
           1 print("Try the TideGauge.get_tidetabletimes() methods:")
     ----> 2 print("LT:", HLW[np.argmin(HLW)].values, "m at", HLW[np.argmin(HLW)].time.values)
     
@@ -187,35 +187,35 @@ print("LT:", HLW[np.argmin(HLW)].values, "m at", HLW[np.argmin(HLW)].time.values
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/dataarray.py in __array_wrap__(self, obj, context)
-       3485 
-       3486     def __array_wrap__(self: T_DataArray, obj, context=None) -> T_DataArray:
-    -> 3487         new_var = self.variable.__array_wrap__(obj, context)
-       3488         return self._replace(new_var)
-       3489 
+       3055 
+       3056     def __array_wrap__(self, obj, context=None) -> DataArray:
+    -> 3057         new_var = self.variable.__array_wrap__(obj, context)
+       3058         return self._replace(new_var)
+       3059 
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __array_wrap__(self, obj, context)
-       2494 
-       2495     def __array_wrap__(self, obj, context=None):
-    -> 2496         return Variable(self.dims, obj)
-       2497 
-       2498     def _unary_op(self, f, *args, **kwargs):
+       2442 
+       2443     def __array_wrap__(self, obj, context=None):
+    -> 2444         return Variable(self.dims, obj)
+       2445 
+       2446     def _unary_op(self, f, *args, **kwargs):
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __init__(self, dims, data, attrs, encoding, fastpath)
-        318         """
-        319         self._data = as_compatible_data(data, fastpath=fastpath)
-    --> 320         self._dims = self._parse_dimensions(dims)
-        321         self._attrs = None
-        322         self._encoding = None
+        303         """
+        304         self._data = as_compatible_data(data, fastpath=fastpath)
+    --> 305         self._dims = self._parse_dimensions(dims)
+        306         self._attrs = None
+        307         self._encoding = None
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in _parse_dimensions(self, dims)
-        578         dims = tuple(dims)
-        579         if len(dims) != self.ndim:
-    --> 580             raise ValueError(
-        581                 f"dimensions {dims} must have the same length as the "
-        582                 f"number of data dimensions, ndim={self.ndim}"
+        571         dims = tuple(dims)
+        572         if len(dims) != self.ndim:
+    --> 573             raise ValueError(
+        574                 f"dimensions {dims} must have the same length as the "
+        575                 f"number of data dimensions, ndim={self.ndim}"
 
 
     ValueError: dimensions ('time',) must have the same length as the number of data dimensions, ndim=0
@@ -247,7 +247,7 @@ print("HT:", HLW[np.argmax(HLW)].values, "m at", HLW[np.argmax(HLW)].time.values
 
     ValueError                                Traceback (most recent call last)
 
-    /tmp/ipykernel_3891/219298863.py in <cell line: 1>()
+    /tmp/ipykernel_3857/219298863.py in <cell line: 1>()
     ----> 1 print("HT:", HLW[np.argmax(HLW)].values, "m at", HLW[np.argmax(HLW)].time.values)
     
 
@@ -279,35 +279,35 @@ print("HT:", HLW[np.argmax(HLW)].values, "m at", HLW[np.argmax(HLW)].time.values
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/dataarray.py in __array_wrap__(self, obj, context)
-       3485 
-       3486     def __array_wrap__(self: T_DataArray, obj, context=None) -> T_DataArray:
-    -> 3487         new_var = self.variable.__array_wrap__(obj, context)
-       3488         return self._replace(new_var)
-       3489 
+       3055 
+       3056     def __array_wrap__(self, obj, context=None) -> DataArray:
+    -> 3057         new_var = self.variable.__array_wrap__(obj, context)
+       3058         return self._replace(new_var)
+       3059 
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __array_wrap__(self, obj, context)
-       2494 
-       2495     def __array_wrap__(self, obj, context=None):
-    -> 2496         return Variable(self.dims, obj)
-       2497 
-       2498     def _unary_op(self, f, *args, **kwargs):
+       2442 
+       2443     def __array_wrap__(self, obj, context=None):
+    -> 2444         return Variable(self.dims, obj)
+       2445 
+       2446     def _unary_op(self, f, *args, **kwargs):
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in __init__(self, dims, data, attrs, encoding, fastpath)
-        318         """
-        319         self._data = as_compatible_data(data, fastpath=fastpath)
-    --> 320         self._dims = self._parse_dimensions(dims)
-        321         self._attrs = None
-        322         self._encoding = None
+        303         """
+        304         self._data = as_compatible_data(data, fastpath=fastpath)
+    --> 305         self._dims = self._parse_dimensions(dims)
+        306         self._attrs = None
+        307         self._encoding = None
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/variable.py in _parse_dimensions(self, dims)
-        578         dims = tuple(dims)
-        579         if len(dims) != self.ndim:
-    --> 580             raise ValueError(
-        581                 f"dimensions {dims} must have the same length as the "
-        582                 f"number of data dimensions, ndim={self.ndim}"
+        571         dims = tuple(dims)
+        572         if len(dims) != self.ndim:
+    --> 573             raise ValueError(
+        574                 f"dimensions {dims} must have the same length as the "
+        575                 f"number of data dimensions, ndim={self.ndim}"
 
 
     ValueError: dimensions ('time',) must have the same length as the number of data dimensions, ndim=0
