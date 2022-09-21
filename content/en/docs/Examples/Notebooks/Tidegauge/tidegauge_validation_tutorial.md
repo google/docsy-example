@@ -51,7 +51,7 @@ We can create our empty tidegauge object:
 tidegauge = coast.Tidegauge()
 ```
 
-    Tidegauge object at 0x556924cf5fc0 initialised
+    Tidegauge object at 0x55766dbdefc0 initialised
 
 
 The `Tidegauge` class contains multiple methods for reading different typical
@@ -436,7 +436,7 @@ Coordinates:
 Dimensions without coordinates: id_dim, t_dim
 Data variables:
     ssh        (id_dim, t_dim) float64 2.818 2.823 2.871 ... 3.214 3.257 3.371
-    qc_flags   (id_dim, t_dim) int64 1 1 1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1 1 1</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-9a887fc1-52e4-456e-9f96-6bce049bbbb8' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-9a887fc1-52e4-456e-9f96-6bce049bbbb8' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>id_dim</span>: 1</li><li><span>t_dim</span>: 193</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-24ce8205-ed3d-41f9-a607-14cfcc66866a' class='xr-section-summary-in' type='checkbox'  checked><label for='section-24ce8205-ed3d-41f9-a607-14cfcc66866a' class='xr-section-summary' >Coordinates: <span>(4)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>(t_dim)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2007-01-10 ... 2007-01-12</div><input id='attrs-e29bd0f9-990b-4a9e-a9f1-adca6a4245a2' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e29bd0f9-990b-4a9e-a9f1-adca6a4245a2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-8cf61dd4-fd5e-4e4f-b528-9ac102233cab' class='xr-var-data-in' type='checkbox'><label for='data-8cf61dd4-fd5e-4e4f-b528-9ac102233cab' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;2007-01-10T00:00:00.000000000&#x27;, &#x27;2007-01-10T00:15:00.000000000&#x27;,
+    qc_flags   (id_dim, t_dim) int64 1 1 1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1 1 1</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-caea3c87-8433-4e19-8560-de9eedf7cd4d' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-caea3c87-8433-4e19-8560-de9eedf7cd4d' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>id_dim</span>: 1</li><li><span>t_dim</span>: 193</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-0ceb2ea5-9ff3-4d15-8cff-53444a63dd3d' class='xr-section-summary-in' type='checkbox'  checked><label for='section-0ceb2ea5-9ff3-4d15-8cff-53444a63dd3d' class='xr-section-summary' >Coordinates: <span>(4)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>(t_dim)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2007-01-10 ... 2007-01-12</div><input id='attrs-404a3b90-5765-406d-8be0-10bc709206c3' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-404a3b90-5765-406d-8be0-10bc709206c3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-91bfddef-96c0-4986-ad04-60b14e412066' class='xr-var-data-in' type='checkbox'><label for='data-91bfddef-96c0-4986-ad04-60b14e412066' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;2007-01-10T00:00:00.000000000&#x27;, &#x27;2007-01-10T00:15:00.000000000&#x27;,
        &#x27;2007-01-10T00:30:00.000000000&#x27;, &#x27;2007-01-10T00:45:00.000000000&#x27;,
        &#x27;2007-01-10T01:00:00.000000000&#x27;, &#x27;2007-01-10T01:15:00.000000000&#x27;,
        &#x27;2007-01-10T01:30:00.000000000&#x27;, &#x27;2007-01-10T01:45:00.000000000&#x27;,
@@ -476,7 +476,7 @@ Data variables:
        &#x27;2007-01-11T22:30:00.000000000&#x27;, &#x27;2007-01-11T22:45:00.000000000&#x27;,
        &#x27;2007-01-11T23:00:00.000000000&#x27;, &#x27;2007-01-11T23:15:00.000000000&#x27;,
        &#x27;2007-01-11T23:30:00.000000000&#x27;, &#x27;2007-01-11T23:45:00.000000000&#x27;,
-       &#x27;2007-01-12T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.751</div><input id='attrs-6c3f3621-cebf-475c-9154-0eedf3ca10de' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-6c3f3621-cebf-475c-9154-0eedf3ca10de' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-01056b39-2c3e-43c9-835a-ba27c0d40cee' class='xr-var-data-in' type='checkbox'><label for='data-01056b39-2c3e-43c9-835a-ba27c0d40cee' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([1.75083])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>52.47</div><input id='attrs-1a24de15-4e08-4a97-b9d7-600f4b6778bb' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-1a24de15-4e08-4a97-b9d7-600f4b6778bb' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6da487a2-e09a-47d7-8f26-17d093ec25b6' class='xr-var-data-in' type='checkbox'><label for='data-6da487a2-e09a-47d7-8f26-17d093ec25b6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([52.473])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>id_name</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>&lt;U9</div><div class='xr-var-preview xr-preview'>&#x27;Lowestoft&#x27;</div><input id='attrs-36934f0f-638f-405e-b708-3a263b519773' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-36934f0f-638f-405e-b708-3a263b519773' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e71539a4-97a6-45f3-9afe-95c2156a955a' class='xr-var-data-in' type='checkbox'><label for='data-e71539a4-97a6-45f3-9afe-95c2156a955a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;Lowestoft&#x27;], dtype=&#x27;&lt;U9&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-668de9b2-d0bc-41c6-a055-5c98e82c57b4' class='xr-section-summary-in' type='checkbox'  checked><label for='section-668de9b2-d0bc-41c6-a055-5c98e82c57b4' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>ssh</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>2.818 2.823 2.871 ... 3.257 3.371</div><input id='attrs-19325c8a-3e36-4017-b3c2-e3555d6a41a7' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-19325c8a-3e36-4017-b3c2-e3555d6a41a7' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-86514cff-57ca-48f4-99e0-19a623dfc9fa' class='xr-var-data-in' type='checkbox'><label for='data-86514cff-57ca-48f4-99e0-19a623dfc9fa' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 2.818,  2.823,  2.871,  2.931,  2.961,  2.979,  2.953,  2.913,
+       &#x27;2007-01-12T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.751</div><input id='attrs-2e3390f1-f7ae-4bc6-a3a0-e1c00215ff84' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-2e3390f1-f7ae-4bc6-a3a0-e1c00215ff84' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e3916c8d-6990-4b79-81b0-d310677fd769' class='xr-var-data-in' type='checkbox'><label for='data-e3916c8d-6990-4b79-81b0-d310677fd769' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([1.75083])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>52.47</div><input id='attrs-f4a69cc9-175f-48ef-92e3-f3dc1a1639e7' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-f4a69cc9-175f-48ef-92e3-f3dc1a1639e7' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-9b56d9a0-4287-4aef-88b8-fc56732d19f5' class='xr-var-data-in' type='checkbox'><label for='data-9b56d9a0-4287-4aef-88b8-fc56732d19f5' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([52.473])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>id_name</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>&lt;U9</div><div class='xr-var-preview xr-preview'>&#x27;Lowestoft&#x27;</div><input id='attrs-d680704c-9e4d-4638-af76-217563dc97d9' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-d680704c-9e4d-4638-af76-217563dc97d9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b82b64f8-8962-4b0b-986b-9850bae9911d' class='xr-var-data-in' type='checkbox'><label for='data-b82b64f8-8962-4b0b-986b-9850bae9911d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;Lowestoft&#x27;], dtype=&#x27;&lt;U9&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-44a3285f-725f-41f1-a9dd-0f18bc0f36c0' class='xr-section-summary-in' type='checkbox'  checked><label for='section-44a3285f-725f-41f1-a9dd-0f18bc0f36c0' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>ssh</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>2.818 2.823 2.871 ... 3.257 3.371</div><input id='attrs-232099d7-863e-4e09-bf60-ccf5dc6a153f' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-232099d7-863e-4e09-bf60-ccf5dc6a153f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-914dfb77-4702-4c8d-b482-07bf61346e2c' class='xr-var-data-in' type='checkbox'><label for='data-914dfb77-4702-4c8d-b482-07bf61346e2c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 2.818,  2.823,  2.871,  2.931,  2.961,  2.979,  2.953,  2.913,
          2.864,  2.806,  2.723,  2.664,  2.606,  2.511,  2.43 ,  2.379,
          2.296,  2.201,  2.105,  2.006,  1.908,  1.801,  1.684,  1.579,
          1.494,  1.402,  1.306,  1.233,  1.171,  1.102,  1.054,  1.028,
@@ -500,7 +500,7 @@ Data variables:
          2.086,  2.066,  2.114,  2.114,  2.051,  2.033,  2.055,  2.1  ,
          2.192,  2.278,  2.334,  2.421,  2.497,  2.548,  2.603,  2.679,
          2.803,  2.859,  2.875,  3.001,  3.075,  3.135,  3.214,  3.257,
-         3.371]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>qc_flags</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1</div><input id='attrs-45d1f6bb-8c75-4f5a-ad74-574cdb8c850a' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-45d1f6bb-8c75-4f5a-ad74-574cdb8c850a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-70823a1d-7e43-41a2-8733-f146b3d1f711' class='xr-var-data-in' type='checkbox'><label for='data-70823a1d-7e43-41a2-8733-f146b3d1f711' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         3.371]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>qc_flags</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1</div><input id='attrs-831ddf04-a846-4e93-b617-41868fcd47cf' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-831ddf04-a846-4e93-b617-41868fcd47cf' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4ce0a8ab-710d-4e21-99b9-7b0274c4c29e' class='xr-var-data-in' type='checkbox'><label for='data-4ce0a8ab-710d-4e21-99b9-7b0274c4c29e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -508,7 +508,7 @@ Data variables:
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-3f864643-0da6-41c7-893b-20b4d0c09c15' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-3f864643-0da6-41c7-893b-20b4d0c09c15' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-7e2860cc-762b-40b9-b464-5ebc8efa4631' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-7e2860cc-762b-40b9-b464-5ebc8efa4631' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
 
 
 
@@ -552,7 +552,7 @@ obs.dataset = obs.dataset.set_coords("time")
 
     FileNotFoundError                         Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/2031331311.py in <cell line: 2>()
+    /tmp/ipykernel_3686/2031331311.py in <cell line: 2>()
           1 # Create the object and then inset the netcdf dataset
     ----> 2 obs = coast.Tidegauge(dataset=xr.open_dataset(fn_tg))
           3 obs.dataset = obs.dataset.set_coords("time")
@@ -651,7 +651,7 @@ fig, ax = obs.plot_on_map()
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/941067764.py in <cell line: 1>()
+    /tmp/ipykernel_3686/941067764.py in <cell line: 1>()
     ----> 1 fig, ax = obs.plot_on_map()
     
 
@@ -670,7 +670,7 @@ plt.show()
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/1147217509.py in <cell line: 2>()
+    /tmp/ipykernel_3686/1147217509.py in <cell line: 2>()
           1 id=1
     ----> 2 obs.dataset.ssh[id].rename({'t_dim':'time'}).plot()  # rename time dimension to enable automatic x-axis labelling
           3 plt.show()
@@ -697,7 +697,7 @@ fig, ax = obs_cut.plot_on_map()
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/364088065.py in <cell line: 2>()
+    /tmp/ipykernel_3686/364088065.py in <cell line: 2>()
           1 # Cut out a geographical box
     ----> 2 obs_cut = obs.subset_indices_lonlat_box(lonbounds = [-5, 0],
           3                                             latbounds = [50, 55])
@@ -718,7 +718,7 @@ obs_cut = obs.time_slice( date0 = datetime.datetime(2007, 1, 1), date1 = datetim
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/807598452.py in <cell line: 2>()
+    /tmp/ipykernel_3686/807598452.py in <cell line: 2>()
           1 # Cut out a time window
     ----> 2 obs_cut = obs.time_slice( date0 = datetime.datetime(2007, 1, 1), date1 = datetime.datetime(2007,1,31))
     
@@ -768,7 +768,7 @@ tidegauge_from_model = obs.obs_operator(nemo, time_interp='nearest')
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/3267278158.py in <cell line: 6>()
+    /tmp/ipykernel_3686/3267278158.py in <cell line: 6>()
           4 
           5 # Then do the interpolation
     ----> 6 tidegauge_from_model = obs.obs_operator(nemo, time_interp='nearest')
@@ -795,7 +795,7 @@ obs = obs.time_slice(start_date, end_date)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/1320953407.py in <cell line: 7>()
+    /tmp/ipykernel_3686/1320953407.py in <cell line: 7>()
           5 start_date = datetime.datetime(2007, 1, 1)
           6 end_date = datetime.datetime(2007, 1, 31)
     ----> 7 obs = obs.time_slice(start_date, end_date)
@@ -819,7 +819,7 @@ model_timeseries.dataset = model_timeseries.dataset.transpose()
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/322332736.py in <cell line: 1>()
+    /tmp/ipykernel_3686/322332736.py in <cell line: 1>()
     ----> 1 model_timeseries = obs.obs_operator(nemo)
           2 
           3 # In this case, transpose the interpolated dataset
@@ -846,7 +846,7 @@ obs_new, model_new = tganalysis.match_missing_values(obs.dataset.ssh, model_time
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/1041160087.py in <cell line: 4>()
+    /tmp/ipykernel_3686/1041160087.py in <cell line: 4>()
           2 # equally to each corresponding dataset
           3 tganalysis = coast.TidegaugeAnalysis()
     ----> 4 obs_new, model_new = tganalysis.match_missing_values(obs.dataset.ssh, model_timeseries.dataset.ssh)
@@ -885,7 +885,7 @@ model_new = tganalysis.demean_timeseries(model_new.dataset)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/835506438.py in <cell line: 2>()
+    /tmp/ipykernel_3686/835506438.py in <cell line: 2>()
           1 # Subtract means from all time series
     ----> 2 obs_new = tganalysis.demean_timeseries(obs_new.dataset)
           3 model_new = tganalysis.demean_timeseries(model_new.dataset)
@@ -915,7 +915,7 @@ ha_obs = tganalysis.harmonic_analysis_utide(obs_new.dataset.ssh, min_datapoints=
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/1301265525.py in <cell line: 1>()
+    /tmp/ipykernel_3686/1301265525.py in <cell line: 1>()
     ----> 1 ha_mod = tganalysis.harmonic_analysis_utide(model_new.dataset.ssh, min_datapoints=1)
           2 ha_obs = tganalysis.harmonic_analysis_utide(obs_new.dataset.ssh, min_datapoints=1)
 
@@ -944,7 +944,7 @@ tide_obs = tganalysis.reconstruct_tide_utide(obs_new.dataset.time, ha_obs)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/1541850180.py in <cell line: 1>()
+    /tmp/ipykernel_3686/1541850180.py in <cell line: 1>()
     ----> 1 tide_mod = tganalysis.reconstruct_tide_utide(model_new.dataset.time, ha_mod)
           2 tide_obs = tganalysis.reconstruct_tide_utide(obs_new.dataset.time, ha_obs)
 
@@ -966,7 +966,7 @@ ntr_obs = tganalysis.calculate_non_tidal_residuals(obs_new.dataset.ssh, tide_obs
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/1976018595.py in <cell line: 1>()
+    /tmp/ipykernel_3686/1976018595.py in <cell line: 1>()
     ----> 1 ntr_mod = tganalysis.calculate_non_tidal_residuals(model_new.dataset.ssh, tide_mod.dataset.reconstructed)
           2 ntr_obs = tganalysis.calculate_non_tidal_residuals(obs_new.dataset.ssh, tide_obs.dataset.reconstructed)
 
@@ -990,7 +990,7 @@ dx0 = tganalysis.doodson_x0_filter(obs.dataset, "ssh")
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/2893622625.py in <cell line: 1>()
+    /tmp/ipykernel_3686/2893622625.py in <cell line: 1>()
     ----> 1 dx0 = tganalysis.doodson_x0_filter(obs.dataset, "ssh")
     
 
@@ -1018,7 +1018,7 @@ ssh_diff = tganalysis.difference(obs_new.dataset, model_new.dataset)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/1207573481.py in <cell line: 1>()
+    /tmp/ipykernel_3686/1207573481.py in <cell line: 1>()
     ----> 1 ntr_diff = tganalysis.difference(ntr_obs.dataset, ntr_mod.dataset)
           2 ssh_diff = tganalysis.difference(obs_new.dataset, model_new.dataset)
 
@@ -1039,7 +1039,7 @@ mean_stats = ntr_diff.dataset.mean(dim="t_dim", skipna=True)
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/275311129.py in <cell line: 1>()
+    /tmp/ipykernel_3686/275311129.py in <cell line: 1>()
     ----> 1 mean_stats = ntr_diff.dataset.mean(dim="t_dim", skipna=True)
     
 
@@ -1062,7 +1062,7 @@ thresh_obs = tganalysis.threshold_statistics(ntr_obs.dataset, thresholds=np.aran
 
     NameError                                 Traceback (most recent call last)
 
-    /tmp/ipykernel_3823/3657222019.py in <cell line: 1>()
+    /tmp/ipykernel_3686/3657222019.py in <cell line: 1>()
     ----> 1 thresh_mod = tganalysis.threshold_statistics(ntr_mod.dataset, thresholds=np.arange(0, 2, 0.2))
           2 thresh_obs = tganalysis.threshold_statistics(ntr_obs.dataset, thresholds=np.arange(0, 2, 0.2))
 
