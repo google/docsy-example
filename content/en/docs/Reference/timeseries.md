@@ -1,7 +1,7 @@
 ---
 title: "Timeseries"
 linkTitle: "Timeseries"
-date: 2022-09-20
+date: 2022-09-22
 description: >
   Docstrings for the Timeseries class
 ---

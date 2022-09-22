@@ -1,7 +1,7 @@
 ---
 title: "Contour"
 linkTitle: "Contour"
-date: 2022-09-20
+date: 2022-09-22
 description: >
   Docstrings for the Contour class
 ---
