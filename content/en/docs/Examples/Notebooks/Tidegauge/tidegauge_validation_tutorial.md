@@ -51,7 +51,7 @@ We can create our empty tidegauge object:
 tidegauge = coast.Tidegauge()
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 The `Tidegauge` class contains multiple methods for reading different typical
@@ -436,7 +436,7 @@ Coordinates:
 Dimensions without coordinates: id_dim, t_dim
 Data variables:
     ssh        (id_dim, t_dim) float64 2.818 2.823 2.871 ... 3.214 3.257 3.371
-    qc_flags   (id_dim, t_dim) int64 1 1 1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1 1 1</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-bb175d28-1fe9-4b32-a7e2-832124061fa1' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-bb175d28-1fe9-4b32-a7e2-832124061fa1' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>id_dim</span>: 1</li><li><span>t_dim</span>: 193</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-7ab7ae10-1884-44e9-ad3f-e475b254c365' class='xr-section-summary-in' type='checkbox'  checked><label for='section-7ab7ae10-1884-44e9-ad3f-e475b254c365' class='xr-section-summary' >Coordinates: <span>(4)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>(t_dim)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2007-01-10 ... 2007-01-12</div><input id='attrs-bbdde2a3-4881-4967-9a4d-a49ecf600696' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-bbdde2a3-4881-4967-9a4d-a49ecf600696' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3902ff90-71b6-475e-bf8b-1591f4bbcab2' class='xr-var-data-in' type='checkbox'><label for='data-3902ff90-71b6-475e-bf8b-1591f4bbcab2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;2007-01-10T00:00:00.000000000&#x27;, &#x27;2007-01-10T00:15:00.000000000&#x27;,
+    qc_flags   (id_dim, t_dim) int64 1 1 1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1 1 1</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-3e44ad69-a6dd-4407-ae2b-775f3acb2215' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-3e44ad69-a6dd-4407-ae2b-775f3acb2215' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>id_dim</span>: 1</li><li><span>t_dim</span>: 193</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-7a368b1b-97e5-443d-a779-9bba8d173eb2' class='xr-section-summary-in' type='checkbox'  checked><label for='section-7a368b1b-97e5-443d-a779-9bba8d173eb2' class='xr-section-summary' >Coordinates: <span>(4)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>(t_dim)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2007-01-10 ... 2007-01-12</div><input id='attrs-c4be0cb9-a825-4fc7-ad0f-6a89d24ab908' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-c4be0cb9-a825-4fc7-ad0f-6a89d24ab908' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fc5d09dc-29a4-4827-b2ba-93b7fc962e68' class='xr-var-data-in' type='checkbox'><label for='data-fc5d09dc-29a4-4827-b2ba-93b7fc962e68' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;2007-01-10T00:00:00.000000000&#x27;, &#x27;2007-01-10T00:15:00.000000000&#x27;,
        &#x27;2007-01-10T00:30:00.000000000&#x27;, &#x27;2007-01-10T00:45:00.000000000&#x27;,
        &#x27;2007-01-10T01:00:00.000000000&#x27;, &#x27;2007-01-10T01:15:00.000000000&#x27;,
        &#x27;2007-01-10T01:30:00.000000000&#x27;, &#x27;2007-01-10T01:45:00.000000000&#x27;,
@@ -476,7 +476,7 @@ Data variables:
        &#x27;2007-01-11T22:30:00.000000000&#x27;, &#x27;2007-01-11T22:45:00.000000000&#x27;,
        &#x27;2007-01-11T23:00:00.000000000&#x27;, &#x27;2007-01-11T23:15:00.000000000&#x27;,
        &#x27;2007-01-11T23:30:00.000000000&#x27;, &#x27;2007-01-11T23:45:00.000000000&#x27;,
-       &#x27;2007-01-12T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.751</div><input id='attrs-3f570847-d342-4dee-87d9-9378dacae94f' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-3f570847-d342-4dee-87d9-9378dacae94f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-74b7a496-3ed9-4aeb-bd3f-690ef268864c' class='xr-var-data-in' type='checkbox'><label for='data-74b7a496-3ed9-4aeb-bd3f-690ef268864c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([1.75083])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>52.47</div><input id='attrs-6c33266b-bdf9-4472-a1c6-cb583473d6e3' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-6c33266b-bdf9-4472-a1c6-cb583473d6e3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c1c68815-fdb7-48ca-a07b-848489b409dc' class='xr-var-data-in' type='checkbox'><label for='data-c1c68815-fdb7-48ca-a07b-848489b409dc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([52.473])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>id_name</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>&lt;U9</div><div class='xr-var-preview xr-preview'>&#x27;Lowestoft&#x27;</div><input id='attrs-e9c84d01-e990-4227-99b2-8ce4c96d6cbc' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e9c84d01-e990-4227-99b2-8ce4c96d6cbc' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-66d0d9c5-aa28-4e90-9217-a3963e666c94' class='xr-var-data-in' type='checkbox'><label for='data-66d0d9c5-aa28-4e90-9217-a3963e666c94' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;Lowestoft&#x27;], dtype=&#x27;&lt;U9&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-c58a9bcd-36bf-49de-9d64-7d670b133a44' class='xr-section-summary-in' type='checkbox'  checked><label for='section-c58a9bcd-36bf-49de-9d64-7d670b133a44' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>ssh</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>2.818 2.823 2.871 ... 3.257 3.371</div><input id='attrs-1e89e1ac-27f9-48c4-9647-4146ef1aa4b4' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-1e89e1ac-27f9-48c4-9647-4146ef1aa4b4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0a54d09f-be82-485b-9eed-e63318ffe4b4' class='xr-var-data-in' type='checkbox'><label for='data-0a54d09f-be82-485b-9eed-e63318ffe4b4' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 2.818,  2.823,  2.871,  2.931,  2.961,  2.979,  2.953,  2.913,
+       &#x27;2007-01-12T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.751</div><input id='attrs-cd2b9bb0-c2d7-40e1-ae7c-2c5f32df5a60' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-cd2b9bb0-c2d7-40e1-ae7c-2c5f32df5a60' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f8d6951e-4bbd-4828-aad2-bb4fbe56604a' class='xr-var-data-in' type='checkbox'><label for='data-f8d6951e-4bbd-4828-aad2-bb4fbe56604a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([1.75083])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>52.47</div><input id='attrs-bd1dfeb6-8b76-4973-b6a9-1788af2120a1' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-bd1dfeb6-8b76-4973-b6a9-1788af2120a1' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f30bc855-73be-4f0e-bb39-d9e7e0513549' class='xr-var-data-in' type='checkbox'><label for='data-f30bc855-73be-4f0e-bb39-d9e7e0513549' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([52.473])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>id_name</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>&lt;U9</div><div class='xr-var-preview xr-preview'>&#x27;Lowestoft&#x27;</div><input id='attrs-e7bceebf-300e-46db-929d-c3b3317d213e' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e7bceebf-300e-46db-929d-c3b3317d213e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f2c6b966-23a8-4ce0-9277-e24289f1e57e' class='xr-var-data-in' type='checkbox'><label for='data-f2c6b966-23a8-4ce0-9277-e24289f1e57e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;Lowestoft&#x27;], dtype=&#x27;&lt;U9&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-c7da77d5-7417-4a9a-b684-59146a7246a4' class='xr-section-summary-in' type='checkbox'  checked><label for='section-c7da77d5-7417-4a9a-b684-59146a7246a4' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>ssh</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>2.818 2.823 2.871 ... 3.257 3.371</div><input id='attrs-95882d80-8f2d-4124-abb8-22d6b82986e4' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-95882d80-8f2d-4124-abb8-22d6b82986e4' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3c5521ab-687d-4ba2-a753-25e9b79e8d41' class='xr-var-data-in' type='checkbox'><label for='data-3c5521ab-687d-4ba2-a753-25e9b79e8d41' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 2.818,  2.823,  2.871,  2.931,  2.961,  2.979,  2.953,  2.913,
          2.864,  2.806,  2.723,  2.664,  2.606,  2.511,  2.43 ,  2.379,
          2.296,  2.201,  2.105,  2.006,  1.908,  1.801,  1.684,  1.579,
          1.494,  1.402,  1.306,  1.233,  1.171,  1.102,  1.054,  1.028,
@@ -500,7 +500,7 @@ Data variables:
          2.086,  2.066,  2.114,  2.114,  2.051,  2.033,  2.055,  2.1  ,
          2.192,  2.278,  2.334,  2.421,  2.497,  2.548,  2.603,  2.679,
          2.803,  2.859,  2.875,  3.001,  3.075,  3.135,  3.214,  3.257,
-         3.371]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>qc_flags</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1</div><input id='attrs-e373d5ff-824e-41cd-b448-f77f493c9508' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e373d5ff-824e-41cd-b448-f77f493c9508' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f52e8401-8a22-4192-9f00-c6f9b0095257' class='xr-var-data-in' type='checkbox'><label for='data-f52e8401-8a22-4192-9f00-c6f9b0095257' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         3.371]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>qc_flags</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1</div><input id='attrs-30c5250f-b6f5-4775-b883-6d7bafcbf27f' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-30c5250f-b6f5-4775-b883-6d7bafcbf27f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-5590ef53-8207-425c-96ee-d3d22214dab6' class='xr-var-data-in' type='checkbox'><label for='data-5590ef53-8207-425c-96ee-d3d22214dab6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -508,7 +508,7 @@ Data variables:
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-0717cdd2-4386-499f-a579-21160f2a52ac' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-0717cdd2-4386-499f-a579-21160f2a52ac' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-85e49b64-5072-4bf4-891a-adc7fe1932e5' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-85e49b64-5072-4bf4-891a-adc7fe1932e5' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
 
 
 
@@ -528,7 +528,7 @@ obs = coast.Tidegauge(dataset=tt)
 obs.dataset = obs.dataset.set_coords("time")
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 Tidegauge has ready made quick plotting routines for viewing time series and tide gauge location. To look at the tide gauge location:
@@ -546,58 +546,6 @@ fig, ax = obs.plot_on_map()
     
 ![png](/COAsT/tidegauge_validation_tutorial_files/tidegauge_validation_tutorial_15_1.png)
     
-
-
-
-    ---------------------------------------------------------------------------
-
-    ValueError                                Traceback (most recent call last)
-
-    /tmp/ipykernel_3684/941067764.py in <cell line: 1>()
-    ----> 1 fig, ax = obs.plot_on_map()
-    
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/tidegauge.py in plot_on_map(self)
-       1038         Y = self.dataset.latitude
-       1039         fig, ax = plot_util.geo_scatter(X, Y)
-    -> 1040         ax.set_xlim((X - 10, X + 10))
-       1041         ax.set_ylim((Y - 10, Y + 10))
-       1042         return fig, ax
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/_api/deprecation.py in wrapper(*args, **kwargs)
-        452                 "parameter will become keyword-only %(removal)s.",
-        453                 name=name, obj_type=f"parameter of {func.__name__}()")
-    --> 454         return func(*args, **kwargs)
-        455 
-        456     # Don't modify *func*'s signature, as boilerplate.py needs it.
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xlim(self, left, right, emit, auto, xmin, xmax)
-       3690                 raise TypeError("Cannot pass both 'right' and 'xmax'")
-       3691             right = xmax
-    -> 3692         return self.xaxis._set_lim(left, right, emit=emit, auto=auto)
-       3693 
-       3694     get_xscale = _axis_method_wrapper("xaxis", "get_scale")
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axis.py in _set_lim(self, v0, v1, emit, auto)
-       1134                                    f"a log-scaled axis will be ignored.")
-       1135                 v1 = old1
-    -> 1136         if v0 == v1:
-       1137             _api.warn_external(
-       1138                 f"Attempting to set identical low and high {name}lims "
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/common.py in __bool__(self)
-        129 
-        130     def __bool__(self: Any) -> bool:
-    --> 131         return bool(self.values)
-        132 
-        133     def __float__(self: Any) -> float:
-
-
-    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
 
 
 
@@ -626,7 +574,7 @@ obs_cut = obs.subset_indices_lonlat_box(lonbounds = [-5, 0],
 fig, ax = obs_cut.plot_on_map()
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 
@@ -636,66 +584,12 @@ fig, ax = obs_cut.plot_on_map()
 
 
 
-    ---------------------------------------------------------------------------
-
-    ValueError                                Traceback (most recent call last)
-
-    /tmp/ipykernel_3684/364088065.py in <cell line: 4>()
-          2 obs_cut = obs.subset_indices_lonlat_box(lonbounds = [-5, 0],
-          3                                             latbounds = [50, 55])
-    ----> 4 fig, ax = obs_cut.plot_on_map()
-    
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/tidegauge.py in plot_on_map(self)
-       1038         Y = self.dataset.latitude
-       1039         fig, ax = plot_util.geo_scatter(X, Y)
-    -> 1040         ax.set_xlim((X - 10, X + 10))
-       1041         ax.set_ylim((Y - 10, Y + 10))
-       1042         return fig, ax
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/_api/deprecation.py in wrapper(*args, **kwargs)
-        452                 "parameter will become keyword-only %(removal)s.",
-        453                 name=name, obj_type=f"parameter of {func.__name__}()")
-    --> 454         return func(*args, **kwargs)
-        455 
-        456     # Don't modify *func*'s signature, as boilerplate.py needs it.
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axes/_base.py in set_xlim(self, left, right, emit, auto, xmin, xmax)
-       3690                 raise TypeError("Cannot pass both 'right' and 'xmax'")
-       3691             right = xmax
-    -> 3692         return self.xaxis._set_lim(left, right, emit=emit, auto=auto)
-       3693 
-       3694     get_xscale = _axis_method_wrapper("xaxis", "get_scale")
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/matplotlib/axis.py in _set_lim(self, v0, v1, emit, auto)
-       1134                                    f"a log-scaled axis will be ignored.")
-       1135                 v1 = old1
-    -> 1136         if v0 == v1:
-       1137             _api.warn_external(
-       1138                 f"Attempting to set identical low and high {name}lims "
-
-
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/common.py in __bool__(self)
-        129 
-        130     def __bool__(self: Any) -> bool:
-    --> 131         return bool(self.values)
-        132 
-        133     def __float__(self: Any) -> float:
-
-
-    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
-
-
-
 ```python
 # Cut out a time window
 obs_cut = obs.time_slice( date0 = datetime.datetime(2007, 1, 1), date1 = datetime.datetime(2007,1,31))
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 ### Gridded model comparison
@@ -740,7 +634,7 @@ tidegauge_from_model = obs.obs_operator(nemo, time_interp='nearest')
      Indexing model data at tide gauge locations.. 
     Calculating interpolation distances.
     Interpolating in time...
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 However, the new `tidegauge_from_model` will the same number of time entries as the `obs` data (rather than the model data). So, for a more useful demonstration we trim the observed gauge data so it better matches the model data.
@@ -756,7 +650,7 @@ end_date = datetime.datetime(2007, 1, 31)
 obs = obs.time_slice(start_date, end_date)
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 ### Interpolate model data onto obs locations
@@ -774,7 +668,7 @@ model_timeseries.dataset = model_timeseries.dataset.transpose()
      Indexing model data at tide gauge locations.. 
     Calculating interpolation distances.
     Interpolating in time...
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 For a good comparison, we would like to make sure that both the observed and
@@ -789,8 +683,8 @@ tganalysis = coast.TidegaugeAnalysis()
 obs_new, model_new = tganalysis.match_missing_values(obs.dataset.ssh, model_timeseries.dataset.ssh)
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 Although we input data arrays to the above routine, it returns two new Tidegauge objects. Now you have equivalent and comparable sets of time series that can be easily compared.
@@ -818,8 +712,8 @@ model_new = tganalysis.demean_timeseries(model_new.dataset)
 # easily compared.
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 Then we can apply the harmonic analysis (though the example data is too short for this example to be that meaningful):
@@ -1001,7 +895,7 @@ tide_obs = tganalysis.reconstruct_tide_utide(obs_new.dataset.time, ha_obs)
     prep/calcs ... done.
     prep/calcs ... done.
     prep/calcs ... done.
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
     prep/calcs ... done.
     prep/calcs ... done.
     prep/calcs ... done.
@@ -1051,7 +945,7 @@ tide_obs = tganalysis.reconstruct_tide_utide(obs_new.dataset.time, ha_obs)
     prep/calcs ... done.
     prep/calcs ... done.
     prep/calcs ... done.
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 Get new TidegaugeMultiple objects containing non tidal residuals:
@@ -1063,8 +957,8 @@ ntr_obs = tganalysis.calculate_non_tidal_residuals(obs_new.dataset.ssh, tide_obs
 
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 
@@ -1078,7 +972,7 @@ The Doodson X0 filter is an alternative way of estimating non-tidal residuals:
 dx0 = tganalysis.doodson_x0_filter(obs.dataset, "ssh")
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 This will return a new Tidegauge() object containing filtered ssh data.
@@ -1097,8 +991,8 @@ ssh_diff = tganalysis.difference(obs_new.dataset, model_new.dataset)
 
 ```
 
-    Tidegauge object at 0x563bcf504fc0 initialised
-    Tidegauge object at 0x563bcf504fc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
+    Tidegauge object at 0x55d42115efc0 initialised
 
 
 We can then easily get mean errors, MAE and MSE
