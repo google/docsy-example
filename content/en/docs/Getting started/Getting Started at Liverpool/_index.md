@@ -1,6 +1,6 @@
 ---
 title: "Getting Started at Liverpool"
-linkTitle: "Getting Started at Liverpool"
+linkTitle: "Getting started at Liverpool"
 weight: 2
 description: >
   Download, install and use.
