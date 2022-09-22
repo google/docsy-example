@@ -73,7 +73,7 @@ wget -c https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_
 To facilitate loading different types of data, key information is passed to COAsT using configuration files. The config files used in the Examples are in the repository, or can be downloaded as static files:
 
 ```shell
-wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip COAsT-master.zip
+wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip master.zip
 ```
 
 ## Test it!
@@ -94,7 +94,7 @@ The output should be
 3.4.0
 3.5.1
 ```
-If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
+or later. If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
 
 Take a look at the example pages for more information on
 specific objects and methods.

@@ -80,7 +80,7 @@ To facilitate loading different types of data, key information is passed to COAs
 
 ```shell
 cd ../coast_demo
-wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip COAsT-master.zip
+wget -c https://github.com/British-Oceanographic-Data-Centre/COAsT/archive/refs/heads/master.zip && unzip master.zip
 ln -s COAsT-master/config config
 ```
 
@@ -123,7 +123,7 @@ The output should be
 3.4.0
 3.5.1
 ```
-If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
+or later. If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
 
 Take a look at the example pages for more information on
 specific objects and methods.
