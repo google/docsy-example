@@ -87,7 +87,7 @@ plt.pcolormesh(nemo_t.dataset.longitude, nemo_t.dataset.latitude, nemo_t.dataset
 
 
 
-    <matplotlib.collections.QuadMesh at 0x7fc639e354f0>
+    <matplotlib.collections.QuadMesh at 0x7f9e84ba5580>
 
 
 
@@ -161,7 +161,7 @@ plt.ylabel("latitude")
 plt.show()
 ```
 
-    /tmp/ipykernel_3862/2498690501.py:2: UserWarning: The input coordinates to pcolormesh are interpreted as cell centers, but are not monotonically increasing or decreasing. This may lead to incorrectly calculated cell edges, in which case, please supply explicit cell edges to pcolormesh.
+    /tmp/ipykernel_3868/2498690501.py:2: UserWarning: The input coordinates to pcolormesh are interpreted as cell centers, but are not monotonically increasing or decreasing. This may lead to incorrectly calculated cell edges, in which case, please supply explicit cell edges to pcolormesh.
       plt.pcolormesh(
 
 
