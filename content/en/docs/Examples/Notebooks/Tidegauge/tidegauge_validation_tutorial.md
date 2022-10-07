@@ -51,7 +51,7 @@ We can create our empty tidegauge object:
 tidegauge = coast.Tidegauge()
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 The `Tidegauge` class contains multiple methods for reading different typical
@@ -436,7 +436,7 @@ Coordinates:
 Dimensions without coordinates: id_dim, t_dim
 Data variables:
     ssh        (id_dim, t_dim) float64 2.818 2.823 2.871 ... 3.214 3.257 3.371
-    qc_flags   (id_dim, t_dim) int64 1 1 1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1 1 1</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-291f12b7-3b0a-40d8-8283-297984984da5' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-291f12b7-3b0a-40d8-8283-297984984da5' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>id_dim</span>: 1</li><li><span>t_dim</span>: 193</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-97975b78-5a3c-4e9d-ae0d-48ddff868fae' class='xr-section-summary-in' type='checkbox'  checked><label for='section-97975b78-5a3c-4e9d-ae0d-48ddff868fae' class='xr-section-summary' >Coordinates: <span>(4)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>(t_dim)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2007-01-10 ... 2007-01-12</div><input id='attrs-eb8bb9ca-0442-45eb-81bb-28c7e059fc02' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-eb8bb9ca-0442-45eb-81bb-28c7e059fc02' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-01bc7273-1bb8-4442-a9d8-a03402ab2ec9' class='xr-var-data-in' type='checkbox'><label for='data-01bc7273-1bb8-4442-a9d8-a03402ab2ec9' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;2007-01-10T00:00:00.000000000&#x27;, &#x27;2007-01-10T00:15:00.000000000&#x27;,
+    qc_flags   (id_dim, t_dim) int64 1 1 1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1 1 1</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-d82e4540-fd69-4816-a919-177314f2bb4e' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-d82e4540-fd69-4816-a919-177314f2bb4e' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>id_dim</span>: 1</li><li><span>t_dim</span>: 193</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-d195d837-8073-444c-8df3-b886a3c713dc' class='xr-section-summary-in' type='checkbox'  checked><label for='section-d195d837-8073-444c-8df3-b886a3c713dc' class='xr-section-summary' >Coordinates: <span>(4)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>time</span></div><div class='xr-var-dims'>(t_dim)</div><div class='xr-var-dtype'>datetime64[ns]</div><div class='xr-var-preview xr-preview'>2007-01-10 ... 2007-01-12</div><input id='attrs-079f88c9-3162-40fb-8467-631dd1ddfd81' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-079f88c9-3162-40fb-8467-631dd1ddfd81' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-04719281-8335-49fb-9584-503c44e776a9' class='xr-var-data-in' type='checkbox'><label for='data-04719281-8335-49fb-9584-503c44e776a9' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;2007-01-10T00:00:00.000000000&#x27;, &#x27;2007-01-10T00:15:00.000000000&#x27;,
        &#x27;2007-01-10T00:30:00.000000000&#x27;, &#x27;2007-01-10T00:45:00.000000000&#x27;,
        &#x27;2007-01-10T01:00:00.000000000&#x27;, &#x27;2007-01-10T01:15:00.000000000&#x27;,
        &#x27;2007-01-10T01:30:00.000000000&#x27;, &#x27;2007-01-10T01:45:00.000000000&#x27;,
@@ -476,7 +476,7 @@ Data variables:
        &#x27;2007-01-11T22:30:00.000000000&#x27;, &#x27;2007-01-11T22:45:00.000000000&#x27;,
        &#x27;2007-01-11T23:00:00.000000000&#x27;, &#x27;2007-01-11T23:15:00.000000000&#x27;,
        &#x27;2007-01-11T23:30:00.000000000&#x27;, &#x27;2007-01-11T23:45:00.000000000&#x27;,
-       &#x27;2007-01-12T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.751</div><input id='attrs-a4f53db8-83b3-4578-833c-85cd1e67887e' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-a4f53db8-83b3-4578-833c-85cd1e67887e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-16251e15-621f-4981-a714-647716c03483' class='xr-var-data-in' type='checkbox'><label for='data-16251e15-621f-4981-a714-647716c03483' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([1.75083])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>52.47</div><input id='attrs-abe13341-ab59-4a71-b2c9-b8cb471b29ac' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-abe13341-ab59-4a71-b2c9-b8cb471b29ac' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-7fb6c63b-00ff-447a-91dc-2badd2f499b6' class='xr-var-data-in' type='checkbox'><label for='data-7fb6c63b-00ff-447a-91dc-2badd2f499b6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([52.473])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>id_name</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>&lt;U9</div><div class='xr-var-preview xr-preview'>&#x27;Lowestoft&#x27;</div><input id='attrs-e738df9b-0150-4e09-a6a4-5816b3649b73' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e738df9b-0150-4e09-a6a4-5816b3649b73' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-87630a6d-f96c-4d54-a2ea-330fc518a7a4' class='xr-var-data-in' type='checkbox'><label for='data-87630a6d-f96c-4d54-a2ea-330fc518a7a4' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;Lowestoft&#x27;], dtype=&#x27;&lt;U9&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-62443292-add4-4a2c-9943-5f58c26d0d4d' class='xr-section-summary-in' type='checkbox'  checked><label for='section-62443292-add4-4a2c-9943-5f58c26d0d4d' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>ssh</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>2.818 2.823 2.871 ... 3.257 3.371</div><input id='attrs-09a039a2-30d3-47a3-93bf-6cb71c5db630' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-09a039a2-30d3-47a3-93bf-6cb71c5db630' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-b8277df1-4983-4c04-b572-bde01b75606b' class='xr-var-data-in' type='checkbox'><label for='data-b8277df1-4983-4c04-b572-bde01b75606b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 2.818,  2.823,  2.871,  2.931,  2.961,  2.979,  2.953,  2.913,
+       &#x27;2007-01-12T00:00:00.000000000&#x27;], dtype=&#x27;datetime64[ns]&#x27;)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>longitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.751</div><input id='attrs-f384c0b1-d21d-46cc-a000-c411841af1b5' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-f384c0b1-d21d-46cc-a000-c411841af1b5' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3b761c28-d605-4f70-ba11-1c06a7609d5e' class='xr-var-data-in' type='checkbox'><label for='data-3b761c28-d605-4f70-ba11-1c06a7609d5e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([1.75083])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>latitude</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>52.47</div><input id='attrs-d568bfb2-739c-49b6-83dd-2fc1685e86cd' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-d568bfb2-739c-49b6-83dd-2fc1685e86cd' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-c7414d1b-2503-438a-ad75-fdd078f61be2' class='xr-var-data-in' type='checkbox'><label for='data-c7414d1b-2503-438a-ad75-fdd078f61be2' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([52.473])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>id_name</span></div><div class='xr-var-dims'>(id_dim)</div><div class='xr-var-dtype'>&lt;U9</div><div class='xr-var-preview xr-preview'>&#x27;Lowestoft&#x27;</div><input id='attrs-a4c4b52c-ff15-4854-b272-c9174394edc2' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-a4c4b52c-ff15-4854-b272-c9174394edc2' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-af2e32fa-69b4-4598-9192-8759f6ed4d4a' class='xr-var-data-in' type='checkbox'><label for='data-af2e32fa-69b4-4598-9192-8759f6ed4d4a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;Lowestoft&#x27;], dtype=&#x27;&lt;U9&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-f8d311c7-c7ba-4c17-acef-e7b0147c5267' class='xr-section-summary-in' type='checkbox'  checked><label for='section-f8d311c7-c7ba-4c17-acef-e7b0147c5267' class='xr-section-summary' >Data variables: <span>(2)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>ssh</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>2.818 2.823 2.871 ... 3.257 3.371</div><input id='attrs-6b5978d1-f35f-4c59-a485-6f8af4d25254' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-6b5978d1-f35f-4c59-a485-6f8af4d25254' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-054cb167-a09f-4942-aa6e-fa13ae81aab8' class='xr-var-data-in' type='checkbox'><label for='data-054cb167-a09f-4942-aa6e-fa13ae81aab8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 2.818,  2.823,  2.871,  2.931,  2.961,  2.979,  2.953,  2.913,
          2.864,  2.806,  2.723,  2.664,  2.606,  2.511,  2.43 ,  2.379,
          2.296,  2.201,  2.105,  2.006,  1.908,  1.801,  1.684,  1.579,
          1.494,  1.402,  1.306,  1.233,  1.171,  1.102,  1.054,  1.028,
@@ -500,7 +500,7 @@ Data variables:
          2.086,  2.066,  2.114,  2.114,  2.051,  2.033,  2.055,  2.1  ,
          2.192,  2.278,  2.334,  2.421,  2.497,  2.548,  2.603,  2.679,
          2.803,  2.859,  2.875,  3.001,  3.075,  3.135,  3.214,  3.257,
-         3.371]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>qc_flags</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1</div><input id='attrs-954a51d6-07e0-4782-8ec0-149278d8297c' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-954a51d6-07e0-4782-8ec0-149278d8297c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-89a311a2-3590-4587-9a82-626563219d52' class='xr-var-data-in' type='checkbox'><label for='data-89a311a2-3590-4587-9a82-626563219d52' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+         3.371]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>qc_flags</span></div><div class='xr-var-dims'>(id_dim, t_dim)</div><div class='xr-var-dtype'>int64</div><div class='xr-var-preview xr-preview'>1 1 1 1 1 1 1 1 ... 1 1 1 1 1 1 1 1</div><input id='attrs-bd21e05c-f8a3-4e40-aa2d-df2848541906' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-bd21e05c-f8a3-4e40-aa2d-df2848541906' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-02d3f509-b60f-4b25-a9eb-9cd3ae0e7385' class='xr-var-data-in' type='checkbox'><label for='data-02d3f509-b60f-4b25-a9eb-9cd3ae0e7385' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -508,7 +508,7 @@ Data variables:
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-a726ed21-529a-4725-a6e9-6177b25430d4' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a726ed21-529a-4725-a6e9-6177b25430d4' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-553f2132-71ae-4d0f-8421-5dabaab17495' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-553f2132-71ae-4d0f-8421-5dabaab17495' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
 
 
 
@@ -528,7 +528,7 @@ obs = coast.Tidegauge(dataset=tt)
 obs.dataset = obs.dataset.set_coords("time")
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 Tidegauge has ready made quick plotting routines for viewing time series and tide gauge location. To look at the tide gauge location:
@@ -574,7 +574,7 @@ obs_cut = obs.subset_indices_lonlat_box(lonbounds = [-5, 0],
 fig, ax = obs_cut.plot_on_map()
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 
@@ -589,7 +589,7 @@ fig, ax = obs_cut.plot_on_map()
 obs_cut = obs.time_slice( date0 = datetime.datetime(2007, 1, 1), date1 = datetime.datetime(2007,1,31))
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 ### Gridded model comparison
@@ -634,7 +634,7 @@ tidegauge_from_model = obs.obs_operator(nemo, time_interp='nearest')
      Indexing model data at tide gauge locations.. 
     Calculating interpolation distances.
     Interpolating in time...
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 However, the new `tidegauge_from_model` will the same number of time entries as the `obs` data (rather than the model data). So, for a more useful demonstration we trim the observed gauge data so it better matches the model data.
@@ -650,7 +650,7 @@ end_date = datetime.datetime(2007, 1, 31)
 obs = obs.time_slice(start_date, end_date)
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 ### Interpolate model data onto obs locations
@@ -668,7 +668,7 @@ model_timeseries.dataset = model_timeseries.dataset.transpose()
      Indexing model data at tide gauge locations.. 
     Calculating interpolation distances.
     Interpolating in time...
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 For a good comparison, we would like to make sure that both the observed and
@@ -683,8 +683,8 @@ tganalysis = coast.TidegaugeAnalysis()
 obs_new, model_new = tganalysis.match_missing_values(obs.dataset.ssh, model_timeseries.dataset.ssh)
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 Although we input data arrays to the above routine, it returns two new Tidegauge objects. Now you have equivalent and comparable sets of time series that can be easily compared.
@@ -712,8 +712,8 @@ model_new = tganalysis.demean_timeseries(model_new.dataset)
 # easily compared.
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 Then we can apply the harmonic analysis (though the example data is too short for this example to be that meaningful):
@@ -895,7 +895,7 @@ tide_obs = tganalysis.reconstruct_tide_utide(obs_new.dataset.time, ha_obs)
     prep/calcs ... done.
     prep/calcs ... done.
     prep/calcs ... done.
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
     prep/calcs ... done.
     prep/calcs ... done.
     prep/calcs ... done.
@@ -945,7 +945,7 @@ tide_obs = tganalysis.reconstruct_tide_utide(obs_new.dataset.time, ha_obs)
     prep/calcs ... done.
     prep/calcs ... done.
     prep/calcs ... done.
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 Get new TidegaugeMultiple objects containing non tidal residuals:
@@ -957,8 +957,8 @@ ntr_obs = tganalysis.calculate_non_tidal_residuals(obs_new.dataset.ssh, tide_obs
 
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 
@@ -972,7 +972,7 @@ The Doodson X0 filter is an alternative way of estimating non-tidal residuals:
 dx0 = tganalysis.doodson_x0_filter(obs.dataset, "ssh")
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 This will return a new Tidegauge() object containing filtered ssh data.
@@ -991,8 +991,8 @@ ssh_diff = tganalysis.difference(obs_new.dataset, model_new.dataset)
 
 ```
 
-    Tidegauge object at 0x564c1e7a3fc0 initialised
-    Tidegauge object at 0x564c1e7a3fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
+    Tidegauge object at 0x55682f152fc0 initialised
 
 
 We can then easily get mean errors, MAE and MSE
