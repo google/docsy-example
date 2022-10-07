@@ -52,6 +52,7 @@ jobs:
           cd $GITHUB_WORKSPACE/external/example_scripts/notebooks
           ls ./markdown      
           echo "Move profile markdown examples"
+          mv ./markdown/profile/0_profile_introduction.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_extract_and_compare_single_process_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
