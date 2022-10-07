@@ -52,13 +52,13 @@ jobs:
           cd $GITHUB_WORKSPACE/external/example_scripts/notebooks
           ls ./markdown      
           echo "Move profile markdown examples"
-          mv ./markdown/profile/0)_profile_introduction.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv ./markdown/profile/5)_analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv ./markdown/profile/3)_analysis_extract_and_compare_single_process_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv ./markdown/profile/4)_analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv ./markdown/profile/1)_analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/0._profile_introduction.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/1._analysis_preprocess_en4.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/2._analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/3._analysis_extract_and_compare_single_process_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/4._analysis_mask_means_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
+          mv ./markdown/profile/5._analysis_average_into_grid_boxes.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           mv ./markdown/profile/wod_bgc_ragged_example.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
-          mv ./markdown/profile/2)_analysis_extract_and_compare.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
           echo "Move images"
           rsync -r ./markdown_images/profile/ $GITHUB_WORKSPACE/site/static
       - name: commit changes
