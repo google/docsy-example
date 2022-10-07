@@ -66,10 +66,6 @@ clim = coast.Climatology()
 clim_mean = clim.make_climatology(data, climatology_frequency, fn_out=fn_out)
 ```
 
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/numpy/core/_methods.py:179: RuntimeWarning: invalid value encountered in reduce
-      ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
-
-
 Below shows the structure of a dataset returned, containing 1 month worth of meaned temperature and sea surface height data:
 
 
