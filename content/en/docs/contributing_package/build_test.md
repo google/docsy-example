@@ -37,3 +37,12 @@ python COAsT/unit_testing/unit_test.py > coast_test.txt
 cd ..
 rm -rf coast_test
 ```
+
+Or, trialling a new (Oct 2022) workflow which seems to dig deeper with useful feedback
+```shell
+# create a new conda env with:
+conda env update --prune --file environment.yml
+
+# run the unit tests with:
+pip install . && pytest unit_testing/unit_test.py -s
+```
