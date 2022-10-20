@@ -1,7 +1,7 @@
 ---
 title: "Logging_util"
 linkTitle: "Logging_util"
-date: 2022-09-22
+date: 2022-10-20
 description: >
   Docstrings for the Logging_util class
 ---

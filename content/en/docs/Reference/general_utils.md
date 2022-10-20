@@ -1,7 +1,7 @@
 ---
 title: "General_utils"
 linkTitle: "General_utils"
-date: 2022-09-22
+date: 2022-10-20
 description: >
   Docstrings for the General_utils class
 ---

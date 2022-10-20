@@ -1,7 +1,7 @@
 ---
 title: "Config_parser"
 linkTitle: "Config_parser"
-date: 2022-09-22
+date: 2022-10-20
 description: >
   Docstrings for the Config_parser class
 ---

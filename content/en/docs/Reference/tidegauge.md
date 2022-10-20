@@ -1,7 +1,7 @@
 ---
 title: "Tidegauge"
 linkTitle: "Tidegauge"
-date: 2022-09-22
+date: 2022-10-20
 description: >
   Docstrings for the Tidegauge class
 ---
@@ -368,7 +368,7 @@ def Tidegauge._read_bodc_data(fn_bodc, date_start=None, date_end=None, header_le
 ##### Tidegauge.plot_timeseries()
 ```python
 
-def Tidegauge.plot_timeseries(self, id, var_list=unknown, date_start=None, date_end=None, plot_line=False):
+def Tidegauge.plot_timeseries(self, var_list=unknown, date_start=None, date_end=None, plot_line=False):
 ```
 > <br />
 > Quick plot of time series stored within object's dataset<br />

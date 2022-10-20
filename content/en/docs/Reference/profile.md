@@ -1,7 +1,7 @@
 ---
 title: "Profile"
 linkTitle: "Profile"
-date: 2022-09-22
+date: 2022-10-20
 description: >
   Docstrings for the Profile class
 ---
