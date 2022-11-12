@@ -41,7 +41,7 @@ altimetry = coast.Altimetry(fn_altimetry, config=fn_altimetry_config)
 ```
 
     ././config/example_altimetry.json
-    Altimetry object at 0x561144d44fc0 initialised
+    Altimetry object at 0x5580a6adbfc0 initialised
 
 
 ### Subsetting
@@ -57,7 +57,7 @@ ind = ind[::4]
 altimetry = altimetry.isel(t_dim=ind)
 ```
 
-    Subsetting Altimetry object at 0x561144d44fc0 indices in [-10, 10], [45, 60]
+    Subsetting Altimetry object at 0x5580a6adbfc0 indices in [-10, 10], [45, 60]
 
 
 ### Model interpolation
@@ -74,7 +74,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 # to see for yourself.
 ```
 
-    Interpolating Gridded object at 0x561144d44fc0 "ssh" with time_interp "nearest"
+    Interpolating Gridded object at 0x5580a6adbfc0 "ssh" with time_interp "nearest"
 
 
 
@@ -93,7 +93,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 stats = altimetry.basic_stats("ocean_tide_standard_name", "interp_ssh")
 ```
 
-    Altimetry object at 0x561144d44fc0 initialised
+    Altimetry object at 0x5580a6adbfc0 initialised
 
 
     /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/altimetry.py:352: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
@@ -127,7 +127,7 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 #crps.dataset  # uncomment to print data object summary
 ```
 
-    Altimetry object at 0x561144d44fc0 initialised
+    Altimetry object at 0x5580a6adbfc0 initialised
 
 
 ### Plotting data
