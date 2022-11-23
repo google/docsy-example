@@ -1,7 +1,7 @@
 ---
 title: "Experiments_file_handling"
 linkTitle: "Experiments_file_handling"
-date: 2022-10-20
+date: 2022-11-23
 description: >
   Docstrings for the Experiments_file_handling class
 ---

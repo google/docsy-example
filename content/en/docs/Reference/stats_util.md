@@ -1,7 +1,7 @@
 ---
 title: "Stats_util"
 linkTitle: "Stats_util"
-date: 2022-10-20
+date: 2022-11-23
 description: >
   Docstrings for the Stats_util class
 ---

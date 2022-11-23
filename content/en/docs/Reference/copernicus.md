@@ -1,7 +1,7 @@
 ---
 title: "Copernicus"
 linkTitle: "Copernicus"
-date: 2022-10-20
+date: 2022-11-23
 description: >
   Docstrings for the Copernicus class
 ---

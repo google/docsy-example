@@ -1,7 +1,7 @@
 ---
 title: "Profile_analysis"
 linkTitle: "Profile_analysis"
-date: 2022-10-20
+date: 2022-11-23
 description: >
   Docstrings for the Profile_analysis class
 ---

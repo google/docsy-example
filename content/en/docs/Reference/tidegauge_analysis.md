@@ -1,7 +1,7 @@
 ---
 title: "Tidegauge_analysis"
 linkTitle: "Tidegauge_analysis"
-date: 2022-10-20
+date: 2022-11-23
 description: >
   Docstrings for the Tidegauge_analysis class
 ---
@@ -43,9 +43,8 @@ def TidegaugeAnalysis.match_missing_values(cls, data_array1, data_array2, fill_v
 > Will match any missing values between two tidegauge_multiple datasets.<br />
 > Where missing values (defined by fill_value) are found in either dataset<br />
 > they are also placed in the corresponding location in the other dataset.<br />
-> Returns two new tidegaugeMultiple objects containing the new<br />
-> ssh data. Datasets must contain ssh variables and only ssh will be<br />
-> masked.<br />
+> Returns two new tidegauge objects containing only the new<br />
+> masked data arrays.<br />
 > <br />
 ##### TidegaugeAnalysis.harmonic_analysis_utide()
 ```python
@@ -103,7 +102,7 @@ def TidegaugeAnalysis.calculate_non_tidal_residuals(cls, data_array_ssh, data_ar
 > Calculate non tidal residuals by subtracting values in data_array_tide<br />
 > from data_array_ssh. You may optionally apply a filter to the non<br />
 > tidal residual data by setting apply_filter = True. This uses the<br />
-> scipy.signal.savgol_filter function, which you ay pass window_length<br />
+> scipy.signal.savgol_filter function, which you may pass window_length<br />
 > and poly_order.<br />
 > <br />
 ##### TidegaugeAnalysis.threshold_statistics()

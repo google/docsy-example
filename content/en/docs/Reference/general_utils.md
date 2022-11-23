@@ -1,7 +1,7 @@
 ---
 title: "General_utils"
 linkTitle: "General_utils"
-date: 2022-10-20
+date: 2022-11-23
 description: >
   Docstrings for the General_utils class
 ---
@@ -20,6 +20,7 @@ description: >
 [nearest_indices_2d()](#nearest_indices_2d)<br />
 [data_array_time_slice()](#data_array_time_slice)<br />
 [day_of_week()](#day_of_week)<br />
+[nan_helper()](#nan_helper)<br />
 
 A general utility file.
 #### determine_season()
@@ -194,4 +195,23 @@ def day_of_week(date=None):
 ```
 > <br />
 > Return the day of the week (3 letter str)<br />
+> <br />
+#### nan_helper()
+```python
+
+def nan_helper(y):
+```
+> <br />
+> Helper to handle indices and logical indices of NaNs.<br />
+> <br />
+> <b>Input:</b><br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - y, 1d numpy array, or xr.DataArray, with possible NaNs<br />
+> <b>Output:</b><br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - nans, logical indices of NaNs<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - index, a function, with signature indices= index(logical_indices),<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    to convert logical indices of NaNs to 'equivalent' indices<br />
+> <b>Example:</b><br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  >>> # linear interpolation of NaNs<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  >>> nans, x= nan_helper(y)<br />
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  >>> y[nans]= np.interp(x(nans), x(~nans), y[~nans])<br />
 > <br />

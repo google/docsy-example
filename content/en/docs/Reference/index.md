@@ -1,7 +1,7 @@
 ---
 title: "Index"
 linkTitle: "Index"
-date: 2022-10-20
+date: 2022-11-23
 description: >
   Docstrings for the Index class
 ---
