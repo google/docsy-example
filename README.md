@@ -16,7 +16,7 @@ github.com/google/docsy-example github.com/google/docsy/dependencies@v0.6.0
 github.com/google/docsy/dependencies@v0.6.0
 github.com/twbs/bootstrap@v4.6.2+incompatible
 github.com/google/docsy/dependencies@v0.6.0
-github.com/FortAwesome/Font-Awesome@v0.0.0-20220831210243-d3a7818c253f
+github.com/FortAwesome/Font-Awesome v0.0.0-20221115183454-96cafbd73ec4
 ```
 
 You can find detailed theme instructions in the [Docsy user guide][].
