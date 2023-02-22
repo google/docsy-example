@@ -1,0 +1,46 @@
+name: Link check
+
+on:
+  workflow_call:
+  push:
+    branches:
+      - master  # <- Set branch used for deployment
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: link-check-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          # The action defaults to search for the dependency file (package-lock.json,
+          # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
+          # hash as a part of the cache key.
+          # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
+          cache-dependency-path: '**/package-lock.json'
+
+      - run: npm ci
+      - run: hugo --baseURL '' --minify
+
+      - name: Link check
+        uses: untitaker/hyperlink@0.1.27
+        if: ${{ github.ref == 'refs/heads/master' }} # <- must be same branch as given above
+        with:
+          args: public/ # --check-anchors
