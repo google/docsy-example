@@ -53,7 +53,7 @@ Initiate a TideGauge object, if a filename is passed it assumes it is a GESLA ty
 tg = coast.Tidegauge()
 ```
 
-    Tidegauge object at 0x561c2fc56fc0 initialised
+    Tidegauge object at 0x55d4e8c40fc0 initialised
 
 
 Specify the data read as a High Low Water dataset.
@@ -84,7 +84,7 @@ tg.dataset.plot.scatter(x="time", y="ssh")
 
 
 
-    <matplotlib.collections.PathCollection at 0x7f0cc56b46d0>
+    <matplotlib.collections.PathCollection at 0x7f3b64748be0>
 
 
 
