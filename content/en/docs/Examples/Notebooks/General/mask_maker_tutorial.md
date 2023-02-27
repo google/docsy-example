@@ -106,18 +106,19 @@ masks_list = []
 masks_list.append(np.ones(lon.shape))
 
 # Add regional mask for English Channel
-masks_list.append(mm.region_def_nws_north_sea(lon, lat, bathy))
+masks_list.append(mm.region_def_nws_north_north_sea(lon, lat, bathy))
+masks_list.append(mm.region_def_nws_south_north_sea(lon, lat, bathy))
 masks_list.append(mm.region_def_nws_outer_shelf(lon, lat, bathy))
 masks_list.append(mm.region_def_nws_norwegian_trench(lon, lat, bathy))
 masks_list.append(mm.region_def_nws_english_channel(lon, lat, bathy))
-masks_list.append(mm.region_def_south_north_sea(lon, lat, bathy))
-masks_list.append(mm.region_def_off_shelf(lon, lat, bathy))
-masks_list.append(mm.region_def_irish_sea(lon, lat, bathy))
-masks_list.append(mm.region_def_kattegat(lon, lat, bathy))
+masks_list.append(mm.region_def_nws_off_shelf(lon, lat, bathy))
+masks_list.append(mm.region_def_nws_irish_sea(lon, lat, bathy))
+masks_list.append(mm.region_def_nws_kattegat(lon, lat, bathy))
+masks_list.append(mm.region_def_nws_fsc(lon, lat, bathy))
 
-masks_names = ["whole domain", "north sea", "outer shelf", "norwegian trench",
-                "english_channel", "southern north sea", "off shelf",
-                "irish sea", "kattegat",]
+masks_names = ["whole domain", "northern north sea", "southern north sea", "outer shelf",
+               "norwegian trench", "english_channel",  "off shelf",
+                "irish sea", "kattegat", "fsc"]
 ```
 
 As before the numpy arrays (here as a list) can be converted into an xarray dataset where each mask is separated along the `dim_mask` dimension
@@ -147,12 +148,12 @@ mm.quick_plot(mask_xr)
     
 
 
-NB overlapping regions are not given special treatment, the layers are blindly superimposed on each other. E.g. as demonstrated with "Norwegian Trench" and "off shelf", or "whole domain" and any other region.
+NB overlapping regions are not given special treatment, the layers are blindly superimposed on each other. E.g. as demonstrated with "Norwegian Trench" and "off shelf", "FSC" and "off shelf", or "whole domain" and any other region.
 
 
 ```python
 plt.subplot(2,2,1)
-mm.quick_plot(mask_xr.sel(dim_mask=[0,3]))
+mm.quick_plot(mask_xr.sel(dim_mask=[0,3,9]))
 
 plt.subplot(2,2,2)
 mm.quick_plot(mask_xr.sel(dim_mask=[1,2,4,5,6,7,8]))
@@ -178,7 +179,7 @@ mask_xr.mask.sum(dim='dim_mask').plot(levels=(1,2,3,4))
 
 
 
-    <matplotlib.collections.QuadMesh at 0x7f596d69cc10>
+    <matplotlib.collections.QuadMesh at 0x7fc5b3db4a60>
 
 
 
@@ -610,83 +611,83 @@ Data variables:
     all_mean_temperature                (dim_mask) float32 7.48 6.685 ... 7.275
     all_mean_practical_salinity         (dim_mask) float32 34.57 34.86 ... 33.76
     all_mean_qc_flags_profiles          (dim_mask) float64 4.422e+05 ... 1.93...
-    all_mean_qc_flags_levels            (dim_mask) float64 3.272e+07 ... 3.68...</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-6a25a3a2-15e7-423e-a2b1-3a9f405046a2' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-6a25a3a2-15e7-423e-a2b1-3a9f405046a2' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>dim_mask</span>: 8</li><li><span>z_dim</span>: 400</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-04d0af69-cd37-4135-bb9b-8d353042ac7e' class='xr-section-summary-in' type='checkbox'  checked><label for='section-04d0af69-cd37-4135-bb9b-8d353042ac7e' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>region_names</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>&lt;U18</div><div class='xr-var-preview xr-preview'>&#x27;whole domain&#x27; ... &#x27;kattegat&#x27;</div><input id='attrs-15fae6b3-bb91-4199-a3a4-2085233a6cf1' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-15fae6b3-bb91-4199-a3a4-2085233a6cf1' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0196b6f4-698f-4504-9499-d258740a29a8' class='xr-var-data-in' type='checkbox'><label for='data-0196b6f4-698f-4504-9499-d258740a29a8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;whole domain&#x27;, &#x27;north sea&#x27;, &#x27;outer shelf&#x27;, &#x27;norwegian trench&#x27;,
-       &#x27;english_channel&#x27;, &#x27;southern north sea&#x27;, &#x27;off shelf&#x27;, &#x27;kattegat&#x27;],
-      dtype=&#x27;&lt;U18&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-f0c123c7-e01c-4b85-9968-810c0136ce73' class='xr-section-summary-in' type='checkbox'  checked><label for='section-f0c123c7-e01c-4b85-9968-810c0136ce73' class='xr-section-summary' >Data variables: <span>(12)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_depth</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>3.802 12.43 12.75 ... nan nan nan</div><input id='attrs-82480666-2b2f-4009-8fa3-f967913539d6' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-82480666-2b2f-4009-8fa3-f967913539d6' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-18b39903-c58d-46c3-ace9-2337ab5d3eff' class='xr-var-data-in' type='checkbox'><label for='data-18b39903-c58d-46c3-ace9-2337ab5d3eff' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[3.8015647e+00, 1.2431897e+01, 1.2752748e+01, ..., 6.8166663e+02,
+    all_mean_qc_flags_levels            (dim_mask) float64 3.272e+07 ... 3.68...</pre><div class='xr-wrap' style='display:none'><div class='xr-header'><div class='xr-obj-type'>xarray.Dataset</div></div><ul class='xr-sections'><li class='xr-section-item'><input id='section-96523dba-9ddb-4289-aa55-4ddc8c6dde82' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-96523dba-9ddb-4289-aa55-4ddc8c6dde82' class='xr-section-summary'  title='Expand/collapse section'>Dimensions:</label><div class='xr-section-inline-details'><ul class='xr-dim-list'><li><span>dim_mask</span>: 8</li><li><span>z_dim</span>: 400</li></ul></div><div class='xr-section-details'></div></li><li class='xr-section-item'><input id='section-143ff0a8-2a86-4c69-bb18-984a7872ad28' class='xr-section-summary-in' type='checkbox'  checked><label for='section-143ff0a8-2a86-4c69-bb18-984a7872ad28' class='xr-section-summary' >Coordinates: <span>(1)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>region_names</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>&lt;U18</div><div class='xr-var-preview xr-preview'>&#x27;whole domain&#x27; ... &#x27;kattegat&#x27;</div><input id='attrs-9db0db25-56df-407b-aaf1-b9078190c7b9' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-9db0db25-56df-407b-aaf1-b9078190c7b9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-e57a9e2c-f307-4cbe-82a0-914c2a471c20' class='xr-var-data-in' type='checkbox'><label for='data-e57a9e2c-f307-4cbe-82a0-914c2a471c20' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([&#x27;whole domain&#x27;, &#x27;northern north sea&#x27;, &#x27;southern north sea&#x27;,
+       &#x27;outer shelf&#x27;, &#x27;norwegian trench&#x27;, &#x27;english_channel&#x27;, &#x27;off shelf&#x27;,
+       &#x27;kattegat&#x27;], dtype=&#x27;&lt;U18&#x27;)</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-d922b407-924b-4966-9d6d-41421d7cc52d' class='xr-section-summary-in' type='checkbox'  checked><label for='section-d922b407-924b-4966-9d6d-41421d7cc52d' class='xr-section-summary' >Data variables: <span>(12)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_depth</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>3.802 12.43 12.75 ... nan nan nan</div><input id='attrs-5fe26a9c-0d3c-4d28-bd6e-2478c76b0f0e' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-5fe26a9c-0d3c-4d28-bd6e-2478c76b0f0e' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-33f42a1e-2bf7-4959-8b99-3458c6110191' class='xr-var-data-in' type='checkbox'><label for='data-33f42a1e-2bf7-4959-8b99-3458c6110191' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[3.8015647e+00, 1.2431897e+01, 1.2752748e+01, ..., 6.8166663e+02,
         4.4625000e+02, 4.8479999e+02],
        [5.3978572e+00, 2.4058212e+01, 1.9938543e+01, ...,           nan,
                   nan,           nan],
-       [3.6056361e+00, 4.8050968e+01, 8.1488876e+00, ...,           nan,
+       [4.4636950e+00, 1.6393627e+01, 1.4392214e+01, ...,           nan,
                   nan,           nan],
        ...,
-       [4.4636950e+00, 1.6393627e+01, 1.4392214e+01, ...,           nan,
+       [1.2563381e+00, 3.3999999e+00, 6.0253515e+00, ...,           nan,
                   nan,           nan],
        [1.0883763e+01, 1.9575655e+01, 3.1419313e+01, ..., 1.1761000e+03,
                   nan,           nan],
        [1.1508474e+00, 5.1322031e+00, 8.6844826e+00, ...,           nan,
-                  nan,           nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_potential_temperature</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>4.629 4.718 4.732 ... nan nan nan</div><input id='attrs-cafa009e-58c8-4d2d-81d1-a9fc6c521927' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-cafa009e-58c8-4d2d-81d1-a9fc6c521927' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4b464e7f-00ba-4e36-8fb0-8e2df8f1437a' class='xr-var-data-in' type='checkbox'><label for='data-4b464e7f-00ba-4e36-8fb0-8e2df8f1437a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 4.629049  ,  4.7177176 ,  4.7318735 , ...,  4.4791145 ,
+                  nan,           nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_potential_temperature</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>4.629 4.718 4.732 ... nan nan nan</div><input id='attrs-2e1d34eb-47d4-4d57-8d5b-aa494090836a' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-2e1d34eb-47d4-4d57-8d5b-aa494090836a' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-df0b31d6-cc53-41b2-88a8-da1171ef09ca' class='xr-var-data-in' type='checkbox'><label for='data-df0b31d6-cc53-41b2-88a8-da1171ef09ca' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 4.629049  ,  4.7177176 ,  4.7318735 , ...,  4.4791145 ,
          7.0863085 ,  7.4710603 ],
        [ 5.4062243 ,  5.538929  ,  5.3454785 , ...,         nan,
                 nan,         nan],
-       [10.049737  , 10.17599   , 10.611096  , ...,         nan,
+       [ 4.690185  ,  4.7648296 ,  4.290611  , ...,         nan,
                 nan,         nan],
        ...,
-       [ 4.690185  ,  4.7648296 ,  4.290611  , ...,         nan,
+       [ 7.777337  ,  7.743324  ,  7.730106  , ...,         nan,
                 nan,         nan],
        [10.741058  , 10.7420845 , 10.740048  , ..., -0.8672274 ,
                 nan,         nan],
        [ 0.6519121 ,  0.89932823,  1.4384961 , ...,         nan,
-                nan,         nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_temperature</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>4.629 4.719 4.733 ... nan nan nan</div><input id='attrs-9fc0a91a-331a-491c-8f8b-00002ce79f2c' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-9fc0a91a-331a-491c-8f8b-00002ce79f2c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3fab0d55-f648-48c6-acf2-0f6e24678f95' class='xr-var-data-in' type='checkbox'><label for='data-3fab0d55-f648-48c6-acf2-0f6e24678f95' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 4.629366  ,  4.7186904 ,  4.7328353 , ...,  4.523333  ,
+                nan,         nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_temperature</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>4.629 4.719 4.733 ... nan nan nan</div><input id='attrs-1b278805-5945-46ff-b0b9-4b88bcfee2eb' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-1b278805-5945-46ff-b0b9-4b88bcfee2eb' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-1b5c84f2-4bdf-4db4-8e27-e96fa7fced6a' class='xr-var-data-in' type='checkbox'><label for='data-1b5c84f2-4bdf-4db4-8e27-e96fa7fced6a' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[ 4.629366  ,  4.7186904 ,  4.7328353 , ...,  4.523333  ,
          7.13      ,  7.52      ],
        [ 5.4066286 ,  5.540855  ,  5.3469286 , ...,         nan,
                 nan,         nan],
-       [10.050143  , 10.181214  , 10.612111  , ...,         nan,
+       [ 4.69051   ,  4.76605   ,  4.291559  , ...,         nan,
                 nan,         nan],
        ...,
-       [ 4.69051   ,  4.76605   ,  4.291559  , ...,         nan,
+       [ 7.777464  ,  7.7436633 ,  7.7307053 , ...,         nan,
                 nan,         nan],
        [10.742379  , 10.744476  , 10.743904  , ..., -0.82      ,
                 nan,         nan],
        [ 0.6519491 ,  0.89944816,  1.4387244 , ...,         nan,
-                nan,         nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_practical_salinity</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>29.08 29.49 30.4 ... nan nan nan</div><input id='attrs-32c8b443-4162-4751-b347-7c70ac8b8faf' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-32c8b443-4162-4751-b347-7c70ac8b8faf' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-241279bb-e19f-45b1-8710-9aad0682c2e0' class='xr-var-data-in' type='checkbox'><label for='data-241279bb-e19f-45b1-8710-9aad0682c2e0' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[29.07752 , 29.488913, 30.403212, ..., 35.102665, 35.194   ,
+                nan,         nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_practical_salinity</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>29.08 29.49 30.4 ... nan nan nan</div><input id='attrs-58db60e9-c9cb-474e-b882-5c78ff7b9d0c' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-58db60e9-c9cb-474e-b882-5c78ff7b9d0c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3f744c4b-c29d-4f26-ae56-f1f59178fab7' class='xr-var-data-in' type='checkbox'><label for='data-3f744c4b-c29d-4f26-ae56-f1f59178fab7' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[29.07752 , 29.488913, 30.403212, ..., 35.102665, 35.194   ,
         35.191   ],
        [34.215603, 34.549515, 34.572178, ...,       nan,       nan,
               nan],
-       [34.935204, 35.067867, 35.173996, ...,       nan,       nan,
+       [34.39857 , 34.319733, 34.34744 , ...,       nan,       nan,
               nan],
        ...,
-       [34.39857 , 34.319733, 34.34744 , ...,       nan,       nan,
+       [34.69485 , 34.745506, 34.778313, ...,       nan,       nan,
               nan],
        [35.41276 , 35.531857, 35.523746, ..., 34.912   ,       nan,
               nan],
        [22.681366, 23.651918, 24.719212, ...,       nan,       nan,
-              nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_qc_flags_profiles</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>4.422e+05 1.501e+04 ... 1.93e+06</div><input id='attrs-0d0acb5e-e4f7-48f2-b28d-5c3541eeae6c' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-0d0acb5e-e4f7-48f2-b28d-5c3541eeae6c' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-74413eff-977d-44f1-8096-ee618b7c0c2e' class='xr-var-data-in' type='checkbox'><label for='data-74413eff-977d-44f1-8096-ee618b7c0c2e' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 442235.24343675,   15008.98928571,  376662.06666667,
-        938649.58108108,  236414.92957746,   80146.01273885,
-        351245.56410256, 1930156.61016949])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_qc_flags_levels</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.693e+07 1.56e+07 ... 3.356e+07</div><input id='attrs-4c5204ac-6487-4de4-9a07-19428c02a1dd' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-4c5204ac-6487-4de4-9a07-19428c02a1dd' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-23a130c7-29fb-4703-8ff0-7fb68406cab9' class='xr-var-data-in' type='checkbox'><label for='data-23a130c7-29fb-4703-8ff0-7fb68406cab9' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1.69308660e+07, 1.55996508e+07, 1.91944702e+07, ...,
+              nan]], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_qc_flags_profiles</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>4.422e+05 1.501e+04 ... 1.93e+06</div><input id='attrs-8b4a9183-af86-48ae-901f-30288093de5b' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-8b4a9183-af86-48ae-901f-30288093de5b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-4753433b-df7d-4874-aa1f-1ee99bd78601' class='xr-var-data-in' type='checkbox'><label for='data-4753433b-df7d-4874-aa1f-1ee99bd78601' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 442235.24343675,   15008.98928571,   80146.01273885,
+        376662.06666667,  938649.58108108,  236414.92957746,
+        351245.56410256, 1930156.61016949])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>profile_mean_qc_flags_levels</span></div><div class='xr-var-dims'>(dim_mask, z_dim)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>1.693e+07 1.56e+07 ... 3.356e+07</div><input id='attrs-e1273005-fda7-4184-99e9-8e8804649d78' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-e1273005-fda7-4184-99e9-8e8804649d78' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-04e0a7be-d1c8-4122-93c4-1560fdfe5e1b' class='xr-var-data-in' type='checkbox'><label for='data-04e0a7be-d1c8-4122-93c4-1560fdfe5e1b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([[1.69308660e+07, 1.55996508e+07, 1.91944702e+07, ...,
         3.35092258e+07, 3.35359264e+07, 3.35359264e+07],
        [2.41202110e+06, 1.67795573e+06, 1.43838659e+07, ...,
         3.35626270e+07, 3.35626270e+07, 3.35626270e+07],
-       [8.94791700e+06, 8.94791700e+06, 1.34250508e+07, ...,
+       [7.82982090e+06, 9.03196737e+06, 2.22584483e+07, ...,
         3.35626270e+07, 3.35626270e+07, 3.35626270e+07],
        ...,
-       [7.82982090e+06, 9.03196737e+06, 2.22584483e+07, ...,
+       [1.43590767e+07, 1.24096114e+07, 1.32338878e+07, ...,
         3.35626270e+07, 3.35626270e+07, 3.35626270e+07],
        [2.49180806e+06, 2.49194591e+06, 1.91836366e+06, ...,
         3.32757669e+07, 3.35626270e+07, 3.35626270e+07],
        [1.07067776e+08, 1.03513576e+08, 9.04351003e+07, ...,
-        3.35626270e+07, 3.35626270e+07, 3.35626270e+07]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_depth</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>219.3 48.17 54.26 ... 492.1 86.48</div><input id='attrs-f71af3b3-812c-4f40-a031-43c589b63c57' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-f71af3b3-812c-4f40-a031-43c589b63c57' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-f8ebb1e4-cfc6-4e9e-b409-cdd402a484fc' class='xr-var-data-in' type='checkbox'><label for='data-f8ebb1e4-cfc6-4e9e-b409-cdd402a484fc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([219.31877 ,  48.17008 ,  54.261852, 147.37276 ,  21.17876 ,
-        17.655499, 492.1379  ,  86.48219 ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_potential_temperature</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>7.458 6.68 10.61 ... 8.609 7.266</div><input id='attrs-0d828de8-d077-417b-aea6-a22b3f9a9f5d' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-0d828de8-d077-417b-aea6-a22b3f9a9f5d' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-02bfc61e-8ef2-49a1-9546-ce4e6c351844' class='xr-var-data-in' type='checkbox'><label for='data-02bfc61e-8ef2-49a1-9546-ce4e6c351844' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 7.4579477,  6.6803527, 10.605105 ,  7.5581946,  7.9912376,
-        5.0804653,  8.609107 ,  7.266073 ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_temperature</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>7.48 6.685 10.61 ... 8.658 7.275</div><input id='attrs-8d7a1850-121f-4d81-b9f8-88fd6951cb07' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-8d7a1850-121f-4d81-b9f8-88fd6951cb07' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-215d75e3-8de0-476c-a812-03d10c4d25f8' class='xr-var-data-in' type='checkbox'><label for='data-215d75e3-8de0-476c-a812-03d10c4d25f8' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 7.479547 ,  6.684928 , 10.611826 ,  7.572891 ,  7.993422 ,
-        5.0818586,  8.657866 ,  7.2747602], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_practical_salinity</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>34.57 34.86 35.18 ... 35.33 33.76</div><input id='attrs-2d981a28-b018-4c28-978c-834953eda7d9' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-2d981a28-b018-4c28-978c-834953eda7d9' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6b139ce7-58af-4ea3-8766-7086ff7e7a3c' class='xr-var-data-in' type='checkbox'><label for='data-6b139ce7-58af-4ea3-8766-7086ff7e7a3c' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([34.574173, 34.85523 , 35.177284, 34.745213, 34.871284, 34.486984,
-       35.334602, 33.764072], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_qc_flags_profiles</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>4.422e+05 1.501e+04 ... 1.93e+06</div><input id='attrs-2dea8d7e-a049-4ff4-ae33-f19eb396d5e3' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-2dea8d7e-a049-4ff4-ae33-f19eb396d5e3' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-fefdf9f7-a79d-4024-80e3-8dfc0c7ff867' class='xr-var-data-in' type='checkbox'><label for='data-fefdf9f7-a79d-4024-80e3-8dfc0c7ff867' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 442235.24343675,   15008.98928571,  376662.06666667,
-        938649.58108108,  236414.92957746,   80146.01273885,
-        351245.56410256, 1930156.61016949])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_qc_flags_levels</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>3.272e+07 3.244e+07 ... 3.683e+07</div><input id='attrs-03c1486f-acee-4902-a348-fc46a5847623' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-03c1486f-acee-4902-a348-fc46a5847623' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-cb9cf642-6bfd-4206-a2aa-966f2de0d66d' class='xr-var-data-in' type='checkbox'><label for='data-cb9cf642-6bfd-4206-a2aa-966f2de0d66d' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([32717180.43962013, 32440148.97097322, 32052298.20066667,
-       38954525.82148649, 32985344.45144366, 33282693.25738854,
-       26732339.47348291, 36830323.95974576])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-a87b9615-92d2-46ca-8c2c-eda643e9ca6a' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-a87b9615-92d2-46ca-8c2c-eda643e9ca6a' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-c18ffa6a-cadb-4a84-8d93-c09153909dc6' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-c18ffa6a-cadb-4a84-8d93-c09153909dc6' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
+        3.35626270e+07, 3.35626270e+07, 3.35626270e+07]])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_depth</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>219.3 48.17 17.66 ... 492.1 86.48</div><input id='attrs-00ff913b-1eac-4e47-80f8-52df15dc2be7' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-00ff913b-1eac-4e47-80f8-52df15dc2be7' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-0550bfd1-270d-4137-b968-9a264d8561f7' class='xr-var-data-in' type='checkbox'><label for='data-0550bfd1-270d-4137-b968-9a264d8561f7' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([219.31877 ,  48.17008 ,  17.655499,  54.261852, 147.37276 ,
+        21.17876 , 492.1379  ,  86.48219 ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_potential_temperature</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>7.458 6.68 5.08 ... 8.609 7.266</div><input id='attrs-caa1a5ea-0e21-4789-bab3-2f0876aad072' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-caa1a5ea-0e21-4789-bab3-2f0876aad072' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-6ecb77c5-788c-4101-b8df-b6c8f0313337' class='xr-var-data-in' type='checkbox'><label for='data-6ecb77c5-788c-4101-b8df-b6c8f0313337' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 7.4579477,  6.6803527,  5.0804653, 10.605105 ,  7.5581946,
+        7.9912376,  8.609107 ,  7.266073 ], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_temperature</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>7.48 6.685 5.082 ... 8.658 7.275</div><input id='attrs-b16bfaeb-4a4c-4f2e-b13f-f8cc9cb76c6f' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-b16bfaeb-4a4c-4f2e-b13f-f8cc9cb76c6f' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-a5c65f47-101a-43cf-a84b-c8acfa09c65b' class='xr-var-data-in' type='checkbox'><label for='data-a5c65f47-101a-43cf-a84b-c8acfa09c65b' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 7.479547 ,  6.684928 ,  5.0818586, 10.611826 ,  7.572891 ,
+        7.993422 ,  8.657866 ,  7.2747602], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_practical_salinity</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float32</div><div class='xr-var-preview xr-preview'>34.57 34.86 34.49 ... 35.33 33.76</div><input id='attrs-04db2226-fc03-4293-a454-7c36d8a363ea' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-04db2226-fc03-4293-a454-7c36d8a363ea' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-3ce143cc-a2b8-4ab4-acfa-d02464defca6' class='xr-var-data-in' type='checkbox'><label for='data-3ce143cc-a2b8-4ab4-acfa-d02464defca6' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([34.574173, 34.85523 , 34.486984, 35.177284, 34.745213, 34.871284,
+       35.334602, 33.764072], dtype=float32)</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_qc_flags_profiles</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>4.422e+05 1.501e+04 ... 1.93e+06</div><input id='attrs-eb2c3f29-1401-4092-8dec-2b902633adda' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-eb2c3f29-1401-4092-8dec-2b902633adda' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-515f5af6-33ab-4080-89c2-1897232cb162' class='xr-var-data-in' type='checkbox'><label for='data-515f5af6-33ab-4080-89c2-1897232cb162' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([ 442235.24343675,   15008.98928571,   80146.01273885,
+        376662.06666667,  938649.58108108,  236414.92957746,
+        351245.56410256, 1930156.61016949])</pre></div></li><li class='xr-var-item'><div class='xr-var-name'><span>all_mean_qc_flags_levels</span></div><div class='xr-var-dims'>(dim_mask)</div><div class='xr-var-dtype'>float64</div><div class='xr-var-preview xr-preview'>3.272e+07 3.244e+07 ... 3.683e+07</div><input id='attrs-33353915-0b67-44da-a506-d53e28341a0b' class='xr-var-attrs-in' type='checkbox' disabled><label for='attrs-33353915-0b67-44da-a506-d53e28341a0b' title='Show/Hide attributes'><svg class='icon xr-icon-file-text2'><use xlink:href='#icon-file-text2'></use></svg></label><input id='data-66fdf4ba-1ba2-4515-8f9f-8b2dae8bbffc' class='xr-var-data-in' type='checkbox'><label for='data-66fdf4ba-1ba2-4515-8f9f-8b2dae8bbffc' title='Show/Hide data repr'><svg class='icon xr-icon-database'><use xlink:href='#icon-database'></use></svg></label><div class='xr-var-attrs'><dl class='xr-attrs'></dl></div><div class='xr-var-data'><pre>array([32717180.43962013, 32440148.97097322, 33282693.25738854,
+       32052298.20066667, 38954525.82148649, 32985344.45144366,
+       26732339.47348291, 36830323.95974576])</pre></div></li></ul></div></li><li class='xr-section-item'><input id='section-db2bed82-7aec-45ce-b664-68740165af04' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-db2bed82-7aec-45ce-b664-68740165af04' class='xr-section-summary'  title='Expand/collapse section'>Indexes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><ul class='xr-var-list'></ul></div></li><li class='xr-section-item'><input id='section-6dbbeccc-b70c-4ae0-a9ce-06047c586c10' class='xr-section-summary-in' type='checkbox' disabled ><label for='section-6dbbeccc-b70c-4ae0-a9ce-06047c586c10' class='xr-section-summary'  title='Expand/collapse section'>Attributes: <span>(0)</span></label><div class='xr-section-inline-details'></div><div class='xr-section-details'><dl class='xr-attrs'></dl></div></li></ul></div></div>
 
 
 
-Notices that the number of mask dimensions is not necessarily preserved between the mask and the mask averaged variables. This happens if, for example, there are no profiles in one of the mask regions
+Notice that the number of mask dimensions is not necessarily preserved between the mask and the mask averaged variables. This happens if, for example, there are no profiles in one of the mask regions
 
 
 ```python
@@ -697,7 +698,7 @@ print(check1)
     False
 
 
-The mean profiles can be visualised or further processed (notice the Irish Sea region is missing because there were no profiles in the example dataset)
+The mean profiles can be visualised or further processed (notice the Irish Sea region and FSC are missing because there were no profiles in the example dataset)
 
 
 ```python
@@ -719,7 +720,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7f596fb86220>
+    <matplotlib.legend.Legend at 0x7fc5b627ceb0>
 
 
 
@@ -751,7 +752,7 @@ mask_mean_SST.plot()
 
 
 
-    <matplotlib.collections.QuadMesh at 0x7f596c5901c0>
+    <matplotlib.collections.QuadMesh at 0x7fc5b6117130>
 
 
 
@@ -779,7 +780,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7f596c578fd0>
+    <matplotlib.legend.Legend at 0x7fc5b618b3a0>
 
 
 
