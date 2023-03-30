@@ -71,12 +71,12 @@ anchor = "smart"
   time_format_default = "2006/01/02"
  time_format_blog = "2006/01/02"
  weight = 1
-[languages.en]
-title = "SUZUKI Hayato"
-description = "A researcher's homepage"
-languageName ="English"
+# [languages.en]
+# title = "SUZUKI Hayato"
+# description = "A researcher's homepage"
+# languageName ="English"
 # Weight used for sorting.
-weight = 10
+#weight = 10
 
 
 [markup]
@@ -198,6 +198,10 @@ enable = false
   url = "https://github.com/Ginnannman/shayato"
   icon = "fab fa-github"
   desc = "Development takes place here"
+
+[sitemap]
+changefreq = "daily"
+priority = 0.5
 
 # hugo module configuration
 
