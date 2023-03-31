@@ -1,0 +1,36 @@
+{{ $links := .Site.Params.links -}}
+<footer class="bg-dark row py-3 d-print-none" style="min-height: 60px;">
+  <div class="container-fluid flex-shrink-1 mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        {{ with $links }}
+        {{ with index . "user" }}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-6 col-sm-4 text-end text-xs-center text-right order-sm-3">
+        {{ with $links }}
+        {{ with index . "developer" }}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-6 col-sm-4 text-center text-nowrap order-sm-2">
+        {{ with .Site.Params.copyright }}<small class="text-white">&copy; {{ now.Year}} {{ .}} {{ T "footer_all_rights_reserved" }}</small>{{ end }}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{- define "footer-links-block" }}
+<ul class="list-inline m-0">
+  {{ range . }}
+  <li class="list-inline-item h3" data-bs-toggle="tooltip" title="{{ .name }}" aria-label="{{ .name }}">
+    <a class="text-white" target="_blank" rel="noopener" href="{{ .url }}" aria-label="{{ .name }}">
+      <i class="{{ .icon }}"></i>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end -}}
