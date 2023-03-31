@@ -1,10 +1,10 @@
 ---
 title: "Works"
 linkTitle: "Works"
-weight: 20
+weight: 15
 menu:
   main:
-    weight: 20
+    weight: 15
 type: docs
 ---
 
