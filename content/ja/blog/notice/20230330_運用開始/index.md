@@ -10,4 +10,3 @@ author: 鈴木勇人
 ## Introduction
 
 - :smile: test
-  
