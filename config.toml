@@ -73,7 +73,7 @@ anchor = "smart"
  weight = 1
 # [languages.en]
 # title = "SUZUKI Hayato"
-# description = "A researcher's homepage"
+# description = "A Student's homepage"
 # languageName ="English"
 # Weight used for sorting.
 #weight = 10
@@ -102,6 +102,8 @@ copyright = "鈴木勇人"
 # First one is picked as the Twitter card image if not set on page.
 images = ["images/project-illustration.png"]
 
+# サイトマップと検索結果をサイトマップ等から除外するためのパラメータ設定
+inhibitPaths = ["sitemap", "search"]
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
 # version_menu = "Releases"
