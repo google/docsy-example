@@ -1,4 +1,5 @@
-baseURL = "https://shayato.net"
+# baseURL = "https://shayato.net"
+baseURL = "/"
 title = "鈴木勇人"
 
 # Language settings
@@ -55,6 +56,11 @@ blog = "/:section/:year/:month/:day/:slug/"
 resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
+[imaging.exif]
+  disableDate = "true"
+  disableLatLong = "true"
+  excludeFields = ".*"
+
 
 [services]
 [services.googleAnalytics]
