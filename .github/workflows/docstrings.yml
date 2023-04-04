@@ -8,7 +8,7 @@ on:
 jobs:
   commit-docstrings:
     if: ${{ github.event.client_payload.deploy_docstring }}
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout site
         uses: actions/checkout@v3
