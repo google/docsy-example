@@ -152,7 +152,7 @@ profile.plot_map()
 
 
 
-    (<Figure size 640x480 with 2 Axes>, <GeoAxesSubplot: >)
+    (<Figure size 640x480 with 2 Axes>, <GeoAxes: >)
 
 
 
@@ -305,7 +305,7 @@ differences.dataset.diff_temperature.plot()
 
 
 
-    <matplotlib.collections.QuadMesh at 0x7fac09fea370>
+    <matplotlib.collections.QuadMesh at 0x7fd608509100>
 
 
 
@@ -333,7 +333,7 @@ plt.colorbar( label='temperature diff (obs-model)')
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7fac08b22be0>
+    <matplotlib.colorbar.Colorbar at 0x7fd6084637c0>
 
 
 
@@ -379,7 +379,7 @@ surface_errors.plot_map(var_str="diff_temperature")
 
 
 
-    (<Figure size 640x480 with 2 Axes>, <GeoAxesSubplot: >)
+    (<Figure size 640x480 with 2 Axes>, <GeoAxes: >)
 
 
 
@@ -425,7 +425,7 @@ bottom_errors.plot_map(var_str="diff_temperature")
 
 
 
-    (<Figure size 640x480 with 2 Axes>, <GeoAxesSubplot: >)
+    (<Figure size 640x480 with 2 Axes>, <GeoAxes: >)
 
 
 
@@ -533,7 +533,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7fac08835e50>
+    <matplotlib.legend.Legend at 0x7fd6080e2a30>
 
 
 
@@ -573,7 +573,7 @@ plt.colorbar()
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7fac085e8700>
+    <matplotlib.colorbar.Colorbar at 0x7fd600ecd8e0>
 
 
 
@@ -614,7 +614,7 @@ plt.colorbar()
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7fac09fe1c70>
+    <matplotlib.colorbar.Colorbar at 0x7fd600dc0160>
 
 
 
