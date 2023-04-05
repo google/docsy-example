@@ -1,10 +1,10 @@
 ---
-    title: "0. profile introduction"
-    linkTitle: "0. profile introduction"
+    title: "Introduction to profile class"
+    linkTitle: "Introduction to profile class"
     weight: 5
 
     description: >
-        0. profile introduction example.
+        Introduction to profile class example.
 ---
 ##  Example useage of Profile object.
 
