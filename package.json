@@ -1,24 +1,21 @@
 {
   "name": "docsy-example-site",
-  "version": "0.6.0",
-  "description": "Example site that uses docsy theme for technical documentation.",
-  "main": "none.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/google/docsy-example.git"
-  },
-  "author": "",
+  "version": "0.7.0-dev.0-unreleased",
+  "description": "Example site that uses Docsy theme for technical documentation.",
+  "repository": "github:google/docsy-example",
+  "homepage": "https://example.docsy.dev",
+  "author": "Docsy Authors",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/google/docsy-example/issues"
+  "bugs": "https://github.com/google/docsy-example/issues",
+  "scripts": {
+    "_serve:hugo": "hugo server -DFE --minify",
+    "build": "hugo --cleanDestinationDir -e dev -DFE",
+    "serve": "npm run _serve:hugo",
+    "update:pkg:hugo": "npm install --save-dev --save-exact hugo-extended@latest"
   },
-  "homepage": "https://github.com/google/docsy-example#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.3.7",
+    "hugo-extended": "0.113.0",
     "postcss-cli": "^10.1.0"
   }
 }
