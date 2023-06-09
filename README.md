@@ -1,4 +1,5 @@
 # Docsy Example
+## 🚧 WARNING: `main` is unstable! For details, see [#207](https://github.com/google/docsy-example/issues/207) 🚧
 
 [Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
 site navigation, structure, and more. This **Docsy Example Project** uses the Docsy
