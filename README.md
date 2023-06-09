@@ -12,12 +12,10 @@ In this project, the Docsy theme component is pulled in as a Hugo module, togeth
 $ hugo mod graph
 hugo: collected modules in 566 ms
 hugo: collected modules in 578 ms
-github.com/google/docsy-example github.com/google/docsy@v0.6.0
-github.com/google/docsy-example github.com/google/docsy/dependencies@v0.6.0
-github.com/google/docsy/dependencies@v0.6.0
-github.com/twbs/bootstrap@v4.6.2+incompatible
-github.com/google/docsy/dependencies@v0.6.0
-github.com/FortAwesome/Font-Awesome v0.0.0-20221115183454-96cafbd73ec4
+github.com/google/docsy-example github.com/google/docsy@v0.7.0
+github.com/google/docsy-example github.com/google/docsy/dependencies@v0.7.0
+github.com/google/docsy/dependencies@v0.7.0 github.com/twbs/bootstrap@v5.2.3+incompatible
+github.com/google/docsy/dependencies@v0.7.0 github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
 ```
 
 You can find detailed theme instructions in the [Docsy user guide][].
