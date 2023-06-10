@@ -1,20 +1,16 @@
-+++
-title = "اسناد گلدی"
-linkTitle = "اسناد گلدی"
+---
+title: "اسناد گلدی"
+---
 
-+++
-
-{{< blocks/cover title="به اسناد گلدی خوش آمدید. این یک نمونه برای پوسته داکسی می‌باشد." image_anchor="top" height="full" color="orange" >}}
-<div class="mx-auto">
-    <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-        بیشتر بخوانید <i class="fas fa-arrow-alt-circle-left ml-2"></i>
-    </a>
-    <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy-example">
-        دانلود <i class="fab fa-github ml-2 "></i>
-    </a>
-    <p class="lead mt-5">ارزیابی درجه حرارت فرنی - در فضای ابری!</p>
-    {{< blocks/link-down color="info" >}}
-</div>
+{{< blocks/cover title="به اسناد گلدی خوش آمدید. این یک نمونه برای پوسته داکسی می‌باشد." image_anchor="top" height="full" >}}
+<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
+    بیشتر بخوانید <i class="fas fa-arrow-alt-circle-left ms-2"></i>
+</a>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
+    دانلود <i class="fab fa-github ms-2 "></i>
+</a>
+<p class="lead mt-5">ارزیابی درجه حرارت فرنی - در فضای ابری!</p>
+{{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
 
@@ -50,10 +46,7 @@ linkTitle = "اسناد گلدی"
 
 
 {{< blocks/section >}}
-<div class="col">
-    <h1 class="text-center">این قسمت دوم است.</h1>
-</div>
-
+  <h1 class="text-center">این قسمت دوم است.</h1>
 {{< /blocks/section >}}
 
 
@@ -78,9 +71,5 @@ Get the Goldydocs app!
 {{< /blocks/section >}}
 
 {{< blocks/section >}}
-
-<div class="col-12">
-    <h1 class="text-center">این یک قسمت دیگر است.</h1>
-</div>
-
+  <h1 class="text-center">این یک قسمت دیگر است.</h1>
 {{< /blocks/section >}}

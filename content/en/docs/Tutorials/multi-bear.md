@@ -1,9 +1,9 @@
 ---
-title: "Multi-Bear Domicile Setup"
-date: 2017-01-05
-weight: 4
+title: Multi-Bear Domicile Setup
 description: >
   A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+date: 2017-01-05
+weight: 4
 ---
 
 {{% pageinfo %}}
@@ -43,7 +43,7 @@ Scenester tumeric pickled, authentic crucifix post-ironic fam freegan VHS pork b
 This is a code block following a header.
 ```
 
-Next level leggings before they sold out, PBR&B church-key shaman echo park. Kale chips occupy godard whatever pop-up freegan pork belly selfies. Gastropub Belinda subway tile woke post-ironic seitan. Shabby chic man bun semiotics vape, chia messenger bag plaid cardigan. 
+Next level leggings before they sold out, PBR&B church-key shaman echo park. Kale chips occupy godard whatever pop-up freegan pork belly selfies. Gastropub Belinda subway tile woke post-ironic seitan. Shabby chic man bun semiotics vape, chia messenger bag plaid cardigan.
 
 #### Header 4
 
@@ -230,8 +230,6 @@ Plaid hell of cred microdosing, succulents tilde pour-over. Offal shabby chic 3 
 ### External Links
 
 Stumptown PBR&B keytar plaid street art, forage XOXO pitchfork selvage affogato green juice listicle pickled everyday carry hashtag. Organic sustainable letterpress sartorial scenester intelligentsia swag bushwick. Put a bird on it stumptown neutra locavore. IPhone typewriter messenger bag narwhal. Ennui cold-pressed seitan flannel keytar, single-origin coffee adaptogen occupy yuccie williamsburg chillwave shoreditch forage waistcoat.
-
-
 
 ```
 This is the final element on the page and there should be no margin below this.

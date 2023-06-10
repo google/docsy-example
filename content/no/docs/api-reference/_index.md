@@ -1,4 +1,3 @@
-
 ---
 title: "Komplett API-referance"
 linkTitle: "API-referanse"
@@ -12,5 +11,3 @@ Dette er landingssiden til en seksjon et sted nede i seksjonshierarkiet.
 * Oppsummer
 * Seksjonen din
 * Her
-
-
