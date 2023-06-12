@@ -87,6 +87,8 @@ time_format_blog = "2006.01.02"
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.parser.attribute]
+      block = true
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]

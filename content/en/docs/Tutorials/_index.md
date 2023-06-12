@@ -1,11 +1,8 @@
-
 ---
-title: "Tutorials"
-linkTitle: "Tutorials"
-weight: 8
+title: Tutorials
+description: Show your user how to work through some end to end examples.
 date: 2017-01-04
-description: >
-  Show your user how to work through some end to end examples.
+weight: 8
 ---
 
 {{% pageinfo %}}

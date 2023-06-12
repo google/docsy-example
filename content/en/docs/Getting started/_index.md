@@ -1,11 +1,9 @@
 ---
-categories: ["Examples", "Placeholders"]
-tags: ["test","docs"] 
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: Getting Started
+description: What does your user need to know to try your project?
+categories: [Examples, Placeholders]
+tags: [test, docs]
 weight: 2
-description: >
-  What does your user need to know to try your project?
 ---
 
 {{% pageinfo %}}

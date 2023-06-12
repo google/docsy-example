@@ -1,8 +1,4 @@
-
 ---
-title: "News About Docsy"
-linkTitle: "News"
+title: News
 weight: 20
 ---
-
-

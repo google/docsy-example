@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av Java: Drivverket"
 linkTitle: "Innsiden av Java"

@@ -1,4 +1,3 @@
-
 ---
 title: "Matten til monolitter: Detaljert spesifikasjon"
 linkTitle: "Matten til monolitter"

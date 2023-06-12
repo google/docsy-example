@@ -1,9 +1,7 @@
 ---
-title: "Reference"
-linkTitle: "Reference"
+title: Reference
+description: Low level reference docs for your project.
 weight: 9
-description: >
-  Low level reference docs for your project.
 ---
 
 {{% pageinfo %}}

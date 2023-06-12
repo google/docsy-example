@@ -1,6 +1,4 @@
 ---
 title: Søkeresultat
 layout: search
-
 ---
-
