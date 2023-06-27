@@ -11,10 +11,10 @@ In this project, the Docsy theme component is pulled in as a Hugo module, togeth
 $ hugo mod graph
 hugo: collected modules in 566 ms
 hugo: collected modules in 578 ms
-github.com/google/docsy-example github.com/google/docsy@v0.7.0
-github.com/google/docsy-example github.com/google/docsy/dependencies@v0.7.0
-github.com/google/docsy/dependencies@v0.7.0 github.com/twbs/bootstrap@v5.2.3+incompatible
-github.com/google/docsy/dependencies@v0.7.0 github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
+github.com/google/docsy-example github.com/google/docsy@v0.7.1
+github.com/google/docsy-example github.com/google/docsy/dependencies@v0.7.1
+github.com/google/docsy/dependencies@v0.7.1 github.com/twbs/bootstrap@v5.2.3+incompatible
+github.com/google/docsy/dependencies@v0.7.1 github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
 ```
 
 You can find detailed theme instructions in the [Docsy user guide][].
@@ -29,11 +29,13 @@ This is not an officially supported Google product. This project is currently ma
 
 A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this:
 
-1. Click **Use this template**.
+1. Use the dropdown for switching branches/tags to change to the latest released tag `v0.7.1`
 
-2. Select a name for your new project and click **Create repository from template**.
+2. Click **Use this template**.
 
-3. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
+3. Select a name for your new project and click **Create repository from template**.
+
+4. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
 
 ```bash
 git clone --depth 1 https://github.com/me/example.git
@@ -98,12 +100,25 @@ To remove the produced images run:
 ```bash
 docker-compose rm
 ```
-For more information see the [Docker Compose
-documentation](https://docs.docker.com/compose/gettingstarted/).
+For more information see the [Docker Compose documentation][].
 
 ## Troubleshooting
 
 As you run the website locally, you may run into the following error:
+
+```console
+$ hugo server
+WARN 2023/06/27 16:59:06 Module "project" is not compatible with this Hugo version; run "hugo mod graph" for more information.
+Start building sites …
+hugo v0.101.0-466fa43c16709b4483689930a4f9ac8add5c9f66+extended windows/amd64 BuildDate=2022-06-16T07:09:16Z VendorInfo=gohugoio
+Error: Error building site: "C:\Users\foo\path\to\docsy-example\content\en\_index.md:5:1": failed to extract shortcode: template for shortcode "blocks/cover" not found
+Built in 27 ms
+```
+
+This error occurs if are running an outdated version of Hugo. As of docsy theme version `v0.7.0`, hugo version `0.110.0` or higher is required.
+See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo) of the user guide for instructions on how to install Hugo.
+
+Or you may be confronted with the following error:
 
 ```console
 $ hugo server
@@ -136,3 +151,4 @@ See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/instal
 [example.docsy.dev]: https://example.docsy.dev
 [Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
+[Docker Compose documentation]: https://docs.docker.com/compose/gettingstarted/
