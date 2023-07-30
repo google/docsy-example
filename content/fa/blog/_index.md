@@ -1,6 +1,6 @@
 ---
-title: "بلاگ داکسی"
-linkTitle: "بلاگ"
+title: بلاگ داکسی
+linkTitle: بلاگ
 menu:
   main:
     weight: 30

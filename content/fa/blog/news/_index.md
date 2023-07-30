@@ -1,5 +1,5 @@
 ---
-title: "اخبار داکسی"
-linkTitle: "اخبار"
+title: اخبار داکسی
+linkTitle: اخبار
 weight: 20
 ---

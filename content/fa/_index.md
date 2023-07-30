@@ -1,5 +1,5 @@
 ---
-title: "اسناد گلدی"
+title: اسناد گلدی
 ---
 
 {{< blocks/cover title="به اسناد گلدی خوش آمدید. این یک نمونه برای پوسته داکسی می‌باشد." image_anchor="top" height="full" >}}
