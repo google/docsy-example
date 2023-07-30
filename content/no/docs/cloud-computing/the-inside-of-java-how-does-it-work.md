@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av Java: Hvordan virker det?"
 linkTitle: "Innsiden av Java"

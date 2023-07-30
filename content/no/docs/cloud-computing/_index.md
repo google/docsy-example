@@ -1,4 +1,3 @@
-
 ---
 title: "Data i skyen"
 linkTitle: "Sky-data"

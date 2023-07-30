@@ -1,4 +1,3 @@
-
 ---
 title: "Matten til Java: Hvordan virker det?"
 linkTitle: "Matten til Java"

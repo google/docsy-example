@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av Go: Drivverket"
 linkTitle: "Innsiden av Go"

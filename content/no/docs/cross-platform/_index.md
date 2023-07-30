@@ -1,4 +1,3 @@
-
 ---
 title: "Flere plattformer"
 linkTitle: "Flerplattform"

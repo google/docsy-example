@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av monografer: Hvordan virker det?"
 linkTitle: "Innsiden av monografer"

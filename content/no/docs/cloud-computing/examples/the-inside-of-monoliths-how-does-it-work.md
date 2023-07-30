@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av monolitter: Hvordan virker det?"
 linkTitle: "Innsiden av monolitter"

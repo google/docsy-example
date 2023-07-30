@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av kryptografi: Detaljert spesifikasjon"
 linkTitle: "Innsiden av kryptografi"

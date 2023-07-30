@@ -1,4 +1,3 @@
-
 ---
 title: "Matten til mikroservicer: Detaljert spesifikasjon"
 linkTitle: "Matten til mikroservicer"

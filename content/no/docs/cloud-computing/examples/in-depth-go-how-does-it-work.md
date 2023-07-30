@@ -1,4 +1,3 @@
-
 ---
 title: "Detaljert om Go: Hvordan virker det?"
 linkTitle: "Detaljert om Go"

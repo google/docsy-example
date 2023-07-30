@@ -1,4 +1,3 @@
-
 ---
 title: "Detaljert om monolitter: Detaljert spesifikasjon"
 linkTitle: "Detaljert om monolitter"

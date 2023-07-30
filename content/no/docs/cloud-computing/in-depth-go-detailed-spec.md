@@ -1,5 +1,3 @@
-
----
 title: "Detaljert om Go: Detaljert spesifikasjon"
 linkTitle: "Detaljert om Go"
 date: 2017-01-05

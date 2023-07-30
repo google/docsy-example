@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av monolitter: De grunnleggende konseptene"
 linkTitle: "Innsiden av monolitter"

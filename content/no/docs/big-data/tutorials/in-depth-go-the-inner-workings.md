@@ -1,4 +1,3 @@
-
 ---
 title: "Detaljert om Go: Drivverket"
 linkTitle: "Detaljert om Go"

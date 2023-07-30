@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av monografer: De grunnleggende konseptene"
 linkTitle: "Innsiden av monografer"

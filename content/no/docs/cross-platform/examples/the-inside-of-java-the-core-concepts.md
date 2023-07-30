@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av Java: De grunnleggende konseptene"
 linkTitle: "Innsiden av Java"

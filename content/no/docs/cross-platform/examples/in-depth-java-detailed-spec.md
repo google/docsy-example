@@ -1,4 +1,3 @@
-
 ---
 title: "Detaljert om Java: Detaljert spesifikasjon"
 linkTitle: "Detaljert om Java"

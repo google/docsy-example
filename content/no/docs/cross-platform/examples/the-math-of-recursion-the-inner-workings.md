@@ -1,4 +1,3 @@
-
 ---
 title: "Matten til rekursjon: Drivverket"
 linkTitle: "Matten til rekursjon"

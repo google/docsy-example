@@ -1,4 +1,3 @@
-
 ---
 title: "Matten til monografer: Detaljert spesifikasjon"
 linkTitle: "Matten til monografer"

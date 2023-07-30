@@ -1,4 +1,3 @@
-
 ---
 title: "Praktiske eksempler"
 linkTitle: "Eksempler"

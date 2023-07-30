@@ -1,4 +1,3 @@
-
 ---
 title: "Innsiden av Java: Detaljert spesifikasjon"
 linkTitle: "Innsiden av Java"

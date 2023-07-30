@@ -1,4 +1,3 @@
-
 ---
 title: "Matten til Java: Drivverket"
 linkTitle: "Matten til Java"
