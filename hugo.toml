@@ -2,7 +2,7 @@ baseURL = "/"
 title = "Goldydocs"
 
 # Language settings
-contentDir = "content/en"
+contentDir = "content/lang1"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
@@ -69,7 +69,7 @@ description = "A Docsy example site"
 
 [languages.no]
 languageName ="Norsk"
-contentDir = "content/no"
+contentDir = "content/lang2"
 [languages.no.params]
 title = "Goldydocs"
 description = "Docsy er operativsystem for skyen"
@@ -78,7 +78,7 @@ time_format_blog = "02.01.2006"
 
 [languages.fa]
 languageName ="فارسی"
-contentDir = "content/fa"
+contentDir = "content/lang3"
 [languages.fa.params]
 title = "اسناد گلدی"
 description = "یک نمونه برای پوسته داکسی"
