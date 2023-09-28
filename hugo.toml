@@ -67,6 +67,13 @@ weight = 1
 title = "Goldydocs"
 description = "A Docsy example site"
 
+[languages.zh-cn]
+languageName ="中文"
+contentDir = "content/zh-cn"
+[languages.zh-cn.params]
+title = "Goldydocs"
+description = "Docsy 示例站点"
+
 [languages.no]
 languageName ="Norsk"
 contentDir = "content/no"
