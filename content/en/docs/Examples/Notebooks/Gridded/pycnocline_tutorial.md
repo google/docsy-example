@@ -118,9 +118,11 @@ strat.quick_plot()
 ```
 
 
-    
-![png](/COAsT/pycnocline_tutorial_files/pycnocline_tutorial_17_0.png)
-    
+
+
+    (<Figure size 1000x1000 with 2 Axes>,
+     <Axes: title={'center': '01 Aug 2015: masked pycnocline thickness (m)'}, xlabel='longitude', ylabel='latitude'>)
+
 
 
 
@@ -130,9 +132,7 @@ strat.quick_plot()
 
 
 
-
-
-    (<Figure size 1000x1000 with 2 Axes>,
-     <Axes: title={'center': '01 Aug 2015: masked pycnocline thickness (m)'}, xlabel='longitude', ylabel='latitude'>)
-
+    
+![png](/COAsT/pycnocline_tutorial_files/pycnocline_tutorial_17_2.png)
+    
 
