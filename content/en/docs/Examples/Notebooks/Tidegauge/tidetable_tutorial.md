@@ -53,7 +53,7 @@ Initiate a TideGauge object, if a filename is passed it assumes it is a GESLA ty
 tg = coast.Tidegauge()
 ```
 
-    Tidegauge object at 0x55d4e8c40fc0 initialised
+    Tidegauge object at 0x565340358fc0 initialised
 
 
 Specify the data read as a High Low Water dataset.
@@ -62,6 +62,12 @@ Specify the data read as a High Low Water dataset.
 ```python
 tg.read_hlw(filnam, date_start, date_end)
 ```
+
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/tidegauge.py:564: UserWarning: Converting non-nanosecond precision datetime values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
+      dataset = dataset.assign_coords(time=("time", time))
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/tidegauge.py:564: UserWarning: Converting non-nanosecond precision datetime values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
+      dataset = dataset.assign_coords(time=("time", time))
+
 
 Show dataset. If timezone is specified then it is presented as requested, otherwise uses UTC.
 
@@ -84,7 +90,7 @@ tg.dataset.plot.scatter(x="time", y="ssh")
 
 
 
-    <matplotlib.collections.PathCollection at 0x7f3b64748be0>
+    <matplotlib.collections.PathCollection at 0x7f0e46d34a60>
 
 
 
@@ -166,6 +172,10 @@ HLW = tg.get_tide_table_times(np.datetime64("2020-10-13 12:48"), winsize=2, meth
 
 HLW = tg.get_tide_table_times(np.datetime64("2020-10-13 12:48"), winsize=1, method="nearest_1")
 ```
+
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/tidegauge.py:665: UserWarning: Converting non-nanosecond precision datetime values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
+      return xr.DataArray([np.NaN], dims=(time_var), coords={time_var: [time_guess]})[0]
+
 
 
 ```python
