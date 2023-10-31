@@ -17,7 +17,7 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 
 # Highlighting config
 pygmentsCodeFences = true
@@ -54,6 +54,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
+[languages.en.params]
 title = "COAsT"
 description = "A Docsy site - full of documention"
 languageName ="English"
