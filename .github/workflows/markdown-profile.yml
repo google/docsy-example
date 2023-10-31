@@ -43,13 +43,13 @@ jobs:
           unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebook_tutorials/runnable_notebooks/profile/example_files
           ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebook_tutorials/runnable_notebooks/profile/example_files
           mkdir -p ./example_scripts/notebook_tutorials/markdown
-          ls ./example_scripts/notebooks
+          ls ./example_scripts/notebook_tutorials
           pip install .
           mv config ./example_scripts/notebook_tutorials/runnable_notebooks/profile/config
           bash notebook_to_md.sh profile
       - name: convert notebooks
         run: |
-          cd $GITHUB_WORKSPACE/external/example_scripts/notebooks
+          cd $GITHUB_WORKSPACE/external/example_scripts/notebook_tutorials
           ls ./markdown      
           echo "Move profile markdown examples"
           mv ./markdown/profile/introduction_to_profile_class.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/Profile/
