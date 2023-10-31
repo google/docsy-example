@@ -40,16 +40,16 @@ jobs:
           cd $GITHUB_WORKSPACE/external
           sudo apt install wget unzip -y
           wget -q https://linkedsystems.uk/erddap/files/COAsT_example_files/COAsT_example_files.zip
-          unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebooks/runnable_notebooks/tidegauge/example_files
-          ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebooks/runnable_notebooks/tidegauge/example_files
-          mkdir -p ./example_scripts/notebooks/markdown/tidegauge
+          unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebook_tutorials/runnable_notebooks/tidegauge/example_files
+          ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebook_tutorials/runnable_notebooks/tidegauge/example_files
+          mkdir -p ./example_scripts/notebook_tutorials/markdown/tidegauge
           ls ./example_scripts/notebooks
           pip install .
-          mv config ./example_scripts/notebooks/runnable_notebooks/tidegauge/config
+          mv config ./example_scripts/notebook_tutorials/runnable_notebooks/tidegauge/config
           bash notebook_to_md.sh tidegauge
       - name: convert notebooks
         run: |
-          cd $GITHUB_WORKSPACE/external/example_scripts/notebooks/
+          cd $GITHUB_WORKSPACE/external/example_scripts/notebook_tutorials/
           ls ./markdown
           pwd    
           ls ./markdown/tidegauge    
