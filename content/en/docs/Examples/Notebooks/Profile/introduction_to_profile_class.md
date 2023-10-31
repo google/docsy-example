@@ -145,7 +145,7 @@ profile.plot_map()
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_12_1.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_12_1.png)
     
 
 
@@ -199,6 +199,12 @@ nemo.dataset = nemo.dataset.rename({"depth_0": "depth"})  # profile methods will
 # Use obs operator for horizontal remapping of Gridded onto Profile.
 model_profiles = profile.obs_operator(nemo)
 ```
+
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/profile.py:456: UserWarning: Converting non-nanosecond precision timedelta values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
+      mod_profiles["interp_lag"] = (["id_dim"], interp_lag)
+    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/profile.py:456: UserWarning: Converting non-nanosecond precision timedelta values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
+      mod_profiles["interp_lag"] = (["id_dim"], interp_lag)
+
 
 Now that we have interpolated the model onto Profiles, we have a new Profile
 object called `model_profiles`. This can be used to do some comparisons with
@@ -305,13 +311,13 @@ differences.dataset.diff_temperature.plot()
 
 
 
-    <matplotlib.collections.QuadMesh at 0x7fd608509100>
+    <matplotlib.collections.QuadMesh at 0x7f1d605cd880>
 
 
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_33_1.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_33_1.png)
     
 
 
@@ -333,13 +339,13 @@ plt.colorbar( label='temperature diff (obs-model)')
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7fd6084637c0>
+    <matplotlib.colorbar.Colorbar at 0x7f1d5d4ae190>
 
 
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_34_1.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_34_1.png)
     
 
 
@@ -372,7 +378,7 @@ surface_errors.plot_map(var_str="diff_temperature")
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_38_0.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_38_0.png)
     
 
 
@@ -418,7 +424,7 @@ bottom_errors.plot_map(var_str="diff_temperature")
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_44_0.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_44_0.png)
     
 
 
@@ -455,7 +461,7 @@ plt.title("Temperature diff (obs-model)")
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_46_1.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_46_1.png)
     
 
 
@@ -533,13 +539,13 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7fd6080e2a30>
+    <matplotlib.legend.Legend at 0x7f1d5d3015e0>
 
 
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_56_1.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_56_1.png)
     
 
 
@@ -573,13 +579,13 @@ plt.colorbar()
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7fd600ecd8e0>
+    <matplotlib.colorbar.Colorbar at 0x7f1d5cef6580>
 
 
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_59_1.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_59_1.png)
     
 
 
@@ -614,12 +620,12 @@ plt.colorbar()
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7fd600dc0160>
+    <matplotlib.colorbar.Colorbar at 0x7f1d69119130>
 
 
 
 
     
-![png](/COAsT/0._profile_introduction_files/0._profile_introduction_63_1.png)
+![png](/COAsT/introduction_to_profile_class_files/introduction_to_profile_class_63_1.png)
     
 
