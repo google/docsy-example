@@ -43,7 +43,7 @@ jobs:
           unzip COAsT_example_files.zip && mv COAsT_example_files ./example_scripts/notebook_tutorials/runnable_notebooks/general/example_files
           ls /home/runner/work/COAsT-site/COAsT-site/external/example_scripts/notebook_tutorials/runnable_notebooks/general/example_files
           mkdir -p ./example_scripts/notebook_tutorials/markdown/general
-          ls ./example_scripts/notebooks
+          ls ./example_scripts/notebook_tutorials
           pip install .
           mv config ./example_scripts/notebook_tutorials/runnable_notebooks/general/config
           bash notebook_to_md.sh general

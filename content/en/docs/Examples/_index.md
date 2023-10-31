@@ -8,7 +8,7 @@ description: >
 ---
 
 
-The examples in `Notebooks` are tutorials automatically rendered from the python notebooks in [COAsT:examples_scripts/notebooks](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/example_scripts/notebooks).
+The examples in `Notebooks` are tutorials automatically rendered from the python notebooks in [COAsT:examples_scripts/notebook_tutorials](https://github.com/British-Oceanographic-Data-Centre/COAsT/tree/master/example_scripts/notebook_tutorials).
 These can be downloaded and run locally with the [example data](https://linkedsystems.uk/erddap/files/COAsT_example_files/). 
 
 Within COAsT, configuration files are used to pass information about the example data files. The configuration files used
