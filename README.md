@@ -3,28 +3,41 @@
 This is the website repo for the COAsT python package it uses [Docsy](https://github.com/google/docsy) a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more.
 
 
-## Cloning the COAsT Project website
+## Pre requitises
 
-The following will give you a project that is set up and ready to use (don't forget to use `--recurse-submodules` or you won't pull down some of the code you need to generate a working site). The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
+1. Install Node.js and npm
+
+You can download and install Node.js, which includes npm, from the official Node.js website. We recommend any version 18 or greater.
+
+2. Install Hugo
+
+You need a recent extended version (we recommend version 0.120.1 or later) of Hugo to do local builds and previews of sites (like this one) that use Docsy. If you install from the release page, make sure to get the **extended Hugo version**, which supports SCSS; you may need to scroll down the list of releases to see it.
+
+After the installation, you can run the command `hugo version`, You should see something like this:
+
+```
+hugo v0.120.2-9c2b2414d231ec1bdaf3e3a030bf148a45c7aa17+extended linux/amd64 BuildDate=2023-10-31T16:27:18Z VendorInfo=gohugoio
+```
+Please note that the string *"extended"* have to be in your version name.
+
+## Usage
+
+The following will give you a project that is set up and ready to use. The first thing you have to do is clone the repository:
+
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/British-Oceanographic-Data-Centre/COAsT-site.git
-cd docsy-example
-hugo server
+git clone --recurse-submodules --depth 1  git@github.com:British-Oceanographic-Data-Centre/COAsT-site.git
+cd COAsT-site
 ```
 
-The theme is included as a Git submodule:
+Now you need to install the dependencies and some of the scripts:
 
 ```bash
-▶ git submodule
- a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
+npm install # install the package dependences
+npm run prepare # it sill get the submodule that is used as a theme for this website and then install the dependencies of this submodule
 ```
+When you run `npm run prepare` it will install for you all the dependencies of your theme, including `PostCSS`, `Bootstrap` and `Autoprefixer`
 
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS` (not needed for `hugo server`):
-
-```bash
-npm install
-```
 
 <!--### Cloning the Example from the Theme Project
 
@@ -51,3 +64,4 @@ Once you've cloned the site repo, from the repo root folder, run:
 ```
 hugo server
 ```
+The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.

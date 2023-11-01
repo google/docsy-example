@@ -1,0 +1,63 @@
+{{ $cover := and
+    (.HasShortcode "blocks/cover")
+    (not .Site.Params.ui.navbar_translucent_over_cover_disable)
+-}}
+{{ $baseURL := urls.Parse $.Site.Params.Baseurl -}}
+
+<nav class="td-navbar navbar-dark js-navbar-scroll
+            {{- if $cover }} td-navbar-cover {{- end }}">
+<div class="container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+    {{- /**/ -}}
+    <span class="navbar-brand__logo navbar-logo">
+      {{- if ne .Site.Params.ui.navbar_logo false -}}
+        {{ with resources.Get "icons/logo.svg" -}}
+          {{ ( . | minify).Content | safeHTML -}}
+        {{ end -}}
+      {{ end -}}
+    </span>
+    {{- /**/ -}}
+    <span class="navbar-brand__name">
+      {{- .Site.Title -}}
+    </span>
+    {{- /**/ -}}
+  </a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav text-white">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/COAsT/#home"><span class="">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/COAsT/#about"><span class="">About</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-white" href="/COAsT/#community"><span>Community</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/COAsT/docs/"><span>Documentation</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" target="_blank" href="https://github.com/British-Oceanographic-Data-Centre/COAsT"><span><i class="fab fa-github ml-2 "></i></span>
+        </a>
+      </li>
+      {{ if .Site.Params.versions -}}
+      <li class="nav-item dropdown d-none d-lg-block">
+        {{ partial "navbar-version-selector.html" . -}}
+      </li>
+      {{ end -}}
+      {{ if (gt (len .Site.Home.Translations) 0) -}}
+      <li class="nav-item dropdown d-none d-lg-block">
+        {{ partial "navbar-lang-selector.html" . -}}
+      </li>
+      {{ end -}}
+    </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    {{ partial "search-input.html" . }}
+  </div>
+</div>
+</nav>

@@ -4,34 +4,73 @@ linkTitle = "COAsT"
 
 +++
 
-{{< blocks/cover title="Welcome to the documentation: A Docsy site for COAsT" image_anchor="top" height="full" color="orange" >}}
-<div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
-		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
-	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/british-oceanographic-data-centre/COAsT">
-		Download <i class="fab fa-github ml-2 "></i>
-	</a>
-	<p class="lead mt-5">COAsT</p>
-	{{< blocks/link-down color="info" >}}
+<div id="home">
+	{{< blocks/cover image_anchor="top" height="full">}}
+	<h1 class="display-1 mt-0 mt-md-5 mb-0 pb-0 text-white text-shadow-black-2">COAsT
+	</h1>
+	<h2 class="display-3 mt-0 pb-5 pt-0 mb-5 text-white text-shadow-black-2">Coastal Ocean Assessment Toolbox</h2>
+	<div class="mx-auto">
+		<h2 class="text-white text-shadow-black-2">
+			A Python toolbox for assessing kilometer-scale ocean models, conducting statistical analyses,
+			and facilitating model validation.
+		</h2>
+		<div class="row justify-content-center">
+			<!-- <a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
+				About
+			</a>	 -->
+			<a class="col-md-2 col-sm-12 link-size btn btn-lg btn-primary m-4" href="#about">
+				About
+			</a>
+			<a class="col-md-2 col-sm-12 link-size btn btn-lg btn-primary m-4" href="{{< relref "/docs" >}}">
+				Documentation
+			</a>
+			<a class="col-md-2 col-sm-12 link-size btn btn-lg btn-secondary m-4" href="https://github.com/british-oceanographic-data-centre/COAsT">
+				Download <i class="fab fa-github ml-2 "></i>
+			</a>
+		</div>
+		<div class="m-5">
+			{{< blocks/link-down color="info" >}}
+		</div>
+	</div>
+	{{< /blocks/cover >}}
 </div>
-{{< /blocks/cover >}}
 
+<div id="about">
+	{{% blocks/lead color="primary"%}}
+		<h2 class="display-4 mb-3 pb-3">About</h2>
+		<div class="">
+			<p>COAsT is Diagnostic and Assessment toolbox for kilometric scale regional models.
+				It's aim is to deliver a flexible, community-ready framework for assessing kilometric scale ocean models.</p>
+			<p>The focus, initially, is be on delivering novel diagnostics for processes that are emergent
+				at the kilometric scale and with NEMO model output.</p>
+		</div>
 
-{{% blocks/lead color="primary" %}}
-This site provides visibility into the COAsT python framework.
+	{{% /blocks/lead %}}
+</div>
 
-{{% /blocks/lead %}}
+<div id="community">
+	{{% blocks/lead color="white"%}}
+	<h2 class="display-4 mb-3 pb-3">Join the COAsT community</h2>
+	<div class="">
+		<p>COAsT is an open source project that anyone in the community can use, improve, and enjoy.
+			We'd love you to join us! Here's a few ways to find out what's happening and get involved.</p>
+	</div>
+	<div class="row td-box td-box--4 td-box--gradient td-box--height-auto linkbox">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<h2 class="mb-4">Learn and Connect</h2>		
+			<p>Using or want to use COAsT? Find out more here:</p>
+			<div class="p-4 d-flex justify-content-around">
+				<a target="_blank" href="https://github.com/British-Oceanographic-Data-Centre/COAsT"><img class="icon-size" src="images/github.svg"/>Github</a>
+				<a target="_blank" href="https://pypi.org/project/COAsT/"><img class="icon-size" src="images/pypi.svg"/>Pypi</a>
+				<a target="_blank" href="https://anaconda.org/BODC/coast"><img class="icon-size" src="images/anaconda.svg" />Anaconda</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<h2 class="mb-4">Develop and Contribute</h2>
+			<p>If you want to get more involved by contributing to COAsT, join us on our <a target="_blank" href="https://github.com/British-Oceanographic-Data-Centre/COAsT">Github Repository</a>
 
-
-{{< blocks/section color="dark" type="row">}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from Anaconda.org**" url="https://anaconda.org/BODC/" %}}
-Get the COAsT framework!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/British-Oceanographic-Data-Centre/COAsT-site" %}}
-We do a [Pull Request](https://github.com/British-Oceanographic-Data-Centre/COAsT-site/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-{{< /blocks/section >}}
+			<p>You can find out how to contribute to these docs in our <a target="_blank" href="/COAsT/docs/contributing_package/">Contribution Guidelines</a>.
+			</div>
+	</div>
+	{{% /blocks/lead %}}
+</div>

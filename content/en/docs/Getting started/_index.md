@@ -96,5 +96,6 @@ The output should be
 ```
 or later. If it is, great carry on. If it is not, problems may occur with some functionality in coast. Please get in contact using the contacts in the workshop email.
 
-Take a look at the example pages for more information on
-specific objects and methods.
+Take a look at the [example pages](https://british-oceanographic-data-centre.github.io/COAsT/docs/examples/) for more information on specific objects and methods.
+
+If you are utilizing COAsT at the National Oceanography Centre (NOC) on Liverpool Servers, kindly access [this link on the NOC Intranet](https://nocacuk.sharepoint.com/sites/DigitalOcean/SitePages/COAsT-Installation-on-Liverpool-Servers.aspx) for additional details.
