@@ -1,43 +1,52 @@
-# COAsT docsy
+# COAsT Documentation Website
 
-This is the website repo for the COAsT python package it uses [Docsy](https://github.com/google/docsy) a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more.
+This is the repository for the COAsT Python package documentation website. This site utilizes the [Docsy](https://github.com/google/docsy) theme, a Hugo theme designed for technical documentation sites, offering streamlined navigation, structure, and more.
 
+## Prerequisites
 
-## Pre requitises
+Before you get started, make sure you have the following prerequisites in place:
 
-1. Install Node.js and npm
+1. **Node.js and npm Installation**: Download and install Node.js, which includes npm, from the official [Node.js website](https://nodejs.org/). We recommend using version 18 or later.
 
-You can download and install Node.js, which includes npm, from the official Node.js website. We recommend any version 18 or greater.
+2. **Hugo Installation**: You'll need an extended version of Hugo, preferably version 0.120.1 or later, for local builds and previews of sites that use Docsy. To ensure you have the correct Hugo version, follow these steps:
 
-2. Install Hugo
+   - If you install Hugo from the release page, make sure to select the **extended Hugo version** to support SCSS.
 
-You need a recent extended version (we recommend version 0.120.1 or later) of Hugo to do local builds and previews of sites (like this one) that use Docsy. If you install from the release page, make sure to get the **extended Hugo version**, which supports SCSS; you may need to scroll down the list of releases to see it.
+   - After installation, verify your Hugo version by running `hugo version`. Your output should resemble the following:
 
-After the installation, you can run the command `hugo version`, You should see something like this:
+     ```bash
+     hugo v0.120.2-9c2b2414d231ec1bdaf3e3a030bf148a45c7aa17+extended linux/amd64 BuildDate=2023-10-31T16:27:18Z VendorInfo=gohugoio
+     ```
 
-```
-hugo v0.120.2-9c2b2414d231ec1bdaf3e3a030bf148a45c7aa17+extended linux/amd64 BuildDate=2023-10-31T16:27:18Z VendorInfo=gohugoio
-```
-Please note that the string *"extended"* have to be in your version name.
+     Ensure that the version name includes the string *"extended"*.
 
-## Usage
+## Getting Started
 
-The following will give you a project that is set up and ready to use. The first thing you have to do is clone the repository:
-
+Follow these steps to set up your project and get it ready for use. Begin by cloning the repository:
 
 ```bash
-git clone --recurse-submodules --depth 1  git@github.com:British-Oceanographic-Data-Centre/COAsT-site.git
+git clone --recurse-submodules --depth 1 git@github.com:British-Oceanographic-Data-Centre/COAsT-site.git
 cd COAsT-site
 ```
 
-Now you need to install the dependencies and some of the scripts:
+Now, proceed to install the dependencies and essential scripts:
 
 ```bash
-npm install # install the package dependences
-npm run prepare # it sill get the submodule that is used as a theme for this website and then install the dependencies of this submodule
+npm install      # Install package dependencies
+npm run prepare  # Fetch the submodule used as the theme for this website and install its dependencies
 ```
-When you run `npm run prepare` it will install for you all the dependencies of your theme, including `PostCSS`, `Bootstrap` and `Autoprefixer`
 
+The `npm run prepare` command will install all the necessary dependencies for your theme, including `PostCSS`, `Bootstrap`, and `Autoprefixer`.
+
+## Running the Website Locally
+
+After cloning the site repository, navigate to the repository's root folder, and execute the following command to serve the website locally:
+
+```bash
+hugo server
+```
+
+The `hugo server` command builds and serves the site. If you only want to build the site without serving it locally, run `hugo` instead.
 
 <!--### Cloning the Example from the Theme Project
 
@@ -56,12 +65,3 @@ git subtree add --prefix exampleSite https://github.com/google/docsy.git  master
 ```
 
 To pull in changes, see `pull-deps.sh` script in the theme.-->
-
-## Running the website locally
-
-Once you've cloned the site repo, from the repo root folder, run:
-
-```
-hugo server
-```
-The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
