@@ -32,7 +32,7 @@ cd COAsT-site
 Now, proceed to install the dependencies and essential scripts:
 
 ```bash
-npm install      # Install package dependencies
+npm install      # Install package dependencies 
 npm run prepare  # Fetch the submodule used as the theme for this website and install its dependencies
 ```
 
