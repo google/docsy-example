@@ -18,13 +18,13 @@ The Coastal Ocean Assessment Toolbox (COAsT) is a valuable Python package specif
 
 - **Community-Ready and Flexible**: The aim of COAsT is to create a toolbox that is ready for collaboration with the research community. It is designed to be flexible, allowing users to extend and adapt its functionalities to suit their specific research needs.
 
-## Funcionalities
+## Functionalities
 
-- **Data Processing and Management**: COAsT includes a wide array of functions for the efficient handling and processing of diverse ocean data types, including satellite data, tide gauges, in-situ profiles, biogeochemistry, meteorological data, and oceanographic data.
+- **Observation Data Co-processing and Management**: COAsT includes an expanding array of functions for reading and processing of ocean observational data types for co-analysis with simulation data. These data sources include satellite altimetry, tide gauges and in-situ profile data.
 
 - **Visualization and Mapping**: COAsT offers tools for creating visual representations of your data through maps, graphs, and charts. It seamlessly integrates with popular libraries such as cartopy and matplotlib
 
-- **Spatial Analysis**: COAsT provides robust spatial analysis tools for geospatial data analysis and statistical computations
+- **Spatial Analysis**: COAsT provides robust spatial analysis tools for geospatial data analysis and statistical computations. For example flows across contours or transect, and computations over geographic regions using masks.
 
 - **Statistical Analysis**: The package also offers a suite of statistical analysis capabilities
 
