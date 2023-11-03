@@ -8,4 +8,4 @@ description: >
   General information about some characteristics of the package.
 ---
 
-Here you'll discover valuable details regarding the project's libraries, features, and CI/CD setup.
+Here you'll discover valuable details regarding the project's libraries, features, tests, and CI/CD setup.

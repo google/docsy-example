@@ -10,7 +10,7 @@ The Coastal Ocean Assessment Toolbox (COAsT) is a valuable Python package specif
 
 ## Key Features
 
-- **High-Resolution Ocean Models**: COAsT is tailored to work with high-resolution regional ocean models, making it an invaluable resource for researchers dealing with intricate coastal environments.
+- **High-Resolution Ocean Models**: COAsT is tailored to work with high-resolution regional ocean models
 
 - **NEMO Integration**: The initial focus of COAsT is on delivering a limited number of novel diagnostics for [NEMO](https://www.nemo-ocean.eu) configurations, a widely used ocean model. However, the toolbox is designed to be expanded to include other diagnostics and support for additional ocean models.
 
@@ -20,8 +20,6 @@ The Coastal Ocean Assessment Toolbox (COAsT) is a valuable Python package specif
 
 ## Funcionalities
 
-Certainly! Here's the rewritten text for your documentation:
-
 - **Data Processing and Management**: COAsT includes a wide array of functions for the efficient handling and processing of diverse ocean data types, including satellite data, tide gauges, in-situ profiles, biogeochemistry, meteorological data, and oceanographic data.
 
 - **Visualization and Mapping**: COAsT offers tools for creating visual representations of your data through maps, graphs, and charts. It seamlessly integrates with popular libraries such as cartopy and matplotlib
@@ -30,4 +28,3 @@ Certainly! Here's the rewritten text for your documentation:
 
 - **Statistical Analysis**: The package also offers a suite of statistical analysis capabilities
 
-- **Data Export and Sharing**: COAsT enables users to export their results in various data formats.

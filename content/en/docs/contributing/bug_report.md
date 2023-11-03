@@ -16,7 +16,7 @@ Trying if the bug is ocurring in the lastest version of the package is worthwhil
 
 Bug reports must:
 
-1.Include a short, self contained Python snippet reproducing the problem. You can format the code nicely by using GitHub Flavored Markdown:
+1. Include a short, self contained Python snippet reproducing the problem. You can format the code nicely by using GitHub Flavored Markdown:
 
 ```
 .```python
@@ -29,6 +29,6 @@ data = coast.Gridded(fn_data, fn_domain, fn_config)
 ```.
 ```
 
-Include the full version string of COAsT and its dependencies. Explain why the current behavior is wrong/not desired and what you expect instead. The issue will then show up to the COAsT community and be open to comments/ideas from others.
+2. Include the full version string of COAsT and its dependencies. Explain why the current behavior is wrong/not desired and what you expect instead. The issue will then show up to the COAsT community and be open to comments/ideas from others.
 
 [Click here](https://github.com/British-Oceanographic-Data-Centre/COAsT/issues/new) to open an issue.

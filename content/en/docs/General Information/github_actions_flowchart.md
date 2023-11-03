@@ -1,10 +1,7 @@
 ---
 title: "Github Actions Flowchart"
 linkTitle: "Github Actions Flowchart"
-weight: 3
-menu:
-  documentation:
-    weight: 20
+weight: 5
 description: >
   Flowchart of Github actions active on the COAsT and COAsT-Site repositories.
 ---

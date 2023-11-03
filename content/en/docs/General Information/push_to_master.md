@@ -1,10 +1,7 @@
 ---
 title: "Push to master"
 linkTitle: "Push to master"
-weight: 7
-menu:
-  documentation:
-    weight: 20
+weight: 6
 description: >
   Procedure for pushing to master / publishing.
 ---

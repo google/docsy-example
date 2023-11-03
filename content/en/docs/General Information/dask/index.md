@@ -2,19 +2,16 @@
 title: "Dask"
 linkTitle: "Dask"
 date: 2021-10-05
-weight: 5
-menu:
-  documentation:
-    weight: 20
+weight: 3
 description: >
-  information on using Dask within the COAsT package
+  Information on using Dask within the COAsT package
 ---
 
-# What is Dask
+## What is Dask
 Dask is a python library that allows code to be run in parallel based on the hardware your running on. This means Dask works just as well on your laptop as on your large server.
 
 
-## Using Dask
+### Using Dask
 Dask is included in the xarray library. When loading a data source (file/NumPy array) Dask is automatically initiated with the _chunks_ variable in the config file. However the chunking may not be optimal but you can adjust it before computation are made.
 
 ``` python
@@ -30,7 +27,7 @@ nemo_t.dataset.chunk(chunks)
 
 **chunks** tell Dask where to _break_ your data across the different processor tasks.
 
-### Direct Dask
+#### Direct Dask
 
 Dask can be imported and used directly
 
@@ -43,7 +40,7 @@ big_array = da.multiple(array1,array2)
 Dask arrays follow the NumPy API. This means that most NumPy functions have a Dask version.
 
 
-## Potential Issues
+### Potential Issues
 Dask objects are immutable. This means that the classic approach, pre-allocation follow by modification will not work.
 
 The following code will error.
@@ -54,7 +51,8 @@ depth_0 = da.zero_like(e3w_0)
 depth_0[0, :, :] = 0.5 * e3w_0[0, :, :] # this line will error out
 ```
 
-#### option 1
+- **Option 1**
+
 Continue using NumPy function but wrapping the final value in a Dask array. This final Dask object will still be in-memory.
 
 ``` python
@@ -66,7 +64,7 @@ depth_0[1:, :, :] = depth_0[0, :, :] + np.cumsum(e3w_0[1:, :, :], axis=0)
 depth_0 = da.array(depth_0)
 ```
 
-#### option 2
+- **Option 2**
 
 Dask offers a feature called [delayed](https://docs.dask.org/en/latest/delayed.html). This can be used as a modifier on your
 complex methods as follows;
@@ -88,7 +86,7 @@ ne.data_variable.compute()
 
 Dask will now work out a computing path via all the required methods using as many processor tasks as possible.
 
-### Visualising the Graph
+#### Visualising the Graph
 Dask is fundamentally a computational graph library, to understand what is happening in the background it can help to see these graphs (on smaller/simpler problems). This can be achieved by running;
 
 ``` python

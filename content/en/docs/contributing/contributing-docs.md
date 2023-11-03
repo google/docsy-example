@@ -27,7 +27,7 @@ Here are some key points about our documentation:
 
 - The tutorial notebooks provide guidance on using the code for analysis, docstrings explain individual function usage, and the documentation offers topic-based overviews along with other information (overviews, installation, usage, etc).
 
-- Our docstrings adhere to the **Numpy Docstring Standard**, widely used in the Scientific Python community. This standard specifies the docstring's different sections. Refer to [this document](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) for a detailed explanation or use existing functions as examples.
+- All functions should contain a docstring, which provides basic information on its usage. For this project, the [reStructuredText docstring format](https://www.python.org/dev/peps/pep-0287/) is suggested.
 
 ## Updating a Single Page
 

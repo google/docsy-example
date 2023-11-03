@@ -1,10 +1,7 @@
 ---
 title: "Logging"
 linkTitle: "Logging"
-weight: 3
-menu:
-  documentation:
-    weight: 20
+weight: 1
 description: >
   Python logging diagnostics guidance.
 ---

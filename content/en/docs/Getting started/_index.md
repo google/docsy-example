@@ -51,6 +51,13 @@ conda env update --prune --file environment.yml
 conda activate coast
 ```
 
+The last step is to install the coast package on this environment:
+
+```
+pip install -e .
+```
+
+
 ## Building the docker image and executing an interactive environment
 
 > **Warning:**

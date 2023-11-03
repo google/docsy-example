@@ -1,26 +1,23 @@
 ---
-title: "working Lazily"
+title: "Working Lazily"
 linkTitle: "Lazy"
-weight: 4
-menu:
-  documentation:
-    weight: 20
+weight: 2
 description: >
-  information on using lazy loading and/or evaluation within the COAsT package
+  Information on using lazy loading and/or evaluation within the COAsT package
 ---
 
-# What is lazy...
+## What is lazy...
 
-## ...loading
+### ...loading
 Lazy loading determines if data is read into memory straight away (on that line of code execution) or if the loading is delayed until the data is physical altered by some function (normally mathematical in nature)
 
-## ...evaluation
+### ...evaluation
 Lazy evaluation is about delaying the execution of a method/function call until the value is physical required, normally as a graph or printed to screen.  Lazy evaluation can also help with memory management, useful with large dataset, by allowing for optimisation on the chained methods calls.
 
 Lazy loading and Lazy evaluation are offer used together, though it is not mandatory and always worth checking that both are happening.   
 
 
-# Being Lazy in COAsT
+## Being Lazy in COAsT
 There are two way to be Lazy within the COAsT package.
 
 * xarray

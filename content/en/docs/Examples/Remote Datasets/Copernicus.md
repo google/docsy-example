@@ -3,11 +3,12 @@ title: "Copernicus"
 linkTitle: "Copernicus"
 weight: 6
 date: 2020-09-15
+toc_hide: true
+hide_summary: true
 description: >
   Examples of access to Copernicus datasets via OPeNDAP.
 ---
 
-# Intro
 Remote access to Copernicus Marine Environment Monitoring Service CMEMS datasets is enabled via [OPeNDAP](https://en.wikipedia.org/wiki/OPeNDAP) and [Pydap](https://github.com/pydap/pydap).
 
 OPeNDAP allows COAsT to stream data from Copernicus without downloading specific subsets or the dataset as a whole.
@@ -16,12 +17,13 @@ In order to access CMEMS data, you must first [create an account](https://resour
 
 After you have created your account, or if you already have one, a product ID can be selected from the [product catalogue](https://resources.marine.copernicus.eu/products).
 
-# Example
+## Example
 ```python
 import coast
-
+Cu3dX98@hvhXeBr
 
 # Authenticate with Copernicus and select a database.
+# Replace with your own USERNAME and PASSWORD
 database = coast.Copernicus(USERNAME, PASSWORD, "nrt")
 
 # Instantiate a product with its ID
