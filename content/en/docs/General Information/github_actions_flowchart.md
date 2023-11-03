@@ -37,7 +37,7 @@ graph LR;
     end;
 {{< /mermaid >}}
 
-### Verification and Formatting
+### Verification, Formatting ans Pylint
 {{< mermaid align="left">}}
 graph LR
 
@@ -47,12 +47,19 @@ graph LR
     C[Check formatting]--> D;
     D[Apply formatting]
     end;
+
+    subgraph pylint - runs on pull requests
+    A1[Setup python]-- 3.9 -->B1;    
+    B1[Install pylint]-->C1;
+    C1[Check Score]-- if test pass --> D1;
+    D1[Update Score]
+    end;
     
     subgraph verifiy_package - runs for every push
-    A1[Setup python]-- 3.8 and 3.9 -->B1;    
-    B1[Install dependencies]-->C1;
-    C1[Lint]-->D1;
-    D1[Test]
+    A2[Setup python]-- 3.8 and 3.9 -->B2;    
+    B2[Install dependencies]-->C2;
+    C2[Lint]-->D2;
+    D2[Test]
     end;
     click B1 "https://www.github.com" "tooltip"
 {{< /mermaid >}}
