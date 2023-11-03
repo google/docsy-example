@@ -15,7 +15,7 @@ coast.logging_util.setup_logging()
 ```
 This is all you need to enable full logging output to the console.
 
-By default, setup_logging will use the "DEBUG" logging level, if you want to adjust this, you can use the flags from the logging library.
+By default, setup_logging will use the "CRITICAL" logging level, if you want to adjust this, you can use the flags from the logging library.
 ```python
 import coast
 import logging
