@@ -46,6 +46,7 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git checkout develop
           git pull
+          [ ! -f content/en/docs/Reference/index.md ] || mv content/en/docs/Reference/index.md content/en/docs/Reference/index_class.md
           git add content/en/docs/Reference/*
           git commit -am "Updated docstrings from coast repo."
           git push origin develop

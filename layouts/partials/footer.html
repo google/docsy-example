@@ -1,0 +1,43 @@
+{{ $links := .Site.Params.links -}}
+<footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2 justify-content-center">
+      <div class="td-footer__copyright-etc col-12 col-sm-12 text-center py-2 order-sm-2">
+        {{ with .Site.Params.copyright -}}
+          <div>
+            <span>&copy; Copyright (c) {{ now.Year }} British Oceanographic Data Centre</span>
+          </div>
+        {{- end }}
+        {{ with .Site.Params.privacy_policy -}}
+          <div class="p-2">
+            <span class="foot-link ms-1"><a class="foot-link text-white" href="https://github.com/British-Oceanographic-Data-Centre/COAsT/blob/develop/LICENSE" target="_blank" rel="noopener">{{ T "footer_privacy_policy" }}</a></span>
+          </div>
+        {{- end }}
+        <div class="foot-link">
+          {{ with $links }}
+          {{ with index . "developer" }}
+          {{ template "footer-links-block"  . }}
+          {{ end }}
+          {{ end }}
+        </div>
+          {{ if not .Site.Params.ui.footer_about_disable -}}
+          {{ with .Site.GetPage "about" -}}
+            <p class="td-footer__about mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+          {{- end -}}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{- define "footer-links-block" }}
+<ul class="td-footer__links-list">
+  {{ range . }}
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="{{ .name }}" aria-label="{{ .name }}">
+    <a target="_blank" rel="noopener" href="{{ .url }}" aria-label="{{ .name }}">
+      <i class="{{ .icon }}"></i>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end -}}

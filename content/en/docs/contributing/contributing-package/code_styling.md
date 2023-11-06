@@ -1,10 +1,7 @@
 ---
-title: "Python: Style"
-linkTitle: "Python: Style"
+title: "Code styling"
+linkTitle: "Code styling"
 weight: 1
-menu:
-  documentation:
-    weight: 20
 description: >
   Python style guidance.
 ---
@@ -13,7 +10,9 @@ Python as a language comes with more stringent recommendations than most when it
 
 When it comes to simple code styling, much of what's recommended here will be copied from [Python Enhancement Proposal (PEP) 8](https://www.python.org/dev/peps/pep-0008/), an officially proposed and accepted Python style guide.
 
-# Code Styling Conventions
+In our code, we use pylint and black applied on CI/CD codes in order to fix some code styling and to check the code styling. Your pull request will only be accepted if the new code have a styling score equal or higher than the actual code.
+
+## Code Styling Conventions
 
 Let's keep things simple to start with...
 
@@ -45,15 +44,3 @@ PEP 8 advises the following regarding names to avoid:
 These specific characters should be avoided because they present an accessibility issue, as under many fonts these characters may be difficult to distinguish or completely indistinguishable from numerals one (1) and zero (0).
 
 * In the interest of readability, where named iterator variables are required, this document suggests the use of double characters (e.g. "ii" rather than "i").
-
-# Object-Oriented Programming
-
-The general principles of OOP are fairly straightforward and well documented, so I won't waste your precious time by regurgitating that particular wall of text here. Instead, I'll focus on some general pointers specific to this language and use case.
-
-* In Python, all class attributes are technically public, but semantically, attributes can be designated as non-public by including leading underscores in the name. For instance, "my\_variable" becomes "\_my\_variable". These attributes are generally referred to as "protected".
-
-* When you define a Python class, it is a best practice to inherit from the base object type. This convention stems from Python 2.X, as classes and types were not originally synonymous. This behaviour is implicit in Python 3.X but the convention has persisted nonetheless. Classes defined this way are referred to as "new-style" classes.
-
-* When defining a class that inherits from another, it is important to remember that overridden methods (in particular, this behaviour is important when dealing with \_\_init\_\_ methods) do not implicitly call the parent method. What this means is that unless you want to deliberately prevent the behaviour of the parent class (this is a very niche use-case), it is important to include a reference to the parent method. An example of this is: super().\_\_init\_\_()
-This functionality is advantageous as it prevents unnecessary duplication of code, which is a key tenet of object-oriented software.
-
