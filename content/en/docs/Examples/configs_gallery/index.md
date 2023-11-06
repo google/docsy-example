@@ -1,6 +1,6 @@
 ---
-title: "Configuration Gallery"
-linkTitle: "Gallery"
+title: "Example scripts and Gallery"
+linkTitle: "Example scripts and gallery"
 date: 2020-09-15
 weight: 20
 description: >

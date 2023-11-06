@@ -1,7 +1,7 @@
 
 ---
-title: "Documentation"
-linkTitle: "Documentation"
+title: "COAsT Documentation"
+linkTitle: "COAsT Documentation"
 weight: 20
 menu:
   main:
@@ -24,8 +24,11 @@ ________________________________________________________________________________
 __________________________________________________________________________________________
 ```
 
-COAsT is a Python package for managing and analysing high resolution NEMO output. Here
-you can find information on obtaining, installing and using COAsT as well as guidelines
+Coastal Ocean Assessment Toolbox (COAST) is a Python package specifically
+designed to assist in the assessment, management and analysis of high resolution
+regional ocean models outputs.
+
+Here you can find information on obtaining, installing and using COAsT as well as guidelines
 for contributing to the project.
 
 This documentation site is still under construction but you can still find guidelines for

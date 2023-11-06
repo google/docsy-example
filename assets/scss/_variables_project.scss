@@ -4,3 +4,50 @@ Add styles or override variables from the theme here.
 
 */
 
+.text-shadow-black-3{
+  text-shadow: 3px 3px rgba(0,0,0,1);
+}
+.text-shadow-black-2{
+  text-shadow: 2px 2px rgba(0,0,0,1);
+}
+
+.text-shadow-white-3{
+  text-shadow: 3px 3px rgba(255,255,255,1);
+}
+.text-shadow-white-2{
+  text-shadow: 2px 2px rgba(255,255,255,1);
+}
+
+.link-size{
+  width: 12rem;
+}
+
+.icon-size{
+  height: 2rem;
+}
+
+.foot-link{
+  :hover{
+    opacity: 0.7;
+  }
+}
+
+.td-search__input:not(:focus){
+  background: rgba(0,0,0,0.3) !important;
+}
+
+
+.td-footer {
+  min-height: 130px !important;
+  padding-top: 2.5rem !important;
+}
+
+
+#td-cover-block-0 {
+  background-image: linear-gradient(45deg, rgba(255,255,255, 0.2), rgba(255,255,255, 0.2)), url(/COAsT/feature-background_hu7bd19a57cd689ada407cd31cc8f06f38_227588_960x540_fill_q75_catmullrom_top.jpg) !important;
+}
+@media only screen and (min-width: 1200px) {
+  #td-cover-block-0 {
+    background-image: linear-gradient(45deg, rgba(255,255,255, 0.2), rgba(255,255,255, 0.2)), url(/COAsT/feature-background_hu7bd19a57cd689ada407cd31cc8f06f38_227588_960x540_fill_q75_catmullrom_top.jpg)  !important;
+  }
+}

@@ -1,29 +1,35 @@
 ---
-title: "Python: Structure"
-linkTitle: "Python: Structure"
-date: 2021-10-05
+title: "Code structure"
+linkTitle: "Code structure"
 weight: 2
-menu:
-  documentation:
-    weight: 20
 description: >
-  Python object structure guidance.
+  Python style guidance.
 ---
-
-** Notes on Object Structure and Loading (for contributors):
 
 COAsT is an object-orientated package, meaning that data is stored within Python object
 structures. In addition to data storage, these objects contain methods (subroutines)
-which allow for manipulation of this data.  An example of such an object is the Gridded
-object, which allows for the storage and manipulation of e.g. NEMO output and domain data. It
-is important to understand how to load data using COAsT and the structure of the resulting
+which allow for manipulation of this data.
+
+The fundamental concepts of Object-Oriented Programming (OOP) are well-established and thoroughly documented. However, we believe it is important to focus certain guidelines that are particularly relevant to this programming language and its specific application:
+
+* In Python, all class attributes are technically public, but semantically, attributes can be designated as non-public by including leading underscores in the name. For instance, "my\_variable" becomes "\_my\_variable". These attributes are generally referred to as "protected".
+
+* When you define a Python class, it is a best practice to inherit from the base object type. This convention stems from Python 2.X, as classes and types were not originally synonymous. This behaviour is implicit in Python 3.X but the convention has persisted nonetheless. Classes defined this way are referred to as "new-style" classes.
+
+* When defining a class that inherits from another, it is important to remember that overridden methods (in particular, this behaviour is important when dealing with \_\_init\_\_ methods) do not implicitly call the parent method. What this means is that unless you want to deliberately prevent the behaviour of the parent class (this is a very niche use-case), it is important to include a reference to the parent method. An example of this is: super().\_\_init\_\_()
+This functionality is advantageous as it prevents unnecessary duplication of code, which is a key tenet of object-oriented software.
+
+
+An example of such an object in COAsT is the Gridded object, which allows for the
+storage and manipulation of e.g. NEMO output and domain data. It is important to
+understand how to load data using COAsT and the structure of the resulting
 objects.
 
 A Gridded object is created and initialised by passing it the paths of the domain and data
 files. Ideally, the grid type should also be specified (T, U, V or F in the case of NEMO).
 For example, to load in data from a file containing data on a NEMO T-grid:
 
-```
+```python
 import coast
 
 fn_data = "<path to T-grid data file(s)>"
@@ -42,11 +48,12 @@ in this case will be limited.
 Once loaded, data is stored inside the object using an xarray.dataset object. Following
 on from the previous code example, this can be viewed by calling:
 
-```
+```python
 data.dataset
 ```
 This reveals all netcdf-type aspects of the data and domain variables that were loaded,
 including dimensions, coordinates, variables and attributes. For example:
+
 ```
 <xarray.Dataset>
 Dimensions:              (axis_nbounds: 2, t_dim: 7, x_dim: 297, y_dim: 375, z_dim: 51)
@@ -67,15 +74,17 @@ Data variables:
     e2                   (y_dim, x_dim) float32 ...
     e3_0                 (z_dim, y_dim, x_dim) float32 1.0 1.0 1.0 ... 1.0 1.0
 ```
+
 Variables may be obtained in a number of ways. For example, to get temperature data, the
 following are all equivalent:
-```
+
+```python
 temp = data.dataset.temperature
 temp = data.dataset['temperature']
 temp = data['temperature']
 ```
 These commands will all return an xarray.dataarray object. Manipulation of this object
-can be done using xarray commands, for example indexing using [] or xarray.isel. Be aware
+can be done using xarray commands, for example indexing using [] or `xarray.isel``. Be aware
 that indexing will preserve lazy loading, however and direct access or modifying of the
 data will not. For this reason, if you require a subset of the data, it is best to
 index first.

@@ -1,30 +1,52 @@
-# COAsT docsy
+# COAsT Documentation Website
 
-This is the website repo for the COAsT python package it uses [Docsy](https://github.com/google/docsy) a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more.
+This is the repository for the COAsT Python package documentation website. This site utilizes the [Docsy](https://github.com/google/docsy) theme, a Hugo theme designed for technical documentation sites, offering streamlined navigation, structure, and more.
 
+## Prerequisites
 
-## Cloning the COAsT Project website
+Before you get started, make sure you have the following prerequisites in place:
 
-The following will give you a project that is set up and ready to use (don't forget to use `--recurse-submodules` or you won't pull down some of the code you need to generate a working site). The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
+1. **Node.js and npm Installation**: Download and install Node.js, which includes npm, from the official [Node.js website](https://nodejs.org/). We recommend using version 18 or later.
+
+2. **Hugo Installation**: You'll need an extended version of Hugo, preferably version 0.120.1 or later, for local builds and previews of sites that use Docsy. To ensure you have the correct Hugo version, follow these steps:
+
+   - If you install Hugo from the release page, make sure to select the **extended Hugo version** to support SCSS.
+
+   - After installation, verify your Hugo version by running `hugo version`. Your output should resemble the following:
+
+     ```bash
+     hugo v0.120.2-9c2b2414d231ec1bdaf3e3a030bf148a45c7aa17+extended linux/amd64 BuildDate=2023-10-31T16:27:18Z VendorInfo=gohugoio
+     ```
+
+     Ensure that the version name includes the string *"extended"*.
+
+## Getting Started
+
+Follow these steps to set up your project and get it ready for use. Begin by cloning the repository:
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/British-Oceanographic-Data-Centre/COAsT-site.git
-cd docsy-example
+git clone --recurse-submodules --depth 1 git@github.com:British-Oceanographic-Data-Centre/COAsT-site.git
+cd COAsT-site
+```
+
+Now, proceed to install the dependencies and essential scripts:
+
+```bash
+npm install      # Install package dependencies 
+npm run prepare  # Fetch the submodule used as the theme for this website and install its dependencies
+```
+
+The `npm run prepare` command will install all the necessary dependencies for your theme, including `PostCSS`, `Bootstrap`, and `Autoprefixer`.
+
+## Running the Website Locally
+
+After cloning the site repository, navigate to the repository's root folder, and execute the following command to serve the website locally:
+
+```bash
 hugo server
 ```
 
-The theme is included as a Git submodule:
-
-```bash
-▶ git submodule
- a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
-```
-
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS` (not needed for `hugo server`):
-
-```bash
-npm install
-```
+The `hugo server` command builds and serves the site. If you only want to build the site without serving it locally, run `hugo` instead.
 
 <!--### Cloning the Example from the Theme Project
 
@@ -43,11 +65,3 @@ git subtree add --prefix exampleSite https://github.com/google/docsy.git  master
 ```
 
 To pull in changes, see `pull-deps.sh` script in the theme.-->
-
-## Running the website locally
-
-Once you've cloned the site repo, from the repo root folder, run:
-
-```
-hugo server
-```
