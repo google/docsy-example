@@ -11,10 +11,10 @@ In this project, the Docsy theme component is pulled in as a Hugo module, togeth
 $ hugo mod graph
 hugo: collected modules in 566 ms
 hugo: collected modules in 578 ms
-github.com/google/docsy-example github.com/google/docsy@v0.7.1
-github.com/google/docsy-example github.com/google/docsy/dependencies@v0.7.1
-github.com/google/docsy/dependencies@v0.7.1 github.com/twbs/bootstrap@v5.2.3+incompatible
-github.com/google/docsy/dependencies@v0.7.1 github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
+github.com/google/docsy-example github.com/google/docsy@v0.7.2
+github.com/google/docsy-example github.com/google/docsy/dependencies@v0.7.2
+github.com/google/docsy/dependencies@v0.7.2 github.com/twbs/bootstrap@v5.2.3+incompatible
+github.com/google/docsy/dependencies@v0.7.2 github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
 ```
 
 You can find detailed theme instructions in the [Docsy user guide][].
@@ -29,7 +29,7 @@ This is not an officially supported Google product. This project is currently ma
 
 A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this:
 
-1. Use the dropdown for switching branches/tags to change to the latest released tag `v0.7.1`
+1. Use the dropdown for switching branches/tags to change to the latest released tag `v0.7.2`
 
 2. Click **Use this template**.
 
