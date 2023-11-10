@@ -217,8 +217,8 @@ enable = false
 # hugo module configuration
 
 [module]
-  # uncomment line below for temporary local development of module
-  # replacements = "github.com/google/docsy -> ../../docsy"
+  # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
+  # workspace = "docsy.work" 
   [module.hugoVersion]
     extended = true
     min = "0.110.0"
