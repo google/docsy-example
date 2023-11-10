@@ -1,5 +1,5 @@
 ---
-title:"Detaljert om mikroservicer: De grunnleggende konseptene"
+title: "Detaljert om mikroservicer: De grunnleggende konseptene"
 linkTitle: Detaljert om mikroservicer
 date: 2017-01-06
 description: >
