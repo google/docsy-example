@@ -1,7 +1,6 @@
-
 ---
 title: "Detaljert om Java: Detaljert spesifikasjon"
-linkTitle: "Detaljert om Java"
+linkTitle: Detaljert om Java
 date: 2017-01-08
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.

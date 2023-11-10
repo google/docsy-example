@@ -1,7 +1,6 @@
-
 ---
 title: "Matten til kryptografi: Drivverket"
-linkTitle: "Matten til kryptografi"
+linkTitle: Matten til kryptografi
 date: 2017-01-03
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.

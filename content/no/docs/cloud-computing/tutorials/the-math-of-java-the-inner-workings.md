@@ -1,7 +1,6 @@
-
 ---
 title: "Matten til Java: Drivverket"
-linkTitle: "Matten til Java"
+linkTitle: Matten til Java
 date: 2017-01-07
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.

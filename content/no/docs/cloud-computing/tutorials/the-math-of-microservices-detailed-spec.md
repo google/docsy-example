@@ -1,7 +1,6 @@
-
 ---
 title: "Matten til mikroservicer: Detaljert spesifikasjon"
-linkTitle: "Matten til mikroservicer"
+linkTitle: Matten til mikroservicer
 date: 2017-01-09
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.

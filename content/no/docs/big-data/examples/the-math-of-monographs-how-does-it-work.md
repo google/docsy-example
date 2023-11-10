@@ -1,7 +1,6 @@
-
 ---
 title: "Matten til monografer: Hvordan virker det?"
-linkTitle: "Matten til monografer"
+linkTitle: Matten til monografer
 date: 2017-01-02
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.

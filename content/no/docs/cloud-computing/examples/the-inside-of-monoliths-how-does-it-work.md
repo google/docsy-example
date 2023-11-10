@@ -1,7 +1,6 @@
-
 ---
 title: "Innsiden av monolitter: Hvordan virker det?"
-linkTitle: "Innsiden av monolitter"
+linkTitle: Innsiden av monolitter
 date: 2017-01-06
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.

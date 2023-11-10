@@ -1,7 +1,6 @@
-
 ---
 title: "Detaljert om Go: Hvordan virker det?"
-linkTitle: "Detaljert om Go"
+linkTitle: Detaljert om Go
 date: 2017-01-04
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.

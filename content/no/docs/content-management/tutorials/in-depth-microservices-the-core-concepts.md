@@ -1,7 +1,6 @@
-
 ---
-title: "Detaljert om mikroservicer: De grunnleggende konseptene"
-linkTitle: "Detaljert om mikroservicer"
+title:"Detaljert om mikroservicer: De grunnleggende konseptene"
+linkTitle: Detaljert om mikroservicer
 date: 2017-01-06
 description: >
  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.
