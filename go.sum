@@ -1,8 +1,6 @@
 github.com/FortAwesome/Font-Awesome v0.0.0-20230327165841-0698449d50f2 h1:Uv1z5EqCfmiK4IHUwT0m3h/u/WCk+kpRfxvAZhpC7Gc=
 github.com/FortAwesome/Font-Awesome v0.0.0-20230327165841-0698449d50f2/go.mod h1:IUgezN/MFpCDIlFezw3L8j83oeiIuYoj28Miwr/KUYo=
-github.com/google/docsy v0.7.2 h1:KzhFgTd3taF1jq9HDemH3omlUqn9qfdE68sxRyTySpM=
-github.com/google/docsy v0.7.2/go.mod h1:ol3w2s1FBUzENdKSAEeNjtuaISUzHYHTw60xv5QH3Dg=
-github.com/google/docsy/dependencies v0.7.2 h1:+t5ufoADQAj4XneFphz4A+UU0ICAxmNaRHVWtMYXPSI=
-github.com/google/docsy/dependencies v0.7.2/go.mod h1:gihhs5gmgeO+wuoay4FwOzob+jYJVyQbNaQOh788lD4=
+github.com/google/docsy v0.7.3-0.20231112231447-8e9cb3c722ca h1:DUdXsNcTk8jCv6sOa/HtM9/z1tFb0KGabREkH7xuIzg=
+github.com/google/docsy v0.7.3-0.20231112231447-8e9cb3c722ca/go.mod h1:FqTNN2T7pWEGW8dc+v5hQ5VF29W5uaL00PQ1LdVw5F8=
 github.com/twbs/bootstrap v5.2.3+incompatible h1:lOmsJx587qfF7/gE7Vv4FxEofegyJlEACeVV+Mt7cgc=
 github.com/twbs/bootstrap v5.2.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
