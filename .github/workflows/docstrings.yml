@@ -44,6 +44,7 @@ jobs:
           git config --global user.email "bodcsoft@bodc.ac.uk"
           git config --global author.email "bodcsoft@bodc.ac.uk"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git fetch origin
           git checkout develop
           git pull
           [ ! -f content/en/docs/Reference/index.md ] || mv content/en/docs/Reference/index.md content/en/docs/Reference/index_class.md
