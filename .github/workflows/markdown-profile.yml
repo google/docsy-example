@@ -13,14 +13,14 @@ jobs:
         shell: bash -l {0}
     steps:
       - name: Checkout site
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive # Fetch Hugo themes and all extra projects
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
           path: site
 
       - name: Checkout coast
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: British-Oceanographic-Data-Centre/COAsT
           ref: develop
@@ -31,7 +31,6 @@ jobs:
         with:
           activate-environment: coast
           environment-file: external/environment.yml
-          python-version: 3.8.10
       - name: prep exec notebooks
         run: |
           conda info
@@ -64,6 +63,7 @@ jobs:
           git config --global user.email "bodcsoft@bodc.ac.uk"
           git config --global author.email "bodcsoft@bodc.ac.uk"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git fetch origin
           git checkout develop
           git pull        
           git add content/en/docs/Examples/Notebooks/Profile/*
