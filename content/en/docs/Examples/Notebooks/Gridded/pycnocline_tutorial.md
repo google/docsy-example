@@ -103,7 +103,7 @@ strat = coast.GriddedStratification(nemo_nwes_t)
 strat.construct_pycnocline_vars( nemo_nwes_t, nemo_nwes_w )
 ```
 
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/xarray/core/computation.py:771: RuntimeWarning: invalid value encountered in sqrt
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/xarray/core/computation.py:821: RuntimeWarning: invalid value encountered in sqrt
       result_data = func(*input_data)
 
 
