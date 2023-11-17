@@ -70,7 +70,7 @@ eof_data.EOF.sel(mode=[1,2,3,4]).plot.pcolormesh(col='mode',col_wrap=2,x='longit
 
 
 
-    <xarray.plot.facetgrid.FacetGrid at 0x7f41e9f63970>
+    <xarray.plot.facetgrid.FacetGrid at 0x7fcc5c10c520>
 
 
 
@@ -88,7 +88,7 @@ eof_data.temporal_proj.sel(mode=[1,2,3,4]).plot(col='mode',col_wrap=2,x='time')
 
 
 
-    <xarray.plot.facetgrid.FacetGrid at 0x7f41e8720c10>
+    <xarray.plot.facetgrid.FacetGrid at 0x7fcc58cc1ae0>
 
 
 

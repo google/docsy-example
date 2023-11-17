@@ -39,6 +39,10 @@ ofile = "example_export_output.nc"  # The target filename for output
 nemo = coast.Gridded(fn_nemo_dat, fn_nemo_dom, config=config)
 ```
 
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/xarray/core/dataset.py:278: UserWarning: The specified chunks separate the stored chunks along dimension "time_counter" starting at index 2. This could degrade performance. Instead, consider rechunking after loading.
+      warnings.warn(
+
+
 ### We can export the whole xr.DataSet to a netCDF file
 Other file formats are available. From the documentation:
    - NETCDF4: Data is stored in an HDF5 file, using netCDF4 API features.
