@@ -139,7 +139,7 @@ Have a look inside the `profile.py` class to see what it can do
 profile.plot_map()
 ```
 
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
       warnings.warn(f'Downloading: {url}', DownloadWarning)
 
 
@@ -179,6 +179,10 @@ fn_nemo_config = path.join(root, "./config/example_nemo_grid_t.json")
 nemo = coast.Gridded(fn_nemo_dat, fn_nemo_dom, multiple=True, config=fn_nemo_config)
 ```
 
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/xarray/core/dataset.py:278: UserWarning: The specified chunks separate the stored chunks along dimension "time_counter" starting at index 2. This could degrade performance. Instead, consider rechunking after loading.
+      warnings.warn(
+
+
 #### Create a landmask array in Gridded
 In this example we add a `landmask` variable to the `Gridded` dataset.
 When this is present, the `obs_operator` will use this to interpolation to the
@@ -200,9 +204,9 @@ nemo.dataset = nemo.dataset.rename({"depth_0": "depth"})  # profile methods will
 model_profiles = profile.obs_operator(nemo)
 ```
 
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/profile.py:456: UserWarning: Converting non-nanosecond precision timedelta values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/coast/data/profile.py:456: UserWarning: Converting non-nanosecond precision timedelta values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
       mod_profiles["interp_lag"] = (["id_dim"], interp_lag)
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/coast/data/profile.py:456: UserWarning: Converting non-nanosecond precision timedelta values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/coast/data/profile.py:456: UserWarning: Converting non-nanosecond precision timedelta values to nanosecond precision. This behavior can eventually be relaxed in xarray, as it is an artifact from pandas which is now beginning to support non-nanosecond precision values. This warning is caused by passing non-nanosecond np.datetime64 or np.timedelta64 values to the DataArray or Variable constructor; it can be silenced by converting the values to nanosecond precision ahead of time.
       mod_profiles["interp_lag"] = (["id_dim"], interp_lag)
 
 
@@ -311,7 +315,7 @@ differences.dataset.diff_temperature.plot()
 
 
 
-    <matplotlib.collections.QuadMesh at 0x7f1d605cd880>
+    <matplotlib.collections.QuadMesh at 0x7fdd37dfcc70>
 
 
 
@@ -339,7 +343,7 @@ plt.colorbar( label='temperature diff (obs-model)')
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7f1d5d4ae190>
+    <matplotlib.colorbar.Colorbar at 0x7fdd346f3cd0>
 
 
 
@@ -539,7 +543,7 @@ plt.legend()
 
 
 
-    <matplotlib.legend.Legend at 0x7f1d5d3015e0>
+    <matplotlib.legend.Legend at 0x7fdd3445ac20>
 
 
 
@@ -579,7 +583,7 @@ plt.colorbar()
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7f1d5cef6580>
+    <matplotlib.colorbar.Colorbar at 0x7fdd34266530>
 
 
 
@@ -620,7 +624,7 @@ plt.colorbar()
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7f1d69119130>
+    <matplotlib.colorbar.Colorbar at 0x7fdd2cf0d7b0>
 
 
 
