@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://example.docsy.dev/"
 title = "Goldydocs"
 
 # Language settings
