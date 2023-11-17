@@ -40,8 +40,16 @@ nemo = coast.Gridded(fn_nemo_dat, fn_nemo_dom, config=fn_nemo_config)
 altimetry = coast.Altimetry(fn_altimetry, config=fn_altimetry_config)
 ```
 
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/xarray/core/dataset.py:278: UserWarning: The specified chunks separate the stored chunks along dimension "time_counter" starting at index 2. This could degrade performance. Instead, consider rechunking after loading.
+      warnings.warn(
+
+
     ././config/example_altimetry.json
-    Altimetry object at 0x561fb52d1fc0 initialised
+    Altimetry object at 0x55ee9dd90980 initialised
+
+
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/xarray/core/dataset.py:278: UserWarning: The specified chunks separate the stored chunks along dimension "time" starting at index 1000. This could degrade performance. Instead, consider rechunking after loading.
+      warnings.warn(
 
 
 ### Subsetting
@@ -57,7 +65,7 @@ ind = ind[::4]
 altimetry = altimetry.isel(t_dim=ind)
 ```
 
-    Subsetting Altimetry object at 0x561fb52d1fc0 indices in [-10, 10], [45, 60]
+    Subsetting Altimetry object at 0x55ee9dd90980 indices in [-10, 10], [45, 60]
 
 
 ### Model interpolation
@@ -74,7 +82,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 # to see for yourself.
 ```
 
-    Interpolating Gridded object at 0x561fb52d1fc0 "ssh" with time_interp "nearest"
+    Interpolating Gridded object at 0x55ee9dd90980 "ssh" with time_interp "nearest"
 
 
 
@@ -93,7 +101,7 @@ altimetry.obs_operator(nemo, mod_var_name="ssh", time_interp="nearest")
 stats = altimetry.basic_stats("ocean_tide_standard_name", "interp_ssh")
 ```
 
-    Altimetry object at 0x561fb52d1fc0 initialised
+    Altimetry object at 0x55ee9dd90980 initialised
 
 
 
@@ -121,7 +129,7 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 #crps.dataset  # uncomment to print data object summary
 ```
 
-    Altimetry object at 0x561fb52d1fc0 initialised
+    Altimetry object at 0x55ee9dd90980 initialised
 
 
 ### Plotting data
@@ -134,7 +142,7 @@ crps = altimetry.crps(nemo, model_var_name="ssh", obs_var_name="ocean_tide_stand
 fig, ax = altimetry.quick_plot("ocean_tide_standard_name")
 ```
 
-    /usr/share/miniconda/envs/coast/lib/python3.8/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
+    /usr/share/miniconda/envs/coast/lib/python3.10/site-packages/cartopy/io/__init__.py:241: DownloadWarning: Downloading: https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip
       warnings.warn(f'Downloading: {url}', DownloadWarning)
 
 
