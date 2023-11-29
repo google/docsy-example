@@ -5,17 +5,15 @@ site navigation, structure, and more. This **Docsy Example Project** uses the Do
 theme component as a hugo module and provides a skeleton documentation structure for you to use.
 You can clone/copy this project and edit it with your own content, or use it as an example.
 
-In this project, the Docsy theme component is pulled in as a Hugo module, together with other module dependencies:
+In this project, the Docsy theme is pulled in as a Hugo module, together with
+its dependencies:
 
 ```console
 $ hugo mod graph
-hugo: collected modules in 520 ms
-ithub.com/google/docsy-example github.com/google/docsy@v0.7.3-0.20231112231447-8e9cb3c722ca
-github.com/google/docsy@v0.7.3-0.20231112231447-8e9cb3c722ca github.com/twbs/bootstrap@v5.2.3+incompatible
-github.com/google/docsy@v0.7.3-0.20231112231447-8e9cb3c722ca github.com/FortAwesome/Font-Awesome@v0.0.0-20230327165841-0698449d50f2
+...
 ```
 
-You can find detailed theme instructions in the [Docsy user guide][].
+For Docsy documentation, see [Docsy user guide][].
 
 This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
 You can view deploy logs from the [deploy section of the project's Netlify
@@ -27,7 +25,7 @@ This is not an officially supported Google product. This project is currently ma
 
 A simple way to get started is to use this project as a template, which gives you a site project that is set up and ready to use. To do this:
 
-1. Use the dropdown for switching branches/tags to change to the latest released tag `v0.7.2`
+1. Use the dropdown for switching branches/tags to change to the **latest** released tag.
 
 2. Click **Use this template**.
 
@@ -129,7 +127,7 @@ In the command above, we used the environment variable `HUGO_MODULE_WORKSPACE` t
 
 ```toml
 [module]
-  workspace = "docsy.work" 
+  workspace = "docsy.work"
 ```
 
 Your project's `hugo.toml` file already contains these lines, the directive for workspace assignment is commented out, however. Remove the two trailing comment characters '//' so that this line takes effect.
