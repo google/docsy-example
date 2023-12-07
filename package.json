@@ -37,6 +37,6 @@
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
     "hugo-extended": "0.120.4",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^11.0.0"
   }
 }
