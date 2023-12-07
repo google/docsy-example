@@ -44,6 +44,9 @@ jobs:
           mkdir -p ./example_scripts/notebook_tutorials/markdown/general
           ls ./example_scripts/notebook_tutorials
           pip install .
+          sudo apt-get update
+          sudo apt-get install -y libgeos-dev
+          pip install cartopy==0.21.0
           mv config ./example_scripts/notebook_tutorials/runnable_notebooks/general/config
           bash notebook_to_md.sh general
       - name: convert notebooks 
@@ -57,6 +60,8 @@ jobs:
           mv ./markdown/general/climatology_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
           mv ./markdown/general/dask_wrapper_template_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
           mv ./markdown/general/mask_maker_tutorial.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
+          mv ./markdown/general/polar_plotting.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
+          mv ./markdown/general/zarr_files.md $GITHUB_WORKSPACE/site/content/en/docs/Examples/Notebooks/General/
           echo "Move images"
           rsync -r ./markdown_images/general/ $GITHUB_WORKSPACE/site/static
           
