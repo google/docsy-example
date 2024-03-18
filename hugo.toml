@@ -1,4 +1,7 @@
 baseURL = "/"
+# For deployment on GitHub Pages:
+# baseURL = "https://<USERNAME>.github.io/<repository_name>"
+
 title = "Goldydocs"
 
 # Language settings
