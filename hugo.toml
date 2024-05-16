@@ -70,6 +70,7 @@ time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
 [languages.fa]
+languageDirection = "rtl"
 languageName ="فارسی"
 contentDir = "content/fa"
 title = "اسناد گلدی"
