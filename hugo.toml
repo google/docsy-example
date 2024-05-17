@@ -23,13 +23,13 @@ category = "categories"
 
 [params.taxonomy]
 # set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloud = ["categories", "tags"]
+taxonomyCloud = ["tags", "categories"]
 
 # If used, must have same length as taxonomyCloud
-taxonomyCloudTitle = ["Categories", "Tag Cloud"]
+taxonomyCloudTitle = ["Tag Cloud", "Categories"]
 
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-taxonomyPageHeader = ["categories", "tags"]
+taxonomyPageHeader = ["tags", "categories"]
 
 # Highlighting config
 pygmentsCodeFences = true
