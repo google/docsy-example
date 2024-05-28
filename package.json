@@ -38,5 +38,10 @@
     "cross-env": "^7.0.3",
     "hugo-extended": "0.126.1",
     "postcss-cli": "^11.0.0"
+  },
+  "private": true,
+  "prettier": {
+    "proseWrap": "always",
+    "singleQuote": true
   }
 }
