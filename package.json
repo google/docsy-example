@@ -8,7 +8,7 @@
   "author": "Docsy Authors",
   "license": "Apache-2.0",
   "bugs": "https://github.com/google/docsy-example/issues",
-  "spelling": "cSpell:ignore HTMLTEST precheck postbuild -",
+  "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild -",
   "scripts": {
     "_build": "npm run _hugo-dev --",
     "_check:links": "echo IMPLEMENTATION PENDING for check-links; echo",
