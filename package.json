@@ -8,7 +8,7 @@
   "author": "Docsy Authors",
   "license": "Apache-2.0",
   "bugs": "https://github.com/google/docsy-example/issues",
-  "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild -",
+  "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild rtlcss -",
   "scripts": {
     "_build": "npm run _hugo-dev --",
     "_check:links": "echo IMPLEMENTATION PENDING for check-links; echo",
@@ -31,14 +31,18 @@
     "serve": "npm run _serve",
     "test": "npm run check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
-    "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest"
+    "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
+    "update:pkgs": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
-    "hugo-extended": "0.135.0",
+    "hugo-extended": "0.136.1",
     "postcss-cli": "^11.0.0",
     "rtlcss": "^4.3.0"
+  },
+  "optionalDependencies": {
+    "npm-check-updates": "^17.1.4"
   },
   "private": true,
   "prettier": {
