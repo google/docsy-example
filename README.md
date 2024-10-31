@@ -61,7 +61,7 @@ hugo server
 
 This repo ships with a [GitHub action] that allows you to deploy your site to [GitHub Pages].
 To manually trigger the deployment, select the [deployment workflow] in the `Actions` section of the GitHub web UI and press the button `Run workflow`.
-To enable automatic deployment on each push to your repo, edit the corresponding [workflow file](.github/workflows/deploy-github-pages.yml) and uncomment the line specifying the branch used for deployment:
+To enable automatic deployment on each push to your repo, move the the corresponding [workflow file](.github/workflows/example/deploy-github-pages.yml) to the folder `.github/workflows` of your repo. Afterwards, edit  and uncomment the line specifying the branch used for deployment:
 
 ```yml
 on:
@@ -75,8 +75,7 @@ For further details on the deployment setup, please refer to the [deployment] se
 
 ## Automated link check
 
-This repo ships with a [GitHub action] that allows you to check the internal links of your page using the fast [hyperlink] link checker.
-By default, the link check action will be performed on each push to your repo. To see the results of the last workflow run(s), select the [link check workflow] in the `Actions` section of the GitHUB web UI.
+This repo ships with a [GitHub action] that allows you to check the internal links of your page using the fast [hyperlink] link checker. To enable automatic link checking on each push to your repo, move the the corresponding [workflow file](.github/workflows/example/link-check.yml) to the folder `.github/workflows` of you repo. Afterwards, the link check action will be performed on each push to your repo. To see the results of the last workflow run(s), select the [link check workflow] in the `Actions` section of the GitHUB web UI.
 On the same page, you can also disable the workflow if needed. To do so, press the button `…` right beneath the search field that allows you to filter workflow runs.
 
 ## Running a container locally
@@ -128,7 +127,7 @@ Clone the latest version of the docsy theme into the parent folder of your proje
 
 ```shell
 cd root-of-your-site
-git clone --branch v0.7.2 https://github.com/google/docsy.git ../docsy
+git clone --branch v0.11.0 https://github.com/google/docsy.git ../docsy
 ```
 
 Now run:
@@ -181,7 +180,7 @@ Built in 288 ms
 Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
 ```
 
-This error occurs if you have not installed the extended version of Hugo.
+This error occurs if you do not have the extended version of Hugo installed.
 See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo) of the user guide for instructions on how to install Hugo.
 
 Or you may encounter the following error:
@@ -205,7 +204,7 @@ Go to the [download area] of the Go website, choose the installer for your syste
 [Docker Compose documentation]: https://docs.docker.com/compose/gettingstarted/
 [GitHub action]: https://docs.github.com/en/actions
 [deployment]: https://docsy.dev/docs/deployment/#deployment-on-github-pages
-[deployment workflow]: ../../actions/workflows/deploy-github-pages.yml
-[link check workflow]: ../../actions/workflows/link-check.yml
+[deployment workflow]: ../../actions/workflows/example/deploy-github-pages.yml
+[link check workflow]: ../../actions/workflows/example/link-check.yml
 [hyperlink]: https://github.com/untitaker/hyperlink
 [download area]: https://go.dev/dl/
