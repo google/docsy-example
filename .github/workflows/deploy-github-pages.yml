@@ -18,20 +18,20 @@ jobs:
     concurrency:
       group: deployment-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.110.0'
+          hugo-version: '0.136.5'
           extended: true
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
           cache: 'npm'
           # The action defaults to search for the dependency file (package-lock.json,
           # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
@@ -43,7 +43,7 @@ jobs:
       - run: hugo --baseURL https://${REPO_OWNER}.github.io/${REPO_NAME} --minify
 
       - name: Deployment
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/master' }} # <- must be same branch as given above
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
