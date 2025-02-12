@@ -69,19 +69,11 @@ than [Docker Desktop](https://www.docker.com/products/docker-desktop) on
 Windows and Mac, and [Docker Compose](https://docs.docker.com/compose/install/)
 on Linux.
 
-1. Build the docker image
-
-   ```bash
-   docker-compose build
-   ```
-
-1. Run the built image
+1. Spin up the service
 
    ```bash
    docker-compose up
    ```
-
-   > NOTE: You can run both commands at once with `docker-compose up --build`.
 
 1. Verify that the service is working.
 
@@ -94,7 +86,7 @@ on Linux.
 
 To stop Docker Compose, on your terminal window, press **Ctrl + C**.
 
-To remove the produced images run:
+To remove the produced container run:
 
 ```bash
 docker-compose rm
