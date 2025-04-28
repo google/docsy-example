@@ -188,11 +188,11 @@ Inline code inside table cells should still be distinguishable.
 
 Small images should be shown at their actual size.
 
-![](https://placekitten.com/g/300/200/)
+![Cat Neo](https://placecats.com/neo/300/200)
 
 Large images should always scale down and fit in the content container.
 
-![](https://placekitten.com/g/1200/800/)
+![Cats Millie & Neo](https://placecats.com/millie_neo/1200/800)
 
 ## Components
 
