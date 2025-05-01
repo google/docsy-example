@@ -5,7 +5,7 @@ linkTitle: Announcing Docsy
 description: >
   The Docsy Hugo theme lets project maintainers and contributors focus on content,
   not on reinventing a website infrastructure from scratch
-author: Riona MacNamara ([@rionam](https://twitter.com/bepsays))
+author: Riona MacNamara ([@rionam](https://x.com/bepsays))
 resources:
   - src: "**.{png,jpg}"
     title: "Image #:counter"
@@ -37,12 +37,10 @@ resources:
 
 To include the image in a page, specify its details like this:
 
-```
-{{< imgproc sunset Fill "600x300" >}}
+```go-html-template
+{{</* imgproc sunset Fill "600x300" */>}}
 Fetch and scale an image in the upcoming Hugo 0.43.
-{{< /imgproc >}}
+{{</* /imgproc */>}}
 ```
 
 The image will be rendered at the size and byline specified in the front matter.
-
-
