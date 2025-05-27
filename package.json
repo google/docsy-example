@@ -1,7 +1,7 @@
 {
   "name": "docsy-example-site",
-  "version": "0.11.1-dev-unreleased",
-  "version.next": "0.12.0-dev-unreleased",
+  "version": "0.12.0",
+  "version.next": "0.12.1-dev-unreleased",
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
