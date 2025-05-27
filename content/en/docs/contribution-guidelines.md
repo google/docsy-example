@@ -57,11 +57,11 @@ If you've just spotted something you'd like to change while using the docs, Docs
 
 If you want to run your own local Hugo server to preview your changes as you work:
 
-1. Follow the instructions in [Getting started](/docs/getting-started) to install Hugo and any other tools you need. You'll need at least **Hugo version 0.45** (we recommend using the most recent available version), and it must be the **extended** version, which supports SCSS.
-1. Fork the [Goldydocs repo](https://github.com/google/docsy-example) repo into your own project, then create a local copy using `git clone`. Don’t forget to use `--recurse-submodules` or you won’t pull down some of the code you need to generate a working site.
+1. Follow the instructions in [Getting started](/docs/getting-started) to install Hugo and any other tools you need. You'll need at least **Hugo version 0.146.0** (we recommend using the most recent available version), and it must be the **extended** version, which supports SCSS.
+1. Fork the [Goldydocs repo](https://github.com/google/docsy-example) repo into your own project, then create a local copy using `git clone`.
 
     ```
-    git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
+    git clone --branch v0.12.0 --depth 1 https://github.com/google/docsy-example.git
     ```
 
 1. Run `hugo server` in the site root directory. By default your site will be available at http://localhost:1313/. Now that you're serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.
@@ -77,5 +77,3 @@ If you've found a problem in the docs, but you're not sure how to fix it yoursel
 * [Docsy user guide](https://www.docsy.dev/docs/): All about Docsy, including how it manages navigation, look and feel, and multi-language support.
 * [Hugo documentation](https://gohugo.io/documentation/): Comprehensive reference for Hugo.
 * [Github Hello World!](https://guides.github.com/activities/hello-world/): A basic introduction to GitHub concepts and workflow.
-
-
