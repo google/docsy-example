@@ -1,77 +1,182 @@
 ---
-title: Goldydocs
+type: "docs"
+title: "איך לתרום לקוד פתוח"
+linkTitle: "פרוייקט התרגול לתרומה ראשונה"
+menu:
+  main:
+    weight: 50
+    identifier: how-to-start
 ---
+# מדריך תרומה ראשונית בפרויקט התרגול
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
-</a>
-<p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
-{{< blocks/link-down color="info" >}}
-{{< /blocks/cover >}}
+**מאת דרור קרפפן**
 
+ברוכים הבאים לעולם הקוד הפתוח!
+במדריך הזה נלמד איך עובד תהליך התרומה לקוד פתוח, ונדגים כאן שלב אחר שלב תרומה לפרויקט התרגול של קהילת מעק"ף.
 
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+**לפני שנתחיל**
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
-{{% /blocks/lead %}}
+- מומלץ לצפות בסרטון ההדרכה הקצר <a target="_blank" href="https://youtu.be/IVNxfbHNHZk?si=CCX2i2qwxyKNfuSS">איך להתחיל לתרום לקוד פתוח</a>, שמדגים את כל מה שנציג במדריך הזה.
+- היכנסו <a target="_blank" href="https://github.com/UrielOfir/os-practice">לפרויקט התרגול</a>.
 
+## מה נעשה בתרגול הזה?
 
-{{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+נוסיף מין "כרטיס חבר" באתר של פרויקט התרגול, על ידי הוספת קובץ טקסט פשוט לפרויקט.
 
-Please follow this space for updates!
-{{% /blocks/feature %}}
+אנחנו נעבוד בשני מישורים - יהיו פעולות שנבצע **בפרויקט הראשי**, ויהיו פעולות שנבצע **מקומית אצלנו**.
 
+![תרשים של תהליך העבודה בקוד פתוח](../../assets/images/newbies/how-to-start-os-practice/os-workflow.png)
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
+### 1. יצירת פורק Fork
 
+ניגש לפרויקט הראשי וניצור פורק.
+**פורק זו פעולה שמעתיקה את הריפו של הפרויקט הראשי אל הגיטהאב שלנו.**
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
+![כפתור fork](../../assets/images/newbies/how-to-start-os-practice/1-fork-btn.png)
 
+אין צורך לבצע שינויים במסך הביניים, פשוט לאשר, וזה מיד יעביר אותנו אל הריפו שנוצר אצלנו.
+נוכל לראות שהפורק, הריפו שנוצר אצלנו, ממש זהה לריפו של הפרויקט הראשי.
 
-{{% /blocks/section %}}
+![יצירת fork](../../assets/images/newbies/how-to-start-os-practice/2-create-fork.png)
 
+### 2. יצירת קלון Clone
 
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
+בריפו שנוצר אצלנו, בפורק, נעשה קלון.
+**זה למעשה יוצר עותק של הפרויקט על המחשב שלנו, ומאפשר לנו להריץ אותו לוקאלית.**
 
+![יצירת clone](../../assets/images/newbies/how-to-start-os-practice/4-clone.png)
 
-{{% blocks/section type="row" %}}
+אפשר לעשות את זה דרך הטרמינל, ואפשר גם ממש להוריד ידנית את הפרויקט בקובץ zip.
+נדגים את הפעולה הזו דרך הטרמינל.
+נעתיק את הקישור ובטרמינל נריץ את הפקודה:
 
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
+    git clone https://github.com/[your user]/os-practice.git
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
+זה יצור לנו את הפרויקט על המחשב, ועכשיו נוכל לעבוד עליו ולהריץ אותו מקומית.
+![הפרויקט המקומי](../../assets/images/newbies/how-to-start-os-practice/local-project.png)
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
+_**נשים לב!** שתי הפעולות האלו, פורק וקלון, אלו פעולות שנעשה פעם אחת כשנצטרף לפרויקט. מכאן המשך התהליך זו רוטינה שחוזרת על עצמה._
 
-{{% /blocks/section %}}
+### 3. פתיחת אישיו Issue
 
+בשלב הבא נחזור **לפרויקט הראשי**, לא לפורק שלנו, וניגש ללשונית אישיוז.
 
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
-{{% /blocks/section %}}
+**מה זה בכלל אישיו?**
+
+אישיו הוא משימה שצריך לבצע בפרויקט - זה יכול להיות באג שצריך לתקן, פיצ'ר שצריך לפתח וכו'.
+
+בדרך כלל קיימת רשימה של אישיוז, משימות, ואם נרצה לטפל באישיו מסוים - נצטרך להגיב עליו ולבקש.
+עושים את זה כדי לשמור על סדר ולהימנע מעבודה כפולה.
+
+אם נרצה לפתוח אישיו חדש, נצטרך לתת לו כותרת ותיאור.
+הקו המנחה הוא שהמידע הזה צריך להיות כמה שיותר ברור, ושאחרים יוכלו להבין בקלות למה אנחנו מתכוונים.
+כדאי לצרף דברים כמו צילומי מסך, הסבר איך לשחזר את הבאג, רפרנס לדוגמה וכו'.
+
+במקרה שלנו בפרויקט התרגול - אנחנו נפתח את האישיו, ואוטומטית נהיה מוגדרים כאחראים עליו (זו אוטומציה ספציפית לפרויקט הזה, כאמור בדרך כלל צריך להגיב ולבקש ממנהלי הפרויקט שיגדירו אותנו).
+
+![יצירת issue](../../assets/images/newbies/how-to-start-os-practice/6-new-issue.png)
+
+![יצירת issue](../../assets/images/newbies/how-to-start-os-practice/7-set-issue.png)
+
+![הגדרה אוטומטית של אחראי](../../assets/images/newbies/how-to-start-os-practice/8-auto-assign.png)
+
+### 4. יצירת בראנץ', עבודה, ודחיפת השינויים Branch, Code & Push
+
+**חזרה למגרש שלנו!**
+
+נפתח בראנץ' לאישיו שיצרנו - הרעיון הוא לפתוח בראנץ' נפרד לכל אישיו.
+
+נעבוד על המשימה שלנו, במקרה שלנו נוסיף קובץ טקסט לפרויקט.
+וכשנסיים נדחף את השינויים לבראנץ'.
+
+אפשר לפתוח בראנץ' בגיטהאב ואפשר גם דרך ה-VSCode.
+נלחץ על ה-main שבפינה השמאלית למטה, ונבחר בתפריט Create new branch.
+ניתן לו שם, שיהיה בעל משמעות כמובן.
+
+![פתיחת branch](../../assets/images/newbies/how-to-start-os-practice/9-new-branch.png)
+
+נוכל לראות שאיפה שהיה main קודם עכשיו מופיע הבראנץ' החדש שפתחנו - כלומר עכשיו אנחנו עובדים על הבראנץ' החדש, וכל השינויים שנבצע ישמרו רק בו.
+
+נתקין את כל הספריות באמצעות הפקודה
+
+    npm install
+ונריץ את הפרויקט.
+
+לאחר מכן נוסיף את השינויים שלנו - קובץ טקסט פשוט לתיקייה
+
+    Docs/people
+נוכל לראות ב-local host את השינויים שביצענו.
+
+![עבודה מקומית](../../assets/images/newbies/how-to-start-os-practice/see-changes.png)
+
+נראה טוב!
+אז יאללה נעשה קומיט ופוש.
+
+![ביצוע commit](../../assets/images/newbies/how-to-start-os-practice/10-commit.png)
+
+![ביצוע push](../../assets/images/newbies/how-to-start-os-practice/11-push.png)
+
+אם נסתכל על הפורק שלנו נוכל לראות ברשימת הבראנצ'ים את הבראנץ' החדש שפתחנו.
+נשים לב שבבראנץ' הראשי השינויים שעשינו לא מופיעים, הם רק בבראנץ' שעבדנו עליו.
+
+![הבראנץ' שלנו](../../assets/images/newbies/how-to-start-os-practice/12-see-branch.png)
+
+### 5. פתיחת פול ריקווסט Pull Request
+
+עכשיו נחזור **לפרויקט הראשי**, ונפתח בו פול ריקווסט למיזוג הבראנץ' שלנו אל הפרויקט.
+
+**מה זה בכלל פול ריקווסט?**
+
+פול ריקווסט זו בקשה למזג את העבודה שלנו אל תוך הפרויקט הראשי.
+
+מנהלי הפרויקט עוברים על הבקשות האלו, עושים קוד ריוויו, נותנים פידבק ומבקשים תיקונים לפי הצורך.
+הם אלו שמבצעים את המיזוג של השינויים אל תוך הפרויקט. פול ריקווסט לא דוחף מיידית את מה שעשינו!
+
+גם פה נצטרך לתת כותרת ותיאור, וגם כאן הקו המנחה הוא להסביר בצורה ברורה מה השינויים שעשינו.
+בתיאור נרצה לקשר אל האישיו שפתרנו. נעשה את זה באמצעות האשטאג (#) שפותח רשימה וממנה נבחר את האישיו הרלוונטי.
+
+אז בריפו של הפרויקט הראשי, ניגש ללשונית פול ריקווסטס ונפתח חדש.
+נלחץ על compare across forks, ובצד שמאל נראה את הריפו והבראנץ' הראשי של הפרויקט, ובצד ימין נבחר את הפורק שלנו ואת הבראנץ' שעבדנו עליו.
+
+![יצירת PR](../../assets/images/newbies/how-to-start-os-practice/13-new-pr.png)
+
+![יצירת PR](../../assets/images/newbies/how-to-start-os-practice/14-choose-fork-branch.png)
+
+נוכל להסתכל על כל השינויים והקומיטים שביצענו, ונלחץ על Create pull request.
+הפול ריקווסט נוצר ומריץ מספר בדיקות ואוטומציות. תוך כמה רגעים זה מסתיים, והפול ריקווסט שלנו מוכן לריוויו על ידי מנהלי הפרויקט.
+
+![קישור לאישיו](../../assets/images/newbies/how-to-start-os-practice/16-link-issue.png)
+
+![יצירת PR](../../assets/images/newbies/how-to-start-os-practice/15-create-pr.png)
+
+הידד! השלמנו את התהליך! תרגלנו תרומה לקוד פתוח!
+
+## אז מה עשינו בעצם? בואו נעשה קצת סדר
+
+למעשה האישיוז והפול ריקווסטים מנוהלים בפרויקט הראשי בלבד.
+הבראנצ'ים שאנחנו נפתח והעבודה שנעשה - כל זה קורה בפורק שלנו.
+ובאמצעות הפול ריקווסט שנפתח, נבצע את התרומה שלנו לקוד של הפרויקט.
+
+אם נרצה, נוכל לקחת על עצמנו אישיו נוסף בפרויקט, ולעשות שוב את כל התהליך הזה.
+חשוב ממש שנשים לב, לפני שנתחיל לעבוד על עוד אישיו, שהפורק שלנו מעודכן.
+
+מה הכוונה?
+
+## עדכון הפורק Sync
+
+יכול להיות שמאז שיצרנו את הפורק, התקבלו פול ריקווסטים של אנשים אחרים, ולמעשה הקוד של הפרויקט הראשי השתנה.
+זה יכול לגרום להתנגשויות כשנרצה לפתוח פול ריקווסט חדש.
+
+נחזור לפורק שלנו, ונשים לב שאנחנו חוזרים לבראנץ' הראשי.
+נוכל לראות הודעה שאומרת אם הפורק שלנו מעודכן או לא.
+אם הוא לא מעודכן, נלחץ על הכפתור של סנכרון הפורק וזה יתעדכן.
+עכשיו אנחנו מוכנים לצאת שוב לדרך!
+
+![סנכרון הפורק](../../assets/images/newbies/how-to-start-os-practice/18-sync.png)
+
+## לסיכום
+
+פתאום תרומה לקוד פתוח כבר לא נראית כל כך מאיימת הא?
+
+עכשיו כשתרגלתם את זה במו ידיכם, הגיע הזמן למצוא פרויקטים לתרום אליהם.
+כדי למצוא אותם בעמוד הפרוייקטים המומלצים באתר שלנו.
