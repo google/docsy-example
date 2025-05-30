@@ -43,31 +43,17 @@ imaging:
   anchor: smart
 
 # Language configuration
+defaultContentLanguage: he
+defaultContentLanguageInSubdir: true
+
 languages:
-  en:
-    languageName: English
-    title: Goldydocs
-    params:
-      description: A Docsy example site
-  # cSpell:disable
-  'no':
-    languageName: Norsk
-    contentDir: content/no
-    title: Gulldoks
-    params:
-      description: Docsy er operativsystem for skyen
-      time_format_default: 02.01.2006
-      time_format_blog: 02.01.2006
-  fa:
+  he:
+    languageName: "עברית"
+    contentDir: content/he
+    weight: 1
+    title: "מעקף"
+    languageCode: he
     languageDirection: rtl
-    languageName: "فارسی (Persian)"
-    contentDir: content/fa
-    title: "اسناد گلدی"
-    params:
-      description: "یک نمونه برای پوسته داکسی"
-      time_format_default: 2006.01.02
-      time_format_blog: 2006.01.02
-  # cSpell:enable
 
 markup:
   goldmark:
@@ -99,7 +85,7 @@ params:
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
     taxonomyPageHeader: [tags, categories]
 
-  privacy_policy: https://policies.google.com/privacy
+  # privacy_policy: https://policies.google.com/privacy
 
   # First one is picked as the Twitter card image if not set on page.
   # images: [images/project-illustration.png]
@@ -145,8 +131,8 @@ params:
   prism_syntax_highlighting: false
 
   copyright:
-    authors: Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
-    from_year: 2018
+    # authors: Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+    # from_year: 2018
 
   # User interface configuration
   ui:
@@ -182,18 +168,16 @@ params:
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: User mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
-        desc: Discussion and help from your fellow users
-      - name: Twitter
-        url: https://example.org/twitter
-        icon: fab fa-twitter
-        desc: Follow us on Twitter to get the latest news!
+      - name: קהילת הוואטסאפ
+        url: https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h
+        icon: fa-brands fa-whatsapp
+        desc: התחברו לכל קבוצות הוואטסאפ שלנו
+      - name: עדכוני מעקף
+        url: https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts
+        icon: fa-solid fa-newspaper
+        desc: קבוצת וואטסאפ שקטה לעדכונים בלבד
       - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
+
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub

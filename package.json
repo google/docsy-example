@@ -5,7 +5,7 @@
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
-  "author": "Docsy Authors",
+  "author": "Uriel ofir",
   "license": "Apache-2.0",
   "bugs": "https://github.com/google/docsy-example/issues",
   "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild rtlcss -",
