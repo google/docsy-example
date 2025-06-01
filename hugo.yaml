@@ -193,6 +193,10 @@ params:
         url: https://www.youtube.com/@maakaf-os
         icon: fa-brands fa-youtube
         desc: ערוץ הווידאו של מעקף
+      - name: Meetup
+        url: https://www.meetup.com/maakaf
+        icon: fa-brands fa-meetup
+        desc: עמוד המיטאפ של הקהילה
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
   # workspace: docsy.work
