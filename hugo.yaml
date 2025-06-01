@@ -178,7 +178,10 @@ params:
         url: https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts
         icon: fa-solid fa-newspaper
         desc: קבוצת וואטסאפ שקטה לעדכונים בלבד
-      - name: Stack Overflow
+      - name: Discord Server
+        url: https://discord.com/invite/a2VyCjRk2M
+        icon: fa-brands fa-discord
+        desc: שרת הדיסקורד של מעקף
 
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
@@ -186,10 +189,10 @@ params:
         url: https://github.com/Maakaf/maakaf_home/
         icon: fab fa-github
         desc: Development takes place here!
-      - name: Discord Server
-        url: https://discord.com/invite/a2VyCjRk2M
-        icon: fa-brands fa-discord
-        desc: שרת הדיסקורד של מעקף
+      - name: YouTube
+        url: https://www.youtube.com/@maakaf-os
+        icon: fa-brands fa-youtube
+        desc: ערוץ הווידאו של מעקף
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
   # workspace: docsy.work
