@@ -72,7 +72,7 @@ markup:
 
 # Comment out if you don't want the "print entire section" link enabled.
 outputs:
-  section: [HTML, print, RSS]
+  section: [HTML, RSS]
 
 params:
   taxonomy:
@@ -109,10 +109,10 @@ params:
   url_latest_version: https://example.com
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/Maakaf/maakaf_home/
+  github_repo: ""
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/Maakaf/maakaf_home/
+  github_project_repo: ""
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
