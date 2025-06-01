@@ -1,7 +1,7 @@
 ---
 title: "Command & Conquer Generals"
 date: 2025-05-27
-description: "תיאור קצר של הפוסט"
+description: "הזמנה להצטרף לפרויקט קוד פתוח של פיתוח משחק Command & Conquer Generals, כולל מידע על הקהילה, משאבים ללמידה וקישורים שימושיים"
 tags: ["os-project", "game"]
 categories: ["os-projects"]
 author: "אוריאל אופיר"
