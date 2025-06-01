@@ -28,3 +28,5 @@ author: "אוריאל אופיר"
 <a href="https://www.youtube.com/@xezon0" target="_blank">ערוץ היוטיוב של Xezon0</a>
 <a href="https://generals-il.vercel.app/" target="_blank">אתר בעברית</a>
 <a href="https://github.com/TheSuperHackers/Generalsgamecode" target="_blank">פרוייקט בגיטהאב</a> 
+
+<a href="https://www.linkedin.com/posts/uriel-ofir_opensource-gamedevelopment-developers-activity-7332999922146787328-qvh7" target="_blank">קישור לפוסט בלינקדין</a>
