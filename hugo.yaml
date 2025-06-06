@@ -74,7 +74,11 @@ markup:
 outputs:
   section: [HTML, RSS]
   home: [HTML, RSS]
+  page: [HTML]
   404: [HTML]
+
+# Disable any redirects that might interfere with 404 handling
+disableAliases: true
 
 params:
   taxonomy:

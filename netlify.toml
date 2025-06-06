@@ -14,5 +14,12 @@ command = "npm run build:production"
 # Redirect all 404s to our custom 404 page
 [[redirects]]
   from = "/*"
-  to = "/404.html"
+  to = "/he/404.html"
   status = 404
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
