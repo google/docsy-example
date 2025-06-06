@@ -73,6 +73,8 @@ markup:
 # Comment out if you don't want the "print entire section" link enabled.
 outputs:
   section: [HTML, RSS]
+  home: [HTML, RSS]
+  404: [HTML]
 
 params:
   taxonomy:

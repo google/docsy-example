@@ -10,3 +10,9 @@ GO_VERSION = "1.22.2"
 
 [context.production]
 command = "npm run build:production"
+
+# Redirect all 404s to our custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
