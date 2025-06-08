@@ -6,7 +6,6 @@ tags: ["os-project", "game"]
 categories: ["os-projects"]
 author: "אוריאל אופיר"
 ---
-מאת אוריאל אופיר
 
 רוצה לתרום לפרויקט קוד פתוח שמשלב אסטרטגיה, משחק מרובה משתתפים בזמן אמת וקהילה תוססת של מפתחים? 🚀
 
