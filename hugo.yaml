@@ -15,6 +15,11 @@ enableRobotsTXT: true
 # Will give values to .Lastmod etc.
 enableGitInfo: true
 
+# Google Analytics configuration
+services:
+  googleAnalytics:
+    id: G-P2J0JZSNG3
+
 # Comment out to disable taxonomies in Docsy
 # disableKinds: [taxonomy]
 
