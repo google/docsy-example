@@ -52,3 +52,5 @@ menu:
     <tr><td>דניס בורשצבסקי</td><td>project architecture, full stack development, react, react-native, node, mongo, sql, aws, css, html, code review</td><td><a href="https://calendly.com/dennisborsh/30min" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/dennis-borshchevski-64000113/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
   </tbody>
 </table>
+
+{{< comments >}}

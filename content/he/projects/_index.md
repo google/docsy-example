@@ -44,3 +44,5 @@ menu:
 
 <a href=https://github.com/Maakaf/maakaf_home target="_blank" >קישור לריפו של הפרוייקט בגיטהאב
 </a>
+
+{{< comments >}}
