@@ -5,7 +5,7 @@ linkTitle: "בלוג"
 menu:
   main:
     weight: 70
-    identifier: נ blog
+    identifier: blog
 ---
 
 בבלוג ניתן לקרוא פרסומים של חברי הקהילה.
