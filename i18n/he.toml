@@ -43,7 +43,7 @@ other = "עודכן לאחרונה"
 other = "הצג את קוד המקור של דף זה"
 
 [post_create_child_page]
-other = "צור עמוד משנה"
+other = "צור דף חדש"
 
 [post_edit_this]
 other = "ערוך דף זה"
