@@ -22,7 +22,7 @@ author: "אוריאל אופיר"
 ### רי'ץ היקי
 ממליצה גם על כל התוכן של ריץ׳ היקי (בערך ~10 הרצאות),  
 אבל הזכירו לי היום את ההרצאה הנהדרת הזו:  
-<a href="https://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey/" target="_blank" rel="noopener noreferrer">Are We There Yet?</a>
+<a href="https://www.infoq.com/presentations/Are-We-There-Yet-Rich-Hickey/" target="_blank" rel="noopener noreferrer">Are We There Yet?</a>  
 (לא מומלצת למתכנתים מתחילים, אבל זה גם לא מזיק כמובן)
 מסר עיקרי: ההזנחה של ציר הזמן בגישות תכנות נפוצות, הבלבול בין ערכים לזהויות וה-״מחלה״ של state.
 
