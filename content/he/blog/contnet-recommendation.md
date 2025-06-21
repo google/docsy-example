@@ -2,8 +2,8 @@
 title: "המלצות תוכן"
 date: 2025-06-21
 description: "המלצות תוכן של חברי הקהילה"
-tags: []
-categories: []
+tags: ["תכנות", "פיתוח תוכנה", "המלצות", "Bret Victor", "Rich Hickey", "clojure"]
+categories: ["תכנות", "הגות"]
 author: "אוריאל אופיר"
 ---
 
