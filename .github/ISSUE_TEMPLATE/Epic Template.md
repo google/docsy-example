@@ -1,3 +1,8 @@
+---
+name: Epice
+about: Epic plan
+title: '[Epic]: '
+---
 ## Epic: [Epic Name]
 
 ### Overview
