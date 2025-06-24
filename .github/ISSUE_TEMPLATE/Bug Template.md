@@ -1,3 +1,12 @@
+---
+name: Bug Report
+about: Report a problem or an unexpected behavior
+title: '[Bug]: '
+labels: bug, triage
+assignees:
+  - your-github-username
+---
+
 ## Bug: [Bug Title]
 
 ### Current Behavior
