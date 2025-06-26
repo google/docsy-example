@@ -1,7 +1,7 @@
 ---
-type: "docs"
-title: "פרוייקט המנטורים"
-linkTitle: "פרוייקט המנטורים"
+type: 'docs'
+title: 'פרוייקט המנטורים'
+linkTitle: 'פרוייקט המנטורים'
 menu:
   main:
     weight: 49
@@ -19,9 +19,9 @@ menu:
 ### איך מתכנת מנוסה מוסיף את הפרטים שלו לפרוייקט?
 
 פשוט מוסיף שורה בטבלה באמצעות עריכה של הקובץ בגיטהאב,  
-או פונה לאוריאל אופיר, מנהל הקהילה (urielofir@gmail.com).   
-תנאי הסף להוספת מנטור הוא קישור לקלאנדלי (או חלופה מקבילה) שיאפשר לקבוע איתו פגישה.  
-
+או פונה לאוריאל אופיר, מנהל הקהילה (urielofir@gmail.com).  
+תנאי הסף להוספת מנטור הוא קישור לקלאנדלי (או חלופה מקבילה) שיאפשר לקבוע איתו
+פגישה.
 
 <table border="1" dir="rtl">
   <thead>
@@ -35,7 +35,7 @@ menu:
   <tbody>
     <tr><td>דן ארז</td><td>הכנה לראיונות עבודה, תכנון מערכות ושאלות ב Java</td><td><a href="https://calendly.com/dan-erez/30min" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/dan-erez-8971891/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
     <tr><td>גל מכלוף</td><td>מנטורינג ניהול מוצר, אפיון צרכי משתמשים וחקר שוק. הכנה לראיונות עבודה ומעבר קוח</td><td><a href="https://calendar.app.google/7hWHHiU1L79NdvQR6" target="_blank">📅</a></td><td><a href="http://www.linkedin.com/in/galmachluf" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
-    <tr><td>אופיר אוריאל</td><td>תרומה לקוד פתוח כאמצעי להתפתחות מקצועית ומציאת עבודה</td><td><a href="https://cal.com/uriel-ofir/15min" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/uriel-ofir/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
+    <tr><td>אופיר אוריאל</td><td>תרומה לקוד פתוח כאמצעי להתפתחות מקצועית ומציאת עבודה</td><td><a href="https://wa.me/972506660620?text=%D7%94%D7%99%D7%99%20%D7%90%D7%95%D7%A8%D7%99%D7%90%D7%9C%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%A9%D7%90%D7%AA%D7%94%20%D7%9E%D7%A0%D7%98%D7%95%D7%A8%20%D7%91%D7%A7%D7%94%D7%99%D7%9C%D7%AA%20%D7%9E%D7%A2%D7%A7%D7%A3%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%99%D7%95%D7%AA%20%D7%91%D7%A7%D7%A9%D7%A8" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></td><td><a href="https://www.linkedin.com/in/uriel-ofir/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
     <tr><td>אפרת שרון</td><td>עבודה עם פיגמה</td><td><a href="https://calendly.com/efratsharon" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/efratsharon/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
     <tr><td>עידו דוד</td><td></td><td><a href="https://calendly.com/idonkl100/30min" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/ido-david-46b59119a" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
     <tr><td>אימרי גולדברג</td><td>יכול לעזור בכל פרוייקט בפייתון, וספציפית אשמח לעזור למי שרוצה לקחת משימות בפרוייקט sqladmin</td><td><a href="https://calendly.com/imrigoldberg/maakaf-30min" target="_blank">📅</a></td><td><a href="https://www.linkedin.com/in/imrigoldberg/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td></tr>
