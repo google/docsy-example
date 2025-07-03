@@ -33,9 +33,7 @@ menu:
 
 {{< cardpane >}}
   {{< card header="💬 הצטרפו אלינו!" >}}
-    <a class="btn btn-lg btn-info me-3 mb-4" href="<קישור לשרת הדיסקורד של קובול-ישראל>" target="_blank">🎮 שרת הדיסקורד</a>
-    <a class="btn btn-lg btn-success me-3 mb-4" href="<קישור לקבוצת הוואטסאפ של קובול-ישראל>" target="_blank">💬 קהילת הוואטסאפ</a>
-    <a class="btn btn-lg btn-secondary me-3 mb-4" href="<קישור לקבוצת עדכונים בוואטסאפ - אם קיימת>" target="_blank">📰 עדכונים וחדשות</a>
+    <a class="btn btn-lg btn-success me-3 mb-4" href="https://chat.whatsapp.com/LMhGQNoetiK5DkhRYRdcjA" target="_blank">💬 קבוצת הוואטסאפ</a>
   {{< /card >}}
   {{< card header="🌟 ותיקים וצעירים – כולם מוזמנים!" >}}
     קהילת 'קובול-ישראל' היא המקום למתכנתי COBOL מכל הרמות. כאן כל שאלה מתקבלת בברכה, וכל קול נשמע. אנו מדברים בחופשיות על היבטים שונים של COBOL, לומדים מניסיון קולקטיבי, משתפים פעולה וצומחים יחד בתחום.
