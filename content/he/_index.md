@@ -23,9 +23,6 @@ weight: 1
 {{% blocks/feature icon="fa-code" title="Best Practices" %}}
 מדריכים מעמיקים ודוגמאות קוד לשיטות עבודה מומלצות בפיתוח COBOL מודרני.
 {{% /blocks/feature %}}
-{{% blocks/feature icon="fa-calendar-alt" title="אירועים ומפגשים" url="/events" %}}
-התעדכנו בכנסים, וובינרים ומפגשי קהילה קרובים.
-{{% /blocks/feature %}}
 {{% /blocks/section %}}
 
 {{< cardpane >}}
