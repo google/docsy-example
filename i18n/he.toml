@@ -1,0 +1,120 @@
+# UI strings. Buttons and similar.
+
+[ui_pager_prev]
+other = "הקודם"
+
+[ui_pager_next]
+other = "הבא"
+
+[ui_read_more]
+other = "קרא עוד"
+
+[ui_search]
+other = "חיפוש באתר..."
+
+[ui_all]
+other = "הכל"
+
+[ui_less]
+other = "פחות"
+
+[ui_more]
+other = "עוד"
+
+# Used in sentences such as "Posted in News"
+[ui_in]
+other = "ב"
+
+# Footer text
+[footer_all_rights_reserved]
+other = "כל הזכויות שמורות"
+
+[post_byline_by]
+other = "מאת"
+
+[post_created]
+other = "נוצר"
+
+[post_last_mod]
+other = "עודכן לאחרונה"
+
+
+[post_view_this]
+other = "הצג את קוד המקור של דף זה"
+
+[post_create_child_page]
+other = "צור דף חדש"
+
+[post_edit_this]
+other = "ערוך דף זה"
+
+[post_create_issue]
+other = "דווח על בעיה בדף"
+
+[post_create_project_issue]
+other = "דווח על בעיה בפרויקט"
+
+[post_posts_in]
+other = "פוסטים ב"
+
+[post_reading_time]
+other = "דקות קריאה"
+
+[post_less_than_a_minute_read]
+other = "פחות מדקת קריאה"
+
+# Taxonomy
+[taxonomy_posts]
+other = "פוסטים בנושא"
+
+[taxonomy_categories]
+other = "קטגוריות"
+
+[taxonomy_tags]
+other = "תגיות"
+
+# Error pages
+[error_404_title]
+other = "הדף לא נמצא :("
+
+[error_404_text]
+other = "מצטערים, הדף שחיפשת לא קיים."
+
+[error_500_title]
+other = "שגיאה פנימית :("
+
+[error_500_text]
+other = "מצטערים, משהו השתבש בשרת."
+
+# Feedback
+[feedback_title]
+other = "משוב"
+
+[feedback_question]
+other = "אהבת את התוכן?"
+
+[feedback_positive]
+other = "👍"
+
+[feedback_negative]
+other = "👎"
+
+[feedback_submit]
+other = "שלח משוב"
+
+# Print
+[print_entire_section]
+other = "הדפס את כל הפרק"
+
+[print_page]
+other = "הדפס דף זה"
+
+# Edit options
+[edit_page]
+other = "ערוך דף זה"
+
+[edit_section]
+other = "ערוך פרק זה"
+
+[last_modified]
+other = "עודכן לאחרונה:" 
