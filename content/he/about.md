@@ -21,7 +21,7 @@ menu:
 
 {{% blocks/section color="white" type="row" %}}
 {{% blocks/feature icon="fa-users" title="מפגשי קהילה ואירועים" %}}
-אנו מתכננים ומעדכנים באופן שוטף על מפגשי קהילה, וובינרים ואירועים מקצועיים <a href="/he/events" target="_blank">בנושאי COBOL</a>. האירועים פתוחים לכולם – בין אם אתם בתחילת דרככם בעולם ה-COBOL ובין אם אתם מפתחים מנוסים.
+אנו מתכננים בעתיד לקיים מפגשי קהילה, וובינרים ואירועים מקצועיים בנושאי COBOL. האירועים פתוחים לכולם – בין אם אתם בתחילת דרככם בעולם ה-COBOL ובין אם אתם מפתחים מנוסים.
 {{% /blocks/feature %}}
 {{% blocks/feature icon="fa-code-branch" title="שיתוף Best Practices" %}}
 פלטפורמה לשיתוף ולמידה של <a href="/he/resources/best-practices" target="_blank">שיטות עבודה מומלצות ב-COBOL</a>. נציג דוגמאות קוד, ארכיטקטורות ותובנות מקצועיות שיעזרו לכם לשפר את הפיתוח.
