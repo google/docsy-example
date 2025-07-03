@@ -1,5 +1,5 @@
 ---
-title: 'אודות מעקף'
+title: 'אודות'
 linkTitle: 'אודות'
 weight: 2
 menu:
@@ -8,49 +8,40 @@ menu:
     identifier: about
 ---
 
-{{< blocks/cover title="הסיפור של מעקף" color="primary" height="min" >}}
-
+{{< blocks/cover title="הסיפור של קובול-ישראל" color="primary" height="min" >}}
 <div class="mx-auto">
   <p class="lead">
-הכל התחיל מהחלם ליצור מקום שבו כל אחד ואחת <br> יוכלו להרגיש שייכים לעולם הקוד הפתוח בישראל. מקום של למידה, שיתוף פעולה, וחברות.
+    הכל התחיל מהרצון לחבר את קהילת מתכנתי ה-COBOL בישראל – <br> ליצור בית מקצועי שבו נוכל לחלוק ידע, ללמוד זה מזה, ולקדם יחד את תחום ה-COBOL.
   </p>
   <p class="lead">
-    מהחזון הזה נולדה <b>מעקף</b> – קהילה חיה ותוססת שמפגישה בין מתחילים למנוסים, ומאפשרת לכולם לצמוח יחד.
+    מהחזון הזה נולדה <b>קובול-ישראל</b> – קהילה פעילה שמפגישה בין ותיקים לצעירים בתחום, ומאפשרת לכולם לצמוח מקצועית.
   </p>
 </div>
 {{< /blocks/cover >}}
 
 {{% blocks/section color="white" type="row" %}}
-{{% blocks/feature icon="fa-users" title="אירועי קוד פתוח" %}} כל שבועיים אנחנו
-נפגשים ל<a href="https://www.meetup.com/maakaf" target="_blank">מסיבת קוד פתוח</a> – מפגש קהילתי
-מלא קוד, למידה, וחיבורים חדשים. האירועים פתוחים לכולם – גם אם אתם רק מתחילים וגם
-אם אתם כבר תורמים לקוד פתוח. {{% /blocks/feature %}}
-{{% blocks/feature icon="fa-hands-helping" title="מנטורינג וליווי אישי" %}} יש לנו את <a href="/he/mentors" target="_blank">תוכנית המנטורינג</a>. כאן
-כל מתחיל ומתחילה יכולים לקבל ליווי אישי ממנטורים מנוסים, ולעשות את הצעדים
-הראשונים בעולם הקוד הפתוח. {{% /blocks/feature %}}
-{{% blocks/feature icon="fa-lightbulb" title="פרויקטים מומלצים" %}} אנחנו גאים
-לראות חברי קהילה שהפכו לתורמים משמעותיים בפרויקטים כמו
-<a href="https://github.com/hasadna/open-bus-map-search" target="_blank">Databus</a>
-– פרויקט קוד פתוח שמנוהל על ידי נועם געש, מנטור ותיק בקהילה שלנו. רוצים להצטרף
-לפרויקט? ראו את <a href="/he/projects" target="_blank">רשימת הפרויקטים
-המומלצים</a> שלנו. {{% /blocks/feature %}} {{% /blocks/section %}}
+{{% blocks/feature icon="fa-users" title="מפגשי קהילה ואירועים" %}}
+אנו מתכננים ומעדכנים באופן שוטף על מפגשי קהילה, וובינרים ואירועים מקצועיים <a href="/he/events" target="_blank">בנושאי COBOL</a>. האירועים פתוחים לכולם – בין אם אתם בתחילת דרככם בעולם ה-COBOL ובין אם אתם מפתחים מנוסים.
+{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-code-branch" title="שיתוף Best Practices" %}}
+פלטפורמה לשיתוף ולמידה של <a href="/he/resources/best-practices" target="_blank">שיטות עבודה מומלצות ב-COBOL</a>. נציג דוגמאות קוד, ארכיטקטורות ותובנות מקצועיות שיעזרו לכם לשפר את הפיתוח.
+{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-handshake" title="נטוורקינג וחיבורים" %}}
+אנו מאמינים בכוחה של קהילה. כאן תוכלו להתחבר עם מתכנתי COBOL אחרים, להחליף רעיונות וליצור קשרים מקצועיים שיעזרו לכם בקריירה. הצטרפו ל<a href="<קישור לשרת הדיסקורד של קובול-ישראל>" target="_blank">שרת הדיסקורד</a> או ל<a href="<קישור לקבוצת הוואטסאפ של קובול-ישראל>" target="_blank">קבוצת הוואטסאפ</a>.
+{{% /blocks/feature %}}
+{{% /blocks/section %}}
 
-{{< cardpane >}} {{< card header="💬 הצטרפו אלינו!" >}}
-<a class="btn btn-lg btn-info me-3 mb-4" href="https://discord.com/invite/a2VyCjRk2M" target="_blank">🎮
-שרת הדיסקורד</a>
-<a class="btn btn-lg btn-success me-3 mb-4" href="https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h" target="_blank">💬
-קהילת הוואטסאפ</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts" target="_blank">📰
-עדכוני מעקף בוואטסאפ</a> {{< /card >}} {{< card header="🌟 כל אחד ואחת מוזמנים!" >}} רוב
-חברי הקהילה שלנו הם מתחילים – וזה מה שהופך את מעקף למקום כל כך מיוחד. כאן כל
-שאלה מתקבלת בברכה, וכל קול נשמע. אנחנו מדברים בחופשיות על כל טכנולוגיה, ודרך
-הפרויקטים הפתוחים לומדים, משתפים פעולה, וצומחים יחד. {{< /card >}}
+{{< cardpane >}}
+  {{< card header="💬 הצטרפו אלינו!" >}}
+    <a class="btn btn-lg btn-info me-3 mb-4" href="<קישור לשרת הדיסקורד של קובול-ישראל>" target="_blank">🎮 שרת הדיסקורד</a>
+    <a class="btn btn-lg btn-success me-3 mb-4" href="<קישור לקבוצת הוואטסאפ של קובול-ישראל>" target="_blank">💬 קהילת הוואטסאפ</a>
+    <a class="btn btn-lg btn-secondary me-3 mb-4" href="<קישור לקבוצת עדכונים בוואטסאפ - אם קיימת>" target="_blank">📰 עדכונים וחדשות</a>
+  {{< /card >}}
+  {{< card header="🌟 ותיקים וצעירים – כולם מוזמנים!" >}}
+    קהילת 'קובול-ישראל' היא המקום למתכנתי COBOL מכל הרמות. כאן כל שאלה מתקבלת בברכה, וכל קול נשמע. אנו מדברים בחופשיות על היבטים שונים של COBOL, לומדים מניסיון קולקטיבי, משתפים פעולה וצומחים יחד בתחום.
+  {{< /card >}}
 {{< /cardpane >}}
 
 <div style="text-align:center; margin-top:2em;">
-  <b>הקהילה מנוהלת ומונעת באהבה על ידי <a href="https://urielofir.website" target="_blank">אוריאל אופיר</a></b>
-</div>
-
-<div style="text-align:center; margin-top:1em;">
-  <b>החזון שלנו: לראות עוד ועוד תרומות, חיבורים, ומעורבות בין חברי הקהילה. מעקף הוא בית לכל מי שרוצה להשפיע בעולם הקוד הפתוח בישראל.</b>
+  <b>החזון שלנו: לקדם את הידע והחדשנות בתחום ה-COBOL בישראל, ולחזק את הקשרים בין מפתחי הקהילה.</b>
 </div>
