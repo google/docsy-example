@@ -1,5 +1,5 @@
 baseURL: /
-title: מעקף
+title: קובול ישראל
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
@@ -120,10 +120,10 @@ params:
   url_latest_version: https://example.com
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: "https://github.com/Maakaf/maakaf_home"
+  github_repo: "https://github.com/COBOL-ISRAEL/CI-home"
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: "https://github.com/Maakaf/maakaf_home"
+  github_project_repo: "https://github.com/COBOL-ISRAEL/CI-home"
 
   # Specify a value here if your content directory is not in your repo's root directory
   # github_subdir: ""
@@ -181,33 +181,18 @@ params:
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: קהילת הוואטסאפ
-        url: https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h
+      - name: קבוצת הוואטסאפ
+        url: https://chat.whatsapp.com/LMhGQNoetiK5DkhRYRdcjA
         icon: fa-brands fa-whatsapp
         desc: התחברו לכל קבוצות הוואטסאפ שלנו
-      - name: עדכוני מעקף
-        url: https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts
-        icon: fa-solid fa-newspaper
-        desc: קבוצת וואטסאפ שקטה לעדכונים בלבד
-      - name: Discord Server
-        url: https://discord.com/invite/a2VyCjRk2M
-        icon: fa-brands fa-discord
-        desc: שרת הדיסקורד של מעקף
 
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
-        url: https://github.com/Maakaf/maakaf_home/
+        url: https://github.com/COBOL-ISRAEL/CI-home/
         icon: fab fa-github
         desc: Development takes place here!
-      - name: YouTube
-        url: https://www.youtube.com/@maakaf-os
-        icon: fa-brands fa-youtube
-        desc: ערוץ הווידאו של מעקף
-      - name: Meetup
-        url: https://www.meetup.com/maakaf
-        icon: fa-brands fa-meetup
-        desc: עמוד המיטאפ של הקהילה
+
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
   # workspace: docsy.work
