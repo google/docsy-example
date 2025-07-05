@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+     
+  <h1><br><br>{{ .Title }}</h1>
+  הדף נמצא בבנייה
+  <ul>
+    {{ range .Site.Data.remote }}
+      <li>
+        <strong>{{ .username }}</strong>
+        <ul>
+          {{ range .repos }}
+            <li>
+              <a href="{{ .url }}">{{ .repoName }}</a> - {{ .description }}
+              <ul>
+                <li>Commits: {{ .commits }}</li>
+                <li>PRs: {{ .pullRequests }}</li>
+                <li>Issues: {{ .issues }}</li>
+                <li>PR Comments: {{ .prComments }}</li>
+                <li>Issue Comments: {{ .issueComments }}</li>
+              </ul>
+            </li>
+          {{ end }}
+        </ul>
+        <em>Summary: Commits: {{ .summary.totalCommits }}, PRs: {{ .summary.totalPRs }}, Issues: {{ .summary.totalIssues }}, PR Comments: {{ .summary.totalPRComments }}, Issue Comments: {{ .summary.totalIssueComments }}</em>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
