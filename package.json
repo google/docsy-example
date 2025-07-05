@@ -2,6 +2,7 @@
   "name": "maakaf home",
   "version": "0.12.0",
   "version.next": "0.12.1-dev-unreleased",
+  "type": "module",
   "description": "Ma'akaf Open Source community home website",
   "repository": "github:Maakaf/maakaf_home",
   "homepage": "https://maakaf.com",
@@ -28,6 +29,7 @@
     "precheck:links": "npm run build",
     "postbuild:preview": "npm run _check:links",
     "postbuild:production": "npm run _check:links",
+    "prebuild": "tsx fetch-data.ts",
     "serve": "npm run _serve",
     "test": "npm run check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
@@ -35,11 +37,15 @@
     "update:pkgs": "npx npm-check-updates -u"
   },
   "devDependencies": {
+    "@types/node": "^24.0.10",
     "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
+    "dotenv": "^17.0.1",
     "hugo-extended": "0.147.9",
     "postcss-cli": "^11.0.1",
-    "rtlcss": "^4.3.0"
+    "rtlcss": "^4.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "optionalDependencies": {
     "npm-check-updates": "^18.0.1"
