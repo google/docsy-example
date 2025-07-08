@@ -1,7 +1,7 @@
 ---
-title: מדריך CICS
+title: היכרות עם CICS
 description: >
-    פרק 1
+    פרק 2
 weight: 10
 ---
 
