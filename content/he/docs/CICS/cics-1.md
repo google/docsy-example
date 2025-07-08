@@ -53,6 +53,7 @@ CICS היא תוכנת ניהול טרנזקציות (**Transaction Manager**) �
 אזור זיכרון שמשמש להעברת נתונים בין תוכניות CICS שונות בתוך אותה טרנזקציה, או בין טרנזקציות (במקרים מסוימים). זהו מנגנון חשוב לשמירת "מצב" (state) בין מסכים שונים באותו תהליך עסקי.
 
     * **דוגמה לשימוש ב-DFHCOMMAREA:**
+<div dir=ltr>
 
     ```cobol
     WORKING-STORAGE SECTION.
@@ -76,6 +77,7 @@ CICS היא תוכנת ניהול טרנזקציות (**Transaction Manager**) �
                    LENGTH(LENGTH OF DFHCOMMAREA)
         END-EXEC.
     ```
+</div>
 
 3.  **EIBA (EXEC Interface Block Area):**
  אזור זיכרון ש-CICS ממלא במידע חשוב על הטרנזקציה הנוכחית, כגון קוד הטרנזקציה (**EIBCALEN**), מזהה המסוף (**EIBTRMID**), ושדות אחרים. אתה יכול לגשת לנתונים אלה בתוך תוכנית ה-COBOL שלך.
