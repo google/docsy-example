@@ -1,0 +1,134 @@
+/* ========================
+   Base Styles
+======================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+  background-color: #121212;
+  color: #eee;
+}
+
+/* ========================
+   Inputs: Search + Sort
+======================== */
+#searchInput,
+#sortOption {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    width 0.3s ease;
+}
+
+#searchInput {
+  width: 200px;
+}
+
+#searchInput:hover,
+#searchInput:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+  width: 250px;
+}
+
+/* ========================
+   Community Summary Box
+======================== */
+.community-summary {
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+/* ========================
+   Last Updated Text
+======================== */
+.last-updated {
+  font-style: italic;
+  margin-top: 1rem;
+  color: #aaa;
+}
+
+/* ========================
+   Table Styles
+======================== */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+#contributorsTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#contributorsTable th,
+#contributorsTable td {
+  border: 1px solid #444;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+#contributorsTable th {
+  background-color: #1a1a1a;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Removed hover effect */
+#contributorsTable tbody tr {
+  transition: none;
+}
+
+/* ========================
+   List Styling
+======================== */
+ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+/* ========================
+   Responsive Design
+======================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  #searchInput,
+  #sortOption {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  #searchInput:hover,
+  #searchInput:focus {
+    width: 100%;
+  }
+
+  .community-summary {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  #contributorsTable th,
+  #contributorsTable td {
+    font-size: 13px;
+    padding: 0.5rem;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+}

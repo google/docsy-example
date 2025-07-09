@@ -1,28 +1,122 @@
 {{ define "main" }}
+<link rel="stylesheet" href="/css/members.css">
 
-     
-  <h1><br><br>{{ .Title }}</h1>
-  הדף נמצא בבנייה
-  <ul>
-    {{ range .Site.Data.remote }}
-      <li>
-        <strong>{{ .username }}</strong>
-        <ul>
-          {{ range .repos }}
-            <li>
-              <a href="{{ .url }}">{{ .repoName }}</a> - {{ .description }}
+<h1><br><br>{{ .Title }}</h1>
+<p dir="rtl" style="text-align: right;">
+  בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, דיוני באגים ותגובות. ניתן למיין ולחפש לפי שם או לפי כמות תרומות.
+</p>
+
+
+<div dir="ltr">
+  <!-- Search and Sort -->
+  <div class="filter-controls">
+    <label for="searchInput">Search by username:</label>
+    <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Type a username..." />
+
+    <label for="sortOption" style="margin-left: 1rem;">Sort by:</label>
+    <select id="sortOption" onchange="sortTable()">
+      <option value="alpha">Alphabetical (A–Z)</option>
+      <option value="most">Most Contributions</option>
+      <option value="least">Least Contributions</option>
+    </select>
+  </div>
+
+  <!-- Summary -->
+  {{ $totalCommits := 0 }}
+  {{ $totalPRs := 0 }}
+  {{ $totalIssues := 0 }}
+  {{ $totalPRComments := 0 }}
+  {{ $totalIssueComments := 0 }}
+  {{ $totalUsers := 0 }}
+
+  {{ range .Site.Data.remote }}
+    {{ $totalUsers = add $totalUsers 1 }}
+    {{ $totalCommits = add $totalCommits .summary.totalCommits }}
+    {{ $totalPRs = add $totalPRs .summary.totalPRs }}
+    {{ $totalIssues = add $totalIssues .summary.totalIssues }}
+    {{ $totalPRComments = add $totalPRComments .summary.totalPRComments }}
+    {{ $totalIssueComments = add $totalIssueComments .summary.totalIssueComments }}
+  {{ end }}
+
+  <div class="community-summary">
+    <strong>Community Summary:</strong><br>
+    Contributors: {{ $totalUsers }} |
+    Commits: {{ $totalCommits }} |
+    PRs: {{ $totalPRs }} |
+    Issues: {{ $totalIssues }} |
+    PR Comments: {{ $totalPRComments }} |
+    Issue Comments: {{ $totalIssueComments }}
+  </div>
+
+  <!-- Table -->
+  <div class="table-container">
+    <table id="contributorsTable">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Total Contributions</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Site.Data.remote }}
+          {{ $total := add (add (add (add .summary.totalCommits .summary.totalPRs) .summary.totalIssues) .summary.totalPRComments) .summary.totalIssueComments }}
+          <tr>
+            <td>{{ .username }}</td>
+            <td class="total">{{ $total }}</td>
+            <td>
               <ul>
-                <li>Commits: {{ .commits }}</li>
-                <li>PRs: {{ .pullRequests }}</li>
-                <li>Issues: {{ .issues }}</li>
-                <li>PR Comments: {{ .prComments }}</li>
-                <li>Issue Comments: {{ .issueComments }}</li>
+                <li>Commits: {{ .summary.totalCommits }}</li>
+                <li>PRs: {{ .summary.totalPRs }}</li>
+                <li>Issues: {{ .summary.totalIssues }}</li>
+                <li>PR Comments: {{ .summary.totalPRComments }}</li>
+                <li>Issue Comments: {{ .summary.totalIssueComments }}</li>
               </ul>
-            </li>
-          {{ end }}
-        </ul>
-        <em>Summary: Commits: {{ .summary.totalCommits }}, PRs: {{ .summary.totalPRs }}, Issues: {{ .summary.totalIssues }}, PR Comments: {{ .summary.totalPRComments }}, Issue Comments: {{ .summary.totalIssueComments }}</em>
-      </li>
-    {{ end }}
-  </ul>
+            </td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Last updated -->
+  <p class="last-updated">
+    Last updated: {{ .Site.Data.remoteGeneratedAt }}
+  </p>
+</div>
+
+<!-- Scripts -->
+<script>
+  function sortTable() {
+    const table = document.getElementById("contributorsTable");
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+    const option = document.getElementById("sortOption").value;
+
+    rows.sort((a, b) => {
+      const nameA = a.cells[0].textContent.trim().toLowerCase();
+      const nameB = b.cells[0].textContent.trim().toLowerCase();
+      const contribA = parseInt(a.cells[1].textContent.trim());
+      const contribB = parseInt(b.cells[1].textContent.trim());
+
+      if (option === "most") return contribB - contribA;
+      if (option === "least") return contribA - contribB;
+      if (option === "alpha") return nameA.localeCompare(nameB);
+    });
+
+    tbody.innerHTML = "";
+    rows.forEach(row => tbody.appendChild(row));
+  }
+
+  function filterTable() {
+    const input = document.getElementById("searchInput");
+    const filter = input.value; // Case-sensitive
+    const rows = document.querySelectorAll("#contributorsTable tbody tr");
+
+    rows.forEach(row => {
+      const username = row.cells[0].textContent;
+      row.style.display = username.includes(filter) ? "" : "none";
+    });
+  }
+</script>
 {{ end }}
