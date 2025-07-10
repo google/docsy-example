@@ -1,0 +1,8 @@
+<div>
+  <div id="quiz-container"></div>
+  <script src="/quiz.js"></script>
+  <script>
+    var quizData = {{ .Get "quizData" | safeJS }};
+    renderQuiz('quiz-container', quizData);
+  </script>
+</div>

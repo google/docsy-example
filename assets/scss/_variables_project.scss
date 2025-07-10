@@ -4,3 +4,115 @@ Add styles or override variables from the theme here.
 
 */
 
+// Quiz color variables
+$quiz-question-color: #1e293b;
+$quiz-bg: #fff;
+$quiz-btn-bg: #30638E;
+$quiz-btn-hover-bg: #22c55e;
+$quiz-btn-text: #fff;
+$quiz-btn-hover-text: #fff;
+$quiz-btn-radius: 8px;
+$quiz-card-radius: 12px;
+$quiz-card-shadow: 0 2px 8px rgba(0,0,0,0.04);
+$quiz-feedback-bg: #3399ff;
+$quiz-feedback-text: #fff;
+$quiz-result-bg: #eafaf1;
+$quiz-result-text: #27ae60;
+
+.quiz-question {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: $quiz-question-color;
+  margin-bottom: 1.2em;
+  background: $quiz-bg;
+  padding: 1em 1.5em;
+  border-radius: $quiz-card-radius;
+  box-shadow: $quiz-card-shadow;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  margin-bottom: 1.2em;
+}
+
+.quiz-option {
+  background: $quiz-btn-bg;
+  border: none;
+  border-radius: $quiz-btn-radius;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  color: $quiz-btn-text;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.quiz-option:hover {
+  background: $quiz-btn-hover-bg;
+  color: $quiz-btn-hover-text;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.quiz-feedback {
+  font-size: 1em;
+  font-weight: 600;
+  min-height: 1.5em;
+  margin-bottom: 1em;
+  color: $quiz-feedback-text;
+  background: $quiz-feedback-bg;
+  border-radius: 6px;
+  padding: 0.4em 1em;
+  display: inline-block;
+}
+.quiz-feedback:empty {
+  background: none;
+  padding: 0;
+}
+
+.quiz-result {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: $quiz-result-text;
+  margin-top: 1em;
+  background: $quiz-result-bg;
+  border-radius: $quiz-btn-radius;
+  padding: 0.7em 1.5em;
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  $quiz-dark-bg: #23272f;
+  $quiz-dark-question: #e0e0e0;
+  $quiz-dark-btn-bg: #2a3240;
+  $quiz-dark-btn-hover-bg: #30638E;
+  $quiz-dark-btn-text: #e0e0e0;
+  $quiz-dark-btn-hover-text: #fff;
+  $quiz-dark-feedback: #3399ff;
+  $quiz-dark-result-bg: #1a2a22;
+  $quiz-dark-result-text: #6fcf97;
+
+  .quiz-question {
+    color: $quiz-dark-question;
+    background: $quiz-dark-bg;
+  }
+  .quiz-option {
+    background: $quiz-dark-btn-bg;
+    color: $quiz-dark-btn-text;
+    border: 1px solid #444;
+  }
+  .quiz-option:hover {
+    background: $quiz-dark-btn-hover-bg;
+    color: $quiz-dark-btn-hover-text;
+  }
+  .quiz-feedback {
+    color: $quiz-dark-btn-hover-text;
+    background: $quiz-dark-feedback;
+  }
+  .quiz-result {
+    color: $quiz-dark-result-text;
+    background: $quiz-dark-result-bg;
+  }
+}
+
