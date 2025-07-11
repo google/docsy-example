@@ -1,33 +1,45 @@
 {{ define "main" }}
 <link rel="stylesheet" href="/css/members.css">
 
+<!-- Page Title -->
 <h1><br><br>{{ .Title }}</h1>
-<p dir="rtl" style="text-align: right;">
-  בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, דיוני באגים ותגובות. ניתן למיין ולחפש לפי שם או לפי כמות תרומות.
+
+<!-- Hebrew Description -->
+<p dir="rtl" class="text-right">
+  בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות.
 </p>
 
-
 <div dir="ltr">
-  <!-- Search and Sort -->
-  <div class="filter-controls">
-    <label for="searchInput">Search by username:</label>
-    <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Type a username..." />
 
-    <label for="sortOption" style="margin-left: 1rem;">Sort by:</label>
-    <select id="sortOption" onchange="sortTable()">
-      <option value="alpha">Alphabetical (A–Z)</option>
-      <option value="most">Most Contributions</option>
-      <option value="least">Least Contributions</option>
-    </select>
+  <!-- ========================
+    Search & Sort Controls
+  ========================= -->
+  <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
+    <div>
+      <label for="searchInput" class="form-label mb-1">Search by username:</label>
+      <input type="text" class="form-control" id="searchInput" onkeyup="filterTable()" placeholder="Type a username..." />
+    </div>
+
+    <div>
+      <label for="sortOption" class="form-label mb-1">Sort by:</label>
+      <select class="form-control" id="sortOption" onchange="sortTable()">
+        <option value="alpha">Alphabetical (A–Z)</option>
+        <option value="most">Most Contributions</option>
+        <option value="least">Least Contributions</option>
+      </select>
+    </div>
   </div>
 
-  <!-- Summary -->
+  <!-- ========================
+    Community Summary Section
+  ========================= -->
   {{ $totalCommits := 0 }}
   {{ $totalPRs := 0 }}
   {{ $totalIssues := 0 }}
   {{ $totalPRComments := 0 }}
   {{ $totalIssueComments := 0 }}
   {{ $totalUsers := 0 }}
+  {{ $uniqueProjects := dict }}
 
   {{ range .Site.Data.remote }}
     {{ $totalUsers = add $totalUsers 1 }}
@@ -36,11 +48,15 @@
     {{ $totalIssues = add $totalIssues .summary.totalIssues }}
     {{ $totalPRComments = add $totalPRComments .summary.totalPRComments }}
     {{ $totalIssueComments = add $totalIssueComments .summary.totalIssueComments }}
+    {{ range .repos }}
+      {{ $uniqueProjects = merge $uniqueProjects (dict .url true) }}
+    {{ end }}
   {{ end }}
 
   <div class="community-summary">
     <strong>Community Summary:</strong><br>
     Contributors: {{ $totalUsers }} |
+    Projects: {{ len $uniqueProjects }} |
     Commits: {{ $totalCommits }} |
     PRs: {{ $totalPRs }} |
     Issues: {{ $totalIssues }} |
@@ -48,12 +64,14 @@
     Issue Comments: {{ $totalIssueComments }}
   </div>
 
-  <!-- Table -->
+  <!-- ===================
+    Contributors Table
+  ====================== -->
   <div class="table-container">
-    <table id="contributorsTable">
-      <thead>
+    <table id="contributorsTable" class="table table-bordered table-dark">
+      <thead class="thead-dark">
         <tr>
-          <th>Username</th>
+          <th>Username</th> <!-- TODO: replace with name when avialable and then fix the searchbox and search function -->
           <th>Total Contributions</th>
           <th>Details</th>
         </tr>
@@ -62,7 +80,7 @@
         {{ range .Site.Data.remote }}
           {{ $total := add (add (add (add .summary.totalCommits .summary.totalPRs) .summary.totalIssues) .summary.totalPRComments) .summary.totalIssueComments }}
           <tr>
-            <td>{{ .username }}</td>
+            <td>{{ .username }}</td> <!-- TODO: replace with .name when available -->
             <td class="total">{{ $total }}</td>
             <td>
               <ul>
@@ -71,7 +89,18 @@
                 <li>Issues: {{ .summary.totalIssues }}</li>
                 <li>PR Comments: {{ .summary.totalPRComments }}</li>
                 <li>Issue Comments: {{ .summary.totalIssueComments }}</li>
+                <li>Projects Contributed To: {{ len .repos }}</li>
               </ul>
+              {{ if gt (len .repos) 0 }}
+              <details class="projects-toggle">
+                <summary>Show Projects</summary>
+                <ul class="project-list">
+                  {{ range .repos }}
+                    <li><a href="{{ .url }}" target="_blank">{{ .repoName }}</a>  {{ .description }}</li>
+                  {{ end }}
+                </ul>
+              </details>
+              {{ end }}
             </td>
           </tr>
         {{ end }}
@@ -79,13 +108,11 @@
     </table>
   </div>
 
-  <!-- Last updated -->
   <p class="last-updated">
     Last updated: {{ .Site.Data.remoteGeneratedAt }}
   </p>
 </div>
 
-<!-- Scripts -->
 <script>
   function sortTable() {
     const table = document.getElementById("contributorsTable");
@@ -101,7 +128,7 @@
 
       if (option === "most") return contribB - contribA;
       if (option === "least") return contribA - contribB;
-      if (option === "alpha") return nameA.localeCompare(nameB);
+      return nameA.localeCompare(nameB);
     });
 
     tbody.innerHTML = "";
@@ -110,11 +137,11 @@
 
   function filterTable() {
     const input = document.getElementById("searchInput");
-    const filter = input.value; // Case-sensitive
+    const filter = input.value.toLowerCase();
     const rows = document.querySelectorAll("#contributorsTable tbody tr");
 
     rows.forEach(row => {
-      const username = row.cells[0].textContent;
+      const username = row.cells[0].textContent.toLowerCase();
       row.style.display = username.includes(filter) ? "" : "none";
     });
   }
