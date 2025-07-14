@@ -1,89 +1,108 @@
-/* ========================
-   Base Styles
-======================== */
+/* Light Theme */
+html.light {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --border-color: #cccccc;
+  --row-alt-color: #f9f9f9;
+  --thead-bg-color: #f2f2f2;
+  --link-color: #007bff;
+  --link-hover: #0056b3;
+}
+
+/* Dark Theme */
+html.dark {
+  --bg-color: #121212;
+  --text-color: #eeeeee;
+  --border-color: #444444;
+  --row-alt-color: #1e1e1e;
+  --thead-bg-color: #2a2a2a;
+  --link-color: #66b1ff;
+  --link-hover: #99ccff;
+}
+
+/* Apply CSS Variables */
 body {
-  background-color: #121212;
-  color: var(--body-color, #eee);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-/* ========================
-   Summary and Metadata
-======================== */
-.community-summary {
-  margin: 1rem 0;
+/* Expand content to full width */
+body > div {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
+.community-summary,
 .last-updated {
-  font-style: italic;
-  color: #aaa;
-  margin-top: 1rem;
+  color: var(--text-color);
 }
 
 /* ========================
    Table Styling
-======================== */
+========================= */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#contributorsTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-color);
+  table-layout: auto;
+}
+
 #contributorsTable th,
 #contributorsTable td {
-  text-align: center;
-  vertical-align: middle;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
 }
 
-#contributorsTable td ul {
-  display: inline-block;
-  text-align: left;
-  margin: 0 auto;
-  padding-left: 1.2rem;
+#contributorsTable thead th {
+  background-color: var(--thead-bg-color);
+  font-weight: bold;
 }
 
-#contributorsTable td ul li {
-  margin-bottom: 0.2rem;
+#contributorsTable tbody tr {
+  background-color: var(--bg-color);
+}
+
+#contributorsTable tbody tr:nth-child(even) {
+  background-color: var(--row-alt-color);
 }
 
 /* ========================
-   Projects Toggle Styling
-======================== */
-.projects-toggle {
-  margin-top: 0.5rem;
-  text-align: left;
-}
-
-.projects-toggle summary {
-  cursor: pointer;
-  font-weight: bold;
-  color: #ccc;
-  padding: 0.3rem 0;
-  outline: none;
-}
-
-.projects-toggle[open] summary::after {
-  content: " ▲";
-}
-.projects-toggle summary::after {
-  content: " ▼";
-}
-
-.project-list {
-  padding-left: 1.5rem;
-  margin-top: 0.4rem;
-}
-
+   Project List
+========================= */
 .project-list li {
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
+  border-bottom: 1px dashed var(--border-color);
 }
 
 .project-list a {
-  color: #66b1ff;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 .project-list a:hover {
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
 /* ========================
-   Responsive Tweaks
-======================== */
+   Avatar
+========================= */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ========================
+   Responsive
+========================= */
 @media (max-width: 600px) {
   #contributorsTable th,
   #contributorsTable td {
@@ -91,7 +110,8 @@ body {
     padding: 0.5rem;
   }
 
-  #contributorsTable td ul {
-    padding-left: 1rem;
+  .avatar {
+    width: 32px;
+    height: 32px;
   }
 }

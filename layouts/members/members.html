@@ -1,118 +1,133 @@
 {{ define "main" }}
 <link rel="stylesheet" href="/css/members.css">
 
-<!-- Page Title -->
-<h1><br><br>{{ .Title }}</h1>
+<!-- Full-width wrapper using Docsy's theme-aware styling -->
+<div class="container-fluid px-4 my-theme-aware-content" style="color: var(--text-color); background-color: var(--bg-color);">
 
-<!-- Hebrew Description -->
-<p dir="rtl" class="text-right">
-  בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות.
-</p>
+  <!-- Page Title -->
+  <h1><br><br>{{ .Title }}</h1>
 
-<div dir="ltr">
-
-  <!-- ========================
-    Search & Sort Controls
-  ========================= -->
-  <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
-    <div>
-      <label for="searchInput" class="form-label mb-1">Search by username:</label>
-      <input type="text" class="form-control" id="searchInput" onkeyup="filterTable()" placeholder="Type a username..." />
-    </div>
-
-    <div>
-      <label for="sortOption" class="form-label mb-1">Sort by:</label>
-      <select class="form-control" id="sortOption" onchange="sortTable()">
-        <option value="alpha">Alphabetical (A–Z)</option>
-        <option value="most">Most Contributions</option>
-        <option value="least">Least Contributions</option>
-      </select>
-    </div>
-  </div>
-
-  <!-- ========================
-    Community Summary Section
-  ========================= -->
-  {{ $totalCommits := 0 }}
-  {{ $totalPRs := 0 }}
-  {{ $totalIssues := 0 }}
-  {{ $totalPRComments := 0 }}
-  {{ $totalIssueComments := 0 }}
-  {{ $totalUsers := 0 }}
-  {{ $uniqueProjects := dict }}
-
-  {{ range .Site.Data.remote }}
-    {{ $totalUsers = add $totalUsers 1 }}
-    {{ $totalCommits = add $totalCommits .summary.totalCommits }}
-    {{ $totalPRs = add $totalPRs .summary.totalPRs }}
-    {{ $totalIssues = add $totalIssues .summary.totalIssues }}
-    {{ $totalPRComments = add $totalPRComments .summary.totalPRComments }}
-    {{ $totalIssueComments = add $totalIssueComments .summary.totalIssueComments }}
-    {{ range .repos }}
-      {{ $uniqueProjects = merge $uniqueProjects (dict .url true) }}
-    {{ end }}
-  {{ end }}
-
-  <div class="community-summary">
-    <strong>Community Summary:</strong><br>
-    Contributors: {{ $totalUsers }} |
-    Projects: {{ len $uniqueProjects }} |
-    Commits: {{ $totalCommits }} |
-    PRs: {{ $totalPRs }} |
-    Issues: {{ $totalIssues }} |
-    PR Comments: {{ $totalPRComments }} |
-    Issue Comments: {{ $totalIssueComments }}
-  </div>
-
-  <!-- ===================
-    Contributors Table
-  ====================== -->
-  <div class="table-container">
-    <table id="contributorsTable" class="table table-bordered table-dark">
-      <thead class="thead-dark">
-        <tr>
-          <th>Username</th> <!-- TODO: replace with name when avialable and then fix the searchbox and search function -->
-          <th>Total Contributions</th>
-          <th>Details</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{ range .Site.Data.remote }}
-          {{ $total := add (add (add (add .summary.totalCommits .summary.totalPRs) .summary.totalIssues) .summary.totalPRComments) .summary.totalIssueComments }}
-          <tr>
-            <td>{{ .username }}</td> <!-- TODO: replace with .name when available -->
-            <td class="total">{{ $total }}</td>
-            <td>
-              <ul>
-                <li>Commits: {{ .summary.totalCommits }}</li>
-                <li>PRs: {{ .summary.totalPRs }}</li>
-                <li>Issues: {{ .summary.totalIssues }}</li>
-                <li>PR Comments: {{ .summary.totalPRComments }}</li>
-                <li>Issue Comments: {{ .summary.totalIssueComments }}</li>
-                <li>Projects Contributed To: {{ len .repos }}</li>
-              </ul>
-              {{ if gt (len .repos) 0 }}
-              <details class="projects-toggle">
-                <summary>Show Projects</summary>
-                <ul class="project-list">
-                  {{ range .repos }}
-                    <li><a href="{{ .url }}" target="_blank">{{ .repoName }}</a>  {{ .description }}</li>
-                  {{ end }}
-                </ul>
-              </details>
-              {{ end }}
-            </td>
-          </tr>
-        {{ end }}
-      </tbody>
-    </table>
-  </div>
-
-  <p class="last-updated">
-    Last updated: {{ .Site.Data.remoteGeneratedAt }}
+  <!-- Hebrew Description -->
+  <p dir="rtl" class="text-right">
+    בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות.
   </p>
+
+  <div dir="ltr">
+    <!-- ========================
+      Search & Sort Controls
+    ========================= -->
+    <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
+      <div>
+        <label for="searchInput" class="form-label mb-1">Search by username:</label>
+        <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="Type a username..." />
+      </div>
+
+      <div>
+        <label for="sortOption" class="form-label mb-1">Sort by:</label>
+        <select class="form-control text-reset" id="sortOption" onchange="sortTable()">
+          <option value="alpha">Alphabetical (A–Z)</option>
+          <option value="most">Most Contributions</option>
+          <option value="least">Least Contributions</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- ========================
+      Community Summary Section
+    ========================= -->
+    {{ $totalCommits := 0 }}
+    {{ $totalPRs := 0 }}
+    {{ $totalIssues := 0 }}
+    {{ $totalPRComments := 0 }}
+    {{ $totalIssueComments := 0 }}
+    {{ $totalUsers := 0 }}
+    {{ $uniqueProjects := dict }}
+
+    {{ range .Site.Data.remote }}
+      {{ $totalUsers = add $totalUsers 1 }}
+      {{ $totalCommits = add $totalCommits .summary.totalCommits }}
+      {{ $totalPRs = add $totalPRs .summary.totalPRs }}
+      {{ $totalIssues = add $totalIssues .summary.totalIssues }}
+      {{ $totalPRComments = add $totalPRComments .summary.totalPRComments }}
+      {{ $totalIssueComments = add $totalIssueComments .summary.totalIssueComments }}
+      {{ range .repos }}
+        {{ $uniqueProjects = merge $uniqueProjects (dict .url true) }}
+      {{ end }}
+    {{ end }}
+
+    <div class="community-summary my-3">
+      <strong>Community Summary:</strong><br>
+      Contributors: {{ $totalUsers }} |
+      Projects: {{ len $uniqueProjects }} |
+      Commits: {{ $totalCommits }} |
+      PRs: {{ $totalPRs }} |
+      Issues: {{ $totalIssues }} |
+      PR Comments: {{ $totalPRComments }} |
+      Issue Comments: {{ $totalIssueComments }}
+    </div>
+
+    <!-- ===================
+      Contributors Table
+    ====================== -->
+    <div class="table-container mb-4">
+      <table id="contributorsTable" class="table table-bordered text-reset w-100">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Total</th>
+            <th>Commits</th>
+            <th>PRs</th>
+            <th>Issues</th>
+            <th>PR Comments</th>
+            <th>Issue Comments</th>
+            <th>Projects</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Site.Data.remote }}
+            {{ $total := add (add (add (add .summary.totalCommits .summary.totalPRs) .summary.totalIssues) .summary.totalPRComments) .summary.totalIssueComments }}
+            <tr>
+              <td>
+                <div class="username-cell d-flex align-items-center gap-2">
+                  <img src="https://github.com/{{ .username }}.png" alt="{{ .username }}" class="avatar" />
+                  {{ .username }}
+                </div>
+              </td>
+              <td class="total">{{ $total }}</td>
+              <td>{{ .summary.totalCommits }}</td>
+              <td>{{ .summary.totalPRs }}</td>
+              <td>{{ .summary.totalIssues }}</td>
+              <td>{{ .summary.totalPRComments }}</td>
+              <td>{{ .summary.totalIssueComments }}</td>
+              <td>
+                {{ if gt (len .repos) 0 }}
+                  <details class="projects-toggle">
+                    <summary>{{ len .repos }} projects</summary>
+                    <ul class="project-list mt-2">
+                      {{ range .repos }}
+                        <li><a href="{{ .url }}" target="_blank">{{ .repoName }}</a> – {{ .description }}</li>
+                      {{ end }}
+                    </ul>
+                  </details>
+                {{ else }}
+                  —
+                {{ end }}
+              </td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="last-updated mb-5">
+      Last updated: {{ .Site.Data.remoteGeneratedAt }}
+    </p>
+  </div>
 </div>
 
+<!-- ========================
+  Scripts for Sort & Filter
+========================= -->
 <script>
   function sortTable() {
     const table = document.getElementById("contributorsTable");
