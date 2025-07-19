@@ -18,8 +18,8 @@
     ========================= -->
     <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
       <div>
-        <label for="searchInput" class="form-label mb-1">Search by username:</label>
-        <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="Type a username..." />
+        <label for="searchInput" class="form-label mb-1">Search by name, username, or bio:</label>
+        <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="Type to search..." />
       </div>
 
       <div>
@@ -35,35 +35,18 @@
     <!-- ========================
       Community Summary Section
     ========================= -->
-    {{ $totalCommits := 0 }}
-    {{ $totalPRs := 0 }}
-    {{ $totalIssues := 0 }}
-    {{ $totalPRComments := 0 }}
-    {{ $totalIssueComments := 0 }}
-    {{ $totalUsers := 0 }}
-    {{ $uniqueProjects := dict }}
-
-    {{ range .Site.Data.remote }}
-      {{ $totalUsers = add $totalUsers 1 }}
-      {{ $totalCommits = add $totalCommits .summary.totalCommits }}
-      {{ $totalPRs = add $totalPRs .summary.totalPRs }}
-      {{ $totalIssues = add $totalIssues .summary.totalIssues }}
-      {{ $totalPRComments = add $totalPRComments .summary.totalPRComments }}
-      {{ $totalIssueComments = add $totalIssueComments .summary.totalIssueComments }}
-      {{ range .repos }}
-        {{ $uniqueProjects = merge $uniqueProjects (dict .url true) }}
-      {{ end }}
-    {{ end }}
-
+    {{ $globalSummary := .Site.Data.github_data.globalSummary }}
+    
     <div class="community-summary my-3">
       <strong>Community Summary:</strong><br>
-      Contributors: {{ $totalUsers }} |
-      Projects: {{ len $uniqueProjects }} |
-      Commits: {{ $totalCommits }} |
-      PRs: {{ $totalPRs }} |
-      Issues: {{ $totalIssues }} |
-      PR Comments: {{ $totalPRComments }} |
-      Issue Comments: {{ $totalIssueComments }}
+      Contributors: {{ $globalSummary.totalUsers }} |
+      Projects: {{ $globalSummary.totalRepos }} |
+      Commits: {{ $globalSummary.totalCommits }} |
+      PRs: {{ $globalSummary.totalPRs }} |
+      Issues: {{ $globalSummary.totalIssues }} |
+      PR Comments: {{ $globalSummary.totalPRComments }} |
+      Issue Comments: {{ $globalSummary.totalIssueComments }}
+      <br><small class="text-muted">Analysis period: {{ $globalSummary.analysisTimeframe }} | Min fork filter: {{ $globalSummary.minForkCountFilter }}</small>
     </div>
 
     <!-- ===================
@@ -73,7 +56,7 @@
       <table id="contributorsTable" class="table table-bordered text-reset w-100">
         <thead>
           <tr>
-            <th>Username</th>
+            <th>User</th>
             <th>Total</th>
             <th>Commits</th>
             <th>PRs</th>
@@ -84,13 +67,30 @@
           </tr>
         </thead>
         <tbody>
-          {{ range .Site.Data.remote }}
+          {{ range .Site.Data.github_data.users }}
             {{ $total := add (add (add (add .summary.totalCommits .summary.totalPRs) .summary.totalIssues) .summary.totalPRComments) .summary.totalIssueComments }}
             <tr>
               <td>
                 <div class="username-cell d-flex align-items-center gap-2">
-                  <img src="https://github.com/{{ .username }}.png" alt="{{ .username }}" class="avatar" />
-                  {{ .username }}
+                  <img src="{{ .user.avatarUrl }}" alt="{{ .user.username }}" class="avatar" />
+                  <div>
+                    <div>
+                      <a href="https://github.com/{{ .user.username }}" target="_blank" class="text-decoration-none">
+                        <strong>{{ .user.displayName | default .user.username }}</strong>
+                      </a>
+                      <small class="text-muted">(@{{ .user.username }})</small>
+                    </div>
+                    {{ if .user.bio }}
+                      <small class="text-muted d-block">{{ .user.bio }}</small>
+                    {{ end }}
+                    {{ if or .user.location .user.company }}
+                      <small class="text-muted d-block">
+                        {{ if .user.location }}📍 {{ .user.location }}{{ end }}
+                        {{ if and .user.location .user.company }} | {{ end }}
+                        {{ if .user.company }}🏢 {{ .user.company }}{{ end }}
+                      </small>
+                    {{ end }}
+                  </div>
                 </div>
               </td>
               <td class="total">{{ $total }}</td>
@@ -105,7 +105,13 @@
                     <summary>{{ len .repos }} projects</summary>
                     <ul class="project-list mt-2">
                       {{ range .repos }}
-                        <li><a href="{{ .url }}" target="_blank">{{ .repoName }}</a> – {{ .description }}</li>
+                        <li>
+                          <a href="{{ .url }}" target="_blank">{{ .repoName }}</a>
+                          {{ if .description }} – {{ .description }}{{ end }}
+                          <br><small class="text-muted">
+                            C:{{ .commits }} | PR:{{ .pullRequests }} | I:{{ .issues }} | PRC:{{ .prComments }} | IC:{{ .issueComments }}
+                          </small>
+                        </li>
                       {{ end }}
                     </ul>
                   </details>
@@ -120,7 +126,8 @@
     </div>
 
     <p class="last-updated mb-5">
-      Last updated: {{ .Site.Data.remoteGeneratedAt }}
+      Last updated: {{ dateFormat "2006-01-02 15:04:05" now }} | 
+      Data generated: {{ .Site.Data.github_data.globalSummary.analysisTimeframe }}
     </p>
   </div>
 </div>
@@ -136,8 +143,9 @@
     const option = document.getElementById("sortOption").value;
 
     rows.sort((a, b) => {
-      const nameA = a.cells[0].textContent.trim().toLowerCase();
-      const nameB = b.cells[0].textContent.trim().toLowerCase();
+      // Get the display name or username from the first cell
+      const nameA = a.cells[0].querySelector('strong').textContent.trim().toLowerCase();
+      const nameB = b.cells[0].querySelector('strong').textContent.trim().toLowerCase();
       const contribA = parseInt(a.cells[1].textContent.trim());
       const contribB = parseInt(b.cells[1].textContent.trim());
 
@@ -156,8 +164,17 @@
     const rows = document.querySelectorAll("#contributorsTable tbody tr");
 
     rows.forEach(row => {
-      const username = row.cells[0].textContent.toLowerCase();
-      row.style.display = username.includes(filter) ? "" : "none";
+      const userCell = row.cells[0];
+      const displayName = userCell.querySelector('strong').textContent.toLowerCase();
+      const username = userCell.textContent.toLowerCase();
+      const bio = userCell.textContent.toLowerCase();
+      
+      // Search in display name, username, bio, location, and company
+      const isVisible = displayName.includes(filter) || 
+                       username.includes(filter) || 
+                       bio.includes(filter);
+      
+      row.style.display = isVisible ? "" : "none";
     });
   }
 </script>
