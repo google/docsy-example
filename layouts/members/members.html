@@ -14,22 +14,14 @@
 
   <div dir="ltr">
     <!-- ========================
-      Search & Sort Controls
+      Search Controls (Simplified)
     ========================= -->
     <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
       <div>
         <label for="searchInput" class="form-label mb-1">Search by name, username, or bio:</label>
         <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="Type to search..." />
       </div>
-
-      <div>
-        <label for="sortOption" class="form-label mb-1">Sort by:</label>
-        <select class="form-control text-reset" id="sortOption" onchange="sortTable()">
-          <option value="alpha">Alphabetical (A–Z)</option>
-          <option value="most">Most Contributions</option>
-          <option value="least">Least Contributions</option>
-        </select>
-      </div>
+      <small class="text-muted align-self-center">💡 Click column headers to sort</small>
     </div>
 
     <!-- ========================
@@ -56,17 +48,33 @@
       <table id="contributorsTable" class="table table-bordered text-reset w-100">
         <thead>
           <tr>
-            <th>User</th>
-            <th>Commits</th>
-            <th>PRs</th>
-            <th>Issues</th>
-            <th>PR Comments</th>
-            <th>Issue Comments</th>
+            <th class="sortable" data-column="0" data-type="text">
+              User <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="1" data-type="number">
+              Commits <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="2" data-type="number">
+              PRs <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="3" data-type="number">
+              Issues <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="4" data-type="number">
+              PR Comments <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="5" data-type="number">
+              Issue Comments <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="total" data-type="number">
+              Total <span class="sort-indicator"></span>
+            </th>
             <th>Projects</th>
           </tr>
         </thead>
         <tbody>
           {{ range .Site.Data.github_data.users }}
+            {{ $total := add (add (add (add .summary.totalCommits .summary.totalPRs) .summary.totalIssues) .summary.totalPRComments) .summary.totalIssueComments }}
             <tr>
               <td>
                 <div class="username-cell d-flex align-items-center gap-2">
@@ -96,6 +104,7 @@
               <td>{{ .summary.totalIssues }}</td>
               <td>{{ .summary.totalPRComments }}</td>
               <td>{{ .summary.totalIssueComments }}</td>
+              <td class="total-cell">{{ $total }}</td>
               <td>
                 {{ if gt (len .repos) 0 }}
                   <details class="projects-toggle">
@@ -132,35 +141,115 @@
 <!-- ========================
   Scripts for Sort & Filter
 ========================= -->
+<style>
+  .sortable {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: 20px !important;
+  }
+  
+  .sortable:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .sort-indicator {
+    position: absolute;
+    right: 8px;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .sortable.sort-asc .sort-indicator::after {
+    content: "▲";
+    color: #007bff;
+  }
+  
+  .sortable.sort-desc .sort-indicator::after {
+    content: "▼";
+    color: #007bff;
+  }
+  
+  .sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
+    content: "⇅";
+    font-size: 14px;
+    opacity: 0.4;
+  }
+</style>
+
 <script>
-  function sortTable() {
+  let currentSort = { column: null, direction: null };
+
+  // Initialize sortable headers
+  document.addEventListener('DOMContentLoaded', function() {
+    const sortableHeaders = document.querySelectorAll('.sortable');
+    sortableHeaders.forEach(header => {
+      header.addEventListener('click', function() {
+        const column = this.getAttribute('data-column');
+        const type = this.getAttribute('data-type');
+        sortTable(column, type, this);
+      });
+    });
+  });
+
+  function sortTable(column, type, headerElement) {
     const table = document.getElementById("contributorsTable");
     const tbody = table.querySelector("tbody");
     const rows = Array.from(tbody.querySelectorAll("tr"));
-    const option = document.getElementById("sortOption").value;
-
-    rows.sort((a, b) => {
-      // Get the display name or username from the first cell
-      const nameA = a.cells[0].querySelector('strong').textContent.trim().toLowerCase();
-      const nameB = b.cells[0].querySelector('strong').textContent.trim().toLowerCase();
-      
-      // Calculate total contributions for sorting (commits + PRs + issues + PR comments + issue comments)
-      const contribA = parseInt(a.cells[1].textContent.trim()) + 
-                      parseInt(a.cells[2].textContent.trim()) + 
-                      parseInt(a.cells[3].textContent.trim()) + 
-                      parseInt(a.cells[4].textContent.trim()) + 
-                      parseInt(a.cells[5].textContent.trim());
-      const contribB = parseInt(b.cells[1].textContent.trim()) + 
-                      parseInt(b.cells[2].textContent.trim()) + 
-                      parseInt(b.cells[3].textContent.trim()) + 
-                      parseInt(b.cells[4].textContent.trim()) + 
-                      parseInt(b.cells[5].textContent.trim());
-
-      if (option === "most") return contribB - contribA;
-      if (option === "least") return contribA - contribB;
-      return nameA.localeCompare(nameB);
+    
+    // Determine sort direction
+    let direction = 'asc';
+    if (currentSort.column === column && currentSort.direction === 'asc') {
+      direction = 'desc';
+    }
+    
+    // Update sort indicators
+    document.querySelectorAll('.sortable').forEach(th => {
+      th.classList.remove('sort-asc', 'sort-desc');
     });
-
+    headerElement.classList.add(direction === 'asc' ? 'sort-asc' : 'sort-desc');
+    
+    // Sort rows
+    rows.sort((a, b) => {
+      let valueA, valueB;
+      
+      if (column === 'total') {
+        // Calculate total for both rows
+        valueA = parseInt(a.cells[1].textContent.trim()) + 
+                 parseInt(a.cells[2].textContent.trim()) + 
+                 parseInt(a.cells[3].textContent.trim()) + 
+                 parseInt(a.cells[4].textContent.trim()) + 
+                 parseInt(a.cells[5].textContent.trim());
+        valueB = parseInt(b.cells[1].textContent.trim()) + 
+                 parseInt(b.cells[2].textContent.trim()) + 
+                 parseInt(b.cells[3].textContent.trim()) + 
+                 parseInt(b.cells[4].textContent.trim()) + 
+                 parseInt(b.cells[5].textContent.trim());
+      } else if (type === 'text') {
+        // For user column, get the display name
+        valueA = a.cells[column].querySelector('strong').textContent.trim().toLowerCase();
+        valueB = b.cells[column].querySelector('strong').textContent.trim().toLowerCase();
+      } else {
+        // For numeric columns
+        valueA = parseInt(a.cells[column].textContent.trim()) || 0;
+        valueB = parseInt(b.cells[column].textContent.trim()) || 0;
+      }
+      
+      let comparison = 0;
+      if (type === 'text') {
+        comparison = valueA.localeCompare(valueB);
+      } else {
+        comparison = valueA - valueB;
+      }
+      
+      return direction === 'desc' ? -comparison : comparison;
+    });
+    
+    // Update current sort state
+    currentSort = { column, direction };
+    
+    // Re-insert sorted rows
     tbody.innerHTML = "";
     rows.forEach(row => tbody.appendChild(row));
   }
