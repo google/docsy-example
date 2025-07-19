@@ -67,7 +67,6 @@ labels:
     issues: 'Issues'
     prComments: 'PR Comments'
     issueComments: 'Issue Comments'
-    total: 'Total'
     projects: 'Projects'
   
   # UI Elements
