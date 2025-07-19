@@ -10,6 +10,8 @@ weight: 1
   <a class="btn btn-lg btn-info me-3 mb-4" href="https://discord.com/invite/a2VyCjRk2M" target="_blank">🎮 הצטרפו לשרת הדיסקורד</a>
   <a class="btn btn-lg btn-success me-3 mb-4" href="https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h" target="_blank">💬 קהילת הוואטסאפ</a>
   <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts" target="_blank">📰 עדכוני מעקף בוואטסאפ</a>
+  <a class="btn btn-lg btn-danger me-3 mb-4" href="https://www.youtube.com/@maakaf-os" target="_blank">🎥 ערוץ היוטיוב</a>
+  <a class="btn btn-lg btn-warning me-3 mb-4" href="https://www.meetup.com/maakaf/" target="_blank">🤝 מפגשי מיטאפ</a>
   <div class="mx-auto mt-5" style="text-align: center;">
     <a class="btn btn-link text-info" href="#td-block-1" aria-label="קרא עוד">
       <i class="fa-solid fa-circle-chevron-down" style="font-size: 400%"></i>
