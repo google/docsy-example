@@ -9,24 +9,27 @@
 
   <!-- Hebrew Description -->
   <p dir="rtl" class="text-right">
-    בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות.
+    {{ .Params.description | default "בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות." }}
   </p>
 
-  <div dir="ltr">
+  <div dir="{{ .Params.pageConfig.direction | default "ltr" }}">
     <!-- ========================
       Search Controls (Simplified)
     ========================= -->
+    {{ if .Params.pageConfig.showSearch | default true }}
     <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
       <div>
-        <label for="searchInput" class="form-label mb-1">Search by name, username, or bio:</label>
-        <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="Type to search..." />
+        <label for="searchInput" class="form-label mb-1">{{ .Params.searchConfig.label | default "Search by name, username, or bio:" }}</label>
+        <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="{{ .Params.searchConfig.placeholder | default "Type to search..." }}" />
       </div>
-      <small class="text-muted align-self-center">💡 Click column headers to sort</small>
+      <small class="text-muted align-self-center">{{ .Params.searchConfig.helpText | default "💡 Click column headers to sort" }}</small>
     </div>
+    {{ end }}
 
     <!-- ========================
       Community Summary Section
     ========================= -->
+    {{ if .Params.pageConfig.showCommunityStats | default true }}
     {{ $globalSummary := .Site.Data.github_data.globalSummary }}
     
     <div class="community-summary my-3">
@@ -40,6 +43,7 @@
       Issue Comments: {{ $globalSummary.totalIssueComments }}
       <br><small class="text-muted">Analysis period: {{ $globalSummary.analysisTimeframe }} | Min fork filter: {{ $globalSummary.minForkCountFilter }}</small>
     </div>
+    {{ end }}
 
     <!-- ===================
       Contributors Table
@@ -132,8 +136,8 @@
     </div>
 
     <p class="last-updated mb-5">
-      Last updated: {{ dateFormat "2006-01-02 15:04:05" now }} | 
-      Data generated: {{ .Site.Data.github_data.globalSummary.analysisTimeframe }}
+      Last updated: {{ dateFormat (.Params.lastUpdatedFormat | default "2006-01-02 15:04:05") now }}{{ if .Params.showDataGenerationDate | default true }} | 
+      Data generated: {{ .Site.Data.github_data.globalSummary.analysisTimeframe }}{{ end }}
     </p>
   </div>
 </div>
