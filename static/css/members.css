@@ -1,0 +1,206 @@
+/* Light Theme */
+html.light {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --border-color: #cccccc;
+  --row-alt-color: #f9f9f9;
+  --thead-bg-color: #f2f2f2;
+  --link-color: #007bff;
+  --link-hover: #0056b3;
+}
+
+/* Dark Theme */
+html.dark {
+  --bg-color: #121212;
+  --text-color: #eeeeee;
+  --border-color: #444444;
+  --row-alt-color: #1e1e1e;
+  --thead-bg-color: #2a2a2a;
+  --link-color: #66b1ff;
+  --link-hover: #99ccff;
+}
+
+/* Apply CSS Variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Expand content to full width */
+body > div {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.community-summary,
+.last-updated {
+  color: var(--text-color);
+}
+
+/* ========================
+   Table Styling
+========================= */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#contributorsTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-color);
+  table-layout: auto;
+}
+
+#contributorsTable th,
+#contributorsTable td {
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+#contributorsTable thead th {
+  background-color: var(--thead-bg-color);
+  font-weight: bold;
+}
+
+#contributorsTable tbody tr {
+  background-color: var(--bg-color);
+}
+
+#contributorsTable tbody tr:nth-child(even) {
+  background-color: var(--row-alt-color);
+}
+
+/* ========================
+   Project List
+========================= */
+.project-list li {
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.project-list a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.project-list a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ========================
+   Avatar
+========================= */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ========================
+   Responsive
+========================= */
+@media (max-width: 600px) {
+  #contributorsTable th,
+  #contributorsTable td {
+    font-size: 13px;
+    padding: 0.5rem;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ========================
+   Sortable Table Headers
+========================= */
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 24px !important;
+  transition: background-color 0.2s ease;
+}
+
+.sortable:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.sort-indicator {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+/* Default state - show bidirectional arrow */
+.sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
+  content: "↕";
+  color: #999;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+/* Hover state - make default arrow more visible */
+.sortable:not(.sort-asc):not(.sort-desc):hover .sort-indicator::after {
+  color: #007bff;
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+/* Ascending sort */
+.sortable.sort-asc .sort-indicator::after {
+  content: "▲";
+  color: #007bff;
+  opacity: 1;
+}
+
+/* Descending sort */
+.sortable.sort-desc .sort-indicator::after {
+  content: "▼";
+  color: #007bff;
+  opacity: 1;
+}
+
+/* Dark theme support */
+html.dark .sortable:hover {
+  background-color: rgba(102, 177, 255, 0.15);
+}
+
+html.dark .sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
+  color: #aaa;
+}
+
+html.dark .sortable:not(.sort-asc):not(.sort-desc):hover .sort-indicator::after {
+  color: #66b1ff;
+}
+
+html.dark .sortable.sort-asc .sort-indicator::after,
+html.dark .sortable.sort-desc .sort-indicator::after {
+  color: #66b1ff;
+}
+
+/* ========================
+   How to Add Profile Styling
+========================= */
+.how-to-add-profile summary {
+  font-weight: 500;
+}
+
+.how-to-add-profile[open] .expand-text,
+.how-to-add-profile[open] .expand-icon {
+  display: none !important;
+}
+
+.how-to-add-profile[open] .collapse-text,
+.how-to-add-profile[open] .collapse-icon {
+  display: inline !important;
+}

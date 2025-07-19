@@ -1,0 +1,253 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/members.css">
+
+<!-- Full-width wrapper using Docsy's theme-aware styling -->
+<div class="container-fluid px-4 my-theme-aware-content" style="color: var(--text-color); background-color: var(--bg-color);">
+
+  <!-- Page Title -->
+  <h1><br><br>{{ .Title }}</h1>
+
+  <!-- Development Notice -->
+  {{ if .Params.developmentNotice.show | default false }}
+  <div dir="rtl" class="alert alert-warning mb-4">
+    <i class="fas fa-exclamation-triangle me-2"></i>
+    {{ .Params.developmentNotice.text }}
+  </div>
+  {{ end }}
+
+  <!-- Hebrew Description -->
+  <p dir="rtl" class="text-right">
+    {{ .Params.description | default "בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות." }}
+  </p>
+
+  <!-- How to Add Profile Instructions (Hebrew) -->
+  {{ if .Params.howToAddProfile.show | default false }}
+  <div dir="rtl" class="alert alert-info mb-4">
+    <h5 class="alert-heading">{{ .Params.howToAddProfile.title | default "איך להוסיף את הפרופיל שלך לטבלה?" }}</h5>
+    <details class="how-to-add-profile">
+      <summary class="text-primary" style="cursor: pointer; list-style: none;">
+        <span class="expand-text">{{ .Params.howToAddProfile.expandButtonText | default "הצג הוראות מלאות" }}</span>
+        <span class="collapse-text" style="display: none;">{{ .Params.howToAddProfile.collapseButtonText | default "הסתר הוראות" }}</span>
+        <i class="fas fa-chevron-down ms-2 expand-icon"></i>
+        <i class="fas fa-chevron-up ms-2 collapse-icon" style="display: none;"></i>
+      </summary>
+      <div class="mt-3">
+        {{ .Params.howToAddProfile.instructions | markdownify }}
+      </div>
+    </details>
+  </div>
+  {{ end }}
+
+  <div dir="{{ .Params.pageConfig.direction | default "ltr" }}">
+    <!-- ========================
+      Search Controls (Simplified)
+    ========================= -->
+    {{ if .Params.pageConfig.showSearch | default true }}
+    <div class="d-flex flex-wrap gap-3 align-items-end mb-4">
+      <div>
+        <label for="searchInput" class="form-label mb-1">{{ .Params.searchConfig.label | default "Search by name, username, or bio:" }}</label>
+        <input type="text" class="form-control text-reset" id="searchInput" onkeyup="filterTable()" placeholder="{{ .Params.searchConfig.placeholder | default "Type to search..." }}" />
+      </div>
+      <small class="text-muted align-self-center">{{ .Params.searchConfig.helpText | default "💡 Click column headers to sort" }}</small>
+    </div>
+    {{ end }}
+
+    <!-- ========================
+      Community Summary Section
+    ========================= -->
+    {{ if .Params.pageConfig.showCommunityStats | default true }}
+    {{ $globalSummary := .Site.Data.github_data.globalSummary }}
+    
+    <div class="community-summary my-3">
+      <strong>{{ .Params.labels.communitySummaryTitle | default "Community Summary:" }}</strong><br>
+      {{ .Params.labels.contributors | default "Contributors" }}: {{ $globalSummary.totalUsers }} |
+      {{ .Params.labels.projects | default "Projects" }}: {{ $globalSummary.totalRepos }} |
+      {{ .Params.labels.commits | default "Commits" }}: {{ $globalSummary.totalCommits }} |
+      {{ .Params.labels.prs | default "PRs" }}: {{ $globalSummary.totalPRs }} |
+      {{ .Params.labels.issues | default "Issues" }}: {{ $globalSummary.totalIssues }} |
+      {{ .Params.labels.prComments | default "PR Comments" }}: {{ $globalSummary.totalPRComments }} |
+      {{ .Params.labels.issueComments | default "Issue Comments" }}: {{ $globalSummary.totalIssueComments }}
+      <br><small class="text-muted">{{ .Params.labels.analysisPeriod | default "Analysis period" }}: {{ $globalSummary.analysisTimeframe }} | {{ .Params.labels.minForkFilter | default "Min fork filter" }}: {{ $globalSummary.minForkCountFilter }}</small>
+    </div>
+    {{ end }}
+
+    <!-- ===================
+      Contributors Table
+    ====================== -->
+    <div class="table-container mb-4">
+      <table id="contributorsTable" class="table table-bordered text-reset w-100">
+        <thead>
+          <tr>
+            <th class="sortable" data-column="0" data-type="text">
+              {{ .Params.labels.tableHeaders.user | default "User" }} <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="1" data-type="number">
+              {{ .Params.labels.tableHeaders.commits | default "Commits" }} <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="2" data-type="number">
+              {{ .Params.labels.tableHeaders.pullRequests | default "PRs" }} <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="3" data-type="number">
+              {{ .Params.labels.tableHeaders.issues | default "Issues" }} <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="4" data-type="number">
+              {{ .Params.labels.tableHeaders.prComments | default "PR Comments" }} <span class="sort-indicator"></span>
+            </th>
+            <th class="sortable" data-column="5" data-type="number">
+              {{ .Params.labels.tableHeaders.issueComments | default "Issue Comments" }} <span class="sort-indicator"></span>
+            </th>
+            <th>{{ .Params.labels.tableHeaders.projects | default "Projects" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range .Site.Data.github_data.users }}
+            <tr>
+              <td>
+                <div class="username-cell d-flex align-items-center gap-2">
+                  <img src="{{ .user.avatarUrl }}" alt="{{ .user.username }}" class="avatar" />
+                  <div>
+                    <div>
+                      <a href="https://github.com/{{ .user.username }}" target="_blank" class="text-decoration-none">
+                        <strong>{{ .user.displayName | default .user.username }}</strong>
+                      </a>
+                      <small class="text-muted">(@{{ .user.username }})</small>
+                    </div>
+                    {{ if .user.bio }}
+                      <small class="text-muted d-block">{{ .user.bio }}</small>
+                    {{ end }}
+                    {{ if or .user.location .user.company }}
+                      <small class="text-muted d-block">
+                        {{ if .user.location }}📍 {{ .user.location }}{{ end }}
+                        {{ if and .user.location .user.company }} | {{ end }}
+                        {{ if .user.company }}🏢 {{ .user.company }}{{ end }}
+                      </small>
+                    {{ end }}
+                  </div>
+                </div>
+              </td>
+              <td>{{ .summary.totalCommits }}</td>
+              <td>{{ .summary.totalPRs }}</td>
+              <td>{{ .summary.totalIssues }}</td>
+              <td>{{ .summary.totalPRComments }}</td>
+              <td>{{ .summary.totalIssueComments }}</td>
+              <td>
+                {{ if gt (len .repos) 0 }}
+                  <details class="projects-toggle">
+                    <summary>{{ len .repos }} {{ $.Params.labels.projectsCount | default "projects" }}</summary>
+                    <ul class="project-list mt-2">
+                      {{ range .repos }}
+                        <li>
+                          <a href="{{ .url }}" target="_blank">{{ .repoName }}</a>
+                          {{ if .description }} – {{ .description }}{{ end }}
+                          <br><small class="text-muted">
+                            {{ $.Params.labels.projectDetailsLabels.commits | default "C" }}:{{ .commits }} | {{ $.Params.labels.projectDetailsLabels.pullRequests | default "PR" }}:{{ .pullRequests }} | {{ $.Params.labels.projectDetailsLabels.issues | default "I" }}:{{ .issues }} | {{ $.Params.labels.projectDetailsLabels.prComments | default "PRC" }}:{{ .prComments }} | {{ $.Params.labels.projectDetailsLabels.issueComments | default "IC" }}:{{ .issueComments }}
+                          </small>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  </details>
+                {{ else }}
+                  —
+                {{ end }}
+              </td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="last-updated mb-5">
+      {{ .Params.labels.lastUpdated | default "Last updated" }}: {{ dateFormat (.Params.lastUpdatedFormat | default "2006-01-02 15:04:05") now }}{{ if .Params.showDataGenerationDate | default true }} | 
+      {{ .Params.labels.dataGenerated | default "Data generated" }}: {{ .Site.Data.github_data.globalSummary.analysisTimeframe }}{{ end }}
+    </p>
+  </div>
+</div>
+
+<!-- ========================
+  Scripts for Sort & Filter
+========================= -->
+<script>
+  let currentSort = { column: null, direction: null };
+
+  // Initialize sortable headers
+  document.addEventListener('DOMContentLoaded', function() {
+    const sortableHeaders = document.querySelectorAll('.sortable');
+    sortableHeaders.forEach(header => {
+      header.addEventListener('click', function() {
+        const column = this.getAttribute('data-column');
+        const type = this.getAttribute('data-type');
+        sortTable(column, type, this);
+      });
+    });
+  });
+
+  function sortTable(column, type, headerElement) {
+    const table = document.getElementById("contributorsTable");
+    const tbody = table.querySelector("tbody");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+    
+    // Determine sort direction
+    let direction = 'asc';
+    if (currentSort.column === column && currentSort.direction === 'asc') {
+      direction = 'desc';
+    }
+    
+    // Update sort indicators
+    document.querySelectorAll('.sortable').forEach(th => {
+      th.classList.remove('sort-asc', 'sort-desc');
+    });
+    headerElement.classList.add(direction === 'asc' ? 'sort-asc' : 'sort-desc');
+    
+    // Sort rows
+    rows.sort((a, b) => {
+      let valueA, valueB;
+      
+      if (type === 'text') {
+        // For user column, get the display name
+        valueA = a.cells[column].querySelector('strong').textContent.trim().toLowerCase();
+        valueB = b.cells[column].querySelector('strong').textContent.trim().toLowerCase();
+      } else {
+        // For numeric columns
+        valueA = parseInt(a.cells[column].textContent.trim()) || 0;
+        valueB = parseInt(b.cells[column].textContent.trim()) || 0;
+      }
+      
+      let comparison = 0;
+      if (type === 'text') {
+        comparison = valueA.localeCompare(valueB);
+      } else {
+        comparison = valueA - valueB;
+      }
+      
+      return direction === 'desc' ? -comparison : comparison;
+    });
+    
+    // Update current sort state
+    currentSort = { column, direction };
+    
+    // Re-insert sorted rows
+    tbody.innerHTML = "";
+    rows.forEach(row => tbody.appendChild(row));
+  }
+
+  function filterTable() {
+    const input = document.getElementById("searchInput");
+    const filter = input.value.toLowerCase();
+    const rows = document.querySelectorAll("#contributorsTable tbody tr");
+
+    rows.forEach(row => {
+      const userCell = row.cells[0];
+      const displayName = userCell.querySelector('strong').textContent.toLowerCase();
+      const username = userCell.textContent.toLowerCase();
+      const bio = userCell.textContent.toLowerCase();
+      
+      // Search in display name, username, bio, location, and company
+      const isVisible = displayName.includes(filter) || 
+                       username.includes(filter) || 
+                       bio.includes(filter);
+      
+      row.style.display = isVisible ? "" : "none";
+    });
+  }
+</script>
+{{ end }}

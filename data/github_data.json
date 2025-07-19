@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "user": {
+        "username": "baruchiro",
+        "displayName": "Baruch Odem (Rothkoff)",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/17686879?v=4",
+        "bio": "Software Developer at With",
+        "location": "Israel",
+        "company": "@with-org",
+        "blog": "https://baruchiro.com/",
+        "twitterUsername": "baruchiro",
+        "publicRepos": 164,
+        "followers": 70,
+        "following": 12,
+        "accountType": "User",
+        "createdAt": "2025-07-19T09:53:30.554Z"
+      },
+      "repos": [
+        {
+          "repoName": "WindowsLayoutSnapshot",
+          "description": "Windows app to remember + restore window positions",
+          "url": "https://github.com/adamsmith/WindowsLayoutSnapshot",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 7,
+          "pullRequests": 22,
+          "issues": 6,
+          "prComments": 62,
+          "issueComments": 83
+        },
+        {
+          "repoName": "caspion",
+          "description": "Automated budget tracking from Israeli financial institutions",
+          "url": "https://github.com/brafdlog/caspion",
+          "commits": 0,
+          "pullRequests": 17,
+          "issues": 11,
+          "prComments": 28,
+          "issueComments": 91
+        },
+        {
+          "repoName": "israeli-bank-scrapers-desktop",
+          "description": "Secure desktop app for retriving your transactions from all israeli banks and credit cards",
+          "url": "https://github.com/baruchiro/israeli-bank-scrapers-desktop",
+          "commits": 0,
+          "pullRequests": 17,
+          "issues": 54,
+          "prComments": 19,
+          "issueComments": 83
+        },
+        {
+          "repoName": "use-route-as-state",
+          "description": "Use React Router route and query string as component state",
+          "url": "https://github.com/baruchiro/use-route-as-state",
+          "commits": 0,
+          "pullRequests": 25,
+          "issues": 4,
+          "prComments": 35,
+          "issueComments": 30
+        },
+        {
+          "repoName": "overlay",
+          "description": "Overlay is a browser extension helping developers evaluate open source packages before picking them",
+          "url": "https://github.com/os-scar/overlay",
+          "commits": 0,
+          "pullRequests": 48,
+          "issues": 31,
+          "prComments": 27,
+          "issueComments": 73
+        }
+      ],
+      "summary": {
+        "totalCommits": 7,
+        "totalPRs": 129,
+        "totalIssues": 107,
+        "totalPRComments": 171,
+        "totalIssueComments": 364
+      }
+    },
+    {
+      "user": {
+        "username": "UrielOfir",
+        "displayName": "Uriel Ofir",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?u=4aaceee81155c1e2f5f35e486c0a6b699f48638d&v=4",
+        "bio": "Manager of the Israeli open-source community: maakaf.com.\r\nCOBOL programmer.",
+        "location": "Jerusalem, Israel",
+        "company": "mizrahi-tefahot",
+        "blog": "urielofir.website",
+        "twitterUsername": "OfirUriel",
+        "publicRepos": 81,
+        "followers": 34,
+        "following": 15,
+        "accountType": "User",
+        "createdAt": "2025-07-19T05:10:44.338Z"
+      },
+      "repos": [
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 4,
+          "prComments": 39,
+          "issueComments": 15
+        },
+        {
+          "repoName": "opensource-il-site",
+          "description": "Scrapes awesome-opensource-israel's readme and displays all projects",
+          "url": "https://github.com/yonatanmgr/opensource-il-site",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 3,
+          "prComments": 2,
+          "issueComments": 2
+        },
+        {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 10,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 10,
+        "totalPRs": 0,
+        "totalIssues": 7,
+        "totalPRComments": 41,
+        "totalIssueComments": 17
+      }
+    }
+  ],
+  "globalSummary": {
+    "totalCommits": 17,
+    "totalPRs": 129,
+    "totalIssues": 114,
+    "totalPRComments": 212,
+    "totalIssueComments": 381,
+    "totalRepos": 9,
+    "successfulUsers": 2,
+    "failedUsers": 0,
+    "totalUsers": 2,
+    "analysisTimeframe": "2025-01-17 to 2025-07-19",
+    "minForkCountFilter": "3"
+  }
+}

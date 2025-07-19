@@ -1,0 +1,13 @@
+{
+  "apiUrl": "https://maakafhomebackend-production.up.railway.app/github",
+  "usernames": [
+    "baruchiro",
+    "UrielOfir"
+  ],
+  "outputDir": "data",
+  "outputFile": "github_data.json",
+  "requestTimeout": 60000,
+  "maxRetries": 3,
+  "retryDelay": 2000,
+  "logLevel": "info"
+}
