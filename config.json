@@ -2,7 +2,8 @@
   "apiUrl": "https://maakafhomebackend-production.up.railway.app/github",
   "usernames": [
     "baruchiro",
-    "UrielOfir"
+    "UrielOfir",
+    "moshe-stein24"
   ],
   "outputDir": "data",
   "outputFile": "github_data.json",
