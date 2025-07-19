@@ -123,35 +123,69 @@ body > div {
   cursor: pointer;
   user-select: none;
   position: relative;
-  padding-right: 20px !important;
+  padding-right: 24px !important;
+  transition: background-color 0.2s ease;
 }
 
 .sortable:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 123, 255, 0.1);
 }
 
 .sort-indicator {
   position: absolute;
-  right: 8px;
-  color: #ccc;
-  font-size: 16px;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
   font-weight: bold;
+  transition: all 0.2s ease;
 }
 
+/* Default state - show bidirectional arrow */
+.sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
+  content: "↕";
+  color: #999;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+/* Hover state - make default arrow more visible */
+.sortable:not(.sort-asc):not(.sort-desc):hover .sort-indicator::after {
+  color: #007bff;
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+/* Ascending sort */
 .sortable.sort-asc .sort-indicator::after {
   content: "▲";
   color: #007bff;
+  opacity: 1;
 }
 
+/* Descending sort */
 .sortable.sort-desc .sort-indicator::after {
   content: "▼";
   color: #007bff;
+  opacity: 1;
 }
 
-.sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
-  content: "⇅";
-  font-size: 14px;
-  opacity: 0.4;
+/* Dark theme support */
+html.dark .sortable:hover {
+  background-color: rgba(102, 177, 255, 0.15);
+}
+
+html.dark .sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
+  color: #aaa;
+}
+
+html.dark .sortable:not(.sort-asc):not(.sort-desc):hover .sort-indicator::after {
+  color: #66b1ff;
+}
+
+html.dark .sortable.sort-asc .sort-indicator::after,
+html.dark .sortable.sort-desc .sort-indicator::after {
+  color: #66b1ff;
 }
 
 /* ========================

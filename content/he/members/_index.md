@@ -39,7 +39,7 @@ pageConfig:
 searchConfig:
   placeholder: 'Type to search...'
   label: 'Search by name, username, or bio:'
-  helpText: '💡 Click column headers to sort'
+  helpText: '💡 Click column headers (↕) to sort data'
 
 # Date and Update Configuration
 lastUpdatedFormat: '2006-01-02 15:04:05'
