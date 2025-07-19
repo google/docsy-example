@@ -15,6 +15,12 @@ developmentNotice:
   show: true
   text: 'הדף שלפניכם נמצא בתהליכי פיתוח וייתכן שיש בו שגיאות. בכל עניין (פיתוח חדש, שאלות או הערות נא לפנות לאוריאל אופיר urielofir@gmail.com).'
 
+# Table Information
+tableInfo:
+  show: true
+  title: '📊 על הטבלה'
+  text: 'בטבלה שלפניכם מופיעה פעילות מחצי השנה האחרונה מספריות קוד פתוח, כלומר ספריות שיש להן לפחות 3 פורקים (forks).'
+
 # How to Add Your Profile Instructions (Hebrew)
 howToAddProfile:
   show: true

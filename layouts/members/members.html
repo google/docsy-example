@@ -15,10 +15,19 @@
   </div>
   {{ end }}
 
+
   <!-- Hebrew Description -->
   <p dir="rtl" class="text-right">
     {{ .Params.description | default "בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות." }}
   </p>
+
+  <!-- Table Information -->
+  {{ if .Params.tableInfo.show | default false }}
+  <div dir="rtl" class="alert alert-primary mb-4">
+    <h5 class="alert-heading">{{ .Params.tableInfo.title | default "📊 על הטבלה" }}</h5>
+    <p class="mb-0">{{ .Params.tableInfo.text }}</p>
+  </div>
+  {{ end }}
 
   <!-- How to Add Profile Instructions (Hebrew) -->
   {{ if .Params.howToAddProfile.show | default false }}
