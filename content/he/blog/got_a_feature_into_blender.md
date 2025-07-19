@@ -52,7 +52,7 @@ author: "עידו שחר"
 אז תודה לאוריאל ולקהילה הזאת על הדחיפה! 🙌
 
 ## למי שרוצה לנסות את בלנדר
-אפשר <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">להוריד אותה בחינם כאן</a>, ואם מעולם לא נגעתם בתוכנת תלת מימד, אני ממליץ על <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">סדרת הסרטונים הזאת</a>, זה מכסה את רוב הבייסיקס.
+אפשר <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">להוריד אותה בחינם כאן</a>, ואם מעולם לא נגעתם בתוכנת תלת מימד, אני ממליץ על <a href="https://www.youtube.com/watch?v=j14b25SnYRY&list=PL3UWN2F2M2C8-zUjbFlbgtWPQa0NXBsp0" target="_blank" rel="noopener noreferrer">סדרת הסרטונים הזאת</a>, זה מכסה את רוב הבייסיקס.
 בהצלחה!
 
 ---

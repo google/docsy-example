@@ -51,6 +51,7 @@ We welcome contributions from the community! Whether it's:
 - Fixing typos or improving existing content
 - Translating content
 - Suggesting improvements
+- [Join the website channel in our Discord server](https://discord.gg/ctjv8vKZez)
 
 Please feel free to open an issue or submit a pull request.
 
