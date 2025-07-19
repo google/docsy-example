@@ -7,10 +7,36 @@
   <!-- Page Title -->
   <h1><br><br>{{ .Title }}</h1>
 
+  <!-- Development Notice -->
+  {{ if .Params.developmentNotice.show | default false }}
+  <div dir="rtl" class="alert alert-warning mb-4">
+    <i class="fas fa-exclamation-triangle me-2"></i>
+    {{ .Params.developmentNotice.text }}
+  </div>
+  {{ end }}
+
   <!-- Hebrew Description -->
   <p dir="rtl" class="text-right">
     {{ .Params.description | default "בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות." }}
   </p>
+
+  <!-- How to Add Profile Instructions (Hebrew) -->
+  {{ if .Params.howToAddProfile.show | default false }}
+  <div dir="rtl" class="alert alert-info mb-4">
+    <h5 class="alert-heading">{{ .Params.howToAddProfile.title | default "איך להוסיף את הפרופיל שלך לטבלה?" }}</h5>
+    <details class="how-to-add-profile">
+      <summary class="text-primary" style="cursor: pointer; list-style: none;">
+        <span class="expand-text">{{ .Params.howToAddProfile.expandButtonText | default "הצג הוראות מלאות" }}</span>
+        <span class="collapse-text" style="display: none;">{{ .Params.howToAddProfile.collapseButtonText | default "הסתר הוראות" }}</span>
+        <i class="fas fa-chevron-down ms-2 expand-icon"></i>
+        <i class="fas fa-chevron-up ms-2 collapse-icon" style="display: none;"></i>
+      </summary>
+      <div class="mt-3">
+        {{ .Params.howToAddProfile.instructions | markdownify }}
+      </div>
+    </details>
+  </div>
+  {{ end }}
 
   <div dir="{{ .Params.pageConfig.direction | default "ltr" }}">
     <!-- ========================
@@ -145,43 +171,6 @@
 <!-- ========================
   Scripts for Sort & Filter
 ========================= -->
-<style>
-  .sortable {
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    padding-right: 20px !important;
-  }
-  
-  .sortable:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  
-  .sort-indicator {
-    position: absolute;
-    right: 8px;
-    color: #ccc;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .sortable.sort-asc .sort-indicator::after {
-    content: "▲";
-    color: #007bff;
-  }
-  
-  .sortable.sort-desc .sort-indicator::after {
-    content: "▼";
-    color: #007bff;
-  }
-  
-  .sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
-    content: "⇅";
-    font-size: 14px;
-    opacity: 0.4;
-  }
-</style>
-
 <script>
   let currentSort = { column: null, direction: null };
 

@@ -115,3 +115,58 @@ body > div {
     height: 32px;
   }
 }
+
+/* ========================
+   Sortable Table Headers
+========================= */
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 20px !important;
+}
+
+.sortable:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sort-indicator {
+  position: absolute;
+  right: 8px;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sortable.sort-asc .sort-indicator::after {
+  content: "▲";
+  color: #007bff;
+}
+
+.sortable.sort-desc .sort-indicator::after {
+  content: "▼";
+  color: #007bff;
+}
+
+.sortable:not(.sort-asc):not(.sort-desc) .sort-indicator::after {
+  content: "⇅";
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+/* ========================
+   How to Add Profile Styling
+========================= */
+.how-to-add-profile summary {
+  font-weight: 500;
+}
+
+.how-to-add-profile[open] .expand-text,
+.how-to-add-profile[open] .expand-icon {
+  display: none !important;
+}
+
+.how-to-add-profile[open] .collapse-text,
+.how-to-add-profile[open] .collapse-icon {
+  display: inline !important;
+}

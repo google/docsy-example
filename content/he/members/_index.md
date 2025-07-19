@@ -10,6 +10,23 @@ menu:
 # Page Content
 description: 'בדף זה תוכלו לראות את רשימת התורמים לקהילה, כולל מידע על תרומתם: קומיטים, בקשות משיכה, תגובות ומספר פרויקטים בהם השתתפו. ניתן למיין ולחפש לפי שם או לפי כמות תרומות.'
 
+# Development Notice
+developmentNotice:
+  show: true
+  text: 'הדף שלפניכם נמצא בתהליכי פיתוח וייתכן שיש בו שגיאות. בכל עניין (פיתוח חדש, שאלות או הערות נא לפנות לאוריאל אופיר urielofir@gmail.com).'
+
+# How to Add Your Profile Instructions (Hebrew)
+howToAddProfile:
+  show: true
+  title: 'איך להוסיף את הפרופיל שלך לטבלה?'
+  instructions: |
+    יש לך פרופיל בגיטהאב ורוצה שהתרומות שלך יופיעו בטבלה? הנה איך לעשות זאת:
+    
+    1. **צור Pull Request** - הוסף את שם המשתמש שלך ל<a href="https://github.com/Maakaf/maakaf_home/blob/main/config.json" target="_blank">קובץ הקונפיגורציה</a> (במערך `usernames` - הוסף את שם המשתמש שלך בתוך גרשיים עם פסיק)
+    2. **חכה לאישור ה-Pull Request שלך** - כאשר זה יקרה הנתונים שלך יצורפו לטבלה
+  expandButtonText: 'הצג הוראות מלאות'
+  collapseButtonText: 'הסתר הוראות'
+
 # Page Configuration
 pageConfig:
   showSearch: true

@@ -40,7 +40,6 @@
     "@types/node": "^24.0.10",
     "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
-    "dotenv": "^17.0.1",
     "hugo-extended": "0.148.1",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0",

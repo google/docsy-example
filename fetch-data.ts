@@ -1,10 +1,6 @@
-import * as dotenv from 'dotenv';
 import { promises as fs } from 'fs';
 import { fileURLToPath } from 'url';
 import * as path from 'path';
-
-// Load environment variables
-dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -27,59 +23,59 @@ interface ApiResponse {
 }
 
 /**
- * Get configuration from environment variables with validation and defaults
+ * Get configuration from config.json file with minimal environment variable fallback
  */
-function getConfig(): Config {
-  const apiUrl = process.env.GITHUB_DATA_URL;
-  if (!apiUrl) {
-    throw new Error('GITHUB_DATA_URL environment variable is required');
+async function getConfig(): Promise<Config> {
+  const configPath = path.join(__dirname, 'config.json');
+  
+  try {
+    // Try to load from config.json
+    const configFile = await fs.readFile(configPath, 'utf-8');
+    const jsonConfig = JSON.parse(configFile);
+    
+    // Validate required fields
+    if (!jsonConfig.apiUrl) {
+      throw new Error('apiUrl is required in config.json');
+    }
+    
+    if (!Array.isArray(jsonConfig.usernames) || jsonConfig.usernames.length === 0) {
+      throw new Error('usernames array is required and must not be empty in config.json');
+    }
+    
+    return {
+      apiUrl: jsonConfig.apiUrl,
+      usernames: jsonConfig.usernames,
+      outputDir: jsonConfig.outputDir || 'data',
+      outputFile: jsonConfig.outputFile || 'github_data.json',
+      requestTimeout: parseInt(jsonConfig.requestTimeout, 10) || 60000,
+      maxRetries: parseInt(jsonConfig.maxRetries, 10) || 3,
+      retryDelay: parseInt(jsonConfig.retryDelay, 10) || 2000,
+      logLevel: jsonConfig.logLevel || 'info'
+    };
+  } catch (error) {
+    // Minimal fallback to environment variables for deployment scenarios
+    console.log('Could not load config.json, trying environment variables...');
+    
+    const apiUrl = process.env.GITHUB_DATA_URL;
+    if (!apiUrl) {
+      throw new Error('config.json not found and GITHUB_DATA_URL environment variable not set. Please create a config.json file or set environment variables.');
+    }
+
+    const usernames = process.env.USERNAMES 
+      ? process.env.USERNAMES.split(',').map(u => u.trim()).filter(u => u.length > 0)
+      : ["baruchiro", "UrielOfir"];
+
+    return {
+      apiUrl,
+      usernames,
+      outputDir: process.env.OUTPUT_DIR || 'data',
+      outputFile: process.env.OUTPUT_FILE || 'github_data.json',
+      requestTimeout: parseInt(process.env.REQUEST_TIMEOUT || '60000', 10),
+      maxRetries: parseInt(process.env.MAX_RETRIES || '3', 10),
+      retryDelay: parseInt(process.env.RETRY_DELAY || '2000', 10),
+      logLevel: (process.env.LOG_LEVEL || 'info') as Config['logLevel']
+    };
   }
-
-  // Get usernames from environment or use defaults
-  const usernames = process.env.USERNAMES 
-    ? process.env.USERNAMES.split(',').map(u => u.trim()).filter(u => u.length > 0)
-    : ["baruchiro", "UrielOfir"];
-
-  // Get output configuration
-  const outputDir = process.env.OUTPUT_DIR || 'data';
-  const outputFile = process.env.OUTPUT_FILE || 'github_data.json';
-
-  // Get request timeout (with validation)
-  const timeoutStr = process.env.REQUEST_TIMEOUT || '15000';
-  const requestTimeout = parseInt(timeoutStr, 10);
-  if (isNaN(requestTimeout) || requestTimeout <= 0) {
-    throw new Error(`Invalid REQUEST_TIMEOUT: ${timeoutStr}. Must be a positive number.`);
-  }
-
-  // Get retry configuration
-  const maxRetriesStr = process.env.MAX_RETRIES || '3';
-  const maxRetries = parseInt(maxRetriesStr, 10);
-  if (isNaN(maxRetries) || maxRetries < 0) {
-    throw new Error(`Invalid MAX_RETRIES: ${maxRetriesStr}. Must be a non-negative number.`);
-  }
-
-  const retryDelayStr = process.env.RETRY_DELAY || '2000';
-  const retryDelay = parseInt(retryDelayStr, 10);
-  if (isNaN(retryDelay) || retryDelay < 0) {
-    throw new Error(`Invalid RETRY_DELAY: ${retryDelayStr}. Must be a non-negative number.`);
-  }
-
-  // Get log level
-  const logLevel = (process.env.LOG_LEVEL || 'info') as Config['logLevel'];
-  if (!['debug', 'info', 'warn', 'error'].includes(logLevel)) {
-    throw new Error(`Invalid LOG_LEVEL: ${logLevel}. Must be one of: debug, info, warn, error`);
-  }
-
-  return {
-    apiUrl,
-    usernames,
-    outputDir: path.join(__dirname, outputDir),
-    outputFile,
-    requestTimeout,
-    maxRetries,
-    retryDelay,
-    logLevel
-  };
 }
 
 /**
@@ -262,7 +258,7 @@ async function fetchUserData(config: Config, logger: Logger): Promise<ApiRespons
 async function main(): Promise<void> {
   try {
     // Get and validate configuration
-    const config = getConfig();
+    const config = await getConfig();
     const logger = new Logger(config.logLevel);
     const outFile = path.join(config.outputDir, config.outputFile);
     
