@@ -27,4 +27,42 @@ searchConfig:
 # Date and Update Configuration
 lastUpdatedFormat: '2006-01-02 15:04:05'
 showDataGenerationDate: true
+
+# Labels and Static Text
+labels:
+  # Community Summary
+  communitySummaryTitle: 'Community Summary:'
+  contributors: 'Contributors'
+  projects: 'Projects'
+  commits: 'Commits'
+  prs: 'PRs'
+  issues: 'Issues'
+  prComments: 'PR Comments'
+  issueComments: 'Issue Comments'
+  analysisPeriod: 'Analysis period'
+  minForkFilter: 'Min fork filter'
+  
+  # Table Headers
+  tableHeaders:
+    user: 'User'
+    commits: 'Commits'
+    pullRequests: 'PRs'
+    issues: 'Issues'
+    prComments: 'PR Comments'
+    issueComments: 'Issue Comments'
+    total: 'Total'
+    projects: 'Projects'
+  
+  # UI Elements
+  projectsCount: 'projects'  # Used in "X projects" text
+  lastUpdated: 'Last updated'
+  dataGenerated: 'Data generated'
+  
+  # Project Details
+  projectDetailsLabels:
+    commits: 'C'
+    pullRequests: 'PR'
+    issues: 'I'
+    prComments: 'PRC'
+    issueComments: 'IC'
 ---

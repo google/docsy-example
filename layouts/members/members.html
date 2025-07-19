@@ -33,15 +33,15 @@
     {{ $globalSummary := .Site.Data.github_data.globalSummary }}
     
     <div class="community-summary my-3">
-      <strong>Community Summary:</strong><br>
-      Contributors: {{ $globalSummary.totalUsers }} |
-      Projects: {{ $globalSummary.totalRepos }} |
-      Commits: {{ $globalSummary.totalCommits }} |
-      PRs: {{ $globalSummary.totalPRs }} |
-      Issues: {{ $globalSummary.totalIssues }} |
-      PR Comments: {{ $globalSummary.totalPRComments }} |
-      Issue Comments: {{ $globalSummary.totalIssueComments }}
-      <br><small class="text-muted">Analysis period: {{ $globalSummary.analysisTimeframe }} | Min fork filter: {{ $globalSummary.minForkCountFilter }}</small>
+      <strong>{{ .Params.labels.communitySummaryTitle | default "Community Summary:" }}</strong><br>
+      {{ .Params.labels.contributors | default "Contributors" }}: {{ $globalSummary.totalUsers }} |
+      {{ .Params.labels.projects | default "Projects" }}: {{ $globalSummary.totalRepos }} |
+      {{ .Params.labels.commits | default "Commits" }}: {{ $globalSummary.totalCommits }} |
+      {{ .Params.labels.prs | default "PRs" }}: {{ $globalSummary.totalPRs }} |
+      {{ .Params.labels.issues | default "Issues" }}: {{ $globalSummary.totalIssues }} |
+      {{ .Params.labels.prComments | default "PR Comments" }}: {{ $globalSummary.totalPRComments }} |
+      {{ .Params.labels.issueComments | default "Issue Comments" }}: {{ $globalSummary.totalIssueComments }}
+      <br><small class="text-muted">{{ .Params.labels.analysisPeriod | default "Analysis period" }}: {{ $globalSummary.analysisTimeframe }} | {{ .Params.labels.minForkFilter | default "Min fork filter" }}: {{ $globalSummary.minForkCountFilter }}</small>
     </div>
     {{ end }}
 
@@ -53,27 +53,27 @@
         <thead>
           <tr>
             <th class="sortable" data-column="0" data-type="text">
-              User <span class="sort-indicator"></span>
+              {{ .Params.labels.tableHeaders.user | default "User" }} <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-column="1" data-type="number">
-              Commits <span class="sort-indicator"></span>
+              {{ .Params.labels.tableHeaders.commits | default "Commits" }} <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-column="2" data-type="number">
-              PRs <span class="sort-indicator"></span>
+              {{ .Params.labels.tableHeaders.pullRequests | default "PRs" }} <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-column="3" data-type="number">
-              Issues <span class="sort-indicator"></span>
+              {{ .Params.labels.tableHeaders.issues | default "Issues" }} <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-column="4" data-type="number">
-              PR Comments <span class="sort-indicator"></span>
+              {{ .Params.labels.tableHeaders.prComments | default "PR Comments" }} <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-column="5" data-type="number">
-              Issue Comments <span class="sort-indicator"></span>
+              {{ .Params.labels.tableHeaders.issueComments | default "Issue Comments" }} <span class="sort-indicator"></span>
             </th>
             <th class="sortable" data-column="total" data-type="number">
-              Total <span class="sort-indicator"></span>
+              {{ .Params.labels.tableHeaders.total | default "Total" }} <span class="sort-indicator"></span>
             </th>
-            <th>Projects</th>
+            <th>{{ .Params.labels.tableHeaders.projects | default "Projects" }}</th>
           </tr>
         </thead>
         <tbody>
@@ -112,14 +112,14 @@
               <td>
                 {{ if gt (len .repos) 0 }}
                   <details class="projects-toggle">
-                    <summary>{{ len .repos }} projects</summary>
+                    <summary>{{ len .repos }} {{ $.Params.labels.projectsCount | default "projects" }}</summary>
                     <ul class="project-list mt-2">
                       {{ range .repos }}
                         <li>
                           <a href="{{ .url }}" target="_blank">{{ .repoName }}</a>
                           {{ if .description }} – {{ .description }}{{ end }}
                           <br><small class="text-muted">
-                            C:{{ .commits }} | PR:{{ .pullRequests }} | I:{{ .issues }} | PRC:{{ .prComments }} | IC:{{ .issueComments }}
+                            {{ $.Params.labels.projectDetailsLabels.commits | default "C" }}:{{ .commits }} | {{ $.Params.labels.projectDetailsLabels.pullRequests | default "PR" }}:{{ .pullRequests }} | {{ $.Params.labels.projectDetailsLabels.issues | default "I" }}:{{ .issues }} | {{ $.Params.labels.projectDetailsLabels.prComments | default "PRC" }}:{{ .prComments }} | {{ $.Params.labels.projectDetailsLabels.issueComments | default "IC" }}:{{ .issueComments }}
                           </small>
                         </li>
                       {{ end }}
@@ -136,8 +136,8 @@
     </div>
 
     <p class="last-updated mb-5">
-      Last updated: {{ dateFormat (.Params.lastUpdatedFormat | default "2006-01-02 15:04:05") now }}{{ if .Params.showDataGenerationDate | default true }} | 
-      Data generated: {{ .Site.Data.github_data.globalSummary.analysisTimeframe }}{{ end }}
+      {{ .Params.labels.lastUpdated | default "Last updated" }}: {{ dateFormat (.Params.lastUpdatedFormat | default "2006-01-02 15:04:05") now }}{{ if .Params.showDataGenerationDate | default true }} | 
+      {{ .Params.labels.dataGenerated | default "Data generated" }}: {{ .Site.Data.github_data.globalSummary.analysisTimeframe }}{{ end }}
     </p>
   </div>
 </div>
