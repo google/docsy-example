@@ -28,12 +28,31 @@ function renderQuiz(containerId, quiz) {
           if (idx + 1 < quiz.length) {
             showQuestion(idx + 1);
           } else {
-            container.innerHTML = `<div class='quiz-result'>תמו השאלות, התוצאה שלך: ${score}/${quiz.length}</div>`;
+            showResults();
           }
         }, 800);
       };
     });
   }
+
+  function showResults() {
+    let resultsHTML = `<div class='quiz-result'>תמו השאלות, התוצאה שלך: ${score}/${quiz.length}</div>`;
+    resultsHTML += `<div class='quiz-review'><h3>סיכום השאלות והתשובות הנכונות:</h3>`;
+    
+    quiz.forEach((q, index) => {
+      resultsHTML += `
+        <div class='quiz-review-item'>
+          <div class='quiz-review-question'><strong>שאלה ${index + 1}:</strong> ${q.question}</div>
+          <div class='quiz-review-answer'><strong>התשובה הנכונה:</strong> ${q.options[q.answer]}</div>
+        </div>
+        <br>
+      `;
+    });
+    
+    resultsHTML += `</div>`;
+    container.innerHTML = resultsHTML;
+  }
+
   showQuestion(current);
 }
 // To use: renderQuiz('quiz-container', quizData); 
