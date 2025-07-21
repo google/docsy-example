@@ -24,3 +24,5 @@ description: "שמחים להכריז על הקמת הקהילה"
 אל תישארו לבד. בואו נבנה יחד את קהילת המיינפריים החזקה של ישראל. 💪
 
 לפרטים נוספים ולהצטרפות לקבוצת הוואטסאפ שלנו, בקרו באתר הקהילה: **cobol-israel.site**
+
+{{< comments >}}
