@@ -10,11 +10,11 @@
         "company": "@with-org",
         "blog": "https://baruchiro.com/",
         "twitterUsername": "baruchiro",
-        "publicRepos": 164,
-        "followers": 70,
+        "publicRepos": 165,
+        "followers": 69,
         "following": 12,
         "accountType": "User",
-        "createdAt": "2025-07-19T09:53:30.554Z"
+        "createdAt": "2025-07-19T18:53:02.255Z"
       },
       "repos": [
         {
@@ -96,11 +96,11 @@
         "company": "mizrahi-tefahot",
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
-        "publicRepos": 81,
-        "followers": 34,
+        "publicRepos": 82,
+        "followers": 35,
         "following": 15,
         "accountType": "User",
-        "createdAt": "2025-07-19T05:10:44.338Z"
+        "createdAt": "2025-07-19T15:33:52.271Z"
       },
       "repos": [
         {
@@ -141,6 +141,31 @@
         "totalPRComments": 41,
         "totalIssueComments": 17
       }
+    },
+    {
+      "user": {
+        "username": "moshe-stein24",
+        "displayName": null,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": null,
+        "twitterUsername": null,
+        "publicRepos": 6,
+        "followers": 0,
+        "following": 1,
+        "accountType": "User",
+        "createdAt": "2025-07-19T18:53:26.111Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
     }
   ],
   "globalSummary": {
@@ -150,10 +175,10 @@
     "totalPRComments": 212,
     "totalIssueComments": 381,
     "totalRepos": 9,
-    "successfulUsers": 2,
+    "successfulUsers": 3,
     "failedUsers": 0,
-    "totalUsers": 2,
-    "analysisTimeframe": "2025-01-17 to 2025-07-19",
-    "minForkCountFilter": "3"
+    "totalUsers": 3,
+    "analysisTimeframe": "2025-01-24 to 2025-07-26",
+    "minForkCountFilter": 3
   }
 }
