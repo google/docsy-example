@@ -44,3 +44,5 @@ author: "אוריאל אופיר"
 ---
 
 **רוצים להצטרף? יש לכם שאלה?** כתבו לנו ב<a href="https://discord.gg/ctjv8vKZez" target="_blank">ערוץ הדיסקורד של הפרויקט</a>
+
+{{< comments >}}

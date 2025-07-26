@@ -39,3 +39,5 @@ author: "קובי קרסנוב"
 ---
 
 מוזמנים לשלוח את הערותיכם למייל: <a href="mailto:krasnoff.kobi@gmail.com" target="_blank">המייל האישי שלי</a>
+
+{{< comments >}}
