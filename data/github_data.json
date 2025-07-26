@@ -179,6 +179,6 @@
     "failedUsers": 0,
     "totalUsers": 3,
     "analysisTimeframe": "2025-01-24 to 2025-07-26",
-    "minForkCountFilter": 3
+    "minForkCountFilter": "3"
   }
 }
