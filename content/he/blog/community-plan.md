@@ -1,5 +1,6 @@
 ---
 title: "לאן אנחנו הולכים? תוכנית הצמיחה של מעקף 🚀"
+slug: "community-growth-plan"
 date: 2025-06-22
 description: "מטרות הקהילה, מה אנחנו עושים ומה התוכניות שלנו לעתיד. ואיך כל אחד ואחת יכולים לעזור לנו להמשיך לצמוח."
 tags: ["קוד פתוח", "קהילה", "מעקף", "תוכנית עבודה", "התנדבות"]

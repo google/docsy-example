@@ -1,5 +1,6 @@
 ---
 title: "עדכון על פיתוח דף חברים ופעילות"
+slug: "members-page-development-update"
 date: 2025-07-23
 description: "עדכון על פיתוח הפיצ'ר החדש שיציג את פעילות חברי הקהילה בגיטהאב"
 tags: ["קוד פתוח", "קהילה", "GitHub", "פיתוח", "בטא", "מתנדבים", "API", "data-visualization"]

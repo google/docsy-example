@@ -1,5 +1,6 @@
 ---
 title: "דף הבית"
+slug: "home"
 linkTitle: "בית"
 weight: 1
 ---

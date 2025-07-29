@@ -1,6 +1,7 @@
 ---
 type: "docs"
 title: "פרוייקטים מומלצים"  
+slug: "recommended-projects"
 linkTitle: "פרוייקטים מומלצים"
 menu:
   main:

@@ -1,6 +1,7 @@
 ---
 type: 'docs'
 title: 'פרוייקט המנטורים'
+slug: "mentors-program"
 linkTitle: 'פרוייקט המנטורים'
 menu:
   main:

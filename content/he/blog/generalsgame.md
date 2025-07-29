@@ -1,5 +1,6 @@
 ---
 title: "Command & Conquer Generals"
+slug: "command-conquer-generals"
 date: 2025-05-27
 description: "הזמנה להצטרף לפרויקט קוד פתוח של פיתוח משחק Command & Conquer Generals, כולל מידע על הקהילה, משאבים ללמידה וקישורים שימושיים"
 tags: ["os-project", "game"]

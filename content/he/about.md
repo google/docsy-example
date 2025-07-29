@@ -1,5 +1,6 @@
 ---
 title: 'אודות מעקף'
+slug: "about"
 linkTitle: 'אודות'
 weight: 2
 menu:

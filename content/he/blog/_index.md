@@ -1,6 +1,7 @@
 ---
 type: "blog"
 title: "בלוג"
+slug: "blog"
 linkTitle: "בלוג"
 menu:
   main:

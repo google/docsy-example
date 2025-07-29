@@ -1,5 +1,6 @@
 ---
 title: "המלצות תוכן"
+slug: "content-recommendations"
 date: 2025-06-21
 description: "המלצות תוכן של חברי הקהילה"
 tags: ["תכנות", "פיתוח תוכנה", "המלצות", "Bret Victor", "Rich Hickey", "clojure"]

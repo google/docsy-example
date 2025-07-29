@@ -1,5 +1,6 @@
 ---
 title: "Localpost: כלי CLI חלופי לפוסטמן"
+slug: "localpost-cli-tool"
 date: 2025-06-08
 description: "הכירו את Localpost - כלי CLI חדשני לעבודה עם API, המציע אלטרנטיבה לפוסטמן עם יכולות מובנות של ניהול גרסאות ובדיקות סכמה"
 tags: ["API", "CLI", "כלי פיתוח", "קוד פתוח"]
