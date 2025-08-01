@@ -39,11 +39,12 @@ menu:
 {{< cardpane >}} {{< card header="💬 הצטרפו אלינו!" >}}
 <a class="btn btn-lg btn-info me-3 mb-4" href="https://discord.com/invite/a2VyCjRk2M" target="_blank">🎮
 שרת הדיסקורד</a>
-<a class="btn btn-lg btn-success me-3 mb-4" href="https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h" target="_blank">💬
-קהילת הוואטסאפ</a>
+<a class="btn btn-lg btn-primary me-3 mb-4" href="[YOUR_GOOGLE_FORM_URL]" target="_blank">📝
+הרשמה לקהילה</a>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts" target="_blank">📰
-עדכוני מעקף בוואטסאפ</a> {{< /card >}} {{< card header="🌟 כל אחד ואחת מוזמנים!" >}} רוב
-חברי הקהילה שלנו הם מתחילים – וזה מה שהופך את מעקף למקום כל כך מיוחד. כאן כל
+עדכוני מעקף בוואטסאפ</a> {{< /card >}} {{< card header="🌟 כל אחד ואחת מוזמנים!" >}} 
+להצטרפות לקבוצות הווטסאפ של הקהילה, יש למלא את <a href="[YOUR_GOOGLE_FORM_URL]" target="_blank">טופס ההרשמה</a>.
+רוב חברי הקהילה שלנו הם מתחילים – וזה מה שהופך את מעקף למקום כל כך מיוחד. כאן כל
 שאלה מתקבלת בברכה, וכל קול נשמע. אנחנו מדברים בחופשיות על כל טכנולוגיה, ודרך
 הפרויקטים הפתוחים לומדים, משתפים פעולה, וצומחים יחד. {{< /card >}}
 {{< /cardpane >}}
