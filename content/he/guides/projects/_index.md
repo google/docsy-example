@@ -3,10 +3,6 @@ type: "docs"
 title: "פרוייקטים מומלצים"  
 slug: "recommended-projects"
 linkTitle: "פרוייקטים מומלצים"
-menu:
-  main:
-    weight: 38
-    identifier: projects
 ---
 ## בואו נמצא לכם פרויקט מגניב! 🚀
 רוצים להתחיל לתרום לקוד פתוח אבל לא יודעים מאיפה להתחיל? אנחנו כאן בשבילכם! בחרנו בקפידה כמה פרויקטים שממש כיף לתרום אליהם, עם קהילות מקסימות שישמחו לעזור לכם להשתלב. הנה מה שחשוב לנו כשאנחנו ממליצים על פרויקט:

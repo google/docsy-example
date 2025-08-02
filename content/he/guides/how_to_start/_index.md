@@ -3,10 +3,7 @@ type: "docs"
 title: "איך לתרום לקוד פתוח"
 slug: "how-to-contribute"
 linkTitle: "פרוייקט התרגול לתרומה ראשונה"
-menu:
-  main:
-    weight: 50
-    identifier: how-to-start
+
 ---
 ## מדריך תרומה ראשונית בפרויקט התרגול
 

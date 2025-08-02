@@ -3,10 +3,6 @@ type: 'docs'
 title: 'פרוייקט המנטורים'
 slug: "mentors-program"
 linkTitle: 'פרוייקט המנטורים'
-menu:
-  main:
-    weight: 49
-    identifier: mentors
 ---
 
 בקהילה אנחנו מעוניינים לחבר בין מתכנתים מנוסים לבין מתכנתים בתחילת דרכם.
