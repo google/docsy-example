@@ -16,8 +16,12 @@ menu:
 
 ### טופס הרשמה
 
-<div style="text-align: center; margin: 2em 0;">
- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff5Kn_5goH5ptJVhOgqdEQSX9ESMkcJXKvBRWXtMILELLJtQ/viewform?embedded=true" width="640" height="2817" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div class="embed-responsive" style="text-align: center; margin: 2em 0; position: relative; width: 100%; max-width: 640px; margin-left: auto; margin-right: auto;">
+ <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff5Kn_5goH5ptJVhOgqdEQSX9ESMkcJXKvBRWXtMILELLJtQ/viewform?embedded=true" 
+         style="width: 100%; height: 2817px; border: 0;" 
+         frameborder="0" 
+         marginheight="0" 
+         marginwidth="0">Loading…</iframe>
 </div>
 
 ### כבר נרשמתם?
