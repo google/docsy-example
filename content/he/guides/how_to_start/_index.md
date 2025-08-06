@@ -1,6 +1,6 @@
 ---
 type: "docs"
-title: "איך לתרום לקוד פתוח"
+title: "פרוייקט התרגול לתרומה ראשונה"
 slug: "how-to-contribute"
 linkTitle: "פרוייקט התרגול לתרומה ראשונה"
 
