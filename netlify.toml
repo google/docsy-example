@@ -2,7 +2,7 @@
 # (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
 
 [build]
-# command = "npm run prebuild && npm run build:preview"
+command = "npm run prebuild ; npm run build:preview"
 publish = "public"
 
 [build.environment]
