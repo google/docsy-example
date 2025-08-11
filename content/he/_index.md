@@ -6,7 +6,7 @@ weight: 1
 
 {{< blocks/cover title="👋 ברוכים הבאים לקהילת קובול-ישראל!" color="primary" height="full" >}}
 <div class="mx-auto">
-  <p class="lead">הבית של מתכנתי COBOL בישראל – המקום לחלוק ידע, <br> ללמוד ולהתחבר עם מובילי התחום.</p>
+  <p class="lead">הבית של מתכנתי COBOL והמיינפריים בישראל – המקום לחלוק ידע, <br> ללמוד ולהתחבר עם מובילי התחום.</p>
   <a class="btn btn-lg btn-success me-3 mb-4" href="https://chat.whatsapp.com/LMhGQNoetiK5DkhRYRdcjA" target="_blank">💬 קבוצת הוואטסאפ</a>
   <div class="mx-auto mt-5" style="text-align: center;">
     <a class="btn btn-link text-info" href="#td-block-1" aria-label="קרא עוד">
