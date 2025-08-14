@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  max-width: 100%;
+}
+
+/* Remove Bootstrap container horizontal overflow in RTL */
+html[dir="rtl"] .container-fluid,
+html[dir="rtl"] .container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  overflow-x: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Prevent Bootstrap .row from creating overflow in RTL */
+html[dir="rtl"] .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
