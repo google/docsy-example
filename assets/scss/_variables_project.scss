@@ -6,6 +6,11 @@ Add styles or override variables from the theme here.
 
 .main-content {
   margin-top: 100px; /* Adjust this value to match your header's height */
+  
+  // Responsive adjustment for mobile
+  @media (max-width: 576px) {
+    margin-top: 10px; // Typical mobile navbar height
+  }
 }
 
 // Quiz color variables
