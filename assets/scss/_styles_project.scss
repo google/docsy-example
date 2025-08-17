@@ -1,28 +1,27 @@
+/* General reset */
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
   max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box;
 }
 
-/* Remove Bootstrap container horizontal overflow in RTL */
-html[dir="rtl"] .container-fluid,
-html[dir="rtl"] .container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  overflow-x: hidden;
+/* Ensure all elements respect box-sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+/* RTL-specific adjustments */
+html[dir="rtl"] {
+  .container,
+  .container-fluid {
+    overflow-x: hidden;
+  }
 
-/* Prevent Bootstrap .row from creating overflow in RTL */
-html[dir="rtl"] .row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
