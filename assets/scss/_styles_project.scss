@@ -1,0 +1,27 @@
+/* General reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box;
+}
+
+/* Ensure all elements respect box-sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* RTL-specific adjustments */
+html[dir="rtl"] {
+  .container,
+  .container-fluid {
+    overflow-x: hidden;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
