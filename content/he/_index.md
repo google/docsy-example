@@ -28,7 +28,7 @@ weight: 1
 {{% blocks/feature icon="fa-graduation-cap" title="הדרכות ומדריכים" %}}
 צפו ב<a href="https://www.youtube.com/@maakaf-os" target="_blank">ערוץ היוטיוב שלנו</a> או קראו מדריכים באתר.
 {{% /blocks/feature %}}
-{{% blocks/feature icon="fa-hands-helping" title="מנטורינג אישי" url="/he/mentors" %}}
+{{% blocks/feature icon="fa-hands-helping" title="מנטורינג אישי" url="/he/guides/mentors" %}}
 מנטורים מנוסים ילוו אתכם בצעדים הראשונים.
 {{% /blocks/feature %}}
 {{% /blocks/section %}}
@@ -41,7 +41,7 @@ weight: 1
   {{< /card >}}
   {{< card header="🌟 פרויקטים מומלצים" >}}
     רוצים להיכנס לפרויקט אמיתי?<br>
-    <a class="btn btn-outline-primary" href="/he/projects" target="_blank">🔗 לפרויקטים המומלצים</a>
+    <a class="btn btn-outline-primary" href="/he/guides/projects" target="_blank">🔗 לפרויקטים המומלצים</a>
     <div style="margin-top:0.2em; font-size:0.98em;">בחרנו עבורכם פרויקטים שקל להשתלב בהם, עם קהילות תומכות, טכנולוגיות מגוונות, ואווירה מעולה!</div>
   {{< /card >}}
   {{< card header="📝 בלוג הקהילה" >}}
