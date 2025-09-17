@@ -56,3 +56,8 @@ activity_count, int }
 
 כאשר כל שורה בטבלת user_activity מזוהה באופן ייחודי על-ידי השילוב של השדות user_id, day, repo_id ו-activity_type.
 כלומר, לכל משתמש יכול להיות לכל יום, לכל מאגר ולכל סוג פעילות רשומה אחת בלבד.
+
+מוזמנים להצטרף לפיתוח הפיצ'ר.
+<a href="https://discord.gg/ctjv8vKZez" target="_blank" rel="noopener">לחצו כאן כדי להצטרף לערוץ הדיונים בדיסקורד.</a>
+
+{{< comments >}}
