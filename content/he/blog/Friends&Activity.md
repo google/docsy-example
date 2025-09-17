@@ -60,4 +60,6 @@ activity_count, int }
 מוזמנים להצטרף לפיתוח הפיצ'ר.
 <a href="https://discord.gg/ctjv8vKZez" target="_blank" rel="noopener">לחצו כאן כדי להצטרף לערוץ הדיונים בדיסקורד.</a>
 
+<a href="https://github.com/Maakaf/friends-activity-backend" target="_blank" rel="noopener">קישור לריפו של הפרוייקט</a>
+
 {{< comments >}}
