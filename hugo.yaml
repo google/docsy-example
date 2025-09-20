@@ -59,6 +59,13 @@ languages:
     languageCode: he
     languageDirection: rtl
 
+  en:
+    title: "Maakaf Home"
+    languageName: "English"
+    weight: 2
+    contentDir: "content/en"
+
+
 markup:
   goldmark:
     parser:
