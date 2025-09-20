@@ -17,5 +17,5 @@ Welcome to the Maakaf community blog! Here you'll find:
 
 {{% pageinfo %}}
 Have a story to share or want to contribute to our blog? We'd love to hear from you! 
-Reach out to us on [Discord](https://discord.gg/a2VyCjRk2M) or through our [GitHub organization](https://github.com/maakaf-org).
+Reach out to us on [Discord](https://discord.gg/a2VyCjRk2M) or through our [GitHub organization](https://github.com/maakaf).
 {{% /pageinfo %}}
