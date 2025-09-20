@@ -7,12 +7,6 @@ weight: 1
 ---
 
 {{< blocks/cover title="Welcome to Maakaf" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/en/docs/">
-  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/maakaf-org">
-  GitHub <i class="fab fa-github ms-2"></i>
-</a>
 <p class="lead mt-5">Israeli Open Source Community</p>
 {{< /blocks/cover >}}
 
