@@ -58,12 +58,6 @@ If you're looking for a community to connect with and learn alongside, I would b
 {{< alert title="Join Our Community" color="primary" >}}
 Ready to start your open source journey? Connect with Maakaf and discover how community support can accelerate your learning and contribution path.
 
-**Quick Links:**
-- [Join our Discord](https://discord.gg/a2VyCjRk2M)
-- [Explore our GitHub](https://github.com/maakaf-org)
-- [Learn more about us]({{ ref "/community" }})
-{{< /alert >}}
-
 ---
 
 *Want to share your own open source journey or have questions about getting started? Join the conversation in our community channels or reach out to us directly.*
