@@ -4,6 +4,9 @@ linkTitle: "Blog"
 weight: 20
 description: >
   Insights, tutorials, and stories from the Maakaf community about open source, technology, and community building.
+menu:
+  main:
+    weight: 20
 ---
 
 # Maakaf Community Blog
