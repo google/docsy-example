@@ -10,8 +10,6 @@ tags: ["open-source", "community", "contribution", "beginners"]
 categories: ["Community", "Getting Started"]
 ---
 
-# How to contribute to #OpenSource projects?
-
 From my experience managing Maakaf, an Israeli open-source community, I believe there's a better, more natural way to get started.
 
 Instead of focusing on contributing from the outset, I'd suggest you connect with open source for the purpose of learning or using. This is a fundamental shift in mindset that makes the entire process more enjoyable and effective.
