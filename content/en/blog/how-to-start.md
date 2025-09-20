@@ -53,9 +53,6 @@ This journey can be challenging to do alone. I manage Maakaf, an Israeli open-so
 
 If you're looking for a community to connect with and learn alongside, I would be glad to help. Feel free to reach out to us at [maakaf.org]({{ .Site.BaseURL }}). We can guide you, answer your questions, and introduce you to a network of like-minded individuals. You don't have to do this alone.
 
-{{< alert title="Join Our Community" color="primary" >}}
-Ready to start your open source journey? Connect with Maakaf and discover how community support can accelerate your learning and contribution path.
-
 ---
 
 *Want to share your own open source journey or have questions about getting started? Join the conversation in our community channels or reach out to us directly.*
