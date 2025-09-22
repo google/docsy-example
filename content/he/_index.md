@@ -33,6 +33,7 @@ weight: 1
 {{% /blocks/feature %}}
 {{% /blocks/section %}}
 
+<div class="d-flex justify-content-center flex-wrap">
 {{< cardpane >}}
   {{< card header="🎓 מתחילים? כך תעשו את הצעד הראשון" >}}
     רוצים להבין מה זה קוד פתוח? צפו ב<a href="https://www.youtube.com/watch?v=vLB93fqlvDE&list=PLFP8kbJw2mot-6WSKS3_4Fmmx-30w6-tj" target="_blank">ערוץ היוטיוב שלנו</a> 🎥 – פלייליסט שלם של מבוא לקוד פתוח.
@@ -49,6 +50,7 @@ weight: 1
     <a class="btn btn-outline-primary" href="/he/blog" target="_blank">📚 לבלוג של מעקף</a>
   {{< /card >}}
 {{< /cardpane >}}
+</div>
 
 {{% alert title="הצטרפו אלינו!" color="info" %}}
 הקהילה שלנו פתוחה לכולם – כל שאלה, רעיון או תרומה מתקבלים בברכה! להרשמה לקהילה ולקבלת גישה לקבוצות הווטסאפ, מלאו את <a href="/he/register" target="_blank">טופס ההרשמה</a>.
