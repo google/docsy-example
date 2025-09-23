@@ -17,7 +17,7 @@ html, body {
 html[dir="rtl"] {
   .container,
   .container-fluid {
-    overflow-x: hidden;
+    overflow: visible; // fixed for lang and brightness menus to be visible
   }
 
   .row {
