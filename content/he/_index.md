@@ -10,7 +10,7 @@ weight: 1
   <p class="lead">קהילת הקוד הפתוח של ישראל – המקום שבו כל אחד ואחת יכולים להתחבר, ללמוד, ולתרום לעולם הקוד הפתוח.</p>
   <a class="btn btn-lg btn-info me-3 mb-4" href="https://discord.com/invite/a2VyCjRk2M" target="_blank">🎮 הצטרפו לשרת הדיסקורד</a>
   <a class="btn btn-lg btn-primary me-3 mb-4" href="/he/register" target="_blank">📝 הרשמה לקהילה</a>
-  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts" target="_blank">📰 עדכוני מעקף בוואטסאפ</a>
+  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h" target="_blank">📰 עדכוני מעקף בוואטסאפ</a>
   <a class="btn btn-lg btn-danger me-3 mb-4" href="https://www.youtube.com/@maakaf-os" target="_blank">🎥 ערוץ היוטיוב</a>
   <a class="btn btn-lg btn-warning me-3 mb-4" href="https://www.meetup.com/maakaf/" target="_blank">🤝 מפגשי מיטאפ</a>
   <div class="mx-auto mt-5" style="text-align: center;">

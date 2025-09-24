@@ -188,7 +188,7 @@ params:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
       - name: עדכוני מעקף
-        url: https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts
+        url: https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h
         icon: fa-solid fa-newspaper
         desc: קבוצת וואטסאפ שקטה לעדכונים בלבד
       - name: Discord Server

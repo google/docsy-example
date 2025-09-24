@@ -38,7 +38,7 @@ The site will be available at `http://localhost:1313`
 ## Community Links
 
 - 💬 WhatsApp Community: [Join our WhatsApp groups](https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h)
-- 📰 News Updates: [Join our announcements group](https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts)
+- 📰 News Updates: [Join our announcements group](https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h)
 - 🎮 Discord: [Join our Discord server](https://discord.com/invite/a2VyCjRk2M)
 - 📺 YouTube: [@maakaf-os](https://www.youtube.com/@maakaf-os)
 - 🌐 GitHub: [Maakaf Organization](https://github.com/Maakaf/maakaf_home/)

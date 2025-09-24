@@ -33,7 +33,7 @@ menu:
 ### בינתיים, אתם מוזמנים להצטרף:
 
 🎮 **[שרת הדיסקורד שלנו](https://discord.com/invite/a2VyCjRk2M)** - פתוח לכולם  
-📰 **[קבוצת עדכוני מעקף](https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts)** - מדי שבוע מקבלים עדכונים חשובים בלבד  
+📰 **[קבוצת עדכוני מעקף](https://chat.whatsapp.com/LTZKuKyKw7DHppVrDXWv8h)** - מדי שבוע מקבלים עדכונים חשובים בלבד  
 🎥 **[ערוץ היוטיוב](https://www.youtube.com/@maakaf-os)** - תוכן חינוכי ומדריכים  
 
 {{< comments >}}
