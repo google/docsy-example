@@ -12,6 +12,7 @@
   "scripts": {
     "_build": "npm run _hugo-dev --",
     "_check:links": "echo IMPLEMENTATION PENDING for check-links; echo",
+    "_commit:public": "HASH=$(git rev-parse --short main); cd public && git add -A && git commit -m \"Site at $HASH\"",
     "_hugo": "hugo --cleanDestinationDir",
     "_hugo-dev": "npm run _hugo -- -e dev -DFE",
     "_local": "npx cross-env HUGO_MODULE_WORKSPACE=docsy.work",
@@ -32,7 +33,7 @@
     "test": "npm run check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
     "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
-    "update:pkgs": "npx npm-check-updates -u"
+    "update:packages": "npx npm-check-updates -u"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
@@ -48,5 +49,6 @@
   "prettier": {
     "proseWrap": "always",
     "singleQuote": true
-  }
+  },
+  "cSpell:ignore": ""
 }
