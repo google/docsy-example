@@ -1,12 +1,6 @@
 {
-  "apiUrl": "https://maakafhomebackend-production.up.railway.app/github",
-  "usernames": [
-    "baruchiro",
-    "UrielOfir",
-    "moshe-stein24",
-    "barlavi1",
-    "SamuraiPolix"
-  ],
+  "apiUrl": "https://friends-activity-backend-production.up.railway.app/pipeline/analytics/report",
+  "usernames": ["baruchiro", "UrielOfir", "moshe-stein24"],
   "outputDir": "data",
   "outputFile": "github_data.json",
   "requestTimeout": 60000,
