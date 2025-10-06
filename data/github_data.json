@@ -2,126 +2,80 @@
   "users": [
     {
       "user": {
-        "username": "baruchiro",
-        "displayName": "Baruch Odem (Rothkoff)",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/17686879?v=4",
-        "bio": "Software Developer at With",
-        "location": "Israel",
-        "company": "@with-org",
-        "blog": "https://baruchiro.com/",
-        "twitterUsername": "baruchiro",
-        "publicRepos": 165,
-        "followers": 69,
-        "following": 12,
-        "accountType": "User",
-        "createdAt": "2025-07-19T18:53:02.255Z"
-      },
-      "repos": [
-        {
-          "repoName": "WindowsLayoutSnapshot",
-          "description": "Windows app to remember + restore window positions",
-          "url": "https://github.com/adamsmith/WindowsLayoutSnapshot",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
-          "repoName": "israeli-bank-scrapers",
-          "description": "Provide scrapers for all major Israeli banks and credit card companies",
-          "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 7,
-          "pullRequests": 22,
-          "issues": 6,
-          "prComments": 62,
-          "issueComments": 83
-        },
-        {
-          "repoName": "caspion",
-          "description": "Automated budget tracking from Israeli financial institutions",
-          "url": "https://github.com/brafdlog/caspion",
-          "commits": 0,
-          "pullRequests": 17,
-          "issues": 11,
-          "prComments": 28,
-          "issueComments": 91
-        },
-        {
-          "repoName": "israeli-bank-scrapers-desktop",
-          "description": "Secure desktop app for retriving your transactions from all israeli banks and credit cards",
-          "url": "https://github.com/baruchiro/israeli-bank-scrapers-desktop",
-          "commits": 0,
-          "pullRequests": 17,
-          "issues": 54,
-          "prComments": 19,
-          "issueComments": 83
-        },
-        {
-          "repoName": "use-route-as-state",
-          "description": "Use React Router route and query string as component state",
-          "url": "https://github.com/baruchiro/use-route-as-state",
-          "commits": 0,
-          "pullRequests": 25,
-          "issues": 4,
-          "prComments": 35,
-          "issueComments": 30
-        },
-        {
-          "repoName": "overlay",
-          "description": "Overlay is a browser extension helping developers evaluate open source packages before picking them",
-          "url": "https://github.com/os-scar/overlay",
-          "commits": 0,
-          "pullRequests": 48,
-          "issues": 31,
-          "prComments": 27,
-          "issueComments": 73
-        }
-      ],
-      "summary": {
-        "totalCommits": 7,
-        "totalPRs": 129,
-        "totalIssues": 107,
-        "totalPRComments": 171,
-        "totalIssueComments": 364
-      }
-    },
-    {
-      "user": {
         "username": "UrielOfir",
         "displayName": "Uriel Ofir",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?u=4aaceee81155c1e2f5f35e486c0a6b699f48638d&v=4",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?v=4",
         "bio": "Manager of the Israeli open-source community: maakaf.com.\r\nCOBOL programmer.",
         "location": "Jerusalem, Israel",
         "company": "mizrahi-tefahot",
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
-        "publicRepos": 82,
-        "followers": 35,
+        "publicRepos": 84,
+        "followers": 39,
         "following": 15,
         "accountType": "User",
-        "createdAt": "2025-07-19T15:33:52.271Z"
+        "createdAt": "2017-07-13T09:26:30.000Z"
       },
       "repos": [
         {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 4,
-          "prComments": 39,
-          "issueComments": 15
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 97,
+          "pullRequests": 2,
+          "issues": 17,
+          "prComments": 0,
+          "issueComments": 27
         },
         {
-          "repoName": "opensource-il-site",
-          "description": "Scrapes awesome-opensource-israel's readme and displays all projects",
-          "url": "https://github.com/yonatanmgr/opensource-il-site",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 3,
-          "prComments": 2,
+          "repoName": "docsy",
+          "description": "Hugo theme for open source documentation",
+          "url": "https://github.com/google/docsy",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
           "issueComments": 2
+        },
+        {
+          "repoName": "docsy-example",
+          "description": "An example documentation site using the Docsy Hugo theme",
+          "url": "https://github.com/google/docsy-example",
+          "commits": 0,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 5,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "hugo",
+          "description": "The world’s fastest framework for building websites.",
+          "url": "https://github.com/gohugoio/hugo",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "maakaf-temp",
+          "description": "A website for the Isreli open-source community- Ma'akaf",
+          "url": "https://github.com/Maakaf/maakaf-temp",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "os-practice",
@@ -131,54 +85,49 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "site",
+          "description": "Public Website for the Developer Relations Foundation.",
+          "url": "https://github.com/DevRel-Foundation/site",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 10,
-        "totalPRs": 0,
-        "totalIssues": 7,
-        "totalPRComments": 41,
-        "totalIssueComments": 17
-      }
-    },
-    {
-      "user": {
-        "username": "moshe-stein24",
-        "displayName": null,
-        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": null,
-        "twitterUsername": null,
-        "publicRepos": 6,
-        "followers": 0,
-        "following": 1,
-        "accountType": "User",
-        "createdAt": "2025-07-19T18:53:26.111Z"
-      },
-      "repos": [],
-      "summary": {
-        "totalCommits": 0,
-        "totalPRs": 0,
-        "totalIssues": 0,
+        "totalCommits": 119,
+        "totalPRs": 8,
+        "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 0
+        "totalIssueComments": 34
       }
     }
   ],
   "globalSummary": {
-    "totalCommits": 17,
-    "totalPRs": 129,
-    "totalIssues": 114,
-    "totalPRComments": 212,
-    "totalIssueComments": 381,
+    "totalCommits": 119,
+    "totalPRs": 8,
+    "totalIssues": 17,
+    "totalPRComments": 0,
+    "totalIssueComments": 34,
     "totalRepos": 9,
-    "successfulUsers": 3,
+    "successfulUsers": 1,
     "failedUsers": 0,
-    "totalUsers": 3,
-    "analysisTimeframe": "2025-01-24 to 2025-07-26",
+    "totalUsers": 1,
+    "analysisTimeframe": "2025-04-09 to 2025-10-06",
     "minForkCountFilter": "3"
   }
 }

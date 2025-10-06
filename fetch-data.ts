@@ -93,7 +93,8 @@ function isRetryableError(error: Error): boolean {
 }
 
 async function fetchUserData(config: Config, logger: Logger): Promise<ApiResponse> {
-  const postData = JSON.stringify({ usernames: config.usernames });
+  // Change from { usernames: ... } to { users: ... }
+  const postData = JSON.stringify({ users: config.usernames });
   let lastError: Error | null = null;
 
   for (let attempt = 1; attempt <= config.maxRetries + 1; attempt++) {
@@ -108,10 +109,17 @@ async function fetchUserData(config: Config, logger: Logger): Promise<ApiRespons
 
     try {
       if (!isRetry) logger.info(`Fetching data for users: ${config.usernames.join(', ')}`);
+      
+      logger.debug(`Requesting: ${config.apiUrl}`);
+      logger.debug(`Payload: ${postData}`);
 
       const response = await fetch(config.apiUrl, {
         method: 'POST',
-        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'User-Agent': 'Maakaf-Home-Data-Fetcher/1.0' },
+        headers: {
+          'Accept': '*/*',
+          'Content-Type': 'application/json',
+          'User-Agent': 'Maakaf-Home-Data-Fetcher/1.0'
+        },
         body: postData,
         signal: controller.signal
       });
@@ -119,43 +127,22 @@ async function fetchUserData(config: Config, logger: Logger): Promise<ApiRespons
       clearTimeout(timeoutId);
 
       if (!response.ok) {
-        const error = new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
-        if (isRetryableError(error) && attempt <= config.maxRetries) {
-          lastError = error;
-          logger.warn(`Retryable error: ${error.message}`);
-          continue;
-        }
-        throw error;
+        throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
       }
 
-      const contentType = response.headers.get('content-type');
-      if (!contentType || !contentType.includes('application/json'))
-        throw new Error(`Expected JSON response, got: ${contentType}`);
-
-      const json = await response.json() as ApiResponse;
-      logger.success(isRetry ? `Successfully fetched data on attempt ${attempt}` : `Successfully fetched data`);
-      return json;
+      const data = (await response.json()) as ApiResponse;
+      logger.success('Successfully fetched data');
+      return data;
 
     } catch (error) {
       clearTimeout(timeoutId);
-      if (error instanceof Error) {
-        if (error.name === 'AbortError') {
-          const timeoutError = new Error(`Request timed out after ${config.requestTimeout}ms`);
-          if (isRetryableError(timeoutError) && attempt <= config.maxRetries) {
-            lastError = timeoutError;
-            logger.warn(`Request timeout, will retry...`);
-            continue;
-          }
-          throw timeoutError;
-        }
-        if (isRetryableError(error) && attempt <= config.maxRetries) {
-          lastError = error;
-          logger.warn(`Retryable error: ${error.message}`);
-          continue;
-        }
-        throw new Error(`Failed to fetch data: ${error.message}`);
+      lastError = error as Error;
+      logger.error(`Attempt ${attempt} failed: ${lastError.message}`);
+
+      if (attempt <= config.maxRetries && isRetryableError(lastError)) {
+        continue;
       }
-      throw error;
+      throw lastError;
     }
   }
   throw new Error(`Failed to fetch data after ${config.maxRetries + 1} attempts. Last error: ${lastError?.message}`);
