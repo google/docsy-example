@@ -2,260 +2,6 @@
   "users": [
     {
       "user": {
-        "username": "UrielOfir",
-        "displayName": "Uriel Ofir",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?v=4",
-        "bio": "Manager of the Israeli open-source community: maakaf.com.\r\nCOBOL programmer.",
-        "location": "Jerusalem, Israel",
-        "company": "mizrahi-tefahot",
-        "blog": "urielofir.website",
-        "twitterUsername": "OfirUriel",
-        "publicRepos": 84,
-        "followers": 38,
-        "following": 15,
-        "accountType": "User",
-        "createdAt": "2017-07-13T09:26:30.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "docsy-example",
-          "description": "An example documentation site using the Docsy Hugo theme",
-          "url": "https://github.com/google/docsy-example",
-          "commits": 0,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 3,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 10,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 156,
-          "pullRequests": 2,
-          "issues": 17,
-          "prComments": 0,
-          "issueComments": 27
-        },
-        {
-          "repoName": "docsy",
-          "description": "Hugo theme for open source documentation",
-          "url": "https://github.com/google/docsy",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
-          "repoName": "hugo",
-          "description": "The world’s fastest framework for building websites.",
-          "url": "https://github.com/gohugoio/hugo",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "maakaf-temp",
-          "description": "A website for the Isreli open-source community- Ma'akaf",
-          "url": "https://github.com/Maakaf/maakaf-temp",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "site",
-          "description": "Public Website for the Developer Relations Foundation.",
-          "url": "https://github.com/DevRel-Foundation/site",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        }
-      ],
-      "summary": {
-        "totalCommits": 171,
-        "totalPRs": 8,
-        "totalIssues": 17,
-        "totalPRComments": 0,
-        "totalIssueComments": 37
-      }
-    },
-    {
-      "user": {
-        "username": "Lidor57",
-        "displayName": "Lidor Maimon",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 6,
-        "followers": 0,
-        "following": 0,
-        "accountType": "User",
-        "createdAt": "2025-07-04T17:09:24.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
-          "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 2,
-          "prComments": 0,
-          "issueComments": 0
-        }
-      ],
-      "summary": {
-        "totalCommits": 27,
-        "totalPRs": 13,
-        "totalIssues": 2,
-        "totalPRComments": 0,
-        "totalIssueComments": 4
-      }
-    },
-    {
-      "user": {
-        "username": "moshe-stein24",
-        "displayName": null,
-        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 7,
-        "followers": 0,
-        "following": 1,
-        "accountType": "User",
-        "createdAt": "2022-12-06T19:46:01.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "AI-For-Beginners",
-          "description": "12 Weeks, 24 Lessons, AI for All!",
-          "url": "https://github.com/microsoft/AI-For-Beginners",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        }
-      ],
-      "summary": {
-        "totalCommits": 1,
-        "totalPRs": 1,
-        "totalIssues": 1,
-        "totalPRComments": 0,
-        "totalIssueComments": 2
-      }
-    },
-    {
-      "user": {
-        "username": "NoamGaash",
-        "displayName": "Noam Gaash",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/11145132?v=4",
-        "bio": "Developer @Applitools \r\n|\r\nVolunteer @hasadna ",
-        "location": "Israel",
-        "company": "Applitools",
-        "blog": "noam-gaash.co.il",
-        "twitterUsername": null,
-        "publicRepos": 44,
-        "followers": 30,
-        "following": 48,
-        "accountType": "User",
-        "createdAt": "2015-02-22T11:19:54.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "open-bus-map-search",
-          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
-          "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 51,
-          "pullRequests": 13,
-          "issues": 17,
-          "prComments": 61,
-          "issueComments": 74
-        }
-      ],
-      "summary": {
-        "totalCommits": 51,
-        "totalPRs": 13,
-        "totalIssues": 17,
-        "totalPRComments": 61,
-        "totalIssueComments": 74
-      }
-    },
-    {
-      "user": {
         "username": "lirantal",
         "displayName": "Liran Tal",
         "avatarUrl": "https://avatars.githubusercontent.com/u/316371?v=4",
@@ -468,16 +214,6 @@
       },
       "repos": [
         {
-          "repoName": "argus",
-          "description": null,
-          "url": "https://github.com/scylladb/argus",
-          "commits": 20,
-          "pullRequests": 9,
-          "issues": 12,
-          "prComments": 25,
-          "issueComments": 64
-        },
-        {
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
@@ -486,6 +222,16 @@
           "issues": 18,
           "prComments": 655,
           "issueComments": 836
+        },
+        {
+          "repoName": "argus",
+          "description": null,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 20,
+          "pullRequests": 9,
+          "issues": 12,
+          "prComments": 25,
+          "issueComments": 64
         },
         {
           "repoName": "scylla-ccm",
@@ -548,6 +294,52 @@
     },
     {
       "user": {
+        "username": "davidmeirlevy",
+        "displayName": "David Meir-Levy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
+        "bio": null,
+        "location": "Tel-Aviv",
+        "company": "@prici-io  @configu @qelos-io",
+        "blog": "https://www.davidlevy.co.il",
+        "twitterUsername": "DavidMeirLevy",
+        "publicRepos": 72,
+        "followers": 54,
+        "following": 13,
+        "accountType": "User",
+        "createdAt": "2014-03-06T18:34:31.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "qelos",
+          "description": "The platform to create AI platforms",
+          "url": "https://github.com/qelos-io/qelos",
+          "commits": 376,
+          "pullRequests": 11,
+          "issues": 34,
+          "prComments": 11,
+          "issueComments": 30
+        },
+        {
+          "repoName": "configu",
+          "description": "Open-source ConfigOps infrastructure ⚙️",
+          "url": "https://github.com/configu/configu",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 2,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 377,
+        "totalPRs": 11,
+        "totalIssues": 34,
+        "totalPRComments": 13,
+        "totalIssueComments": 30
+      }
+    },
+    {
+      "user": {
         "username": "barlavi1",
         "displayName": "Bar Lavi",
         "avatarUrl": "https://avatars.githubusercontent.com/u/33284345?v=4",
@@ -591,18 +383,272 @@
         "totalPRComments": 3,
         "totalIssueComments": 0
       }
+    },
+    {
+      "user": {
+        "username": "UrielOfir",
+        "displayName": "Uriel Ofir",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?v=4",
+        "bio": "Manager of the Israeli open-source community: maakaf.com.\r\nCOBOL programmer.",
+        "location": "Jerusalem, Israel",
+        "company": "mizrahi-tefahot",
+        "blog": "urielofir.website",
+        "twitterUsername": "OfirUriel",
+        "publicRepos": 84,
+        "followers": 38,
+        "following": 15,
+        "accountType": "User",
+        "createdAt": "2017-07-13T09:26:30.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "docsy-example",
+          "description": "An example documentation site using the Docsy Hugo theme",
+          "url": "https://github.com/google/docsy-example",
+          "commits": 0,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 3,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 10,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 156,
+          "pullRequests": 2,
+          "issues": 17,
+          "prComments": 0,
+          "issueComments": 27
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "docsy",
+          "description": "Hugo theme for open source documentation",
+          "url": "https://github.com/google/docsy",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "hugo",
+          "description": "The world’s fastest framework for building websites.",
+          "url": "https://github.com/gohugoio/hugo",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "maakaf-temp",
+          "description": "A website for the Isreli open-source community- Ma'akaf",
+          "url": "https://github.com/Maakaf/maakaf-temp",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "site",
+          "description": "Public Website for the Developer Relations Foundation.",
+          "url": "https://github.com/DevRel-Foundation/site",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        }
+      ],
+      "summary": {
+        "totalCommits": 171,
+        "totalPRs": 8,
+        "totalIssues": 17,
+        "totalPRComments": 0,
+        "totalIssueComments": 37
+      }
+    },
+    {
+      "user": {
+        "username": "Lidor57",
+        "displayName": "Lidor Maimon",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 6,
+        "followers": 0,
+        "following": 0,
+        "accountType": "User",
+        "createdAt": "2025-07-04T17:09:24.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 2,
+          "prComments": 0,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 27,
+        "totalPRs": 13,
+        "totalIssues": 2,
+        "totalPRComments": 0,
+        "totalIssueComments": 4
+      }
+    },
+    {
+      "user": {
+        "username": "moshe-stein24",
+        "displayName": null,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 7,
+        "followers": 0,
+        "following": 1,
+        "accountType": "User",
+        "createdAt": "2022-12-06T19:46:01.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "AI-For-Beginners",
+          "description": "12 Weeks, 24 Lessons, AI for All!",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        }
+      ],
+      "summary": {
+        "totalCommits": 1,
+        "totalPRs": 1,
+        "totalIssues": 1,
+        "totalPRComments": 0,
+        "totalIssueComments": 2
+      }
+    },
+    {
+      "user": {
+        "username": "NoamGaash",
+        "displayName": "Noam Gaash",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11145132?v=4",
+        "bio": "Developer @Applitools \r\n|\r\nVolunteer @hasadna ",
+        "location": "Israel",
+        "company": "Applitools",
+        "blog": "noam-gaash.co.il",
+        "twitterUsername": null,
+        "publicRepos": 44,
+        "followers": 30,
+        "following": 48,
+        "accountType": "User",
+        "createdAt": "2015-02-22T11:19:54.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "open-bus-map-search",
+          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
+          "url": "https://github.com/hasadna/open-bus-map-search",
+          "commits": 51,
+          "pullRequests": 13,
+          "issues": 17,
+          "prComments": 61,
+          "issueComments": 74
+        }
+      ],
+      "summary": {
+        "totalCommits": 51,
+        "totalPRs": 13,
+        "totalIssues": 17,
+        "totalPRComments": 61,
+        "totalIssueComments": 74
+      }
     }
   ],
   "globalSummary": {
-    "totalCommits": 1166,
-    "totalPRs": 274,
-    "totalIssues": 132,
-    "totalPRComments": 781,
-    "totalIssueComments": 1343,
-    "totalRepos": 35,
-    "successfulUsers": 7,
+    "totalCommits": 1543,
+    "totalPRs": 285,
+    "totalIssues": 166,
+    "totalPRComments": 794,
+    "totalIssueComments": 1373,
+    "totalRepos": 37,
+    "successfulUsers": 8,
     "failedUsers": 0,
-    "totalUsers": 7,
+    "totalUsers": 8,
     "analysisTimeframe": "2025-04-28 to 2025-10-25",
     "minForkCountFilter": "3"
   },
