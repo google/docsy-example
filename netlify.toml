@@ -2,11 +2,15 @@
 # (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
 
 [build]
-command = "npm run prebuild ; npm run build:preview"
-publish = "public"
+  command = "npm ci && npm run build:production"
+  publish = "public"
 
 [build.environment]
-GO_VERSION = "1.22.2"
+  HUGO_VERSION = "0.128.2"
+  HUGO_EXTENDED = "true"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+  NODE_VERSION = "18"
 
 [context.production]
 command = "npm run build:production"
