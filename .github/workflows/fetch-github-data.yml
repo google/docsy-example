@@ -55,13 +55,11 @@ jobs:
           git commit -m "chore: update GitHub data [skip ci]"
           git push
 
-      - name: Trigger Hugo build
+      - name: Trigger Netlify Deploy
         if: steps.git-check.outputs.changed == 'true'
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          event-type: data-updated
-          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
+        run: |
+          curl -X POST -d '{}' ${{ secrets.NETLIFY_BUILD_HOOK }}
+          echo "✅ Netlify build triggered successfully"
 
       - name: Upload artifact
         if: steps.git-check.outputs.changed == 'true'
