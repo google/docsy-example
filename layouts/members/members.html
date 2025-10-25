@@ -188,6 +188,14 @@
         sortTable(column, type, this);
       });
     });
+    
+    // Sort by commits (column 1) descending by default
+    const commitsHeader = document.querySelector('.sortable[data-column="1"]');
+    if (commitsHeader) {
+      // Set to 'asc' so the next sort will be 'desc'
+      currentSort = { column: '1', direction: 'asc' };
+      sortTable('1', 'number', commitsHeader);
+    }
   });
 
   function sortTable(column, type, headerElement) {
