@@ -2,7 +2,7 @@
 # (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
 
 [build]
-  command = "npm ci && npm run build:production"
+  command = "npm install && NODE_PATH=/opt/build/repo/node_modules npm run build:production"
   publish = "public"
 
 [build.environment]
@@ -12,6 +12,7 @@
   HUGO_ENABLEGITINFO = "true"
   NODE_VERSION = "18"
   GO_VERSION = "1.20"
+  NODE_PATH = "/opt/build/repo/node_modules"
 
 [context.production]
 command = "npm run build:production"
