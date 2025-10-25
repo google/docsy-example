@@ -15,6 +15,7 @@ interface Config {
   maxRetries: number;
   retryDelay: number;
   logLevel: 'debug' | 'info' | 'warn' | 'error';
+  apiToken?: string;
 }
 
 // API Response type
@@ -67,7 +68,8 @@ async function getConfig(): Promise<Config> {
       requestTimeout: parseInt(jsonConfig.requestTimeout, 10) || 60000,
       maxRetries: parseInt(jsonConfig.maxRetries, 10) || 3,
       retryDelay: parseInt(jsonConfig.retryDelay, 10) || 2000,
-      logLevel: jsonConfig.logLevel || 'info'
+      logLevel: jsonConfig.logLevel || 'info',
+      apiToken: process.env.API_KEY || jsonConfig.apiToken
     };
   } catch (error) {
     throw new Error(
@@ -93,7 +95,6 @@ function isRetryableError(error: Error): boolean {
 }
 
 async function fetchUserData(config: Config, logger: Logger): Promise<ApiResponse> {
-  // Change from { usernames: ... } to { users: ... }
   const postData = JSON.stringify({ users: config.usernames });
   let lastError: Error | null = null;
 
@@ -113,13 +114,19 @@ async function fetchUserData(config: Config, logger: Logger): Promise<ApiRespons
       logger.debug(`Requesting: ${config.apiUrl}`);
       logger.debug(`Payload: ${postData}`);
 
+      const headers: HeadersInit = {
+        'Accept': '*/*',
+        'Content-Type': 'application/json',
+        'User-Agent': 'Maakaf-Home-Data-Fetcher/1.0'
+      };
+
+      if (config.apiToken) {
+        headers['Authorization'] = `Bearer ${config.apiToken}`;
+      }
+
       const response = await fetch(config.apiUrl, {
         method: 'POST',
-        headers: {
-          'Accept': '*/*',
-          'Content-Type': 'application/json',
-          'User-Agent': 'Maakaf-Home-Data-Fetcher/1.0'
-        },
+        headers,
         body: postData,
         signal: controller.signal
       });

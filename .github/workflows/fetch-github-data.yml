@@ -39,6 +39,7 @@ jobs:
         run: npx tsx fetch-data.ts
         env:
           NODE_ENV: production
+          API_KEY: ${{ secrets.API_KEY }}
 
       - name: Check for changes
         id: git-check
