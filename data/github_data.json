@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -35,6 +25,16 @@
           "pullRequests": 24,
           "issues": 0,
           "prComments": 3,
+          "issueComments": 0
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         }
       ],
@@ -94,16 +94,6 @@
           "issueComments": 1
         },
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 156,
-          "pullRequests": 2,
-          "issues": 17,
-          "prComments": 0,
-          "issueComments": 27
-        },
-        {
           "repoName": "awesome-opensource-israel",
           "description": "A curated list of Israeli-made projects, events, and individuals",
           "url": "https://github.com/lirantal/awesome-opensource-israel",
@@ -112,6 +102,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 156,
+          "pullRequests": 2,
+          "issues": 17,
+          "prComments": 0,
+          "issueComments": 27
         },
         {
           "repoName": "docsy",
