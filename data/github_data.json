@@ -2,52 +2,6 @@
   "users": [
     {
       "user": {
-        "username": "barlavi1",
-        "displayName": "Bar Lavi",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/33284345?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 14,
-        "followers": 0,
-        "following": 0,
-        "accountType": "User",
-        "createdAt": "2017-11-01T11:58:42.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 55,
-          "pullRequests": 24,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 0
-        },
-        {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        }
-      ],
-      "summary": {
-        "totalCommits": 58,
-        "totalPRs": 27,
-        "totalIssues": 1,
-        "totalPRComments": 3,
-        "totalIssueComments": 0
-      }
-    },
-    {
-      "user": {
         "username": "UrielOfir",
         "displayName": "Uriel Ofir",
         "avatarUrl": "https://avatars.githubusercontent.com/u/30144878?v=4",
@@ -84,6 +38,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -91,7 +55,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 3
         },
         {
           "repoName": "maakaf_home",
@@ -102,16 +66,6 @@
           "issues": 17,
           "prComments": 0,
           "issueComments": 27
-        },
-        {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
         },
         {
           "repoName": "docsy",
@@ -159,7 +113,7 @@
         "totalPRs": 8,
         "totalIssues": 17,
         "totalPRComments": 0,
-        "totalIssueComments": 34
+        "totalIssueComments": 37
       }
     },
     {
@@ -289,7 +243,7 @@
           "pullRequests": 13,
           "issues": 17,
           "prComments": 61,
-          "issueComments": 72
+          "issueComments": 74
         }
       ],
       "summary": {
@@ -297,7 +251,7 @@
         "totalPRs": 13,
         "totalIssues": 17,
         "totalPRComments": 61,
-        "totalIssueComments": 72
+        "totalIssueComments": 74
       }
     },
     {
@@ -338,16 +292,6 @@
           "issueComments": 61
         },
         {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 23,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 1
-        },
-        {
           "repoName": "dockly",
           "description": "Immersive terminal interface for managing docker containers and services",
           "url": "https://github.com/lirantal/dockly",
@@ -382,7 +326,7 @@
           "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
           "url": "https://github.com/invariantlabs-ai/mcp-scan",
           "commits": 2,
-          "pullRequests": 1,
+          "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
@@ -438,6 +382,16 @@
           "issueComments": 1
         },
         {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 23,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 1
+        },
+        {
           "repoName": "nodejs-cli-apps-best-practices",
           "description": "The largest Node.js CLI Apps best practices list ✨",
           "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
@@ -490,23 +444,165 @@
       ],
       "summary": {
         "totalCommits": 498,
-        "totalPRs": 68,
+        "totalPRs": 69,
         "totalIssues": 51,
         "totalPRComments": 28,
         "totalIssueComments": 101
       }
+    },
+    {
+      "user": {
+        "username": "fruch",
+        "displayName": "Israel Fruchter",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
+        "bio": null,
+        "location": "Zufim, Israel",
+        "company": "@scylladb",
+        "blog": "http://fruch.github.io/",
+        "twitterUsername": null,
+        "publicRepos": 128,
+        "followers": 26,
+        "following": 16,
+        "accountType": "User",
+        "createdAt": "2010-07-22T15:53:52.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "argus",
+          "description": null,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 20,
+          "pullRequests": 9,
+          "issues": 12,
+          "prComments": 25,
+          "issueComments": 64
+        },
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 314,
+          "pullRequests": 121,
+          "issues": 18,
+          "prComments": 655,
+          "issueComments": 836
+        },
+        {
+          "repoName": "scylla-ccm",
+          "description": "Cassandra Cluster Manager, modified for Scylla",
+          "url": "https://github.com/scylladb/scylla-ccm",
+          "commits": 7,
+          "pullRequests": 3,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 20
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 2,
+          "pullRequests": 2,
+          "issues": 12,
+          "prComments": 5,
+          "issueComments": 169
+        },
+        {
+          "repoName": "cassandra-stress",
+          "description": null,
+          "url": "https://github.com/scylladb/cassandra-stress",
+          "commits": 6,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 25
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 11
+        }
+      ],
+      "summary": {
+        "totalCommits": 360,
+        "totalPRs": 143,
+        "totalIssues": 43,
+        "totalPRComments": 689,
+        "totalIssueComments": 1125
+      }
+    },
+    {
+      "user": {
+        "username": "barlavi1",
+        "displayName": "Bar Lavi",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33284345?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 14,
+        "followers": 0,
+        "following": 0,
+        "accountType": "User",
+        "createdAt": "2017-11-01T11:58:42.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 55,
+          "pullRequests": 24,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 0
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 58,
+        "totalPRs": 27,
+        "totalIssues": 1,
+        "totalPRComments": 3,
+        "totalIssueComments": 0
+      }
     }
   ],
   "globalSummary": {
-    "totalCommits": 806,
-    "totalPRs": 130,
-    "totalIssues": 89,
-    "totalPRComments": 92,
-    "totalIssueComments": 213,
-    "totalRepos": 28,
-    "successfulUsers": 6,
+    "totalCommits": 1166,
+    "totalPRs": 274,
+    "totalIssues": 132,
+    "totalPRComments": 781,
+    "totalIssueComments": 1343,
+    "totalRepos": 35,
+    "successfulUsers": 7,
     "failedUsers": 0,
-    "totalUsers": 6,
+    "totalUsers": 7,
     "analysisTimeframe": "2025-04-28 to 2025-10-25",
     "minForkCountFilter": "3"
   },
