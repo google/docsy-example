@@ -84,6 +84,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 10,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
           "repoName": "awesome-opensource-israel",
           "description": "A curated list of Israeli-made projects, events, and individuals",
           "url": "https://github.com/lirantal/awesome-opensource-israel",
@@ -102,16 +112,6 @@
           "issues": 17,
           "prComments": 0,
           "issueComments": 27
-        },
-        {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 10,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
         },
         {
           "repoName": "docsy",
@@ -338,6 +338,16 @@
           "issueComments": 26
         },
         {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 23,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 1
+        },
+        {
           "repoName": "dockly",
           "description": "Immersive terminal interface for managing docker containers and services",
           "url": "https://github.com/lirantal/dockly",
@@ -428,30 +438,10 @@
           "issueComments": 1
         },
         {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 23,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 1
-        },
-        {
           "repoName": "nodejs-cli-apps-best-practices",
           "description": "The largest Node.js CLI Apps best practices list ✨",
           "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
           "commits": 2,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "user-docs",
-          "description": "Gitbook documentation repo.",
-          "url": "https://github.com/snyk/user-docs",
-          "commits": 3,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -472,6 +462,16 @@
           "description": "A demo repo showcasing Snyk's IAC offering for terraform",
           "url": "https://github.com/snyk-labs/terraform-goof",
           "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "user-docs",
+          "description": "Gitbook documentation repo.",
+          "url": "https://github.com/snyk/user-docs",
+          "commits": 3,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -514,6 +514,16 @@
       },
       "repos": [
         {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 313,
+          "pullRequests": 120,
+          "issues": 18,
+          "prComments": 654,
+          "issueComments": 834
+        },
+        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
@@ -522,16 +532,6 @@
           "issues": 12,
           "prComments": 25,
           "issueComments": 64
-        },
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 314,
-          "pullRequests": 121,
-          "issues": 18,
-          "prComments": 655,
-          "issueComments": 835
         },
         {
           "repoName": "scylla-ccm",
@@ -564,16 +564,6 @@
           "issueComments": 25
         },
         {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
@@ -582,14 +572,24 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 11
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 360,
-        "totalPRs": 143,
+        "totalCommits": 359,
+        "totalPRs": 142,
         "totalIssues": 43,
-        "totalPRComments": 689,
-        "totalIssueComments": 1124
+        "totalPRComments": 688,
+        "totalIssueComments": 1123
       }
     },
     {
@@ -672,8 +672,18 @@
           "commits": 2,
           "pullRequests": 1,
           "issues": 0,
-          "prComments": 0,
+          "prComments": 1,
           "issueComments": 2
+        },
+        {
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 14,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 10,
+          "issueComments": 16
         },
         {
           "repoName": "awesome-mcp-servers",
@@ -696,6 +706,56 @@
           "issueComments": 0
         },
         {
+          "repoName": "translations",
+          "description": "Translations for actualbudget/actual",
+          "url": "https://github.com/actualbudget/translations",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "actual-mcp",
+          "description": "Model Context Protocol for Actual Budget API",
+          "url": "https://github.com/s-stefanov/actual-mcp",
+          "commits": 7,
+          "pullRequests": 2,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 7
+        },
+        {
+          "repoName": "moneyman",
+          "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
+          "url": "https://github.com/daniel-hauser/moneyman",
+          "commits": 22,
+          "pullRequests": 2,
+          "issues": 1,
+          "prComments": 7,
+          "issueComments": 3
+        },
+        {
+          "repoName": "actual",
+          "description": "A local-first personal finance app",
+          "url": "https://github.com/actualbudget/actual",
+          "commits": 3,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "BcsStudent",
+          "description": "My blog, mainly about programming, in Hebrew",
+          "url": "https://github.com/baruchiro/BcsStudent",
+          "commits": 25,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "paperless-mcp",
           "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
           "url": "https://github.com/nloui/paperless-mcp",
@@ -706,36 +766,46 @@
           "issueComments": 0
         },
         {
-          "repoName": "translations",
-          "description": "Translations for actualbudget/actual",
-          "url": "https://github.com/actualbudget/translations",
-          "commits": 1,
-          "pullRequests": 0,
+          "repoName": "extensions",
+          "description": "Everything you need to extend Raycast.",
+          "url": "https://github.com/raycast/extensions",
+          "commits": 8,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 1,
+          "issueComments": 2
+        },
+        {
+          "repoName": "inspector",
+          "description": "Visual testing tool for MCP servers",
+          "url": "https://github.com/modelcontextprotocol/inspector",
+          "commits": 0,
+          "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 0
+          "issueComments": 3
         }
       ],
       "summary": {
-        "totalCommits": 11,
-        "totalPRs": 5,
-        "totalIssues": 0,
-        "totalPRComments": 7,
-        "totalIssueComments": 11
+        "totalCommits": 90,
+        "totalPRs": 16,
+        "totalIssues": 3,
+        "totalPRComments": 27,
+        "totalIssueComments": 44
       }
     }
   ],
   "globalSummary": {
-    "totalCommits": 1554,
-    "totalPRs": 290,
-    "totalIssues": 166,
-    "totalPRComments": 801,
-    "totalIssueComments": 1383,
-    "totalRepos": 43,
+    "totalCommits": 1632,
+    "totalPRs": 300,
+    "totalIssues": 169,
+    "totalPRComments": 820,
+    "totalIssueComments": 1415,
+    "totalRepos": 50,
     "successfulUsers": 9,
     "failedUsers": 0,
     "totalUsers": 9,
-    "analysisTimeframe": "2025-04-28 to 2025-10-25",
+    "analysisTimeframe": "2025-04-29 to 2025-10-26",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
