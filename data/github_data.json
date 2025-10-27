@@ -2,6 +2,102 @@
   "users": [
     {
       "user": {
+        "username": "fruch",
+        "displayName": "Israel Fruchter",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
+        "bio": null,
+        "location": "Zufim, Israel",
+        "company": "@scylladb",
+        "blog": "http://fruch.github.io/",
+        "twitterUsername": null,
+        "publicRepos": 128,
+        "followers": 26,
+        "following": 16,
+        "accountType": "User",
+        "createdAt": "2010-07-22T15:53:52.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 306,
+          "pullRequests": 121,
+          "issues": 20,
+          "prComments": 659,
+          "issueComments": 825
+        },
+        {
+          "repoName": "argus",
+          "description": null,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 20,
+          "pullRequests": 9,
+          "issues": 12,
+          "prComments": 25,
+          "issueComments": 64
+        },
+        {
+          "repoName": "scylla-ccm",
+          "description": "Cassandra Cluster Manager, modified for Scylla",
+          "url": "https://github.com/scylladb/scylla-ccm",
+          "commits": 7,
+          "pullRequests": 3,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 20
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 2,
+          "pullRequests": 2,
+          "issues": 12,
+          "prComments": 5,
+          "issueComments": 169
+        },
+        {
+          "repoName": "cassandra-stress",
+          "description": null,
+          "url": "https://github.com/scylladb/cassandra-stress",
+          "commits": 6,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 26
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 11
+        }
+      ],
+      "summary": {
+        "totalCommits": 352,
+        "totalPRs": 143,
+        "totalIssues": 45,
+        "totalPRComments": 693,
+        "totalIssueComments": 1115
+      }
+    },
+    {
+      "user": {
         "username": "davidmeirlevy",
         "displayName": "David Meir-Levy",
         "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
@@ -23,7 +119,7 @@
           "url": "https://github.com/qelos-io/qelos",
           "commits": 377,
           "pullRequests": 11,
-          "issues": 9,
+          "issues": 34,
           "prComments": 11,
           "issueComments": 30
         },
@@ -41,7 +137,7 @@
       "summary": {
         "totalCommits": 378,
         "totalPRs": 11,
-        "totalIssues": 9,
+        "totalIssues": 34,
         "totalPRComments": 13,
         "totalIssueComments": 30
       }
@@ -64,24 +160,14 @@
       },
       "repos": [
         {
-          "repoName": "caspion",
-          "description": "Automated budget tracking from Israeli financial institutions",
-          "url": "https://github.com/brafdlog/caspion",
-          "commits": 2,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 7,
-          "issueComments": 8
-        },
-        {
-          "repoName": "n8n",
-          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-          "url": "https://github.com/n8n-io/n8n",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
+          "repoName": "actual-mcp",
+          "description": "Model Context Protocol for Actual Budget API",
+          "url": "https://github.com/s-stefanov/actual-mcp",
+          "commits": 7,
+          "pullRequests": 2,
+          "issues": 1,
           "prComments": 1,
-          "issueComments": 2
+          "issueComments": 7
         },
         {
           "repoName": "israeli-bank-scrapers",
@@ -94,14 +180,14 @@
           "issueComments": 16
         },
         {
-          "repoName": "awesome-mcp-servers",
-          "description": "A curated list of Model Context Protocol (MCP) servers",
-          "url": "https://github.com/wong2/awesome-mcp-servers",
-          "commits": 3,
-          "pullRequests": 1,
+          "repoName": "caspion",
+          "description": "Automated budget tracking from Israeli financial institutions",
+          "url": "https://github.com/brafdlog/caspion",
+          "commits": 2,
+          "pullRequests": 0,
           "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
+          "prComments": 7,
+          "issueComments": 8
         },
         {
           "repoName": "n8n-docs",
@@ -124,16 +210,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "actual-mcp",
-          "description": "Model Context Protocol for Actual Budget API",
-          "url": "https://github.com/s-stefanov/actual-mcp",
-          "commits": 7,
-          "pullRequests": 2,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 7
-        },
-        {
           "repoName": "moneyman",
           "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
           "url": "https://github.com/daniel-hauser/moneyman",
@@ -144,13 +220,13 @@
           "issueComments": 3
         },
         {
-          "repoName": "actual",
-          "description": "A local-first personal finance app",
-          "url": "https://github.com/actualbudget/actual",
-          "commits": 3,
-          "pullRequests": 0,
+          "repoName": "extensions",
+          "description": "Everything you need to extend Raycast.",
+          "url": "https://github.com/raycast/extensions",
+          "commits": 8,
+          "pullRequests": 1,
           "issues": 0,
-          "prComments": 0,
+          "prComments": 1,
           "issueComments": 2
         },
         {
@@ -174,10 +250,10 @@
           "issueComments": 0
         },
         {
-          "repoName": "extensions",
-          "description": "Everything you need to extend Raycast.",
-          "url": "https://github.com/raycast/extensions",
-          "commits": 8,
+          "repoName": "n8n",
+          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "url": "https://github.com/n8n-io/n8n",
+          "commits": 2,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 1,
@@ -192,6 +268,26 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "awesome-mcp-servers",
+          "description": "A curated list of Model Context Protocol (MCP) servers",
+          "url": "https://github.com/wong2/awesome-mcp-servers",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "actual",
+          "description": "A local-first personal finance app",
+          "url": "https://github.com/actualbudget/actual",
+          "commits": 3,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
         }
       ],
       "summary": {
@@ -321,16 +417,6 @@
           "issueComments": 3
         },
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 156,
-          "pullRequests": 2,
-          "issues": 17,
-          "prComments": 0,
-          "issueComments": 27
-        },
-        {
           "repoName": "awesome-opensource-israel",
           "description": "A curated list of Israeli-made projects, events, and individuals",
           "url": "https://github.com/lirantal/awesome-opensource-israel",
@@ -339,6 +425,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 156,
+          "pullRequests": 2,
+          "issues": 17,
+          "prComments": 0,
+          "issueComments": 27
         },
         {
           "repoName": "docsy",
@@ -516,7 +612,7 @@
           "pullRequests": 13,
           "issues": 17,
           "prComments": 61,
-          "issueComments": 74
+          "issueComments": 73
         }
       ],
       "summary": {
@@ -524,7 +620,7 @@
         "totalPRs": 13,
         "totalIssues": 17,
         "totalPRComments": 61,
-        "totalIssueComments": 74
+        "totalIssueComments": 73
       }
     },
     {
@@ -545,16 +641,6 @@
       },
       "repos": [
         {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 168,
-          "pullRequests": 25,
-          "issues": 22,
-          "prComments": 18,
-          "issueComments": 61
-        },
-        {
           "repoName": "ls-mcp",
           "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
           "url": "https://github.com/lirantal/ls-mcp",
@@ -565,13 +651,23 @@
           "issueComments": 26
         },
         {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 23,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 1,
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 168,
+          "pullRequests": 25,
+          "issues": 22,
+          "prComments": 18,
+          "issueComments": 61
+        },
+        {
+          "repoName": "is-website-vulnerable",
+          "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
+          "url": "https://github.com/lirantal/is-website-vulnerable",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
           "issueComments": 1
         },
         {
@@ -583,26 +679,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
-        },
-        {
-          "repoName": "agents",
-          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
-          "url": "https://github.com/qodo-ai/agents",
-          "commits": 7,
-          "pullRequests": 5,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
-          "repoName": "is-website-vulnerable",
-          "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
-          "url": "https://github.com/lirantal/is-website-vulnerable",
-          "commits": 3,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
         },
         {
           "repoName": "mcp-scan",
@@ -623,6 +699,16 @@
           "issues": 0,
           "prComments": 4,
           "issueComments": 0
+        },
+        {
+          "repoName": "agents",
+          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
+          "url": "https://github.com/qodo-ai/agents",
+          "commits": 7,
+          "pullRequests": 5,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 4
         },
         {
           "repoName": "mcp-server-npm-goof",
@@ -665,10 +751,30 @@
           "issueComments": 1
         },
         {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 23,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 1
+        },
+        {
           "repoName": "nodejs-cli-apps-best-practices",
           "description": "The largest Node.js CLI Apps best practices list ✨",
           "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
           "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "user-docs",
+          "description": "Gitbook documentation repo.",
+          "url": "https://github.com/snyk/user-docs",
+          "commits": 3,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -695,16 +801,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "user-docs",
-          "description": "Gitbook documentation repo.",
-          "url": "https://github.com/snyk/user-docs",
-          "commits": 3,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "www-project-mcp-top-10",
           "description": "OWASP Foundation web repository",
           "url": "https://github.com/OWASP/www-project-mcp-top-10",
@@ -722,115 +818,19 @@
         "totalPRComments": 28,
         "totalIssueComments": 101
       }
-    },
-    {
-      "user": {
-        "username": "fruch",
-        "displayName": "Israel Fruchter",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
-        "bio": null,
-        "location": "Zufim, Israel",
-        "company": "@scylladb",
-        "blog": "http://fruch.github.io/",
-        "twitterUsername": null,
-        "publicRepos": 128,
-        "followers": 26,
-        "following": 16,
-        "accountType": "User",
-        "createdAt": "2010-07-22T15:53:52.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 306,
-          "pullRequests": 117,
-          "issues": 20,
-          "prComments": 657,
-          "issueComments": 835
-        },
-        {
-          "repoName": "argus",
-          "description": null,
-          "url": "https://github.com/scylladb/argus",
-          "commits": 20,
-          "pullRequests": 9,
-          "issues": 12,
-          "prComments": 25,
-          "issueComments": 64
-        },
-        {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 2,
-          "pullRequests": 2,
-          "issues": 12,
-          "prComments": 5,
-          "issueComments": 169
-        },
-        {
-          "repoName": "cassandra-stress",
-          "description": null,
-          "url": "https://github.com/scylladb/cassandra-stress",
-          "commits": 6,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 26
-        },
-        {
-          "repoName": "scylla-ccm",
-          "description": "Cassandra Cluster Manager, modified for Scylla",
-          "url": "https://github.com/scylladb/scylla-ccm",
-          "commits": 7,
-          "pullRequests": 3,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 20
-        },
-        {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 10,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 11
-        }
-      ],
-      "summary": {
-        "totalCommits": 352,
-        "totalPRs": 139,
-        "totalIssues": 45,
-        "totalPRComments": 691,
-        "totalIssueComments": 1125
-      }
     }
   ],
   "globalSummary": {
     "totalCommits": 1626,
-    "totalPRs": 297,
-    "totalIssues": 146,
-    "totalPRComments": 823,
-    "totalIssueComments": 1417,
+    "totalPRs": 301,
+    "totalIssues": 171,
+    "totalPRComments": 825,
+    "totalIssueComments": 1406,
     "totalRepos": 50,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-04-29 to 2025-10-26",
+    "analysisTimeframe": "2025-04-30 to 2025-10-27",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
