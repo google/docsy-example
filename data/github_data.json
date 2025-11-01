@@ -68,7 +68,7 @@
           "description": "safely install npm packages by auditing them pre-install stage",
           "url": "https://github.com/lirantal/npq",
           "commits": 170,
-          "pullRequests": 26,
+          "pullRequests": 28,
           "issues": 22,
           "prComments": 18,
           "issueComments": 61
@@ -194,6 +194,16 @@
           "issueComments": 0
         },
         {
+          "repoName": "terraform-goof",
+          "description": "A demo repo showcasing Snyk's IAC offering for terraform",
+          "url": "https://github.com/snyk-labs/terraform-goof",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "user-docs",
           "description": "Gitbook documentation repo.",
           "url": "https://github.com/snyk/user-docs",
@@ -214,29 +224,19 @@
           "issueComments": 0
         },
         {
-          "repoName": "terraform-goof",
-          "description": "A demo repo showcasing Snyk's IAC offering for terraform",
-          "url": "https://github.com/snyk-labs/terraform-goof",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 8,
-          "pullRequests": 3,
+          "commits": 10,
+          "pullRequests": 4,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
         }
       ],
       "summary": {
-        "totalCommits": 510,
-        "totalPRs": 74,
+        "totalCommits": 512,
+        "totalPRs": 77,
         "totalIssues": 51,
         "totalPRComments": 28,
         "totalIssueComments": 103
@@ -253,7 +253,7 @@
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
         "publicRepos": 84,
-        "followers": 38,
+        "followers": 39,
         "following": 15,
         "accountType": "User",
         "createdAt": "2017-07-13T09:26:30.000Z"
@@ -481,11 +481,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 306,
-          "pullRequests": 118,
-          "issues": 25,
+          "commits": 300,
+          "pullRequests": 115,
+          "issues": 24,
           "prComments": 691,
-          "issueComments": 877
+          "issueComments": 871
         },
         {
           "repoName": "argus",
@@ -513,9 +513,9 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
           "pullRequests": 2,
-          "issues": 12,
+          "issues": 11,
           "prComments": 5,
-          "issueComments": 168
+          "issueComments": 166
         },
         {
           "repoName": "cassandra-stress",
@@ -528,16 +528,6 @@
           "issueComments": 26
         },
         {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
@@ -546,14 +536,24 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 11
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 352,
-        "totalPRs": 139,
-        "totalIssues": 50,
+        "totalCommits": 346,
+        "totalPRs": 136,
+        "totalIssues": 48,
         "totalPRComments": 725,
-        "totalIssueComments": 1164
+        "totalIssueComments": 1156
       }
     },
     {
@@ -613,7 +613,7 @@
         "blog": "https://baruchiro.com/",
         "twitterUsername": "baruchiro",
         "publicRepos": 162,
-        "followers": 73,
+        "followers": 72,
         "following": 12,
         "accountType": "User",
         "createdAt": "2016-03-06T13:55:11.000Z"
@@ -650,11 +650,11 @@
           "issueComments": 8
         },
         {
-          "repoName": "n8n-docs",
-          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
-          "url": "https://github.com/n8n-io/n8n-docs",
-          "commits": 3,
-          "pullRequests": 1,
+          "repoName": "translations",
+          "description": "Translations for actualbudget/actual",
+          "url": "https://github.com/actualbudget/translations",
+          "commits": 1,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
@@ -690,6 +690,16 @@
           "issueComments": 2
         },
         {
+          "repoName": "n8n",
+          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "url": "https://github.com/n8n-io/n8n",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 1,
+          "issueComments": 2
+        },
+        {
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
@@ -710,11 +720,11 @@
           "issueComments": 0
         },
         {
-          "repoName": "translations",
-          "description": "Translations for actualbudget/actual",
-          "url": "https://github.com/actualbudget/translations",
-          "commits": 1,
-          "pullRequests": 0,
+          "repoName": "n8n-docs",
+          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
+          "url": "https://github.com/n8n-io/n8n-docs",
+          "commits": 3,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
@@ -728,16 +738,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "n8n",
-          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-          "url": "https://github.com/n8n-io/n8n",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
         },
         {
           "repoName": "actual",
@@ -770,7 +770,7 @@
         "twitterUsername": null,
         "publicRepos": 28,
         "followers": 8,
-        "following": 11,
+        "following": 13,
         "accountType": "User",
         "createdAt": "2016-07-14T07:01:25.000Z"
       },
@@ -831,16 +831,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1637,
+    "totalCommits": 1633,
     "totalPRs": 302,
-    "totalIssues": 172,
+    "totalIssues": 170,
     "totalPRComments": 855,
-    "totalIssueComments": 1451,
+    "totalIssueComments": 1443,
     "totalRepos": 51,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-04 to 2025-10-31",
+    "analysisTimeframe": "2025-05-05 to 2025-11-01",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
