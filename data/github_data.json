@@ -23,17 +23,17 @@
           "url": "https://github.com/hasadna/open-bus-map-search",
           "commits": 51,
           "pullRequests": 13,
-          "issues": 13,
-          "prComments": 59,
-          "issueComments": 67
+          "issues": 14,
+          "prComments": 62,
+          "issueComments": 74
         }
       ],
       "summary": {
         "totalCommits": 51,
         "totalPRs": 13,
-        "totalIssues": 13,
-        "totalPRComments": 59,
-        "totalIssueComments": 67
+        "totalIssues": 14,
+        "totalPRComments": 62,
+        "totalIssueComments": 74
       }
     },
     {
@@ -184,16 +184,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "llm-ai-security-demo",
-          "description": null,
-          "url": "https://github.com/lirantal/llm-ai-security-demo",
-          "commits": 4,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "terraform-goof",
           "description": "A demo repo showcasing Snyk's IAC offering for terraform",
           "url": "https://github.com/snyk-labs/terraform-goof",
@@ -208,6 +198,16 @@
           "description": "Gitbook documentation repo.",
           "url": "https://github.com/snyk/user-docs",
           "commits": 3,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "llm-ai-security-demo",
+          "description": null,
+          "url": "https://github.com/lirantal/llm-ai-security-demo",
+          "commits": 4,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -376,16 +376,6 @@
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 3,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
@@ -393,6 +383,16 @@
           "pullRequests": 24,
           "issues": 0,
           "prComments": 3,
+          "issueComments": 0
+        },
+        {
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 3,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 0,
           "issueComments": 0
         }
       ],
@@ -478,24 +478,44 @@
       },
       "repos": [
         {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 299,
-          "pullRequests": 113,
-          "issues": 24,
-          "prComments": 686,
-          "issueComments": 866
-        },
-        {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
           "commits": 20,
           "pullRequests": 8,
+          "issues": 13,
+          "prComments": 26,
+          "issueComments": 63
+        },
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 299,
+          "pullRequests": 118,
+          "issues": 24,
+          "prComments": 683,
+          "issueComments": 866
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 2,
+          "pullRequests": 2,
           "issues": 12,
-          "prComments": 25,
-          "issueComments": 62
+          "prComments": 7,
+          "issueComments": 169
+        },
+        {
+          "repoName": "cassandra-stress",
+          "description": null,
+          "url": "https://github.com/scylladb/cassandra-stress",
+          "commits": 6,
+          "pullRequests": 3,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 26
         },
         {
           "repoName": "scylla-ccm",
@@ -508,24 +528,14 @@
           "issueComments": 20
         },
         {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 2,
-          "pullRequests": 2,
-          "issues": 11,
-          "prComments": 5,
-          "issueComments": 166
-        },
-        {
-          "repoName": "cassandra-stress",
-          "description": null,
-          "url": "https://github.com/scylladb/cassandra-stress",
-          "commits": 6,
-          "pullRequests": 3,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 23
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 16
         },
         {
           "repoName": "scylla-monitoring",
@@ -536,24 +546,14 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 10,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 11
         }
       ],
       "summary": {
         "totalCommits": 345,
-        "totalPRs": 134,
-        "totalIssues": 48,
+        "totalPRs": 139,
+        "totalIssues": 50,
         "totalPRComments": 720,
-        "totalIssueComments": 1148
+        "totalIssueComments": 1160
       }
     },
     {
@@ -620,26 +620,6 @@
       },
       "repos": [
         {
-          "repoName": "actual-mcp",
-          "description": "Model Context Protocol for Actual Budget API",
-          "url": "https://github.com/s-stefanov/actual-mcp",
-          "commits": 7,
-          "pullRequests": 2,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 7
-        },
-        {
-          "repoName": "israeli-bank-scrapers",
-          "description": "Provide scrapers for all major Israeli banks and credit card companies",
-          "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 14,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 10,
-          "issueComments": 16
-        },
-        {
           "repoName": "caspion",
           "description": "Automated budget tracking from Israeli financial institutions",
           "url": "https://github.com/brafdlog/caspion",
@@ -650,14 +630,14 @@
           "issueComments": 6
         },
         {
-          "repoName": "awesome-mcp-servers",
-          "description": "A curated list of Model Context Protocol (MCP) servers",
-          "url": "https://github.com/wong2/awesome-mcp-servers",
-          "commits": 3,
-          "pullRequests": 1,
+          "repoName": "israeli-bank-scrapers",
+          "description": "Provide scrapers for all major Israeli banks and credit card companies",
+          "url": "https://github.com/eshaham/israeli-bank-scrapers",
+          "commits": 14,
+          "pullRequests": 4,
           "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
+          "prComments": 13,
+          "issueComments": 16
         },
         {
           "repoName": "moneyman",
@@ -668,16 +648,6 @@
           "issues": 1,
           "prComments": 7,
           "issueComments": 3
-        },
-        {
-          "repoName": "extensions",
-          "description": "Everything you need to extend Raycast.",
-          "url": "https://github.com/raycast/extensions",
-          "commits": 8,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
         },
         {
           "repoName": "n8n",
@@ -698,6 +668,46 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "actual",
+          "description": "A local-first personal finance app",
+          "url": "https://github.com/actualbudget/actual",
+          "commits": 3,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "extensions",
+          "description": "Everything you need to extend Raycast.",
+          "url": "https://github.com/raycast/extensions",
+          "commits": 8,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 1,
+          "issueComments": 2
+        },
+        {
+          "repoName": "awesome-mcp-servers",
+          "description": "A curated list of Model Context Protocol (MCP) servers",
+          "url": "https://github.com/wong2/awesome-mcp-servers",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "actual-mcp",
+          "description": "Model Context Protocol for Actual Budget API",
+          "url": "https://github.com/s-stefanov/actual-mcp",
+          "commits": 7,
+          "pullRequests": 2,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 7
         },
         {
           "repoName": "BcsStudent",
@@ -730,16 +740,6 @@
           "issueComments": 3
         },
         {
-          "repoName": "actual",
-          "description": "A local-first personal finance app",
-          "url": "https://github.com/actualbudget/actual",
-          "commits": 3,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "translations",
           "description": "Translations for actualbudget/actual",
           "url": "https://github.com/actualbudget/translations",
@@ -754,7 +754,7 @@
         "totalCommits": 89,
         "totalPRs": 16,
         "totalIssues": 3,
-        "totalPRComments": 27,
+        "totalPRComments": 30,
         "totalIssueComments": 42
       }
     },
@@ -832,10 +832,10 @@
   ],
   "globalSummary": {
     "totalCommits": 1634,
-    "totalPRs": 301,
-    "totalIssues": 170,
-    "totalPRComments": 850,
-    "totalIssueComments": 1433,
+    "totalPRs": 306,
+    "totalIssues": 173,
+    "totalPRComments": 856,
+    "totalIssueComments": 1452,
     "totalRepos": 51,
     "successfulUsers": 10,
     "failedUsers": 0,
