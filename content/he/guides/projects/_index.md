@@ -91,4 +91,32 @@ AutoKitteh הוא המקום המושלם למפתחים שרוצים ללמוד
 Qelos הוא המקום המושלם למי שרוצה ללמוד איך בונים SaaS מודרני, לתרום לפרויקט עם חזון ברור, ולהיות חלק מקהילה שמשנה את הדרך שבה אנחנו בונים אפליקציות!
 {{< /alert >}}
 
+### <a href="https://github.com/Deadlink-Hunter/Broken-Link-Website" target="_blank">Deadlink-Hunter</a> 🕵️
+
+נמאס לכם מקישורים שבורים בתיעוד? הכירו את Deadlink-Hunter – פרויקט קוד פתוח שנועד למצוא ולתקן קישורים שבורים ב-README ובתיעוד של פרויקטי GitHub!
+
+**למה זה חשוב?**  
+תיעוד הוא שער הכניסה הראשון לכל פרויקט, אבל לעיתים קרובות הוא מלא בקישורים מתים שמתסכלים את המשתמשים. Deadlink-Hunter בא לפתור את זה עם ממשק משתמש ידידותי ובדיקה חכמה שיודעת להבדיל בין קישור באמת שבור לבין דברים כמו `localhost:4000`.
+
+**מה מיוחד בפרויקט?**
+- **Frontend מודרני:** בנוי עם React, TypeScript, Vite ו-Mantine - טכנולוגיות העדכניות ביותר!
+- **תמיכה ב-Docker:** הרצה קלה עם Docker Compose או ישירות דרך Docker.
+- **בדיקות מקיפות:** מערכת בדיקות עם Vitest ו-React Testing Library.
+- **Storybook:** כל הקומפוננטות מתועדות ונגישות לעריכה וצפייה.
+- **UI/UX מעוצב:** עיצוב נקי ואינטואיטיבי שנוצר בהשראת Lovable ו-base44.
+
+**למה כדאי לתרום?**  
+הפרויקט נוצר מתוך רצון להחזיר לקהילת הקוד הפתוח, והקהילה כאן פעילה ומזמינה! יש כבר למעלה מ-50 תורמים, וכל אחד יכול למצוא את מקומו - בין אם זה קוד, עיצוב, תיעוד או בדיקות. הפרויקט משתמש ב-pnpm ומוגדר עם כלי פיתוח מודרניים כמו ESLint, Prettier ו-Husky.
+
+**⚠️ שימו לב:** הפרויקט לא מקבל Pull Requests שנוצרו במלואם על ידי AI ללא בדיקה אנושית.
+
+**קישורים חשובים:**
+- <a href="https://github.com/Deadlink-Hunter/Broken-Link-Website" target="_blank">Frontend Repository</a>
+- <a href="https://github.com/Deadlink-Hunter/Broken-Link-Checker" target="_blank">Backend Repository</a>
+- <a href="https://github.com/Deadlink-Hunter/Deadlink-Crawler" target="_blank">Crawler Repository</a>
+
+{{< alert >}}
+Deadlink-Hunter הוא המקום המושלם למתחילים! עם תיעוד ברור, קהילה פעילה וטכנולוגיות מודרניות - זו הזדמנות מעולה ללמוד ולתרום לפרויקט שבאמת עוזר לכולם!
+{{< /alert >}}
+
 {{< comments >}}
