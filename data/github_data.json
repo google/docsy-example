@@ -227,16 +227,16 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 10,
-          "pullRequests": 4,
+          "commits": 12,
+          "pullRequests": 5,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
         }
       ],
       "summary": {
-        "totalCommits": 512,
-        "totalPRs": 77,
+        "totalCommits": 514,
+        "totalPRs": 78,
         "totalIssues": 51,
         "totalPRComments": 28,
         "totalIssueComments": 103
@@ -252,7 +252,7 @@
         "company": "mizrahi-tefahot",
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
-        "publicRepos": 84,
+        "publicRepos": 85,
         "followers": 39,
         "following": 15,
         "accountType": "User",
@@ -290,16 +290,6 @@
           "issueComments": 3
         },
         {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -308,6 +298,16 @@
           "issues": 17,
           "prComments": 0,
           "issueComments": 27
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "docsy",
@@ -376,16 +376,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 55,
-          "pullRequests": 24,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 0
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -393,6 +383,16 @@
           "pullRequests": 3,
           "issues": 1,
           "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 55,
+          "pullRequests": 24,
+          "issues": 0,
+          "prComments": 3,
           "issueComments": 0
         }
       ],
@@ -481,11 +481,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 300,
-          "pullRequests": 115,
+          "commits": 299,
+          "pullRequests": 113,
           "issues": 24,
-          "prComments": 691,
-          "issueComments": 871
+          "prComments": 686,
+          "issueComments": 866
         },
         {
           "repoName": "argus",
@@ -525,17 +525,7 @@
           "pullRequests": 3,
           "issues": 1,
           "prComments": 1,
-          "issueComments": 26
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 10,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 11
+          "issueComments": 23
         },
         {
           "repoName": "scylla-monitoring",
@@ -546,14 +536,24 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 11
         }
       ],
       "summary": {
-        "totalCommits": 346,
-        "totalPRs": 136,
+        "totalCommits": 345,
+        "totalPRs": 134,
         "totalIssues": 48,
-        "totalPRComments": 725,
-        "totalIssueComments": 1156
+        "totalPRComments": 720,
+        "totalIssueComments": 1148
       }
     },
     {
@@ -647,17 +647,7 @@
           "pullRequests": 0,
           "issues": 0,
           "prComments": 7,
-          "issueComments": 8
-        },
-        {
-          "repoName": "translations",
-          "description": "Translations for actualbudget/actual",
-          "url": "https://github.com/actualbudget/translations",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
+          "issueComments": 6
         },
         {
           "repoName": "awesome-mcp-servers",
@@ -700,6 +690,16 @@
           "issueComments": 2
         },
         {
+          "repoName": "n8n-docs",
+          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
+          "url": "https://github.com/n8n-io/n8n-docs",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "BcsStudent",
           "description": "My blog, mainly about programming, in Hebrew",
           "url": "https://github.com/baruchiro/BcsStudent",
@@ -715,16 +715,6 @@
           "url": "https://github.com/nloui/paperless-mcp",
           "commits": 0,
           "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "n8n-docs",
-          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
-          "url": "https://github.com/n8n-io/n8n-docs",
-          "commits": 3,
-          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
@@ -748,6 +738,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
+        },
+        {
+          "repoName": "translations",
+          "description": "Translations for actualbudget/actual",
+          "url": "https://github.com/actualbudget/translations",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -755,7 +755,7 @@
         "totalPRs": 16,
         "totalIssues": 3,
         "totalPRComments": 27,
-        "totalIssueComments": 44
+        "totalIssueComments": 42
       }
     },
     {
@@ -831,16 +831,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1633,
-    "totalPRs": 302,
+    "totalCommits": 1634,
+    "totalPRs": 301,
     "totalIssues": 170,
-    "totalPRComments": 855,
-    "totalIssueComments": 1443,
+    "totalPRComments": 850,
+    "totalIssueComments": 1433,
     "totalRepos": 51,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-05 to 2025-11-01",
+    "analysisTimeframe": "2025-05-06 to 2025-11-02",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
