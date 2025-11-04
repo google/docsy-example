@@ -25,7 +25,7 @@
           "pullRequests": 13,
           "issues": 13,
           "prComments": 61,
-          "issueComments": 73
+          "issueComments": 72
         }
       ],
       "summary": {
@@ -33,7 +33,7 @@
         "totalPRs": 13,
         "totalIssues": 13,
         "totalPRComments": 61,
-        "totalIssueComments": 73
+        "totalIssueComments": 72
       }
     },
     {
@@ -46,8 +46,8 @@
         "company": "@snyk",
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
-        "publicRepos": 458,
-        "followers": 2304,
+        "publicRepos": 459,
+        "followers": 2303,
         "following": 1098,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -227,17 +227,17 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 12,
+          "commits": 14,
           "pullRequests": 5,
-          "issues": 0,
+          "issues": 1,
           "prComments": 0,
           "issueComments": 5
         }
       ],
       "summary": {
-        "totalCommits": 514,
+        "totalCommits": 516,
         "totalPRs": 78,
-        "totalIssues": 51,
+        "totalIssues": 52,
         "totalPRComments": 28,
         "totalIssueComments": 106
       }
@@ -280,14 +280,14 @@
           "issueComments": 0
         },
         {
-          "repoName": "os-practice",
-          "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 10,
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 1
         },
         {
           "repoName": "maakaf_home",
@@ -300,16 +300,6 @@
           "issueComments": 27
         },
         {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "docsy",
           "description": "Hugo theme for open source documentation",
           "url": "https://github.com/google/docsy",
@@ -318,6 +308,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
+        },
+        {
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
+          "commits": 10,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         },
         {
           "repoName": "hugo",
@@ -485,17 +485,27 @@
           "pullRequests": 8,
           "issues": 13,
           "prComments": 26,
-          "issueComments": 63
+          "issueComments": 62
         },
         {
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 299,
-          "pullRequests": 118,
+          "commits": 294,
+          "pullRequests": 116,
           "issues": 24,
-          "prComments": 682,
-          "issueComments": 862
+          "prComments": 680,
+          "issueComments": 852
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 2,
+          "pullRequests": 2,
+          "issues": 12,
+          "prComments": 7,
+          "issueComments": 169
         },
         {
           "repoName": "scylla-ccm",
@@ -513,29 +523,9 @@
           "url": "https://github.com/scylladb/cassandra-stress",
           "commits": 6,
           "pullRequests": 3,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 26
-        },
-        {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 2,
-          "pullRequests": 2,
-          "issues": 12,
-          "prComments": 7,
-          "issueComments": 169
-        },
-        {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
           "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
+          "prComments": 1,
+          "issueComments": 25
         },
         {
           "repoName": "scylla-cqlsh",
@@ -546,14 +536,24 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 16
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 345,
-        "totalPRs": 139,
-        "totalIssues": 50,
-        "totalPRComments": 719,
-        "totalIssueComments": 1156
+        "totalCommits": 340,
+        "totalPRs": 137,
+        "totalIssues": 49,
+        "totalPRComments": 717,
+        "totalIssueComments": 1144
       }
     },
     {
@@ -577,7 +577,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 378,
+          "commits": 380,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -595,7 +595,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 379,
+        "totalCommits": 381,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 13,
@@ -660,6 +660,16 @@
           "issueComments": 7
         },
         {
+          "repoName": "BcsStudent",
+          "description": "My blog, mainly about programming, in Hebrew",
+          "url": "https://github.com/baruchiro/BcsStudent",
+          "commits": 22,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "n8n",
           "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
           "url": "https://github.com/n8n-io/n8n",
@@ -680,36 +690,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "translations",
-          "description": "Translations for actualbudget/actual",
-          "url": "https://github.com/actualbudget/translations",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "BcsStudent",
-          "description": "My blog, mainly about programming, in Hebrew",
-          "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 22,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "paperless-mcp",
-          "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
-          "url": "https://github.com/nloui/paperless-mcp",
-          "commits": 0,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "extensions",
           "description": "Everything you need to extend Raycast.",
           "url": "https://github.com/raycast/extensions",
@@ -720,14 +700,24 @@
           "issueComments": 2
         },
         {
-          "repoName": "inspector",
-          "description": "Visual testing tool for MCP servers",
-          "url": "https://github.com/modelcontextprotocol/inspector",
-          "commits": 0,
-          "pullRequests": 2,
+          "repoName": "actual",
+          "description": "A local-first personal finance app",
+          "url": "https://github.com/actualbudget/actual",
+          "commits": 3,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 3
+          "issueComments": 2
+        },
+        {
+          "repoName": "translations",
+          "description": "Translations for actualbudget/actual",
+          "url": "https://github.com/actualbudget/translations",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "caspion",
@@ -740,14 +730,24 @@
           "issueComments": 5
         },
         {
-          "repoName": "actual",
-          "description": "A local-first personal finance app",
-          "url": "https://github.com/actualbudget/actual",
-          "commits": 3,
-          "pullRequests": 0,
+          "repoName": "paperless-mcp",
+          "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
+          "url": "https://github.com/nloui/paperless-mcp",
+          "commits": 0,
+          "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 0
+        },
+        {
+          "repoName": "inspector",
+          "description": "Visual testing tool for MCP servers",
+          "url": "https://github.com/modelcontextprotocol/inspector",
+          "commits": 0,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
         }
       ],
       "summary": {
@@ -831,16 +831,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1633,
-    "totalPRs": 306,
+    "totalCommits": 1632,
+    "totalPRs": 304,
     "totalIssues": 172,
-    "totalPRComments": 854,
-    "totalIssueComments": 1447,
+    "totalPRComments": 852,
+    "totalIssueComments": 1434,
     "totalRepos": 51,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-07 to 2025-11-03",
+    "analysisTimeframe": "2025-05-08 to 2025-11-04",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
