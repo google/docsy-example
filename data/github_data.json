@@ -28,14 +28,14 @@
           "issueComments": 0
         },
         {
-          "repoName": "awesome-mcp-servers",
-          "description": "A curated list of Model Context Protocol (MCP) servers",
-          "url": "https://github.com/wong2/awesome-mcp-servers",
-          "commits": 3,
+          "repoName": "n8n",
+          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "url": "https://github.com/n8n-io/n8n",
+          "commits": 2,
           "pullRequests": 1,
           "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
+          "prComments": 1,
+          "issueComments": 2
         },
         {
           "repoName": "moneyman",
@@ -118,6 +118,16 @@
           "issueComments": 2
         },
         {
+          "repoName": "awesome-mcp-servers",
+          "description": "A curated list of Model Context Protocol (MCP) servers",
+          "url": "https://github.com/wong2/awesome-mcp-servers",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "inspector",
           "description": "Visual testing tool for MCP servers",
           "url": "https://github.com/modelcontextprotocol/inspector",
@@ -126,16 +136,6 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
-        },
-        {
-          "repoName": "n8n",
-          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-          "url": "https://github.com/n8n-io/n8n",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
         },
         {
           "repoName": "actual",
@@ -276,16 +276,6 @@
           "issueComments": 17
         },
         {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "os-practice",
           "description": null,
           "url": "https://github.com/UrielOfir/os-practice",
@@ -294,6 +284,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 3
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "maakaf_home",
@@ -480,16 +480,16 @@
           "commits": 53,
           "pullRequests": 15,
           "issues": 11,
-          "prComments": 62,
-          "issueComments": 77
+          "prComments": 58,
+          "issueComments": 76
         }
       ],
       "summary": {
         "totalCommits": 53,
         "totalPRs": 15,
         "totalIssues": 11,
-        "totalPRComments": 62,
-        "totalIssueComments": 77
+        "totalPRComments": 58,
+        "totalIssueComments": 76
       }
     },
     {
@@ -766,16 +766,6 @@
           "issueComments": 25
         },
         {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "scylla-cqlsh",
           "description": "A fork of the cqlsh code",
           "url": "https://github.com/scylladb/scylla-cqlsh",
@@ -784,6 +774,16 @@
           "issues": 0,
           "prComments": 3,
           "issueComments": 16
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -815,7 +815,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 396,
+          "commits": 398,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -833,7 +833,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 397,
+        "totalCommits": 399,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 13,
@@ -842,16 +842,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1672,
+    "totalCommits": 1674,
     "totalPRs": 318,
     "totalIssues": 189,
-    "totalPRComments": 855,
-    "totalIssueComments": 1481,
+    "totalPRComments": 851,
+    "totalIssueComments": 1480,
     "totalRepos": 51,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-10 to 2025-11-06",
+    "analysisTimeframe": "2025-05-11 to 2025-11-07",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
