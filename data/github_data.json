@@ -18,16 +18,6 @@
       },
       "repos": [
         {
-          "repoName": "n8n-docs",
-          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
-          "url": "https://github.com/n8n-io/n8n-docs",
-          "commits": 3,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "n8n",
           "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
           "url": "https://github.com/n8n-io/n8n",
@@ -88,16 +78,6 @@
           "issueComments": 14
         },
         {
-          "repoName": "translations",
-          "description": "Translations for actualbudget/actual",
-          "url": "https://github.com/actualbudget/translations",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "caspion",
           "description": "Automated budget tracking from Israeli financial institutions",
           "url": "https://github.com/brafdlog/caspion",
@@ -138,6 +118,16 @@
           "issueComments": 3
         },
         {
+          "repoName": "n8n-docs",
+          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
+          "url": "https://github.com/n8n-io/n8n-docs",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "actual",
           "description": "A local-first personal finance app",
           "url": "https://github.com/actualbudget/actual",
@@ -146,6 +136,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
+        },
+        {
+          "repoName": "translations",
+          "description": "Translations for actualbudget/actual",
+          "url": "https://github.com/actualbudget/translations",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         }
       ],
       "summary": {
@@ -286,16 +286,6 @@
           "issueComments": 3
         },
         {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -314,6 +304,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
+        },
+        {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         },
         {
           "repoName": "hugo",
@@ -503,7 +503,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
-        "followers": 2304,
+        "followers": 2305,
         "following": 1098,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -580,16 +580,6 @@
           "issueComments": 4
         },
         {
-          "repoName": "mcp-server-npm-goof",
-          "description": "An MCP server for NPM JavaScript Package Management tools",
-          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
-          "commits": 11,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
           "repoName": "lockfile-lint",
           "description": "Lint an npm or yarn lockfile to analyze and detect security issues",
           "url": "https://github.com/lirantal/lockfile-lint",
@@ -628,6 +618,16 @@
           "issues": 1,
           "prComments": 1,
           "issueComments": 1
+        },
+        {
+          "repoName": "mcp-server-npm-goof",
+          "description": "An MCP server for NPM JavaScript Package Management tools",
+          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
+          "commits": 11,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "nodejs-cli-apps-best-practices",
@@ -695,7 +695,7 @@
         "totalPRs": 78,
         "totalIssues": 52,
         "totalPRComments": 28,
-        "totalIssueComments": 106
+        "totalIssueComments": 105
       }
     },
     {
@@ -719,11 +719,11 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 298,
-          "pullRequests": 116,
+          "commits": 291,
+          "pullRequests": 114,
           "issues": 24,
-          "prComments": 682,
-          "issueComments": 860
+          "prComments": 674,
+          "issueComments": 832
         },
         {
           "repoName": "argus",
@@ -741,9 +741,9 @@
           "url": "https://github.com/scylladb/scylladb",
           "commits": 2,
           "pullRequests": 2,
-          "issues": 12,
+          "issues": 11,
           "prComments": 7,
-          "issueComments": 169
+          "issueComments": 164
         },
         {
           "repoName": "scylla-ccm",
@@ -763,17 +763,7 @@
           "pullRequests": 3,
           "issues": 0,
           "prComments": 1,
-          "issueComments": 25
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 10,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 16
+          "issueComments": 23
         },
         {
           "repoName": "scylla-monitoring",
@@ -784,14 +774,24 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 16
         }
       ],
       "summary": {
-        "totalCommits": 344,
-        "totalPRs": 137,
-        "totalIssues": 49,
-        "totalPRComments": 719,
-        "totalIssueComments": 1152
+        "totalCommits": 337,
+        "totalPRs": 135,
+        "totalIssues": 48,
+        "totalPRComments": 711,
+        "totalIssueComments": 1117
       }
     },
     {
@@ -815,7 +815,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 398,
+          "commits": 396,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -833,7 +833,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 399,
+        "totalCommits": 397,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 13,
@@ -842,16 +842,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1674,
-    "totalPRs": 318,
-    "totalIssues": 189,
-    "totalPRComments": 851,
-    "totalIssueComments": 1480,
+    "totalCommits": 1665,
+    "totalPRs": 316,
+    "totalIssues": 188,
+    "totalPRComments": 843,
+    "totalIssueComments": 1444,
     "totalRepos": 51,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-11 to 2025-11-07",
+    "analysisTimeframe": "2025-05-12 to 2025-11-08",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
