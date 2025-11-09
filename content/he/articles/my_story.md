@@ -1,6 +1,6 @@
 ---
 type: "docs"
-title: "הסיפור האישי שלי עם קוד פתוח"
+title: "my-story"
 slug: "how-to-contribute"
 linkTitle: "הסיפור האישי שלי עם קוד פתוח"
 weight: 10
