@@ -18,20 +18,20 @@
       },
       "repos": [
         {
-          "repoName": "n8n",
-          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-          "url": "https://github.com/n8n-io/n8n",
-          "commits": 2,
+          "repoName": "n8n-docs",
+          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
+          "url": "https://github.com/n8n-io/n8n-docs",
+          "commits": 3,
           "pullRequests": 1,
           "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "moneyman",
           "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
           "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 22,
+          "commits": 20,
           "pullRequests": 2,
           "issues": 1,
           "prComments": 7,
@@ -58,16 +58,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "paperless-mcp",
-          "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
-          "url": "https://github.com/nloui/paperless-mcp",
-          "commits": 0,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "israeli-bank-scrapers",
           "description": "Provide scrapers for all major Israeli banks and credit card companies",
           "url": "https://github.com/eshaham/israeli-bank-scrapers",
@@ -76,16 +66,6 @@
           "issues": 0,
           "prComments": 13,
           "issueComments": 14
-        },
-        {
-          "repoName": "caspion",
-          "description": "Automated budget tracking from Israeli financial institutions",
-          "url": "https://github.com/brafdlog/caspion",
-          "commits": 2,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 7,
-          "issueComments": 5
         },
         {
           "repoName": "extensions",
@@ -108,6 +88,16 @@
           "issueComments": 1
         },
         {
+          "repoName": "n8n",
+          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "url": "https://github.com/n8n-io/n8n",
+          "commits": 2,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 1,
+          "issueComments": 2
+        },
+        {
           "repoName": "inspector",
           "description": "Visual testing tool for MCP servers",
           "url": "https://github.com/modelcontextprotocol/inspector",
@@ -118,14 +108,24 @@
           "issueComments": 3
         },
         {
-          "repoName": "n8n-docs",
-          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
-          "url": "https://github.com/n8n-io/n8n-docs",
-          "commits": 3,
+          "repoName": "paperless-mcp",
+          "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
+          "url": "https://github.com/nloui/paperless-mcp",
+          "commits": 0,
           "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "caspion",
+          "description": "Automated budget tracking from Israeli financial institutions",
+          "url": "https://github.com/brafdlog/caspion",
+          "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 7,
+          "issueComments": 5
         },
         {
           "repoName": "actual",
@@ -149,8 +149,8 @@
         }
       ],
       "summary": {
-        "totalCommits": 87,
-        "totalPRs": 16,
+        "totalCommits": 85,
+        "totalPRs": 15,
         "totalIssues": 3,
         "totalPRComments": 30,
         "totalIssueComments": 39
@@ -248,7 +248,7 @@
         "company": "mizrahi-tefahot",
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
-        "publicRepos": 85,
+        "publicRepos": 86,
         "followers": 39,
         "following": 15,
         "accountType": "User",
@@ -296,16 +296,6 @@
           "issueComments": 29
         },
         {
-          "repoName": "docsy",
-          "description": "Hugo theme for open source documentation",
-          "url": "https://github.com/google/docsy",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
           "repoName": "awesome-opensource-israel",
           "description": "A curated list of Israeli-made projects, events, and individuals",
           "url": "https://github.com/lirantal/awesome-opensource-israel",
@@ -314,6 +304,16 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "docsy",
+          "description": "Hugo theme for open source documentation",
+          "url": "https://github.com/google/docsy",
+          "commits": 0,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
         },
         {
           "repoName": "hugo",
@@ -480,16 +480,16 @@
           "commits": 53,
           "pullRequests": 15,
           "issues": 11,
-          "prComments": 58,
-          "issueComments": 76
+          "prComments": 57,
+          "issueComments": 72
         }
       ],
       "summary": {
         "totalCommits": 53,
         "totalPRs": 15,
         "totalIssues": 11,
-        "totalPRComments": 58,
-        "totalIssueComments": 76
+        "totalPRComments": 57,
+        "totalIssueComments": 72
       }
     },
     {
@@ -620,6 +620,16 @@
           "issueComments": 1
         },
         {
+          "repoName": "nodejs-cli-apps-best-practices",
+          "description": "The largest Node.js CLI Apps best practices list ✨",
+          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
+          "commits": 3,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
           "repoName": "mcp-server-npm-goof",
           "description": "An MCP server for NPM JavaScript Package Management tools",
           "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
@@ -630,9 +640,9 @@
           "issueComments": 0
         },
         {
-          "repoName": "nodejs-cli-apps-best-practices",
-          "description": "The largest Node.js CLI Apps best practices list ✨",
-          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
+          "repoName": "user-docs",
+          "description": "Gitbook documentation repo.",
+          "url": "https://github.com/snyk/user-docs",
           "commits": 3,
           "pullRequests": 0,
           "issues": 0,
@@ -660,16 +670,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "user-docs",
-          "description": "Gitbook documentation repo.",
-          "url": "https://github.com/snyk/user-docs",
-          "commits": 3,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "terraform-goof",
           "description": "A demo repo showcasing Snyk's IAC offering for terraform",
           "url": "https://github.com/snyk-labs/terraform-goof",
@@ -683,7 +683,7 @@
           "repoName": "anti-trojan-source",
           "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
           "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 14,
+          "commits": 15,
           "pullRequests": 5,
           "issues": 1,
           "prComments": 0,
@@ -691,7 +691,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 517,
+        "totalCommits": 518,
         "totalPRs": 78,
         "totalIssues": 52,
         "totalPRComments": 28,
@@ -719,21 +719,21 @@
           "repoName": "scylla-cluster-tests",
           "description": "Tests for Scylla Clusters",
           "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 291,
-          "pullRequests": 114,
+          "commits": 288,
+          "pullRequests": 111,
           "issues": 24,
-          "prComments": 674,
-          "issueComments": 832
+          "prComments": 657,
+          "issueComments": 821
         },
         {
           "repoName": "argus",
           "description": null,
           "url": "https://github.com/scylladb/argus",
-          "commits": 20,
-          "pullRequests": 8,
+          "commits": 19,
+          "pullRequests": 7,
           "issues": 13,
           "prComments": 26,
-          "issueComments": 62
+          "issueComments": 59
         },
         {
           "repoName": "scylladb",
@@ -743,7 +743,7 @@
           "pullRequests": 2,
           "issues": 11,
           "prComments": 7,
-          "issueComments": 164
+          "issueComments": 162
         },
         {
           "repoName": "scylla-ccm",
@@ -759,11 +759,11 @@
           "repoName": "cassandra-stress",
           "description": null,
           "url": "https://github.com/scylladb/cassandra-stress",
-          "commits": 6,
-          "pullRequests": 3,
+          "commits": 0,
+          "pullRequests": 0,
           "issues": 0,
-          "prComments": 1,
-          "issueComments": 23
+          "prComments": 0,
+          "issueComments": 15
         },
         {
           "repoName": "scylla-monitoring",
@@ -787,11 +787,11 @@
         }
       ],
       "summary": {
-        "totalCommits": 337,
-        "totalPRs": 135,
+        "totalCommits": 327,
+        "totalPRs": 128,
         "totalIssues": 48,
-        "totalPRComments": 711,
-        "totalIssueComments": 1117
+        "totalPRComments": 693,
+        "totalIssueComments": 1093
       }
     },
     {
@@ -815,7 +815,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 396,
+          "commits": 392,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -833,7 +833,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 397,
+        "totalCommits": 393,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 13,
@@ -842,16 +842,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1665,
-    "totalPRs": 316,
+    "totalCommits": 1650,
+    "totalPRs": 308,
     "totalIssues": 188,
-    "totalPRComments": 843,
-    "totalIssueComments": 1444,
+    "totalPRComments": 824,
+    "totalIssueComments": 1416,
     "totalRepos": 51,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-12 to 2025-11-08",
+    "analysisTimeframe": "2025-05-13 to 2025-11-09",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
