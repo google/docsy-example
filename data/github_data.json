@@ -2,240 +2,58 @@
   "users": [
     {
       "user": {
-        "username": "baruchiro",
-        "displayName": "Baruch Odem (Rothkoff)",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/17686879?v=4",
-        "bio": "Software Developer at With",
-        "location": "Israel",
-        "company": "@with-org",
-        "blog": "https://baruchiro.com/",
-        "twitterUsername": "baruchiro",
-        "publicRepos": 162,
-        "followers": 72,
-        "following": 12,
-        "accountType": "User",
-        "createdAt": "2016-03-06T13:55:11.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "n8n-docs",
-          "description": "Documentation for n8n, a fair-code licensed automation tool with a free community edition and powerful enterprise options. Build AI functionality into your workflows.",
-          "url": "https://github.com/n8n-io/n8n-docs",
-          "commits": 3,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "n8n",
-          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-          "url": "https://github.com/n8n-io/n8n",
-          "commits": 2,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
-        },
-        {
-          "repoName": "moneyman",
-          "description": "Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)",
-          "url": "https://github.com/daniel-hauser/moneyman",
-          "commits": 20,
-          "pullRequests": 2,
-          "issues": 1,
-          "prComments": 7,
-          "issueComments": 2
-        },
-        {
-          "repoName": "actual-mcp",
-          "description": "Model Context Protocol for Actual Budget API",
-          "url": "https://github.com/s-stefanov/actual-mcp",
-          "commits": 7,
-          "pullRequests": 2,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 7
-        },
-        {
-          "repoName": "BcsStudent",
-          "description": "My blog, mainly about programming, in Hebrew",
-          "url": "https://github.com/baruchiro/BcsStudent",
-          "commits": 22,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "extensions",
-          "description": "Everything you need to extend Raycast.",
-          "url": "https://github.com/raycast/extensions",
-          "commits": 8,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 1,
-          "issueComments": 2
-        },
-        {
-          "repoName": "awesome-mcp-servers",
-          "description": "A curated list of Model Context Protocol (MCP) servers",
-          "url": "https://github.com/wong2/awesome-mcp-servers",
-          "commits": 3,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "israeli-bank-scrapers",
-          "description": "Provide scrapers for all major Israeli banks and credit card companies",
-          "url": "https://github.com/eshaham/israeli-bank-scrapers",
-          "commits": 8,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 13,
-          "issueComments": 14
-        },
-        {
-          "repoName": "inspector",
-          "description": "Visual testing tool for MCP servers",
-          "url": "https://github.com/modelcontextprotocol/inspector",
-          "commits": 0,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "paperless-mcp",
-          "description": "An MCP (Model Context Protocol) server for interacting with a Paperless-NGX API server. This server provides tools for managing documents, tags, correspondents, and document types in your Paperless-NGX instance.",
-          "url": "https://github.com/nloui/paperless-mcp",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "caspion",
-          "description": "Automated budget tracking from Israeli financial institutions",
-          "url": "https://github.com/brafdlog/caspion",
-          "commits": 2,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 7,
-          "issueComments": 4
-        },
-        {
-          "repoName": "actual",
-          "description": "A local-first personal finance app",
-          "url": "https://github.com/actualbudget/actual",
-          "commits": 3,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 2
-        },
-        {
-          "repoName": "translations",
-          "description": "Translations for actualbudget/actual",
-          "url": "https://github.com/actualbudget/translations",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        }
-      ],
-      "summary": {
-        "totalCommits": 79,
-        "totalPRs": 13,
-        "totalIssues": 3,
-        "totalPRComments": 30,
-        "totalIssueComments": 37
-      }
-    },
-    {
-      "user": {
-        "username": "sivanbecker",
-        "displayName": "Sivan Becker",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/20453622?v=4",
+        "username": "Lidor57",
+        "displayName": "Lidor Maimon",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
         "bio": null,
         "location": null,
         "company": null,
         "blog": "",
         "twitterUsername": null,
-        "publicRepos": 28,
-        "followers": 8,
-        "following": 13,
-        "accountType": "User",
-        "createdAt": "2016-07-14T07:01:25.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 6,
-          "pullRequests": 9,
-          "issues": 9,
-          "prComments": 0,
-          "issueComments": 13
-        }
-      ],
-      "summary": {
-        "totalCommits": 6,
-        "totalPRs": 9,
-        "totalIssues": 9,
-        "totalPRComments": 0,
-        "totalIssueComments": 13
-      }
-    },
-    {
-      "user": {
-        "username": "moshe-stein24",
-        "displayName": null,
-        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 8,
+        "publicRepos": 6,
         "followers": 0,
-        "following": 3,
+        "following": 0,
         "accountType": "User",
-        "createdAt": "2022-12-06T19:46:01.000Z"
+        "createdAt": "2025-07-04T17:09:24.000Z"
       },
       "repos": [
         {
-          "repoName": "AI-For-Beginners",
-          "description": "12 Weeks, 24 Lessons, AI for All!",
-          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "repoName": "os-practice",
+          "description": null,
+          "url": "https://github.com/UrielOfir/os-practice",
           "commits": 0,
-          "pullRequests": 0,
-          "issues": 1,
+          "pullRequests": 1,
+          "issues": 2,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 0
         },
         {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 1,
+          "commits": 0,
           "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 3
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 27,
+          "pullRequests": 11,
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 1,
-        "totalPRs": 1,
-        "totalIssues": 1,
+        "totalCommits": 27,
+        "totalPRs": 13,
+        "totalIssues": 2,
         "totalPRComments": 0,
-        "totalIssueComments": 2
+        "totalIssueComments": 4
       }
     },
     {
@@ -256,24 +74,24 @@
       },
       "repos": [
         {
-          "repoName": "docsy-example",
-          "description": "An example documentation site using the Docsy Hugo theme",
-          "url": "https://github.com/google/docsy-example",
-          "commits": 0,
-          "pullRequests": 2,
-          "issues": 0,
+          "repoName": "maakaf_home",
+          "description": "Website for Ma'akaf - Israeli Open Source Community",
+          "url": "https://github.com/Maakaf/maakaf_home",
+          "commits": 184,
+          "pullRequests": 3,
+          "issues": 17,
           "prComments": 0,
-          "issueComments": 2
+          "issueComments": 31
         },
         {
           "repoName": "friends-activity-backend",
           "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
           "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 10,
+          "commits": 14,
           "pullRequests": 3,
-          "issues": 10,
+          "issues": 12,
           "prComments": 0,
-          "issueComments": 17
+          "issueComments": 24
         },
         {
           "repoName": "os-practice",
@@ -286,24 +104,24 @@
           "issueComments": 3
         },
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 160,
-          "pullRequests": 2,
-          "issues": 17,
-          "prComments": 0,
-          "issueComments": 29
-        },
-        {
-          "repoName": "awesome-opensource-israel",
-          "description": "A curated list of Israeli-made projects, events, and individuals",
-          "url": "https://github.com/lirantal/awesome-opensource-israel",
-          "commits": 1,
-          "pullRequests": 0,
+          "repoName": "maakaf_home_backend",
+          "description": null,
+          "url": "https://github.com/Maakaf/maakaf_home_backend",
+          "commits": 27,
+          "pullRequests": 1,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
+          "issueComments": 3
+        },
+        {
+          "repoName": "cobol-programming-course",
+          "description": "Training materials and labs for a \"Getting Started\" level course on COBOL",
+          "url": "https://github.com/openmainframeproject/cobol-programming-course",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 0
         },
         {
           "repoName": "docsy",
@@ -311,6 +129,16 @@
           "url": "https://github.com/google/docsy",
           "commits": 0,
           "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 2
+        },
+        {
+          "repoName": "docsy-example",
+          "description": "An example documentation site using the Docsy Hugo theme",
+          "url": "https://github.com/google/docsy-example",
+          "commits": 0,
+          "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
           "issueComments": 2
@@ -336,6 +164,16 @@
           "issueComments": 1
         },
         {
+          "repoName": "awesome-opensource-israel",
+          "description": "A curated list of Israeli-made projects, events, and individuals",
+          "url": "https://github.com/lirantal/awesome-opensource-israel",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
           "repoName": "site",
           "description": "Public Website for the Developer Relations Foundation.",
           "url": "https://github.com/DevRel-Foundation/site",
@@ -344,14 +182,24 @@
           "issues": 0,
           "prComments": 0,
           "issueComments": 1
+        },
+        {
+          "repoName": "maakaf-website",
+          "description": "The official website of 'Maakaf' community",
+          "url": "https://github.com/Maakaf/maakaf-website",
+          "commits": 0,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 182,
-        "totalPRs": 9,
-        "totalIssues": 27,
+        "totalCommits": 237,
+        "totalPRs": 11,
+        "totalIssues": 30,
         "totalPRComments": 0,
-        "totalIssueComments": 56
+        "totalIssueComments": 69
       }
     },
     {
@@ -372,16 +220,6 @@
       },
       "repos": [
         {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 55,
-          "pullRequests": 26,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 1
-        },
-        {
           "repoName": "maakaf_home",
           "description": "Website for Ma'akaf - Israeli Open Source Community",
           "url": "https://github.com/Maakaf/maakaf_home",
@@ -390,11 +228,21 @@
           "issues": 1,
           "prComments": 0,
           "issueComments": 0
+        },
+        {
+          "repoName": "friends-activity-backend",
+          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
+          "url": "https://github.com/Maakaf/friends-activity-backend",
+          "commits": 58,
+          "pullRequests": 27,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 1
         }
       ],
       "summary": {
-        "totalCommits": 58,
-        "totalPRs": 29,
+        "totalCommits": 61,
+        "totalPRs": 30,
         "totalIssues": 1,
         "totalPRComments": 3,
         "totalIssueComments": 1
@@ -402,58 +250,149 @@
     },
     {
       "user": {
-        "username": "Lidor57",
-        "displayName": "Lidor Maimon",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
+        "username": "moshe-stein24",
+        "displayName": null,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
         "bio": null,
         "location": null,
         "company": null,
         "blog": "",
         "twitterUsername": null,
-        "publicRepos": 6,
+        "publicRepos": 8,
         "followers": 0,
-        "following": 0,
+        "following": 3,
         "accountType": "User",
-        "createdAt": "2025-07-04T17:09:24.000Z"
+        "createdAt": "2022-12-06T19:46:01.000Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
+    },
+    {
+      "user": {
+        "username": "davidmeirlevy",
+        "displayName": "David Meir-Levy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
+        "bio": null,
+        "location": "Tel-Aviv",
+        "company": "@prici-io  @configu @qelos-io",
+        "blog": "https://www.davidlevy.co.il",
+        "twitterUsername": "DavidMeirLevy",
+        "publicRepos": 72,
+        "followers": 54,
+        "following": 13,
+        "accountType": "User",
+        "createdAt": "2014-03-06T18:34:31.000Z"
       },
       "repos": [
         {
-          "repoName": "maakaf_home",
-          "description": "Website for Ma'akaf - Israeli Open Source Community",
-          "url": "https://github.com/Maakaf/maakaf_home",
-          "commits": 0,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 3
-        },
-        {
-          "repoName": "friends-activity-backend",
-          "description": "A backend service that collects and processes GitHub activity to showcase the contributions of community members.",
-          "url": "https://github.com/Maakaf/friends-activity-backend",
-          "commits": 27,
+          "repoName": "qelos",
+          "description": "The platform to create AI platforms",
+          "url": "https://github.com/qelos-io/qelos",
+          "commits": 390,
           "pullRequests": 11,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
+          "issues": 34,
+          "prComments": 11,
+          "issueComments": 31
+        }
+      ],
+      "summary": {
+        "totalCommits": 390,
+        "totalPRs": 11,
+        "totalIssues": 34,
+        "totalPRComments": 11,
+        "totalIssueComments": 31
+      }
+    },
+    {
+      "user": {
+        "username": "fruch",
+        "displayName": "Israel Fruchter",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
+        "bio": null,
+        "location": "Zufim, Israel",
+        "company": "@scylladb",
+        "blog": "http://fruch.github.io/",
+        "twitterUsername": null,
+        "publicRepos": 128,
+        "followers": 26,
+        "following": 16,
+        "accountType": "User",
+        "createdAt": "2010-07-22T15:53:52.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 297,
+          "pullRequests": 114,
+          "issues": 24,
+          "prComments": 656,
+          "issueComments": 820
         },
         {
-          "repoName": "os-practice",
+          "repoName": "argus",
           "description": null,
-          "url": "https://github.com/UrielOfir/os-practice",
-          "commits": 0,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 18,
+          "pullRequests": 7,
+          "issues": 12,
+          "prComments": 26,
+          "issueComments": 57
+        },
+        {
+          "repoName": "scylla-ccm",
+          "description": "Cassandra Cluster Manager, modified for Scylla",
+          "url": "https://github.com/scylladb/scylla-ccm",
+          "commits": 7,
+          "pullRequests": 3,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 18
+        },
+        {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 16
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 2,
+          "pullRequests": 2,
+          "issues": 11,
+          "prComments": 7,
+          "issueComments": 172
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
           "pullRequests": 1,
-          "issues": 2,
+          "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 27,
-        "totalPRs": 13,
-        "totalIssues": 2,
-        "totalPRComments": 0,
-        "totalIssueComments": 4
+        "totalCommits": 335,
+        "totalPRs": 131,
+        "totalIssues": 47,
+        "totalPRComments": 692,
+        "totalIssueComments": 1083
       }
     },
     {
@@ -479,17 +418,17 @@
           "url": "https://github.com/hasadna/open-bus-map-search",
           "commits": 53,
           "pullRequests": 15,
-          "issues": 11,
-          "prComments": 57,
-          "issueComments": 72
+          "issues": 14,
+          "prComments": 59,
+          "issueComments": 73
         }
       ],
       "summary": {
         "totalCommits": 53,
         "totalPRs": 15,
-        "totalIssues": 11,
-        "totalPRComments": 57,
-        "totalIssueComments": 72
+        "totalIssues": 14,
+        "totalPRComments": 59,
+        "totalIssueComments": 73
       }
     },
     {
@@ -504,7 +443,7 @@
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
         "followers": 2306,
-        "following": 1098,
+        "following": 1099,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
       },
@@ -530,6 +469,56 @@
           "issueComments": 61
         },
         {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 57,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 3,
+          "prComments": 0,
+          "issueComments": 8
+        },
+        {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 23,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 1
+        },
+        {
+          "repoName": "anti-trojan-source",
+          "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
+          "url": "https://github.com/lirantal/anti-trojan-source",
+          "commits": 15,
+          "pullRequests": 5,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 5
+        },
+        {
+          "repoName": "agents",
+          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
+          "url": "https://github.com/qodo-ai/agents",
+          "commits": 7,
+          "pullRequests": 5,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
           "repoName": "is-website-vulnerable",
           "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
           "url": "https://github.com/lirantal/is-website-vulnerable",
@@ -540,20 +529,10 @@
           "issueComments": 1
         },
         {
-          "repoName": "dockly",
-          "description": "Immersive terminal interface for managing docker containers and services",
-          "url": "https://github.com/lirantal/dockly",
-          "commits": 0,
-          "pullRequests": 9,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "mcp-scan",
           "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
           "url": "https://github.com/invariantlabs-ai/mcp-scan",
-          "commits": 3,
+          "commits": 4,
           "pullRequests": 2,
           "issues": 0,
           "prComments": 0,
@@ -570,34 +549,14 @@
           "issueComments": 0
         },
         {
-          "repoName": "agents",
-          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
-          "url": "https://github.com/qodo-ai/agents",
-          "commits": 7,
-          "pullRequests": 5,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
-          "repoName": "lockfile-lint",
-          "description": "Lint an npm or yarn lockfile to analyze and detect security issues",
-          "url": "https://github.com/lirantal/lockfile-lint",
-          "commits": 0,
+          "repoName": "daloradius",
+          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
+          "url": "https://github.com/lirantal/daloradius",
+          "commits": 1,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 57,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
+          "issueComments": 15
         },
         {
           "repoName": "create-node-lib",
@@ -610,30 +569,20 @@
           "issueComments": 1
         },
         {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 23,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 1
-        },
-        {
-          "repoName": "nodejs-cli-apps-best-practices",
-          "description": "The largest Node.js CLI Apps best practices list ✨",
-          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
-          "commits": 3,
+          "repoName": "mcp-server-npm-goof",
+          "description": "An MCP server for NPM JavaScript Package Management tools",
+          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
+          "commits": 11,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         },
         {
-          "repoName": "mcp-server-npm-goof",
-          "description": "An MCP server for NPM JavaScript Package Management tools",
-          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
-          "commits": 11,
+          "repoName": "nodejs-cli-apps-best-practices",
+          "description": "The largest Node.js CLI Apps best practices list ✨",
+          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
+          "commits": 2,
           "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
@@ -660,16 +609,6 @@
           "issueComments": 0
         },
         {
-          "repoName": "www-project-mcp-top-10",
-          "description": "OWASP Foundation web repository",
-          "url": "https://github.com/OWASP/www-project-mcp-top-10",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
           "repoName": "terraform-goof",
           "description": "A demo repo showcasing Snyk's IAC offering for terraform",
           "url": "https://github.com/snyk-labs/terraform-goof",
@@ -680,178 +619,36 @@
           "issueComments": 0
         },
         {
-          "repoName": "anti-trojan-source",
-          "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
-          "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 15,
-          "pullRequests": 5,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 5
-        }
-      ],
-      "summary": {
-        "totalCommits": 518,
-        "totalPRs": 78,
-        "totalIssues": 52,
-        "totalPRComments": 28,
-        "totalIssueComments": 105
-      }
-    },
-    {
-      "user": {
-        "username": "fruch",
-        "displayName": "Israel Fruchter",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
-        "bio": null,
-        "location": "Zufim, Israel",
-        "company": "@scylladb",
-        "blog": "http://fruch.github.io/",
-        "twitterUsername": null,
-        "publicRepos": 128,
-        "followers": 26,
-        "following": 16,
-        "accountType": "User",
-        "createdAt": "2010-07-22T15:53:52.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 295,
-          "pullRequests": 115,
-          "issues": 24,
-          "prComments": 658,
-          "issueComments": 817
-        },
-        {
-          "repoName": "argus",
-          "description": null,
-          "url": "https://github.com/scylladb/argus",
-          "commits": 18,
-          "pullRequests": 7,
-          "issues": 12,
-          "prComments": 26,
-          "issueComments": 58
-        },
-        {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 2,
-          "pullRequests": 2,
-          "issues": 11,
-          "prComments": 7,
-          "issueComments": 161
-        },
-        {
-          "repoName": "scylla-ccm",
-          "description": "Cassandra Cluster Manager, modified for Scylla",
-          "url": "https://github.com/scylladb/scylla-ccm",
-          "commits": 7,
-          "pullRequests": 3,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 20
-        },
-        {
-          "repoName": "cassandra-stress",
-          "description": null,
-          "url": "https://github.com/scylladb/cassandra-stress",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 15
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 10,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 16
-        },
-        {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
+          "repoName": "www-project-mcp-top-10",
+          "description": "OWASP Foundation web repository",
+          "url": "https://github.com/OWASP/www-project-mcp-top-10",
           "commits": 1,
-          "pullRequests": 1,
+          "pullRequests": 0,
           "issues": 0,
           "prComments": 0,
           "issueComments": 0
         }
       ],
       "summary": {
-        "totalCommits": 333,
-        "totalPRs": 132,
-        "totalIssues": 47,
-        "totalPRComments": 694,
-        "totalIssueComments": 1087
-      }
-    },
-    {
-      "user": {
-        "username": "davidmeirlevy",
-        "displayName": "David Meir-Levy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
-        "bio": null,
-        "location": "Tel-Aviv",
-        "company": "@prici-io  @configu @qelos-io",
-        "blog": "https://www.davidlevy.co.il",
-        "twitterUsername": "DavidMeirLevy",
-        "publicRepos": 72,
-        "followers": 54,
-        "following": 13,
-        "accountType": "User",
-        "createdAt": "2014-03-06T18:34:31.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "qelos",
-          "description": "The platform to create AI platforms",
-          "url": "https://github.com/qelos-io/qelos",
-          "commits": 393,
-          "pullRequests": 11,
-          "issues": 9,
-          "prComments": 11,
-          "issueComments": 31
-        },
-        {
-          "repoName": "configu",
-          "description": "Open-source ConfigOps infrastructure ⚙️",
-          "url": "https://github.com/configu/configu",
-          "commits": 0,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 2,
-          "issueComments": 0
-        }
-      ],
-      "summary": {
-        "totalCommits": 393,
-        "totalPRs": 11,
-        "totalIssues": 9,
-        "totalPRComments": 13,
-        "totalIssueComments": 31
+        "totalCommits": 520,
+        "totalPRs": 70,
+        "totalIssues": 55,
+        "totalPRComments": 28,
+        "totalIssueComments": 127
       }
     }
   ],
   "globalSummary": {
-    "totalCommits": 1650,
-    "totalPRs": 310,
-    "totalIssues": 162,
-    "totalPRComments": 825,
-    "totalIssueComments": 1408,
-    "totalRepos": 51,
-    "successfulUsers": 10,
+    "totalCommits": 1623,
+    "totalPRs": 281,
+    "totalIssues": 183,
+    "totalPRComments": 793,
+    "totalIssueComments": 1388,
+    "totalRepos": 38,
+    "successfulUsers": 8,
     "failedUsers": 0,
-    "totalUsers": 10,
-    "analysisTimeframe": "2025-05-14 to 2025-11-10",
+    "totalUsers": 8,
+    "analysisTimeframe": "2025-05-15 to 2025-11-11",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
