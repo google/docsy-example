@@ -2,6 +2,395 @@
   "users": [
     {
       "user": {
+        "username": "moshe-stein24",
+        "displayName": null,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 8,
+        "followers": 0,
+        "following": 3,
+        "accountType": "User",
+        "createdAt": "2022-12-06T19:46:01.000Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
+    },
+    {
+      "user": {
+        "username": "davidmeirlevy",
+        "displayName": "David Meir-Levy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
+        "bio": null,
+        "location": "Tel-Aviv",
+        "company": "@prici-io  @configu @qelos-io",
+        "blog": "https://www.davidlevy.co.il",
+        "twitterUsername": "DavidMeirLevy",
+        "publicRepos": 72,
+        "followers": 54,
+        "following": 13,
+        "accountType": "User",
+        "createdAt": "2014-03-06T18:34:31.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "qelos",
+          "description": "The platform to create AI platforms",
+          "url": "https://github.com/qelos-io/qelos",
+          "commits": 385,
+          "pullRequests": 11,
+          "issues": 34,
+          "prComments": 11,
+          "issueComments": 31
+        }
+      ],
+      "summary": {
+        "totalCommits": 385,
+        "totalPRs": 11,
+        "totalIssues": 34,
+        "totalPRComments": 11,
+        "totalIssueComments": 31
+      }
+    },
+    {
+      "user": {
+        "username": "fruch",
+        "displayName": "Israel Fruchter",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
+        "bio": null,
+        "location": "Zufim, Israel",
+        "company": "@scylladb",
+        "blog": "http://fruch.github.io/",
+        "twitterUsername": null,
+        "publicRepos": 128,
+        "followers": 26,
+        "following": 16,
+        "accountType": "User",
+        "createdAt": "2010-07-22T15:53:52.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 297,
+          "pullRequests": 114,
+          "issues": 24,
+          "prComments": 654,
+          "issueComments": 818
+        },
+        {
+          "repoName": "argus",
+          "description": null,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 18,
+          "pullRequests": 7,
+          "issues": 12,
+          "prComments": 26,
+          "issueComments": 57
+        },
+        {
+          "repoName": "scylla-ccm",
+          "description": "Cassandra Cluster Manager, modified for Scylla",
+          "url": "https://github.com/scylladb/scylla-ccm",
+          "commits": 7,
+          "pullRequests": 3,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 18
+        },
+        {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 16
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 2,
+          "pullRequests": 2,
+          "issues": 11,
+          "prComments": 7,
+          "issueComments": 171
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 335,
+        "totalPRs": 131,
+        "totalIssues": 47,
+        "totalPRComments": 690,
+        "totalIssueComments": 1080
+      }
+    },
+    {
+      "user": {
+        "username": "NoamGaash",
+        "displayName": "Noam Gaash",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11145132?v=4",
+        "bio": "Developer @Applitools \r\n|\r\nVolunteer @hasadna ",
+        "location": "Israel",
+        "company": "Applitools",
+        "blog": "noam-gaash.co.il",
+        "twitterUsername": null,
+        "publicRepos": 44,
+        "followers": 29,
+        "following": 49,
+        "accountType": "User",
+        "createdAt": "2015-02-22T11:19:54.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "open-bus-map-search",
+          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
+          "url": "https://github.com/hasadna/open-bus-map-search",
+          "commits": 53,
+          "pullRequests": 15,
+          "issues": 14,
+          "prComments": 59,
+          "issueComments": 73
+        }
+      ],
+      "summary": {
+        "totalCommits": 53,
+        "totalPRs": 15,
+        "totalIssues": 14,
+        "totalPRComments": 59,
+        "totalIssueComments": 73
+      }
+    },
+    {
+      "user": {
+        "username": "lirantal",
+        "displayName": "Liran Tal",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/316371?v=4",
+        "bio": "🧠 Socially Engineering LLMs\r\n🤖 Hacking AI Agents\r\n🦄 Node.js Secure Coding\r\n🌟 @GitHub Star\r\n🏅 @OpenJS Pathfinder award 4 Security\r\n🥑 DevRel @snyksec",
+        "location": "Tel Aviv, Israel",
+        "company": "@snyk",
+        "blog": "https://www.nodejs-security.com/",
+        "twitterUsername": "liran_tal",
+        "publicRepos": 459,
+        "followers": 2306,
+        "following": 1099,
+        "accountType": "User",
+        "createdAt": "2010-06-28T11:10:04.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "ls-mcp",
+          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
+          "url": "https://github.com/lirantal/ls-mcp",
+          "commits": 192,
+          "pullRequests": 26,
+          "issues": 27,
+          "prComments": 5,
+          "issueComments": 26
+        },
+        {
+          "repoName": "npq",
+          "description": "safely install npm packages by auditing them pre-install stage",
+          "url": "https://github.com/lirantal/npq",
+          "commits": 170,
+          "pullRequests": 28,
+          "issues": 22,
+          "prComments": 18,
+          "issueComments": 61
+        },
+        {
+          "repoName": "mcp-server-nodejs-api-docs",
+          "description": "MCP Server for Node.js API documentation",
+          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+          "commits": 57,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
+          "repoName": "mastra",
+          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
+          "url": "https://github.com/mastra-ai/mastra",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 3,
+          "prComments": 0,
+          "issueComments": 8
+        },
+        {
+          "repoName": "npm-security-best-practices",
+          "description": "Collection of npm package manager Security Best Practices",
+          "url": "https://github.com/lirantal/npm-security-best-practices",
+          "commits": 23,
+          "pullRequests": 0,
+          "issues": 1,
+          "prComments": 1,
+          "issueComments": 1
+        },
+        {
+          "repoName": "anti-trojan-source",
+          "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
+          "url": "https://github.com/lirantal/anti-trojan-source",
+          "commits": 15,
+          "pullRequests": 5,
+          "issues": 1,
+          "prComments": 0,
+          "issueComments": 5
+        },
+        {
+          "repoName": "agents",
+          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
+          "url": "https://github.com/qodo-ai/agents",
+          "commits": 7,
+          "pullRequests": 5,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 4
+        },
+        {
+          "repoName": "is-website-vulnerable",
+          "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
+          "url": "https://github.com/lirantal/is-website-vulnerable",
+          "commits": 3,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "mcp-scan",
+          "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
+          "url": "https://github.com/invariantlabs-ai/mcp-scan",
+          "commits": 4,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "snyk-ls",
+          "description": "Language Server used by IDEs as Snyk Backend for Frontends",
+          "url": "https://github.com/snyk/snyk-ls",
+          "commits": 6,
+          "pullRequests": 2,
+          "issues": 0,
+          "prComments": 4,
+          "issueComments": 0
+        },
+        {
+          "repoName": "daloradius",
+          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
+          "url": "https://github.com/lirantal/daloradius",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 15
+        },
+        {
+          "repoName": "create-node-lib",
+          "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
+          "url": "https://github.com/lirantal/create-node-lib",
+          "commits": 19,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 1
+        },
+        {
+          "repoName": "mcp-server-npm-goof",
+          "description": "An MCP server for NPM JavaScript Package Management tools",
+          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
+          "commits": 11,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "nodejs-cli-apps-best-practices",
+          "description": "The largest Node.js CLI Apps best practices list ✨",
+          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
+          "commits": 2,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "user-docs",
+          "description": "Gitbook documentation repo.",
+          "url": "https://github.com/snyk/user-docs",
+          "commits": 3,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "llm-ai-security-demo",
+          "description": null,
+          "url": "https://github.com/lirantal/llm-ai-security-demo",
+          "commits": 4,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "terraform-goof",
+          "description": "A demo repo showcasing Snyk's IAC offering for terraform",
+          "url": "https://github.com/snyk-labs/terraform-goof",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        },
+        {
+          "repoName": "www-project-mcp-top-10",
+          "description": "OWASP Foundation web repository",
+          "url": "https://github.com/OWASP/www-project-mcp-top-10",
+          "commits": 1,
+          "pullRequests": 0,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 520,
+        "totalPRs": 70,
+        "totalIssues": 55,
+        "totalPRComments": 28,
+        "totalIssueComments": 127
+      }
+    },
+    {
+      "user": {
         "username": "Lidor57",
         "displayName": "Lidor Maimon",
         "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
@@ -247,408 +636,19 @@
         "totalPRComments": 3,
         "totalIssueComments": 1
       }
-    },
-    {
-      "user": {
-        "username": "moshe-stein24",
-        "displayName": null,
-        "avatarUrl": "https://avatars.githubusercontent.com/u/119971810?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 8,
-        "followers": 0,
-        "following": 3,
-        "accountType": "User",
-        "createdAt": "2022-12-06T19:46:01.000Z"
-      },
-      "repos": [],
-      "summary": {
-        "totalCommits": 0,
-        "totalPRs": 0,
-        "totalIssues": 0,
-        "totalPRComments": 0,
-        "totalIssueComments": 0
-      }
-    },
-    {
-      "user": {
-        "username": "davidmeirlevy",
-        "displayName": "David Meir-Levy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
-        "bio": null,
-        "location": "Tel-Aviv",
-        "company": "@prici-io  @configu @qelos-io",
-        "blog": "https://www.davidlevy.co.il",
-        "twitterUsername": "DavidMeirLevy",
-        "publicRepos": 72,
-        "followers": 54,
-        "following": 13,
-        "accountType": "User",
-        "createdAt": "2014-03-06T18:34:31.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "qelos",
-          "description": "The platform to create AI platforms",
-          "url": "https://github.com/qelos-io/qelos",
-          "commits": 390,
-          "pullRequests": 11,
-          "issues": 34,
-          "prComments": 11,
-          "issueComments": 31
-        }
-      ],
-      "summary": {
-        "totalCommits": 390,
-        "totalPRs": 11,
-        "totalIssues": 34,
-        "totalPRComments": 11,
-        "totalIssueComments": 31
-      }
-    },
-    {
-      "user": {
-        "username": "fruch",
-        "displayName": "Israel Fruchter",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
-        "bio": null,
-        "location": "Zufim, Israel",
-        "company": "@scylladb",
-        "blog": "http://fruch.github.io/",
-        "twitterUsername": null,
-        "publicRepos": 128,
-        "followers": 26,
-        "following": 16,
-        "accountType": "User",
-        "createdAt": "2010-07-22T15:53:52.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 297,
-          "pullRequests": 114,
-          "issues": 24,
-          "prComments": 656,
-          "issueComments": 820
-        },
-        {
-          "repoName": "argus",
-          "description": null,
-          "url": "https://github.com/scylladb/argus",
-          "commits": 18,
-          "pullRequests": 7,
-          "issues": 12,
-          "prComments": 26,
-          "issueComments": 57
-        },
-        {
-          "repoName": "scylla-ccm",
-          "description": "Cassandra Cluster Manager, modified for Scylla",
-          "url": "https://github.com/scylladb/scylla-ccm",
-          "commits": 7,
-          "pullRequests": 3,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 18
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 10,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 16
-        },
-        {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 2,
-          "pullRequests": 2,
-          "issues": 11,
-          "prComments": 7,
-          "issueComments": 172
-        },
-        {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        }
-      ],
-      "summary": {
-        "totalCommits": 335,
-        "totalPRs": 131,
-        "totalIssues": 47,
-        "totalPRComments": 692,
-        "totalIssueComments": 1083
-      }
-    },
-    {
-      "user": {
-        "username": "NoamGaash",
-        "displayName": "Noam Gaash",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/11145132?v=4",
-        "bio": "Developer @Applitools \r\n|\r\nVolunteer @hasadna ",
-        "location": "Israel",
-        "company": "Applitools",
-        "blog": "noam-gaash.co.il",
-        "twitterUsername": null,
-        "publicRepos": 44,
-        "followers": 29,
-        "following": 49,
-        "accountType": "User",
-        "createdAt": "2015-02-22T11:19:54.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "open-bus-map-search",
-          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
-          "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 53,
-          "pullRequests": 15,
-          "issues": 14,
-          "prComments": 59,
-          "issueComments": 73
-        }
-      ],
-      "summary": {
-        "totalCommits": 53,
-        "totalPRs": 15,
-        "totalIssues": 14,
-        "totalPRComments": 59,
-        "totalIssueComments": 73
-      }
-    },
-    {
-      "user": {
-        "username": "lirantal",
-        "displayName": "Liran Tal",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/316371?v=4",
-        "bio": "🧠 Socially Engineering LLMs\r\n🤖 Hacking AI Agents\r\n🦄 Node.js Secure Coding\r\n🌟 @GitHub Star\r\n🏅 @OpenJS Pathfinder award 4 Security\r\n🥑 DevRel @snyksec",
-        "location": "Tel Aviv, Israel",
-        "company": "@snyk",
-        "blog": "https://www.nodejs-security.com/",
-        "twitterUsername": "liran_tal",
-        "publicRepos": 459,
-        "followers": 2306,
-        "following": 1099,
-        "accountType": "User",
-        "createdAt": "2010-06-28T11:10:04.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "ls-mcp",
-          "description": "List MCP Server configurations in your system used by AI applications like Cursor, Claude Desktop, VS Code and others",
-          "url": "https://github.com/lirantal/ls-mcp",
-          "commits": 192,
-          "pullRequests": 26,
-          "issues": 27,
-          "prComments": 5,
-          "issueComments": 26
-        },
-        {
-          "repoName": "npq",
-          "description": "safely install npm packages by auditing them pre-install stage",
-          "url": "https://github.com/lirantal/npq",
-          "commits": 170,
-          "pullRequests": 28,
-          "issues": 22,
-          "prComments": 18,
-          "issueComments": 61
-        },
-        {
-          "repoName": "mcp-server-nodejs-api-docs",
-          "description": "MCP Server for Node.js API documentation",
-          "url": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
-          "commits": 57,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
-          "repoName": "mastra",
-          "description": "The TypeScript AI agent framework. ⚡ Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama.",
-          "url": "https://github.com/mastra-ai/mastra",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 3,
-          "prComments": 0,
-          "issueComments": 8
-        },
-        {
-          "repoName": "npm-security-best-practices",
-          "description": "Collection of npm package manager Security Best Practices",
-          "url": "https://github.com/lirantal/npm-security-best-practices",
-          "commits": 23,
-          "pullRequests": 0,
-          "issues": 1,
-          "prComments": 1,
-          "issueComments": 1
-        },
-        {
-          "repoName": "anti-trojan-source",
-          "description": "Detect Glassworm & trojan source attacks that employ unicode bidi attacks to inject malicious code",
-          "url": "https://github.com/lirantal/anti-trojan-source",
-          "commits": 15,
-          "pullRequests": 5,
-          "issues": 1,
-          "prComments": 0,
-          "issueComments": 5
-        },
-        {
-          "repoName": "agents",
-          "description": "Qodo Commands Playbooks. Customize Qodo Command for your specific use case!",
-          "url": "https://github.com/qodo-ai/agents",
-          "commits": 7,
-          "pullRequests": 5,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 4
-        },
-        {
-          "repoName": "is-website-vulnerable",
-          "description": "finds publicly known security vulnerabilities in a website's frontend JavaScript libraries",
-          "url": "https://github.com/lirantal/is-website-vulnerable",
-          "commits": 3,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "mcp-scan",
-          "description": "Constrain, log and scan your MCP connections for security vulnerabilities.",
-          "url": "https://github.com/invariantlabs-ai/mcp-scan",
-          "commits": 4,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "snyk-ls",
-          "description": "Language Server used by IDEs as Snyk Backend for Frontends",
-          "url": "https://github.com/snyk/snyk-ls",
-          "commits": 6,
-          "pullRequests": 2,
-          "issues": 0,
-          "prComments": 4,
-          "issueComments": 0
-        },
-        {
-          "repoName": "daloradius",
-          "description": "daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database.",
-          "url": "https://github.com/lirantal/daloradius",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 15
-        },
-        {
-          "repoName": "create-node-lib",
-          "description": "Scaffold a batteries-included Node.js library project with docs, tests, semantic releases and more",
-          "url": "https://github.com/lirantal/create-node-lib",
-          "commits": 19,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 1
-        },
-        {
-          "repoName": "mcp-server-npm-goof",
-          "description": "An MCP server for NPM JavaScript Package Management tools",
-          "url": "https://github.com/snyk-labs/mcp-server-npm-goof",
-          "commits": 11,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "nodejs-cli-apps-best-practices",
-          "description": "The largest Node.js CLI Apps best practices list ✨",
-          "url": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
-          "commits": 2,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "user-docs",
-          "description": "Gitbook documentation repo.",
-          "url": "https://github.com/snyk/user-docs",
-          "commits": 3,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "llm-ai-security-demo",
-          "description": null,
-          "url": "https://github.com/lirantal/llm-ai-security-demo",
-          "commits": 4,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "terraform-goof",
-          "description": "A demo repo showcasing Snyk's IAC offering for terraform",
-          "url": "https://github.com/snyk-labs/terraform-goof",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        },
-        {
-          "repoName": "www-project-mcp-top-10",
-          "description": "OWASP Foundation web repository",
-          "url": "https://github.com/OWASP/www-project-mcp-top-10",
-          "commits": 1,
-          "pullRequests": 0,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        }
-      ],
-      "summary": {
-        "totalCommits": 520,
-        "totalPRs": 70,
-        "totalIssues": 55,
-        "totalPRComments": 28,
-        "totalIssueComments": 127
-      }
     }
   ],
   "globalSummary": {
-    "totalCommits": 1623,
+    "totalCommits": 1618,
     "totalPRs": 281,
     "totalIssues": 183,
-    "totalPRComments": 793,
-    "totalIssueComments": 1388,
+    "totalPRComments": 791,
+    "totalIssueComments": 1385,
     "totalRepos": 38,
     "successfulUsers": 8,
     "failedUsers": 0,
     "totalUsers": 8,
-    "analysisTimeframe": "2025-05-15 to 2025-11-11",
+    "analysisTimeframe": "2025-05-16 to 2025-11-12",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
