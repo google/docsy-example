@@ -2,6 +2,56 @@
   "users": [
     {
       "user": {
+        "username": "ShacharES",
+        "displayName": "Shachar Even Shoshan",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/182784923?v=4",
+        "bio": "💻 Code, ☁️ Cloud, 🚀 Scaling systems | C++ & Go",
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 8,
+        "followers": 0,
+        "following": 5,
+        "accountType": "User",
+        "createdAt": "2024-09-25T14:26:25.000Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
+    },
+    {
+      "user": {
+        "username": "sivanbecker",
+        "displayName": "Sivan Becker",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20453622?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 28,
+        "followers": 8,
+        "following": 13,
+        "accountType": "User",
+        "createdAt": "2016-07-14T07:01:25.000Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
+    },
+    {
+      "user": {
         "username": "Lidor57",
         "displayName": "Lidor Maimon",
         "avatarUrl": "https://avatars.githubusercontent.com/u/219325371?v=4",
@@ -67,7 +117,7 @@
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
         "publicRepos": 86,
-        "followers": 39,
+        "followers": 40,
         "following": 15,
         "accountType": "User",
         "createdAt": "2017-07-13T09:26:30.000Z"
@@ -442,7 +492,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
-        "followers": 2306,
+        "followers": 2308,
         "following": 1099,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -636,31 +686,6 @@
         "totalPRComments": 28,
         "totalIssueComments": 127
       }
-    },
-    {
-      "user": {
-        "username": "ShacharES",
-        "displayName": "Shachar Even Shoshan",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/182784923?v=4",
-        "bio": "💻 Code, ☁️ Cloud, 🚀 Scaling systems | C++ & Go",
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 8,
-        "followers": 0,
-        "following": 5,
-        "accountType": "User",
-        "createdAt": "2024-09-25T14:26:25.000Z"
-      },
-      "repos": [],
-      "summary": {
-        "totalCommits": 0,
-        "totalPRs": 0,
-        "totalIssues": 0,
-        "totalPRComments": 0,
-        "totalIssueComments": 0
-      }
     }
   ],
   "globalSummary": {
@@ -670,10 +695,10 @@
     "totalPRComments": 791,
     "totalIssueComments": 1385,
     "totalRepos": 38,
-    "successfulUsers": 9,
+    "successfulUsers": 10,
     "failedUsers": 0,
-    "totalUsers": 9,
-    "analysisTimeframe": "2025-05-16 to 2025-11-12",
+    "totalUsers": 10,
+    "analysisTimeframe": "2025-05-17 to 2025-11-13",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
