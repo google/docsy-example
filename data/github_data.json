@@ -383,7 +383,7 @@
           "commits": 297,
           "pullRequests": 114,
           "issues": 24,
-          "prComments": 654,
+          "prComments": 650,
           "issueComments": 818
         },
         {
@@ -441,7 +441,7 @@
         "totalCommits": 335,
         "totalPRs": 131,
         "totalIssues": 47,
-        "totalPRComments": 690,
+        "totalPRComments": 686,
         "totalIssueComments": 1080
       }
     },
@@ -692,13 +692,13 @@
     "totalCommits": 1618,
     "totalPRs": 281,
     "totalIssues": 183,
-    "totalPRComments": 791,
+    "totalPRComments": 787,
     "totalIssueComments": 1385,
     "totalRepos": 38,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-17 to 2025-11-13",
+    "analysisTimeframe": "2025-05-18 to 2025-11-14",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
