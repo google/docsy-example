@@ -344,7 +344,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 385,
+          "commits": 378,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -352,7 +352,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 385,
+        "totalCommits": 378,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 11,
@@ -469,7 +469,7 @@
           "commits": 53,
           "pullRequests": 15,
           "issues": 14,
-          "prComments": 59,
+          "prComments": 58,
           "issueComments": 73
         }
       ],
@@ -477,7 +477,7 @@
         "totalCommits": 53,
         "totalPRs": 15,
         "totalIssues": 14,
-        "totalPRComments": 59,
+        "totalPRComments": 58,
         "totalIssueComments": 73
       }
     },
@@ -689,16 +689,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1618,
+    "totalCommits": 1611,
     "totalPRs": 281,
     "totalIssues": 183,
-    "totalPRComments": 787,
+    "totalPRComments": 786,
     "totalIssueComments": 1385,
     "totalRepos": 38,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-18 to 2025-11-14",
+    "analysisTimeframe": "2025-05-19 to 2025-11-15",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
