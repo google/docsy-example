@@ -117,7 +117,7 @@
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
         "publicRepos": 86,
-        "followers": 40,
+        "followers": 39,
         "following": 15,
         "accountType": "User",
         "createdAt": "2017-07-13T09:26:30.000Z"
@@ -344,7 +344,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 378,
+          "commits": 376,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -352,7 +352,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 378,
+        "totalCommits": 376,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 11,
@@ -383,7 +383,7 @@
           "commits": 297,
           "pullRequests": 114,
           "issues": 24,
-          "prComments": 650,
+          "prComments": 649,
           "issueComments": 818
         },
         {
@@ -441,7 +441,7 @@
         "totalCommits": 335,
         "totalPRs": 131,
         "totalIssues": 47,
-        "totalPRComments": 686,
+        "totalPRComments": 685,
         "totalIssueComments": 1080
       }
     },
@@ -469,16 +469,16 @@
           "commits": 53,
           "pullRequests": 15,
           "issues": 14,
-          "prComments": 58,
-          "issueComments": 73
+          "prComments": 55,
+          "issueComments": 71
         }
       ],
       "summary": {
         "totalCommits": 53,
         "totalPRs": 15,
         "totalIssues": 14,
-        "totalPRComments": 58,
-        "totalIssueComments": 73
+        "totalPRComments": 55,
+        "totalIssueComments": 71
       }
     },
     {
@@ -689,16 +689,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1611,
+    "totalCommits": 1609,
     "totalPRs": 281,
     "totalIssues": 183,
-    "totalPRComments": 786,
-    "totalIssueComments": 1385,
+    "totalPRComments": 782,
+    "totalIssueComments": 1383,
     "totalRepos": 38,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-19 to 2025-11-15",
+    "analysisTimeframe": "2025-05-20 to 2025-11-16",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
