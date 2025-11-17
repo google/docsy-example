@@ -116,7 +116,7 @@
         "company": "mizrahi-tefahot",
         "blog": "urielofir.website",
         "twitterUsername": "OfirUriel",
-        "publicRepos": 86,
+        "publicRepos": 87,
         "followers": 39,
         "following": 15,
         "accountType": "User",
@@ -344,7 +344,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 376,
+          "commits": 374,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -352,7 +352,7 @@
         }
       ],
       "summary": {
-        "totalCommits": 376,
+        "totalCommits": 374,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 11,
@@ -384,7 +384,7 @@
           "pullRequests": 114,
           "issues": 24,
           "prComments": 649,
-          "issueComments": 818
+          "issueComments": 816
         },
         {
           "repoName": "argus",
@@ -424,7 +424,7 @@
           "pullRequests": 2,
           "issues": 11,
           "prComments": 7,
-          "issueComments": 171
+          "issueComments": 170
         },
         {
           "repoName": "scylla-monitoring",
@@ -442,7 +442,7 @@
         "totalPRs": 131,
         "totalIssues": 47,
         "totalPRComments": 685,
-        "totalIssueComments": 1080
+        "totalIssueComments": 1077
       }
     },
     {
@@ -492,7 +492,7 @@
         "blog": "https://www.nodejs-security.com/",
         "twitterUsername": "liran_tal",
         "publicRepos": 459,
-        "followers": 2308,
+        "followers": 2309,
         "following": 1099,
         "accountType": "User",
         "createdAt": "2010-06-28T11:10:04.000Z"
@@ -689,16 +689,16 @@
     }
   ],
   "globalSummary": {
-    "totalCommits": 1609,
+    "totalCommits": 1607,
     "totalPRs": 281,
     "totalIssues": 183,
     "totalPRComments": 782,
-    "totalIssueComments": 1383,
+    "totalIssueComments": 1380,
     "totalRepos": 38,
     "successfulUsers": 10,
     "failedUsers": 0,
     "totalUsers": 10,
-    "analysisTimeframe": "2025-05-20 to 2025-11-16",
+    "analysisTimeframe": "2025-05-21 to 2025-11-17",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
