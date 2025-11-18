@@ -1,7 +1,7 @@
 ---
 title: "Best Practices"
 linkTitle: "Best Practices"
-weight: 1
+weight: 10
 ---
 
 ## 🌟 שיטות עבודה מומלצות בפיתוח בסביבת מיינפריים
