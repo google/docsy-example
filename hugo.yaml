@@ -5,8 +5,8 @@ title: קובול ישראל
 
 # Language settings
 contentDir: content/en
-defaultContentLanguage: en
-defaultContentLanguageInSubdir: false
+defaultContentLanguage: he
+defaultContentLanguageInSubdir: true
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
 
@@ -47,9 +47,6 @@ imaging:
   anchor: smart
 
 # Language configuration
-defaultContentLanguage: he
-defaultContentLanguageInSubdir: true
-
 languages:
   he:
     languageName: "עברית"
