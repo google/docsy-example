@@ -2,6 +2,128 @@
   "users": [
     {
       "user": {
+        "username": "fruch",
+        "displayName": "Israel Fruchter",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
+        "bio": null,
+        "location": "Zufim, Israel",
+        "company": "@scylladb",
+        "blog": "http://fruch.github.io/",
+        "twitterUsername": null,
+        "publicRepos": 128,
+        "followers": 26,
+        "following": 16,
+        "accountType": "User",
+        "createdAt": "2010-07-22T15:53:52.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "scylla-cluster-tests",
+          "description": "Tests for Scylla Clusters",
+          "url": "https://github.com/scylladb/scylla-cluster-tests",
+          "commits": 297,
+          "pullRequests": 114,
+          "issues": 24,
+          "prComments": 649,
+          "issueComments": 816
+        },
+        {
+          "repoName": "argus",
+          "description": null,
+          "url": "https://github.com/scylladb/argus",
+          "commits": 18,
+          "pullRequests": 7,
+          "issues": 12,
+          "prComments": 26,
+          "issueComments": 57
+        },
+        {
+          "repoName": "scylla-ccm",
+          "description": "Cassandra Cluster Manager, modified for Scylla",
+          "url": "https://github.com/scylladb/scylla-ccm",
+          "commits": 7,
+          "pullRequests": 3,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 18
+        },
+        {
+          "repoName": "scylla-cqlsh",
+          "description": "A fork of the cqlsh code",
+          "url": "https://github.com/scylladb/scylla-cqlsh",
+          "commits": 10,
+          "pullRequests": 4,
+          "issues": 0,
+          "prComments": 3,
+          "issueComments": 16
+        },
+        {
+          "repoName": "scylladb",
+          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
+          "url": "https://github.com/scylladb/scylladb",
+          "commits": 2,
+          "pullRequests": 2,
+          "issues": 11,
+          "prComments": 7,
+          "issueComments": 170
+        },
+        {
+          "repoName": "scylla-monitoring",
+          "description": "Simple monitoring of Scylla with Grafana",
+          "url": "https://github.com/scylladb/scylla-monitoring",
+          "commits": 1,
+          "pullRequests": 1,
+          "issues": 0,
+          "prComments": 0,
+          "issueComments": 0
+        }
+      ],
+      "summary": {
+        "totalCommits": 335,
+        "totalPRs": 131,
+        "totalIssues": 47,
+        "totalPRComments": 685,
+        "totalIssueComments": 1077
+      }
+    },
+    {
+      "user": {
+        "username": "NoamGaash",
+        "displayName": "Noam Gaash",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11145132?v=4",
+        "bio": "Developer @Applitools \r\n|\r\nVolunteer @hasadna ",
+        "location": "Israel",
+        "company": "Applitools",
+        "blog": "noam-gaash.co.il",
+        "twitterUsername": null,
+        "publicRepos": 44,
+        "followers": 30,
+        "following": 49,
+        "accountType": "User",
+        "createdAt": "2015-02-22T11:19:54.000Z"
+      },
+      "repos": [
+        {
+          "repoName": "open-bus-map-search",
+          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
+          "url": "https://github.com/hasadna/open-bus-map-search",
+          "commits": 53,
+          "pullRequests": 15,
+          "issues": 14,
+          "prComments": 55,
+          "issueComments": 71
+        }
+      ],
+      "summary": {
+        "totalCommits": 53,
+        "totalPRs": 15,
+        "totalIssues": 14,
+        "totalPRComments": 55,
+        "totalIssueComments": 71
+      }
+    },
+    {
+      "user": {
         "username": "lirantal",
         "displayName": "Liran Tal",
         "avatarUrl": "https://avatars.githubusercontent.com/u/316371?v=4",
@@ -221,6 +343,56 @@
         "following": 5,
         "accountType": "User",
         "createdAt": "2024-09-25T14:26:25.000Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
+    },
+    {
+      "user": {
+        "username": "sivanbecker",
+        "displayName": "Sivan Becker",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20453622?v=4",
+        "bio": null,
+        "location": null,
+        "company": null,
+        "blog": "",
+        "twitterUsername": null,
+        "publicRepos": 28,
+        "followers": 8,
+        "following": 13,
+        "accountType": "User",
+        "createdAt": "2016-07-14T07:01:25.000Z"
+      },
+      "repos": [],
+      "summary": {
+        "totalCommits": 0,
+        "totalPRs": 0,
+        "totalIssues": 0,
+        "totalPRComments": 0,
+        "totalIssueComments": 0
+      }
+    },
+    {
+      "user": {
+        "username": "szabgab",
+        "displayName": "Gábor Szabó",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/48833?v=4",
+        "bio": "Helping teams move faster using Python, Rust, Perl, Git, GitHub, Docker, test automation, refactoring.",
+        "location": "Modiin, Israel",
+        "company": "Consultant, Trainer and Open Source developer",
+        "blog": "https://szabgab.com/",
+        "twitterUsername": null,
+        "publicRepos": 1052,
+        "followers": 656,
+        "following": 16,
+        "accountType": "User",
+        "createdAt": "2009-01-23T19:05:27.000Z"
       },
       "repos": [],
       "summary": {
@@ -506,56 +678,6 @@
     },
     {
       "user": {
-        "username": "sivanbecker",
-        "displayName": "Sivan Becker",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/20453622?v=4",
-        "bio": null,
-        "location": null,
-        "company": null,
-        "blog": "",
-        "twitterUsername": null,
-        "publicRepos": 28,
-        "followers": 8,
-        "following": 13,
-        "accountType": "User",
-        "createdAt": "2016-07-14T07:01:25.000Z"
-      },
-      "repos": [],
-      "summary": {
-        "totalCommits": 0,
-        "totalPRs": 0,
-        "totalIssues": 0,
-        "totalPRComments": 0,
-        "totalIssueComments": 0
-      }
-    },
-    {
-      "user": {
-        "username": "szabgab",
-        "displayName": "Gábor Szabó",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/48833?v=4",
-        "bio": "Helping teams move faster using Python, Rust, Perl, Git, GitHub, Docker, test automation, refactoring.",
-        "location": "Modiin, Israel",
-        "company": "Consultant, Trainer and Open Source developer",
-        "blog": "https://szabgab.com/",
-        "twitterUsername": null,
-        "publicRepos": 1051,
-        "followers": 656,
-        "following": 16,
-        "accountType": "User",
-        "createdAt": "2009-01-23T19:05:27.000Z"
-      },
-      "repos": [],
-      "summary": {
-        "totalCommits": 0,
-        "totalPRs": 0,
-        "totalIssues": 0,
-        "totalPRComments": 0,
-        "totalIssueComments": 0
-      }
-    },
-    {
-      "user": {
         "username": "davidmeirlevy",
         "displayName": "David Meir-Levy",
         "avatarUrl": "https://avatars.githubusercontent.com/u/6875922?v=4",
@@ -575,7 +697,7 @@
           "repoName": "qelos",
           "description": "The platform to create AI platforms",
           "url": "https://github.com/qelos-io/qelos",
-          "commits": 366,
+          "commits": 364,
           "pullRequests": 11,
           "issues": 34,
           "prComments": 11,
@@ -583,138 +705,16 @@
         }
       ],
       "summary": {
-        "totalCommits": 366,
+        "totalCommits": 364,
         "totalPRs": 11,
         "totalIssues": 34,
         "totalPRComments": 11,
         "totalIssueComments": 31
       }
-    },
-    {
-      "user": {
-        "username": "fruch",
-        "displayName": "Israel Fruchter",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/340979?v=4",
-        "bio": null,
-        "location": "Zufim, Israel",
-        "company": "@scylladb",
-        "blog": "http://fruch.github.io/",
-        "twitterUsername": null,
-        "publicRepos": 128,
-        "followers": 26,
-        "following": 16,
-        "accountType": "User",
-        "createdAt": "2010-07-22T15:53:52.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "scylla-cluster-tests",
-          "description": "Tests for Scylla Clusters",
-          "url": "https://github.com/scylladb/scylla-cluster-tests",
-          "commits": 297,
-          "pullRequests": 114,
-          "issues": 24,
-          "prComments": 649,
-          "issueComments": 816
-        },
-        {
-          "repoName": "argus",
-          "description": null,
-          "url": "https://github.com/scylladb/argus",
-          "commits": 18,
-          "pullRequests": 7,
-          "issues": 12,
-          "prComments": 26,
-          "issueComments": 57
-        },
-        {
-          "repoName": "scylla-ccm",
-          "description": "Cassandra Cluster Manager, modified for Scylla",
-          "url": "https://github.com/scylladb/scylla-ccm",
-          "commits": 7,
-          "pullRequests": 3,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 18
-        },
-        {
-          "repoName": "scylla-cqlsh",
-          "description": "A fork of the cqlsh code",
-          "url": "https://github.com/scylladb/scylla-cqlsh",
-          "commits": 10,
-          "pullRequests": 4,
-          "issues": 0,
-          "prComments": 3,
-          "issueComments": 16
-        },
-        {
-          "repoName": "scylladb",
-          "description": "NoSQL data store using the Seastar framework, compatible with Apache Cassandra and Amazon DynamoDB",
-          "url": "https://github.com/scylladb/scylladb",
-          "commits": 2,
-          "pullRequests": 2,
-          "issues": 11,
-          "prComments": 7,
-          "issueComments": 170
-        },
-        {
-          "repoName": "scylla-monitoring",
-          "description": "Simple monitoring of Scylla with Grafana",
-          "url": "https://github.com/scylladb/scylla-monitoring",
-          "commits": 1,
-          "pullRequests": 1,
-          "issues": 0,
-          "prComments": 0,
-          "issueComments": 0
-        }
-      ],
-      "summary": {
-        "totalCommits": 335,
-        "totalPRs": 131,
-        "totalIssues": 47,
-        "totalPRComments": 685,
-        "totalIssueComments": 1077
-      }
-    },
-    {
-      "user": {
-        "username": "NoamGaash",
-        "displayName": "Noam Gaash",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/11145132?v=4",
-        "bio": "Developer @Applitools \r\n|\r\nVolunteer @hasadna ",
-        "location": "Israel",
-        "company": "Applitools",
-        "blog": "noam-gaash.co.il",
-        "twitterUsername": null,
-        "publicRepos": 44,
-        "followers": 29,
-        "following": 49,
-        "accountType": "User",
-        "createdAt": "2015-02-22T11:19:54.000Z"
-      },
-      "repos": [
-        {
-          "repoName": "open-bus-map-search",
-          "description": "The purpose of the site is to improve the quality of public transportation in Israel by providing reliable information to journalists, citizens, transportation companies, and government officials in Israel.",
-          "url": "https://github.com/hasadna/open-bus-map-search",
-          "commits": 53,
-          "pullRequests": 15,
-          "issues": 14,
-          "prComments": 55,
-          "issueComments": 71
-        }
-      ],
-      "summary": {
-        "totalCommits": 53,
-        "totalPRs": 15,
-        "totalIssues": 14,
-        "totalPRComments": 55,
-        "totalIssueComments": 71
-      }
     }
   ],
   "globalSummary": {
-    "totalCommits": 1599,
+    "totalCommits": 1597,
     "totalPRs": 281,
     "totalIssues": 183,
     "totalPRComments": 782,
@@ -723,7 +723,7 @@
     "successfulUsers": 11,
     "failedUsers": 0,
     "totalUsers": 11,
-    "analysisTimeframe": "2025-05-22 to 2025-11-18",
+    "analysisTimeframe": "2025-05-23 to 2025-11-19",
     "minForkCountFilter": "3"
   },
   "excludedUsers": []
