@@ -18,9 +18,7 @@ title: Goldydocs
 </a>
 <p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
 
-{{< blocks/link-down color="info" >}}
-{{< /blocks/cover >}}
-
+{{< blocks/link-down color="info" >}} {{< /blocks/cover >}}
 
 {{% blocks/lead color="primary" %}}
 
@@ -32,7 +30,6 @@ been eating **your** porridge.
 to create your own real websites with [Docsy](https://docsy.dev))
 
 {{% /blocks/lead %}}
-
 
 {{% blocks/section color="dark" type="row" %}}
 
@@ -46,10 +43,10 @@ Please follow this space for updates!
 
 {{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
 
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+We do a [Pull Request](https://github.com/google/docsy-example/pulls)
+contributions workflow on **GitHub**. New users are always welcome!
 
 {{% /blocks/feature %}}
-
 
 {{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
 
@@ -59,13 +56,11 @@ For announcement of latest features etc.
 
 {{% /blocks/section %}}
 
-
 {{% blocks/section type="row text-center" %}}
 
 # This is the second section
 
 {{% /blocks/section %}}
-
 
 {{% blocks/section type="row" %}}
 
@@ -91,7 +86,6 @@ For announcement of latest features etc.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
-
 
 {{% blocks/section type="row text-center" %}}
 
