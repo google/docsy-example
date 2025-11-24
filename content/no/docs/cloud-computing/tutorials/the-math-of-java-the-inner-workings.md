@@ -1,13 +1,14 @@
 ---
-title: "Matten til Java: Drivverket"
+title: 'Matten til Java: Drivverket'
 linkTitle: Matten til Java
 date: 2017-01-07
 description: >
- En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i _kursiv_ og kan ha flere avsnitt.
+  En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i
+  _kursiv_ og kan ha flere avsnitt.
 ---
 
-This is a **placeholder page**. For an example of the kind of content that can be
-added here, see the [example page](/docs/getting-started/example-page/).
+This is a **placeholder page**. For an example of the kind of content that can
+be added here, see the [example page](/docs/getting-started/example-page/).
 
 ## Welcome!
 

@@ -1,12 +1,13 @@
 ---
 title: Parameter Reference
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  A short lead description about this content page. It can be **bold** or
+  _italic_ and can be split over multiple paragraphs.
 date: 2017-01-05
 ---
 
-This is a **placeholder page**. For an example of the kind of content that can be
-added here, see the [example page](/docs/getting-started/example-page/).
+This is a **placeholder page**. For an example of the kind of content that can
+be added here, see the [example page](/docs/getting-started/example-page/).
 
 ## Welcome!
 

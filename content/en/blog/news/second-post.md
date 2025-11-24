@@ -6,8 +6,8 @@ description: >
   **bold** or _italic_ and can even be split over multiple paragraphs.
 ---
 
-This is a **placeholder page**. For an example of the kind of content that can be
-added here, see the [example page](/docs/getting-started/example-page/).
+This is a **placeholder page**. For an example of the kind of content that can
+be added here, see the [example page](/docs/getting-started/example-page/).
 
 ## Welcome!
 

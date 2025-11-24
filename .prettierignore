@@ -2,11 +2,4 @@
 # gotcha is that once a _directory_ is ignored, it's content cannot be
 # unignored.
 
-# Ignore all _files_ under assets
-/assets/**/*.*
-
-# Selectively unignore some files
-!/assets/scss/main.scss
-!/assets/scss/td/**/*
-
-/assets/scss/td/chroma/**/*
+/content/fa
