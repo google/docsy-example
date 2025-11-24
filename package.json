@@ -48,7 +48,7 @@
     "npm-check-updates": "^19.1.2"
   },
   "engines": {
-    "node": ">=24.0.0"
+    "node": ">=22"
   },
   "private": true,
   "prettier": {
