@@ -203,13 +203,11 @@ _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik 
 
 ### Alerts
 
-{{< alert >}}This is an alert.{{< /alert >}}
-{{< alert title="Note" >}}This is an alert with a title.{{< /alert >}}
-{{% alert title="Note" %}}This is an alert with a title and **Markdown**.{{% /alert %}}
-{{< alert color="success" >}}This is a successful alert.{{< /alert >}}
-{{< alert color="warning" >}}This is a warning.{{< /alert >}}
-{{< alert color="warning" title="Warning" >}}This is a warning with a title.{{< /alert >}}
-
+{{% alert %}}This is an alert.{{% /alert %}}
+{{% alert title="Note" color="secondary" %}}This is an alert with a title.{{% /alert %}}
+{{% alert color="success" %}}This is a successful alert.{{% /alert %}}
+{{% alert color="warning" %}}This is a warning!{{% /alert %}}
+{{% alert title="Danger!" color="danger" %}}This is a danger alert with a title!{{% /alert %}}
 
 ## Another Heading
 
