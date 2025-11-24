@@ -38,14 +38,17 @@
     "update:packages": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.22",
     "cross-env": "^10.1.0",
     "hugo-extended": "0.152.2",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "^19.0.0"
+    "npm-check-updates": "^19.1.2"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   },
   "private": true,
   "prettier": {
