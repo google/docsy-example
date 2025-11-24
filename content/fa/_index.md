@@ -37,7 +37,7 @@ title: اسناد گلدی
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="ما را در توییتر دنبال کنید." url="https://twitter.com/docsydocs" %}}
+{{% blocks/feature icon="fab fa-x-twitter" title="ما را در X دنبال کنید." url="https://x.com/docsydocs" %}}
 برای اطلاع از آخرین خبرها
 {{% /blocks/feature %}}
 
@@ -63,7 +63,7 @@ Get the Goldydocs app!
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="ما را در توییتر دنبال کنید." url="https://twitter.com/GoHugoIO" %}}
+{{% blocks/feature icon="fab fa-x-twitter" title="ما را در X دنبال کنید." url="https://x.com/GoHugoIO" %}}
 برای اطلاع از آخرین خبرها
 {{% /blocks/feature %}}
 

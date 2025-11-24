@@ -48,7 +48,7 @@ contributions workflow on **GitHub**. New users are always welcome!
 
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
+{{% blocks/feature icon="fab fa-x-twitter" title="Follow us on X!" url="https://x.com/docsydocs" %}}
 
 For announcement of latest features etc.
 
@@ -78,8 +78,8 @@ contributions workflow on **GitHub**. New users are always welcome!
 
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
+{{% blocks/feature icon="fab fa-x-twitter" title="Follow us on X!"
+    url="https://x.com/GoHugoIO" %}}
 
 For announcement of latest features etc.
 

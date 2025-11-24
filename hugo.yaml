@@ -193,10 +193,10 @@ params:
         url: https://example.org/mail
         icon: fa fa-envelope
         desc: Discussion and help from your fellow users
-      - name: Twitter
-        url: https://example.org/twitter
-        icon: fab fa-twitter
-        desc: Follow us on Twitter to get the latest news!
+      - name: X
+        url: https://example.org/x
+        icon: fab fa-x-twitter
+        desc: Follow us on X to get the latest news!
       - name: Stack Overflow
         url: https://example.org/stack
         icon: fab fa-stack-overflow
