@@ -11,6 +11,7 @@
   "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild rtlcss -",
   "scripts": {
     "_build": "npm run _hugo-dev --",
+    "_check:format": "npx prettier --check .",
     "_check:links": "echo IMPLEMENTATION PENDING for check-links; echo",
     "_commit:public": "HASH=$(git rev-parse --short main); cd public && git add -A && git commit -m \"Site at $HASH\"",
     "_hugo": "hugo --cleanDestinationDir",
@@ -23,6 +24,7 @@
     "check:links:all": "HTMLTEST_ARGS= npm run _check:links",
     "check:links": "npm run _check:links",
     "clean": "rm -Rf public/* resources",
+    "fix:format": "npm run _check:format -- --write",
     "local": "npm run _local -- npm run",
     "make:public": "git init -b main public",
     "precheck:links:all": "npm run build",
