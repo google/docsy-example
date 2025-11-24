@@ -31,7 +31,7 @@ to create your own real websites with [Docsy](https://docsy.dev))
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="dark" type="row" %}}
+{{% blocks/section color="white" type="row" %}}
 
 {{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
 
@@ -59,31 +59,6 @@ For announcement of latest features etc.
 {{% blocks/section type="row text-center" %}}
 
 # This is the second section
-
-{{% /blocks/section %}}
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-
-Get the Goldydocs app!
-
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
-
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-x-twitter" title="Follow us on X!"
-    url="https://x.com/GoHugoIO" %}}
-
-For announcement of latest features etc.
-
-{{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
