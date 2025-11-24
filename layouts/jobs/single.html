@@ -1,0 +1,169 @@
+{{ define "main" }}
+<div class="td-content">
+  <h1>{{ .Title }}</h1>
+  
+  <div class="lead">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.jobs }}
+  <div class="jobs-list">
+    {{ range . }}
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">{{ .title }}</h3>
+        <small class="opacity-75">{{ .company }} | פורסם: {{ .date }}</small>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-8">
+            <h5 class="text-primary">תיאור התפקיד</h5>
+            <div class="job-description mb-4">
+              {{ .description | markdownify }}
+            </div>
+            
+            <h5 class="text-primary">דרישות התפקיד</h5>
+            <ul class="requirements-list mb-3">
+              {{ range .requirements }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card job-details-card">
+              <div class="card-body">
+                <h5 class="card-title text-primary mb-3">
+                  <i class="fas fa-info-circle"></i> פרטי המשרה
+                </h5>
+                {{ with .experience }}
+                <p class="mb-2">
+                  <i class="fas fa-chart-line text-muted"></i>
+                  <strong>ניסיון נדרש:</strong> {{ . }}
+                </p>
+                {{ end }}
+                {{ with .location }}
+                <p class="mb-3">
+                  <i class="fas fa-map-marker-alt text-muted"></i>
+                  <strong>מיקום:</strong> {{ . }}
+                </p>
+                {{ end }}
+                
+                <hr class="my-3">
+                
+                <h6 class="text-primary mb-3">
+                  <i class="fas fa-user"></i> איש קשר
+                </h6>
+                {{ with .contact_name }}
+                <p class="mb-2">
+                  <i class="fas fa-user-tie text-muted"></i>
+                  <strong>שם:</strong> {{ . }}
+                </p>
+                {{ end }}
+                {{ with .contact_email }}
+                <p class="mb-2">
+                  <i class="fas fa-envelope text-muted"></i>
+                  <strong>דוא"ל:</strong><br>
+                  <a href="mailto:{{ . }}" class="small">{{ . }}</a>
+                </p>
+                {{ end }}
+                {{ with .contact_linkedin }}
+                <p class="mb-3">
+                  <i class="fab fa-linkedin text-muted"></i>
+                  <strong>לינקדאין:</strong><br>
+                  <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="small">
+                    פרופיל איש הקשר
+                  </a>
+                </p>
+                {{ end }}
+                
+                {{ with .contact_email }}
+                <a href="mailto:{{ . }}" class="btn btn-primary btn-sm w-100 mt-2">
+                  <i class="fas fa-paper-plane"></i> שלח קורות חיים
+                </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+
+<style>
+.jobs-list {
+  margin-top: 2rem;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.job-description {
+  line-height: 1.8;
+}
+
+.job-details-card {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--bs-border-color);
+}
+
+[data-dark-mode] .job-details-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.job-details-card .card-body {
+  padding: 1.25rem;
+}
+
+.job-details-card p {
+  line-height: 1.6;
+}
+
+.job-details-card i {
+  width: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+.requirements-list {
+  list-style-type: none;
+  padding-right: 0;
+}
+
+.requirements-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--bs-border-color);
+  line-height: 1.6;
+}
+
+.requirements-list li:last-child {
+  border-bottom: none;
+}
+
+.requirements-list li:before {
+  content: "✓";
+  color: var(--bs-success);
+  font-weight: bold;
+  margin-left: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.card-header .opacity-75 {
+  opacity: 0.75;
+}
+
+.btn-primary {
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+</style>
+{{ end }}
