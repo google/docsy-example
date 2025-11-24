@@ -1,7 +1,7 @@
 {
   "name": "docsy-example-site",
-  "version": "0.12.0",
-  "version.next": "0.12.1-dev-unreleased",
+  "version": "0.13.0-pre-release",
+  "version.next": "0.13.1-dev-unreleased",
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
@@ -11,6 +11,7 @@
   "spelling": "cSpell:ignore docsy hugo htmltest precheck postbuild rtlcss -",
   "scripts": {
     "_build": "npm run _hugo-dev --",
+    "_check:format": "npx prettier --check .",
     "_check:links": "echo IMPLEMENTATION PENDING for check-links; echo",
     "_commit:public": "HASH=$(git rev-parse --short main); cd public && git add -A && git commit -m \"Site at $HASH\"",
     "_hugo": "hugo --cleanDestinationDir",
@@ -23,6 +24,7 @@
     "check:links:all": "HTMLTEST_ARGS= npm run _check:links",
     "check:links": "npm run _check:links",
     "clean": "rm -Rf public/* resources",
+    "fix:format": "npm run _check:format -- --write",
     "local": "npm run _local -- npm run",
     "make:public": "git init -b main public",
     "precheck:links:all": "npm run build",
@@ -36,14 +38,17 @@
     "update:packages": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.22",
     "cross-env": "^10.1.0",
     "hugo-extended": "0.152.2",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "^19.0.0"
+    "npm-check-updates": "^19.1.2"
+  },
+  "engines": {
+    "node": ">=22"
   },
   "private": true,
   "prettier": {

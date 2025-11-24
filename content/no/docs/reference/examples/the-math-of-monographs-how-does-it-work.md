@@ -1,7 +1,7 @@
 ---
-title: 'Matten til monolitter: Drivverket'
-linkTitle: Matten til monolitter
-date: 2017-01-08
+title: 'Matten til monografer: Hvordan virker det?'
+linkTitle: Matten til monografer
+date: 2017-01-06
 description: >
   En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i
   _kursiv_ og kan ha flere avsnitt.

@@ -1,7 +1,7 @@
 ---
-title: 'Matten til monolitter: Drivverket'
+title: 'Matten til monolitter: Detaljert spesifikasjon'
 linkTitle: Matten til monolitter
-date: 2017-01-08
+date: 2017-01-03
 description: >
   En kort oppsummering av denne siden. Tekst kan **utheves** sller skrives i
   _kursiv_ og kan ha flere avsnitt.
