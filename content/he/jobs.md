@@ -9,6 +9,26 @@ menu:
     identifier: jobs
     
 jobs:
+  - title: "מפתח COBOL"
+    company: "קבוצת רזאל"
+    date: "30/12/2025"
+    description: |
+      מפתח מערכות בנקאיות במחשב MF IBM, בעל 3 שנות ניסיון ומעלה.
+    requirements:
+      - "ניסיון בכתיבת קוד ב-COBOL"
+      - "ניסיון בפיתוח מסכי OL 3270"
+      - "ידע עם מסד נתונים DB2 וביצוע שליפות מורכבות"
+      - "ניסיון עם מערכות IBM MF - COBOL"
+      - "ניסיון בעבודה בסביבת CICS"
+      - "ניסיון בכתיבת JCL ועבודה עם קבצים ב-MF"
+      - "תואר הנדסאי מחשבים/בוגר מדעי המחשב מוכר – חובה"
+      - "ניסיון בארגון פיננסי – יתרון משמעותי"
+    experience: "3+ שנים"
+    location: "מודיעין, היברידי - 3 ימים מהבית"
+    contact_name: "תהילה בורכוביץ"
+    contact_email: "tehila@razel.co.il"
+    contact_linkedin: "https://www.linkedin.com/in/tehila-borhovich-b8598138a"
+    
   - title: "מפתח/ת COBOL"
     company: "קבוצת רזאל"
     date: "23/11/2025"
