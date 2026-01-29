@@ -118,10 +118,6 @@ params:
   # current doc set.
   version: 0.0
 
-  # A link to latest version of the docs. Used in the "version-banner" partial to
-  # point people to the main doc site.
-  url_latest_version: https://example.com
-
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
   github_repo: https://github.com/google/docsy-example
 
@@ -145,9 +141,10 @@ params:
   prism_syntax_highlighting: false
 
   copyright:
-    authors:
+    authors: >-
       Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
     from_year: 2018
+    to_year: present
 
   # User interface configuration
   ui:
@@ -185,6 +182,7 @@ params:
     # add "hide_readingtime: true" to the page's front matter
     readingtime:
       enable: false
+  mainBranchPreviewURL: https://main--goldydocs.netlify.app/
 
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
@@ -221,7 +219,7 @@ module:
   # workspace: docsy.work
   hugoVersion:
     extended: true
-    min: 0.146.0
+    min: 0.155.0
   imports:
     - path: github.com/google/docsy
       disable: false
