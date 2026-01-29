@@ -6,8 +6,11 @@ tags: [test, docs]
 weight: 2
 ---
 
-{{% pageinfo %}} This is a placeholder page that shows you how to use this
-template site. {{% /pageinfo %}}
+{{% pageinfo color="warning td-max-width-on-larger-screens mx-0" %}}
+
+This is a placeholder page. Replace it with your own content.
+
+{{% /pageinfo %}}
 
 Information in this section helps your user try your project themselves.
 

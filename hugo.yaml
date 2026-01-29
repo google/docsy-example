@@ -79,6 +79,7 @@ markup:
   highlight:
     # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
     style: tango
+    noClasses: false # Required for dark-mode support of code blocks
     # Uncomment if you want your chosen highlight style used for code blocks without a specified language
     # guessSyntax: true
 

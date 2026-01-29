@@ -5,8 +5,11 @@ date: 2017-01-04
 weight: 8
 ---
 
-{{% pageinfo %}} This is a placeholder page that shows you how to use this
-template site. {{% /pageinfo %}}
+{{% pageinfo color="warning td-max-width-on-larger-screens mx-0" %}}
+
+This is a placeholder page. Replace it with your own content.
+
+{{% /pageinfo %}}
 
 Tutorials are **complete worked examples** made up of **multiple tasks** that
 guide the user through a relatively simple but realistic scenario: building an

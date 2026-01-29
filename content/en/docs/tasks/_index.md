@@ -5,8 +5,11 @@ date: 2017-01-05
 weight: 6
 ---
 
-{{% pageinfo %}} This is a placeholder page that shows you how to use this
-template site. {{% /pageinfo %}}
+{{% pageinfo color="warning td-max-width-on-larger-screens mx-0" %}}
+
+This is a placeholder page. Replace it with your own content.
+
+{{% /pageinfo %}}
 
 Think about your project’s features and use cases. Use these to choose your core
 tasks. Each granular use case (enable x, configure y) should have a
