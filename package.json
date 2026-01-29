@@ -17,7 +17,7 @@
     "_diff:check": "git diff --name-only --exit-code",
     "_fix:permissions": "chmod -R u+w public/* 2>/dev/null || true",
     "_get:docsy": "hugo mod get github.com/google/docsy@v$npm_package_version",
-    "_hugo-dev": "npm run _hugo -- -e dev -DFE",
+    "_hugo-dev": "npm run _hugo -- -e dev --logLevel info -DFE",
     "_hugo": "hugo --cleanDestinationDir",
     "_local": "npx cross-env HUGO_MODULE_WORKSPACE=docsy.work",
     "_serve": "npm run _hugo-dev -- --minify serve --renderToMemory",
