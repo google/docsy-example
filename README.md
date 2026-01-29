@@ -59,6 +59,12 @@ If you want to do SCSS edits and want to publish these, you need to install
 npm install
 ```
 
+## Deployment on GitHub pages
+
+This repo ships with a [GitHub action] that allows you to deploy your site to [GitHub Pages].
+
+To enable automatic deployment on push to main branch of your repo, copy the corresponding [workflow file](.github/example-workflows/gh-pages.yml) then it's ready to go.
+
 ## Running the website locally
 
 Building and running the site locally requires a recent `extended` version of
@@ -215,3 +221,5 @@ of the user guide for instructions on how to install `go`.
   https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
 [Docker Compose documentation]: https://docs.docker.com/compose/gettingstarted/
+[GitHub Pages]: https://docs.github.com/en/pages
+[GitHub action]: https://docs.github.com/en/actions
