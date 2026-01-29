@@ -8,7 +8,10 @@ categories: [Examples]
 tags: [test, sample, docs]
 ---
 
-{{% pageinfo %}} This is a placeholder page. Replace it with your own content.
+{{% pageinfo color="warning td-max-width-on-larger-screens mx-0" %}}
+
+This is a placeholder page. Replace it with your own content.
+
 {{% /pageinfo %}}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~. [Links](https://gohugo.io)
@@ -71,7 +74,7 @@ belly 8-bit yuccie PBR&B. **I love this life we live in**.
 
 ### Header 3
 
-```
+```text
 This is a code block following a header.
 ```
 
@@ -180,7 +183,7 @@ Also, `this should vertically align` ~~`with this`~~ ~~and this~~.
 
 Code can also be shown in a block element.
 
-```
+```go
 foo := "bar";
 bar := "foo";
 ```
@@ -203,7 +206,7 @@ func main() {
 }
 ```
 
-```
+```text
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
@@ -229,14 +232,39 @@ Pedersen, CC-BY-SA._
 
 ## Components
 
-### Alerts
+### Alerts in Markdown syntax
 
-{{% alert %}}This is an alert.{{% /alert %}}
-{{% alert title="Note" color="secondary" %}}This is an alert with a
-title.{{% /alert %}} {{% alert color="success" %}}This is a successful
-alert.{{% /alert %}} {{% alert color="warning" %}}This is a
-warning!{{% /alert %}} {{% alert title="Danger!" color="danger" %}}This is a
-danger alert with a title!{{% /alert %}}
+> [!NB] This is an alert.
+
+> [!SECONDARY] Alert title
+>
+> This is an alert with a title.
+
+> [!TIP]
+>
+> This is a successful alert.
+
+> [!WARNING]
+>
+> This is a warning!
+
+> [!DANGER] Danger!
+>
+> This is a danger alert with a title!
+
+### Alert shortcode
+
+{{% alert %}} This is an alert. {{% /alert %}}
+
+{{% alert title="Alert title" color="secondary" %}} This is an alert with a
+title. {{% /alert %}}
+
+{{% alert color="success" %}} This is a successful alert. {{% /alert %}}
+
+{{% alert color="warning" %}} This is a warning! {{% /alert %}}
+
+{{% alert title="Danger!" color="danger" %}} This is a danger alert with a
+title! {{% /alert %}}
 
 ## Another Heading
 
@@ -274,6 +302,6 @@ stumptown neutra locavore. IPhone typewriter messenger bag narwhal. Ennui
 cold-pressed seitan flannel keytar, single-origin coffee adaptogen occupy yuccie
 williamsburg chillwave shoreditch forage waistcoat.
 
-```
+```text
 This is the final element on the page and there should be no margin below this.
 ```

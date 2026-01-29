@@ -4,7 +4,7 @@ description: Here's where your user finds out if your project is for them.
 weight: 1
 ---
 
-{{% pageinfo %}}
+{{% pageinfo color="warning td-max-width-on-larger-screens mx-0" %}}
 
 This is a placeholder page that shows you how to use this template site.
 

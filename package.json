@@ -40,6 +40,8 @@
     "serve": "npm run _serve",
     "test": "npm run check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
+    "update:docsy:main": "hugo mod get -u github.com/google/docsy@main && hugo mod tidy",
+    "update:hugo-modules": "hugo mod get -u github.com/google/docsy && hugo mod tidy",
     "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
     "update:packages": "npx npm-check-updates -u"
   },
@@ -51,7 +53,8 @@
     "rtlcss": "^4.3.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "^19.3.2"
+    "npm-check-updates": "^19.3.2",
+    "prettier": "^3.8.1"
   },
   "engines": {
     "node": ">=22"

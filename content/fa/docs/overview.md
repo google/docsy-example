@@ -4,7 +4,7 @@ description: در اینجا کاربران شما متوجه می‌شوند ک
 weight: 1
 ---
 
-{{% pageinfo %}}
+{{% pageinfo color="warning td-max-width-on-larger-screens mx-0" %}}
 
 این یک صفحه جایگزین است که به شما نشان می‌دهد چگونه از این سایت الگو استفاده کنید.
 

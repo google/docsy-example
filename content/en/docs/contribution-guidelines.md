@@ -4,7 +4,7 @@ description: How to contribute to the docs
 weight: 10
 ---
 
-{{% pageinfo %}}
+{{% pageinfo color="info td-max-width-on-larger-screens mx-0" %}}
 
 These basic sample guidelines assume that your Docsy site is deployed using
 Netlify and your files are stored in GitHub. You can use the guidelines "as is"
@@ -81,7 +81,7 @@ work:
 1. Fork the [Goldydocs repo](https://github.com/google/docsy-example) repo into
    your own project, then create a local copy using `git clone`.
 
-   ```
+   ```sh
    git clone --branch v0.12.0 --depth 1 https://github.com/google/docsy-example.git
    ```
 

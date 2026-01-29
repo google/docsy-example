@@ -4,8 +4,11 @@ description: Low level reference docs for your project.
 weight: 9
 ---
 
-{{% pageinfo %}} This is a placeholder page that shows you how to use this
-template site. {{% /pageinfo %}}
+{{% pageinfo color="warning td-max-width-on-larger-screens mx-0" %}}
+
+This is a placeholder page. Replace it with your own content.
+
+{{% /pageinfo %}}
 
 If your project has an API, configuration, or other reference - anything that
 users need to look up that’s at an even lower level than a single task - put (or
