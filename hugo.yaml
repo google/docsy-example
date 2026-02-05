@@ -184,6 +184,10 @@ params:
     readingtime:
       enable: false
   mainBranchPreviewURL: https://main--goldydocs.netlify.app/
+  # Docs helpers
+  btn: class="btn btn-{1} btn-{2}" type="button"
+  btn-lg: class="btn btn-lg btn-{1}" type="button"
+  FA: <i class="fa-{1} fa-{2} text-{3} px-1"></i>
 
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
@@ -202,6 +206,10 @@ params:
         desc: Practical questions and curated answers
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
+      - name: Site info
+        url: /site/
+        icon: fa-solid fa-hammer
+        desc: Site build information.
       - name: GitHub
         url: https://github.com/google/docsy
         icon: fab fa-github
@@ -214,6 +222,12 @@ params:
         url: https://example.org/mail
         icon: fa fa-envelope
         desc: Discuss development issues around the project
+
+security:
+  funcs: # cspell:disable-line
+    getenv: # cspell:disable-line
+      # Netlify build env var
+      - ^(BRANCH|BUILD_ID|COMMIT_REF|CONTEXT|DEPLOY_ID|NETLIFY|PULL_REQUEST|REVIEW_ID)$
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:

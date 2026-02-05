@@ -1,20 +1,38 @@
 ---
+# cSpell:disable
 title: اسناد گلدی
+description: ارزیابی درجه حرارت فرنی &mdash; در فضای ابری!
 ---
 
-{{< blocks/cover title="به اسناد گلدی خوش آمدید. این یک نمونه برای پوسته داکسی می‌باشد." image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="docs/">
-    بیشتر بخوانید <i class="fas fa-arrow-alt-circle-left ms-2"></i>
-</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-    دانلود <i class="fab fa-github ms-2 "></i>
-</a>
-<p class="lead mt-5">ارزیابی درجه حرارت فرنی - در فضای ابری!</p>
-{{< blocks/link-down color="info" >}}
-{{< /blocks/cover >}}
+{{% blocks/cover
+  title="به اسناد گلدی خوش آمدید. این یک نمونه برای پوسته داکسی می‌باشد."
+  image_anchor="top"
+  height="full td-below-navbar"
+%}}
 
+<!-- prettier-ignore -->
+{{% _param description %}}
+{.display-6}
+
+<!-- prettier-ignore -->
+<div class="td-cta-buttons my-5">
+  <button {{% _param btn-lg primary %}} href="docs/">
+    بیشتر بخوانید
+    {{% _param FA solid arrow-alt-circle-left "" %}}
+  </button>
+  <button {{% _param btn-lg secondary %}}
+    href="{{ param github_url }}">
+    دانلود
+    {{% _param FA brands github "" %}}
+  </button>
+</div>
+
+{{% blocks/link-down color="info" %}}
+
+{{% /blocks/cover %}}
 
 {{% blocks/lead color="primary" %}}
+
 اسناد گلدی یک وبسایت آماده کرده است درباره ارزیابی در حرارت فرنی، سایز صندلی و مشخصه های نرمی!
 شما حتی خواهید فهمید چه کسی فرنی **شما** را خورده است!
 
@@ -23,53 +41,45 @@ title: اسناد گلدی
 
 {{% /blocks/lead %}}
 
-{{< blocks/section color="dark" type="row" >}}
-{{% blocks/feature icon="fa-lightbulb" title="معیارهای جدید صندلی!" %}}
+{{% blocks/section color="white" type="row" %}}
+
+{{% blocks/feature title="معیارهای جدید صندلی!" icon="fa-lightbulb" %}}
+
 اسناد گلدی به شما معیارهای اندازه صندلی را به شما نشان می‌دهد.
 
 برای اطلاع از به روز رسانی ها دنبال کنید.
+
 {{% /blocks/feature %}}
 
+{{% blocks/feature
+  title="همکاری" icon="fab fa-github"
+  url="https://github.com/google/docsy-example"
+%}}
 
-{{% blocks/feature icon="fab fa-github" title="همکاری" url="https://github.com/google/docsy-example" %}}
 ما یک فرآیند [پول ریکوئست](https://github.com/google/docsy-example/pulls) در **گیتهاب** داریم. ما همیشه از همکاران جدید
 خوشحال می‌شویم.
+
 {{% /blocks/feature %}}
 
+{{% blocks/feature
+  title="ما را در X دنبال کنید." icon="fab fa-x-twitter"
+  url="https://x.com/docsydocs"
+%}}
 
-{{% blocks/feature icon="fab fa-x-twitter" title="ما را در X دنبال کنید." url="https://x.com/docsydocs" %}}
 برای اطلاع از آخرین خبرها
+
 {{% /blocks/feature %}}
 
+{{% /blocks/section %}}
 
-{{< /blocks/section >}}
+{{% blocks/section type="row text-center h1" %}}
 
+این قسمت دوم است.
 
-{{< blocks/section >}}
-  <h1 class="text-center">این قسمت دوم است.</h1>
-{{< /blocks/section >}}
+{{% /blocks/section %}}
 
+{{% blocks/section type="row text-center h1" %}}
 
+این یک قسمت دیگر است با تراز وسط
 
-{{< blocks/section type="row" >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="از **فروشگاه اپ استور** دانلود کنید" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="همکاری" url="https://github.com/google/docsy-example" %}}
-ما یک فرآیند [پول ریکوئست](https://github.com/google/docsy-example/pulls) در **گیتهاب** داریم. ما همیشه از همکاران جدید
-خوشحال می‌شویم.
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-x-twitter" title="ما را در X دنبال کنید." url="https://x.com/GoHugoIO" %}}
-برای اطلاع از آخرین خبرها
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-{{< blocks/section >}}
-  <h1 class="text-center">این یک قسمت دیگر است.</h1>
-{{< /blocks/section >}}
+{{% /blocks/section %}}
