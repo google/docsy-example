@@ -215,3 +215,5 @@ of the user guide for instructions on how to install `go`.
   https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
 [Docker Compose documentation]: https://docs.docker.com/compose/gettingstarted/
+
+<!-- cSpell:ignore hugo docsy TOCSS -->

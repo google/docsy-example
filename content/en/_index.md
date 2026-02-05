@@ -1,24 +1,34 @@
 ---
 title: Goldydocs
+description: Porridge temperature assessment &mdash; in the cloud!
 ---
 
-<style>
-  .td-heading-self-link {
-    display: none;
-  }
-</style>
+{{% blocks/cover
+  title="Welcome to Goldydocs: A Docsy Example Project!"
+  image_anchor="top"
+  height="full td-below-navbar"
+%}}
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
+<!-- prettier-ignore -->
+{{% _param description %}}
+{.display-6}
 
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
-</a>
-<p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
+<!-- prettier-ignore -->
+<div class="td-cta-buttons my-5">
+  <button {{% _param btn-lg primary %}} href="docs/">
+    Learn More
+    {{% _param FA solid arrow-alt-circle-right "" %}}
+  </button>
+  <button {{% _param btn-lg secondary %}}
+    href="{{ param github_url }}">
+    Download
+    {{% _param FA brands github "" %}}
+  </button>
+</div>
 
-{{< blocks/link-down color="info" >}} {{< /blocks/cover >}}
+{{% blocks/link-down color="info" %}}
+
+{{% /blocks/cover %}}
 
 {{% blocks/lead color="primary" %}}
 
@@ -33,7 +43,7 @@ to create your own real websites with [Docsy](https://docsy.dev))
 
 {{% blocks/section color="white" type="row" %}}
 
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
+{{% blocks/feature title="New chair metrics!" icon="fa-lightbulb" %}}
 
 The Goldydocs UI now shows chair size metrics by default.
 
@@ -41,14 +51,20 @@ Please follow this space for updates!
 
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
+{{% blocks/feature
+  title="Contributions welcome!" icon="fab fa-github"
+  url="https://github.com/google/docsy-example"
+%}}
 
 We do a [Pull Request](https://github.com/google/docsy-example/pulls)
 contributions workflow on **GitHub**. New users are always welcome!
 
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-x-twitter" title="Follow us on X!" url="https://x.com/docsydocs" %}}
+{{% blocks/feature
+  title="Follow us on X!" icon="fab fa-x-twitter"
+  url="https://x.com/docsydocs"
+%}}
 
 For announcement of latest features etc.
 
@@ -56,14 +72,14 @@ For announcement of latest features etc.
 
 {{% /blocks/section %}}
 
-{{% blocks/section type="row text-center" %}}
+{{% blocks/section type="row text-center h1" %}}
 
-# This is the second section
+This is the second section
 
 {{% /blocks/section %}}
 
-{{% blocks/section type="row text-center" %}}
+{{% blocks/section type="row text-center h1" %}}
 
-# This is the another section with center alignment
+This is the another section with center alignment
 
 {{% /blocks/section %}}

@@ -7,3 +7,17 @@ https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
 @import 'td/color-adjustments-dark';
 @import 'td/code-dark';
 @import 'td/gcs-search-dark';
+@import 'td/extra/buttons';
+@import 'td/extra/main-container';
+
+// Example of color tuning
+
+.td-box--primary {
+  // TODO: rework the td-box--* classes so that they don't override `color`;
+  // otherwise we can't use Bootstrap's CSS variables:
+  // --bs-link-color: $color !important;
+  // --bs-link-color-rgb: red !important;
+  a {
+    color: tint-color($primary, 80%) !important;
+  }
+}

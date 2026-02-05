@@ -26,3 +26,21 @@ information on using pull requests.
 
 This project follows
 [Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
+
+## Maintainer notes
+
+### Upgrade Docsy
+
+Update Docsy to the latest tagged release:
+
+```bash
+npm run update:hugo-modules
+```
+
+Or update to the latest commit on the main branch:
+
+```bash
+npm run update:docsy:main
+```
+
+<!-- cSpell:ignore hugo docsy -->
