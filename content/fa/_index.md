@@ -16,15 +16,15 @@ description: ارزیابی درجه حرارت فرنی &mdash; در فضای �
 
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
-  <button {{% _param btn-lg primary %}} href="docs/">
+  <a {{% _param btn-lg primary %}} href="docs/">
     بیشتر بخوانید
     {{% _param FA solid arrow-alt-circle-left "" %}}
-  </button>
-  <button {{% _param btn-lg secondary %}}
-    href="{{ param github_url }}">
+  </a>
+  <a {{% _param btn-lg secondary %}}
+    href="{{% param github_repo %}}">
     دانلود
     {{% _param FA brands github "" %}}
-  </button>
+  </a>
 </div>
 
 {{% blocks/link-down color="info" %}}

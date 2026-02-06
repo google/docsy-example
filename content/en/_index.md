@@ -15,15 +15,15 @@ description: Porridge temperature assessment &mdash; in the cloud!
 
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
-  <button {{% _param btn-lg primary %}} href="docs/">
+  <a {{% _param btn-lg primary %}} href="docs/">
     Learn More
     {{% _param FA solid arrow-alt-circle-right "" %}}
-  </button>
-  <button {{% _param btn-lg secondary %}}
-    href="{{ param github_url }}">
+  </a>
+  <a {{% _param btn-lg secondary %}}
+    href="{{% param github_repo %}}">
     Download
     {{% _param FA brands github "" %}}
-  </button>
+  </a>
 </div>
 
 {{% blocks/link-down color="info" %}}

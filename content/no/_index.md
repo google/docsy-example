@@ -16,15 +16,15 @@ description: Vurdering av grøt-temperatur &mdash; i skyen!
 
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
-<button {{% _param btn-lg primary %}} href="docs/">
-  Les mer
-  {{% _param FA solid arrow-alt-circle-right "" %}}
-</button>
-<button {{% _param btn-lg secondary %}}
-  href="{{ param github_url }}">
-  Last ned
-  {{% _param FA brands github "" %}}
-</button>
+  <a {{% _param btn-lg primary %}} href="docs/">
+    Les mer
+    {{% _param FA solid arrow-alt-circle-right "" %}}
+  </a>
+  <a {{% _param btn-lg secondary %}}
+    href="{{% param github_repo %}}">
+    Last ned
+    {{% _param FA brands github "" %}}
+  </a>
 </div>
 
 {{% blocks/link-down color="info" %}}

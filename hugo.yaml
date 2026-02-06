@@ -169,11 +169,11 @@ params:
     feedback:
       enable: true
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-      'yes': >-
+      yes: >-
         Glad to hear it! Please <a
         href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we
         can improve</a>.
-      'no': >-
+      no: >-
         Sorry to hear that. Please <a
         href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we
         can improve</a>.
@@ -184,9 +184,8 @@ params:
     readingtime:
       enable: false
   mainBranchPreviewURL: https://main--goldydocs.netlify.app/
-  # Docs helpers
-  btn: class="btn btn-{1} btn-{2}" type="button"
-  btn-lg: class="btn btn-lg btn-{1}" type="button"
+  # Docs helpers: use with _param
+  btn-lg: class="btn btn-lg btn-{1}" role="button"
   FA: <i class="fa-{1} fa-{2} text-{3} px-1"></i>
 
   links:
