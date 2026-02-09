@@ -1,16 +1,23 @@
 ---
 title: About Goldydocs
 linkTitle: About
+description: A sample site using the Docsy Hugo theme.
 menu: { main: { weight: 10 } }
 ---
 
-{{% blocks/cover title="About Goldydocs" image_anchor="bottom" height="auto td-below-navbar" %}}
+{{% blocks/cover
+  title="About Goldydocs"
+  height="auto td-below-navbar"
+  image_anchor="bottom"
+%}}
 
-A sample site using the Docsy Hugo theme.
+<!-- prettier-ignore -->
+{{% _param description %}}
+{.display-6}
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead %}}
+{{% blocks/lead color="white" %}}
 
 Goldydocs is a sample site using the [Docsy](https://github.com/google/docsy)
 Hugo theme that shows what it can do and provides you with a template site
