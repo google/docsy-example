@@ -5,16 +5,17 @@ params:
   body_class: td-navbar-links-all-active
 ---
 
-<!--
-  Note that the blocks/cover illustrates how to create a primary colored
-  gradient hero background.
--->
-
 {{% blocks/cover
   title="Welcome to Goldydocs: A Docsy Example and Starter Project!"
+  height="full td-below-navbar"
   image_anchor="top"
-  color="primary bg-gradient td-below-navbar"
 %}}
+
+<!--
+  Want a cover without an image?
+  Add the following argument to the blocks/cover shortcode:
+    color="primary bg-gradient td-below-navbar"
+-->
 
 <!-- prettier-ignore -->
 {{% _param description %}}
@@ -23,7 +24,7 @@ params:
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
   <a {{% _param btn-lg primary %}} href="docs/">
-    Learn More
+    Learn more
   </a>
   <a {{% _param btn-lg secondary %}}
     href="{{% param github_repo %}}"
