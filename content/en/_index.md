@@ -6,10 +6,16 @@ params:
 ---
 
 {{% blocks/cover
-  title="Welcome to Goldydocs: A Docsy Example Project!"
-  image_anchor="top"
+  title="Welcome to Goldydocs: A Docsy Example and Starter Project!"
   height="full td-below-navbar"
+  image_anchor="top"
 %}}
+
+<!--
+  Want a cover without an image?
+  Add the following argument to the blocks/cover shortcode:
+    color="primary bg-gradient td-below-navbar"
+-->
 
 <!-- prettier-ignore -->
 {{% _param description %}}
@@ -18,12 +24,12 @@ params:
 <!-- prettier-ignore -->
 <div class="td-cta-buttons my-5">
   <a {{% _param btn-lg primary %}} href="docs/">
-    Learn More
-    {{% _param FA solid arrow-alt-circle-right "" %}}
+    Learn more
   </a>
   <a {{% _param btn-lg secondary %}}
-    href="{{% param github_repo %}}">
-    Download
+    href="{{% param github_repo %}}"
+    target="_blank" rel="noopener noreferrer">
+    Get the code
     {{% _param FA brands github "" %}}
   </a>
 </div>
@@ -32,7 +38,7 @@ params:
 
 {{% /blocks/cover %}}
 
-{{% blocks/lead color="primary" %}}
+{{% blocks/lead color="white" %}}
 
 Goldydocs provides a single web UI providing visibility into porridge
 temperature, chair size, and bed softness metrics! You can even find out who's
@@ -43,7 +49,7 @@ to create your own real websites with [Docsy](https://docsy.dev))
 
 {{% /blocks/lead %}}
 
-{{% blocks/section color="white" type="row" %}}
+{{% blocks/section color="primary" type="row" %}}
 
 {{% blocks/feature title="New chair metrics!" icon="fa-lightbulb" %}}
 
@@ -74,13 +80,13 @@ For announcement of latest features etc.
 
 {{% /blocks/section %}}
 
-{{% blocks/section type="row text-center h1" %}}
+{{% blocks/section color="white" type="row text-center h1" %}}
 
 This is the second section
 
 {{% /blocks/section %}}
 
-{{% blocks/section type="row text-center h1" %}}
+{{% blocks/section color="secondary" type="row text-center h1" %}}
 
 This is the another section with center alignment
 
