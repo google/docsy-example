@@ -1,16 +1,17 @@
 ---
-date: 2018-10-06
+date: 2026-02-10
 title: Easy documentation with Docsy
 linkTitle: Announcing Docsy
 description: >
   The Docsy Hugo theme lets project maintainers and contributors focus on
   content, not on reinventing a website infrastructure from scratch
-author: Riona MacNamara ([@rionam](https://x.com/bepsays))
+author: '[Patrice Chalin](https://github.com/chalin)'
 resources:
   - src: '**.{png,jpg}'
-    title: 'Image #:counter'
     params:
-      byline: 'Photo: Riona MacNamara / CC-BY-CA'
+      byline: Photo by Peter Xie from Pexels
+    # https://www.pexels.com/photo/serene-ocean-sunset-with-rocky-silhouettes-35157036/
+cSpell:ignore: imgproc Pexels
 ---
 
 **This is a typical blog post that includes images.**
@@ -20,28 +21,29 @@ description that will be displayed on the blog landing page, and its author.
 
 ## Including images
 
-Here's an image (`featured-sunset-get.png`) that includes a byline and a
-caption.
+Here's an image that includes a byline and a caption.
 
-{{< imgproc sunset Fill "600x300" >}} Fetch and scale an image in the upcoming
-Hugo 0.43. {{< /imgproc >}}
+{{< imgproc sunset Crop "500x300" >}}
+
+Image cropped to 500x300
+
+{{< /imgproc >}}
 
 The front matter of this post specifies properties to be assigned to all image
 resources:
 
 ```
 resources:
-- src: "**.{png,jpg}"
-  title: "Image #:counter"
-  params:
-    byline: "Photo: Riona MacNamara / CC-BY-CA"
+  - src: '**.{png,jpg}'
+    params:
+      byline: Photo by Peter Xie from Pexels
 ```
 
 To include the image in a page, specify its details like this:
 
 ```go-html-template
-{{</* imgproc sunset Fill "600x300" */>}}
-Fetch and scale an image in the upcoming Hugo 0.43.
+{{</* imgproc sunset Crop "500x300" */>}}
+Image cropped to 500x300
 {{</* /imgproc */>}}
 ```
 
