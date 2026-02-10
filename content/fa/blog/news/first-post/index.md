@@ -1,14 +1,10 @@
 ---
 date: 2018-10-06
+# cSpell:disable
 title: مستدات راحت با داکسی
 linkTitle: معرفی داکسی
 description: "پوسته داکسی، قدرت گرفته از هوگو باعث می‌شود که سازندگان پروژه تمرکز خود را روی ساخت مطالب قرار دهند و نیازی به ساخت وبسایت نداشته باشد."
-author: Riona MacNamara ([@rionam](https://x.com/bepsays))
-resources:
-- src: "**.{png,jpg}"
-  title: "Image #:counter"
-  params:
-    byline: "Photo: Riona MacNamara / CC-BY-CA"
+author: '[Patrice Chalin](https://github.com/chalin)'
 ---
 
 **این یک نوشته معمولی شامل تصویر می باشد.**
@@ -21,8 +17,10 @@ resources:
 اینجا یک تصویر (`featured-sunset-get.png`) که شامل بالاین و کپشن است می‌باشد.
 
 
-{{< imgproc sunset Fill "600x300" >}}
-دریافت و تغییر سایز یک تصویر در نسخه هوگو ۰.۴۳
+{{< imgproc sunset Crop "500x300" >}}
+
+تصویر به ۵۰۰×۳۰۰ برش خورد
+
 {{< /imgproc >}}
 
 
@@ -30,18 +28,17 @@ resources:
 
 ```
 resources:
-- src: "**.{png,jpg}"
-  title: "Image #:counter"
-  params:
-    byline: "Photo: Riona MacNamara / CC-BY-CA"
+  - src: '**.{png,jpg}'
+    params:
+      byline: Photo by Peter Xie from Pexels
 ```
 
 برای افزودن تصویر در یک صفحه، مشخصات آن را به صورت زیر مشخص کنید:
 
 ```
-{{< imgproc sunset Fill "600x300" >}}
-دریافت و تغییر سایز یک تصویر در نسخه هوگو ۰.۴۳
-{{< /imgproc >}}
+{{</* imgproc sunset Crop "500x300" */>}}
+Image cropped to 500x300
+{{</* /imgproc */>}}
 ```
 
 تصاویر در اندازه و با بایلاین مشخص شده نمایش داده می‌شوند.
