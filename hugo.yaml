@@ -1,7 +1,7 @@
 baseURL: https://example.docsy.dev
 title: Goldydocs
 
-# cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
+# cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu slugorcontentbasename
 
 # Language settings
 contentDir: content/en
@@ -32,9 +32,20 @@ pygmentsUseClassic: false
 # See https://help.farbox.com/pygments.html
 pygmentsStyle: tango
 
+mediaTypes:
+  text/redirects:
+    delimiter: ''
+
+outputFormats:
+  redirects:
+    baseName: _redirects
+    isPlainText: true
+    mediaType: text/redirects
+    root: true
+
 # Configure how URLs look like per section.
 permalinks:
-  blog: /:section/:year/:month/:day/:slug/
+  blog: /:section/:year/:month/:day/:slugorcontentbasename
 
 # Image processing configuration.
 imaging:
@@ -87,6 +98,7 @@ markup:
 
 # Comment out if you don't want the "print entire section" link enabled.
 outputs:
+  home: [HTML, print, RSS, redirects]
   section: [HTML, print, RSS]
 
 params:
