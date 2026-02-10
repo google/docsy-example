@@ -32,7 +32,7 @@ Image cropped to 500x300
 The front matter of this post specifies properties to be assigned to all image
 resources:
 
-```
+```yaml
 resources:
   - src: '**.{png,jpg}'
     params:

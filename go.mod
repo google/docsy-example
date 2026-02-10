@@ -2,6 +2,6 @@ module github.com/google/docsy-example
 
 go 1.12
 
-require github.com/google/docsy v0.13.1-0.20260209191548-234f18dd3708
+require github.com/google/docsy v0.14.0
 
 // cSpell:ignore github docsy
