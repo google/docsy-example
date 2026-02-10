@@ -1,7 +1,8 @@
 ---
-title: بلاگ داکسی
-linkTitle: بلاگ
-menu: {main: {weight: 30}}
+# cSpell:disable
+title: بلاگ
+aliases: [ /blog/2018/* ]
+menu: { main: { weight: 30 } }
 ---
 
 اینجا قسمت **بلاگ** است و دو دسته بندی دارد: اخبار و نسخه های منتشر شده.

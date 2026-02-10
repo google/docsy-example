@@ -1,0 +1,17 @@
+{{/*
+
+Adapted from https://gohugo.io/methods/page/aliases/#template-implementation
+
+cSpell:ignore hugo
+*/ -}}
+
+{{ range .Sites -}}
+  {{ range $p := .Pages -}}
+    {{ range .Aliases -}}
+      {{ if findRE `\s` . -}}
+        {{ errorf "One of the front matter aliases in %q contains whitespace" $p.String -}}
+      {{ end -}}
+      {{ printf "%s %s 301\n" . $p.RelPermalink -}}
+    {{ end -}}
+  {{ end -}}
+{{ end -}}
