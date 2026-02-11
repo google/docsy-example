@@ -1,7 +1,7 @@
 {
   "name": "docsy-example-site",
-  "version": "0.13.0",
-  "version.next": "0.13.1-dev-unreleased",
+  "version": "0.14.1",
+  "version.next": "0.14.2-dev-unreleased",
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
@@ -44,11 +44,12 @@
     "test-and-fix": "npm run fix && npm run test-only",
     "test-only": "npm run check:links",
     "test": "npm run test-and-fix",
-    "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
     "update:docsy:main": "hugo mod get -u github.com/google/docsy@main && hugo mod tidy",
-    "update:hugo-modules": "hugo mod get -u github.com/google/docsy && hugo mod tidy",
+    "update:docsy:mod": "hugo mod get -u github.com/google/docsy && hugo mod tidy",
     "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
-    "update:packages": "npx npm-check-updates -u"
+    "update:main": "npm run update:packages && npm run update:docsy:main",
+    "update:packages": "npx npm-check-updates -u",
+    "update": "npm run update:packages && npm run update:docsy:mod"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.24",
