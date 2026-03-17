@@ -56,13 +56,13 @@ imaging:
 # Language configuration
 languages:
   en:
-    languageName: English
+    label: English
     title: Goldydocs
     params:
       description: A Docsy example site
   # cSpell:disable
   no:
-    languageName: Norsk
+    label: Norsk
     contentDir: content/no
     title: Gulldoks
     params:
@@ -70,8 +70,8 @@ languages:
       time_format_default: 02.01.2006
       time_format_blog: 02.01.2006
   fa:
-    languageDirection: rtl
-    languageName: 'فارسی (Persian)'
+    direction: rtl
+    label: 'فارسی (Persian)'
     contentDir: content/fa
     title: 'اسناد گلدی'
     params:
