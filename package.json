@@ -1,6 +1,6 @@
 {
   "name": "docsy-example-site",
-  "version": "0.14.4-dev",
+  "version": "0.15.0-rc",
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
@@ -53,7 +53,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.24",
     "cross-env": "^10.1.0",
-    "hugo-extended": "0.155.3",
+    "hugo-extended": "0.157.0",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0"
   },
