@@ -58,7 +58,7 @@
     "rtlcss": "^4.3.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "^19.3.2",
+    "npm-check-updates": "^22.1.0",
     "prettier": "^3.8.1"
   },
   "engines": {
