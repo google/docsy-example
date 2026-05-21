@@ -1,10 +1,6 @@
-version: '3.8'
-
 services:
   site:
-    image: docsy/docsy-example
-    build:
-      context: .
+    image: hugomods/hugo:debian-exts-non-root-0.154.5
     command: server
     ports:
       - '1313:1313'
