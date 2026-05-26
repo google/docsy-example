@@ -1,6 +1,6 @@
 {
   "name": "docsy-example-site",
-  "version": "0.15.0",
+  "version": "0.15.1-dev+001-over-main-01c827ea",
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
@@ -47,19 +47,20 @@
     "update:docsy:mod": "hugo mod get -u github.com/google/docsy && hugo mod tidy",
     "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
     "update:main": "npm run update:packages && npm run update:docsy:main",
+    "update:packages:not-hugo": "npm run update:packages -- -x hugo-extended",
     "update:packages": "npx npm-check-updates -u",
     "update": "npm run update:packages && npm run update:docsy:mod"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.5.0",
     "cross-env": "^10.1.0",
     "hugo-extended": "0.157.0",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "^19.3.2",
-    "prettier": "^3.8.1"
+    "npm-check-updates": "^22.2.1",
+    "prettier": "^3.8.3"
   },
   "engines": {
     "node": ">=22"
