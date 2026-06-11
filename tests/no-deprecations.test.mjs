@@ -1,7 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import {
+  existsSync,
+  mkdirSync,
+  rmSync,
+  rmdirSync,
+  writeFileSync,
+} from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -66,7 +72,15 @@ test('build with seeded deprecated API call logs a deprecation notice', (t) => {
     );
     t.diagnostic(`Seeded deprecation reported as: ${deprecations[0].trim()}`);
   } finally {
-    rmSync(hookPath);
-    rmSync(dirname(hookPath), { recursive: true, force: true });
+    rmSync(hookPath, { force: true });
+    // Prune test-created dirs only if empty (rmdirSync refuses to delete
+    // non-empty directories), in case other hooks/partials are added later.
+    for (const dir of [dirname(hookPath), dirname(dirname(hookPath))]) {
+      try {
+        rmdirSync(dir);
+      } catch {
+        break; // Directory not empty; leave it (and its parents) in place.
+      }
+    }
   }
 });
