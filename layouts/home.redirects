@@ -5,7 +5,7 @@ Adapted from https://gohugo.io/methods/page/aliases/#template-implementation
 cSpell:ignore hugo
 */ -}}
 
-{{ range .Sites -}}
+{{ range hugo.Sites -}}
   {{ range $p := .Pages -}}
     {{ range .Aliases -}}
       {{ if findRE `\s` . -}}
