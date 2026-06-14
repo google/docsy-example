@@ -1,86 +1,54 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import {
-  existsSync,
-  mkdirSync,
-  rmSync,
-  rmdirSync,
-  writeFileSync,
-} from 'node:fs';
-import { dirname, join } from 'node:path';
+import { mkdirSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const siteDir = fileURLToPath(new URL('../', import.meta.url));
+const tmpDir = join(siteDir, 'tmp');
 
-// Build to a scratch dir so this test never races with tests that read
-// public/ (node --test runs test files concurrently). Kept after the run
-// for inspection; cleared at start.
-const outDir = join(siteDir, 'tmp', 'test-no-deprecations');
-
+// Build to a throwaway dir under `tmp/` so this concurrent test never clobbers
+// the `public/` that other tests read.
 function buildSite() {
-  const res = spawnSync(`npm run build -- -d ${outDir}`, {
-    cwd: siteDir,
-    shell: true,
-    encoding: 'utf8',
-  });
-  const output = `${res.stdout ?? ''}${res.stderr ?? ''}`;
-  const deprecations = output
-    .split('\n')
-    .filter((line) => /deprecated/i.test(line));
-  return { res, output, deprecations };
+  mkdirSync(tmpDir, { recursive: true });
+  const destDir = mkdtempSync(join(tmpDir, 'no-deprecations-'));
+  try {
+    const res = spawnSync('npm run build -- -d ' + destDir, {
+      cwd: siteDir,
+      shell: true,
+      encoding: 'utf8',
+    });
+    const output = `${res.stdout ?? ''}${res.stderr ?? ''}`;
+    const deprecations = output
+      .split('\n')
+      .filter((line) => /deprecated/i.test(line));
+    return { res, output, deprecations };
+  } finally {
+    rmSync(destDir, { recursive: true, force: true });
+  }
 }
 
 test('site build logs no Hugo deprecation notices', (t) => {
-  // The `_hugo-dev` script builds with `--logLevel info`, the level at which
-  // Hugo first reports deprecated API usage.
-  rmSync(outDir, { recursive: true, force: true });
   const { res, output, deprecations } = buildSite();
   assert.equal(res.status, 0, `Build failed:\n${output}`);
   assert.deepEqual(deprecations, [], 'Hugo build logged deprecation notice(s)');
   t.diagnostic(`Scanned ${output.split('\n').length} build-log lines`);
 });
 
-// Sanity check that the test above can actually detect deprecation notices:
-// seed a deprecated API call via the theme's head-end hook and ensure that
-// Hugo reports it. Guards against, e.g., Hugo demoting deprecation notices
-// below the info log level.
-test('build with seeded deprecated API call logs a deprecation notice', (t) => {
-  const hookPath = join(
-    siteDir,
-    'layouts',
-    '_partials',
-    'hooks',
-    'head-end.html',
+// The check above only catches deprecations if the build runs at `info` (or
+// more verbose), where Hugo surfaces them. Assert that statically rather than
+// seeding a deprecated call into tracked source.
+test('the site build runs at a log level that surfaces deprecations', () => {
+  const pkg = JSON.parse(
+    readFileSync(new URL('../package.json', import.meta.url), 'utf8'),
   );
+  const hugoScript = pkg.scripts?.['_hugo-dev'] ?? '';
+  const match = hugoScript.match(/--logLevel\s+(\w+)/);
+  assert.ok(match, `_hugo-dev script has no --logLevel flag: ${hugoScript}`);
   assert.ok(
-    !existsSync(hookPath),
-    `${hookPath} already exists; this test needs to create it`,
+    ['info', 'debug'].includes(match[1]),
+    `_hugo-dev --logLevel ${match[1]} is too quiet to surface Hugo ` +
+      'deprecation notices; use info (or more verbose)',
   );
-  mkdirSync(dirname(hookPath), { recursive: true });
-  writeFileSync(
-    hookPath,
-    '{{/* Temporary file seeded by no-deprecations.test.mjs. */}}\n' +
-      '{{ .Language.LanguageName }}\n',
-  );
-  try {
-    const { res, output, deprecations } = buildSite();
-    assert.equal(res.status, 0, `Seeded build failed:\n${output}`);
-    assert.ok(
-      deprecations.length > 0,
-      'Seeded deprecated API call was not reported by the Hugo build',
-    );
-    t.diagnostic(`Seeded deprecation reported as: ${deprecations[0].trim()}`);
-  } finally {
-    rmSync(hookPath, { force: true });
-    // Prune test-created dirs only if empty (rmdirSync refuses to delete
-    // non-empty directories), in case other hooks/partials are added later.
-    for (const dir of [dirname(hookPath), dirname(dirname(hookPath))]) {
-      try {
-        rmdirSync(dir);
-      } catch {
-        break; // Directory not empty; leave it (and its parents) in place.
-      }
-    }
-  }
 });
