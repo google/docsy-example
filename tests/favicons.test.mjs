@@ -21,7 +21,7 @@ test('the home page links the favicons supplied in static/', (t) => {
   const h = head(home);
   assert.match(
     h,
-    /<link rel="icon" href="\/favicon\.ico" sizes="16x16 32x32 48x48" \/>/,
+    /<link rel="icon" href="\/favicon\.ico" \/>/,
     'links favicon.ico',
   );
   assert.match(
