@@ -1,6 +1,6 @@
 github.com/FortAwesome/Font-Awesome v0.0.0-20241216213156-af620534bfc3 h1:/iluJkJiyTAdnqrw3Yi9rH2HNHhrrtCmj8VJe7I6o3w=
 github.com/FortAwesome/Font-Awesome v0.0.0-20241216213156-af620534bfc3/go.mod h1:IUgezN/MFpCDIlFezw3L8j83oeiIuYoj28Miwr/KUYo=
-github.com/google/docsy/theme v0.0.0-20260616181543-6fdfd21b0350 h1:YImQFnOmgF/CRRvefjR0d86cQ349yhzRRBtSZmho4Jk=
-github.com/google/docsy/theme v0.0.0-20260616181543-6fdfd21b0350/go.mod h1:CGCFFJjc3PAYexPDsQqTbB3/lWnncwlwKLnSQkDaaF0=
+github.com/google/docsy/theme v0.0.0-20260629171210-56c2cf0e6424 h1:QTFtSdLHp9opp7g/oYOIrTq8ohGsuZqiLwtZhxBTxA8=
+github.com/google/docsy/theme v0.0.0-20260629171210-56c2cf0e6424/go.mod h1:CGCFFJjc3PAYexPDsQqTbB3/lWnncwlwKLnSQkDaaF0=
 github.com/twbs/bootstrap v5.3.8+incompatible h1:eK1fsXP7R/FWFt+sSNmmvUH9usPocf240nWVw7Dh02o=
 github.com/twbs/bootstrap v5.3.8+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
