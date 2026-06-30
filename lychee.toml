@@ -1,6 +1,5 @@
 # Lychee link-checker config for the Docsy example site; run via
-# `npm run check:links`. The maintainers' link-checking notes live under the
-# internal ref `link-checking/lychee` (ask the dev lead).
+# `npm run check:links`.
 
 cache = true
 max_cache_age = "375d"
@@ -14,21 +13,19 @@ exclude_path = [
 ]
 
 exclude = [
-  '[?&]link-check=no',                               # opt-out query param
-  '/index\.xml$',                                    # rel=alternate RSS links
-  '/_redirects$',                                    # rel=alternate Netlify redirects
+  '[?&]link-check=no',                              # opt-out query param
+  '/index\.xml$',                                   # rel=alternate RSS links
+  '/_redirects$',                                   # rel=alternate Netlify redirects
   '^https?://[^/]+/(categories|tags)/',             # Docsy-generated taxonomy
   '^https?://localhost\b',
   '^https://upload\.wikimedia\.org/',               # bot-wall (400) on automated thumb requests
 
-  # Docsy page-meta links (generated per page; high-volume github web hits that
-  # trip its abuse limit). The `issues/new?title=…` "create documentation issue"
-  # footer link is one per page (~80 here), so check the repo, not each title.
-  '^https?://github\.com/.*?/.*?/(new|edit)/',                      # view/edit-source links
+  # Docsy page-meta links
+  '^https?://github\.com/.*?/.*?/(new|edit)/',                     # view/edit-source links
   '^https://github\.com/[^/]+/[^/]+/issues/new',                   # per-page "create issue" feedback links
   '^https://github\.com/google/docsy-example/commit/',             # per-page provenance links
   '^https://github\.com/google/docsy-example/tree/main/content/',  # view-source tree links
 
   '^https://github\.com/google/docsy/releases/v[\d.]+-dev',  # non-existent -dev releases
-  '^https://github\.com/USERNAME/REPOSITORY\b',              # userguide placeholder repo
+  '^https://github\.com/USERNAME/REPOSITORY',                # user guide placeholder repo
 ]
