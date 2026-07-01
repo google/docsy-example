@@ -27,7 +27,7 @@ jobs:
           cache: npm
           cache-dependency-path: package.json
 
-      - run: npm run install:all
+      - run: npm install --omit=optional
 
       - name: Install lychee
         env:

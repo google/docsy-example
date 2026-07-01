@@ -61,12 +61,16 @@ your environment in our
 guide.
 
 Once you've made your working copy of the site repo, from the repo root folder,
-first install the npm dependencies, including the Bootstrap and Font Awesome
-assets that the theme sources as npm packages:
+install the npm dependencies, including the Bootstrap and Font Awesome assets
+that the theme sources as npm packages:
 
 ```bash
-npm run install:all
+npm install
 ```
+
+Because this site fetches Hugo itself from npm and discovers the theme's npm
+assets through Hugo modules, a `postinstall` hook runs `hugo mod npm pack` and a
+second install, so this single `npm install` sets everything up.
 
 Then run:
 
