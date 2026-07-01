@@ -4,3 +4,6 @@ resources/
 node_modules/
 package-lock.json
 .hugo_build.lock
+# Volatile staleness marker from `hugo mod npm pack` (its hash churns on any
+# package.json change); the sibling package.json that npm needs stays committed.
+packages/hugoautogen/hugo_packagemeta.json
