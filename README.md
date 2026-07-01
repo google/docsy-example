@@ -52,13 +52,6 @@ configuration settings do in the
 Once your settings are adjusted, you can edit your own versions of the site’s
 source files.
 
-If you want to do SCSS edits and want to publish these, you need to install
-`PostCSS`
-
-```bash
-npm install
-```
-
 ## Running the website locally
 
 Building and running the site locally requires a recent `extended` version of
@@ -68,7 +61,14 @@ your environment in our
 guide.
 
 Once you've made your working copy of the site repo, from the repo root folder,
-run:
+first install the npm dependencies, including the Bootstrap and Font Awesome
+assets that the theme sources as an npm package:
+
+```bash
+npm run install:all
+```
+
+Then run:
 
 ```bash
 hugo server

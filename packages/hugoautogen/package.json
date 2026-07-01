@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "6.7.2",
-    "bootstrap": "5.3.8"
-  },
-  "devDependencies": {},
-  "name": "docsy-example",
-  "version": "0.1.0"
-}

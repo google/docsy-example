@@ -27,7 +27,7 @@ jobs:
           cache: npm
           cache-dependency-path: package.json
 
-      - run: npm install --omit=optional
+      - run: npm run install:all
 
       - name: Install lychee
         env:
@@ -44,5 +44,5 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: npm run check:links
 
-      - name: Verify committed cache and generated files are unchanged
+      - name: Verify the committed cache is unchanged
         run: npm run check:generated
