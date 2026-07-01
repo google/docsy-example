@@ -57,8 +57,8 @@
   "devDependencies": {
     "autoprefixer": "^10.5.0",
     "cross-env": "^10.1.0",
-    "docsy": "github:google/docsy",
     "hugo-extended": "0.163.2",
+    "lychee-cache": "github:chalin/lychee-cache#semver:^0.1.0",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0"
   },
