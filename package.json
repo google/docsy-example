@@ -8,6 +8,9 @@
   "license": "Apache-2.0",
   "bugs": "https://github.com/google/docsy-example/issues",
   "spelling": "cSpell:ignore docsy hugo precheck rtlcss -",
+  "workspaces": [
+    "packages/hugoautogen"
+  ],
   "scripts": {
     "_build": "npm run _hugo-dev --",
     "_check:format": "npx prettier --check .",

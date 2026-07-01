@@ -4,3 +4,6 @@
 
 /content/fa
 /layouts
+
+# Hugo mod npm pack output (generated)
+/packages
