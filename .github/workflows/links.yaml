@@ -43,3 +43,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: npm run check:links
+
+      - name: Verify committed cache and generated files are unchanged
+        run: npm run check:generated
