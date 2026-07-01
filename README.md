@@ -62,7 +62,7 @@ guide.
 
 Once you've made your working copy of the site repo, from the repo root folder,
 first install the npm dependencies, including the Bootstrap and Font Awesome
-assets that the theme sources as an npm package:
+assets that the theme sources as npm packages:
 
 ```bash
 npm run install:all

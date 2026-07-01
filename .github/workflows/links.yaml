@@ -45,4 +45,10 @@ jobs:
         run: npm run check:links
 
       - name: Verify the committed cache is unchanged
-        run: npm run check:generated
+        run: |
+          npm run _diff:check || {
+            echo
+            echo 'ERROR: cache changed; regenerate locally (npm run check:links) and commit.'
+            echo
+            exit 1
+          }
