@@ -125,11 +125,12 @@ Make sure your installed go version is `1.18` or higher.
 
 Clone the latest version of the docsy theme into the parent folder of your
 project. The newly created repo should now reside in a sibling folder of your
-site's root folder. Replace $VERSION with the version you want to use.
+site's root folder. Replace VERSION with the version you want to use, for
+example `v0.16.0`:
 
 ```shell
 cd root-of-your-site
-git clone --branch $VERSION https://github.com/google/docsy.git ../docsy
+git clone --branch VERSION https://github.com/google/docsy.git ../docsy
 ```
 
 Now run:
