@@ -75,7 +75,7 @@ second install, so this single `npm install` sets everything up.
 Then run:
 
 ```bash
-hugo server
+hugo serve
 ```
 
 ## Running a container locally
@@ -125,11 +125,11 @@ Make sure your installed go version is `1.18` or higher.
 
 Clone the latest version of the docsy theme into the parent folder of your
 project. The newly created repo should now reside in a sibling folder of your
-site's root folder.
+site's root folder. Replace $VERSION with the version you want to use.
 
 ```shell
 cd root-of-your-site
-git clone --branch v0.12.0 https://github.com/google/docsy.git ../docsy
+git clone --branch $VERSION https://github.com/google/docsy.git ../docsy
 ```
 
 Now run:
@@ -168,7 +168,7 @@ characters '//' so that this line takes effect.
 As you run the website locally, you may run into the following error:
 
 ```console
-$ hugo server
+$ hugo serve
 WARN 2023/06/27 16:59:06 Module "project" is not compatible with this Hugo version; run "hugo mod graph" for more information.
 Start building sites …
 hugo v0.101.0-466fa43c16709b4483689930a4f9ac8add5c9f66+extended windows/amd64 BuildDate=2022-06-16T07:09:16Z VendorInfo=gohugoio
@@ -184,7 +184,7 @@ of the user guide for instructions on how to install Hugo.
 Or you may be confronted with the following error:
 
 ```console
-$ hugo server
+$ hugo serve
 
 INFO 2021/01/21 21:07:55 Using config file:
 Building sites … INFO 2021/01/21 21:07:55 syncing static files to /
@@ -200,7 +200,7 @@ of the user guide for instructions on how to install Hugo.
 Or you may encounter the following error:
 
 ```console
-$ hugo server
+$ hugo serve
 
 Error: failed to download modules: binary with name "go" not found
 ```
