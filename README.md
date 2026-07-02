@@ -70,7 +70,9 @@ npm install
 
 Because this site fetches Hugo itself from npm and discovers the theme's npm
 assets through Hugo modules, a `postinstall` hook runs `hugo mod npm pack` and a
-second install, so this single `npm install` sets everything up.
+second install, so this single `npm install` sets everything up. Because that
+runs a Hugo module command, `npm install` requires the `go` command; see
+[Troubleshooting](#troubleshooting) if it fails.
 
 Then run:
 
@@ -125,7 +127,7 @@ Make sure your installed go version is `1.18` or higher.
 
 Clone the latest version of the docsy theme into the parent folder of your
 project. The newly created repo should now reside in a sibling folder of your
-site's root folder. Replace VERSION with the version you want to use, for
+site's root folder. Replace _`VERSION`_ with the version you want to use, for
 example `v0.16.0`:
 
 ```shell
@@ -136,7 +138,7 @@ git clone --branch VERSION https://github.com/google/docsy.git ../docsy
 Now run:
 
 ```shell
-HUGO_MODULE_WORKSPACE=docsy.work hugo server --ignoreVendorPaths "**"
+HUGO_MODULE_WORKSPACE=docsy.work hugo serve --ignoreVendorPaths "**"
 ```
 
 or, when using npm, prepend `local` to the script you want to invoke, e.g.:
@@ -207,7 +209,9 @@ Error: failed to download modules: binary with name "go" not found
 ```
 
 This error occurs if the `go` programming language is not available on your
-system. See this
+system. Because `npm install` runs `hugo mod npm pack` (via a `postinstall`
+hook), this can also surface during installation, not only when serving. See
+this
 [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language)
 of the user guide for instructions on how to install `go`.
 
