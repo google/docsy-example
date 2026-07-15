@@ -62,7 +62,7 @@
     "autoprefixer": "^10.5.0",
     "cross-env": "^10.1.0",
     "hugo-extended": "0.163.3",
-    "lychee-cache": "github:chalin/lychee-cache#semver:^0.1.0",
+    "link-cache": "github:chalin/link-cache#semver:^0.2.0",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0"
   },
