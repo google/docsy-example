@@ -14,7 +14,7 @@
   "scripts": {
     "_build": "npm run _hugo-dev --",
     "_check:format": "npx prettier --check .",
-    "_check:links": "npx lychee-norm-cache",
+    "_check:links": "lychee-norm-cache",
     "_commit:public": "HASH=$(git rev-parse --short main); cd public && git add -A && git commit --allow-empty -m \"Site at $HASH\"",
     "_diff:check": "git diff --name-only --exit-code",
     "_fix:permissions": "chmod -R u+w public/* 2>/dev/null || true",
