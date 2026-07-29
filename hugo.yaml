@@ -41,6 +41,7 @@ outputFormats:
     baseName: _redirects
     isPlainText: true
     mediaType: text/redirects
+    notAlternative: true
     root: true
 
 # Configure how URLs look like per section.

@@ -15,7 +15,6 @@ exclude_path = [
 exclude = [
   '[?&]link-check=no',                              # opt-out query param
   '/index\.xml$',                                   # rel=alternate RSS links
-  '/_redirects$',                                   # rel=alternate Netlify redirects
   '^https?://[^/]+/(categories|tags)/',             # Docsy-generated taxonomy
   '^https?://localhost\b',
   '^https://upload\.wikimedia\.org/',               # bot-wall (400) on automated thumb requests
