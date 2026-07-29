@@ -1,6 +1,6 @@
 {
   "name": "docsy-example-site",
-  "version": "0.15.1-dev+002-over-main-6d9367e2",
+  "version": "0.16.0",
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
@@ -59,7 +59,7 @@
     "update": "npm run update:packages && npm run update:docsy:mod"
   },
   "devDependencies": {
-    "autoprefixer": "^10.5.0",
+    "autoprefixer": "^10.5.4",
     "cross-env": "^10.1.0",
     "hugo-extended": "0.164.0",
     "link-cache": "^0.3.0",
@@ -67,8 +67,8 @@
     "rtlcss": "^4.3.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "^22.2.1",
-    "prettier": "^3.8.3"
+    "npm-check-updates": "^23.0.0",
+    "prettier": "^3.9.6"
   },
   "engines": {
     "node": ">=22"
