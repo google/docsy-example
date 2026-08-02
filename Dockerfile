@@ -1,4 +1,7 @@
-FROM floryn90/hugo:ext-alpine
+FROM ghcr.io/gohugoio/hugo
 
-RUN apk add git && \
-  git config --global --add safe.directory /src
+COPY . /project
+
+RUN npm i
+
+RUN hugo --minify
