@@ -27,8 +27,6 @@ jobs:
           cache: npm
           cache-dependency-path: package.json
 
-      # No --omit=optional: sass-embedded resolves its platform binary
-      # through optional dependencies.
       - run: npm install
 
       - name: Install lychee
