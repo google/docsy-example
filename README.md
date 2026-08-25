@@ -89,10 +89,16 @@ To invoke `hugo` directly instead, first put the `sass` CLI on your `PATH`; see
 ## Running a container locally
 
 You can run docsy-example inside a [Docker](https://docs.docker.com/) container,
-the container runs with a volume bound to the `docsy-example` folder. This
-approach doesn't require you to install any dependencies other than
+the container runs with a volume bound to the `docsy-example` folder. You need
 [Docker Desktop](https://www.docker.com/products/docker-desktop) on Windows and
-Mac, and [Docker Compose](https://docs.docker.com/compose/install/) on Linux.
+Mac, or [Docker Compose](https://docs.docker.com/compose/install/) on Linux.
+Note that the Docker setup is maintained on a best-effort basis: it is not
+officially supported, and not exercised by CI.
+
+Because the container builds the site from your working copy, first install the
+site's npm dependencies as described in
+[Running the website locally](#running-the-website-locally) (`npm install`, run
+on your host). Then:
 
 1. Build the docker image
 

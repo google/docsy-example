@@ -5,8 +5,9 @@ FROM floryn90/hugo:0.164.0-ext-alpine
 ARG DART_SASS_VERSION=1.102.0
 
 # The base image's NODE_PATH starts with a relative "." entry, which Hugo's
-# Node.js ESM resolver hook rejects (createRequire needs absolute paths).
-ENV NODE_PATH=/usr/local/lib/node_modules
+# Node.js ESM resolver hook rejects, and its global modules can shadow the
+# project's own: the site supplies every Node dependency, so clear it.
+ENV NODE_PATH=
 
 USER root
 RUN apk add git && \
