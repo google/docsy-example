@@ -91,9 +91,8 @@ To invoke `hugo` directly instead, first put the `sass` CLI on your `PATH`; see
 You can run docsy-example inside a [Docker](https://docs.docker.com/) container,
 the container runs with a volume bound to the `docsy-example` folder. You need
 [Docker Desktop](https://www.docker.com/products/docker-desktop) on Windows and
-Mac, or [Docker Compose](https://docs.docker.com/compose/install/) on Linux.
-Note that the Docker setup is maintained on a best-effort basis: it is not
-officially supported, and not exercised by CI.
+Mac, or [Docker Compose](https://docs.docker.com/compose/install/) on Linux. The
+Docker setup is best-effort: not officially supported, and not exercised by CI.
 
 Because the container builds the site from your working copy, first install the
 site's npm dependencies as described in
@@ -159,9 +158,8 @@ or, when using npm, prepend `local` to the script you want to invoke, e.g.:
 npm run local serve
 ```
 
-Prefer the npm form: like every direct `hugo` invocation, the first command also
-requires the `sass` CLI on your `PATH` (see
-[Troubleshooting](#troubleshooting)).
+Prefer the npm form: the direct-`hugo` command needs the `sass` CLI on your
+`PATH` (see [Troubleshooting](#troubleshooting)).
 
 By using the `HUGO_MODULE_WORKSPACE` directive (either directly or via prefix
 `local` when using npm), the server now watches all files and directories inside
