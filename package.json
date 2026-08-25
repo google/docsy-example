@@ -75,7 +75,13 @@
     "adm-zip": "^0.6.0"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=24",
+    "npm": ">=11.16.0"
+  },
+  "allowScripts": {
+    "@parcel/watcher": false,
+    "fsevents": false,
+    "hugo-extended@0.164.0": true
   },
   "private": true,
   "prettier": {

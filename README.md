@@ -58,7 +58,10 @@ Building and running the site locally requires a recent `extended` version of
 [Hugo](https://gohugo.io). You can find out more about how to install Hugo for
 your environment in our
 [Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation)
-guide.
+guide. You also need [Node.js](https://nodejs.org) LTS 24 or later with npm
+11.16 or later: installs enforce the repo's install-script approval policy
+(`allowScripts`), which older npm versions silently ignore, so the version floor
+fails fast instead.
 
 Once you've made your working copy of the site repo, from the repo root folder,
 install the npm dependencies, including the Bootstrap and Font Awesome assets
