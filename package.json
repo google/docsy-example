@@ -81,7 +81,7 @@
   "allowScripts": {
     "@parcel/watcher": false,
     "fsevents": false,
-    "hugo-extended": true
+    "hugo-extended@0.164.0": true
   },
   "private": true,
   "prettier": {

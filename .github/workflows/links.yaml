@@ -25,9 +25,8 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-          cache-dependency-path: package.json
 
-      - run: npm install
+      - run: npm ci
 
       - name: Install lychee
         env:
