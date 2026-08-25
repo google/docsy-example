@@ -6,8 +6,8 @@ updates:
       interval: daily
       time: '20:00'
     open-pull-requests-limit: 10
-    # Resolution-axis cooldown: no version younger than 7 days enters an
-    # update PR; security updates bypass the cooldown.
+    # Let new releases age before they enter update PRs; security updates
+    # bypass the cooldown.
     cooldown:
       default-days: 7
   - package-ecosystem: github-actions
