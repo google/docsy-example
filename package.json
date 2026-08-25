@@ -59,17 +59,20 @@
     "update": "npm run update:packages && npm run update:docsy:mod"
   },
   "devDependencies": {
-    "autoprefixer": "^10.5.4",
-    "cross-env": "^10.1.0",
+    "autoprefixer": "10.5.4",
+    "cross-env": "10.1.0",
     "hugo-extended": "0.164.0",
-    "link-cache": "^0.3.0",
-    "postcss-cli": "^11.0.1",
-    "rtlcss": "^4.3.0",
+    "link-cache": "0.3.0",
+    "postcss-cli": "11.0.1",
+    "rtlcss": "4.3.0",
     "sass-embedded": "1.102.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "^23.0.0",
-    "prettier": "^3.9.6"
+    "npm-check-updates": "23.0.2",
+    "prettier": "3.9.6"
+  },
+  "overrides": {
+    "adm-zip": "^0.6.0"
   },
   "engines": {
     "node": ">=22"
