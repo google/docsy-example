@@ -77,8 +77,14 @@ runs a Hugo module command, `npm install` requires the `go` command; see
 Then run:
 
 ```bash
-hugo serve
+npm run serve
 ```
+
+The `serve` script runs `hugo serve` with the `sass` CLI from `node_modules` on
+the `PATH`: Docsy builds with
+[Dart Sass](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass).
+To invoke `hugo` directly instead, first put the `sass` CLI on your `PATH`; see
+[Troubleshooting](#troubleshooting).
 
 ## Running a container locally
 
@@ -147,6 +153,10 @@ or, when using npm, prepend `local` to the script you want to invoke, e.g.:
 npm run local serve
 ```
 
+Prefer the npm form: like every direct `hugo` invocation, the first command also
+requires the `sass` CLI on your `PATH` (see
+[Troubleshooting](#troubleshooting)).
+
 By using the `HUGO_MODULE_WORKSPACE` directive (either directly or via prefix
 `local` when using npm), the server now watches all files and directories inside
 the sibling directory `../docsy` , too. Any changes inside the local `docsy`
@@ -214,6 +224,20 @@ hook), this can also surface during installation, not only when serving. See
 this
 [section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language)
 of the user guide for instructions on how to install `go`.
+
+Or the build may fail with:
+
+```console
+$ hugo serve
+
+Error: error building site: ... TOCSS-DART: failed to transform "/scss/main.scss" (text/x-scss): You need to install Dart Sass
+```
+
+This error occurs when the `sass` CLI is not on your `PATH`. Run the site
+through the npm scripts (for example, `npm run serve`), which put
+`node_modules/.bin` on the `PATH`, or install
+[Dart Sass](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass)
+yourself.
 
 [alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
 [deploys]: https://app.netlify.com/sites/docsy-example/deploys
