@@ -69,8 +69,7 @@ For build and preview problems, see the user guide's [prerequisites][] and
 [Docsy]: https://github.com/google/docsy
 [maintainer notes]: CONTRIBUTING.md#maintainer-notes
 [example.docsy.dev]: https://example.docsy.dev
-[Hugo theme module]:
-  https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
+[Hugo theme module]: https://gohugo.io/hugo-modules/
 [Netlify]: https://netlify.com
 [prerequisites]:
   https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/
