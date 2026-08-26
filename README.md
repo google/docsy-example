@@ -2,71 +2,34 @@
 
 [Docsy][] is a [Hugo theme module][] for technical documentation sites,
 providing easy site navigation, structure, and more. This **Docsy Example
-Project** uses the Docsy theme component as a hugo module and provides a
-skeleton documentation structure for you to use. You can clone/copy this project
-and edit it with your own content, or use it as an example.
+Project** pulls in the Docsy theme as a Hugo module, together with its
+dependencies, and provides a skeleton documentation structure for you to use.
+For Docsy documentation, see the [Docsy user guide][].
 
-In this project, the Docsy theme is pulled in as a Hugo module, together with
-its dependencies:
-
-```console
-$ hugo mod graph
-...
-```
-
-For Docsy documentation, see [Docsy user guide][].
-
-This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
-You can view deploy logs from the [deploy section of the project's Netlify
+This project is hosted on [Netlify][] at [example.docsy.dev][]. You can view
+deploy logs from the [deploy section of the project's Netlify
 dashboard][deploys], or this [alternate dashboard][].
 
 This is not an officially supported Google product. This project is currently
 maintained.
 
-## Using the Docsy Example Project as a template
+## Using this project as a template
 
-A simple way to get started is to use this project as a template, which gives
-you a site project that is set up and ready to use. To do this:
-
-1. Use the dropdown for switching branches/tags to change to the **latest**
-   released tag.
-
-2. Click **Use this template**.
-
-3. Select a name for your new project and click **Create repository from
-   template**.
-
-4. Make your own local working copy of your new repo using git clone, replacing
-   https://github.com/me/example.git with your repo’s web URL:
-
-```bash
-git clone --depth 1 https://github.com/me/example.git
-```
-
-Depending on your environment you may need to adjust the top-level `module`
-settings in your project's Hugo config file, for example, by adding a proxy to
-use when downloading remote modules. You can find details of what these
-configuration settings do in the
-[Hugo modules documentation](https://gohugo.io/hugo-modules/configuration/#module-config-top-level).
-
-Once your settings are adjusted, you can edit your own versions of the site’s
-source files.
+To create your own site from this project, follow [Start with a prepopulated
+site][template-guide] in the Docsy user guide, which walks through cloning or
+templating this repo and previewing the result.
 
 ## Running the website locally
 
-Building and running the site locally requires a recent `extended` version of
-[Hugo](https://gohugo.io). You can find out more about how to install Hugo for
-your environment in our
-[Getting started](https://www.docsy.dev/docs/getting-started/#prerequisites-and-installation)
-guide. You also need [Node.js](https://nodejs.org) LTS 24 or later, with npm
-11.16 or later to enforce the repo's install-script approval policy
-(`allowScripts`). On Windows, npm scripts run under Bash (which ships with
-[Git for Windows](https://gitforwindows.org/)): make sure `bash` is on your
-`PATH`.
+Install the [prerequisites][]: Hugo comes from the pinned [hugo-extended][] npm
+package, so you need Node.js (LTS 24 or later, with npm 11.16 or later to
+enforce the repo's install-script approval policy, `allowScripts`), plus Go and
+Git for Hugo's module management. On Windows, npm scripts run under Bash (which
+ships with [Git for Windows](https://gitforwindows.org/)): make sure `bash` is
+on your `PATH`.
 
-Once you've made your working copy of the site repo, from the repo root folder,
-install the npm dependencies, including the Bootstrap and Font Awesome assets
-that the theme sources as npm packages:
+From the repo root folder, install the site's dependencies, including the
+Bootstrap and Font Awesome assets that the theme sources as npm packages:
 
 ```bash
 npm install
@@ -74,9 +37,7 @@ npm install
 
 Because this site fetches Hugo itself from npm and discovers the theme's npm
 assets through Hugo modules, a `postinstall` hook runs `hugo mod npm pack` and a
-second install, so this single `npm install` sets everything up. Because that
-runs a Hugo module command, `npm install` requires the `go` command; see
-[Troubleshooting](#troubleshooting) if it fails.
+second install, so this single `npm install` sets everything up.
 
 The lockfile (`package-lock.json`) and the generated theme-dependency manifest
 (`packages/hugoautogen/package.json`) are committed so that installs are
@@ -101,65 +62,28 @@ Then run:
 npm run serve
 ```
 
-The `serve` script runs `hugo serve` with the `sass` CLI from `node_modules` on
-the `PATH`: Docsy builds with
-[Dart Sass](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass).
-To invoke `hugo` directly instead, first put the `sass` CLI on your `PATH`; see
-[Troubleshooting](#troubleshooting).
+Run Hugo through the npm scripts, as above: they put the [Dart Sass][] `sass`
+CLI from `node_modules` on the `PATH`. A direct `hugo` invocation only works
+once you put the `sass` CLI on your `PATH` yourself; without it, builds fail
+with `TOCSS-DART: ... You need to install Dart Sass`.
 
 ## Running a container locally
 
-You can run docsy-example inside a [Docker](https://docs.docker.com/) container,
-the container runs with a volume bound to the `docsy-example` folder. You need
-[Docker Desktop](https://www.docker.com/products/docker-desktop) on Windows and
-Mac, or [Docker Compose](https://docs.docker.com/compose/install/) on Linux. The
-Docker setup is best-effort: not officially supported, and not exercised by CI.
+You can run docsy-example inside a Docker container: follow the [Docker
+quickstart][] in the Docsy user guide. Two notes specific to this repo:
 
-Because the container builds the site from your working copy, first install the
-site's npm dependencies as described in
-[Running the website locally](#running-the-website-locally) (`npm install`, run
-on your host). Then:
-
-1. Build the docker image
-
-   ```bash
-   docker-compose build
-   ```
-
-1. Run the built image
-
-   ```bash
-   docker-compose up
-   ```
-
-   > NOTE: You can run both commands at once with `docker-compose up --build`.
-
-1. Verify that the service is working.
-
-   Open your web browser and type `http://localhost:1313` in your navigation
-   bar, This opens a local instance of the docsy-example homepage. You can now
-   make changes to the docsy example and those changes will immediately show up
-   in your browser after you save.
-
-### Cleanup
-
-To stop Docker Compose, on your terminal window, press **Ctrl + C**.
-
-To remove the produced images run:
-
-```bash
-docker-compose rm
-```
-
-For more information see the [Docker Compose documentation][].
+- The container builds the site from your working copy, so first install the
+  site's npm dependencies as described in
+  [Running the website locally](#running-the-website-locally) (`npm install`,
+  run on your host).
+- The Docker setup is best-effort: not officially supported, and not exercised
+  by CI.
 
 ## Using a local Docsy clone
 
-Make sure your installed go version is `1.18` or higher.
-
-Clone the latest version of the docsy theme into the parent folder of your
-project. The newly created repo should now reside in a sibling folder of your
-site's root folder. Replace _`VERSION`_ with the version you want to use, for
+To develop against the theme itself, clone [Docsy][] into the sibling folder of
+your site's root folder (as declared in this repo's `docsy.work` [Hugo
+workspace][] file). Replace _`VERSION`_ with the version you want to use, for
 example `v0.16.0`:
 
 ```shell
@@ -167,112 +91,44 @@ cd root-of-your-site
 git clone --branch VERSION https://github.com/google/docsy.git ../docsy
 ```
 
-Now run:
-
-```shell
-HUGO_MODULE_WORKSPACE=docsy.work hugo serve --ignoreVendorPaths "**"
-```
-
-or, when using npm, prepend `local` to the script you want to invoke, e.g.:
+Then prepend `local` to the npm script you want to invoke, e.g.:
 
 ```shell
 npm run local serve
 ```
 
-Prefer the npm form: the direct-`hugo` command needs the `sass` CLI on your
-`PATH` (see [Troubleshooting](#troubleshooting)).
-
-By using the `HUGO_MODULE_WORKSPACE` directive (either directly or via prefix
-`local` when using npm), the server now watches all files and directories inside
-the sibling directory `../docsy` , too. Any changes inside the local `docsy`
-theme clone are now immediately picked up (hot reload), you can instantly see
-the effect of your local edits.
-
-In the command above, we used the environment variable `HUGO_MODULE_WORKSPACE`
-to tell hugo about the local workspace file `docsy.work`. Alternatively, you can
-declare the workspace file inside your settings file `hugo.toml`:
-
-```toml
-[module]
-  workspace = "docsy.work"
-```
-
-Your project's `hugo.toml` file already contains these lines, the directive for
-workspace assignment is commented out, however. Remove the two trailing comment
-characters '//' so that this line takes effect.
+The `local` prefix sets `HUGO_MODULE_WORKSPACE=docsy.work`, which makes the
+server watch the sibling `../docsy` directory too: changes inside the local
+theme clone are picked up immediately (hot reload). To make the workspace
+permanent instead, uncomment the `workspace: docsy.work` line in this repo's
+`hugo.yaml`.
 
 ## Troubleshooting
 
-As you run the website locally, you may run into the following error:
-
-```console
-$ hugo serve
-WARN 2023/06/27 16:59:06 Module "project" is not compatible with this Hugo version; run "hugo mod graph" for more information.
-Start building sites …
-hugo v0.101.0-466fa43c16709b4483689930a4f9ac8add5c9f66+extended windows/amd64 BuildDate=2022-06-16T07:09:16Z VendorInfo=gohugoio
-Error: Error building site: "C:\Users\foo\path\to\docsy-example\content\en\_index.md:5:1": failed to extract shortcode: template for shortcode "blocks/cover" not found
-Built in 27 ms
-```
-
-This error occurs if you are running an outdated version of Hugo. As of docsy
-theme version `v0.12.0`, hugo version `0.146.0` or higher is required. See this
-[section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo)
-of the user guide for instructions on how to install Hugo.
-
-Or you may be confronted with the following error:
-
-```console
-$ hugo serve
-
-INFO 2021/01/21 21:07:55 Using config file:
-Building sites … INFO 2021/01/21 21:07:55 syncing static files to /
-Built in 288 ms
-Error: Error building site: TOCSS: failed to transform "scss/main.scss" (text/x-scss): resource "scss/scss/main.scss_9fadf33d895a46083cdd64396b57ef68" not found in file cache
-```
-
-This error occurs if you have not installed the extended version of Hugo. See
-this
-[section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-hugo)
-of the user guide for instructions on how to install Hugo.
-
-Or you may encounter the following error:
-
-```console
-$ hugo serve
-
-Error: failed to download modules: binary with name "go" not found
-```
-
-This error occurs if the `go` programming language is not available on your
-system. Because `npm install` runs `hugo mod npm pack` (via a `postinstall`
-hook), this can also surface during installation, not only when serving. See
-this
-[section](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-go-language)
-of the user guide for instructions on how to install `go`.
-
-Or the build may fail with:
-
-```console
-$ hugo serve
-
-Error: error building site: ... TOCSS-DART: failed to transform "/scss/main.scss" (text/x-scss). You need to install Dart Sass
-```
-
-This error occurs when the `sass` CLI is not on your `PATH`. Run the site
-through the npm scripts (for example, `npm run serve`), which put
-`node_modules/.bin` on the `PATH`, or install
-[Dart Sass](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass)
-yourself.
+For build and preview problems (a too-old or non-extended Hugo, missing theme
+npm dependencies, a missing `go` or `sass` binary), see the user guide's
+[prerequisites][] and [troubleshooting][] pages. Repo-specific wrinkle: because
+`npm install` runs `hugo mod npm pack` (via a `postinstall` hook), a missing
+`go` binary surfaces during installation, not only when serving.
 
 [alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
+[Dart Sass]:
+  https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass
 [deploys]: https://app.netlify.com/sites/docsy-example/deploys
+[Docker quickstart]: https://www.docsy.dev/docs/get-started/quickstart-docker/
 [Docsy user guide]: https://docsy.dev/docs
 [hugo-extended]: https://www.npmjs.com/package/hugo-extended
 [Docsy]: https://github.com/google/docsy
 [example.docsy.dev]: https://example.docsy.dev
 [Hugo theme module]:
   https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
+[Hugo workspace]: https://gohugo.io/configuration/module/#top-level-settings
+[hugo-extended]: https://www.npmjs.com/package/hugo-extended
 [Netlify]: https://netlify.com
-[Docker Compose documentation]: https://docs.docker.com/compose/gettingstarted/
+[prerequisites]:
+  https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/
+[template-guide]:
+  https://www.docsy.dev/docs/get-started/docsy-as-module/example-site-as-template/
+[troubleshooting]: https://www.docsy.dev/docs/get-started/troubleshooting/
 
 <!-- cSpell:ignore hugo docsy TOCSS -->
