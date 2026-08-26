@@ -42,8 +42,8 @@ npm run serve
 ```
 
 Run Hugo through the npm scripts, as above: they put the [Dart Sass][] `sass`
-CLI from `node_modules` on the `PATH`. Without it, a direct `hugo` invocation
-fails with `TOCSS-DART: ... You need to install Dart Sass`.
+CLI from `node_modules` on the `PATH`; a direct `hugo` invocation fails without
+it.
 
 ## Running a container locally
 
@@ -79,4 +79,4 @@ npm dependencies, a missing `go` or `sass` binary), see the user guide's
   https://www.docsy.dev/docs/get-started/docsy-as-module/example-site-as-template/
 [troubleshooting]: https://www.docsy.dev/docs/get-started/troubleshooting/
 
-<!-- cSpell:ignore hugo docsy TOCSS -->
+<!-- cSpell:ignore hugo docsy -->
