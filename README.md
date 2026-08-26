@@ -19,7 +19,7 @@ templating this repo and previewing the result.
 
 ## Running the website locally
 
-Install the [prerequisites][]: Node.js and npm (version floors enforced at
+Install the [prerequisites][]: Node.js and npm (minimum versions enforced at
 install time), plus Go and Git. Hugo itself comes from the pinned
 [hugo-extended][] npm package. On Windows, npm scripts run under Bash (which
 ships with [Git for Windows](https://gitforwindows.org/)): make sure `bash` is
@@ -50,9 +50,9 @@ it.
 You can run docsy-example inside a Docker container: follow the [Docker
 quickstart][] in the Docsy user guide. Two notes specific to this repo:
 
-- The container builds the site from your working copy, so first install the
-  site's npm dependencies as described in
-  [Running the website locally](#running-the-website-locally), on your host.
+- The container builds the site from your working copy: on your host, first
+  install the site's npm dependencies as described in
+  [Running the website locally](#running-the-website-locally).
 - The Docker setup is best-effort: not officially supported, and not exercised
   by CI.
 
