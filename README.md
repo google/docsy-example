@@ -19,24 +19,21 @@ templating this repo and previewing the result.
 
 ## Running the website locally
 
-Install the [prerequisites][]: Node.js and npm (version floors are enforced at
-install time through the `engines` field of `package.json`), plus Go and Git.
-Hugo itself comes from the pinned [hugo-extended][] npm package. On Windows, npm
-scripts run under Bash (which ships with
-[Git for Windows](https://gitforwindows.org/)): make sure `bash` is on your
-`PATH`.
+Install the [prerequisites][]: Node.js and npm (version floors enforced at
+install time), plus Go and Git. Hugo itself comes from the pinned
+[hugo-extended][] npm package. On Windows, npm scripts run under Bash (which
+ships with [Git for Windows](https://gitforwindows.org/)): make sure `bash` is
+on your `PATH`.
 
-From the repo root folder, install the site's dependencies, including the
-Bootstrap and Font Awesome assets that the theme sources as npm packages:
+From the repo root folder, install the site's dependencies:
 
 ```bash
 npm run install:safe
 ```
 
-This performs a clean install of the pinned dependencies (`npm ci`) without
-running any install scripts; the Hugo binary self-installs at first use. For
-dependency management (lockfile, generated theme manifest, Hugo updates), see
-the [maintainer notes][].
+This performs a clean, script-free install of the pinned dependencies; the Hugo
+binary self-installs at first use. For dependency management (lockfile,
+generated theme manifest, Hugo updates), see the [maintainer notes][].
 
 Then run:
 
