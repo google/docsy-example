@@ -234,7 +234,7 @@ Or the build may fail with:
 ```console
 $ hugo serve
 
-Error: error building site: ... TOCSS-DART: failed to transform "/scss/main.scss" (text/x-scss): You need to install Dart Sass
+Error: error building site: ... TOCSS-DART: failed to transform "/scss/main.scss" (text/x-scss). You need to install Dart Sass
 ```
 
 This error occurs when the `sass` CLI is not on your `PATH`. Run the site
