@@ -12,8 +12,8 @@ updates:
       default-days: 7
     ignore:
       # Coupled to the version-pinned allowScripts approval; updated manually
-      # via update:hugo + approve:hugo (see the README). Version updates only:
-      # security updates still open PRs.
+      # via update:hugo + approve:hugo (see the README). Scoped so security
+      # updates still open PRs.
       - dependency-name: hugo-extended
         update-types:
           - 'version-update:semver-major'
