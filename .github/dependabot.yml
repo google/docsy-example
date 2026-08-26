@@ -11,9 +11,14 @@ updates:
     cooldown:
       default-days: 7
     ignore:
-      # Coupled to the version-pinned allowScripts approval; updated
-      # manually via update:hugo + approve:hugo (see the README).
+      # Coupled to the version-pinned allowScripts approval; updated manually
+      # via update:hugo + approve:hugo (see the README). Version updates only:
+      # security updates still open PRs.
       - dependency-name: hugo-extended
+        update-types:
+          - 'version-update:semver-major'
+          - 'version-update:semver-minor'
+          - 'version-update:semver-patch'
   - package-ecosystem: github-actions
     directory: '/'
     schedule:

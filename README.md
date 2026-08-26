@@ -88,10 +88,10 @@ included) stales the generated manifest's checksum: run
 `npm run update:docsy:pack` and commit the refresh.
 
 To update Hugo, run `npm run update:hugo`, review the new [hugo-extended][]
-release, then run `npm run approve:hugo`: the install-script approval is pinned
-to the hugo-extended version, so the new version's install script stays blocked
-until you approve it. Automated update PRs skip hugo-extended for the same
-reason.
+release, then run `npm run approve:hugo`: script-enabled installs fail until the
+new version is approved. The approval gates the install script only (the hugo
+binary self-installs at first use), so don't run builds between the two steps.
+Automated update PRs skip hugo-extended version bumps for the same reason.
 
 Then run:
 
