@@ -58,9 +58,8 @@ quickstart][] in the Docsy user guide. Two notes specific to this repo:
 
 ## Troubleshooting
 
-For build and preview problems (a too-old or non-extended Hugo, missing theme
-npm dependencies, a missing `go` or `sass` binary), see the user guide's
-[prerequisites][] and [troubleshooting][] pages.
+For build and preview problems, see the user guide's [prerequisites][] and
+[troubleshooting][] pages.
 
 [Dart Sass]:
   https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass
