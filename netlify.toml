@@ -7,15 +7,16 @@ publish = "public"
 
 [build.environment]
 GO_VERSION = "1.22.2"
-# Netlify's Node-bundled default npm may be older than the engines floor
-# (allowScripts enforcement); pin one that satisfies it.
-NPM_VERSION = "11.19.0"
 # Constrain Netlify's automatic npm install to resolution only: no tree
 # writes, no scripts; _netlify:prepare runs the real, lock-exact install
 # inside a clean-tree bracket that catches NPM_FLAGS regressions. The
 # skipped postinstall is covered by the committed lockfile and hugoautogen
 # manifest; the hugo binary self-installs at first use.
 NPM_FLAGS = "--dry-run --ignore-scripts"
+# Netlify's Node-bundled default npm may be older than the engines floor
+# (allowScripts enforcement); pin one that satisfies it. Bump at least
+# when the floor rises.
+NPM_VERSION = "11.19.0"
 
 [context.production]
 command = "npm run _netlify:prepare && npm run build:production"
