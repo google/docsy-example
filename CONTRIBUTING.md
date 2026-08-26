@@ -29,6 +29,11 @@ This project follows
 
 ## Maintainer notes
 
+### Deploy logs
+
+The site deploys on Netlify: logs are in the project's [Netlify
+dashboard][deploys] and an [alternate dashboard][].
+
 ### Lockfile and generated manifest
 
 The lockfile (`package-lock.json`) and the generated theme-dependency manifest
@@ -64,6 +69,34 @@ Docker flow pins Hugo (base image tag) and Dart Sass (`DART_SASS_VERSION`)
 independently in the Dockerfile: bump those alongside Hugo and `sass-embedded`
 updates.
 
+### Develop against a local Docsy clone
+
+To develop against the theme itself, clone [Docsy][] into the sibling folder of
+your site's root folder (as declared in this repo's `docsy.work` [Hugo
+workspace][] file). Replace _`VERSION`_ with the version you want to use, for
+example `v0.16.0`:
+
+```shell
+cd root-of-your-site
+git clone --branch VERSION https://github.com/google/docsy.git ../docsy
+```
+
+Then prepend `local` to the npm script you want to invoke, e.g.:
+
+```shell
+npm run local serve
+```
+
+The `local` prefix sets `HUGO_MODULE_WORKSPACE=docsy.work`, which makes the
+server watch the sibling `../docsy` directory too: changes inside the local
+theme clone are picked up immediately (hot reload). To make the workspace
+permanent instead, uncomment the `workspace: docsy.work` line in this repo's
+`hugo.yaml`.
+
+[alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
+[deploys]: https://app.netlify.com/sites/docsy-example/deploys
+[Docsy]: https://github.com/google/docsy
 [hugo-extended]: https://www.npmjs.com/package/hugo-extended
+[Hugo workspace]: https://gohugo.io/configuration/module/#top-level-settings
 
 <!-- cSpell:ignore hugo docsy -->

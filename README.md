@@ -6,8 +6,7 @@ Project** pulls in the Docsy theme as a Hugo module, together with its
 dependencies, and provides a skeleton documentation structure for you to use.
 For Docsy documentation, see the [Docsy user guide][].
 
-This project is hosted on [Netlify][] at [example.docsy.dev][]; deploy logs are
-in the project's [Netlify dashboard][deploys] and an [alternate dashboard][].
+This project is hosted on [Netlify][] at [example.docsy.dev][].
 
 This is not an officially supported Google product. This project is currently
 maintained.
@@ -20,10 +19,10 @@ templating this repo and previewing the result.
 
 ## Running the website locally
 
-Install the [prerequisites][]: Node.js (LTS 24 or later, with npm 11.16 or
-later, required by the repo's install-script approval policy, `allowScripts`),
-plus Go and Git. Hugo itself comes from the pinned [hugo-extended][] npm
-package. On Windows, npm scripts run under Bash (which ships with
+Install the [prerequisites][]: Node.js and npm (version floors are enforced at
+install time through the `engines` field of `package.json`), plus Go and Git.
+Hugo itself comes from the pinned [hugo-extended][] npm package. On Windows, npm
+scripts run under Bash (which ships with
 [Git for Windows](https://gitforwindows.org/)): make sure `bash` is on your
 `PATH`.
 
@@ -61,30 +60,6 @@ quickstart][] in the Docsy user guide. Two notes specific to this repo:
 - The Docker setup is best-effort: not officially supported, and not exercised
   by CI.
 
-## Using a local Docsy clone
-
-To develop against the theme itself, clone [Docsy][] into the sibling folder of
-your site's root folder (as declared in this repo's `docsy.work` [Hugo
-workspace][] file). Replace _`VERSION`_ with the version you want to use, for
-example `v0.16.0`:
-
-```shell
-cd root-of-your-site
-git clone --branch VERSION https://github.com/google/docsy.git ../docsy
-```
-
-Then prepend `local` to the npm script you want to invoke, e.g.:
-
-```shell
-npm run local serve
-```
-
-The `local` prefix sets `HUGO_MODULE_WORKSPACE=docsy.work`, which makes the
-server watch the sibling `../docsy` directory too: changes inside the local
-theme clone are picked up immediately (hot reload). To make the workspace
-permanent instead, uncomment the `workspace: docsy.work` line in this repo's
-`hugo.yaml`.
-
 ## Troubleshooting
 
 For build and preview problems (a too-old or non-extended Hugo, missing theme
@@ -93,10 +68,8 @@ npm dependencies, a missing `go` or `sass` binary), see the user guide's
 `npm install` runs `hugo mod npm pack` (via a `postinstall` hook), a missing
 `go` binary surfaces during installation, not only when serving.
 
-[alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
 [Dart Sass]:
   https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass
-[deploys]: https://app.netlify.com/sites/docsy-example/deploys
 [Docker quickstart]: https://www.docsy.dev/docs/get-started/quickstart-docker/
 [Docsy user guide]: https://docsy.dev/docs
 [hugo-extended]: https://www.npmjs.com/package/hugo-extended
@@ -105,7 +78,6 @@ npm dependencies, a missing `go` or `sass` binary), see the user guide's
 [example.docsy.dev]: https://example.docsy.dev
 [Hugo theme module]:
   https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
-[Hugo workspace]: https://gohugo.io/configuration/module/#top-level-settings
 [Netlify]: https://netlify.com
 [prerequisites]:
   https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/
