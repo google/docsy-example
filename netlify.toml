@@ -2,11 +2,16 @@
 # (https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify)
 
 [build]
-command = "npm run build:preview"
+command = "npm ci --ignore-scripts && npm run build:preview"
 publish = "public"
 
 [build.environment]
 GO_VERSION = "1.22.2"
+# Constrain Netlify's automatic npm install to resolution only: no tree
+# writes, no scripts; the build command runs the real, lock-exact install.
+# The skipped postinstall is covered by the committed lockfile and
+# hugoautogen manifest; the hugo binary self-installs at first use.
+NPM_FLAGS = "--dry-run --ignore-scripts"
 
 [context.production]
-command = "npm run build:production"
+command = "npm ci --ignore-scripts && npm run build:production"
