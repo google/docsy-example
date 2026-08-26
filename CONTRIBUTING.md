@@ -74,9 +74,9 @@ Docker flow pins Hugo (base image tag) and Dart Sass (`DART_SASS_VERSION`)
 independently in the Dockerfile: bump those alongside Hugo and `sass-embedded`
 updates.
 
-### Develop against a local Docsy clone
+### Develop against a local copy of Docsy
 
-With a clone of [Docsy][] as a sibling of this repo's root folder (as declared
+With a copy of [Docsy][] in the sibling folder of this repo's root (as declared
 in the `docsy.work` [Hugo workspace][] file), prepend `local` to the npm script
 you want to invoke, e.g.:
 
@@ -85,10 +85,9 @@ npm run local serve
 ```
 
 The `local` prefix sets `HUGO_MODULE_WORKSPACE=docsy.work`, which makes the
-server watch the sibling `../docsy` directory too: changes inside the local
-theme clone are picked up immediately (hot reload). To make the workspace
-permanent instead, uncomment the `workspace: docsy.work` line in this repo's
-`hugo.yaml`.
+server watch the sibling `../docsy` directory too: changes to the local theme
+copy are picked up immediately (hot reload). To make the workspace permanent
+instead, uncomment the `workspace: docsy.work` line in this repo's `hugo.yaml`.
 
 [alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
 [deploys]: https://app.netlify.com/sites/docsy-example/deploys
