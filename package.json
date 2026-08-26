@@ -22,6 +22,7 @@
     "_hugo-dev": "npm run _hugo -- -e dev --logLevel info -DFE",
     "_hugo": "hugo --cleanDestinationDir",
     "_local": "cross-env HUGO_MODULE_WORKSPACE=docsy.work",
+    "_netlify:prepare": "npm run _diff:check && npm ci --ignore-scripts && npm run _diff:check",
     "_serve": "npm run _hugo-dev -- --minify serve --renderToMemory",
     "_update:docsy:post": "hugo mod tidy && npm run update:docsy:pack",
     "approve:hugo": "npm approve-scripts hugo-extended && npm run update:docsy:pack",

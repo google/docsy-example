@@ -3,3 +3,4 @@
 resources/
 node_modules/
 .hugo_build.lock
+packages/hugoautogen/hugo_packagemeta.json
