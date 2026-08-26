@@ -26,17 +26,17 @@ scripts run under Bash (which ships with
 [Git for Windows](https://gitforwindows.org/)): make sure `bash` is on your
 `PATH`.
 
-From the repo root folder, install the site's dependencies:
+From the repo root folder, install the site's dependencies, including the
+Bootstrap and Font Awesome assets that the theme sources as npm packages:
 
 ```bash
-npm install
+npm run install:safe
 ```
 
-A `postinstall` hook runs `hugo mod npm pack` and a second install, so this
-single command sets everything up, including the Bootstrap and Font Awesome
-assets that the theme sources as npm packages. For how the committed lockfile
-and generated manifest are maintained, and how to update Hugo, see the
-[maintainer notes][].
+This performs a clean install of the pinned dependencies (`npm ci`) without
+running any install scripts; the Hugo binary self-installs at first use. For
+dependency management (lockfile, generated theme manifest, Hugo updates), see
+the [maintainer notes][].
 
 Then run:
 
@@ -55,8 +55,7 @@ quickstart][] in the Docsy user guide. Two notes specific to this repo:
 
 - The container builds the site from your working copy, so first install the
   site's npm dependencies as described in
-  [Running the website locally](#running-the-website-locally) (`npm install`,
-  run on your host).
+  [Running the website locally](#running-the-website-locally), on your host.
 - The Docker setup is best-effort: not officially supported, and not exercised
   by CI.
 
@@ -64,9 +63,7 @@ quickstart][] in the Docsy user guide. Two notes specific to this repo:
 
 For build and preview problems (a too-old or non-extended Hugo, missing theme
 npm dependencies, a missing `go` or `sass` binary), see the user guide's
-[prerequisites][] and [troubleshooting][] pages. Repo-specific wrinkle: because
-`npm install` runs `hugo mod npm pack` (via a `postinstall` hook), a missing
-`go` binary surfaces during installation, not only when serving.
+[prerequisites][] and [troubleshooting][] pages.
 
 [Dart Sass]:
   https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass

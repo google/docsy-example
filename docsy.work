@@ -1,5 +1,10 @@
 go 1.19
 
+// Theme-developer workspace: with a Docsy clone in the sibling folder
+// ../docsy, prefix npm scripts with `local` (for example, `npm run local
+// serve`) to watch the clone with hot reload. To make the workspace
+// permanent, uncomment `workspace: docsy.work` in hugo.yaml.
+
 use .
-use ../docsy/theme/   // Local docsy clone resides in sibling folder to this project
+use ../docsy/theme/
 // use ./themes/docsy/           // Local docsy clone resides in themes folder
