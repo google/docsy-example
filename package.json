@@ -1,6 +1,6 @@
 {
   "name": "docsy-example-site",
-  "version": "0.16.1-dev+001-over-main-9e5d51b7",
+  "version": "0.16.1-dev+002-over-main-dd6e5051",
   "description": "Example site that uses Docsy theme for technical documentation.",
   "repository": "github:google/docsy-example",
   "homepage": "https://example.docsy.dev",
@@ -64,7 +64,8 @@
     "hugo-extended": "0.164.0",
     "link-cache": "^0.3.0",
     "postcss-cli": "^11.0.1",
-    "rtlcss": "^4.3.0"
+    "rtlcss": "^4.3.0",
+    "sass-embedded": "1.102.0"
   },
   "optionalDependencies": {
     "npm-check-updates": "^23.0.0",
