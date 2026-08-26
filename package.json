@@ -24,6 +24,7 @@
     "_local": "cross-env HUGO_MODULE_WORKSPACE=docsy.work",
     "_serve": "npm run _hugo-dev -- --minify serve --renderToMemory",
     "_update:docsy:post": "hugo mod tidy && npm run update:docsy:pack",
+    "approve:hugo": "npm approve-scripts hugo-extended && npm run update:docsy:pack",
     "build:preview": "npm run _hugo-dev -- --minify --baseURL \"${DEPLOY_PRIME_URL:-/}\"",
     "build:production": "npm run _hugo -- --minify",
     "build": "npm run _build -- ",
@@ -52,10 +53,9 @@
     "update:docsy:main": "hugo mod get -u github.com/google/docsy/theme@main",
     "update:docsy:mod": "hugo mod get -u github.com/google/docsy/theme",
     "update:docsy:pack": "hugo mod npm pack && npm pkg set name=hugoautogen --prefix packages/hugoautogen && npm install --ignore-scripts",
-    "update:hugo": "npm install --save-dev --save-exact --ignore-scripts hugo-extended@latest && npm approve-scripts hugo-extended",
+    "update:hugo": "npm install --save-dev --save-exact --ignore-scripts hugo-extended@latest",
     "update:main": "npm run update:packages && npm run update:docsy:main",
-    "update:packages:not-hugo": "npm run update:packages -- -x hugo-extended",
-    "update:packages": "npm-check-updates -u",
+    "update:packages": "npm-check-updates -u -x hugo-extended",
     "update": "npm run update:packages && npm run update:docsy:mod"
   },
   "devDependencies": {

@@ -10,6 +10,10 @@ updates:
     # bypass the cooldown.
     cooldown:
       default-days: 7
+    ignore:
+      # Coupled to the version-pinned allowScripts approval; updated
+      # manually via update:hugo + approve:hugo (see the README).
+      - dependency-name: hugo-extended
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
