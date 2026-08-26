@@ -7,6 +7,9 @@ publish = "public"
 
 [build.environment]
 GO_VERSION = "1.22.2"
+# Netlify's Node-bundled default npm may be older than the engines floor
+# (allowScripts enforcement); pin one that satisfies it.
+NPM_VERSION = "11.19.0"
 # Constrain Netlify's automatic npm install to resolution only: no tree
 # writes, no scripts; _netlify:prepare runs the real, lock-exact install
 # inside a clean-tree bracket that catches NPM_FLAGS regressions. The
