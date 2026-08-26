@@ -89,7 +89,11 @@ To update Hugo, run `npm run update:hugo`, review the new [hugo-extended][]
 release, then run `npm run approve:hugo`: script-enabled installs fail until the
 new version is approved. The approval gates the install script only (the hugo
 binary self-installs at first use), so don't run builds between the two steps.
-Automated update PRs skip hugo-extended version bumps for the same reason.
+Automated update PRs skip hugo-extended version bumps for the same reason,
+except security updates, which fail CI until approved via `approve:hugo`. The
+Docker flow pins Hugo (base image tag) and Dart Sass (`DART_SASS_VERSION`)
+independently in the Dockerfile: bump those alongside Hugo and `sass-embedded`
+updates.
 
 Then run:
 

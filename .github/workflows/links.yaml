@@ -46,7 +46,7 @@ jobs:
 
       - name: Verify committed generated files are unchanged
         run: |
-          npm run _diff:check || {
+          npm run -s _is:clean || {
             echo
             echo 'ERROR: generated files changed; regenerate locally and commit:'
             echo '  .lycheecache               -> npm run check:links'

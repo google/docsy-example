@@ -19,6 +19,10 @@ updates:
           - 'version-update:semver-major'
           - 'version-update:semver-minor'
           - 'version-update:semver-patch'
+      # Theme-managed (packages/hugoautogen is regenerated from the Docsy
+      # theme, reverting any bump): updates route through the theme.
+      - dependency-name: bootstrap
+      - dependency-name: '@fortawesome/fontawesome-free'
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
