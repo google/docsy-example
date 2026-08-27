@@ -3,10 +3,9 @@
   extends: ['config:best-practices'],
   // config:best-practices pulls in security:minimumReleaseAgeNpm: its 3-day npm
   // rule would override the global minimumReleaseAge below. Its age exemptions
-  // for update types without release timestamps (pin, replacement, rollback,
-  // among others) are deliberately not restored: strict internal checks hold
-  // such updates as pending on the Dependency Dashboard (no PR); validate age
-  // manually before force-creating one from there.
+  // for timestamp-less update types are deliberately not restored: those
+  // updates sit pending on the Dependency Dashboard; age-check manually before
+  // force-creating a PR.
   //
   // IMPORTANT: an upstream rename of the preset silently re-admits it.
   ignorePresets: ['security:minimumReleaseAgeNpm'],
@@ -18,8 +17,7 @@
   lockFileMaintenance: { enabled: false },
   // GitHub's repo-level Dependabot security updates own vulnerability PRs
   // (they operate without any dependabot.yml); left on, Renovate would
-  // duplicate them: its alert-driven PRs are immediate, unscheduled, and
-  // exempt from minimumReleaseAge.
+  // duplicate them: its alert-driven PRs are schedule- and age-exempt.
   vulnerabilityAlerts: { enabled: false },
   // Config-migration PRs may rewrite JSON5 to JSON, dropping comments; this
   // file's policy lives in its comments. Migrate manually on Renovate majors
@@ -29,36 +27,27 @@
   // Full-day window, not docsy root's 'before 6am on monday': on Mend's hosted
   // scheduler, a not-yet-activated repo (no merged Renovate PR) is visited
   // daily at an hour we don't control; a narrow window can miss every visit
-  // and never bootstrap. Tightening back is a post-activation option.
+  // and never bootstrap.
   schedule: ['on monday'],
   labels: ['dependencies'],
-  // Deliberately out: gomod (the Docsy theme pin; updated via
-  // `npm run update:docsy:mod`, release-driven) and docker (best-effort setup;
-  // its Hugo and Dart Sass pins are bumped manually alongside hugo-extended
-  // and sass-embedded, see CONTRIBUTING.md).
+  // Deliberately out: gomod (the Docsy theme pin, release-driven) and docker
+  // (best-effort setup; its pins are bumped manually, see CONTRIBUTING.md).
   enabledManagers: ['npm', 'github-actions'],
-  // Deliberately datasource-wide: applies to every datasource this config may
-  // grow to manage.
   minimumReleaseAge: '7 days',
-  internalChecksFilter: 'strict',
   packageRules: [
     {
-      // hugo-extended is intentionally pinned, coupled to the version-pinned
-      // allowScripts approval; updated manually via `npm run update:hugo` +
-      // `npm run approve:hugo` (see CONTRIBUTING.md). This silences Renovate
-      // for it entirely, security bumps included; the Dependabot security
-      // updates noted above cover it, and an unapproved bump fails installs
-      // closed.
+      // hugo-extended version bumps are manual; flow + security-update paths:
+      // CONTRIBUTING.md's maintainer notes.
       matchPackageNames: ['hugo-extended'],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
       enabled: false,
     },
     {
       // Theme-managed (packages/hugoautogen is regenerated from the Docsy
-      // theme, reverting any bump): updates route through the theme. Unlike
-      // the retired dependabot.yml ignore, this doesn't reach Dependabot
-      // security updates: an alert-driven PR may still bump these directly;
-      // close it and route the fix through a theme update (the is:clean gate
-      // flags the manifest drift).
+      // theme, reverting any bump): updates route through the theme. This
+      // doesn't constrain Dependabot security updates: an alert-driven PR may
+      // still bump these directly; close it and route the fix through a theme
+      // update.
       matchPackageNames: ['bootstrap', '@fortawesome/fontawesome-free'],
       enabled: false,
     },
