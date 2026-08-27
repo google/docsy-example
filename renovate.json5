@@ -1,23 +1,24 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   extends: ['config:best-practices'],
-  // For details about this repo's settings, see CONTRIBUTING.md
+  // For details about this repo's settings, see
+  // CONTRIBUTING.md#dependency-updates
   ignorePresets: ['security:minimumReleaseAgeNpm'],
   lockFileMaintenance: { enabled: false }, // done manually
   timezone: 'America/Montreal',
   schedule: ['* * * * 0'], // Sunday
   labels: ['dependencies'],
-  enabledManagers: ['npm', 'github-actions'], // gomod is manually updated.
+  // Whitelist: all other managers are off (gomod, docker: manual updates).
+  enabledManagers: ['npm', 'github-actions'],
   minimumReleaseAge: '7 days',
   packageRules: [
     {
       matchPackageNames: ['hugo-extended'],
-      matchUpdateTypes: ['major', 'minor', 'patch'],
-      enabled: false, // manual updates only
+      enabled: false, // Manually updated to match Docsy requirements
     },
     {
-      // Theme-managed (packages/hugoautogen is regenerated from the Docsy
-      // theme, reverting any bump): updates route through the theme.
+      // Updates through Docsy (packages/hugoautogen is regenerated from the Docsy
+      // theme, reverting any bump).
       matchPackageNames: ['bootstrap', '@fortawesome/fontawesome-free'],
       enabled: false,
     },
