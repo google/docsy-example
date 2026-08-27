@@ -4,7 +4,7 @@
   // For details about this repo's settings, see
   // CONTRIBUTING.md#dependency-updates
   ignorePresets: ['security:minimumReleaseAgeNpm'],
-  lockFileMaintenance: { enabled: false }, // done manually
+  lockFileMaintenance: { enabled: false },
   timezone: 'America/Montreal',
   schedule: ['* * * * 0'], // Sunday
   labels: ['dependencies'],
