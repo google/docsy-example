@@ -31,20 +31,20 @@ This project follows
 
 ### Dependency updates
 
-Renovate opens version-update PRs, batched weekly, under `renovate.json5`.
-Settings rationale:
+Renovate opens version-update PRs, batched weekly, configured in
+`renovate.json5`. Settings rationale:
 
 - `ignorePresets`: the preset's 3-day npm cooldown would override this repo's
   7-day `minimumReleaseAge`. Caution: this exclusion silently stops working if
   the preset is renamed upstream.
 - `lockFileMaintenance` off: wholesale lock re-resolves would churn the
   committed lockfile; transitive security fixes arrive alert-driven instead.
-- `enabledManagers` (whitelist): gomod (the Docsy theme pin) and the Docker pins
-  are updated manually; see [Upgrade Docsy](#upgrade-docsy) and
-  [Update Hugo](#update-hugo).
+- `gomod` off: the Docsy theme pin is updated manually; see
+  [Upgrade Docsy](#upgrade-docsy).
 - Package rules: `hugo-extended` is version-pinned and coupled to its
   `allowScripts` approval (see [Update Hugo](#update-hugo)); bootstrap and Font
-  Awesome updates route through the theme.
+  Awesome updates route through the theme (`packages/hugoautogen` is regenerated
+  from the theme, reverting any direct bump).
 
 Renovate's vulnerability-alert PRs stay on (immediate, cooldown-exempt), beside
 GitHub's Dependabot security updates; a rare duplicate PR is accepted.

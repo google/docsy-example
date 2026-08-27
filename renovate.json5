@@ -8,8 +8,7 @@
   timezone: 'America/Montreal',
   schedule: ['* * * * 0'], // Sunday
   labels: ['dependencies'],
-  // Whitelist: all other managers are off (gomod, docker: manual updates).
-  enabledManagers: ['npm', 'github-actions'],
+  gomod: { enabled: false },
   minimumReleaseAge: '7 days',
   packageRules: [
     {
@@ -17,8 +16,7 @@
       enabled: false, // Manually updated to match Docsy requirements
     },
     {
-      // Updates through Docsy (packages/hugoautogen is regenerated from the Docsy
-      // theme, reverting any bump).
+      // Updates through Docsy.
       matchPackageNames: ['bootstrap', '@fortawesome/fontawesome-free'],
       enabled: false,
     },
