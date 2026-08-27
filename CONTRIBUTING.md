@@ -40,9 +40,7 @@ Renovate opens version-update PRs, created on Sundays, configured in
 - `lockFileMaintenance` off: wholesale lock re-resolves would churn the
   committed lockfile; transitive security fixes arrive alert-driven instead.
 - `gomod` off: the Docsy theme pin is updated manually; see
-  [Upgrade Docsy](#upgrade-docsy). All other detected managers are active,
-  including Docker (base-image updates: tag bumps and digest pins; see
-  [Update Hugo](#update-hugo)).
+  [Upgrade Docsy](#upgrade-docsy). All other detected managers are active.
 - Package rules: `hugo-extended` is version-pinned and coupled to its
   `allowScripts` approval (see [Update Hugo](#update-hugo)); bootstrap and Font
   Awesome updates route through the theme (`packages/hugoautogen` is regenerated
@@ -92,10 +90,7 @@ release, then run `npm run approve:hugo`: script-enabled installs fail until the
 new version is approved. The approval gates the install script only (the hugo
 binary self-installs at first use), so don't run builds between the two steps.
 Automated update PRs skip hugo-extended version bumps for the same reason,
-except security updates, which fail CI until approved via `approve:hugo`. The
-Dockerfile (best-effort, unsupported) pins Hugo and Dart Sass independently:
-Renovate proposes base-image updates (tag bumps and digest pins); bump
-`DART_SASS_VERSION` manually alongside `sass-embedded` updates.
+except security updates, which fail CI until approved via `approve:hugo`.
 
 ### Develop against a local Docsy
 
