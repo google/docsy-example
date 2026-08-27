@@ -44,4 +44,5 @@
       enabled: false,
     },
   ],
+// cSpell:ignore gomod hugo hugoautogen fortawesome fontawesome sunday etarget
 }
