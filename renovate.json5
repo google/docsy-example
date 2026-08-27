@@ -1,0 +1,25 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: ['config:best-practices'],
+  // For details about this repo's settings, see
+  // CONTRIBUTING.md#dependency-updates
+  ignorePresets: ['security:minimumReleaseAgeNpm'],
+  lockFileMaintenance: { enabled: false },
+  timezone: 'America/Montreal',
+  schedule: ['* * * * 0'], // Sunday
+  labels: ['dependencies'],
+  gomod: { enabled: false },
+  minimumReleaseAge: '7 days',
+  packageRules: [
+    {
+      matchPackageNames: ['hugo-extended'],
+      enabled: false, // Manually updated to match Docsy requirements
+    },
+    {
+      // Updates through Docsy.
+      matchPackageNames: ['bootstrap', '@fortawesome/fontawesome-free'],
+      enabled: false,
+    },
+  ],
+  // cSpell:ignore gomod hugo fortawesome fontawesome
+}

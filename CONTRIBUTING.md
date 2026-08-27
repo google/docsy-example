@@ -29,6 +29,29 @@ This project follows
 
 ## Maintainer notes
 
+### Dependency updates
+
+Renovate opens version-update PRs, created on Sundays, configured in
+`renovate.json5`. Settings rationale:
+
+- `ignorePresets`: the preset's 3-day npm cooldown would override this repo's
+  7-day `minimumReleaseAge`. Caution: this exclusion silently stops working if
+  the preset is renamed upstream.
+- `lockFileMaintenance` off: wholesale lock re-resolves would churn the
+  committed lockfile; transitive security fixes arrive alert-driven instead.
+- `gomod` off: the Docsy theme pin is updated manually; see
+  [Upgrade Docsy](#upgrade-docsy). All other detected managers are active,
+  including Docker (base-image updates: tag bumps and digest pins; see
+  [Update Hugo](#update-hugo)).
+- Package rules: `hugo-extended` is version-pinned and coupled to its
+  `allowScripts` approval (see [Update Hugo](#update-hugo)); bootstrap and Font
+  Awesome updates route through the theme (`packages/hugoautogen` is regenerated
+  from the theme, reverting any direct bump). A Dependabot security PR may still
+  bump these directly: close it and route the fix through a theme update.
+
+Renovate's vulnerability-alert PRs stay on (immediate, cooldown-exempt), beside
+GitHub's Dependabot security updates; a rare duplicate PR is accepted.
+
 ### Deploy logs
 
 The site deploys on Netlify: logs are in the project's [Netlify
@@ -70,8 +93,9 @@ new version is approved. The approval gates the install script only (the hugo
 binary self-installs at first use), so don't run builds between the two steps.
 Automated update PRs skip hugo-extended version bumps for the same reason,
 except security updates, which fail CI until approved via `approve:hugo`. The
-Docker flow pins Hugo and Dart Sass independently in the Dockerfile: bump those
-alongside Hugo and `sass-embedded` updates.
+Dockerfile (best-effort, unsupported) pins Hugo and Dart Sass independently:
+Renovate proposes base-image updates (tag bumps and digest pins); bump
+`DART_SASS_VERSION` manually alongside `sass-embedded` updates.
 
 ### Develop against a local Docsy
 
