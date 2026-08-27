@@ -13,12 +13,10 @@
   // here: weekly wholesale re-resolves churn a committed, reviewed lockfile,
   // and the npm ETARGET fallback (a retry without --before when the lock
   // already holds a too-new version) can slip past the age gate. Transitive
-  // security fixes route through Dependabot security updates instead.
+  // security fixes arrive alert-driven instead: Renovate's vulnerabilityAlerts
+  // (left at its default, on) plus GitHub's repo-level Dependabot security
+  // updates; the rare duplicate PR is accepted.
   lockFileMaintenance: { enabled: false },
-  // GitHub's repo-level Dependabot security updates own vulnerability PRs
-  // (they operate without any dependabot.yml); left on, Renovate would
-  // duplicate them: its alert-driven PRs are schedule- and age-exempt.
-  vulnerabilityAlerts: { enabled: false },
   // Config-migration PRs may rewrite JSON5 to JSON, dropping comments; this
   // file's policy lives in its comments. Migrate manually on Renovate majors
   // instead.
