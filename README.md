@@ -45,17 +45,6 @@ Run Hugo through the npm scripts, as above: they put the [Dart Sass][] `sass`
 CLI from `node_modules` on the `PATH`; a direct `hugo` invocation fails without
 it.
 
-## Running a container locally
-
-You can run docsy-example inside a Docker container: follow the [Docker
-quickstart][] in the Docsy user guide. Two notes specific to this repo:
-
-- The container builds the site from your working copy: on your host, first
-  install the site's npm dependencies as described in
-  [Running the website locally](#running-the-website-locally).
-- The Docker setup is best-effort: not officially supported, and not exercised
-  by CI.
-
 ## Troubleshooting
 
 For build and preview problems, see the user guide's [prerequisites][] and
@@ -63,7 +52,6 @@ For build and preview problems, see the user guide's [prerequisites][] and
 
 [Dart Sass]:
   https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/#install-dart-sass
-[Docker quickstart]: https://www.docsy.dev/docs/get-started/quickstart-docker/
 [Docsy user guide]: https://docsy.dev/docs
 [hugo-extended]: https://www.npmjs.com/package/hugo-extended
 [Docsy]: https://github.com/google/docsy
