@@ -20,7 +20,8 @@
   // instead.
   configMigration: false,
   timezone: 'America/Toronto',
-  schedule: ['on sunday'],
+  // Any time Sunday: version PRs batch for Monday review.
+  schedule: ['* * * * 0'],
   labels: ['dependencies'],
   // Deliberately out: gomod (the Docsy theme pin, release-driven) and docker
   // (best-effort setup; its pins are bumped manually, see CONTRIBUTING.md).
@@ -44,5 +45,5 @@
       enabled: false,
     },
   ],
-// cSpell:ignore gomod hugo hugoautogen fortawesome fontawesome sunday etarget
+  // cSpell:ignore gomod hugo hugoautogen fortawesome fontawesome sunday etarget
 }
