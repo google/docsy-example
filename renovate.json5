@@ -4,12 +4,16 @@
   // config:best-practices pulls in security:minimumReleaseAgeNpm: its 3-day npm
   // rule would override the global minimumReleaseAge below. Its age exemptions
   // for update types without release timestamps (pin, replacement, rollback,
-  // among others) are deliberately not restored: such PRs never satisfy the age
-  // check and need manual age validation at review, as they already do for
-  // every other datasource.
+  // among others) are deliberately not restored: validate the age of such
+  // updates manually when they surface.
   //
   // IMPORTANT: an upstream rename of the preset silently re-admits it.
   ignorePresets: ['security:minimumReleaseAgeNpm'],
+  // Also from config:best-practices (:maintainLockFilesWeekly), and unwanted
+  // here: a full lock re-resolve pulls the latest in-range releases into the
+  // lock UNGATED by minimumReleaseAge, defeating the cooldown. In-range
+  // freshness arrives cooldown-gated through regular update PRs instead.
+  lockFileMaintenance: { enabled: false },
   timezone: 'America/Toronto',
   schedule: ['before 6am on monday'],
   labels: ['dependencies'],
@@ -27,8 +31,10 @@
     {
       // hugo-extended is intentionally pinned, coupled to the version-pinned
       // allowScripts approval; updated manually via `npm run update:hugo` +
-      // `npm run approve:hugo` (see CONTRIBUTING.md). Security fixes still
-      // arrive: repo-level Dependabot alerts are config-file-independent.
+      // `npm run approve:hugo` (see CONTRIBUTING.md). This silences Renovate
+      // for it entirely, security bumps included; security coverage stays with
+      // GitHub's repo-level Dependabot security updates (independent of any
+      // dependabot.yml), and an unapproved bump fails installs closed.
       matchPackageNames: ['hugo-extended'],
       enabled: false,
     },
