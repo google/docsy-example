@@ -1,7 +1,7 @@
 ---
 # cSpell:disable
 title: بلاگ
-aliases: [ /blog/2018/* ]
+aliases: [ /blog/2018/ ]
 menu: { main: { weight: 30 } }
 ---
 
