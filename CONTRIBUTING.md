@@ -90,8 +90,9 @@ new version is approved. The approval gates the install script only (the hugo
 binary self-installs at first use), so don't run builds between the two steps.
 Automated update PRs skip hugo-extended version bumps for the same reason,
 except security updates, which fail CI until approved via `approve:hugo`. The
-Docker flow pins Hugo and Dart Sass independently in the Dockerfile: bump those
-alongside Hugo and `sass-embedded` updates.
+Dockerfile (best-effort, unsupported) pins Hugo and Dart Sass independently:
+Renovate proposes base-image (Hugo) bumps; bump `DART_SASS_VERSION` manually
+alongside `sass-embedded` updates.
 
 ### Develop against a local Docsy
 
