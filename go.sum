@@ -1,4 +1,2 @@
-github.com/google/docsy/theme v0.16.0 h1:9uV9qEhk7UpJ8KYbSpTPQlq6htH+8hYskedgGZVnNsU=
-github.com/google/docsy/theme v0.16.0/go.mod h1:NX/JqXCbZBn9Q2Hj7ez9Xeh9z4XcLiwmDYZXhB4RhRM=
-github.com/google/docsy/theme v0.16.1-0.20260825004502-dd6e5051726a h1:6gKSIflQ3Q9398f3MmJWIPW5Vq6Mz7dYrWA6Fr6dGzI=
-github.com/google/docsy/theme v0.16.1-0.20260825004502-dd6e5051726a/go.mod h1:NX/JqXCbZBn9Q2Hj7ez9Xeh9z4XcLiwmDYZXhB4RhRM=
+github.com/google/docsy/theme v0.16.1-0.20260828131726-54b561dccf11 h1:GUZTBpQrxI4DOAwm4k2d73lmny133kbZs3+G5I51w+U=
+github.com/google/docsy/theme v0.16.1-0.20260828131726-54b561dccf11/go.mod h1:NX/JqXCbZBn9Q2Hj7ez9Xeh9z4XcLiwmDYZXhB4RhRM=
