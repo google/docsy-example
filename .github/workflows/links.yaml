@@ -29,6 +29,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Guard the npm-script posture
+        run: node --test tests/npm-scripts.test.mjs
+
       - name: Regenerate generated files (drift-check input)
         run: npm run update:docsy:pack
 

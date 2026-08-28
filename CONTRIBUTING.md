@@ -68,7 +68,9 @@ generated package's name, otherwise derived from the checkout-directory name.
 The Docsy-update scripts run it as their post phase, and CI reruns it to catch
 drift. If a theme update changes either file, commit the result. Installs
 themselves declare no lifecycle hooks (guarded by `tests/npm-scripts.test.mjs`),
-so a plain `npm install` and `install:safe` differ only in dependency scripts.
+so neither install mode runs root-package code; `install:safe` remains the
+lock-exact, script-free path, while a plain `npm install` resolves and may
+rewrite the lock.
 
 ### Upgrade Docsy
 
