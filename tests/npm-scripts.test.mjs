@@ -6,26 +6,14 @@ import { fileURLToPath } from 'node:url';
 
 // Guards the repo's npm-script posture (see docsy's supply-chain audit for the
 // upstream pattern): every script runs exactly as written where it is invoked,
-// with no lifecycle hooks. Implicit hooks are skipped under `ignore-scripts`
-// installs and configs, so a hook-shaped step silently drops out of chains it
-// appears to be part of. Manifests are discovered from the root `workspaces`
-// config, so future workspaces stay guarded.
-
-// npm runs these on its own initiative during install, pack, and publish
-// operations, regardless of what other scripts are declared.
-const LIFECYCLE_NAMES = [
-  'preinstall',
-  'install',
-  'postinstall',
-  'preprepare',
-  'prepare',
-  'postprepare',
-  'prepublish',
-  'prepublishOnly',
-  'prepack',
-  'postpack',
-  'dependencies',
-];
+// with no lifecycle hooks. Hooks are skipped under `ignore-scripts` installs
+// and configs, so a hook-shaped step silently drops out of chains it appears
+// to be part of. The `pre`/`post` prefix ban is a shape rule: it also rejects
+// orphan hooks (live again the day their parent name reappears) and names that
+// would become hooks of a later script (a `preview` script hooks `view`).
+// `install` and `dependencies` are the two lifecycle names outside the shape.
+// Manifests are discovered from the root `workspaces` config, so future
+// workspaces stay guarded.
 
 const repoRoot = fileURLToPath(new URL('..', import.meta.url));
 const readManifest = (relPath) =>
@@ -47,27 +35,14 @@ test('workspace discovery finds manifests to guard', () => {
   );
 });
 
-test('npm scripts declare no pre/post hook siblings', () => {
+test('npm scripts declare no lifecycle or hook-shaped names', () => {
   for (const [manifest, { scripts = {} }] of manifests) {
     for (const name of Object.keys(scripts)) {
-      for (const hook of [`pre${name}`, `post${name}`]) {
-        assert.equal(
-          scripts[hook],
-          undefined,
-          `${manifest}: ${hook} stays absent, so ${name} runs the same with and without ignore-scripts`,
-        );
-      }
-    }
-  }
-});
-
-test('manifests declare no npm lifecycle scripts', () => {
-  for (const [manifest, { scripts = {} }] of manifests) {
-    for (const hook of LIFECYCLE_NAMES) {
-      assert.equal(
-        scripts[hook],
-        undefined,
-        `${manifest}: ${hook} stays absent, so npm operations run no undeclared code`,
+      assert.ok(
+        !/^(pre|post)/.test(name) &&
+          name !== 'install' &&
+          name !== 'dependencies',
+        `${manifest}: ${name} stays outside npm's lifecycle namespace, so every script runs the same with and without ignore-scripts`,
       );
     }
   }
