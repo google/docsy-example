@@ -29,6 +29,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Regenerate committed generated files for the drift check
+        run: npm run update:docsy:pack
+
       - name: Install lychee
         env:
           LYCHEE_VERSION: v0.24.2
