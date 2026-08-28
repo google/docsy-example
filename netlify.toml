@@ -12,8 +12,8 @@ GO_VERSION = "1.22.2"
 # NPM_FLAGS ever stops being honored, the auto-install runs for real:
 # strict-allow-scripts (.npmrc) still gates its scripts, and the clean-tree
 # bracket in _netlify:prepare flags its tree writes. The committed lockfile
-# and hugoautogen manifest cover the build's needs (the root declares no
-# install hooks); the hugo binary self-installs at first use.
+# and hugoautogen manifest cover the build's needs; the hugo binary
+# self-installs at first use.
 NPM_FLAGS = "--dry-run --ignore-scripts"
 # Netlify's Node-bundled default npm may be older than the engines floor
 # (allowScripts enforcement); pin one that satisfies it. Bump at least
