@@ -11,8 +11,8 @@ import { fileURLToPath } from 'node:url';
 // to be part of. The `pre`/`post` prefix ban is a shape rule: it also rejects
 // orphan hooks (live again the day their parent name reappears) and names that
 // would become hooks of a later script (a `preview` script hooks `view`).
-// `install` and `dependencies` are the two lifecycle names outside the shape.
-// Manifests are discovered from the root `workspaces` config, so future
+// `install`, `dependencies`, and `publish` are the lifecycle names outside the
+// shape. Manifests are discovered from the root `workspaces` config, so future
 // workspaces stay guarded.
 
 const repoRoot = fileURLToPath(new URL('..', import.meta.url));
@@ -40,8 +40,7 @@ test('npm scripts declare no lifecycle or hook-shaped names', () => {
     for (const name of Object.keys(scripts)) {
       assert.ok(
         !/^(pre|post)/.test(name) &&
-          name !== 'install' &&
-          name !== 'dependencies',
+          !['install', 'dependencies', 'publish'].includes(name),
         `${manifest}: ${name} stays outside npm's lifecycle namespace, so every script runs the same with and without ignore-scripts`,
       );
     }
