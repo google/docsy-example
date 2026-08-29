@@ -4,17 +4,14 @@ import { globSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-// Guards the repo's npm-script posture (see docsy's supply-chain audit for the
-// upstream pattern): every script runs exactly as written where it is invoked,
-// with no lifecycle hooks. Hooks are skipped under `ignore-scripts` installs
-// and configs, so a hook-shaped step silently drops out of chains it appears
-// to be part of. The `pre`/`post` prefix ban is a shape rule: it also rejects
-// orphan hooks (live again the day their parent name reappears) and names that
-// would become hooks of a later script (a `preview` script hooks `view`).
-// `install`, `dependencies`, `publish`, and `version` are the lifecycle names
-// outside the shape (start/stop/restart/test run only when invoked, so they
-// present no ignore-scripts divergence). Manifests are discovered from the
-// root `workspaces` config, so future workspaces stay guarded.
+// Bans npm's lifecycle namespace from the script names of the root and all
+// workspace manifests: npm skips lifecycle hooks under `ignore-scripts`
+// installs and configs, so a hook-shaped step silently drops out of a chain
+// it appears to be part of (a stricter cousin of docsy's supply-chain audit
+// hook checks). Banning by shape also rejects orphan hooks and names a later
+// script would turn into hooks (a `preview` script hooks `view`). The bare
+// names are npm's self-initiated lifecycles outside the pre/post shape;
+// start/stop/restart/test run only when invoked, so they stay legal.
 
 const repoRoot = fileURLToPath(new URL('..', import.meta.url));
 const readManifest = (relPath) =>
