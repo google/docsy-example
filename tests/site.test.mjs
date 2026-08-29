@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 // Validates the navbar language selector and RTL rendering in the generated
 // site (public/). Assumes the site has been built (`npm run build`); in the
-// `test-only` chain, the check:links prebuild takes care of that.
+// `test-only` chain, `check:links` builds first.
 
 const publicDir = fileURLToPath(new URL('../public', import.meta.url));
 

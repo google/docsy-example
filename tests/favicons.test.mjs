@@ -5,8 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 // Verifies that the Docsy theme's default favicons partial discovers and links
 // the icon files this site ships in `static/`. Assumes the site has been built
-// (`npm run build`); in the `test-only` chain, the check:links prebuild takes
-// care of that.
+// (`npm run build`); in the `test-only` chain, `check:links` builds first.
 
 const home = readFileSync(
   fileURLToPath(new URL('../public/index.html', import.meta.url)),
