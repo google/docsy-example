@@ -64,7 +64,7 @@
     "sass-embedded": "1.102.0"
   },
   "optionalDependencies": {
-    "npm-check-updates": "23.0.2",
+    "npm-check-updates": "23.1.0",
     "prettier": "3.9.6"
   },
   "overrides": {
