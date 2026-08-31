@@ -41,11 +41,13 @@ Renovate opens version-update PRs, created on Sundays, configured in
   committed lockfile; transitive security fixes arrive alert-driven instead.
 - `gomod` off: the Docsy theme pin is updated manually; see
   [Upgrade Docsy](#upgrade-docsy). All other detected managers are active.
-- Package rules: `hugo-extended` is version-pinned and coupled to its
-  `allowScripts` approval (see [Update Hugo](#update-hugo)); bootstrap and Font
-  Awesome updates route through the theme (`packages/hugoautogen` is regenerated
-  from the theme, reverting any direct bump). A Dependabot security PR may still
-  bump these directly: close it and route the fix through a theme update.
+- Package rules: patch and minor updates are each grouped into a single PR per
+  wave (majors stay individual); `hugo-extended` is version-pinned and coupled
+  to its `allowScripts` approval (see [Update Hugo](#update-hugo)); bootstrap
+  and Font Awesome updates route through the theme (`packages/hugoautogen` is
+  regenerated from the theme, reverting any direct bump). A Dependabot security
+  PR may still bump these directly: close it and route the fix through a theme
+  update.
 
 Renovate's vulnerability-alert PRs stay on (immediate, cooldown-exempt), beside
 GitHub's Dependabot security updates; a rare duplicate PR is accepted.
