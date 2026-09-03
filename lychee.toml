@@ -2,7 +2,7 @@
 # `npm run check:links`.
 
 cache = true
-max_cache_age = "375d"
+max_cache_age = "365d"
 no_progress = true
 extensions = ["html"]              # built HTML only
 include_fragments = "full"         # check in-page anchors

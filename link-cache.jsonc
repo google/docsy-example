@@ -1,0 +1,447 @@
+{
+  "https://creativecommons.org/licenses/by/4.0": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://docsy.dev/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://docsy.dev/docs/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://docsy.dev/docs/best-practices/organizing-content/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/blog/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/blog/news/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/blog/releases/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/community/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/docs/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/docs/getting-started/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/docs/reference/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/docs/tasks/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/docs/tasks/ponycopters/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/_print/docs/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/blog/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/blog/news/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/blog/releases/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/community/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/docs/": {
+    "result": 200,
+    "when": "2026-07-01T17:25:53Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/docs/getting-started/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/docs/reference/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/docs/tasks/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/docs/tasks/ponycopters/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/docs/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/_print/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/_print/blog/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/_print/blog/news/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/_print/blog/releases/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/_print/community/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/_print/docs/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/blog/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/blog/news/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/blog/releases/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/community/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/fa/docs/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/big-data/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/big-data/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/big-data/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/cloud-computing/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/cloud-computing/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/cloud-computing/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/content-management/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/content-management/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/cross-platform/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/cross-platform/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/cross-platform/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/reference/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:06Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/_print/docs/reference/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/big-data/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/big-data/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/big-data/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/cloud-computing/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/cloud-computing/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/cloud-computing/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/content-management/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/content-management/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/cross-platform/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/cross-platform/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/cross-platform/tutorials/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/reference/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:04Z",
+    "via": "lychee",
+  },
+  "https://example.docsy.dev/no/docs/reference/examples/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:05Z",
+    "via": "lychee",
+  },
+  "https://github.com/": {
+    "result": 200,
+    "when": "2026-06-29T20:57:57Z",
+    "via": "lychee",
+  },
+  "https://github.com/chalin": {
+    "result": 200,
+    "when": "2026-06-29T20:57:57Z",
+    "via": "lychee",
+  },
+  "https://github.com/google/docsy": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://github.com/google/docsy-example": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://github.com/google/docsy-example/issues": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://github.com/google/docsy-example/pulls": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://github.com/google/docsy/releases/v0.16.0": {
+    "result": 200,
+    "when": "2026-07-29T20:30:23Z",
+    "via": "lychee",
+  },
+  "https://github.com/google/docsy/releases/v0.17.0": {
+    "result": 200,
+    "when": "2026-08-30T20:37:49Z",
+    "via": "lychee",
+  },
+  "https://github.com/google/docsy/tree/main/docsy.dev": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://github.com/kubeflow/website/blob/master/README.md": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://gohugo.io/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://gohugo.io/documentation/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://guides.github.com/activities/hello-world/": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://help.github.com/articles/about-pull-requests/": {
+    "result": 200,
+    "when": "2026-06-29T20:57:56Z",
+    "via": "lychee",
+  },
+  "https://policies.google.com/privacy": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://swagger.io/tools/swagger-ui/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://www.docsy.dev/docs/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://www.docsy.dev/docs/content/adding-content/#adding-static-content": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://www.docsy.dev/docs/content/shortcodes/#swaggerui": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://www.netlify.com/": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+  "https://x.com/docsydocs": {
+    "result": 200,
+    "when": "2026-06-29T20:09:03Z",
+    "via": "lychee",
+  },
+}
